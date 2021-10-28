@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(binary_search)
+project(binary_search_proj)
 
 add_definitions(-std=c++11)
 add_definitions(-Werror) # stop compile on warning
