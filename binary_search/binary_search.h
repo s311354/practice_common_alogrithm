@@ -1,5 +1,8 @@
 #ifndef PROJECT_BINARY_SEARCH_TREE_H
 #define PROJECT_BINARY_SEARCH_TREE_H
+#include <stdlib.h>
+#include <iostream>
+#include <queue>
 
 struct BSTNode {
     int data;
@@ -31,10 +34,16 @@ int GetMax(BSTNode* node);
 // Returns the height of the tree, 0 if empty
 int GetHeight(BSTNode* node);
 
+// Delete a specific node from the node
+BSTNode* DeleteValue(BSTNode* node, int value);
+
 // Frees memory allocated for the tree
 void DeleteTree(BSTNode* node);
 
 // Print out the items in the tree in order
 void PrintInOrder(BSTNode* node);
+
+// Print out the items in the tree
+void PrintBFS(BSTNode* node);
 
 #endif /* ifndef PROJECT_BINARY_SEARCH_TREE_H */

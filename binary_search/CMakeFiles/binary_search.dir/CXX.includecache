@@ -7,14 +7,16 @@
 #IncludeRegexTransform: 
 
 /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/binary_search.cc
-stdlib.h
--
-iostream
--
 binary_search.h
 /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/binary_search.h
 
 /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/binary_search.h
+stdlib.h
+-
+iostream
+-
+queue
+-
 
 /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/main.cc
 stdlib.h
