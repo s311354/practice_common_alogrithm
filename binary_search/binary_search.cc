@@ -37,6 +37,21 @@ bool Search(BSTNode* node, int value) {
     }
 }
 
+bool IsBinarySearchTree(BSTNode* node) {
+    return IsBetween(node, INT_MIN, INT_MAX);
+}
+
+bool IsBetween(BSTNode* node, int min, int max) {
+    if (node == nullptr) return true;
+
+    if (node->data > min && node->data < max && 
+        IsBetween(node->left, min, node->data) && 
+        IsBetween(node->right, node->data, max))
+        return true;
+    else
+        return false;
+}
+
 BSTNode* GetMinNode(BSTNode* node) {
     if (node == nullptr) return nullptr;
 
@@ -95,22 +110,23 @@ BSTNode* DeleteValue(BSTNode* node, int value) {
         node->left = DeleteValue(node->left, value);
     else if (value > node->data)
         node->right = DeleteValue(node->right, value);
-    else {
-        if (node->left == nullptr && node->right == nullptr) { // Delete the last node
+    else { 
+        // Delete the matching value
+        if (node->left == nullptr && node->right == nullptr) {
             delete node;
             node = nullptr;
-        } else if (node->left == nullptr) { // Delete the left nullptr
+        } else if (node->left == nullptr) {
             BSTNode* temp = node;
             node = node->right;
             delete temp;
-        } else if (node->right == nullptr) { // Delete the right nullptr
+        } else if (node->right == nullptr) {
             BSTNode* temp = node;
             node = node->left;
             delete temp;
         } else {
             BSTNode* temp = GetMinNode(node->right);
-            node->data = temp->data;
-            node->right = DeleteValue(node->right, temp->data);
+            node->data = temp->data; // replace min data in the right node with deleted value
+            node->right = DeleteValue(node->right, temp->data); // reconstruct binary tree
         }
     }
 
