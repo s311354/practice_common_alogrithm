@@ -4,6 +4,8 @@
 #include <iostream>
 #include <queue>
 
+namespace common {
+
 struct BSTNode {
     int data;
     BSTNode* left;
@@ -38,4 +40,6 @@ void DeleteTree(BSTNode* node);
 void PrintInOrder(BSTNode* node);
 // Print out the items in the tree
 void PrintBFS(BSTNode* node);
+
+}
 #endif /* ifndef PROJECT_BINARY_SEARCH_TREE_H */

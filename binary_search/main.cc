@@ -4,6 +4,8 @@
 
 int main(int argc, char *argv[])
 {
+
+    using namespace common;
     BSTNode* root = nullptr;
 
     int idex;

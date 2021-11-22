@@ -1,5 +1,7 @@
 #include "binary_search.h"
 
+namespace common {
+
 BSTNode* GetNewNode(int value) {
     BSTNode* node = new BSTNode;
     node->data = value;
@@ -159,4 +161,6 @@ void PrintInOrder(BSTNode* node) {
     std::cout << node->data << " ";
 
     if (node->right != nullptr) PrintInOrder(node->right);
+}
+
 }
