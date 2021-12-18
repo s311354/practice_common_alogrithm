@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classSubSystemFour" kind="class" language="C++" prot="public">
+    <compoundname>SubSystemFour</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSubSystemFour_1ad6a8cc00691d9ce183cd300abebf36a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SubSystemFour::MethodFour</definition>
+        <argsstring>()</argsstring>
+        <name>MethodFour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="facade_pattern/main.cc" line="39" column="10" bodyfile="facade_pattern/main.cc" bodystart="39" bodyend="42"/>
+        <referencedby refid="classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" compoundref="facade__pattern_2main_8cc" startline="59" endline="65">Facade::MethodA</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>SubSystemFour</label>
+        <link refid="classSubSystemFour"/>
+      </node>
+    </collaborationgraph>
+    <location file="facade_pattern/main.cc" line="36" column="1" bodyfile="facade_pattern/main.cc" bodystart="37" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classSubSystemFour_1ad6a8cc00691d9ce183cd300abebf36a3" prot="public" virt="non-virtual"><scope>SubSystemFour</scope><name>MethodFour</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

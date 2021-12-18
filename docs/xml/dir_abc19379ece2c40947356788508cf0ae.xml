@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_abc19379ece2c40947356788508cf0ae" kind="dir">
+    <compoundname>binary_search</compoundname>
+    <innerdir refid="dir_73a010b5221060d85192081ae6a1f1c0">binary_search/CMakeFiles</innerdir>
+    <innerfile refid="binary__search_8cc">binary_search.cc</innerfile>
+    <innerfile refid="binary__search_8h">binary_search.h</innerfile>
+    <innerfile refid="binary__search_2main_8cc">main.cc</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="binary_search/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="hash__object_8h" kind="file" language="C++">
+    <compoundname>hash_object.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="hash__table_8h" local="yes">hash_table/hash_table.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>hash_table/hash_object.h</label>
+        <link refid="hash__object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>hash_table/hash_table.cc</label>
+        <link refid="hash__table_8cc"/>
+      </node>
+      <node id="6">
+        <label>hash_table/main.cc</label>
+        <link refid="hash__table_2main_8cc"/>
+      </node>
+      <node id="2">
+        <label>hash_table/hash_table.h</label>
+        <link refid="hash__table_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>hash_table/hash_table_tests.h</label>
+        <link refid="hash__table__tests_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>hash_table/hash_object.h</label>
+        <link refid="hash__object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>hash_table/hash_table_tests.cc</label>
+        <link refid="hash__table__tests_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classcommon_1_1HashObject" prot="public">common::HashObject</innerclass>
+    <innernamespace refid="namespacecommon">common</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HASH_OBJECT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HASH_OBJECT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecommon" kindref="compound">common</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classcommon_1_1HashObject" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcommon_1_1HashObject" kindref="compound">HashObject</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="classcommon_1_1HashObject_1a4230334fc738a9397ce327d20b3d5b36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classcommon_1_1HashObject_1a4230334fc738a9397ce327d20b3d5b36" kindref="member">key_</ref>;</highlight></codeline>
+<codeline lineno="12" refid="classcommon_1_1HashObject_1a52042a3ba1f11399740f4906de8edfd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classcommon_1_1HashObject_1a52042a3ba1f11399740f4906de8edfd1" kindref="member">value_</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15" refid="classcommon_1_1HashObject_1a7683f80b3a509f9525e0ea6d119be000" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcommon_1_1HashObject_1a7683f80b3a509f9525e0ea6d119be000" kindref="member">HashObject</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="16" refid="classcommon_1_1HashObject_1a313112147f14965e3743332d4e31e2fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcommon_1_1HashObject_1a313112147f14965e3743332d4e31e2fc" kindref="member">HashObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcommon_1_1HashObject" kindref="compound">HashObject</ref><sp/>&amp;)<sp/>{};</highlight></codeline>
+<codeline lineno="17" refid="classcommon_1_1HashObject_1ab8922cd0355b6b8f7794ddb944566bf9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcommon_1_1HashObject" kindref="compound">HashObject</ref><sp/>&amp;<ref refid="classcommon_1_1HashObject_1ab8922cd0355b6b8f7794ddb944566bf9" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcommon_1_1HashObject" kindref="compound">HashObject</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="18" refid="classcommon_1_1HashObject_1aa084014fbc40db0356e66f1580633d32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classcommon_1_1HashObject_1aa084014fbc40db0356e66f1580633d32" kindref="member">~HashObject</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classcommon_1_1HashObject_1aa59e36990bd2b158c5d7fdd7cb0d6734" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>&amp;<ref refid="classcommon_1_1HashObject_1aa59e36990bd2b158c5d7fdd7cb0d6734" kindref="member">Getkey</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classcommon_1_1HashObject_1a4230334fc738a9397ce327d20b3d5b36" kindref="member">key_</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="21" refid="classcommon_1_1HashObject_1a20a96cca63049317f786f226044c4eb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>&amp;<ref refid="classcommon_1_1HashObject_1a20a96cca63049317f786f226044c4eb3" kindref="member">GetValue</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classcommon_1_1HashObject_1a52042a3ba1f11399740f4906de8edfd1" kindref="member">value_</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" kindref="member">SetKey</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>key)<sp/>{<sp/><ref refid="classcommon_1_1HashObject_1a4230334fc738a9397ce327d20b3d5b36" kindref="member">key_</ref><sp/>=<sp/>key;};</highlight></codeline>
+<codeline lineno="24" refid="classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" kindref="member">SetValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>value)<sp/>{<sp/><ref refid="classcommon_1_1HashObject_1a52042a3ba1f11399740f4906de8edfd1" kindref="member">value_</ref><sp/>=<sp/>value;};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classcommon_1_1HashObject_1a9029991e217c3ff395d196a0fad700d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classcommon_1_1HashObject_1a9029991e217c3ff395d196a0fad700d4" kindref="member">GetDummyKey</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&lt;Dummy&gt;&quot;</highlight><highlight class="normal">;<sp/>};</highlight></codeline>
+<codeline lineno="27" refid="classcommon_1_1HashObject_1a8b63a836e49dd5d3e7fab2f95028e6ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classcommon_1_1HashObject_1a8b63a836e49dd5d3e7fab2f95028e6ab" kindref="member">GetNullKey</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&lt;NULL&gt;&quot;</highlight><highlight class="normal">;};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classcommon_1_1HashObject_1ae3e0fe955bebf68934feb9545bf7a0e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcommon_1_1HashObject_1ae3e0fe955bebf68934feb9545bf7a0e9" kindref="member">SetAsDummy</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcommon_1_1HashObject_1a4230334fc738a9397ce327d20b3d5b36" kindref="member">key_</ref><sp/>=<sp/><ref refid="classcommon_1_1HashObject_1a9029991e217c3ff395d196a0fad700d4" kindref="member">GetDummyKey</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcommon_1_1HashObject_1a52042a3ba1f11399740f4906de8edfd1" kindref="member">value_</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>common<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HASH_OBJECT_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="hash_table/hash_object.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="hash__table_2README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>The<sp/>concept<sp/>of<sp/>Hash<sp/>Tables<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">A<sp/>hash<sp/>table<sp/>(hash<sp/>map)<sp/>is<sp/>a<sp/>data<sp/>structure<sp/>that<sp/>implements<sp/>an<sp/>associative<sp/>array<sp/>abstract<sp/>data<sp/>type,<sp/>s<sp/>structure<sp/>that<sp/>can<sp/>map<sp/>keys<sp/>to<sp/>values.<sp/>A<sp/>hash<sp/>table<sp/>uses<sp/>a<sp/>hash<sp/>function<sp/>to<sp/>compute<sp/>an<sp/>index,<sp/>also<sp/>called<sp/>a<sp/>hash<sp/>code,<sp/>into<sp/>an<sp/>array<sp/>of<sp/>buckets<sp/>or<sp/>slots,<sp/>from<sp/>which<sp/>the<sp/>desired<sp/>value<sp/>can<sp/>be<sp/>found.<sp/>During<sp/>lookup,<sp/>the<sp/>key<sp/>is<sp/>hashed<sp/>and<sp/>the<sp/>resulting<sp/>hash<sp/>indicates<sp/>where<sp/>the<sp/>corresponding<sp/>value<sp/>is<sp/>stored.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>corresponding<sp/>result<sp/>in<sp/>this<sp/>simple<sp/>example<sp/>code:</highlight></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>class=&quot;language-shell<sp/>highlighter-rouge&quot;&gt;&lt;pre<sp/>class=&quot;highlight&quot;&gt;&lt;code<sp/>class=&quot;hljs<sp/>ruby&quot;&gt;&lt;span<sp/>class=&quot;nb&quot;&gt;$<sp/>./hash_table<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[8:09:14]</highlight></codeline>
+<codeline><highlight class="normal">0:<sp/>California:<sp/>Sacramento</highlight></codeline>
+<codeline><highlight class="normal">1:<sp/>Texas:<sp/>Austin</highlight></codeline>
+<codeline><highlight class="normal">2:<sp/>&lt;NULL&gt;:<sp/></highlight></codeline>
+<codeline><highlight class="normal">3:<sp/>&lt;NULL&gt;:<sp/></highlight></codeline>
+<codeline><highlight class="normal">4:<sp/>Oregon:<sp/>Salem</highlight></codeline>
+<codeline><highlight class="normal">5:<sp/>New<sp/>Mexico:<sp/>Santa<sp/>Fe</highlight></codeline>
+<codeline><highlight class="normal">6:<sp/>Florida:<sp/>Tallahassee</highlight></codeline>
+<codeline><highlight class="normal">7:<sp/>&lt;NULL&gt;:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">0:<sp/>&lt;NULL&gt;:<sp/></highlight></codeline>
+<codeline><highlight class="normal">1:<sp/>&lt;Dummy&gt;:<sp/></highlight></codeline>
+<codeline><highlight class="normal">2:<sp/>&lt;NULL&gt;:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>capital<sp/>of<sp/>Washington<sp/>is<sp/>Olympia</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>capital<sp/>of<sp/>Florida<sp/>is<sp/>Tallahassee</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>capital<sp/>of<sp/>Texas<sp/>is<sp/>Austin</highlight></codeline>
+<codeline><highlight class="normal">Oregon<sp/>not<sp/>found</highlight></codeline>
+<codeline><highlight class="normal">Size<sp/>of<sp/>bucket<sp/>0:<sp/>0</highlight></codeline>
+<codeline><highlight class="normal">Size<sp/>of<sp/>bucket<sp/>1:<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">Size<sp/>of<sp/>bucket<sp/>2:<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">Size<sp/>of<sp/>bucket<sp/>3:<sp/>1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Reference<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">[1]<sp/>[Wiki:<sp/>hash<sp/>table](https://en.wikipedia.org/wiki/Hash_table)</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="hash_table/README.md"/>
+  </compounddef>
+</doxygen>
