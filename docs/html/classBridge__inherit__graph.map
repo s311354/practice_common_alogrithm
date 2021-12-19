@@ -1,0 +1,6 @@
+<map id="Bridge" name="Bridge">
+<area shape="rect" id="node1" title=" " alt="" coords="99,131,314,237"/>
+<area shape="rect" id="node3" href="$classUseCase1.html" title=" " alt="" coords="5,285,195,392"/>
+<area shape="rect" id="node4" href="$classUseCase2.html" title=" " alt="" coords="219,285,408,392"/>
+<area shape="rect" id="node2" href="$classAbstractInterface.html" title=" " alt="" coords="91,5,322,83"/>
+</map>

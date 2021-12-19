@@ -86,7 +86,7 @@
       <memberdef kind="define" id="hash__table_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a43e1cad902b6477bec893cb6430bd6c8" prot="public" static="no">
         <name>STRINGIFY</name>
         <param><defname>X</defname></param>
-        <initializer><ref refid="facade__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kindref="member">STRINGIFY_HELPER</ref>(X)</initializer>
+        <initializer><ref refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kindref="member">STRINGIFY_HELPER</ref>(X)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

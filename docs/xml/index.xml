@@ -1,9 +1,59 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classAbstractInterface" kind="class"><name>AbstractInterface</name>
+    <member refid="classAbstractInterface_1a6e01c2b1fa906d3469a6fe123fcf1f7f" kind="function"><name>someFunctionality</name></member>
+  </compound>
+  <compound refid="classAdapter" kind="class"><name>Adapter</name>
+    <member refid="classAdapter_1aff5eb924131838a2fe5decac1585170f" kind="variable"><name>socket</name></member>
+    <member refid="classAdapter_1a2b830be3ac68baa0fa8271d6377b7546" kind="function"><name>live</name></member>
+    <member refid="classAdapter_1affff909ff6906861039d208fe3b95cac" kind="function"><name>neutral</name></member>
+    <member refid="classAdapter_1a27efd1e25e0ab658e658b7bf22cf945f" kind="function"><name>plugIn</name></member>
+    <member refid="classAdapter_1a5037c7c53d9efe4ad8996c5237719a8f" kind="function"><name>voltage</name></member>
+  </compound>
+  <compound refid="classBridge" kind="class"><name>Bridge</name>
+    <member refid="classBridge_1ae85081759b4abbc481e728c1421249af" kind="variable"><name>implementation</name></member>
+    <member refid="classBridge_1a1eacfb87aa96f5fda008f7ca8feefcad" kind="function"><name>Bridge</name></member>
+    <member refid="classAbstractInterface_1a6e01c2b1fa906d3469a6fe123fcf1f7f" kind="function"><name>someFunctionality</name></member>
+  </compound>
   <compound refid="structcommon_1_1BSTNode" kind="struct"><name>common::BSTNode</name>
     <member refid="structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" kind="variable"><name>data</name></member>
     <member refid="structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" kind="variable"><name>left</name></member>
     <member refid="structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" kind="variable"><name>right</name></member>
+  </compound>
+  <compound refid="classConcreteImplementation1" kind="class"><name>ConcreteImplementation1</name>
+    <member refid="classConcreteImplementation1_1afb0fb26e22e72c7cd932e80f61b870e5" kind="function"><name>anotherFunctionality</name></member>
+  </compound>
+  <compound refid="classConcreteImplementation2" kind="class"><name>ConcreteImplementation2</name>
+    <member refid="classConcreteImplementation2_1a81898b1f1fa1065049f71b40376787aa" kind="function"><name>anotherFunctionality</name></member>
+  </compound>
+  <compound refid="classConcreteStrategyA" kind="class"><name>ConcreteStrategyA</name>
+    <member refid="classConcreteStrategyA_1a33327cefdd32b66809ff952d5ba1ac39" kind="function"><name>algorithmInterface</name></member>
+    <member refid="classConcreteStrategyA_1a16c43e1ab5cc68408fb09f4b51e81cf4" kind="function"><name>~ConcreteStrategyA</name></member>
+  </compound>
+  <compound refid="classConcreteStrategyB" kind="class"><name>ConcreteStrategyB</name>
+    <member refid="classConcreteStrategyB_1ae2d87bea9f205785ac0605a734d4af77" kind="function"><name>algorithmInterface</name></member>
+    <member refid="classConcreteStrategyB_1a8f2371794fdc72701b933dfe26f6ddf8" kind="function"><name>~ConcreteStrategyB</name></member>
+  </compound>
+  <compound refid="classConcreteStrategyC" kind="class"><name>ConcreteStrategyC</name>
+    <member refid="classConcreteStrategyC_1a9f11e7725a0520503718f38458e0ed70" kind="function"><name>algorithmInterface</name></member>
+    <member refid="classConcreteStrategyC_1a68180e42b7c5755a7c47b56e7b23d45a" kind="function"><name>~ConcreteStrategyC</name></member>
+  </compound>
+  <compound refid="classContext" kind="class"><name>Context</name>
+    <member refid="classContext_1a15fc700dafa25dcbdba79a30ab225136" kind="variable"><name>strategy</name></member>
+    <member refid="classContext_1acbfce703bea1aa0d23cceb9942268ec6" kind="function"><name>Context</name></member>
+    <member refid="classContext_1af3882694631333a50f562e409d895bf6" kind="function"><name>contextInterface</name></member>
+    <member refid="classContext_1a2d34e4556448e40693f61d15e091b604" kind="function"><name>~Context</name></member>
+  </compound>
+  <compound refid="classElectricKettle" kind="class"><name>ElectricKettle</name>
+    <member refid="classElectricKettle_1a44663e0d5444e497a61ae2e9d0b14105" kind="variable"><name>power</name></member>
+    <member refid="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" kind="function"><name>boil</name></member>
+    <member refid="classElectricKettle_1a18120723b13f3dfb1eb7f2899fd23a31" kind="function"><name>plugIn</name></member>
+  </compound>
+  <compound refid="classEuropeanSocketInterface" kind="class"><name>EuropeanSocketInterface</name>
+    <member refid="classEuropeanSocketInterface_1a29f6a7f4736b8ae17464d7136d015714" kind="function"><name>earth</name></member>
+    <member refid="classEuropeanSocketInterface_1aed3dba5a3ded5b1d966a75bdb32fd95b" kind="function"><name>live</name></member>
+    <member refid="classEuropeanSocketInterface_1a2a2737b5a6efca9a137ce3aa80ef275c" kind="function"><name>neutral</name></member>
+    <member refid="classEuropeanSocketInterface_1aa4b6b6718a501eeaa7c9dcd7f7906ac4" kind="function"><name>voltage</name></member>
   </compound>
   <compound refid="classFacade" kind="class"><name>Facade</name>
     <member refid="classFacade_1a127f5325cbb7f08b3a3ca2c264bca9cb" kind="variable"><name>four</name></member>
@@ -103,6 +153,19 @@
     <member refid="classcommon_1_1HashTable_1ac9a6adc252dfb1634d790999c401c473" kind="function"><name>Remove</name></member>
     <member refid="classcommon_1_1HashTable_1aed0819022347917c2ece3ef1d6d668f2" kind="function"><name>~HashTable</name></member>
   </compound>
+  <compound refid="classImplementationInterface" kind="class"><name>ImplementationInterface</name>
+    <member refid="classImplementationInterface_1a436dfd4fda2d04cb83309e6b64e16473" kind="function"><name>anotherFunctionality</name></member>
+  </compound>
+  <compound refid="classSocket" kind="class"><name>Socket</name>
+    <member refid="classSocket_1a3d8053781e0e897d98546a9aece7aff5" kind="function"><name>earth</name></member>
+    <member refid="classSocket_1a867fd5490666f718d7f4ad061fa26d69" kind="function"><name>live</name></member>
+    <member refid="classSocket_1ab7d817d17dbc1f8c6af528eba325c89d" kind="function"><name>neutral</name></member>
+    <member refid="classSocket_1ae54bbcb330bbe024f30da2cbbb646308" kind="function"><name>voltage</name></member>
+  </compound>
+  <compound refid="classStrategy" kind="class"><name>Strategy</name>
+    <member refid="classStrategy_1a8c773b3212e91135c0d6365113ddfee2" kind="function"><name>algorithmInterface</name></member>
+    <member refid="classStrategy_1a103008479cf7cc00a51e811c5a2a402f" kind="function"><name>~Strategy</name></member>
+  </compound>
   <compound refid="classSubSystemFour" kind="class"><name>SubSystemFour</name>
     <member refid="classSubSystemFour_1ad6a8cc00691d9ce183cd300abebf36a3" kind="function"><name>MethodFour</name></member>
   </compound>
@@ -114,6 +177,21 @@
   </compound>
   <compound refid="classSubSystemTwo" kind="class"><name>SubSystemTwo</name>
     <member refid="classSubSystemTwo_1a0ba476a0294293b6d829c6eacd98d5c7" kind="function"><name>MethodTwo</name></member>
+  </compound>
+  <compound refid="classUSASocketInterface" kind="class"><name>USASocketInterface</name>
+    <member refid="classUSASocketInterface_1a87866dcb9559bbe6a7c4cf49c9ced957" kind="function"><name>live</name></member>
+    <member refid="classUSASocketInterface_1acbee21d1d6dc45f0a18d91985c350efa" kind="function"><name>neutral</name></member>
+    <member refid="classUSASocketInterface_1abd8b5d70c2463dfb825e8214056a909b" kind="function"><name>voltage</name></member>
+  </compound>
+  <compound refid="classUseCase1" kind="class"><name>UseCase1</name>
+    <member refid="classUseCase1_1a5da10bf08a63d888a4a3dce85061e6cc" kind="function"><name>someFunctionality</name></member>
+    <member refid="classUseCase1_1a81d103e2c8e3656c34300575dbc21d04" kind="function"><name>UseCase1</name></member>
+    <member refid="classBridge_1ae85081759b4abbc481e728c1421249af" kind="variable"><name>implementation</name></member>
+  </compound>
+  <compound refid="classUseCase2" kind="class"><name>UseCase2</name>
+    <member refid="classUseCase2_1a784ddb5212947250bc4e2c5c22c5807c" kind="function"><name>someFunctionality</name></member>
+    <member refid="classUseCase2_1ab48fcea5fad3cfce8e938cd0cd1bcf47" kind="function"><name>UseCase2</name></member>
+    <member refid="classBridge_1ae85081759b4abbc481e728c1421249af" kind="variable"><name>implementation</name></member>
   </compound>
   <compound refid="namespacecommon" kind="namespace"><name>common</name>
     <member refid="namespacecommon_1a951a6c058a6a852e5a3906c70f7b602a" kind="function"><name>DeleteTree</name></member>
@@ -197,6 +275,51 @@
     <member refid="facade__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
     <member refid="facade__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
   </compound>
+  <compound refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c" kind="file"><name>CMakeCCompilerId.c</name>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a07f8e5783674099cd7f5110e22a78cdb" kind="define"><name>C_DIALECT</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c" kind="file"><name>CMakeCCompilerId.c</name>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a07f8e5783674099cd7f5110e22a78cdb" kind="define"><name>C_DIALECT</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c" kind="file"><name>CMakeCCompilerId.c</name>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a07f8e5783674099cd7f5110e22a78cdb" kind="define"><name>C_DIALECT</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdC_2CMakeCCompilerId_8c_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
   <compound refid="graphs_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp" kind="file"><name>CMakeCXXCompilerId.cpp</name>
     <member refid="graphs_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
     <member refid="graphs_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
@@ -257,6 +380,51 @@
     <member refid="facade__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
     <member refid="facade__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
   </compound>
+  <compound refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp" kind="file"><name>CMakeCXXCompilerId.cpp</name>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a34cc889e576a1ae6c84ae9e0a851ba21" kind="define"><name>CXX_STD</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp" kind="file"><name>CMakeCXXCompilerId.cpp</name>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a34cc889e576a1ae6c84ae9e0a851ba21" kind="define"><name>CXX_STD</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="strategy__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp" kind="file"><name>CMakeCXXCompilerId.cpp</name>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a34cc889e576a1ae6c84ae9e0a851ba21" kind="define"><name>CXX_STD</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="bridge__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
   <compound refid="graph_8cc" kind="file"><name>graph.cc</name>
   </compound>
   <compound refid="graph_8h" kind="file"><name>graph.h</name>
@@ -283,6 +451,16 @@
   <compound refid="facade__pattern_2main_8cc" kind="file"><name>main.cc</name>
     <member refid="facade__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
   </compound>
+  <compound refid="adapter__pattern_2main_8cc" kind="file"><name>main.cc</name>
+    <member refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kind="typedef"><name>Cable</name></member>
+    <member refid="adapter__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="strategy__pattern_2main_8cc" kind="file"><name>main.cc</name>
+    <member refid="strategy__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="bridge__pattern_2main_8cc" kind="file"><name>main.cc</name>
+    <member refid="bridge__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
   <compound refid="graphs_2README_8md" kind="file"><name>README.md</name>
   </compound>
   <compound refid="hash__table_2README_8md" kind="file"><name>README.md</name>
@@ -292,6 +470,7 @@
   <compound refid="hash__table_8cc" kind="file"><name>hash_table.cc</name>
   </compound>
   <compound refid="hash__table_8h" kind="file"><name>hash_table.h</name>
+    <member refid="hash__table_8h_1a1a7f804e516802b924a215a955866c36" kind="define"><name>HASH_TABLE_H</name></member>
   </compound>
   <compound refid="hash__table__tests_8cc" kind="file"><name>hash_table_tests.cc</name>
     <member refid="hash__table__tests_8cc_1adf5fa5d1a8867dba73315c105f40b449" kind="function"><name>run_all_tests</name></member>
@@ -312,44 +491,74 @@
   </compound>
   <compound refid="md_hash_table_README" kind="page"><name>md_hash_table_README</name>
   </compound>
-  <compound refid="dir_6934ace96e58dde726088aa897e9e91c" kind="dir"><name>binary_search/CMakeFiles/3.19.6</name>
+  <compound refid="dir_c1be11db8bbcccc3d0666b0f18ac8f04" kind="dir"><name>adapter_pattern/CMakeFiles/3.19.6</name>
+  </compound>
+  <compound refid="dir_433c508fe1b6317dc8354de366c0aada" kind="dir"><name>bridge_pattern/CMakeFiles/3.19.6</name>
   </compound>
   <compound refid="dir_2cbe2ff91349df8e2302ea2bcec3d219" kind="dir"><name>facade_pattern/CMakeFiles/3.19.6</name>
   </compound>
+  <compound refid="dir_2d9509eede519877d81ae9f4b62a82e4" kind="dir"><name>graphs/CMakeFiles/3.19.6</name>
+  </compound>
+  <compound refid="dir_307930b647d439a32cdbb15f7cebea2b" kind="dir"><name>strategy_pattern/CMakeFiles/3.19.6</name>
+  </compound>
+  <compound refid="dir_6934ace96e58dde726088aa897e9e91c" kind="dir"><name>binary_search/CMakeFiles/3.19.6</name>
+  </compound>
   <compound refid="dir_d82a58875750639ae284ef5dbe7854a4" kind="dir"><name>hash_table/CMakeFiles/3.19.6</name>
   </compound>
-  <compound refid="dir_2d9509eede519877d81ae9f4b62a82e4" kind="dir"><name>graphs/CMakeFiles/3.19.6</name>
+  <compound refid="dir_43e6a27845bc1bfccde7ddad1638857b" kind="dir"><name>adapter_pattern</name>
   </compound>
   <compound refid="dir_abc19379ece2c40947356788508cf0ae" kind="dir"><name>binary_search</name>
   </compound>
+  <compound refid="dir_526f1ccc34e7fc494a72c6c1bc170f71" kind="dir"><name>bridge_pattern</name>
+  </compound>
   <compound refid="dir_73a010b5221060d85192081ae6a1f1c0" kind="dir"><name>binary_search/CMakeFiles</name>
   </compound>
-  <compound refid="dir_57d66bee4d4f3480957d0af487bfe24f" kind="dir"><name>hash_table/CMakeFiles</name>
+  <compound refid="dir_f66fcb2bc6096125541f1796c21da40d" kind="dir"><name>bridge_pattern/CMakeFiles</name>
   </compound>
   <compound refid="dir_4a696a02c85362e8d2b75a584448e91b" kind="dir"><name>graphs/CMakeFiles</name>
   </compound>
   <compound refid="dir_27a4c4c1eb22ec381e97dab84a94f3bf" kind="dir"><name>facade_pattern/CMakeFiles</name>
   </compound>
-  <compound refid="dir_3faf9cca9081d23f1b1c7f9182a4136d" kind="dir"><name>hash_table/CMakeFiles/3.19.6/CompilerIdC</name>
+  <compound refid="dir_df579d63d731cd2266931efb4cc1521d" kind="dir"><name>strategy_pattern/CMakeFiles</name>
   </compound>
-  <compound refid="dir_09f0d3af731f7b448e7f127c9199237c" kind="dir"><name>graphs/CMakeFiles/3.19.6/CompilerIdC</name>
+  <compound refid="dir_40bf4e43b62c480ac8a134273b72403f" kind="dir"><name>adapter_pattern/CMakeFiles</name>
+  </compound>
+  <compound refid="dir_57d66bee4d4f3480957d0af487bfe24f" kind="dir"><name>hash_table/CMakeFiles</name>
   </compound>
   <compound refid="dir_c74494e64bfbb23ff1536dbe84dc19a9" kind="dir"><name>facade_pattern/CMakeFiles/3.19.6/CompilerIdC</name>
   </compound>
   <compound refid="dir_89c55f00b491cf7576c457a4b6e6e899" kind="dir"><name>binary_search/CMakeFiles/3.19.6/CompilerIdC</name>
   </compound>
-  <compound refid="dir_cabc1a046c18785b1eaf424366c5cd13" kind="dir"><name>binary_search/CMakeFiles/3.19.6/CompilerIdCXX</name>
+  <compound refid="dir_d391e7930e7eed4001d15809dbe915db" kind="dir"><name>adapter_pattern/CMakeFiles/3.19.6/CompilerIdC</name>
   </compound>
-  <compound refid="dir_4eac9497c8d192909d513db30ebd863a" kind="dir"><name>hash_table/CMakeFiles/3.19.6/CompilerIdCXX</name>
+  <compound refid="dir_843600f7962f0aaea4e1b07519a1e07b" kind="dir"><name>bridge_pattern/CMakeFiles/3.19.6/CompilerIdC</name>
+  </compound>
+  <compound refid="dir_3faf9cca9081d23f1b1c7f9182a4136d" kind="dir"><name>hash_table/CMakeFiles/3.19.6/CompilerIdC</name>
+  </compound>
+  <compound refid="dir_09f0d3af731f7b448e7f127c9199237c" kind="dir"><name>graphs/CMakeFiles/3.19.6/CompilerIdC</name>
+  </compound>
+  <compound refid="dir_5c48e45415cba97d5ee8dbc2664d5912" kind="dir"><name>strategy_pattern/CMakeFiles/3.19.6/CompilerIdC</name>
+  </compound>
+  <compound refid="dir_dce506a75698751690d82ade847d547f" kind="dir"><name>bridge_pattern/CMakeFiles/3.19.6/CompilerIdCXX</name>
+  </compound>
+  <compound refid="dir_a185ee2ad9dd30be518caa0921a35edf" kind="dir"><name>graphs/CMakeFiles/3.19.6/CompilerIdCXX</name>
+  </compound>
+  <compound refid="dir_b54461568f5fef6c0fa73034d219b601" kind="dir"><name>adapter_pattern/CMakeFiles/3.19.6/CompilerIdCXX</name>
+  </compound>
+  <compound refid="dir_7073b480d76faab98a03912c00c69015" kind="dir"><name>strategy_pattern/CMakeFiles/3.19.6/CompilerIdCXX</name>
   </compound>
   <compound refid="dir_2c5a4b424e409a6ed03695503f015a1e" kind="dir"><name>facade_pattern/CMakeFiles/3.19.6/CompilerIdCXX</name>
   </compound>
-  <compound refid="dir_a185ee2ad9dd30be518caa0921a35edf" kind="dir"><name>graphs/CMakeFiles/3.19.6/CompilerIdCXX</name>
+  <compound refid="dir_4eac9497c8d192909d513db30ebd863a" kind="dir"><name>hash_table/CMakeFiles/3.19.6/CompilerIdCXX</name>
+  </compound>
+  <compound refid="dir_cabc1a046c18785b1eaf424366c5cd13" kind="dir"><name>binary_search/CMakeFiles/3.19.6/CompilerIdCXX</name>
   </compound>
   <compound refid="dir_20b3167d92655ca683499897abf54bd4" kind="dir"><name>facade_pattern</name>
   </compound>
   <compound refid="dir_014563f092b9a36e69e485d819dd177d" kind="dir"><name>graphs</name>
   </compound>
   <compound refid="dir_8ecf5c15d2c7d32b6d4e31b44914cfe6" kind="dir"><name>hash_table</name>
+  </compound>
+  <compound refid="dir_7d04c935990d65e9b80ef1d5e5b6accf" kind="dir"><name>strategy_pattern</name>
   </compound>
 </doxygenindex>

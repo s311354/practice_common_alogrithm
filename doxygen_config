@@ -867,6 +867,9 @@ INPUT                  = ./graphs \
                          ./hash_table \
                          ./binary_search \
                          ./facade_pattern \
+                         ./adapter_pattern \
+                         ./strategy_pattern \
+                         ./bridge_pattern \
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
@@ -2532,7 +2535,7 @@ DOTFILE_DIRS           =
 # contain msc files that are included in the documentation (see the \mscfile
 # command).
 
-MSCFILE_DIRS           =
+MSCFILE_DIRS           =  .\mscfile
 
 # The DIAFILE_DIRS tag can be used to specify one or more directories that
 # contain dia files that are included in the documentation (see the \diafile

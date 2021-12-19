@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classContext" kind="class" language="C++" prot="public">
+    <compoundname>Context</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classContext_1a15fc700dafa25dcbdba79a30ab225136" prot="private" static="no" mutable="no">
+        <type><ref refid="classStrategy" kindref="compound">Strategy</ref> *</type>
+        <definition>Strategy* Context::strategy</definition>
+        <argsstring></argsstring>
+        <name>strategy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strategy_pattern/main.cc" line="82" column="14" bodyfile="strategy_pattern/main.cc" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classContext_1af3882694631333a50f562e409d895bf6" compoundref="strategy__pattern_2main_8cc" startline="76" endline="79">contextInterface</referencedby>
+        <referencedby refid="classContext_1a2d34e4556448e40693f61d15e091b604" compoundref="strategy__pattern_2main_8cc" startline="71" endline="74">~Context</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classContext_1acbfce703bea1aa0d23cceb9942268ec6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Context::Context</definition>
+        <argsstring>(Strategy *const s)</argsstring>
+        <name>Context</name>
+        <param>
+          <type><ref refid="classStrategy" kindref="compound">Strategy</ref> *const</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strategy_pattern/main.cc" line="69" column="5" bodyfile="strategy_pattern/main.cc" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classContext_1af3882694631333a50f562e409d895bf6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Context::contextInterface</definition>
+        <argsstring>()</argsstring>
+        <name>contextInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strategy_pattern/main.cc" line="76" column="10" bodyfile="strategy_pattern/main.cc" bodystart="76" bodyend="79"/>
+        <references refid="classStrategy_1a8c773b3212e91135c0d6365113ddfee2">Strategy::algorithmInterface</references>
+        <references refid="classContext_1a15fc700dafa25dcbdba79a30ab225136" compoundref="strategy__pattern_2main_8cc" startline="82">strategy</references>
+        <referencedby refid="strategy__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="strategy__pattern_2main_8cc" startline="86" endline="99">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classContext_1a2d34e4556448e40693f61d15e091b604" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Context::~Context</definition>
+        <argsstring>()</argsstring>
+        <name>~Context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strategy_pattern/main.cc" line="71" column="5" bodyfile="strategy_pattern/main.cc" bodystart="71" bodyend="74"/>
+        <references refid="classContext_1a15fc700dafa25dcbdba79a30ab225136" compoundref="strategy__pattern_2main_8cc" startline="82">strategy</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Context</label>
+        <link refid="classContext"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-strategy</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Strategy</label>
+        <link refid="classStrategy"/>
+      </node>
+    </collaborationgraph>
+    <location file="strategy_pattern/main.cc" line="66" column="1" bodyfile="strategy_pattern/main.cc" bodystart="67" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classContext_1acbfce703bea1aa0d23cceb9942268ec6" prot="public" virt="non-virtual"><scope>Context</scope><name>Context</name></member>
+      <member refid="classContext_1af3882694631333a50f562e409d895bf6" prot="public" virt="non-virtual"><scope>Context</scope><name>contextInterface</name></member>
+      <member refid="classContext_1a15fc700dafa25dcbdba79a30ab225136" prot="private" virt="non-virtual"><scope>Context</scope><name>strategy</name></member>
+      <member refid="classContext_1a2d34e4556448e40693f61d15e091b604" prot="public" virt="non-virtual"><scope>Context</scope><name>~Context</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

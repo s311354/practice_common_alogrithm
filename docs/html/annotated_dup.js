@@ -1,9 +1,26 @@
 var annotated_dup =
 [
     [ "common", "namespacecommon.html", null ],
+    [ "AbstractInterface", "classAbstractInterface.html", "classAbstractInterface" ],
+    [ "Adapter", "classAdapter.html", "classAdapter" ],
+    [ "Bridge", "classBridge.html", "classBridge" ],
+    [ "ConcreteImplementation1", "classConcreteImplementation1.html", "classConcreteImplementation1" ],
+    [ "ConcreteImplementation2", "classConcreteImplementation2.html", "classConcreteImplementation2" ],
+    [ "ConcreteStrategyA", "classConcreteStrategyA.html", "classConcreteStrategyA" ],
+    [ "ConcreteStrategyB", "classConcreteStrategyB.html", "classConcreteStrategyB" ],
+    [ "ConcreteStrategyC", "classConcreteStrategyC.html", "classConcreteStrategyC" ],
+    [ "Context", "classContext.html", "classContext" ],
+    [ "ElectricKettle", "classElectricKettle.html", "classElectricKettle" ],
+    [ "EuropeanSocketInterface", "classEuropeanSocketInterface.html", "classEuropeanSocketInterface" ],
     [ "Facade", "classFacade.html", "classFacade" ],
+    [ "ImplementationInterface", "classImplementationInterface.html", "classImplementationInterface" ],
+    [ "Socket", "classSocket.html", "classSocket" ],
+    [ "Strategy", "classStrategy.html", "classStrategy" ],
     [ "SubSystemFour", "classSubSystemFour.html", "classSubSystemFour" ],
     [ "SubSystemOne", "classSubSystemOne.html", "classSubSystemOne" ],
     [ "SubSystemThree", "classSubSystemThree.html", "classSubSystemThree" ],
-    [ "SubSystemTwo", "classSubSystemTwo.html", "classSubSystemTwo" ]
+    [ "SubSystemTwo", "classSubSystemTwo.html", "classSubSystemTwo" ],
+    [ "USASocketInterface", "classUSASocketInterface.html", "classUSASocketInterface" ],
+    [ "UseCase1", "classUseCase1.html", "classUseCase1" ],
+    [ "UseCase2", "classUseCase2.html", "classUseCase2" ]
 ];

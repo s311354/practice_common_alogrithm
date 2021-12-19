@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_b54461568f5fef6c0fa73034d219b601" kind="dir">
+    <compoundname>adapter_pattern/CMakeFiles/3.19.6/CompilerIdCXX</compoundname>
+    <innerfile refid="adapter__pattern_2CMakeFiles_23_819_86_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp">CMakeCXXCompilerId.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="adapter_pattern/CMakeFiles/3.19.6/CompilerIdCXX/"/>
+  </compounddef>
+</doxygen>

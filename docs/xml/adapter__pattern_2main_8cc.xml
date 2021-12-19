@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="adapter__pattern_2main_8cc" kind="file" language="C++">
+    <compoundname>main.cc</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>adapter_pattern/main.cc</label>
+        <link refid="adapter__pattern_2main_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classAdapter" prot="public">Adapter</innerclass>
+    <innerclass refid="classElectricKettle" prot="public">ElectricKettle</innerclass>
+    <innerclass refid="classEuropeanSocketInterface" prot="public">EuropeanSocketInterface</innerclass>
+    <innerclass refid="classSocket" prot="public">Socket</innerclass>
+    <innerclass refid="classUSASocketInterface" prot="public">USASocketInterface</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int Cable</definition>
+        <argsstring></argsstring>
+        <name>Cable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adapter_pattern/main.cc" line="19" column="13" bodyfile="adapter_pattern/main.cc" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="adapter__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adapter_pattern/main.cc" line="95" column="5" bodyfile="adapter_pattern/main.cc" bodystart="95" bodyend="109"/>
+        <references refid="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" compoundref="adapter__pattern_2main_8cc" startline="80" endline="92">ElectricKettle::boil</references>
+        <references refid="classAdapter_1a27efd1e25e0ab658e658b7bf22cf945f" compoundref="adapter__pattern_2main_8cc" startline="59" endline="62">Adapter::plugIn</references>
+        <references refid="classElectricKettle_1a18120723b13f3dfb1eb7f2899fd23a31" compoundref="adapter__pattern_2main_8cc" startline="75" endline="78">ElectricKettle::plugIn</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Example<sp/>of<sp/>`adapter&apos;<sp/>design<sp/>pattern</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2011<sp/>Radek<sp/>Pazdera</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program.<sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref>;<sp/></highlight><highlight class="comment">//<sp/>wire<sp/>with<sp/>electrons<sp/>:-)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Adaptee<sp/>(source)<sp/>interface<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classEuropeanSocketInterface" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEuropeanSocketInterface" kindref="compound">EuropeanSocketInterface</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="classEuropeanSocketInterface_1aa4b6b6718a501eeaa7c9dcd7f7906ac4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classEuropeanSocketInterface_1aa4b6b6718a501eeaa7c9dcd7f7906ac4" kindref="member">voltage</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classEuropeanSocketInterface_1aed3dba5a3ded5b1d966a75bdb32fd95b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref><sp/><ref refid="classEuropeanSocketInterface_1aed3dba5a3ded5b1d966a75bdb32fd95b" kindref="member">live</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28" refid="classEuropeanSocketInterface_1a2a2737b5a6efca9a137ce3aa80ef275c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref><sp/><ref refid="classEuropeanSocketInterface_1a2a2737b5a6efca9a137ce3aa80ef275c" kindref="member">neutral</ref>()<sp/>=<sp/>0;<sp/></highlight></codeline>
+<codeline lineno="29" refid="classEuropeanSocketInterface_1a29f6a7f4736b8ae17464d7136d015714" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref><sp/><ref refid="classEuropeanSocketInterface_1a29f6a7f4736b8ae17464d7136d015714" kindref="member">earth</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Adaptee<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classSocket" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSocket" kindref="compound">Socket</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classEuropeanSocketInterface" kindref="compound">EuropeanSocketInterface</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36" refid="classSocket_1ae54bbcb330bbe024f30da2cbbb646308" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSocket_1ae54bbcb330bbe024f30da2cbbb646308" kindref="member">voltage</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>230;<sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classSocket_1a867fd5490666f718d7f4ad061fa26d69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref><sp/><ref refid="classSocket_1a867fd5490666f718d7f4ad061fa26d69" kindref="member">live</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;<sp/>}</highlight></codeline>
+<codeline lineno="39" refid="classSocket_1ab7d817d17dbc1f8c6af528eba325c89d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref><sp/><ref refid="classSocket_1ab7d817d17dbc1f8c6af528eba325c89d" kindref="member">neutral</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;<sp/>}</highlight></codeline>
+<codeline lineno="40" refid="classSocket_1a3d8053781e0e897d98546a9aece7aff5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref><sp/><ref refid="classSocket_1a3d8053781e0e897d98546a9aece7aff5" kindref="member">earth</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Target<sp/>interface<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classUSASocketInterface" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classUSASocketInterface" kindref="compound">USASocketInterface</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47" refid="classUSASocketInterface_1abd8b5d70c2463dfb825e8214056a909b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUSASocketInterface_1abd8b5d70c2463dfb825e8214056a909b" kindref="member">voltage</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classUSASocketInterface_1a87866dcb9559bbe6a7c4cf49c9ced957" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref><sp/><ref refid="classUSASocketInterface_1a87866dcb9559bbe6a7c4cf49c9ced957" kindref="member">live</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50" refid="classUSASocketInterface_1acbee21d1d6dc45f0a18d91985c350efa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref><sp/><ref refid="classUSASocketInterface_1acbee21d1d6dc45f0a18d91985c350efa" kindref="member">neutral</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>Adapter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classAdapter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAdapter" kindref="compound">Adapter</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUSASocketInterface" kindref="compound">USASocketInterface</ref></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56" refid="classAdapter_1aff5eb924131838a2fe5decac1585170f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEuropeanSocketInterface" kindref="compound">EuropeanSocketInterface</ref>*<sp/><ref refid="classAdapter_1aff5eb924131838a2fe5decac1585170f" kindref="member">socket</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59" refid="classAdapter_1a27efd1e25e0ab658e658b7bf22cf945f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAdapter_1a27efd1e25e0ab658e658b7bf22cf945f" kindref="member">plugIn</ref>(<ref refid="classEuropeanSocketInterface" kindref="compound">EuropeanSocketInterface</ref>*<sp/>outlet)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAdapter_1aff5eb924131838a2fe5decac1585170f" kindref="member">socket</ref><sp/>=<sp/>outlet;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classAdapter_1a5037c7c53d9efe4ad8996c5237719a8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classAdapter_1a5037c7c53d9efe4ad8996c5237719a8f" kindref="member">voltage</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>110;<sp/>}</highlight></codeline>
+<codeline lineno="65" refid="classAdapter_1a2b830be3ac68baa0fa8271d6377b7546" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref><sp/><ref refid="classAdapter_1a2b830be3ac68baa0fa8271d6377b7546" kindref="member">live</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classAdapter_1aff5eb924131838a2fe5decac1585170f" kindref="member">socket</ref>-&gt;<ref refid="classEuropeanSocketInterface_1aed3dba5a3ded5b1d966a75bdb32fd95b" kindref="member">live</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="66" refid="classAdapter_1affff909ff6906861039d208fe3b95cac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref><sp/><ref refid="classAdapter_1affff909ff6906861039d208fe3b95cac" kindref="member">neutral</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classAdapter_1aff5eb924131838a2fe5decac1585170f" kindref="member">socket</ref>-&gt;<ref refid="classEuropeanSocketInterface_1a2a2737b5a6efca9a137ce3aa80ef275c" kindref="member">neutral</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Client<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classElectricKettle" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classElectricKettle" kindref="compound">ElectricKettle</ref></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72" refid="classElectricKettle_1a44663e0d5444e497a61ae2e9d0b14105" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUSASocketInterface" kindref="compound">USASocketInterface</ref>*<sp/><ref refid="classElectricKettle_1a44663e0d5444e497a61ae2e9d0b14105" kindref="member">power</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75" refid="classElectricKettle_1a18120723b13f3dfb1eb7f2899fd23a31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classElectricKettle_1a18120723b13f3dfb1eb7f2899fd23a31" kindref="member">plugIn</ref>(<ref refid="classUSASocketInterface" kindref="compound">USASocketInterface</ref>*<sp/>supply)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classElectricKettle_1a44663e0d5444e497a61ae2e9d0b14105" kindref="member">power</ref><sp/>=<sp/>supply;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" kindref="member">boil</ref>()</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classElectricKettle_1a44663e0d5444e497a61ae2e9d0b14105" kindref="member">power</ref>-&gt;<ref refid="classUSASocketInterface_1abd8b5d70c2463dfb825e8214056a909b" kindref="member">voltage</ref>()<sp/>&gt;<sp/>110)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Kettle<sp/>is<sp/>on<sp/>fire!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classElectricKettle_1a44663e0d5444e497a61ae2e9d0b14105" kindref="member">power</ref>-&gt;<ref refid="classUSASocketInterface_1a87866dcb9559bbe6a7c4cf49c9ced957" kindref="member">live</ref>()<sp/>==<sp/>1<sp/>&amp;&amp;<sp/><ref refid="classElectricKettle_1a44663e0d5444e497a61ae2e9d0b14105" kindref="member">power</ref>-&gt;<ref refid="classUSASocketInterface_1acbee21d1d6dc45f0a18d91985c350efa" kindref="member">neutral</ref>()<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Coffee<sp/>time!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="adapter__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="graphs_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSocket" kindref="compound">Socket</ref>*<sp/>socket<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classSocket" kindref="compound">Socket</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAdapter" kindref="compound">Adapter</ref>*<sp/>adapter<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classAdapter" kindref="compound">Adapter</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classElectricKettle" kindref="compound">ElectricKettle</ref>*<sp/>kettle<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classElectricKettle" kindref="compound">ElectricKettle</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Pluging<sp/>in.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>adapter-&gt;<ref refid="classAdapter_1a27efd1e25e0ab658e658b7bf22cf945f" kindref="member">plugIn</ref>(socket);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>kettle-&gt;<ref refid="classElectricKettle_1a18120723b13f3dfb1eb7f2899fd23a31" kindref="member">plugIn</ref>(adapter);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Having<sp/>coffee<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>kettle-&gt;<ref refid="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" kindref="member">boil</ref>();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="adapter_pattern/main.cc"/>
+  </compounddef>
+</doxygen>

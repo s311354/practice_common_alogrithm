@@ -28,10 +28,10 @@
         <label>graphs/graph.cc</label>
         <link refid="graph_8cc"/>
       </node>
-      <node id="4">
+      <node id="5">
         <label>graphs/graph_directed.h</label>
         <link refid="graph__directed_8h"/>
-        <childnode refid="5" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
@@ -66,7 +66,7 @@
         <label>graphs/graph_representation.cc</label>
         <link refid="graph__representation_8cc"/>
       </node>
-      <node id="5">
+      <node id="4">
         <label>graphs/graph_directed.cc</label>
         <link refid="graph__directed_8cc"/>
       </node>

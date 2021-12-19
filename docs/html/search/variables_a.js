@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['value_5f_232',['value_',['../classcommon_1_1HashObject.html#a52042a3ba1f11399740f4906de8edfd1',1,'common::HashObject']]],
-  ['vertices_233',['vertices',['../classcommon_1_1Graph.html#a764fd26b1f752fe3423de6e39f1ad21b',1,'common::Graph::vertices()'],['../classcommon_1_1GraphRepresentation.html#aed22c26c2bd7c5b90d7f178e5cc82954',1,'common::GraphRepresentation::vertices()']]]
+  ['three_307',['three',['../classFacade.html#a07f1cf53d8adcc286a917d1e84a3bc29',1,'Facade']]],
+  ['two_308',['two',['../classFacade.html#af9d6b10f7ee6f4c590284ae2babfb489',1,'Facade']]],
+  ['type_309',['type',['../classcommon_1_1GraphRepresentation.html#adef161f4e49d1234da78baf0c67f963d',1,'common::GraphRepresentation']]]
 ];

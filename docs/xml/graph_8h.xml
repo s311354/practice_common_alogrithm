@@ -5,8 +5,8 @@
     <includes refid="graph__representation_8h" local="yes">./graph_representation.h</includes>
     <includes local="no">map</includes>
     <includedby refid="graph_8cc" local="yes">graphs/graph.cc</includedby>
-    <includedby refid="graph__directed_8h" local="yes">graphs/graph_directed.h</includedby>
     <includedby refid="graph__directed_8cc" local="yes">graphs/graph_directed.cc</includedby>
+    <includedby refid="graph__directed_8h" local="yes">graphs/graph_directed.h</includedby>
     <includedby refid="graphs_2main_8cc" local="yes">graphs/main.cc</includedby>
     <incdepgraph>
       <node id="2">
@@ -40,10 +40,10 @@
         <label>graphs/graph.cc</label>
         <link refid="graph_8cc"/>
       </node>
-      <node id="3">
+      <node id="4">
         <label>graphs/graph_directed.h</label>
         <link refid="graph__directed_8h"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
@@ -64,7 +64,7 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="4">
+      <node id="3">
         <label>graphs/graph_directed.cc</label>
         <link refid="graph__directed_8cc"/>
       </node>

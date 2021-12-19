@@ -1,4 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classcommon_1_1Graph.html" title=" " alt="" coords="5,5,120,32"/>
-<area shape="rect" id="node2" href="$classcommon_1_1GraphDirected.html" title=" " alt="" coords="168,5,332,32"/>
+<area shape="rect" id="node1" href="$classAbstractInterface.html" title=" " alt="" coords="5,31,128,57"/>
+<area shape="rect" id="node2" href="$classBridge.html" title=" " alt="" coords="176,31,235,57"/>
+<area shape="rect" id="node3" href="$classUseCase1.html" title=" " alt="" coords="283,5,367,32"/>
+<area shape="rect" id="node4" href="$classUseCase2.html" title=" " alt="" coords="283,56,367,83"/>
 </map>

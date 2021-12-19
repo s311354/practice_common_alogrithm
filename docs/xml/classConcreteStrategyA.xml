@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classConcreteStrategyA" kind="class" language="C++" prot="public">
+    <compoundname>ConcreteStrategyA</compoundname>
+    <basecompoundref refid="classStrategy" prot="public" virt="non-virtual">Strategy</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classConcreteStrategyA_1a33327cefdd32b66809ff952d5ba1ac39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ConcreteStrategyA::algorithmInterface</definition>
+        <argsstring>()</argsstring>
+        <name>algorithmInterface</name>
+        <reimplements refid="classStrategy_1a8c773b3212e91135c0d6365113ddfee2">algorithmInterface</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strategy_pattern/main.cc" line="29" column="10" bodyfile="strategy_pattern/main.cc" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classConcreteStrategyA_1a16c43e1ab5cc68408fb09f4b51e81cf4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ConcreteStrategyA::~ConcreteStrategyA</definition>
+        <argsstring>()</argsstring>
+        <name>~ConcreteStrategyA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strategy_pattern/main.cc" line="25" column="9" bodyfile="strategy_pattern/main.cc" bodystart="25" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ConcreteStrategyA</label>
+        <link refid="classConcreteStrategyA"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Strategy</label>
+        <link refid="classStrategy"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ConcreteStrategyA</label>
+        <link refid="classConcreteStrategyA"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Strategy</label>
+        <link refid="classStrategy"/>
+      </node>
+    </collaborationgraph>
+    <location file="strategy_pattern/main.cc" line="22" column="1" bodyfile="strategy_pattern/main.cc" bodystart="23" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classConcreteStrategyA_1a33327cefdd32b66809ff952d5ba1ac39" prot="public" virt="virtual"><scope>ConcreteStrategyA</scope><name>algorithmInterface</name></member>
+      <member refid="classConcreteStrategyA_1a16c43e1ab5cc68408fb09f4b51e81cf4" prot="public" virt="non-virtual"><scope>ConcreteStrategyA</scope><name>~ConcreteStrategyA</name></member>
+      <member refid="classStrategy_1a103008479cf7cc00a51e811c5a2a402f" prot="public" virt="virtual"><scope>ConcreteStrategyA</scope><name>~Strategy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

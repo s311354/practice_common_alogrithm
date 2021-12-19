@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classElectricKettle" kind="class" language="C++" prot="public">
+    <compoundname>ElectricKettle</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classElectricKettle_1a44663e0d5444e497a61ae2e9d0b14105" prot="private" static="no" mutable="no">
+        <type><ref refid="classUSASocketInterface" kindref="compound">USASocketInterface</ref> *</type>
+        <definition>USASocketInterface* ElectricKettle::power</definition>
+        <argsstring></argsstring>
+        <name>power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adapter_pattern/main.cc" line="72" column="24" bodyfile="adapter_pattern/main.cc" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" compoundref="adapter__pattern_2main_8cc" startline="80" endline="92">boil</referencedby>
+        <referencedby refid="classElectricKettle_1a18120723b13f3dfb1eb7f2899fd23a31" compoundref="adapter__pattern_2main_8cc" startline="75" endline="78">plugIn</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ElectricKettle::boil</definition>
+        <argsstring>()</argsstring>
+        <name>boil</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adapter_pattern/main.cc" line="80" column="14" bodyfile="adapter_pattern/main.cc" bodystart="80" bodyend="92"/>
+        <references refid="classUSASocketInterface_1a87866dcb9559bbe6a7c4cf49c9ced957">USASocketInterface::live</references>
+        <references refid="classUSASocketInterface_1acbee21d1d6dc45f0a18d91985c350efa">USASocketInterface::neutral</references>
+        <references refid="classElectricKettle_1a44663e0d5444e497a61ae2e9d0b14105" compoundref="adapter__pattern_2main_8cc" startline="72">power</references>
+        <references refid="classUSASocketInterface_1abd8b5d70c2463dfb825e8214056a909b">USASocketInterface::voltage</references>
+        <referencedby refid="adapter__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="adapter__pattern_2main_8cc" startline="95" endline="109">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classElectricKettle_1a18120723b13f3dfb1eb7f2899fd23a31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ElectricKettle::plugIn</definition>
+        <argsstring>(USASocketInterface *supply)</argsstring>
+        <name>plugIn</name>
+        <param>
+          <type><ref refid="classUSASocketInterface" kindref="compound">USASocketInterface</ref> *</type>
+          <declname>supply</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="adapter_pattern/main.cc" line="75" column="14" bodyfile="adapter_pattern/main.cc" bodystart="75" bodyend="78"/>
+        <references refid="classElectricKettle_1a44663e0d5444e497a61ae2e9d0b14105" compoundref="adapter__pattern_2main_8cc" startline="72">power</references>
+        <referencedby refid="adapter__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="adapter__pattern_2main_8cc" startline="95" endline="109">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ElectricKettle</label>
+        <link refid="classElectricKettle"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-power</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>USASocketInterface</label>
+        <link refid="classUSASocketInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="adapter_pattern/main.cc" line="70" column="1" bodyfile="adapter_pattern/main.cc" bodystart="71" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" prot="public" virt="non-virtual"><scope>ElectricKettle</scope><name>boil</name></member>
+      <member refid="classElectricKettle_1a18120723b13f3dfb1eb7f2899fd23a31" prot="public" virt="non-virtual"><scope>ElectricKettle</scope><name>plugIn</name></member>
+      <member refid="classElectricKettle_1a44663e0d5444e497a61ae2e9d0b14105" prot="private" virt="non-virtual"><scope>ElectricKettle</scope><name>power</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
