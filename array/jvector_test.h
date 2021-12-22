@@ -9,8 +9,8 @@ private:
     
 
 public:
-    JvectorTest();
-    virtual ~JvectorTest();
+    JvectorTest() {};
+    virtual ~JvectorTest() {};
 
     void RunTests() const;
     void TestSize() const;

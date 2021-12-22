@@ -6,16 +6,16 @@ namespace common {
 
 // Unit test
 void JvectorTest::RunTests() const {
-    TestSize();
-    TestCapacity();
-    TestIsEmpty();
-    TestGetValueAt();
-    TestPop();
-    TestInsert();
-    TestPrepend();
-    TestDelete();
-    TestRemove();
-    TestFind();
+     TestSize();
+     TestCapacity();
+     TestIsEmpty();
+     TestGetValueAt();
+     TestPop();
+     TestInsert();
+     TestPrepend();
+     TestDelete();
+     TestRemove();
+     TestFind();
 }
 
 void JvectorTest::TestSize() const {
@@ -29,6 +29,7 @@ void JvectorTest::TestSize() const {
         tester.Push(i+1);
     }
 
+    tester.DebugString();
     assert(tester.GetSize() == items_to_add);
 }
 

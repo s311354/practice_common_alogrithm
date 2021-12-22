@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector.h
+iostream
+-
+
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector_test.cc
+./jvector_test.h
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector_test.h
+./jvector.h
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector.h
+iostream
+-
+
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector_test.h
+

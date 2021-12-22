@@ -11,12 +11,10 @@ The corresponding result in this simple example code:
 5: New Mexico: Santa Fe
 6: Florida: Tallahassee
 7: <NULL>: 
------------------------------
 
 0: <NULL>: 
 1: <Dummy>: 
 2: <NULL>: 
------------------------------
 
 The capital of Washington is Olympia
 The capital of Florida is Tallahassee

@@ -16,6 +16,7 @@ private:
     // The number of items currently stored
     int size;
     // The storage array where ints are stored
+    //  The uses of smart pointer unique_ptr include providing exception safety for dynamically allocated memory, passing ownership of dynamically allocated memory to a function, and returning dynamically allocated memory from a function.
     std::unique_ptr<int []> data;
     // Determines the array size (in terms of power of growth factor)
     int DeterminesCapacity(int capacity) const;
@@ -29,7 +30,8 @@ private:
 public:
     Jvector(int capacity);
     Jvector(const Jvector &other) {};
-    virtual ~Jvector();
+    // A class that declares or inherits a virtual function is called a polymorphic class.
+    virtual ~Jvector() {};
 
     // Returns the number of items stored in the vector
     int GetSize() const;

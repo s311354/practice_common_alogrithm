@@ -4,11 +4,17 @@
 namespace common {
     
 
-Jvector::Jvector(int capacity) : size(0) {
+Jvector::Jvector(int capacity) : size(0), capacity(kMincapacity) {
     if (capacity < 1) {
         std::cout << "Cannot make vector of that size" << std::endl;
         exit(EXIT_FAILURE);
     }
+
+    int true_capacity = DeterminesCapacity(capacity);
+
+    capacity = true_capacity;
+    // Unique pointer - Manages the storage of a pointer, providing a limited garbage-collection facility, with little to no overhead over built-in pointers. These objexts have the ability of taking ownership of a pointer: once they take ownership they manage the pointed object by becoming responsible for its deletion at some point.
+    data = std::unique_ptr<int[]>(new int[true_capacity]);
 }
 
 int Jvector::DeterminesCapacity(int capacity) const {
@@ -22,11 +28,11 @@ int Jvector::DeterminesCapacity(int capacity) const {
 }
 
 void Jvector::ResizeForSize(int candidate_size) {
-    if (size < candidate_size) {
+    if (size < candidate_size) { // grow
         if (size == capacity) {
             IncreaseSize();
         }
-    } else if (size > candidate_size) {
+    } else if (size > candidate_size) { // shrink
         if (size < capacity / kShrinkFactor) {
             DecreasesSize();
         }
