@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/src/graph.cc
+./graph.h
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/src/graph.h
+
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/src/graph.h
+./graph_representation.h
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/src/graph_representation.h
+map
+-
+
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/src/graph_directed.cc
+./graph.h
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/src/graph.h
+./graph_directed.h
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/src/graph_directed.h
+
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/src/graph_directed.h
+./graph.h
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/src/graph.h
+
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/src/graph_representation.cc
+./graph_representation.h
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/src/graph_representation.h
+iostream
+-
+queue
+-
+stack
+-
+
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/src/graph_representation.h
+string
+-
+vector
+-
+

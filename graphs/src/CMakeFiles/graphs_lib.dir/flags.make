@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/src
 
-CXX_FLAGS =  -D_GLIBCXX_DEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk   -std=c++11 -Werror
+CXX_FLAGS =  -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk   -std=c++11 -Werror -std=c++11 -Werror
 

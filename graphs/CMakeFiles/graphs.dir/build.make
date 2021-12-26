@@ -89,62 +89,18 @@ CMakeFiles/graphs.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphs.dir/main.cc.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/main.cc -o CMakeFiles/graphs.dir/main.cc.s
 
-CMakeFiles/graphs.dir/graph.cc.o: CMakeFiles/graphs.dir/flags.make
-CMakeFiles/graphs.dir/graph.cc.o: graph.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graphs.dir/graph.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphs.dir/graph.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/graph.cc
-
-CMakeFiles/graphs.dir/graph.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphs.dir/graph.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/graph.cc > CMakeFiles/graphs.dir/graph.cc.i
-
-CMakeFiles/graphs.dir/graph.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphs.dir/graph.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/graph.cc -o CMakeFiles/graphs.dir/graph.cc.s
-
-CMakeFiles/graphs.dir/graph_directed.cc.o: CMakeFiles/graphs.dir/flags.make
-CMakeFiles/graphs.dir/graph_directed.cc.o: graph_directed.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graphs.dir/graph_directed.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphs.dir/graph_directed.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/graph_directed.cc
-
-CMakeFiles/graphs.dir/graph_directed.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphs.dir/graph_directed.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/graph_directed.cc > CMakeFiles/graphs.dir/graph_directed.cc.i
-
-CMakeFiles/graphs.dir/graph_directed.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphs.dir/graph_directed.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/graph_directed.cc -o CMakeFiles/graphs.dir/graph_directed.cc.s
-
-CMakeFiles/graphs.dir/graph_representation.cc.o: CMakeFiles/graphs.dir/flags.make
-CMakeFiles/graphs.dir/graph_representation.cc.o: graph_representation.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphs.dir/graph_representation.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphs.dir/graph_representation.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/graph_representation.cc
-
-CMakeFiles/graphs.dir/graph_representation.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphs.dir/graph_representation.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/graph_representation.cc > CMakeFiles/graphs.dir/graph_representation.cc.i
-
-CMakeFiles/graphs.dir/graph_representation.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphs.dir/graph_representation.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/graph_representation.cc -o CMakeFiles/graphs.dir/graph_representation.cc.s
-
 # Object files for target graphs
 graphs_OBJECTS = \
-"CMakeFiles/graphs.dir/main.cc.o" \
-"CMakeFiles/graphs.dir/graph.cc.o" \
-"CMakeFiles/graphs.dir/graph_directed.cc.o" \
-"CMakeFiles/graphs.dir/graph_representation.cc.o"
+"CMakeFiles/graphs.dir/main.cc.o"
 
 # External object files for target graphs
 graphs_EXTERNAL_OBJECTS =
 
 graphs: CMakeFiles/graphs.dir/main.cc.o
-graphs: CMakeFiles/graphs.dir/graph.cc.o
-graphs: CMakeFiles/graphs.dir/graph_directed.cc.o
-graphs: CMakeFiles/graphs.dir/graph_representation.cc.o
 graphs: CMakeFiles/graphs.dir/build.make
+graphs: src/libgraphs_lib.a
 graphs: CMakeFiles/graphs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable graphs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable graphs"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

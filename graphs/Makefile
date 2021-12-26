@@ -142,86 +142,18 @@ graphs/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/build
 .PHONY : graphs/fast
 
-graph.o: graph.cc.o
+#=============================================================================
+# Target rules for targets named graphs_lib
 
-.PHONY : graph.o
+# Build rule for target.
+graphs_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graphs_lib
+.PHONY : graphs_lib
 
-# target to build an object file
-graph.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/graph.cc.o
-.PHONY : graph.cc.o
-
-graph.i: graph.cc.i
-
-.PHONY : graph.i
-
-# target to preprocess a source file
-graph.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/graph.cc.i
-.PHONY : graph.cc.i
-
-graph.s: graph.cc.s
-
-.PHONY : graph.s
-
-# target to generate assembly for a file
-graph.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/graph.cc.s
-.PHONY : graph.cc.s
-
-graph_directed.o: graph_directed.cc.o
-
-.PHONY : graph_directed.o
-
-# target to build an object file
-graph_directed.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/graph_directed.cc.o
-.PHONY : graph_directed.cc.o
-
-graph_directed.i: graph_directed.cc.i
-
-.PHONY : graph_directed.i
-
-# target to preprocess a source file
-graph_directed.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/graph_directed.cc.i
-.PHONY : graph_directed.cc.i
-
-graph_directed.s: graph_directed.cc.s
-
-.PHONY : graph_directed.s
-
-# target to generate assembly for a file
-graph_directed.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/graph_directed.cc.s
-.PHONY : graph_directed.cc.s
-
-graph_representation.o: graph_representation.cc.o
-
-.PHONY : graph_representation.o
-
-# target to build an object file
-graph_representation.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/graph_representation.cc.o
-.PHONY : graph_representation.cc.o
-
-graph_representation.i: graph_representation.cc.i
-
-.PHONY : graph_representation.i
-
-# target to preprocess a source file
-graph_representation.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/graph_representation.cc.i
-.PHONY : graph_representation.cc.i
-
-graph_representation.s: graph_representation.cc.s
-
-.PHONY : graph_representation.s
-
-# target to generate assembly for a file
-graph_representation.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/graph_representation.cc.s
-.PHONY : graph_representation.cc.s
+# fast build rule for target.
+graphs_lib/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/graphs_lib.dir/build.make src/CMakeFiles/graphs_lib.dir/build
+.PHONY : graphs_lib/fast
 
 main.o: main.cc.o
 
@@ -259,15 +191,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... graphs"
-	@echo "... graph.o"
-	@echo "... graph.i"
-	@echo "... graph.s"
-	@echo "... graph_directed.o"
-	@echo "... graph_directed.i"
-	@echo "... graph_directed.s"
-	@echo "... graph_representation.o"
-	@echo "... graph_representation.i"
-	@echo "... graph_representation.s"
+	@echo "... graphs_lib"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
