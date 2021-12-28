@@ -10,15 +10,17 @@ template <class T>
 class LinkedList
 {
 private:
-    ListElement<T> head;
+    ListElement<T> *head;
 
 public:
     //
     explicit LinkedList(): head(nullptr) {};
     virtual ~LinkedList();
-    LinkedList(const LinkedList &) {};    LinkedList &operator=(const LinkedList&) {}; 
+    LinkedList(const LinkedList &) {};
+    LinkedList &operator=(const LinkedList&) {};
+
     // Return the number of data element in list
-    void Size();
+    int Size();
     // Return value of front item
     const T Front();
     // Return value of end item
