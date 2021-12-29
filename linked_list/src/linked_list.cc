@@ -103,6 +103,7 @@ const T LinkedList<T>::PopBack() {
     auto* current = head;
     ListElement<T>* prev = nullptr;
 
+    // Pop Back
     while (current->GetNext()) {
         prev = current;
         current = current->GetNext();
@@ -119,6 +120,53 @@ const T LinkedList<T>::PopBack() {
     delete current;
 
     return value;
+}
+
+template <class T>
+bool LinkedList<T>::Empty() const {
+   return head == nullptr;
+}
+
+template <class T>
+const T& LinkedList<T>::ValueAt(int index) const {
+    auto * current = head;
+
+    for (int i = 0; i < index && current != nullptr; ++i) {
+        current = current->GetNext();
+    }
+
+    if(current == nullptr) {
+        std::cout << "Index out of bounds" << std::endl;
+        exit(EXIT_FAILURE);
+    }
+
+    return current->GetData();
+}
+
+template <class T>
+void LinkedList<T>::Insert(int index, T value) {
+    auto * current = head;
+    ListElement<T> * prev = nullptr;
+
+    for (int i = 0; i < index && current != nullptr; ++i) {
+        prev = current;
+        current = current->GetNext();
+    }
+
+    if(current == nullptr) {
+        std::cout << "Index out of bounds" << std::endl;
+        exit(EXIT_FAILURE);
+    }
+
+    auto * node = ListElement<T>(value);
+
+    if(current== nullptr) {
+        node->SetNext(head);
+        head = node;
+    } else{
+        node->SetNext(prev->GetNext());
+        prev->SetNext(node);
+    }
 }
 
 

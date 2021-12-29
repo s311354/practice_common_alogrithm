@@ -36,7 +36,7 @@ public:
     // Return true if list is empty
     bool Empty() const;
     // Return the value of the nth item, indexed starting at 0
-    const T&ValueAt(int index) const;
+    const T &ValueAt(int index) const;
     // Insert value at index, so current item at that index is pointed to
     // by new item at index. Indexs start at 0
     void Insert(int index, T value);
