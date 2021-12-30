@@ -49,6 +49,8 @@ public:
     // Return the value of the node at nth position from the end of the list (Last position would be 1, second to last is 2, etx.)
     const T ValueNFromEnd(int n);
 
+    // Prints the data stored in the list
+    void PrintDebug() const;
 };
 
 } /* namespace common */

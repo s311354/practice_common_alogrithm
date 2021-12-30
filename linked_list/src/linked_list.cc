@@ -5,6 +5,10 @@ namespace common
 
 template <class T>
 LinkedList<T>::~LinkedList() {
+    if(head == nullptr) {
+        std::cout << "List is empty" << std::endl;
+        exit(EXIT_FAILURE);
+    }
     ListElement<T>* current = head;
     ListElement<T>* next = nullptr;
 
@@ -17,6 +21,11 @@ LinkedList<T>::~LinkedList() {
 
 template <class T>
 int LinkedList<T>::Size() {
+    if(head == nullptr) {
+        std::cout << "List is empty" << std::endl;
+        exit(EXIT_FAILURE);
+    }
+
     int size = 0;
 
     auto* current = head;
@@ -53,6 +62,10 @@ const T LinkedList<T>::Back() {
 
 template <class T>
 void LinkedList<T>::PushFront(T value) {
+    if(head == nullptr) {
+        std::cout << "List is empty" << std::endl;
+        exit(EXIT_FAILURE);
+    }
     auto* node = LinkedList<T>(value); 
 
     node->SetNext(head);
@@ -129,6 +142,11 @@ bool LinkedList<T>::Empty() const {
 
 template <class T>
 const T& LinkedList<T>::ValueAt(int index) const {
+    if(head == nullptr) {
+        std::cout << "List is empty" << std::endl;
+        exit(EXIT_FAILURE);
+    }
+
     auto * current = head;
 
     for (int i = 0; i < index && current != nullptr; ++i) {
@@ -145,6 +163,10 @@ const T& LinkedList<T>::ValueAt(int index) const {
 
 template <class T>
 void LinkedList<T>::Insert(int index, T value) {
+    if(head == nullptr) {
+        std::cout << "List is empty" << std::endl;
+        exit(EXIT_FAILURE);
+    }
     auto * current = head;
     ListElement<T> * prev = nullptr;
 
@@ -166,7 +188,96 @@ void LinkedList<T>::Insert(int index, T value) {
     } else{
         node->SetNext(prev->GetNext());
         prev->SetNext(node);
+        head = prev;
     }
+}
+
+template <class T>
+void LinkedList<T>::Erase(int index) {
+    if(head == nullptr) {
+        std::cout << "List is empty" << std::endl;
+        exit(EXIT_FAILURE);
+    }
+
+    ListElement<T>* prev = nullptr;
+    auto * current = head;
+
+    for (int i = 0; i < index && current != nullptr; ++i) {
+        prev = current;
+        current = current->GetNext();
+    }
+
+    if(current == nullptr) {
+        std::cout << "Index out of bounds" << std::endl;
+        exit(EXIT_FAILURE);
+    }
+
+
+    if (prev == nullptr) {
+        head = current->GetNext();
+    } else {
+        prev->SetNext(current->GetNext());
+        head = prev;
+    }
+
+    delete current;
+}
+
+template <class T>
+void LinkedList<T>::RemoveValue(T value) {
+    if(head == nullptr) {
+        std::cout << "List is empty" << std::endl;
+        exit(EXIT_FAILURE);
+    }
+
+    ListElement<T>* prev = nullptr;
+    auto * current = head;
+
+    while (current) {
+        if (current->GetData() == value) {
+            if(prev == nullptr) {
+                head = current->GetNext();
+            } else {
+                prev->SetNext(current->GetNext());
+                head = prev;
+            }
+            delete current;
+            break;
+        }
+
+        prev = current;
+        current = current->GetNext();
+    }
+}
+
+template <class T>
+void LinkedList<T>::Reverse() {
+    if(head == nullptr) {
+        std::cout << "List is empty" << std::endl;
+        exit(EXIT_FAILURE);
+    }
+    ListElement<T>* prev = nullptr;
+    auto * current = head;
+    ListElement<T>* next = nullptr;
+
+    while (current != nullptr) {
+        next = current->GetNext();
+        current->SetNext(prev);
+        prev = current;
+        current = next;
+    }
+
+    head = prev;
+}
+
+template <class T>
+const T LinkedList<T>::ValueNFromEnd(int n) {
+    
+}
+
+template <class T>
+void LinkedList<T>::PrintDebug() const {
+    
 }
 
 
