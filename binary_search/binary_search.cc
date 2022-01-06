@@ -2,7 +2,7 @@
 
 namespace common {
 
-BSTNode* GetNewNode(int value) {
+BSTNode* BinarySearch::GetNewNode(int value) {
     BSTNode* node = new BSTNode;
     node->data = value;
     node->left = nullptr;
@@ -11,7 +11,7 @@ BSTNode* GetNewNode(int value) {
     return node;
 }
 
-BSTNode* Insert(BSTNode* node, int value) {
+BSTNode* BinarySearch::Insert(BSTNode* node, int value) {
     // First Node
     if (node == nullptr) {
         node = GetNewNode(value);
@@ -27,7 +27,7 @@ BSTNode* Insert(BSTNode* node, int value) {
     return node;
 }
 
-bool Search(BSTNode* node, int value) {
+bool BinarySearch::Search(BSTNode* node, int value) {
     if (node == nullptr) return false;
 
     if (value < node->data) {
@@ -39,11 +39,11 @@ bool Search(BSTNode* node, int value) {
     }
 }
 
-bool IsBinarySearchTree(BSTNode* node) {
+bool BinarySearch::IsBinarySearchTree(BSTNode* node) {
     return IsBetween(node, INT_MIN, INT_MAX);
 }
 
-bool IsBetween(BSTNode* node, int min, int max) {
+bool BinarySearch::IsBetween(BSTNode* node, int min, int max) {
     if (node == nullptr) return true;
 
     if (node->data > min && node->data < max && 
@@ -54,7 +54,7 @@ bool IsBetween(BSTNode* node, int min, int max) {
         return false;
 }
 
-BSTNode* GetMinNode(BSTNode* node) {
+BSTNode* BinarySearch::GetMinNode(BSTNode* node) {
     if (node == nullptr) return nullptr;
 
     if(node->left == nullptr)
@@ -63,7 +63,7 @@ BSTNode* GetMinNode(BSTNode* node) {
     return GetMinNode(node->left);
 }
 
-int GetMin(BSTNode* node) {
+int BinarySearch::GetMin(BSTNode* node) {
     if (node == nullptr) return -1;
 
     if (node->left == nullptr)
@@ -72,7 +72,7 @@ int GetMin(BSTNode* node) {
     return GetMin(node->left);
 }
 
-BSTNode* GetMaxNode(BSTNode* node) {
+BSTNode* BinarySearch::GetMaxNode(BSTNode* node) {
     if (node == nullptr) return nullptr;
 
     if (node->right == nullptr)
@@ -81,7 +81,7 @@ BSTNode* GetMaxNode(BSTNode* node) {
     return GetMaxNode(node->right);
 }
 
-int GetMax(BSTNode* node) {
+int BinarySearch::GetMax(BSTNode* node) {
     if (node == nullptr) return -1;
 
     if (node->right == nullptr)
@@ -90,13 +90,13 @@ int GetMax(BSTNode* node) {
     return GetMax(node->right);
 }
 
-int GetHeight(BSTNode* node) {
+int BinarySearch::GetHeight(BSTNode* node) {
     if (node == nullptr) return 0;
 
     return 1 + std::max(GetHeight(node->left), GetHeight(node->right));
 }
 
-void DeleteTree(BSTNode* node) {
+void BinarySearch::DeleteTree(BSTNode* node) {
     if (node == nullptr) return;
 
     if (node->left != nullptr) DeleteTree(node->left);
@@ -105,7 +105,7 @@ void DeleteTree(BSTNode* node) {
     delete node;
 }
 
-BSTNode* DeleteValue(BSTNode* node, int value) {
+BSTNode* BinarySearch::DeleteValue(BSTNode* node, int value) {
     if (node == nullptr) return nullptr;
 
     if (value < node->data)
@@ -135,7 +135,7 @@ BSTNode* DeleteValue(BSTNode* node, int value) {
     return node;
 }
 
-void PrintBFS(BSTNode* node) {
+void BinarySearch::PrintBFS(BSTNode* node) {
     std::queue<BSTNode*> node_queue;
 
     BSTNode* current;
@@ -153,7 +153,7 @@ void PrintBFS(BSTNode* node) {
     }
 }
 
-void PrintInOrder(BSTNode* node) {
+void BinarySearch::PrintInOrder(BSTNode* node) {
     if (node == nullptr) return;
 
     if (node->left != nullptr) PrintInOrder(node->left);

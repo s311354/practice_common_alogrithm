@@ -27,6 +27,6 @@ int main(int argc, char *argv[])
 
     std::cout << "Contains Cycle: " << graph_node->ContainsCycle() << std::endl;
 
-
+    delete graph_node;
     return 0;
 }
