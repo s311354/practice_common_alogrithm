@@ -5,7 +5,7 @@
     <derivedcompoundref refid="classAdapter" prot="public" virt="non-virtual">Adapter</derivedcompoundref>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classUSASocketInterface_1a87866dcb9559bbe6a7c4cf49c9ced957" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref></type>
+        <type><ref refid="design__pattern_2adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref></type>
         <definition>virtual Cable USASocketInterface::live</definition>
         <argsstring>()=0</argsstring>
         <name>live</name>
@@ -16,11 +16,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="adapter_pattern/main.cc" line="49" column="23"/>
-        <referencedby refid="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" compoundref="adapter__pattern_2main_8cc" startline="80" endline="92">ElectricKettle::boil</referencedby>
+        <location file="design_pattern/adapter_pattern/main.cc" line="49" column="23"/>
+        <referencedby refid="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" compoundref="design__pattern_2adapter__pattern_2main_8cc" startline="80" endline="92">ElectricKettle::boil</referencedby>
       </memberdef>
       <memberdef kind="function" id="classUSASocketInterface_1acbee21d1d6dc45f0a18d91985c350efa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref></type>
+        <type><ref refid="design__pattern_2adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref></type>
         <definition>virtual Cable USASocketInterface::neutral</definition>
         <argsstring>()=0</argsstring>
         <name>neutral</name>
@@ -31,8 +31,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="adapter_pattern/main.cc" line="50" column="23"/>
-        <referencedby refid="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" compoundref="adapter__pattern_2main_8cc" startline="80" endline="92">ElectricKettle::boil</referencedby>
+        <location file="design_pattern/adapter_pattern/main.cc" line="50" column="23"/>
+        <referencedby refid="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" compoundref="design__pattern_2adapter__pattern_2main_8cc" startline="80" endline="92">ElectricKettle::boil</referencedby>
       </memberdef>
       <memberdef kind="function" id="classUSASocketInterface_1abd8b5d70c2463dfb825e8214056a909b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>int</type>
@@ -46,8 +46,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="adapter_pattern/main.cc" line="47" column="21"/>
-        <referencedby refid="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" compoundref="adapter__pattern_2main_8cc" startline="80" endline="92">ElectricKettle::boil</referencedby>
+        <location file="design_pattern/adapter_pattern/main.cc" line="47" column="21"/>
+        <referencedby refid="classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" compoundref="design__pattern_2adapter__pattern_2main_8cc" startline="80" endline="92">ElectricKettle::boil</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -72,7 +72,7 @@
         <link refid="classUSASocketInterface"/>
       </node>
     </collaborationgraph>
-    <location file="adapter_pattern/main.cc" line="44" column="1" bodyfile="adapter_pattern/main.cc" bodystart="45" bodyend="51"/>
+    <location file="design_pattern/adapter_pattern/main.cc" line="44" column="1" bodyfile="design_pattern/adapter_pattern/main.cc" bodystart="45" bodyend="51"/>
     <listofallmembers>
       <member refid="classUSASocketInterface_1a87866dcb9559bbe6a7c4cf49c9ced957" prot="public" virt="pure-virtual"><scope>USASocketInterface</scope><name>live</name></member>
       <member refid="classUSASocketInterface_1acbee21d1d6dc45f0a18d91985c350efa" prot="public" virt="pure-virtual"><scope>USASocketInterface</scope><name>neutral</name></member>

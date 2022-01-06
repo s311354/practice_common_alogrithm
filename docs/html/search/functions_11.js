@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['usecase1_271',['UseCase1',['../classUseCase1.html#a81d103e2c8e3656c34300575dbc21d04',1,'UseCase1']]],
-  ['usecase2_272',['UseCase2',['../classUseCase2.html#ab48fcea5fad3cfce8e938cd0cd1bcf47',1,'UseCase2']]]
+  ['qsort_5948',['qsort',['http://en.cppreference.com/w/cpp/algorithm/qsort.html',0,'std']]],
+  ['queue_5949',['queue',['http://en.cppreference.com/w/cpp/container/queue/queue.html',0,'std::queue']]],
+  ['quick_5fexit_5950',['quick_exit',['http://en.cppreference.com/w/cpp/utility/program/quick_exit.html',0,'std']]],
+  ['quiet_5fnan_5951',['quiet_NaN',['http://en.cppreference.com/w/cpp/types/numeric_limits/quiet_NaN.html',0,'std::numeric_limits']]],
+  ['quoted_5952',['quoted',['http://en.cppreference.com/w/cpp/io/manip/quoted.html',0,'std']]]
 ];

@@ -15,9 +15,21 @@ private:
 public:
     //
     explicit LinkedList(): head(nullptr) {};
-    virtual ~LinkedList();
+
     LinkedList(const LinkedList &) {};
-    LinkedList &operator=(const LinkedList&) {};
+    LinkedList &operator=(const LinkedList&);
+
+    ~LinkedList() {
+        ListElement<T>* current = head;
+        ListElement<T>* next = nullptr;
+
+        while (current) {
+            next = current->GetNext();
+            delete current;
+            current = next;
+        }
+    };
+
 
     // Return the number of data element in list
     int Size();

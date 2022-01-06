@@ -6,7 +6,7 @@
     <includes refid="graph_8h" local="no">graph.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classcommon_1_1Graph_1ae918c97315c7e558c31dfd49edb80581" prot="public" static="no" mutable="no">
-        <type>unique_ptr&lt; <ref refid="classcommon_1_1GraphRepresentation" kindref="compound">common::GraphRepresentation</ref> &gt;</type>
+        <type><ref refid="cpp/memory/unique_ptr" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">unique_ptr</ref>&lt; <ref refid="classcommon_1_1GraphRepresentation" kindref="compound">common::GraphRepresentation</ref> &gt;</type>
         <definition>unique_ptr&lt;common::GraphRepresentation&gt; common::Graph::representation</definition>
         <argsstring></argsstring>
         <name>representation</name>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph.h" line="26" column="16" bodyfile="graphs/graph.h" bodystart="23" bodyend="-1"/>
+        <location file="graphs/src/graph.h" line="26" column="16" bodyfile="graphs/src/graph.h" bodystart="23" bodyend="-1"/>
         <referencedby refid="classcommon_1_1GraphDirected_1a4a7f1b270a449aa7f0e6b88397215c92" compoundref="graph__directed_8cc" startline="18" endline="20">common::GraphDirected::AddEdge</referencedby>
         <referencedby refid="classcommon_1_1GraphDirected_1ad7a1e6e78aae38c5b4db5c0938e7c16d" compoundref="graph__directed_8cc" startline="10" endline="12">common::GraphDirected::BFS</referencedby>
         <referencedby refid="classcommon_1_1GraphDirected_1a486b07ce70a871e9d48d502c9ec2cb8a" compoundref="graph__directed_8cc" startline="14" endline="16">common::GraphDirected::DFS</referencedby>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph.h" line="27" column="9" bodyfile="graphs/graph.h" bodystart="27" bodyend="-1"/>
+        <location file="graphs/src/graph.h" line="27" column="9" bodyfile="graphs/src/graph.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph.h" line="22" column="18" bodyfile="graphs/graph.h" bodystart="22" bodyend="22"/>
+        <location file="graphs/src/graph.h" line="22" column="18" bodyfile="graphs/src/graph.h" bodystart="22" bodyend="22"/>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1Graph_1ae4e53dc32bb6eb42d21473b5f67ccd73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph.h" line="20" column="18" bodyfile="graphs/graph.h" bodystart="20" bodyend="20"/>
+        <location file="graphs/src/graph.h" line="20" column="18" bodyfile="graphs/src/graph.h" bodystart="20" bodyend="20"/>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1Graph_1ae4588bab6d681425140c017d9df9b2d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph.h" line="21" column="18" bodyfile="graphs/graph.h" bodystart="21" bodyend="21"/>
+        <location file="graphs/src/graph.h" line="21" column="18" bodyfile="graphs/src/graph.h" bodystart="21" bodyend="21"/>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1Graph_1a676ea34cda66484b3d20533d5b4007c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph.h" line="14" column="5" bodyfile="graphs/graph.h" bodystart="14" bodyend="14"/>
+        <location file="graphs/src/graph.h" line="14" column="5" bodyfile="graphs/src/graph.h" bodystart="14" bodyend="14"/>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1Graph_1a2a4f4421e08ebfc12e0c9c1d992e3e71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph.h" line="16" column="5" bodyfile="graphs/graph.h" bodystart="16" bodyend="16"/>
+        <location file="graphs/src/graph.h" line="16" column="5" bodyfile="graphs/src/graph.h" bodystart="16" bodyend="16"/>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1Graph_1a1cff16cdc86e0cac45168d592bb9618b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph.h" line="15" column="5" bodyfile="graphs/graph.h" bodystart="15" bodyend="15"/>
+        <location file="graphs/src/graph.h" line="15" column="5" bodyfile="graphs/src/graph.h" bodystart="15" bodyend="15"/>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1Graph_1a42ebd1ec0f5fe7b98b01b76ed8a316b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -147,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph.h" line="23" column="18" bodyfile="graphs/graph.h" bodystart="23" bodyend="23"/>
+        <location file="graphs/src/graph.h" line="23" column="18" bodyfile="graphs/src/graph.h" bodystart="23" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1Graph_1aefefc7baf6bae3e080564ffb3b0c7bb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph.h" line="17" column="13" bodyfile="graphs/graph.h" bodystart="17" bodyend="17"/>
+        <location file="graphs/src/graph.h" line="17" column="13" bodyfile="graphs/src/graph.h" bodystart="17" bodyend="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -185,12 +185,14 @@
       </node>
       <node id="3">
         <label>std::unique_ptr&lt; T &gt;</label>
+        <link refid="cpp/memory/unique_ptr" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
         <childnode refid="4" relation="usage">
           <edgelabel>+ptr</edgelabel>
         </childnode>
       </node>
       <node id="2">
         <label>std::unique_ptr&lt; common::GraphRepresentation &gt;</label>
+        <link refid="cpp/memory/unique_ptr" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
         <childnode refid="3" relation="template-instance">
           <edgelabel>&lt; common::GraphRepresentation &gt;</edgelabel>
         </childnode>
@@ -203,7 +205,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="graphs/graph.h" line="9" column="1" bodyfile="graphs/graph.h" bodystart="10" bodyend="29"/>
+    <location file="graphs/src/graph.h" line="9" column="1" bodyfile="graphs/src/graph.h" bodystart="10" bodyend="29"/>
     <listofallmembers>
       <member refid="classcommon_1_1Graph_1a4b703bf2573b5163b648e70b5dc06ebb" prot="public" virt="virtual"><scope>common::Graph</scope><name>AddEdge</name></member>
       <member refid="classcommon_1_1Graph_1ae4e53dc32bb6eb42d21473b5f67ccd73" prot="public" virt="virtual"><scope>common::Graph</scope><name>BFS</name></member>

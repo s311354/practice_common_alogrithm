@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_393f1c07f844b0964a6f7ba4b2c5fe79" kind="dir">
+    <compoundname>design_pattern/bridge_pattern/CMakeFiles/3.19.6</compoundname>
+    <innerdir refid="dir_75c501c5f66241cb10e95b8b85bfdbdf">design_pattern/bridge_pattern/CMakeFiles/3.19.6/CompilerIdC</innerdir>
+    <innerdir refid="dir_846d3a8079b830432b7f7519daa7eadf">design_pattern/bridge_pattern/CMakeFiles/3.19.6/CompilerIdCXX</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="design_pattern/bridge_pattern/CMakeFiles/3.19.6/"/>
+  </compounddef>
+</doxygen>

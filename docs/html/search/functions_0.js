@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['add_205',['Add',['../classcommon_1_1HashTable.html#a7be016ae0c0d352ccc056f8ca6b9fbc2',1,'common::HashTable']]],
-  ['addedge_206',['AddEdge',['../classcommon_1_1Graph.html#a4b703bf2573b5163b648e70b5dc06ebb',1,'common::Graph::AddEdge()'],['../classcommon_1_1GraphDirected.html#a4a7f1b270a449aa7f0e6b88397215c92',1,'common::GraphDirected::AddEdge()'],['../classcommon_1_1GraphRepresentation.html#a0ac19bf9f7bbca8250ebf3a640cc9c9a',1,'common::GraphRepresentation::AddEdge()'],['../classcommon_1_1GraphRepresentationList.html#a8a40c21abe6df8459d2f9e9cffb4d28d',1,'common::GraphRepresentationList::AddEdge()']]],
-  ['algorithminterface_207',['algorithmInterface',['../classStrategy.html#a8c773b3212e91135c0d6365113ddfee2',1,'Strategy::algorithmInterface()'],['../classConcreteStrategyA.html#a33327cefdd32b66809ff952d5ba1ac39',1,'ConcreteStrategyA::algorithmInterface()'],['../classConcreteStrategyB.html#ae2d87bea9f205785ac0605a734d4af77',1,'ConcreteStrategyB::algorithmInterface()'],['../classConcreteStrategyC.html#a9f11e7725a0520503718f38458e0ed70',1,'ConcreteStrategyC::algorithmInterface()']]],
-  ['anotherfunctionality_208',['anotherFunctionality',['../classImplementationInterface.html#a436dfd4fda2d04cb83309e6b64e16473',1,'ImplementationInterface::anotherFunctionality()'],['../classConcreteImplementation1.html#afb0fb26e22e72c7cd932e80f61b870e5',1,'ConcreteImplementation1::anotherFunctionality()'],['../classConcreteImplementation2.html#a81898b1f1fa1065049f71b40376787aa',1,'ConcreteImplementation2::anotherFunctionality()']]]
+  ['_5fexit_4557',['_Exit',['http://en.cppreference.com/w/cpp/utility/program/_Exit.html',0,'std']]]
 ];

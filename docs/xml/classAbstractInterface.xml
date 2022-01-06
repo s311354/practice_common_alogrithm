@@ -17,8 +17,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bridge_pattern/main.cc" line="26" column="22"/>
-        <referencedby refid="bridge__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="bridge__pattern_2main_8cc" startline="100" endline="123">main</referencedby>
+        <location file="design_pattern/bridge_pattern/main.cc" line="26" column="22"/>
+        <referencedby refid="design__pattern_2bridge__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="design__pattern_2bridge__pattern_2main_8cc" startline="100" endline="123">main</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -55,7 +55,7 @@
         <link refid="classAbstractInterface"/>
       </node>
     </collaborationgraph>
-    <location file="bridge_pattern/main.cc" line="23" column="1" bodyfile="bridge_pattern/main.cc" bodystart="24" bodyend="27"/>
+    <location file="design_pattern/bridge_pattern/main.cc" line="23" column="1" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="24" bodyend="27"/>
     <listofallmembers>
       <member refid="classAbstractInterface_1a6e01c2b1fa906d3469a6fe123fcf1f7f" prot="public" virt="pure-virtual"><scope>AbstractInterface</scope><name>someFunctionality</name></member>
     </listofallmembers>

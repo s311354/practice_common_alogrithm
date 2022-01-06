@@ -11,6 +11,7 @@ set(HEADER_FILES    linked_list.h
                     )
 
 set(SOURCE_FILES    linked_list.cc
+                    list_element.cc
                     )
 
 add_library(linkedlists_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})

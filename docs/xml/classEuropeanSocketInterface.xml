@@ -5,7 +5,7 @@
     <derivedcompoundref refid="classSocket" prot="public" virt="non-virtual">Socket</derivedcompoundref>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classEuropeanSocketInterface_1a29f6a7f4736b8ae17464d7136d015714" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref></type>
+        <type><ref refid="design__pattern_2adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref></type>
         <definition>virtual Cable EuropeanSocketInterface::earth</definition>
         <argsstring>()=0</argsstring>
         <name>earth</name>
@@ -16,10 +16,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="adapter_pattern/main.cc" line="29" column="23"/>
+        <location file="design_pattern/adapter_pattern/main.cc" line="29" column="23"/>
       </memberdef>
       <memberdef kind="function" id="classEuropeanSocketInterface_1aed3dba5a3ded5b1d966a75bdb32fd95b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref></type>
+        <type><ref refid="design__pattern_2adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref></type>
         <definition>virtual Cable EuropeanSocketInterface::live</definition>
         <argsstring>()=0</argsstring>
         <name>live</name>
@@ -30,11 +30,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="adapter_pattern/main.cc" line="27" column="23"/>
-        <referencedby refid="classAdapter_1a2b830be3ac68baa0fa8271d6377b7546" compoundref="adapter__pattern_2main_8cc" startline="65" endline="65">Adapter::live</referencedby>
+        <location file="design_pattern/adapter_pattern/main.cc" line="27" column="23"/>
+        <referencedby refid="classAdapter_1a2b830be3ac68baa0fa8271d6377b7546" compoundref="design__pattern_2adapter__pattern_2main_8cc" startline="65" endline="65">Adapter::live</referencedby>
       </memberdef>
       <memberdef kind="function" id="classEuropeanSocketInterface_1a2a2737b5a6efca9a137ce3aa80ef275c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref></type>
+        <type><ref refid="design__pattern_2adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref></type>
         <definition>virtual Cable EuropeanSocketInterface::neutral</definition>
         <argsstring>()=0</argsstring>
         <name>neutral</name>
@@ -45,8 +45,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="adapter_pattern/main.cc" line="28" column="23"/>
-        <referencedby refid="classAdapter_1affff909ff6906861039d208fe3b95cac" compoundref="adapter__pattern_2main_8cc" startline="66" endline="66">Adapter::neutral</referencedby>
+        <location file="design_pattern/adapter_pattern/main.cc" line="28" column="23"/>
+        <referencedby refid="classAdapter_1affff909ff6906861039d208fe3b95cac" compoundref="design__pattern_2adapter__pattern_2main_8cc" startline="66" endline="66">Adapter::neutral</referencedby>
       </memberdef>
       <memberdef kind="function" id="classEuropeanSocketInterface_1aa4b6b6718a501eeaa7c9dcd7f7906ac4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>int</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="adapter_pattern/main.cc" line="25" column="21"/>
+        <location file="design_pattern/adapter_pattern/main.cc" line="25" column="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -85,7 +85,7 @@
         <link refid="classEuropeanSocketInterface"/>
       </node>
     </collaborationgraph>
-    <location file="adapter_pattern/main.cc" line="22" column="1" bodyfile="adapter_pattern/main.cc" bodystart="23" bodyend="30"/>
+    <location file="design_pattern/adapter_pattern/main.cc" line="22" column="1" bodyfile="design_pattern/adapter_pattern/main.cc" bodystart="23" bodyend="30"/>
     <listofallmembers>
       <member refid="classEuropeanSocketInterface_1a29f6a7f4736b8ae17464d7136d015714" prot="public" virt="pure-virtual"><scope>EuropeanSocketInterface</scope><name>earth</name></member>
       <member refid="classEuropeanSocketInterface_1aed3dba5a3ded5b1d966a75bdb32fd95b" prot="public" virt="pure-virtual"><scope>EuropeanSocketInterface</scope><name>live</name></member>

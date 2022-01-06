@@ -67,10 +67,10 @@ RM = /usr/local/Cellar/cmake/3.19.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs
+CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs
+CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/CMakeFiles /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/CMakeFiles 0
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs//CMakeFiles/progress.marks
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graphs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graphs/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,44 +116,33 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graphs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graphs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named graphs
+# Convenience name for target.
+graphs/CMakeFiles/graphs.dir/rule:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graphs/CMakeFiles/graphs.dir/rule
+.PHONY : graphs/CMakeFiles/graphs.dir/rule
 
-# Build rule for target.
-graphs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graphs
+# Convenience name for target.
+graphs: graphs/CMakeFiles/graphs.dir/rule
+
 .PHONY : graphs
 
 # fast build rule for target.
 graphs/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/build
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f graphs/CMakeFiles/graphs.dir/build.make graphs/CMakeFiles/graphs.dir/build
 .PHONY : graphs/fast
-
-#=============================================================================
-# Target rules for targets named graphs_lib
-
-# Build rule for target.
-graphs_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graphs_lib
-.PHONY : graphs_lib
-
-# fast build rule for target.
-graphs_lib/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/graphs_lib.dir/build.make src/CMakeFiles/graphs_lib.dir/build
-.PHONY : graphs_lib/fast
 
 main.o: main.cc.o
 
@@ -161,7 +150,7 @@ main.o: main.cc.o
 
 # target to build an object file
 main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/main.cc.o
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f graphs/CMakeFiles/graphs.dir/build.make graphs/CMakeFiles/graphs.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -170,7 +159,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/main.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f graphs/CMakeFiles/graphs.dir/build.make graphs/CMakeFiles/graphs.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -179,7 +168,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/main.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f graphs/CMakeFiles/graphs.dir/build.make graphs/CMakeFiles/graphs.dir/main.cc.s
 .PHONY : main.cc.s
 
 # Help Target
@@ -191,7 +180,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... graphs"
-	@echo "... graphs_lib"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -206,6 +194,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

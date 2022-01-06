@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/main.cc" "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/CMakeFiles/binary_search.dir/main.cc.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

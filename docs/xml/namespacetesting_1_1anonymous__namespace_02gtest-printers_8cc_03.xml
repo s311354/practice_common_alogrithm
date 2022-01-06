@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacetesting_1_1anonymous__namespace_02gtest-printers_8cc_03" kind="namespace" language="C++">
+    <compoundname>testing::anonymous_namespace{gtest-printers.cc}</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetesting_1_1anonymous__namespace_02gtest-printers_8cc_03_1ad297ce40861f170a8269e26a7df2b826" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="gtest-port_8h_1a2a83dd79037e53814a509cc3f5702650" kindref="member">GTEST_ATTRIBUTE_NO_SANITIZE_MEMORY_</ref> <ref refid="gtest-port_8h_1af18b465f4ba6e36eea7a8d2d79521873" kindref="member">GTEST_ATTRIBUTE_NO_SANITIZE_ADDRESS_</ref> <ref refid="gtest-port_8h_1abf30a6b1b3a12ecb2cc1bc1a6f5f9646" kindref="member">GTEST_ATTRIBUTE_NO_SANITIZE_THREAD_</ref> void</type>
+        <definition>GTEST_ATTRIBUTE_NO_SANITIZE_MEMORY_ GTEST_ATTRIBUTE_NO_SANITIZE_ADDRESS_ GTEST_ATTRIBUTE_NO_SANITIZE_THREAD_ void testing::anonymous_namespace{gtest-printers.cc}::PrintByteSegmentInObjectTo</definition>
+        <argsstring>(const unsigned char *obj_bytes, size_t start, size_t count, ostream *os)</argsstring>
+        <name>PrintByteSegmentInObjectTo</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>obj_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-printers.cc" line="63" column="6" bodyfile="lib/googletest/src/gtest-printers.cc" bodystart="63" bodyend="79"/>
+        <references refid="gtest-port_8h_1aed1cc8143222d7a845a1269448ec203e" compoundref="gtest-port_8h" startline="2429">GTEST_SNPRINTF_</references>
+        <referencedby refid="namespacetesting_1_1anonymous__namespace_02gtest-printers_8cc_03_1a7c3551691f3b4ab868eb5b8ceba41bde" compoundref="gtest-printers_8cc" startline="82" endline="103">PrintBytesInObjectToImpl</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetesting_1_1anonymous__namespace_02gtest-printers_8cc_03_1a7c3551691f3b4ab868eb5b8ceba41bde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::anonymous_namespace{gtest-printers.cc}::PrintBytesInObjectToImpl</definition>
+        <argsstring>(const unsigned char *obj_bytes, size_t count, ostream *os)</argsstring>
+        <name>PrintBytesInObjectToImpl</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>obj_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-printers.cc" line="82" column="6" bodyfile="lib/googletest/src/gtest-printers.cc" bodystart="82" bodyend="103"/>
+        <references refid="namespacetesting_1_1anonymous__namespace_02gtest-printers_8cc_03_1ad297ce40861f170a8269e26a7df2b826" compoundref="gtest-printers_8cc" startline="63" endline="79">PrintByteSegmentInObjectTo</references>
+        <referencedby refid="namespacetesting_1_1internal2_1abfb9aa80365f93b952e9a4bea09947a8" compoundref="gtest-printers_8cc" startline="114" endline="117">testing::internal2::PrintBytesInObjectTo</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/googletest/src/gtest-printers.cc" line="55" column="1"/>
+  </compounddef>
+</doxygen>

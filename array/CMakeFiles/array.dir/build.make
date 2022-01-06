@@ -62,58 +62,58 @@ RM = /usr/local/Cellar/cmake/3.19.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array
+CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array
+CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # Include any dependencies generated for this target.
-include CMakeFiles/array.dir/depend.make
+include array/CMakeFiles/array.dir/depend.make
 
 # Include the progress variables for this target.
-include CMakeFiles/array.dir/progress.make
+include array/CMakeFiles/array.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/array.dir/flags.make
+include array/CMakeFiles/array.dir/flags.make
 
-CMakeFiles/array.dir/main.cc.o: CMakeFiles/array.dir/flags.make
-CMakeFiles/array.dir/main.cc.o: main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/array.dir/main.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array.dir/main.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/main.cc
+array/CMakeFiles/array.dir/main.cc.o: array/CMakeFiles/array.dir/flags.make
+array/CMakeFiles/array.dir/main.cc.o: array/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object array/CMakeFiles/array.dir/main.cc.o"
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array.dir/main.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/main.cc
 
-CMakeFiles/array.dir/main.cc.i: cmake_force
+array/CMakeFiles/array.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/array.dir/main.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/main.cc > CMakeFiles/array.dir/main.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/main.cc > CMakeFiles/array.dir/main.cc.i
 
-CMakeFiles/array.dir/main.cc.s: cmake_force
+array/CMakeFiles/array.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/array.dir/main.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/main.cc -o CMakeFiles/array.dir/main.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/main.cc -o CMakeFiles/array.dir/main.cc.s
 
-CMakeFiles/array.dir/jvector.cc.o: CMakeFiles/array.dir/flags.make
-CMakeFiles/array.dir/jvector.cc.o: jvector.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/array.dir/jvector.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array.dir/jvector.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector.cc
+array/CMakeFiles/array.dir/jvector.cc.o: array/CMakeFiles/array.dir/flags.make
+array/CMakeFiles/array.dir/jvector.cc.o: array/jvector.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object array/CMakeFiles/array.dir/jvector.cc.o"
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array.dir/jvector.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector.cc
 
-CMakeFiles/array.dir/jvector.cc.i: cmake_force
+array/CMakeFiles/array.dir/jvector.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/array.dir/jvector.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector.cc > CMakeFiles/array.dir/jvector.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector.cc > CMakeFiles/array.dir/jvector.cc.i
 
-CMakeFiles/array.dir/jvector.cc.s: cmake_force
+array/CMakeFiles/array.dir/jvector.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/array.dir/jvector.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector.cc -o CMakeFiles/array.dir/jvector.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector.cc -o CMakeFiles/array.dir/jvector.cc.s
 
-CMakeFiles/array.dir/jvector_test.cc.o: CMakeFiles/array.dir/flags.make
-CMakeFiles/array.dir/jvector_test.cc.o: jvector_test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/array.dir/jvector_test.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array.dir/jvector_test.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector_test.cc
+array/CMakeFiles/array.dir/jvector_test.cc.o: array/CMakeFiles/array.dir/flags.make
+array/CMakeFiles/array.dir/jvector_test.cc.o: array/jvector_test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object array/CMakeFiles/array.dir/jvector_test.cc.o"
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array.dir/jvector_test.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector_test.cc
 
-CMakeFiles/array.dir/jvector_test.cc.i: cmake_force
+array/CMakeFiles/array.dir/jvector_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/array.dir/jvector_test.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector_test.cc > CMakeFiles/array.dir/jvector_test.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector_test.cc > CMakeFiles/array.dir/jvector_test.cc.i
 
-CMakeFiles/array.dir/jvector_test.cc.s: cmake_force
+array/CMakeFiles/array.dir/jvector_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/array.dir/jvector_test.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector_test.cc -o CMakeFiles/array.dir/jvector_test.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector_test.cc -o CMakeFiles/array.dir/jvector_test.cc.s
 
 # Object files for target array
 array_OBJECTS = \
@@ -124,24 +124,24 @@ array_OBJECTS = \
 # External object files for target array
 array_EXTERNAL_OBJECTS =
 
-array: CMakeFiles/array.dir/main.cc.o
-array: CMakeFiles/array.dir/jvector.cc.o
-array: CMakeFiles/array.dir/jvector_test.cc.o
-array: CMakeFiles/array.dir/build.make
-array: CMakeFiles/array.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable array"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/array.dir/link.txt --verbose=$(VERBOSE)
+array/array: array/CMakeFiles/array.dir/main.cc.o
+array/array: array/CMakeFiles/array.dir/jvector.cc.o
+array/array: array/CMakeFiles/array.dir/jvector_test.cc.o
+array/array: array/CMakeFiles/array.dir/build.make
+array/array: array/CMakeFiles/array.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable array"
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/array.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/array.dir/build: array
+array/CMakeFiles/array.dir/build: array/array
 
-.PHONY : CMakeFiles/array.dir/build
+.PHONY : array/CMakeFiles/array.dir/build
 
-CMakeFiles/array.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles/array.dir/cmake_clean.cmake
-.PHONY : CMakeFiles/array.dir/clean
+array/CMakeFiles/array.dir/clean:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array && $(CMAKE_COMMAND) -P CMakeFiles/array.dir/cmake_clean.cmake
+.PHONY : array/CMakeFiles/array.dir/clean
 
-CMakeFiles/array.dir/depend:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/CMakeFiles/array.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/array.dir/depend
+array/CMakeFiles/array.dir/depend:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/CMakeFiles/array.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : array/CMakeFiles/array.dir/depend
 

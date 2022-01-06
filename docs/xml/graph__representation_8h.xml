@@ -4,12 +4,16 @@
     <compoundname>graph_representation.h</compoundname>
     <includes local="no">string</includes>
     <includes local="no">vector</includes>
-    <includedby refid="graph_8h" local="yes">graphs/graph.h</includedby>
-    <includedby refid="graph__representation_8cc" local="yes">graphs/graph_representation.cc</includedby>
     <includedby refid="graphs_2main_8cc" local="yes">graphs/main.cc</includedby>
+    <includedby refid="graph_8h" local="yes">graphs/src/graph.h</includedby>
+    <includedby refid="graph__representation_8cc" local="yes">graphs/src/graph_representation.cc</includedby>
     <incdepgraph>
+      <node id="3">
+        <label>vector</label>
+        <link refid="cpp/header/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
       <node id="1">
-        <label>graphs/graph_representation.h</label>
+        <label>graphs/src/graph_representation.h</label>
         <link refid="graph__representation_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -18,42 +22,18 @@
       </node>
       <node id="2">
         <label>string</label>
-      </node>
-      <node id="3">
-        <label>vector</label>
+        <link refid="cpp/header/string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3">
-        <label>graphs/graph.cc</label>
-        <link refid="graph_8cc"/>
-      </node>
-      <node id="5">
-        <label>graphs/graph_directed.h</label>
-        <link refid="graph__directed_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
+      <node id="2">
         <label>graphs/main.cc</label>
         <link refid="graphs_2main_8cc"/>
       </node>
-      <node id="1">
-        <label>graphs/graph_representation.h</label>
-        <link refid="graph__representation_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>graphs/graph.h</label>
+      <node id="3">
+        <label>graphs/src/graph.h</label>
         <link refid="graph_8h"/>
-        <childnode refid="3" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
@@ -63,12 +43,34 @@
         </childnode>
       </node>
       <node id="7">
-        <label>graphs/graph_representation.cc</label>
+        <label>graphs/src/graph_representation.cc</label>
         <link refid="graph__representation_8cc"/>
       </node>
       <node id="4">
-        <label>graphs/graph_directed.cc</label>
+        <label>graphs/src/graph.cc</label>
+        <link refid="graph_8cc"/>
+      </node>
+      <node id="6">
+        <label>graphs/src/graph_directed.h</label>
+        <link refid="graph__directed_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>graphs/src/graph_directed.cc</label>
         <link refid="graph__directed_8cc"/>
+      </node>
+      <node id="1">
+        <label>graphs/src/graph_representation.h</label>
+        <link refid="graph__representation_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classcommon_1_1GraphRepresentation" prot="public">common::GraphRepresentation</innerclass>
@@ -79,13 +81,13 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">vector</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GRAPH_REPRESENTATION_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GRAPH_REPRESENTATION_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecommon" kindref="compound">common</ref><sp/>{</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
@@ -114,7 +116,7 @@
 <codeline lineno="33" refid="classcommon_1_1GraphRepresentation_1a80343a9d1c3ec8e73227b7a32e92ba95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcommon_1_1GraphRepresentation_1a80343a9d1c3ec8e73227b7a32e92ba95" kindref="member">PrintDebug</ref>()<sp/>{};</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>unique_ptr<sp/>manages<sp/>the<sp/>storage<sp/>of<sp/>a<sp/>pointer,<sp/>providing<sp/>a<sp/>limited<sp/>garbage-collection<sp/>facility.<sp/>example:<sp/>https://www.cplusplus.com/reference/memory/unique_ptr/get/<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>unique_ptr&lt;common::GraphRepresentation&gt;<sp/>GetRepresentation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>representation_type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>graph_type);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="cpp/memory/unique_ptr" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">unique_ptr&lt;common::GraphRepresentation&gt;</ref><sp/>GetRepresentation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>representation_type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>graph_type);</highlight></codeline>
 <codeline lineno="37" refid="classcommon_1_1GraphRepresentation_1adef161f4e49d1234da78baf0c67f963d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classcommon_1_1GraphRepresentation_1adef161f4e49d1234da78baf0c67f963d" kindref="member">type</ref>;</highlight></codeline>
 <codeline lineno="38" refid="classcommon_1_1GraphRepresentation_1aed22c26c2bd7c5b90d7f178e5cc82954" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classcommon_1_1GraphRepresentation_1aed22c26c2bd7c5b90d7f178e5cc82954" kindref="member">vertices</ref>;</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
@@ -132,7 +134,7 @@
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ContainsCycle();</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PrintDebug();</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59" refid="classcommon_1_1GraphRepresentationList_1af276814e34ea5f16fcc696014a1c4d54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;int&gt;<sp/>&gt;<sp/><sp/><ref refid="classcommon_1_1GraphRepresentationList_1af276814e34ea5f16fcc696014a1c4d54" kindref="member">adjust_list</ref>;</highlight></codeline>
+<codeline lineno="59" refid="classcommon_1_1GraphRepresentationList_1af276814e34ea5f16fcc696014a1c4d54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">vector&lt;vector&lt;int&gt;</ref><sp/>&gt;<sp/><sp/><ref refid="classcommon_1_1GraphRepresentationList_1af276814e34ea5f16fcc696014a1c4d54" kindref="member">adjust_list</ref>;</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal">};</highlight></codeline>
@@ -141,6 +143,6 @@
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GRAPH_REPRESENTATION_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="graphs/graph_representation.h"/>
+    <location file="graphs/src/graph_representation.h"/>
   </compounddef>
 </doxygen>

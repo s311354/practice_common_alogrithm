@@ -62,32 +62,32 @@ RM = /usr/local/Cellar/cmake/3.19.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs
+CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs
+CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # Include any dependencies generated for this target.
-include CMakeFiles/graphs.dir/depend.make
+include graphs/CMakeFiles/graphs.dir/depend.make
 
 # Include the progress variables for this target.
-include CMakeFiles/graphs.dir/progress.make
+include graphs/CMakeFiles/graphs.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/graphs.dir/flags.make
+include graphs/CMakeFiles/graphs.dir/flags.make
 
-CMakeFiles/graphs.dir/main.cc.o: CMakeFiles/graphs.dir/flags.make
-CMakeFiles/graphs.dir/main.cc.o: main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/graphs.dir/main.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphs.dir/main.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/main.cc
+graphs/CMakeFiles/graphs.dir/main.cc.o: graphs/CMakeFiles/graphs.dir/flags.make
+graphs/CMakeFiles/graphs.dir/main.cc.o: graphs/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object graphs/CMakeFiles/graphs.dir/main.cc.o"
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphs.dir/main.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/main.cc
 
-CMakeFiles/graphs.dir/main.cc.i: cmake_force
+graphs/CMakeFiles/graphs.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphs.dir/main.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/main.cc > CMakeFiles/graphs.dir/main.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/main.cc > CMakeFiles/graphs.dir/main.cc.i
 
-CMakeFiles/graphs.dir/main.cc.s: cmake_force
+graphs/CMakeFiles/graphs.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphs.dir/main.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/main.cc -o CMakeFiles/graphs.dir/main.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/main.cc -o CMakeFiles/graphs.dir/main.cc.s
 
 # Object files for target graphs
 graphs_OBJECTS = \
@@ -96,23 +96,23 @@ graphs_OBJECTS = \
 # External object files for target graphs
 graphs_EXTERNAL_OBJECTS =
 
-graphs: CMakeFiles/graphs.dir/main.cc.o
-graphs: CMakeFiles/graphs.dir/build.make
-graphs: src/libgraphs_lib.a
-graphs: CMakeFiles/graphs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable graphs"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphs.dir/link.txt --verbose=$(VERBOSE)
+graphs/graphs: graphs/CMakeFiles/graphs.dir/main.cc.o
+graphs/graphs: graphs/CMakeFiles/graphs.dir/build.make
+graphs/graphs: graphs/src/libgraphs_lib.a
+graphs/graphs: graphs/CMakeFiles/graphs.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable graphs"
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/graphs.dir/build: graphs
+graphs/CMakeFiles/graphs.dir/build: graphs/graphs
 
-.PHONY : CMakeFiles/graphs.dir/build
+.PHONY : graphs/CMakeFiles/graphs.dir/build
 
-CMakeFiles/graphs.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles/graphs.dir/cmake_clean.cmake
-.PHONY : CMakeFiles/graphs.dir/clean
+graphs/CMakeFiles/graphs.dir/clean:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs && $(CMAKE_COMMAND) -P CMakeFiles/graphs.dir/cmake_clean.cmake
+.PHONY : graphs/CMakeFiles/graphs.dir/clean
 
-CMakeFiles/graphs.dir/depend:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/CMakeFiles/graphs.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/graphs.dir/depend
+graphs/CMakeFiles/graphs.dir/depend:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/graphs/CMakeFiles/graphs.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : graphs/CMakeFiles/graphs.dir/depend
 

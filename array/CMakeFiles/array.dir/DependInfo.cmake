@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/jvector_test.cc" "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/CMakeFiles/array.dir/jvector_test.cc.o"
   "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/main.cc" "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/CMakeFiles/array.dir/main.cc.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

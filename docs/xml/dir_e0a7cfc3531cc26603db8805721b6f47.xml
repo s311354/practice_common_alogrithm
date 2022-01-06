@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_e0a7cfc3531cc26603db8805721b6f47" kind="dir">
+    <compoundname>design_pattern</compoundname>
+    <innerdir refid="dir_d336dd6d1bbfd09db8c70ccb2eecc356">design_pattern/adapter_pattern</innerdir>
+    <innerdir refid="dir_f98011afbbddabd89a092c7f4a7877a0">design_pattern/bridge_pattern</innerdir>
+    <innerdir refid="dir_8d3c652269bc53054f1d260cc26545fc">design_pattern/facade_pattern</innerdir>
+    <innerdir refid="dir_5da051b491661072cb96760ceeda5b1f">design_pattern/singleton_pattern</innerdir>
+    <innerdir refid="dir_f6058f045a35df20fa1a415aafff6e1c">design_pattern/strategy_pattern</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="design_pattern/"/>
+  </compounddef>
+</doxygen>

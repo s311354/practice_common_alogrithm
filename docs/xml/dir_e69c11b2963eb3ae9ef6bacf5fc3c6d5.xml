@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_e69c11b2963eb3ae9ef6bacf5fc3c6d5" kind="dir">
+    <compoundname>design_pattern/strategy_pattern/CMakeFiles/3.19.6</compoundname>
+    <innerdir refid="dir_6553a2c0f19756b1aee9606b8478ca06">design_pattern/strategy_pattern/CMakeFiles/3.19.6/CompilerIdC</innerdir>
+    <innerdir refid="dir_734159d2f214ef05b5335cb5b69f8111">design_pattern/strategy_pattern/CMakeFiles/3.19.6/CompilerIdCXX</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="design_pattern/strategy_pattern/CMakeFiles/3.19.6/"/>
+  </compounddef>
+</doxygen>

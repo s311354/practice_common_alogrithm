@@ -30,8 +30,12 @@ var NAVTREE =
     [ "Modules", "namespaces.html", [
       [ "Modules List", "namespaces.html", "namespaces_dup" ],
       [ "Module Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ]
+        [ "All", "namespacemembers.html", "namespacemembers_dup" ],
+        [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
+        [ "Constants", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -45,7 +49,15 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"classtesting_1_1TestEventListeners.html#afddba49fdf3f493532b4d5efb9814f4e",
+"cpp/algorithm/make_heap.html",
+"cpp/experimental/search.html",
+"cpp/io/manip/get_time.html",
+"cpp/numeric/math/tgamma.html",
+"cpp/string/wide/wcschr.html",
+"cpp/utility/variant/variant_size.html",
+"namespacetesting_1_1internal.html#a472880afbcc592a41e3d623e2dec8412"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

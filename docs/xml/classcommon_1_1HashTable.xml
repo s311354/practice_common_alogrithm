@@ -52,7 +52,7 @@
         <argsstring>(const std::string key)</argsstring>
         <name>Hash</name>
         <param>
-          <type>const std::string</type>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
           <declname>key</declname>
         </param>
         <briefdescription>
@@ -67,6 +67,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="hash_table/hash_table.h" line="15" column="9" bodyfile="hash_table/hash_table.cc" bodystart="67" bodyend="76"/>
+        <references refid="cpp/string/basic_string/size_1">std::string::length</references>
         <references refid="classcommon_1_1HashTable_1a7188b2e106d6e04c8b53d560b45ba3a4" compoundref="hash__table_8h" startline="12">size_</references>
         <referencedby refid="classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" compoundref="hash__table_8cc" startline="31" endline="59">Add</referencedby>
         <referencedby refid="classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" compoundref="hash__table_8cc" startline="84" endline="103">Exists</referencedby>
@@ -116,7 +117,7 @@
         <argsstring>(const std::string key)</argsstring>
         <name>Exists</name>
         <param>
-          <type>const std::string</type>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
           <declname>key</declname>
         </param>
         <briefdescription>
@@ -140,12 +141,12 @@
         <referencedby refid="hash__table__tests_8cc_1a1da79732717337e8731f76c7a155c24a" compoundref="hash__table__tests_8cc" startline="72" endline="88">test_remove</referencedby>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1HashTable_1a3e93186097466627afabd3cf87918aea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>const std::string</type>
+        <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
         <definition>const std::string common::HashTable::Get</definition>
         <argsstring>(const std::string key)</argsstring>
         <name>Get</name>
         <param>
-          <type>const std::string</type>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
           <declname>key</declname>
         </param>
         <briefdescription>
@@ -247,6 +248,7 @@
         </inbodydescription>
         <location file="hash_table/hash_table.h" line="36" column="10" bodyfile="hash_table/hash_table.cc" bodystart="155" bodyend="161"/>
         <references refid="classcommon_1_1HashTable_1ace28e68f3c87ee74efd45c6587b74e86" compoundref="hash__table_8h" startline="13">data_</references>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
         <references refid="classcommon_1_1HashObject_1aa59e36990bd2b158c5d7fdd7cb0d6734" compoundref="hash__object_8h" startline="20" endline="20">common::HashObject::Getkey</references>
         <references refid="classcommon_1_1HashObject_1a20a96cca63049317f786f226044c4eb3" compoundref="hash__object_8h" startline="21" endline="21">common::HashObject::GetValue</references>
         <references refid="classcommon_1_1HashTable_1a7188b2e106d6e04c8b53d560b45ba3a4" compoundref="hash__table_8h" startline="12">size_</references>
@@ -259,7 +261,7 @@
         <argsstring>(const std::string key)</argsstring>
         <name>Remove</name>
         <param>
-          <type>const std::string</type>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
           <declname>key</declname>
         </param>
         <briefdescription>
@@ -303,8 +305,16 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="4">
+      <node id="5">
         <label>std::basic_string&lt; Char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
       </node>
       <node id="2">
         <label>common::HashObject</label>
@@ -316,6 +326,7 @@
       </node>
       <node id="3">
         <label>std::string</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>

@@ -1,0 +1,499 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="gtest-linked__ptr_8h" kind="file" language="C++">
+    <compoundname>gtest-linked_ptr.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">assert.h</includes>
+    <includes refid="gtest-port_8h" local="yes">gtest/internal/gtest-port.h</includes>
+    <includedby refid="gtest-param-util_8h" local="yes">lib/googletest/include/gtest/internal/gtest-param-util.h</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="22">
+        <label>typeinfo</label>
+        <link refid="cpp/header/typeinfo" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="3">
+        <label>assert.h</label>
+      </node>
+      <node id="17">
+        <label>gtest/internal/gtest-port-arch.h</label>
+        <link refid="gtest-port-arch_8h"/>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="11">
+        <label>algorithm</label>
+        <link refid="cpp/header/algorithm" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="23">
+        <label>gtest/internal/gtest-tuple.h</label>
+        <link refid="gtest-tuple_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+        <link refid="cpp/header/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="9">
+        <label>sys/types.h</label>
+      </node>
+      <node id="8">
+        <label>string.h</label>
+      </node>
+      <node id="4">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="gtest-port_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>unistd.h</label>
+      </node>
+      <node id="15">
+        <label>utility</label>
+        <link refid="cpp/header/utility" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="14">
+        <label>string</label>
+        <link refid="cpp/header/string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="20">
+        <label>strings.h</label>
+      </node>
+      <node id="5">
+        <label>ctype.h</label>
+      </node>
+      <node id="12">
+        <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="13">
+        <label>sstream</label>
+        <link refid="cpp/header/sstream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="1">
+        <label>lib/googletest/include/gtest/internal/gtest-linked_ptr.h</label>
+        <link refid="gtest-linked__ptr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>regex.h</label>
+      </node>
+      <node id="18">
+        <label>gtest/internal/custom/gtest-port.h</label>
+        <link refid="custom_2gtest-port_8h"/>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>lib/googletest/include/gtest/internal/gtest-param-util.h</label>
+        <link refid="gtest-param-util_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lib/googletest/include/gtest/gtest.h</label>
+        <link refid="gtest_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lib/googletest/src/gtest-internal-inl.h</label>
+        <link refid="gtest-internal-inl_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lib/googletest/include/gtest/internal/gtest-param-util-generated.h</label>
+        <link refid="gtest-param-util-generated_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lib/googletest/src/gtest-all.cc</label>
+        <link refid="gtest-all_8cc"/>
+      </node>
+      <node id="7">
+        <label>lib/googletest/src/gtest-death-test.cc</label>
+        <link refid="gtest-death-test_8cc"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lib/googletest/src/gtest_main.cc</label>
+        <link refid="gtest__main_8cc"/>
+      </node>
+      <node id="10">
+        <label>lib/googletest/src/gtest.cc</label>
+        <link refid="gtest_8cc"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lib/googletest/src/gtest-typed-test.cc</label>
+        <link refid="gtest-typed-test_8cc"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lib/googletest/src/gtest-test-part.cc</label>
+        <link refid="gtest-test-part_8cc"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lib/googletest/src/gtest-port.cc</label>
+        <link refid="gtest-port_8cc"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lib/googletest/include/gtest/gtest-spi.h</label>
+        <link refid="gtest-spi_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lib/googletest/include/gtest/gtest-param-test.h</label>
+        <link refid="gtest-param-test_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/googletest/include/gtest/internal/gtest-linked_ptr.h</label>
+        <link refid="gtest-linked__ptr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtesting_1_1internal_1_1linked__ptr" prot="public">testing::internal::linked_ptr</innerclass>
+    <innerclass refid="classtesting_1_1internal_1_1linked__ptr__internal" prot="public">testing::internal::linked_ptr_internal</innerclass>
+    <innernamespace refid="namespacetesting">testing</innernamespace>
+    <innernamespace refid="namespacetesting_1_1internal">testing::internal</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2003<sp/>Google<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Google<sp/>Inc.<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Authors:<sp/>Dan<sp/>Egnor<sp/>(egnor@google.com)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>&quot;smart&quot;<sp/>pointer<sp/>type<sp/>with<sp/>reference<sp/>tracking.<sp/><sp/>Every<sp/>pointer<sp/>to<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>particular<sp/>object<sp/>is<sp/>kept<sp/>on<sp/>a<sp/>circular<sp/>linked<sp/>list.<sp/><sp/>When<sp/>the<sp/>last<sp/>pointer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>an<sp/>object<sp/>is<sp/>destroyed<sp/>or<sp/>reassigned,<sp/>the<sp/>object<sp/>is<sp/>deleted.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Used<sp/>properly,<sp/>this<sp/>deletes<sp/>the<sp/>object<sp/>when<sp/>the<sp/>last<sp/>reference<sp/>goes<sp/>away.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>There<sp/>are<sp/>several<sp/>caveats:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Like<sp/>all<sp/>reference<sp/>counting<sp/>schemes,<sp/>cycles<sp/>lead<sp/>to<sp/>leaks.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Each<sp/>smart<sp/>pointer<sp/>is<sp/>actually<sp/>two<sp/>pointers<sp/>(8<sp/>bytes<sp/>instead<sp/>of<sp/>4).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Every<sp/>time<sp/>a<sp/>pointer<sp/>is<sp/>assigned,<sp/>the<sp/>entire<sp/>list<sp/>of<sp/>pointers<sp/>to<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>object<sp/>is<sp/>traversed.<sp/><sp/>This<sp/>class<sp/>is<sp/>therefore<sp/>NOT<sp/>SUITABLE<sp/>when<sp/>there</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>will<sp/>often<sp/>be<sp/>more<sp/>than<sp/>two<sp/>or<sp/>three<sp/>pointers<sp/>to<sp/>a<sp/>particular<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>References<sp/>are<sp/>only<sp/>tracked<sp/>as<sp/>long<sp/>as<sp/>linked_ptr&lt;&gt;<sp/>objects<sp/>are<sp/>copied.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>If<sp/>a<sp/>linked_ptr&lt;&gt;<sp/>is<sp/>converted<sp/>to<sp/>a<sp/>raw<sp/>pointer<sp/>and<sp/>back,<sp/>BAD<sp/>THINGS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>will<sp/>happen<sp/>(double<sp/>deletion).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>good<sp/>use<sp/>of<sp/>this<sp/>class<sp/>is<sp/>storing<sp/>object<sp/>references<sp/>in<sp/>STL<sp/>containers.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>can<sp/>safely<sp/>put<sp/>linked_ptr&lt;&gt;<sp/>in<sp/>a<sp/>vector&lt;&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Other<sp/>uses<sp/>may<sp/>not<sp/>be<sp/>as<sp/>good.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Note:<sp/>If<sp/>you<sp/>use<sp/>an<sp/>incomplete<sp/>type<sp/>with<sp/>linked_ptr&lt;&gt;,<sp/>the<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*containing*<sp/>linked_ptr&lt;&gt;<sp/>must<sp/>have<sp/>a<sp/>constructor<sp/>and<sp/>destructor<sp/>(even</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/>if<sp/>they<sp/>do<sp/>nothing!).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Bill<sp/>Gibbons<sp/>suggested<sp/>we<sp/>use<sp/>something<sp/>like<sp/>this.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Thread<sp/>Safety:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Unlike<sp/>other<sp/>linked_ptr<sp/>implementations,<sp/>in<sp/>this<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>a<sp/>linked_ptr<sp/>object<sp/>is<sp/>thread-safe<sp/>in<sp/>the<sp/>sense<sp/>that:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>-<sp/>it&apos;s<sp/>safe<sp/>to<sp/>copy<sp/>linked_ptr<sp/>objects<sp/>concurrently,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>-<sp/>it&apos;s<sp/>safe<sp/>to<sp/>copy<sp/>*from*<sp/>a<sp/>linked_ptr<sp/>and<sp/>read<sp/>its<sp/>underlying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>raw<sp/>pointer<sp/>(e.g.<sp/>via<sp/>get())<sp/>concurrently,<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>-<sp/>it&apos;s<sp/>safe<sp/>to<sp/>write<sp/>to<sp/>two<sp/>linked_ptrs<sp/>that<sp/>point<sp/>to<sp/>the<sp/>same</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>shared<sp/>object<sp/>concurrently.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO(wan@google.com):<sp/>rename<sp/>this<sp/>to<sp/>safe_linked_ptr<sp/>to<sp/>avoid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>confusion<sp/>with<sp/>normal<sp/>linked_ptr.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GTEST_INCLUDE_GTEST_INTERNAL_GTEST_LINKED_PTR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_INCLUDE_GTEST_INTERNAL_GTEST_LINKED_PTR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gtest-port_8h" kindref="compound">gtest/internal/gtest-port.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetesting" kindref="compound">testing</ref><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="cpp/io/manip/left" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">internal</ref><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Protects<sp/>copying<sp/>of<sp/>all<sp/>linked_ptr<sp/>objects.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="namespacetesting_1_1internal_1ad7c5625384cf5f6b714188f274537ef6" refkind="member"><highlight class="normal"><ref refid="gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="namespacetesting_1_1internal_1ad7c5625384cf5f6b714188f274537ef6" kindref="member">GTEST_DECLARE_STATIC_MUTEX_</ref>(g_linked_ptr_mutex);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>used<sp/>internally<sp/>by<sp/>all<sp/>instances<sp/>of<sp/>linked_ptr&lt;&gt;.<sp/><sp/>It<sp/>needs<sp/>to<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>a<sp/>non-template<sp/>class<sp/>because<sp/>different<sp/>types<sp/>of<sp/>linked_ptr&lt;&gt;<sp/>can<sp/>refer<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>same<sp/>object<sp/>(linked_ptr&lt;Superclass&gt;(obj)<sp/>vs<sp/>linked_ptr&lt;Subclass&gt;(obj)).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/>So,<sp/>it<sp/>needs<sp/>to<sp/>be<sp/>possible<sp/>for<sp/>different<sp/>types<sp/>of<sp/>linked_ptr<sp/>to<sp/>participate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>same<sp/>circular<sp/>linked<sp/>list,<sp/>so<sp/>we<sp/>need<sp/>a<sp/>single<sp/>class<sp/>type<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DO<sp/>NOT<sp/>USE<sp/>THIS<sp/>CLASS<sp/>DIRECTLY<sp/>YOURSELF.<sp/><sp/>Use<sp/>linked_ptr&lt;T&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classtesting_1_1internal_1_1linked__ptr__internal" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtesting_1_1internal_1_1linked__ptr__internal" kindref="compound">linked_ptr_internal</ref><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>new<sp/>circle<sp/>that<sp/>includes<sp/>only<sp/>this<sp/>instance.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classtesting_1_1internal_1_1linked__ptr__internal_1a742af1f65df2d5e2b7198a1b74264a83" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1a742af1f65df2d5e2b7198a1b74264a83" kindref="member">join_new</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref><sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Many<sp/>linked_ptr<sp/>operations<sp/>may<sp/>change<sp/>p.link_<sp/>for<sp/>some<sp/>linked_ptr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>variable<sp/>p<sp/>in<sp/>the<sp/>same<sp/>circle<sp/>as<sp/>this<sp/>object.<sp/><sp/>Therefore<sp/>we<sp/>need</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>to<sp/>prevent<sp/>two<sp/>such<sp/>operations<sp/>from<sp/>occurring<sp/>concurrently.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Note<sp/>that<sp/>different<sp/>types<sp/>of<sp/>linked_ptr<sp/>objects<sp/>can<sp/>coexist<sp/>in<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>circle<sp/>(e.g.<sp/>linked_ptr&lt;Base&gt;,<sp/>linked_ptr&lt;Derived1&gt;,<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>linked_ptr&lt;Derived2&gt;).<sp/><sp/>Therefore<sp/>we<sp/>must<sp/>use<sp/>a<sp/>single<sp/>mutex<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>protect<sp/>all<sp/>linked_ptr<sp/>objects.<sp/><sp/>This<sp/>can<sp/>create<sp/>serious</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>contention<sp/>in<sp/>production<sp/>code,<sp/>but<sp/>is<sp/>acceptable<sp/>in<sp/>a<sp/>testing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>framework.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Join<sp/>an<sp/>existing<sp/>circle.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="classtesting_1_1internal_1_1linked__ptr__internal_1acd5a341459f7e81b10b4112d8c764e2a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1acd5a341459f7e81b10b4112d8c764e2a" kindref="member">join</ref>(<ref refid="classtesting_1_1internal_1_1linked__ptr__internal" kindref="compound">linked_ptr_internal</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>ptr)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest-port_8h_1a69abff5a4efdd07bd5faebe3dd318d06" kindref="member">GTEST_LOCK_EXCLUDED_</ref>(g_linked_ptr_mutex)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1GTestMutexLock" kindref="compound">MutexLock</ref><sp/>lock(&amp;g_linked_ptr_mutex);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr__internal" kindref="compound">linked_ptr_internal</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>p<sp/>=<sp/>ptr;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(p-&gt;<ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref><sp/>!=<sp/>ptr)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>assert(p-&gt;<ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref><sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Trying<sp/>to<sp/>join()<sp/>a<sp/>linked<sp/>ring<sp/>we<sp/>are<sp/>already<sp/>in.<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Is<sp/>GMock<sp/>thread<sp/>safety<sp/>enabled?&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>p-&gt;<ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>p-&gt;<ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref><sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref><sp/>=<sp/>ptr;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Leave<sp/>whatever<sp/>circle<sp/>we&apos;re<sp/>part<sp/>of.<sp/><sp/>Returns<sp/>true<sp/>if<sp/>we<sp/>were<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>last<sp/>member<sp/>of<sp/>the<sp/>circle.<sp/><sp/>Once<sp/>this<sp/>is<sp/>done,<sp/>you<sp/>can<sp/>join()<sp/>another.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="classtesting_1_1internal_1_1linked__ptr__internal_1a8699e539d9702d363ef0351012d1b3ca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1a8699e539d9702d363ef0351012d1b3ca" kindref="member">depart</ref>()</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gtest-port_8h_1a69abff5a4efdd07bd5faebe3dd318d06" kindref="member">GTEST_LOCK_EXCLUDED_</ref>(g_linked_ptr_mutex)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1GTestMutexLock" kindref="compound">MutexLock</ref><sp/>lock(&amp;g_linked_ptr_mutex);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref><sp/>==<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr__internal" kindref="compound">linked_ptr_internal</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>p<sp/>=<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(p-&gt;<ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref><sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>assert(p-&gt;<ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref><sp/>!=<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Trying<sp/>to<sp/>depart()<sp/>a<sp/>linked<sp/>ring<sp/>we<sp/>are<sp/>not<sp/>in.<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Is<sp/>GMock<sp/>thread<sp/>safety<sp/>enabled?&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>p-&gt;<ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>p-&gt;<ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref><sp/>=<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="142" refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr__internal" kindref="compound">linked_ptr_internal</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" kindref="member">next_</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="146" refid="classtesting_1_1internal_1_1linked__ptr" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr</ref><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="148" refid="classtesting_1_1internal_1_1linked__ptr_1a295c7d1ee4100d916514c4e4385a0063" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a295c7d1ee4100d916514c4e4385a0063" kindref="member">element_type</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Take<sp/>over<sp/>ownership<sp/>of<sp/>a<sp/>raw<sp/>pointer.<sp/><sp/>This<sp/>should<sp/>happen<sp/>as<sp/>soon<sp/>as</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>possible<sp/>after<sp/>the<sp/>object<sp/>is<sp/>created.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="classtesting_1_1internal_1_1linked__ptr_1ae805418b9f03f14ff49649e710475dba" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1ae805418b9f03f14ff49649e710475dba" kindref="member">linked_ptr</ref>(T*<sp/>ptr<sp/>=<sp/>NULL)<sp/>{<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a0b4623795339fd29bf9303f926ae2824" kindref="member">capture</ref>(ptr);<sp/>}</highlight></codeline>
+<codeline lineno="153" refid="classtesting_1_1internal_1_1linked__ptr_1af99460fd09ca0f83e061ea480ef1a45e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1af99460fd09ca0f83e061ea480ef1a45e" kindref="member">~linked_ptr</ref>()<sp/>{<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a0852ab20839140f29b2ad074339fccc7" kindref="member">depart</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Copy<sp/>an<sp/>existing<sp/>linked_ptr&lt;&gt;,<sp/>adding<sp/>ourselves<sp/>to<sp/>the<sp/>list<sp/>of<sp/>references.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="classtesting_1_1internal_1_1linked__ptr_1a7597ed91006edd0467c99bd1aaab07f5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a7597ed91006edd0467c99bd1aaab07f5" kindref="member">linked_ptr</ref>(<ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr&lt;U&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>ptr)<sp/>{<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1aea2859970b65708fc4f7c8c4cbc7928a" kindref="member">copy</ref>(&amp;ptr);<sp/>}</highlight></codeline>
+<codeline lineno="157" refid="classtesting_1_1internal_1_1linked__ptr_1abc076b5678cc7f64306d5ecfefc93aff" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1abc076b5678cc7f64306d5ecfefc93aff" kindref="member">linked_ptr</ref>(<ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>ptr)<sp/>{<sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(&amp;ptr<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1aea2859970b65708fc4f7c8c4cbc7928a" kindref="member">copy</ref>(&amp;ptr);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Assignment<sp/>releases<sp/>the<sp/>old<sp/>value<sp/>and<sp/>acquires<sp/>the<sp/>new.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="classtesting_1_1internal_1_1linked__ptr_1a82608d98869b750d9ab729f1450a9a45" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr</ref>&amp;<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a82608d98869b750d9ab729f1450a9a45" kindref="member">operator=</ref>(<ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr&lt;U&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>ptr)<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a0852ab20839140f29b2ad074339fccc7" kindref="member">depart</ref>();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1aea2859970b65708fc4f7c8c4cbc7928a" kindref="member">copy</ref>(&amp;ptr);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classtesting_1_1internal_1_1linked__ptr_1a1f40b5e66e6cf7b661ea116c806f952e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr</ref>&amp;<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a1f40b5e66e6cf7b661ea116c806f952e" kindref="member">operator=</ref>(<ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>ptr)<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(&amp;ptr<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a0852ab20839140f29b2ad074339fccc7" kindref="member">depart</ref>();</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1aea2859970b65708fc4f7c8c4cbc7928a" kindref="member">copy</ref>(&amp;ptr);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Smart<sp/>pointer<sp/>members.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="classtesting_1_1internal_1_1linked__ptr_1a95ba3b7b66ed0193c779976c6e126ab6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a95ba3b7b66ed0193c779976c6e126ab6" kindref="member">reset</ref>(T*<sp/>ptr<sp/>=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a0852ab20839140f29b2ad074339fccc7" kindref="member">depart</ref>();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a0b4623795339fd29bf9303f926ae2824" kindref="member">capture</ref>(ptr);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182" refid="classtesting_1_1internal_1_1linked__ptr_1a0c2ba99eb3521806f83f5c4435465ce0" refkind="member"><highlight class="normal"><sp/><sp/>T*<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a0c2ba99eb3521806f83f5c4435465ce0" kindref="member">get</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1abb52c4e944fc7a24a4ec7788b612fb37" kindref="member">value_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="183" refid="classtesting_1_1internal_1_1linked__ptr_1a23ff85ac97eed03e945034b65c8eb900" refkind="member"><highlight class="normal"><sp/><sp/>T*<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a23ff85ac97eed03e945034b65c8eb900" kindref="member">operator-&gt;</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1abb52c4e944fc7a24a4ec7788b612fb37" kindref="member">value_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="184" refid="classtesting_1_1internal_1_1linked__ptr_1ac94ad266bf41cbf979a95ca2870908d9" refkind="member"><highlight class="normal"><sp/><sp/>T&amp;<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1ac94ad266bf41cbf979a95ca2870908d9" kindref="member">operator*</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="classtesting_1_1internal_1_1linked__ptr_1abb52c4e944fc7a24a4ec7788b612fb37" kindref="member">value_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="classtesting_1_1internal_1_1linked__ptr_1ad87ac8ff5543b6fad66e2f3c9844581a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1ad87ac8ff5543b6fad66e2f3c9844581a" kindref="member">operator==</ref>(T*<sp/>p)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1abb52c4e944fc7a24a4ec7788b612fb37" kindref="member">value_</ref><sp/>==<sp/>p;<sp/>}</highlight></codeline>
+<codeline lineno="187" refid="classtesting_1_1internal_1_1linked__ptr_1a10305395af92bd2fec7bca085cabc99c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a10305395af92bd2fec7bca085cabc99c" kindref="member">operator!=</ref>(T*<sp/>p)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1abb52c4e944fc7a24a4ec7788b612fb37" kindref="member">value_</ref><sp/>!=<sp/>p;<sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
+<codeline lineno="189" refid="classtesting_1_1internal_1_1linked__ptr_1a79306e959a4ae7b3a9da641d2ba06ce6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a79306e959a4ae7b3a9da641d2ba06ce6" kindref="member">operator==</ref>(<ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr&lt;U&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>ptr)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1abb52c4e944fc7a24a4ec7788b612fb37" kindref="member">value_</ref><sp/>==<sp/>ptr.<ref refid="classtesting_1_1internal_1_1linked__ptr_1a0c2ba99eb3521806f83f5c4435465ce0" kindref="member">get</ref>();</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
+<codeline lineno="193" refid="classtesting_1_1internal_1_1linked__ptr_1a4801114a83a9e12b08f90e0d28318f26" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a4801114a83a9e12b08f90e0d28318f26" kindref="member">operator!=</ref>(<ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr&lt;U&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>ptr)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1abb52c4e944fc7a24a4ec7788b612fb37" kindref="member">value_</ref><sp/>!=<sp/>ptr.<ref refid="classtesting_1_1internal_1_1linked__ptr_1a0c2ba99eb3521806f83f5c4435465ce0" kindref="member">get</ref>();</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
+<codeline lineno="199" refid="classtesting_1_1internal_1_1linked__ptr_1a7763f286ca03a7f7363a033d996c8c1c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="classtesting_1_1internal_1_1linked__ptr_1abb52c4e944fc7a24a4ec7788b612fb37" refkind="member"><highlight class="normal"><sp/><sp/>T*<sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1abb52c4e944fc7a24a4ec7788b612fb37" kindref="member">value_</ref>;</highlight></codeline>
+<codeline lineno="202" refid="classtesting_1_1internal_1_1linked__ptr_1a8fdfa75fea8bfc10825a3cc53c50461f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr__internal" kindref="compound">linked_ptr_internal</ref><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a8fdfa75fea8bfc10825a3cc53c50461f" kindref="member">link_</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="classtesting_1_1internal_1_1linked__ptr_1a0852ab20839140f29b2ad074339fccc7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a0852ab20839140f29b2ad074339fccc7" kindref="member">depart</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classtesting_1_1internal_1_1linked__ptr_1a8fdfa75fea8bfc10825a3cc53c50461f" kindref="member">link_</ref>.<ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1a8699e539d9702d363ef0351012d1b3ca" kindref="member">depart</ref>())<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1abb52c4e944fc7a24a4ec7788b612fb37" kindref="member">value_</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="classtesting_1_1internal_1_1linked__ptr_1a0b4623795339fd29bf9303f926ae2824" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a0b4623795339fd29bf9303f926ae2824" kindref="member">capture</ref>(T*<sp/>ptr)<sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1abb52c4e944fc7a24a4ec7788b612fb37" kindref="member">value_</ref><sp/>=<sp/>ptr;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a8fdfa75fea8bfc10825a3cc53c50461f" kindref="member">link_</ref>.<ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1a742af1f65df2d5e2b7198a1b74264a83" kindref="member">join_new</ref>();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="classtesting_1_1internal_1_1linked__ptr_1aea2859970b65708fc4f7c8c4cbc7928a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1aea2859970b65708fc4f7c8c4cbc7928a" kindref="member">copy</ref>(<ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr&lt;U&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>ptr)<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1abb52c4e944fc7a24a4ec7788b612fb37" kindref="member">value_</ref><sp/>=<sp/>ptr-&gt;<ref refid="classtesting_1_1internal_1_1linked__ptr_1a0c2ba99eb3521806f83f5c4435465ce0" kindref="member">get</ref>();</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classtesting_1_1internal_1_1linked__ptr_1abb52c4e944fc7a24a4ec7788b612fb37" kindref="member">value_</ref>)</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a8fdfa75fea8bfc10825a3cc53c50461f" kindref="member">link_</ref>.<ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1acd5a341459f7e81b10b4112d8c764e2a" kindref="member">join</ref>(&amp;ptr-&gt;<ref refid="classtesting_1_1internal_1_1linked__ptr_1a8fdfa75fea8bfc10825a3cc53c50461f" kindref="member">link_</ref>);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr_1a8fdfa75fea8bfc10825a3cc53c50461f" kindref="member">link_</ref>.<ref refid="classtesting_1_1internal_1_1linked__ptr__internal_1a742af1f65df2d5e2b7198a1b74264a83" kindref="member">join_new</ref>();</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="namespacetesting_1_1internal_1ad1cb54a206a209ddace17a05359d38ae" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacetesting_1_1internal_1ad1cb54a206a209ddace17a05359d38ae" kindref="member">operator==</ref>(T*<sp/>ptr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr&lt;T&gt;</ref>&amp;<sp/>x)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ptr<sp/>==<sp/>x.<ref refid="classtesting_1_1internal_1_1linked__ptr_1a0c2ba99eb3521806f83f5c4435465ce0" kindref="member">get</ref>();</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="namespacetesting_1_1internal_1a6910869259f8f31825b471e9190fa09a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacetesting_1_1internal_1a6910869259f8f31825b471e9190fa09a" kindref="member">operator!=</ref>(T*<sp/>ptr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr&lt;T&gt;</ref>&amp;<sp/>x)<sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ptr<sp/>!=<sp/>x.<ref refid="classtesting_1_1internal_1_1linked__ptr_1a0c2ba99eb3521806f83f5c4435465ce0" kindref="member">get</ref>();</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>function<sp/>to<sp/>convert<sp/>T*<sp/>into<sp/>linked_ptr&lt;T&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Doing<sp/>e.g.<sp/>make_linked_ptr(new<sp/>FooBarBaz&lt;type&gt;(arg))<sp/>is<sp/>a<sp/>shorter<sp/>notation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment">//<sp/>for<sp/>linked_ptr&lt;FooBarBaz&lt;type&gt;<sp/>&gt;(new<sp/>FooBarBaz&lt;type&gt;(arg))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="236" refid="namespacetesting_1_1internal_1a0d79fad1f772844eff35dfe955f24fd6" refkind="member"><highlight class="normal"><ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr&lt;T&gt;</ref><sp/><ref refid="namespacetesting_1_1internal_1a0d79fad1f772844eff35dfe955f24fd6" kindref="member">make_linked_ptr</ref>(T*<sp/>ptr)<sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtesting_1_1internal_1_1linked__ptr" kindref="compound">linked_ptr&lt;T&gt;</ref>(ptr);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>internal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>testing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>GTEST_INCLUDE_GTEST_INTERNAL_GTEST_LINKED_PTR_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/googletest/include/gtest/internal/gtest-linked_ptr.h"/>
+  </compounddef>
+</doxygen>

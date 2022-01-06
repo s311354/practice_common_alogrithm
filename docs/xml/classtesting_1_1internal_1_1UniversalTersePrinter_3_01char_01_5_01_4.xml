@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classtesting_1_1internal_1_1UniversalTersePrinter_3_01char_01_5_01_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::UniversalTersePrinter&lt; char * &gt;</compoundname>
+    <includes refid="gtest-printers_8h" local="no">gtest-printers.h</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1UniversalTersePrinter_3_01char_01_5_01_4_1aa9ef95587c1461fe33e254af52401a43" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::internal::UniversalTersePrinter&lt; char * &gt;::Print</definition>
+        <argsstring>(char *str, ::std::ostream *os)</argsstring>
+        <name>Print</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-printers.h" line="815" column="15" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="815" bodyend="817"/>
+        <references refid="classtesting_1_1internal_1_1UniversalTersePrinter_1a042249cdb42fdb77588c9ad54ea7ed54" compoundref="gtest-printers_8h" startline="783" endline="785">testing::internal::UniversalTersePrinter&lt; T &gt;::Print</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>testing::internal::UniversalTersePrinter&lt; char * &gt;</label>
+        <link refid="classtesting_1_1internal_1_1UniversalTersePrinter_3_01char_01_5_01_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/gtest-printers.h" line="813" column="1" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="813" bodyend="818"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1UniversalTersePrinter_3_01char_01_5_01_4_1aa9ef95587c1461fe33e254af52401a43" prot="public" virt="non-virtual"><scope>testing::internal::UniversalTersePrinter&lt; char * &gt;</scope><name>Print</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

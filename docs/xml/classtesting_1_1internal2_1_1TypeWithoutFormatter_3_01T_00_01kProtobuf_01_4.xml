@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classtesting_1_1internal2_1_1TypeWithoutFormatter_3_01T_00_01kProtobuf_01_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal2::TypeWithoutFormatter&lt; T, kProtobuf &gt;</compoundname>
+    <includes refid="gtest-printers_8h" local="no">gtest-printers.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal2_1_1TypeWithoutFormatter_3_01T_00_01kProtobuf_01_4_1ac96fb775dc776f02da9a671ea0e04599" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::internal2::TypeWithoutFormatter&lt; T, kProtobuf &gt;::PrintValue</definition>
+        <argsstring>(const T &amp;value, ::std::ostream *os)</argsstring>
+        <name>PrintValue</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-printers.h" line="153" column="15" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="153" bodyend="159"/>
+        <references refid="namespacetesting_1_1internal2_1a140c8efd51e63a3def98445bff107518" compoundref="gtest-printers_8h" startline="148">testing::internal2::kProtobufOneLinerMaxLength</references>
+        <references refid="cpp/string/basic_string/size_1">std::string::length</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>testing::internal2::TypeWithoutFormatter&lt; T, kProtobuf &gt;</label>
+        <link refid="classtesting_1_1internal2_1_1TypeWithoutFormatter_3_01T_00_01kProtobuf_01_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/gtest-printers.h" line="151" column="1" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="151" bodyend="160"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal2_1_1TypeWithoutFormatter_3_01T_00_01kProtobuf_01_4_1ac96fb775dc776f02da9a671ea0e04599" prot="public" virt="non-virtual"><scope>testing::internal2::TypeWithoutFormatter&lt; T, kProtobuf &gt;</scope><name>PrintValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

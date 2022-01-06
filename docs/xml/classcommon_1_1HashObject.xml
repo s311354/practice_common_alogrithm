@@ -5,7 +5,7 @@
     <includes refid="hash__object_8h" local="no">hash_object.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classcommon_1_1HashObject_1a4230334fc738a9397ce327d20b3d5b36" prot="private" static="no" mutable="no">
-        <type>std::string</type>
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
         <definition>std::string common::HashObject::key_</definition>
         <argsstring></argsstring>
         <name>key_</name>
@@ -21,7 +21,7 @@
         <referencedby refid="classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" compoundref="hash__object_8h" startline="23" endline="23">SetKey</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classcommon_1_1HashObject_1a52042a3ba1f11399740f4906de8edfd1" prot="private" static="no" mutable="no">
-        <type>std::string</type>
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
         <definition>std::string common::HashObject::value_</definition>
         <argsstring></argsstring>
         <name>value_</name>
@@ -39,7 +39,7 @@
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classcommon_1_1HashObject_1aa59e36990bd2b158c5d7fdd7cb0d6734" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string &amp;</type>
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
         <definition>std::string&amp; common::HashObject::Getkey</definition>
         <argsstring>()</argsstring>
         <name>Getkey</name>
@@ -55,7 +55,7 @@
         <referencedby refid="classcommon_1_1HashTable_1af31fdd02d0dfcbf2b18018775c953454" compoundref="hash__table_8cc" startline="155" endline="161">common::HashTable::PringDebug</referencedby>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1HashObject_1a20a96cca63049317f786f226044c4eb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::string &amp;</type>
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
         <definition>std::string&amp; common::HashObject::GetValue</definition>
         <argsstring>()</argsstring>
         <name>GetValue</name>
@@ -138,7 +138,7 @@
         <argsstring>(const std::string key)</argsstring>
         <name>SetKey</name>
         <param>
-          <type>const std::string</type>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
           <declname>key</declname>
         </param>
         <briefdescription>
@@ -163,7 +163,7 @@
         <argsstring>(const std::string value)</argsstring>
         <name>SetValue</name>
         <param>
-          <type>const std::string</type>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
           <declname>value</declname>
         </param>
         <briefdescription>
@@ -197,7 +197,7 @@
       </sectiondef>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="classcommon_1_1HashObject_1a9029991e217c3ff395d196a0fad700d4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>const std::string</type>
+        <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
         <definition>static const std::string common::HashObject::GetDummyKey</definition>
         <argsstring>()</argsstring>
         <name>GetDummyKey</name>
@@ -213,7 +213,7 @@
         <referencedby refid="classcommon_1_1HashObject_1ae3e0fe955bebf68934feb9545bf7a0e9" compoundref="hash__object_8h" startline="29" endline="32">SetAsDummy</referencedby>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1HashObject_1a8b63a836e49dd5d3e7fab2f95028e6ab" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>const std::string</type>
+        <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
         <definition>static const std::string common::HashObject::GetNullKey</definition>
         <argsstring>()</argsstring>
         <name>GetNullKey</name>
@@ -236,8 +236,16 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="3">
+      <node id="4">
         <label>std::basic_string&lt; Char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
       </node>
       <node id="1">
         <label>common::HashObject</label>
@@ -249,6 +257,7 @@
       </node>
       <node id="2">
         <label>std::string</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
         <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>

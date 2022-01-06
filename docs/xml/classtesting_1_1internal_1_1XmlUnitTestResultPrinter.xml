@@ -1,0 +1,731 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::XmlUnitTestResultPrinter</compoundname>
+    <basecompoundref refid="classtesting_1_1EmptyTestEventListener" prot="public" virt="non-virtual">testing::EmptyTestEventListener</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa81cc4540d16279f5eb5f7ec9f366ea7" prot="private" static="no" mutable="no">
+        <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>const std::string testing::internal::XmlUnitTestResultPrinter::output_file_</definition>
+        <argsstring></argsstring>
+        <name>output_file_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3416" column="21" bodyfile="lib/googletest/src/gtest.cc" bodystart="3416" bodyend="-1"/>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a2ae986dd2f4f2aed31cc6f3bc8c56898" compoundref="gtest_8cc" startline="3432" endline="3462">OnTestIterationEnd</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1afdaf88e6764c18ce0dcc3733d7a06e31" compoundref="gtest_8cc" startline="3422" endline="3429">XmlUnitTestResultPrinter</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1EmptyTestEventListener_1abc481c6648d15d4242245195a06f5aa0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::EmptyTestEventListener::OnEnvironmentsSetUpEnd</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnEnvironmentsSetUpEnd</name>
+        <reimplements refid="classtesting_1_1TestEventListener_1aaa1021d75f5dbf3f05c829c1cc520341">OnEnvironmentsSetUpEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1050" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="1050" bodyend="1050"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1EmptyTestEventListener_1a156d1965248fbdced6aabacadfa2d63f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::EmptyTestEventListener::OnEnvironmentsSetUpStart</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnEnvironmentsSetUpStart</name>
+        <reimplements refid="classtesting_1_1TestEventListener_1aa6502e534919605be45f26a6daf9a40c">OnEnvironmentsSetUpStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1049" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="1049" bodyend="1049"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1EmptyTestEventListener_1aea64c83c415b33a4c0b0239bafd1438d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::EmptyTestEventListener::OnEnvironmentsTearDownEnd</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnEnvironmentsTearDownEnd</name>
+        <reimplements refid="classtesting_1_1TestEventListener_1a9ea04fa7f447865ba76df35e12ba2092">OnEnvironmentsTearDownEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1057" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="1057" bodyend="1057"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1EmptyTestEventListener_1a00fa1a4ea5831e20746188414268e7c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::EmptyTestEventListener::OnEnvironmentsTearDownStart</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnEnvironmentsTearDownStart</name>
+        <reimplements refid="classtesting_1_1TestEventListener_1a468b5e6701bcb86cb2c956caadbba5e4">OnEnvironmentsTearDownStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1056" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="1056" bodyend="1056"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1EmptyTestEventListener_1a6bec703158283104c4298f7d8a528515" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::EmptyTestEventListener::OnTestCaseEnd</definition>
+        <argsstring>(const TestCase &amp;)</argsstring>
+        <name>OnTestCaseEnd</name>
+        <reimplements refid="classtesting_1_1TestEventListener_1ae61985e2ef76ac78379b077be57a9c36">OnTestCaseEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestCase" kindref="compound">TestCase</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1055" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="1055" bodyend="1055"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1EmptyTestEventListener_1ae4707ed9cc7ace5241bc8ccc4051209b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::EmptyTestEventListener::OnTestCaseStart</definition>
+        <argsstring>(const TestCase &amp;)</argsstring>
+        <name>OnTestCaseStart</name>
+        <reimplements refid="classtesting_1_1TestEventListener_1ab4ed885d63f5bbff8076c1329b3dfe36">OnTestCaseStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestCase" kindref="compound">TestCase</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1051" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="1051" bodyend="1051"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1EmptyTestEventListener_1afd58d21005f0d0d0399fb114627545d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::EmptyTestEventListener::OnTestEnd</definition>
+        <argsstring>(const TestInfo &amp;)</argsstring>
+        <name>OnTestEnd</name>
+        <reimplements refid="classtesting_1_1TestEventListener_1abb1c44525ef038500608b5dc2f17099b">OnTestEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestInfo" kindref="compound">TestInfo</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1054" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="1054" bodyend="1054"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a2ae986dd2f4f2aed31cc6f3bc8c56898" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void testing::internal::XmlUnitTestResultPrinter::OnTestIterationEnd</definition>
+        <argsstring>(const UnitTest &amp;unit_test, int iteration)</argsstring>
+        <name>OnTestIterationEnd</name>
+        <reimplements refid="classtesting_1_1EmptyTestEventListener_1a2253e5a18b3cf7bccd349567a252209d">OnTestIterationEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iteration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3353" column="16" bodyfile="lib/googletest/src/gtest.cc" bodystart="3432" bodyend="3462"/>
+        <references refid="cpp/string/basic_string/c_str_1">std::string::c_str</references>
+        <references refid="classtesting_1_1internal_1_1FilePath_1a26790e530dd738f7fc8202c1ce718406" compoundref="gtest-filepath_8cc" startline="308" endline="319">testing::internal::FilePath::CreateDirectoriesRecursively</references>
+        <references refid="namespacetesting_1_1internal_1_1posix_1a4042201dcc4932641d484e7ddf94de7d" compoundref="gtest-port_8h" startline="2367" endline="2369">testing::internal::posix::FOpen</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa81cc4540d16279f5eb5f7ec9f366ea7" compoundref="gtest_8cc" startline="3416">output_file_</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a3be1c8766241d0f34cdf59b45a52f73b" compoundref="gtest_8cc" startline="3701" endline="3737">PrintXmlUnitTest</references>
+        <references refid="classtesting_1_1internal_1_1FilePath_1a49e030b5a62ca7dcc7f920a63a96fa55" compoundref="gtest-filepath_8cc" startline="166" endline="175">testing::internal::FilePath::RemoveFileName</references>
+        <references refid="namespacetesting_1_1internal_1ab56e151d23ee7e14dbf03ac7aa1d182b" compoundref="gtest_8cc" startline="1982" endline="1998">testing::internal::StringStreamToString</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1EmptyTestEventListener_1a836f05829855dc60d13ba99ad712c0dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::EmptyTestEventListener::OnTestIterationStart</definition>
+        <argsstring>(const UnitTest &amp;, int)</argsstring>
+        <name>OnTestIterationStart</name>
+        <reimplements refid="classtesting_1_1TestEventListener_1a60cc09b7907cb329d152eb5e7133bdeb">OnTestIterationStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1047" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="1047" bodyend="1048"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1EmptyTestEventListener_1a59e7f7d9f2e2d089a6e8c1e2577f4718" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::EmptyTestEventListener::OnTestPartResult</definition>
+        <argsstring>(const TestPartResult &amp;)</argsstring>
+        <name>OnTestPartResult</name>
+        <reimplements refid="classtesting_1_1TestEventListener_1a054f8705c883fa120b91473aff38f2ee">OnTestPartResult</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1053" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="1053" bodyend="1053"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1EmptyTestEventListener_1a0abcc02bd2331a2e29ad6f4d9daf2a32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::EmptyTestEventListener::OnTestProgramEnd</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnTestProgramEnd</name>
+        <reimplements refid="classtesting_1_1TestEventListener_1ad15b6246d94c268e233487a86463ef3d">OnTestProgramEnd</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1060" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="1060" bodyend="1060"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1EmptyTestEventListener_1aa3847c8a3c22d8d69a6006dfdd6589fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::EmptyTestEventListener::OnTestProgramStart</definition>
+        <argsstring>(const UnitTest &amp;)</argsstring>
+        <name>OnTestProgramStart</name>
+        <reimplements refid="classtesting_1_1TestEventListener_1a5f6c84f39851e8a603a2d2e10063816b">OnTestProgramStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1046" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="1046" bodyend="1046"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1EmptyTestEventListener_1a84fa74cc9ba742f9f847ea405ca84e5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::EmptyTestEventListener::OnTestStart</definition>
+        <argsstring>(const TestInfo &amp;)</argsstring>
+        <name>OnTestStart</name>
+        <reimplements refid="classtesting_1_1TestEventListener_1ab4f6a0ca16ae75daf385b3b5914e1048">OnTestStart</reimplements>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestInfo" kindref="compound">TestInfo</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1052" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="1052" bodyend="1052"/>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1afdaf88e6764c18ce0dcc3733d7a06e31" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::XmlUnitTestResultPrinter::XmlUnitTestResultPrinter</definition>
+        <argsstring>(const char *output_file)</argsstring>
+        <name>XmlUnitTestResultPrinter</name>
+        <param>
+          <type>const char *</type>
+          <declname>output_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3351" column="12" bodyfile="lib/googletest/src/gtest.cc" bodystart="3422" bodyend="3429"/>
+        <references refid="cpp/string/basic_string/c_str_1">std::string::c_str</references>
+        <references refid="cpp/string/basic_string/empty_1">std::string::empty</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa81cc4540d16279f5eb5f7ec9f366ea7" compoundref="gtest_8cc" startline="3416">output_file_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1adadf42cf46ade9b26743466ce4b52f36" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string testing::internal::XmlUnitTestResultPrinter::EscapeXml</definition>
+        <argsstring>(const std::string &amp;str, bool is_attribute)</argsstring>
+        <name>EscapeXml</name>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_attribute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3371" column="22" bodyfile="lib/googletest/src/gtest.cc" bodystart="3476" bodyend="3517"/>
+        <references refid="classtesting_1_1internal_1_1String_1af702dc7cbd569589d8e3ff215a7cafa9" compoundref="gtest_8cc" startline="1973" endline="1978">testing::internal::String::FormatByte</references>
+        <references refid="classtesting_1_1Message_1a2cdc4df62bdcc9df37651a1cf527704e" compoundref="gtest_8cc" startline="981" endline="983">testing::Message::GetString</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1af9d5af6e5d0c505d5c3bd50a8d2a8d76" compoundref="gtest_8cc" startline="3358" endline="3360">IsNormalizableWhitespace</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a2b83a24e3ec8544efa1156f9d6e51873" compoundref="gtest_8cc" startline="3363" endline="3365">IsValidXmlCharacter</references>
+        <references refid="cpp/string/basic_string/size_1">std::string::size</references>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aad574d7bb0c24578d5acc57817b9d367" compoundref="gtest_8cc" startline="3377" endline="3379">EscapeXmlAttribute</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a934486bda28e7013f2d07520d5098a31" compoundref="gtest_8cc" startline="3382" endline="3384">EscapeXmlText</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aad574d7bb0c24578d5acc57817b9d367" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>static std::string testing::internal::XmlUnitTestResultPrinter::EscapeXmlAttribute</definition>
+        <argsstring>(const std::string &amp;str)</argsstring>
+        <name>EscapeXmlAttribute</name>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3377" column="22" bodyfile="lib/googletest/src/gtest.cc" bodystart="3377" bodyend="3379"/>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1adadf42cf46ade9b26743466ce4b52f36" compoundref="gtest_8cc" startline="3476" endline="3517">EscapeXml</references>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa8ca7066de948d26d171597430c75839" compoundref="gtest_8cc" startline="3607" endline="3621">OutputXmlAttribute</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1af642843faed4cd28c77d688f6f2820d7" compoundref="gtest_8cc" startline="3625" endline="3672">OutputXmlTestInfo</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aaac4f1352a2cc46f6a69994d45999f0b" compoundref="gtest_8cc" startline="3741" endline="3750">TestPropertiesAsXmlAttributes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a934486bda28e7013f2d07520d5098a31" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>static std::string testing::internal::XmlUnitTestResultPrinter::EscapeXmlText</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>EscapeXmlText</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3382" column="22" bodyfile="lib/googletest/src/gtest.cc" bodystart="3382" bodyend="3384"/>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1adadf42cf46ade9b26743466ce4b52f36" compoundref="gtest_8cc" startline="3476" endline="3517">EscapeXml</references>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1af9d5af6e5d0c505d5c3bd50a8d2a8d76" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool testing::internal::XmlUnitTestResultPrinter::IsNormalizableWhitespace</definition>
+        <argsstring>(char c)</argsstring>
+        <name>IsNormalizableWhitespace</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3358" column="15" bodyfile="lib/googletest/src/gtest.cc" bodystart="3358" bodyend="3360"/>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1adadf42cf46ade9b26743466ce4b52f36" compoundref="gtest_8cc" startline="3476" endline="3517">EscapeXml</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a2b83a24e3ec8544efa1156f9d6e51873" compoundref="gtest_8cc" startline="3363" endline="3365">IsValidXmlCharacter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a2b83a24e3ec8544efa1156f9d6e51873" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool testing::internal::XmlUnitTestResultPrinter::IsValidXmlCharacter</definition>
+        <argsstring>(char c)</argsstring>
+        <name>IsValidXmlCharacter</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3363" column="15" bodyfile="lib/googletest/src/gtest.cc" bodystart="3363" bodyend="3365"/>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1af9d5af6e5d0c505d5c3bd50a8d2a8d76" compoundref="gtest_8cc" startline="3358" endline="3360">IsNormalizableWhitespace</references>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1adadf42cf46ade9b26743466ce4b52f36" compoundref="gtest_8cc" startline="3476" endline="3517">EscapeXml</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa14cb72f42a346841482cbafa65e3155" compoundref="gtest_8cc" startline="3522" endline="3531">RemoveInvalidXmlCharacters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa8ca7066de948d26d171597430c75839" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::XmlUnitTestResultPrinter::OutputXmlAttribute</definition>
+        <argsstring>(std::ostream *stream, const std::string &amp;element_name, const std::string &amp;name, const std::string &amp;value)</argsstring>
+        <name>OutputXmlAttribute</name>
+        <param>
+          <type><ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>element_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3388" column="15" bodyfile="lib/googletest/src/gtest.cc" bodystart="3607" bodyend="3621"/>
+        <references refid="cpp/container/vector/begin_1">std::vector&lt; T &gt;::begin</references>
+        <references refid="cpp/container/vector/end_1">std::vector&lt; T &gt;::end</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aad574d7bb0c24578d5acc57817b9d367" compoundref="gtest_8cc" startline="3377" endline="3379">EscapeXmlAttribute</references>
+        <references refid="cpp/algorithm/find_1">std::find</references>
+        <references refid="namespacetesting_1acb3fdfadf475a3c2f5e22a3dae73532a" compoundref="gtest_8cc" startline="2112" endline="2125">testing::GetReservedAttributesForElement</references>
+        <references refid="gtest-port_8h_1ab54343f0a36dc4cb0ce8a478dd7847b8" compoundref="gtest-port_8h" startline="1295">GTEST_CHECK_</references>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1af642843faed4cd28c77d688f6f2820d7" compoundref="gtest_8cc" startline="3625" endline="3672">OutputXmlTestInfo</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a7f7accabeac896d4271f36d24ca02dba" compoundref="gtest_8cc" startline="3675" endline="3698">PrintXmlTestCase</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a3be1c8766241d0f34cdf59b45a52f73b" compoundref="gtest_8cc" startline="3701" endline="3737">PrintXmlUnitTest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a41bccd75f54932c5b3b8cce1f94dbd54" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::XmlUnitTestResultPrinter::OutputXmlCDataSection</definition>
+        <argsstring>(::std::ostream *stream, const char *data)</argsstring>
+        <name>OutputXmlCDataSection</name>
+        <param>
+          <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3394" column="15" bodyfile="lib/googletest/src/gtest.cc" bodystart="3588" bodyend="3605"/>
+        <references refid="cpp/io/basic_ostream/write_1">std::ostream::write</references>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1af642843faed4cd28c77d688f6f2820d7" compoundref="gtest_8cc" startline="3625" endline="3672">OutputXmlTestInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1af642843faed4cd28c77d688f6f2820d7" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::XmlUnitTestResultPrinter::OutputXmlTestInfo</definition>
+        <argsstring>(::std::ostream *stream, const char *test_case_name, const TestInfo &amp;test_info)</argsstring>
+        <name>OutputXmlTestInfo</name>
+        <param>
+          <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>test_case_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestInfo" kindref="compound">TestInfo</ref> &amp;</type>
+          <declname>test_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3397" column="15" bodyfile="lib/googletest/src/gtest.cc" bodystart="3625" bodyend="3672"/>
+        <references refid="cpp/string/basic_string/c_str_1">std::string::c_str</references>
+        <references refid="classtesting_1_1TestResult_1a717e05e00d4af5cb809433e343ab63af" compoundref="gtest_8h" startline="551" endline="551">testing::TestResult::elapsed_time</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aad574d7bb0c24578d5acc57817b9d367" compoundref="gtest_8cc" startline="3377" endline="3379">EscapeXmlAttribute</references>
+        <references refid="classtesting_1_1TestPartResult_1aa04b377c3e7ed57d39e882df5561ac90" compoundref="gtest-test-part_8h" startline="94" endline="94">testing::TestPartResult::failed</references>
+        <references refid="classtesting_1_1TestPartResult_1a0be40512f50a0086c4d3dc43938978aa" compoundref="gtest-test-part_8h" startline="76" endline="78">testing::TestPartResult::file_name</references>
+        <references refid="namespacetesting_1_1internal_1a1ee4cde97868c53e442d3182496a9f3c" compoundref="gtest-port_8cc" startline="898" endline="906">testing::internal::FormatCompilerIndependentFileLocation</references>
+        <references refid="namespacetesting_1_1internal_1a904485f27a54be8a5a92856e2d838797" compoundref="gtest_8cc" startline="3550" endline="3554">testing::internal::FormatTimeInMillisAsSeconds</references>
+        <references refid="classtesting_1_1TestResult_1a765c1e734ac08115757b343d57226bba" compoundref="gtest_8cc" startline="2029" endline="2033">testing::TestResult::GetTestPartResult</references>
+        <references refid="classtesting_1_1TestPartResult_1ad4c5da5f13245ac18cf256d0d9f3eda9" compoundref="gtest-test-part_8h" startline="82" endline="82">testing::TestPartResult::line_number</references>
+        <references refid="classtesting_1_1TestPartResult_1a5019dc9d753aba5949777270de255d49" compoundref="gtest-test-part_8h" startline="88" endline="88">testing::TestPartResult::message</references>
+        <references refid="classtesting_1_1TestInfo_1afa5d6513647d3c56f190065584133ab0" compoundref="gtest_8h" startline="717">testing::TestInfo::name</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa8ca7066de948d26d171597430c75839" compoundref="gtest_8cc" startline="3607" endline="3621">OutputXmlAttribute</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a41bccd75f54932c5b3b8cce1f94dbd54" compoundref="gtest_8cc" startline="3588" endline="3605">OutputXmlCDataSection</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa14cb72f42a346841482cbafa65e3155" compoundref="gtest_8cc" startline="3522" endline="3531">RemoveInvalidXmlCharacters</references>
+        <references refid="classtesting_1_1TestInfo_1aee8cb884c95cd446129aba936b4159e0" compoundref="gtest_8h" startline="705" endline="705">testing::TestInfo::result</references>
+        <references refid="classtesting_1_1TestInfo_1a866e33b5bc5ab2a6e5375fc7d3af0f96" compoundref="gtest_8h" startline="694" endline="694">testing::TestInfo::should_run</references>
+        <references refid="classtesting_1_1TestPartResult_1a655ab538e510434ba557ad66c35aa42c" compoundref="gtest-test-part_8h" startline="85" endline="85">testing::TestPartResult::summary</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aaac4f1352a2cc46f6a69994d45999f0b" compoundref="gtest_8cc" startline="3741" endline="3750">TestPropertiesAsXmlAttributes</references>
+        <references refid="classtesting_1_1TestResult_1a6174aa4019dcda7c34d776b5741c9032" compoundref="gtest_8cc" startline="2200" endline="2202">testing::TestResult::total_part_count</references>
+        <references refid="classtesting_1_1TestInfo_1a942c68285165e3bb7e6e53feaf4be53d" compoundref="gtest_8h" startline="718">testing::TestInfo::type_param</references>
+        <references refid="classtesting_1_1TestInfo_1a09f74f774783cbae3ccbb01aa82df160" compoundref="gtest_8h" startline="719">testing::TestInfo::value_param</references>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a7f7accabeac896d4271f36d24ca02dba" compoundref="gtest_8cc" startline="3675" endline="3698">PrintXmlTestCase</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a7f7accabeac896d4271f36d24ca02dba" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::XmlUnitTestResultPrinter::PrintXmlTestCase</definition>
+        <argsstring>(::std::ostream *stream, const TestCase &amp;test_case)</argsstring>
+        <name>PrintXmlTestCase</name>
+        <param>
+          <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestCase" kindref="compound">TestCase</ref> &amp;</type>
+          <declname>test_case</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3402" column="15" bodyfile="lib/googletest/src/gtest.cc" bodystart="3675" bodyend="3698"/>
+        <references refid="classtesting_1_1TestCase_1a6d5fc5003bc3352f3ddae7dadc6d2364" compoundref="gtest_8h" startline="849" endline="849">testing::TestCase::ad_hoc_test_result</references>
+        <references refid="classtesting_1_1TestCase_1acd7d6a77bce06da6ef90f5dad1c4def1" compoundref="gtest_8h" startline="841" endline="841">testing::TestCase::elapsed_time</references>
+        <references refid="classtesting_1_1TestCase_1a70e26eb070c75ae62a191fa610ea234f" compoundref="gtest_8cc" startline="2682" endline="2684">testing::TestCase::failed_test_count</references>
+        <references refid="namespacetesting_1_1internal_1a904485f27a54be8a5a92856e2d838797" compoundref="gtest_8cc" startline="3550" endline="3554">testing::internal::FormatTimeInMillisAsSeconds</references>
+        <references refid="classtesting_1_1TestCase_1a441e0eca232643671dc365c2924c255c" compoundref="gtest_8cc" startline="2739" endline="2742">testing::TestCase::GetTestInfo</references>
+        <references refid="classtesting_1_1TestInfo_1a63e7042028b0b846f4b5a1e5bcffc079" compoundref="gtest_8h" startline="697" endline="702">testing::TestInfo::is_reportable</references>
+        <references refid="classtesting_1_1TestCase_1a3f1beb98d5f7e3b037a4ec82b64cc1cf" compoundref="gtest_8h" startline="800" endline="800">testing::TestCase::name</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa8ca7066de948d26d171597430c75839" compoundref="gtest_8cc" startline="3607" endline="3621">OutputXmlAttribute</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1af642843faed4cd28c77d688f6f2820d7" compoundref="gtest_8cc" startline="3625" endline="3672">OutputXmlTestInfo</references>
+        <references refid="classtesting_1_1TestCase_1ad6b34335955967bc361b2fbacd2dd6c9" compoundref="gtest_8cc" startline="2687" endline="2689">testing::TestCase::reportable_disabled_test_count</references>
+        <references refid="classtesting_1_1TestCase_1ae4e69f1a77b6aba274981e987e50acab" compoundref="gtest_8cc" startline="2697" endline="2699">testing::TestCase::reportable_test_count</references>
+        <references refid="namespacetesting_1_1internal_1aad4beed95d0846e6ffc5da0978ef3bb9" compoundref="gtest-message_8h" startline="243" endline="245">testing::internal::StreamableToString</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aaac4f1352a2cc46f6a69994d45999f0b" compoundref="gtest_8cc" startline="3741" endline="3750">TestPropertiesAsXmlAttributes</references>
+        <references refid="classtesting_1_1TestCase_1aba3cab19aaf7295284f0832f2cf895a3" compoundref="gtest_8cc" startline="2707" endline="2709">testing::TestCase::total_test_count</references>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a3be1c8766241d0f34cdf59b45a52f73b" compoundref="gtest_8cc" startline="3701" endline="3737">PrintXmlUnitTest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a3be1c8766241d0f34cdf59b45a52f73b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal::XmlUnitTestResultPrinter::PrintXmlUnitTest</definition>
+        <argsstring>(::std::ostream *stream, const UnitTest &amp;unit_test)</argsstring>
+        <name>PrintXmlUnitTest</name>
+        <param>
+          <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3406" column="15" bodyfile="lib/googletest/src/gtest.cc" bodystart="3701" bodyend="3737"/>
+        <references refid="classtesting_1_1UnitTest_1aa59dde4c3dc43a920ed142a27670686c" compoundref="gtest_8cc" startline="4069" endline="4071">testing::UnitTest::ad_hoc_test_result</references>
+        <references refid="classtesting_1_1UnitTest_1acf608411a17cb3b40a1e9d724f262b3b" compoundref="gtest_8cc" startline="4050" endline="4052">testing::UnitTest::elapsed_time</references>
+        <references refid="classtesting_1_1UnitTest_1ace1c860482b4ae5c341df5a9665e5c08" compoundref="gtest_8cc" startline="4020" endline="4020">testing::UnitTest::failed_test_count</references>
+        <references refid="namespacetesting_1_1internal_1a5ef227c4a610e7ff638b12dfb25b068e" compoundref="gtest_8cc" startline="3574" endline="3585">testing::internal::FormatEpochTimeInMillisAsIso8601</references>
+        <references refid="namespacetesting_1_1internal_1a904485f27a54be8a5a92856e2d838797" compoundref="gtest_8cc" startline="3550" endline="3554">testing::internal::FormatTimeInMillisAsSeconds</references>
+        <references refid="classtesting_1_1UnitTest_1a724d4c8be4481e0c1523a22b72dc7dac" compoundref="gtest_8cc" startline="4063" endline="4065">testing::UnitTest::GetTestCase</references>
+        <references refid="gtest-port_8h_1a828f4e34a1c4b510da50ec1563e3562a" compoundref="gtest-port_8h" startline="2504">GTEST_FLAG</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa8ca7066de948d26d171597430c75839" compoundref="gtest_8cc" startline="3607" endline="3621">OutputXmlAttribute</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a7f7accabeac896d4271f36d24ca02dba" compoundref="gtest_8cc" startline="3675" endline="3698">PrintXmlTestCase</references>
+        <references refid="classtesting_1_1UnitTest_1adddc090a06f2d3a0e68f3762ee262688" compoundref="gtest_8cc" startline="4286" endline="4286">testing::UnitTest::random_seed</references>
+        <references refid="classtesting_1_1UnitTest_1a2a2835db178d5c8569507db9f0a3d54f" compoundref="gtest_8cc" startline="4023" endline="4025">testing::UnitTest::reportable_disabled_test_count</references>
+        <references refid="classtesting_1_1TestCase_1ae4e69f1a77b6aba274981e987e50acab" compoundref="gtest_8cc" startline="2697" endline="2699">testing::TestCase::reportable_test_count</references>
+        <references refid="classtesting_1_1UnitTest_1a449d0e0350ef146040cd37679c005248" compoundref="gtest_8cc" startline="4033" endline="4035">testing::UnitTest::reportable_test_count</references>
+        <references refid="classtesting_1_1UnitTest_1a3d83fe1cc5570a1c34f9754b0f56d65f" compoundref="gtest_8cc" startline="4045" endline="4047">testing::UnitTest::start_timestamp</references>
+        <references refid="namespacetesting_1_1internal_1aad4beed95d0846e6ffc5da0978ef3bb9" compoundref="gtest-message_8h" startline="243" endline="245">testing::internal::StreamableToString</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aaac4f1352a2cc46f6a69994d45999f0b" compoundref="gtest_8cc" startline="3741" endline="3750">TestPropertiesAsXmlAttributes</references>
+        <references refid="classtesting_1_1UnitTest_1a93fc8f4eebc3212d06468ad216830ced" compoundref="gtest_8cc" startline="4004" endline="4006">testing::UnitTest::total_test_case_count</references>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a2ae986dd2f4f2aed31cc6f3bc8c56898" compoundref="gtest_8cc" startline="3432" endline="3462">OnTestIterationEnd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa14cb72f42a346841482cbafa65e3155" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string testing::internal::XmlUnitTestResultPrinter::RemoveInvalidXmlCharacters</definition>
+        <argsstring>(const std::string &amp;str)</argsstring>
+        <name>RemoveInvalidXmlCharacters</name>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3374" column="22" bodyfile="lib/googletest/src/gtest.cc" bodystart="3522" bodyend="3531"/>
+        <references refid="cpp/string/basic_string/begin_1">std::string::begin</references>
+        <references refid="cpp/string/basic_string/end_1">std::string::end</references>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a2b83a24e3ec8544efa1156f9d6e51873" compoundref="gtest_8cc" startline="3363" endline="3365">IsValidXmlCharacter</references>
+        <references refid="cpp/string/basic_string/push_back_1">std::string::push_back</references>
+        <references refid="cpp/string/basic_string/reserve_1">std::string::reserve</references>
+        <references refid="cpp/string/basic_string/size_1">std::string::size</references>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1af642843faed4cd28c77d688f6f2820d7" compoundref="gtest_8cc" startline="3625" endline="3672">OutputXmlTestInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aaac4f1352a2cc46f6a69994d45999f0b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string testing::internal::XmlUnitTestResultPrinter::TestPropertiesAsXmlAttributes</definition>
+        <argsstring>(const TestResult &amp;result)</argsstring>
+        <name>TestPropertiesAsXmlAttributes</name>
+        <param>
+          <type>const <ref refid="classtesting_1_1TestResult" kindref="compound">TestResult</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3413" column="22" bodyfile="lib/googletest/src/gtest.cc" bodystart="3741" bodyend="3750"/>
+        <references refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aad574d7bb0c24578d5acc57817b9d367" compoundref="gtest_8cc" startline="3377" endline="3379">EscapeXmlAttribute</references>
+        <references refid="classtesting_1_1Message_1a2cdc4df62bdcc9df37651a1cf527704e" compoundref="gtest_8cc" startline="981" endline="983">testing::Message::GetString</references>
+        <references refid="classtesting_1_1TestResult_1a6c2f478dbce36b57d18bedded46d70af" compoundref="gtest_8cc" startline="2038" endline="2042">testing::TestResult::GetTestProperty</references>
+        <references refid="classtesting_1_1TestResult_1afe4523257bbea8bc63b0950b702790be" compoundref="gtest_8cc" startline="2205" endline="2207">testing::TestResult::test_property_count</references>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1af642843faed4cd28c77d688f6f2820d7" compoundref="gtest_8cc" startline="3625" endline="3672">OutputXmlTestInfo</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a7f7accabeac896d4271f36d24ca02dba" compoundref="gtest_8cc" startline="3675" endline="3698">PrintXmlTestCase</referencedby>
+        <referencedby refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a3be1c8766241d0f34cdf59b45a52f73b" compoundref="gtest_8cc" startline="3701" endline="3737">PrintXmlUnitTest</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a2384a8c0cae7cbdf3debac145e43b323" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::XmlUnitTestResultPrinter::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(XmlUnitTestResultPrinter)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter" kindref="compound">XmlUnitTestResultPrinter</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="3418" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>testing::EmptyTestEventListener</label>
+        <link refid="classtesting_1_1EmptyTestEventListener"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>testing::internal::XmlUnitTestResultPrinter</label>
+        <link refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>testing::TestEventListener</label>
+        <link refid="classtesting_1_1TestEventListener"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>std::basic_string&lt; Char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="2">
+        <label>testing::EmptyTestEventListener</label>
+        <link refid="classtesting_1_1EmptyTestEventListener"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::basic_string&lt; char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>testing::internal::XmlUnitTestResultPrinter</label>
+        <link refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-output_file_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>testing::TestEventListener</label>
+        <link refid="classtesting_1_1TestEventListener"/>
+      </node>
+      <node id="4">
+        <label>std::string</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/src/gtest.cc" line="3349" column="1" bodyfile="lib/googletest/src/gtest.cc" bodystart="3349" bodyend="3419"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1adadf42cf46ade9b26743466ce4b52f36" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>EscapeXml</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aad574d7bb0c24578d5acc57817b9d367" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>EscapeXmlAttribute</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a934486bda28e7013f2d07520d5098a31" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>EscapeXmlText</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a2384a8c0cae7cbdf3debac145e43b323" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1af9d5af6e5d0c505d5c3bd50a8d2a8d76" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>IsNormalizableWhitespace</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a2b83a24e3ec8544efa1156f9d6e51873" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>IsValidXmlCharacter</name></member>
+      <member refid="classtesting_1_1EmptyTestEventListener_1abc481c6648d15d4242245195a06f5aa0" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OnEnvironmentsSetUpEnd</name></member>
+      <member refid="classtesting_1_1EmptyTestEventListener_1a156d1965248fbdced6aabacadfa2d63f" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OnEnvironmentsSetUpStart</name></member>
+      <member refid="classtesting_1_1EmptyTestEventListener_1aea64c83c415b33a4c0b0239bafd1438d" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OnEnvironmentsTearDownEnd</name></member>
+      <member refid="classtesting_1_1EmptyTestEventListener_1a00fa1a4ea5831e20746188414268e7c6" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OnEnvironmentsTearDownStart</name></member>
+      <member refid="classtesting_1_1EmptyTestEventListener_1a6bec703158283104c4298f7d8a528515" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OnTestCaseEnd</name></member>
+      <member refid="classtesting_1_1EmptyTestEventListener_1ae4707ed9cc7ace5241bc8ccc4051209b" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OnTestCaseStart</name></member>
+      <member refid="classtesting_1_1EmptyTestEventListener_1afd58d21005f0d0d0399fb114627545d3" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OnTestEnd</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a2ae986dd2f4f2aed31cc6f3bc8c56898" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OnTestIterationEnd</name></member>
+      <member refid="classtesting_1_1EmptyTestEventListener_1a836f05829855dc60d13ba99ad712c0dd" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OnTestIterationStart</name></member>
+      <member refid="classtesting_1_1EmptyTestEventListener_1a59e7f7d9f2e2d089a6e8c1e2577f4718" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OnTestPartResult</name></member>
+      <member refid="classtesting_1_1EmptyTestEventListener_1a0abcc02bd2331a2e29ad6f4d9daf2a32" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OnTestProgramEnd</name></member>
+      <member refid="classtesting_1_1EmptyTestEventListener_1aa3847c8a3c22d8d69a6006dfdd6589fc" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OnTestProgramStart</name></member>
+      <member refid="classtesting_1_1EmptyTestEventListener_1a84fa74cc9ba742f9f847ea405ca84e5e" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OnTestStart</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa81cc4540d16279f5eb5f7ec9f366ea7" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>output_file_</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa8ca7066de948d26d171597430c75839" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OutputXmlAttribute</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a41bccd75f54932c5b3b8cce1f94dbd54" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OutputXmlCDataSection</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1af642843faed4cd28c77d688f6f2820d7" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>OutputXmlTestInfo</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a7f7accabeac896d4271f36d24ca02dba" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>PrintXmlTestCase</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a3be1c8766241d0f34cdf59b45a52f73b" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>PrintXmlUnitTest</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa14cb72f42a346841482cbafa65e3155" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>RemoveInvalidXmlCharacters</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aaac4f1352a2cc46f6a69994d45999f0b" prot="private" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>TestPropertiesAsXmlAttributes</name></member>
+      <member refid="classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1afdaf88e6764c18ce0dcc3733d7a06e31" prot="public" virt="non-virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>XmlUnitTestResultPrinter</name></member>
+      <member refid="classtesting_1_1TestEventListener_1a4512d19e7a108ec4926239ec1ea85d63" prot="public" virt="virtual"><scope>testing::internal::XmlUnitTestResultPrinter</scope><name>~TestEventListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

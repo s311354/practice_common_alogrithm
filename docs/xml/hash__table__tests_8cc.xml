@@ -4,9 +4,6 @@
     <compoundname>hash_table_tests.cc</compoundname>
     <includes refid="hash__table__tests_8h" local="yes">./hash_table_tests.h</includes>
     <incdepgraph>
-      <node id="6">
-        <label>string</label>
-      </node>
       <node id="4">
         <label>./hash_table.h</label>
         <link refid="hash__table_8h"/>
@@ -21,8 +18,13 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
+      <node id="6">
+        <label>string</label>
+        <link refid="cpp/header/string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
       <node id="3">
         <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
       </node>
       <node id="5">
         <label>./hash_object.h</label>

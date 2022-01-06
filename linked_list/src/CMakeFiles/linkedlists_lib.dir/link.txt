@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc liblinkedlists_lib.a CMakeFiles/linkedlists_lib.dir/linked_list.cc.o CMakeFiles/linkedlists_lib.dir/list_element.cc.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib liblinkedlists_lib.a

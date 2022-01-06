@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classtesting_1_1Environment" kind="class" language="C++" prot="package">
+    <compoundname>testing::Environment</compoundname>
+    <includes refid="gtest_8h" local="no">gtest.h</includes>
+    <innerclass refid="structtesting_1_1Environment_1_1Setup__should__be__spelled__SetUp" prot="private">testing::Environment::Setup_should_be_spelled_SetUp</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_1_1Environment_1a1bf8cafaa9d4eba9feb98655ee434eb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::Environment::SetUp</definition>
+        <argsstring>()</argsstring>
+        <name>SetUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="978" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="978" bodyend="978"/>
+        <referencedby refid="namespacetesting_1_1internal_1a5f5535012d4548788a5d1a4e0f18e19e" compoundref="gtest_8cc" startline="4539" endline="4539">testing::internal::SetUpEnvironment</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Environment_1a039bdaa705c46b9b88234cf4d3bb6254" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void testing::Environment::TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="981" column="16" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="981" bodyend="981"/>
+        <referencedby refid="namespacetesting_1_1internal_1ac467e871e4781da3f5ebed2a4465aec4" compoundref="gtest_8cc" startline="4540" endline="4540">testing::internal::TearDownEnvironment</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_1_1Environment_1a0e41c320362576d752cd1f44cabd57d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual testing::Environment::~Environment</definition>
+        <argsstring>()</argsstring>
+        <name>~Environment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="975" column="11" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="975" bodyend="975"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtesting_1_1Environment_1a6096a69b03f6eb727a69a39f854cc87b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="structtesting_1_1Environment_1_1Setup__should__be__spelled__SetUp" kindref="compound">Setup_should_be_spelled_SetUp</ref> *</type>
+        <definition>virtual Setup_should_be_spelled_SetUp* testing::Environment::Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="986" column="41" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="986" bodyend="986"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>testing::Environment</label>
+        <link refid="classtesting_1_1Environment"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/gtest.h" line="972" column="1" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="972" bodyend="987"/>
+    <listofallmembers>
+      <member refid="classtesting_1_1Environment_1a1bf8cafaa9d4eba9feb98655ee434eb3" prot="public" virt="virtual"><scope>testing::Environment</scope><name>SetUp</name></member>
+      <member refid="classtesting_1_1Environment_1a6096a69b03f6eb727a69a39f854cc87b" prot="private" virt="virtual"><scope>testing::Environment</scope><name>Setup</name></member>
+      <member refid="classtesting_1_1Environment_1a039bdaa705c46b9b88234cf4d3bb6254" prot="public" virt="virtual"><scope>testing::Environment</scope><name>TearDown</name></member>
+      <member refid="classtesting_1_1Environment_1a0e41c320362576d752cd1f44cabd57d4" prot="public" virt="virtual"><scope>testing::Environment</scope><name>~Environment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

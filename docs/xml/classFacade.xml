@@ -14,8 +14,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="facade_pattern/main.cc" line="52" column="19" bodyfile="facade_pattern/main.cc" bodystart="52" bodyend="-1"/>
-        <referencedby refid="classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" compoundref="facade__pattern_2main_8cc" startline="59" endline="65">MethodA</referencedby>
+        <location file="design_pattern/facade_pattern/main.cc" line="52" column="19" bodyfile="design_pattern/facade_pattern/main.cc" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="59" endline="65">MethodA</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFacade_1aa567c9b51abe53266ba967cfc76886a4" prot="private" static="no" mutable="no">
         <type><ref refid="classSubSystemOne" kindref="compound">SubSystemOne</ref></type>
@@ -28,8 +28,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="facade_pattern/main.cc" line="49" column="18" bodyfile="facade_pattern/main.cc" bodystart="49" bodyend="-1"/>
-        <referencedby refid="classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" compoundref="facade__pattern_2main_8cc" startline="59" endline="65">MethodA</referencedby>
+        <location file="design_pattern/facade_pattern/main.cc" line="49" column="18" bodyfile="design_pattern/facade_pattern/main.cc" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="59" endline="65">MethodA</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFacade_1a07f1cf53d8adcc286a917d1e84a3bc29" prot="private" static="no" mutable="no">
         <type><ref refid="classSubSystemThree" kindref="compound">SubSystemThree</ref></type>
@@ -42,8 +42,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="facade_pattern/main.cc" line="51" column="20" bodyfile="facade_pattern/main.cc" bodystart="51" bodyend="-1"/>
-        <referencedby refid="classFacade_1ad8f2f8bd2ea2d9305488e2a9a42539d7" compoundref="facade__pattern_2main_8cc" startline="66" endline="71">MethodB</referencedby>
+        <location file="design_pattern/facade_pattern/main.cc" line="51" column="20" bodyfile="design_pattern/facade_pattern/main.cc" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classFacade_1ad8f2f8bd2ea2d9305488e2a9a42539d7" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="66" endline="71">MethodB</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFacade_1af9d6b10f7ee6f4c590284ae2babfb489" prot="private" static="no" mutable="no">
         <type><ref refid="classSubSystemTwo" kindref="compound">SubSystemTwo</ref></type>
@@ -56,9 +56,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="facade_pattern/main.cc" line="50" column="18" bodyfile="facade_pattern/main.cc" bodystart="50" bodyend="-1"/>
-        <referencedby refid="classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" compoundref="facade__pattern_2main_8cc" startline="59" endline="65">MethodA</referencedby>
-        <referencedby refid="classFacade_1ad8f2f8bd2ea2d9305488e2a9a42539d7" compoundref="facade__pattern_2main_8cc" startline="66" endline="71">MethodB</referencedby>
+        <location file="design_pattern/facade_pattern/main.cc" line="50" column="18" bodyfile="design_pattern/facade_pattern/main.cc" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="59" endline="65">MethodA</referencedby>
+        <referencedby refid="classFacade_1ad8f2f8bd2ea2d9305488e2a9a42539d7" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="66" endline="71">MethodB</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="facade_pattern/main.cc" line="55" column="5" bodyfile="facade_pattern/main.cc" bodystart="55" bodyend="57"/>
+        <location file="design_pattern/facade_pattern/main.cc" line="55" column="5" bodyfile="design_pattern/facade_pattern/main.cc" bodystart="55" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -86,14 +86,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="facade_pattern/main.cc" line="59" column="10" bodyfile="facade_pattern/main.cc" bodystart="59" bodyend="65"/>
-        <references refid="classFacade_1a127f5325cbb7f08b3a3ca2c264bca9cb" compoundref="facade__pattern_2main_8cc" startline="52">four</references>
-        <references refid="classSubSystemFour_1ad6a8cc00691d9ce183cd300abebf36a3" compoundref="facade__pattern_2main_8cc" startline="39" endline="42">SubSystemFour::MethodFour</references>
-        <references refid="classSubSystemOne_1af6c249545e514d436a1fc09177db1ec7" compoundref="facade__pattern_2main_8cc" startline="6" endline="9">SubSystemOne::MethodOne</references>
-        <references refid="classSubSystemTwo_1a0ba476a0294293b6d829c6eacd98d5c7" compoundref="facade__pattern_2main_8cc" startline="17" endline="20">SubSystemTwo::MethodTwo</references>
-        <references refid="classFacade_1aa567c9b51abe53266ba967cfc76886a4" compoundref="facade__pattern_2main_8cc" startline="49">one</references>
-        <references refid="classFacade_1af9d6b10f7ee6f4c590284ae2babfb489" compoundref="facade__pattern_2main_8cc" startline="50">two</references>
-        <referencedby refid="facade__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="facade__pattern_2main_8cc" startline="74" endline="83">main</referencedby>
+        <location file="design_pattern/facade_pattern/main.cc" line="59" column="10" bodyfile="design_pattern/facade_pattern/main.cc" bodystart="59" bodyend="65"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <references refid="classFacade_1a127f5325cbb7f08b3a3ca2c264bca9cb" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="52">four</references>
+        <references refid="classSubSystemFour_1ad6a8cc00691d9ce183cd300abebf36a3" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="39" endline="42">SubSystemFour::MethodFour</references>
+        <references refid="classSubSystemOne_1af6c249545e514d436a1fc09177db1ec7" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="6" endline="9">SubSystemOne::MethodOne</references>
+        <references refid="classSubSystemTwo_1a0ba476a0294293b6d829c6eacd98d5c7" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="17" endline="20">SubSystemTwo::MethodTwo</references>
+        <references refid="classFacade_1aa567c9b51abe53266ba967cfc76886a4" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="49">one</references>
+        <references refid="classFacade_1af9d6b10f7ee6f4c590284ae2babfb489" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="50">two</references>
+        <referencedby refid="design__pattern_2facade__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="74" endline="83">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFacade_1ad8f2f8bd2ea2d9305488e2a9a42539d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -106,12 +107,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="facade_pattern/main.cc" line="66" column="10" bodyfile="facade_pattern/main.cc" bodystart="66" bodyend="71"/>
-        <references refid="classSubSystemThree_1ab1b9cbaee75b472b0e89b2f6114409f8" compoundref="facade__pattern_2main_8cc" startline="28" endline="31">SubSystemThree::MethodThree</references>
-        <references refid="classSubSystemTwo_1a0ba476a0294293b6d829c6eacd98d5c7" compoundref="facade__pattern_2main_8cc" startline="17" endline="20">SubSystemTwo::MethodTwo</references>
-        <references refid="classFacade_1a07f1cf53d8adcc286a917d1e84a3bc29" compoundref="facade__pattern_2main_8cc" startline="51">three</references>
-        <references refid="classFacade_1af9d6b10f7ee6f4c590284ae2babfb489" compoundref="facade__pattern_2main_8cc" startline="50">two</references>
-        <referencedby refid="facade__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="facade__pattern_2main_8cc" startline="74" endline="83">main</referencedby>
+        <location file="design_pattern/facade_pattern/main.cc" line="66" column="10" bodyfile="design_pattern/facade_pattern/main.cc" bodystart="66" bodyend="71"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <references refid="classSubSystemThree_1ab1b9cbaee75b472b0e89b2f6114409f8" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="28" endline="31">SubSystemThree::MethodThree</references>
+        <references refid="classSubSystemTwo_1a0ba476a0294293b6d829c6eacd98d5c7" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="17" endline="20">SubSystemTwo::MethodTwo</references>
+        <references refid="classFacade_1a07f1cf53d8adcc286a917d1e84a3bc29" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="51">three</references>
+        <references refid="classFacade_1af9d6b10f7ee6f4c590284ae2babfb489" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="50">two</references>
+        <referencedby refid="design__pattern_2facade__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="design__pattern_2facade__pattern_2main_8cc" startline="74" endline="83">main</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -152,7 +154,7 @@
         <link refid="classSubSystemTwo"/>
       </node>
     </collaborationgraph>
-    <location file="facade_pattern/main.cc" line="47" column="1" bodyfile="facade_pattern/main.cc" bodystart="48" bodyend="72"/>
+    <location file="design_pattern/facade_pattern/main.cc" line="47" column="1" bodyfile="design_pattern/facade_pattern/main.cc" bodystart="48" bodyend="72"/>
     <listofallmembers>
       <member refid="classFacade_1a8e0f43c604499d9d603236929b3ac488" prot="public" virt="non-virtual"><scope>Facade</scope><name>Facade</name></member>
       <member refid="classFacade_1a127f5325cbb7f08b3a3ca2c264bca9cb" prot="private" virt="non-virtual"><scope>Facade</scope><name>four</name></member>

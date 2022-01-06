@@ -67,10 +67,10 @@ RM = /usr/local/Cellar/cmake/3.19.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search
+CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search
+CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/CMakeFiles /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/CMakeFiles 0
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search//CMakeFiles/progress.marks
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binary_search/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binary_search/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,30 +116,32 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binary_search/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binary_search/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named binary_search
+# Convenience name for target.
+binary_search/CMakeFiles/binary_search.dir/rule:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binary_search/CMakeFiles/binary_search.dir/rule
+.PHONY : binary_search/CMakeFiles/binary_search.dir/rule
 
-# Build rule for target.
-binary_search: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binary_search
+# Convenience name for target.
+binary_search: binary_search/CMakeFiles/binary_search.dir/rule
+
 .PHONY : binary_search
 
 # fast build rule for target.
 binary_search/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary_search.dir/build.make CMakeFiles/binary_search.dir/build
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f binary_search/CMakeFiles/binary_search.dir/build.make binary_search/CMakeFiles/binary_search.dir/build
 .PHONY : binary_search/fast
 
 main.o: main.cc.o
@@ -148,7 +150,7 @@ main.o: main.cc.o
 
 # target to build an object file
 main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary_search.dir/build.make CMakeFiles/binary_search.dir/main.cc.o
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f binary_search/CMakeFiles/binary_search.dir/build.make binary_search/CMakeFiles/binary_search.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -157,7 +159,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary_search.dir/build.make CMakeFiles/binary_search.dir/main.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f binary_search/CMakeFiles/binary_search.dir/build.make binary_search/CMakeFiles/binary_search.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -166,7 +168,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary_search.dir/build.make CMakeFiles/binary_search.dir/main.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f binary_search/CMakeFiles/binary_search.dir/build.make binary_search/CMakeFiles/binary_search.dir/main.cc.s
 .PHONY : main.cc.s
 
 # Help Target
@@ -192,6 +194,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

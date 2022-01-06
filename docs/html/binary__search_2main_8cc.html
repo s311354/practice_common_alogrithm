@@ -102,8 +102,8 @@ $(document).ready(function(){initNavTree('binary__search_2main_8cc.html',''); in
 <area shape="rect" title=" " alt="" coords="5,229,69,256"/>
 <area shape="rect" href="binary__search_8h.html" title=" " alt="" coords="73,155,188,181"/>
 <area shape="rect" href="binary__search_8cc.html" title=" " alt="" coords="125,80,246,107"/>
-<area shape="rect" title=" " alt="" coords="93,229,165,256"/>
-<area shape="rect" title=" " alt="" coords="190,229,247,256"/>
+<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/header/iostream.html" title=" " alt="" coords="93,229,165,256"/>
+<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/header/queue.html" title=" " alt="" coords="190,229,247,256"/>
 </map>
 </div>
 </div>
@@ -147,39 +147,43 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">int</span> idex;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">for</span> (idex = 0; idex &lt; 10; ++idex) {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">int</span> data = rand()%100;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">int</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/iterator/data.html">data</a> = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">rand</a>()%100;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        root = <a class="code" href="namespacecommon.html#a5bb9cd37af9ee2f1b2339d77b4f7d1dd">Insert</a>(root, data);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespacecommon.html#a8e5af17d7a58b5f61bb0d0d502c1dbcf">IsBinarySearchTree</a>(root)) {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">int</span> min = <a class="code" href="namespacecommon.html#a81b89f1174eaefd3a0fadca27d1817a4">GetMin</a>(root);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">int</span> max = <a class="code" href="namespacecommon.html#a32a5a9d7ba0bee5cacb2e72a93f3bc7b">GetMax</a>(root);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">int</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">min</a> = <a class="code" href="namespacecommon.html#a81b89f1174eaefd3a0fadca27d1817a4">GetMin</a>(root);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">int</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">max</a> = <a class="code" href="namespacecommon.html#a32a5a9d7ba0bee5cacb2e72a93f3bc7b">GetMax</a>(root);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">int</span> height = <a class="code" href="namespacecommon.html#a5a885592e59041938086a74bd43dd6ec">GetHeight</a>(root);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="namespacecommon.html#a9c6049ee02fd40aeb6cc7e4b5384f581">PrintBFS</a>(root);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/namespacestd.html#cpp/io/cout">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="namespacecommon.html#a25d561230f553fe7281397bf9a88c8ed">PrintInOrder</a>(root);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/namespacestd.html#cpp/io/cout">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Search 44 in the binary tree: &quot;</span>&lt;&lt; <a class="code" href="namespacecommon.html#ada61a385661276f122db1a83f5ba573a">Search</a>(root, 44) &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/namespacestd.html#cpp/io/cout">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Search 44 in the binary tree: &quot;</span>&lt;&lt; <a class="code" href="namespacecommon.html#ada61a385661276f122db1a83f5ba573a">Search</a>(root, 44) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Min: &quot;</span> &lt;&lt; min &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Max: &quot;</span> &lt;&lt; max &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Height: &quot;</span> &lt;&lt; height &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/namespacestd.html#cpp/io/cout">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Min: &quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/min.html">min</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/namespacestd.html#cpp/io/cout">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Max: &quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">max</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/namespacestd.html#cpp/io/cout">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Height: &quot;</span> &lt;&lt; height &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="namespacecommon.html#af0043524a2d186d2fdcbeeea9f6cdc06">DeleteValue</a>(root, 49);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="namespacecommon.html#a25d561230f553fe7281397bf9a88c8ed">PrintInOrder</a>(root);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/namespacestd.html#cpp/io/cout">std::cout</a> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="namespacecommon.html#a951a6c058a6a852e5a3906c70f7b602a">DeleteTree</a>(root);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;The tree is not binary search tree&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/namespacestd.html#cpp/io/cout">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;The tree is not binary search tree&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="ttc" id="adata_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/data.html">std::data</a></div><div class="ttdeci">T data(T... args)</div></div>
+<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
+<div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
+<div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
 <div class="ttc" id="anamespacecommon_html"><div class="ttname"><a href="namespacecommon.html">common</a></div><div class="ttdef"><b>Definition:</b> graph.cc:3</div></div>
 <div class="ttc" id="anamespacecommon_html_a25d561230f553fe7281397bf9a88c8ed"><div class="ttname"><a href="namespacecommon.html#a25d561230f553fe7281397bf9a88c8ed">common::PrintInOrder</a></div><div class="ttdeci">void PrintInOrder(BSTNode *node)</div><div class="ttdef"><b>Definition:</b> binary_search.cc:156</div></div>
 <div class="ttc" id="anamespacecommon_html_a32a5a9d7ba0bee5cacb2e72a93f3bc7b"><div class="ttname"><a href="namespacecommon.html#a32a5a9d7ba0bee5cacb2e72a93f3bc7b">common::GetMax</a></div><div class="ttdeci">int GetMax(BSTNode *node)</div><div class="ttdef"><b>Definition:</b> binary_search.cc:84</div></div>
@@ -192,8 +196,10 @@ Functions</h2></td></tr>
 <div class="ttc" id="anamespacecommon_html_ada61a385661276f122db1a83f5ba573a"><div class="ttname"><a href="namespacecommon.html#ada61a385661276f122db1a83f5ba573a">common::Search</a></div><div class="ttdeci">bool Search(BSTNode *node, int value)</div><div class="ttdef"><b>Definition:</b> binary_search.cc:30</div></div>
 <div class="ttc" id="anamespacecommon_html_af0043524a2d186d2fdcbeeea9f6cdc06"><div class="ttname"><a href="namespacecommon.html#af0043524a2d186d2fdcbeeea9f6cdc06">common::DeleteValue</a></div><div class="ttdeci">BSTNode * DeleteValue(BSTNode *node, int value)</div><div class="ttdef"><b>Definition:</b> binary_search.cc:108</div></div>
 <div class="ttc" id="anamespacecommon_html_structcommon_1_1BSTNode"><div class="ttname"><a href="namespacecommon.html#structcommon_1_1BSTNode">common::BSTNode</a></div><div class="ttdef"><b>Definition:</b> binary_search.h:9</div></div>
+<div class="ttc" id="anamespacestd_html_cpp/io/cout"><div class="ttname"><a href="http://en.cppreference.com/w/namespacestd.html#cpp/io/cout">std::cout</a></div></div>
+<div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="#l00099">common::DeleteTree()</a>, <a class="el" href="#l00108">common::DeleteValue()</a>, <a class="el" href="#l00093">common::GetHeight()</a>, <a class="el" href="#l00084">common::GetMax()</a>, <a class="el" href="#l00066">common::GetMin()</a>, <a class="el" href="#l00014">common::Insert()</a>, <a class="el" href="#l00042">common::IsBinarySearchTree()</a>, <a class="el" href="#l00138">common::PrintBFS()</a>, <a class="el" href="#l00156">common::PrintInOrder()</a>, and <a class="el" href="#l00030">common::Search()</a>.</p>
+<p class="reference">References <a class="el" href="#l00099">common::DeleteTree()</a>, <a class="el" href="#l00108">common::DeleteValue()</a>, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl()</a>, <a class="el" href="#l00093">common::GetHeight()</a>, <a class="el" href="#l00084">common::GetMax()</a>, <a class="el" href="#l00066">common::GetMin()</a>, <a class="el" href="#l00014">common::Insert()</a>, <a class="el" href="#l00042">common::IsBinarySearchTree()</a>, <a class="el" href="#l00138">common::PrintBFS()</a>, <a class="el" href="#l00156">common::PrintInOrder()</a>, and <a class="el" href="#l00030">common::Search()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -201,20 +207,26 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="binary__search_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph.png" border="0" usemap="#abinary__search_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph" alt=""/></div>
 <map name="abinary__search_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph" id="abinary__search_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph">
-<area shape="rect" title=" " alt="" coords="5,233,56,260"/>
+<area shape="rect" title=" " alt="" coords="5,259,56,285"/>
 <area shape="rect" href="namespacecommon.html#a951a6c058a6a852e5a3906c70f7b602a" title=" " alt="" coords="129,5,273,32"/>
 <area shape="rect" href="namespacecommon.html#af0043524a2d186d2fdcbeeea9f6cdc06" title=" " alt="" coords="126,56,277,83"/>
-<area shape="rect" href="namespacecommon.html#a5a885592e59041938086a74bd43dd6ec" title=" " alt="" coords="132,107,271,133"/>
-<area shape="rect" href="namespacecommon.html#a32a5a9d7ba0bee5cacb2e72a93f3bc7b" title=" " alt="" coords="138,157,265,184"/>
-<area shape="rect" href="namespacecommon.html#a81b89f1174eaefd3a0fadca27d1817a4" title=" " alt="" coords="140,208,263,235"/>
-<area shape="rect" href="namespacecommon.html#a5bb9cd37af9ee2f1b2339d77b4f7d1dd" title=" " alt="" coords="145,259,258,285"/>
-<area shape="rect" href="namespacecommon.html#a8e5af17d7a58b5f61bb0d0d502c1dbcf" title=" " alt="" coords="104,309,299,336"/>
-<area shape="rect" href="namespacecommon.html#a9c6049ee02fd40aeb6cc7e4b5384f581" title=" " alt="" coords="135,360,268,387"/>
-<area shape="rect" href="namespacecommon.html#a25d561230f553fe7281397bf9a88c8ed" title=" " alt="" coords="126,411,277,437"/>
-<area shape="rect" href="namespacecommon.html#ada61a385661276f122db1a83f5ba573a" title=" " alt="" coords="141,461,262,488"/>
+<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" title=" " alt="" coords="165,107,237,133"/>
+<area shape="rect" href="namespacecommon.html#a5a885592e59041938086a74bd43dd6ec" title=" " alt="" coords="132,157,271,184"/>
+<area shape="rect" href="namespacecommon.html#a32a5a9d7ba0bee5cacb2e72a93f3bc7b" title=" " alt="" coords="138,208,265,235"/>
+<area shape="rect" href="namespacecommon.html#a81b89f1174eaefd3a0fadca27d1817a4" title=" " alt="" coords="140,259,263,285"/>
+<area shape="rect" href="namespacecommon.html#a5bb9cd37af9ee2f1b2339d77b4f7d1dd" title=" " alt="" coords="145,309,258,336"/>
+<area shape="rect" href="namespacecommon.html#a8e5af17d7a58b5f61bb0d0d502c1dbcf" title=" " alt="" coords="104,360,299,387"/>
+<area shape="rect" href="namespacecommon.html#a9c6049ee02fd40aeb6cc7e4b5384f581" title=" " alt="" coords="135,411,268,437"/>
+<area shape="rect" href="namespacecommon.html#a25d561230f553fe7281397bf9a88c8ed" title=" " alt="" coords="126,461,277,488"/>
+<area shape="rect" href="namespacecommon.html#ada61a385661276f122db1a83f5ba573a" title=" " alt="" coords="141,512,262,539"/>
 <area shape="rect" href="namespacecommon.html#ab4370181a4bfa0106e48bf4a1e496e21" title=" " alt="" coords="349,56,503,83"/>
-<area shape="rect" href="namespacecommon.html#ad951d69f0988e985415d052a81bdf2e8" title=" " alt="" coords="347,259,505,285"/>
-<area shape="rect" href="namespacecommon.html#a84788ceb14c1733b313e3206fea5ff27" title=" " alt="" coords="355,309,497,336"/>
+<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html#" title=" " alt="" coords="389,157,463,184"/>
+<area shape="rect" href="namespacecommon.html#ad951d69f0988e985415d052a81bdf2e8" title=" " alt="" coords="347,284,505,311"/>
+<area shape="rect" href="namespacecommon.html#a84788ceb14c1733b313e3206fea5ff27" title=" " alt="" coords="355,335,497,361"/>
+<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/empty.html#" title=" " alt="" coords="363,385,489,412"/>
+<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/front.html#" title=" " alt="" coords="367,436,485,463"/>
+<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/pop.html#" title=" " alt="" coords="370,487,482,513"/>
+<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/container/queue/push.html#" title=" " alt="" coords="367,537,485,564"/>
 </map>
 </div>
 

@@ -62,32 +62,32 @@ RM = /usr/local/Cellar/cmake/3.19.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search
+CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search
+CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # Include any dependencies generated for this target.
-include CMakeFiles/binary_search.dir/depend.make
+include binary_search/CMakeFiles/binary_search.dir/depend.make
 
 # Include the progress variables for this target.
-include CMakeFiles/binary_search.dir/progress.make
+include binary_search/CMakeFiles/binary_search.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/binary_search.dir/flags.make
+include binary_search/CMakeFiles/binary_search.dir/flags.make
 
-CMakeFiles/binary_search.dir/main.cc.o: CMakeFiles/binary_search.dir/flags.make
-CMakeFiles/binary_search.dir/main.cc.o: main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/binary_search.dir/main.cc.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/binary_search.dir/main.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/main.cc
+binary_search/CMakeFiles/binary_search.dir/main.cc.o: binary_search/CMakeFiles/binary_search.dir/flags.make
+binary_search/CMakeFiles/binary_search.dir/main.cc.o: binary_search/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object binary_search/CMakeFiles/binary_search.dir/main.cc.o"
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/binary_search.dir/main.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/main.cc
 
-CMakeFiles/binary_search.dir/main.cc.i: cmake_force
+binary_search/CMakeFiles/binary_search.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/binary_search.dir/main.cc.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/main.cc > CMakeFiles/binary_search.dir/main.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/main.cc > CMakeFiles/binary_search.dir/main.cc.i
 
-CMakeFiles/binary_search.dir/main.cc.s: cmake_force
+binary_search/CMakeFiles/binary_search.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/binary_search.dir/main.cc.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/main.cc -o CMakeFiles/binary_search.dir/main.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/main.cc -o CMakeFiles/binary_search.dir/main.cc.s
 
 # Object files for target binary_search
 binary_search_OBJECTS = \
@@ -96,22 +96,22 @@ binary_search_OBJECTS = \
 # External object files for target binary_search
 binary_search_EXTERNAL_OBJECTS =
 
-binary_search: CMakeFiles/binary_search.dir/main.cc.o
-binary_search: CMakeFiles/binary_search.dir/build.make
-binary_search: CMakeFiles/binary_search.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable binary_search"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/binary_search.dir/link.txt --verbose=$(VERBOSE)
+binary_search/binary_search: binary_search/CMakeFiles/binary_search.dir/main.cc.o
+binary_search/binary_search: binary_search/CMakeFiles/binary_search.dir/build.make
+binary_search/binary_search: binary_search/CMakeFiles/binary_search.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable binary_search"
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/binary_search.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/binary_search.dir/build: binary_search
+binary_search/CMakeFiles/binary_search.dir/build: binary_search/binary_search
 
-.PHONY : CMakeFiles/binary_search.dir/build
+.PHONY : binary_search/CMakeFiles/binary_search.dir/build
 
-CMakeFiles/binary_search.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles/binary_search.dir/cmake_clean.cmake
-.PHONY : CMakeFiles/binary_search.dir/clean
+binary_search/CMakeFiles/binary_search.dir/clean:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search && $(CMAKE_COMMAND) -P CMakeFiles/binary_search.dir/cmake_clean.cmake
+.PHONY : binary_search/CMakeFiles/binary_search.dir/clean
 
-CMakeFiles/binary_search.dir/depend:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/CMakeFiles/binary_search.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/binary_search.dir/depend
+binary_search/CMakeFiles/binary_search.dir/depend:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/binary_search/CMakeFiles/binary_search.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : binary_search/CMakeFiles/binary_search.dir/depend
 

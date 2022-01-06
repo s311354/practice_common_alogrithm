@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('graphs_2main_8cc.html',''); initResiza
 <h3 class="version">(c53fab7feceb016938219eb2692d5fedc54dc4b9)</h3><div class="textblock"><code>#include &quot;<a class="el" href="">./graph_representation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="">./graph_directed.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="">./graph.h</a>&quot;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/header/iostream.html">iostream</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for main.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -103,10 +103,10 @@ $(document).ready(function(){initNavTree('graphs_2main_8cc.html',''); initResiza
 <area shape="rect" href="graph__representation_8h.html" title=" " alt="" coords="5,229,168,256"/>
 <area shape="rect" href="graph__directed_8h.html" title=" " alt="" coords="125,80,251,107"/>
 <area shape="rect" href="graph_8h.html" title=" " alt="" coords="165,155,238,181"/>
-<area shape="rect" title=" " alt="" coords="327,80,399,107"/>
-<area shape="rect" title=" " alt="" coords="19,304,74,331"/>
-<area shape="rect" title=" " alt="" coords="99,304,157,331"/>
-<area shape="rect" title=" " alt="" coords="193,229,239,256"/>
+<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/header/iostream.html" title=" " alt="" coords="327,80,399,107"/>
+<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/header/string.html" title=" " alt="" coords="19,304,74,331"/>
+<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/header/vector.html" title=" " alt="" coords="99,304,157,331"/>
+<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/header/map.html" title=" " alt="" coords="193,229,239,256"/>
 </map>
 </div>
 </div>
@@ -164,16 +164,29 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    graph_node-&gt;PrintDebug();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Contains Cycle: &quot;</span> &lt;&lt; graph_node-&gt;ContainsCycle() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/namespacestd.html#cpp/io/cout">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Contains Cycle: &quot;</span> &lt;&lt; graph_node-&gt;ContainsCycle() &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 <div class="ttc" id="aclasscommon_1_1GraphDirected_html"><div class="ttname"><a href="classcommon_1_1GraphDirected.html">common::GraphDirected</a></div><div class="ttdef"><b>Definition:</b> graph_directed.h:11</div></div>
 <div class="ttc" id="aclasscommon_1_1GraphRepresentation_html_a9ff855e37b512172683c74065fd98e6e"><div class="ttname"><a href="classcommon_1_1GraphRepresentation.html#a9ff855e37b512172683c74065fd98e6e">common::GraphRepresentation::kRepresentationTypeList</a></div><div class="ttdeci">static const string kRepresentationTypeList</div><div class="ttdef"><b>Definition:</b> graph_representation.h:21</div></div>
+<div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="anamespacecommon_html"><div class="ttname"><a href="namespacecommon.html">common</a></div><div class="ttdef"><b>Definition:</b> graph.cc:3</div></div>
+<div class="ttc" id="anamespacestd_html_cpp/io/cout"><div class="ttname"><a href="http://en.cppreference.com/w/namespacestd.html#cpp/io/cout">std::cout</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="#l00021">common::GraphRepresentation::kRepresentationTypeList</a>.</p>
+<p class="reference">References <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl()</a>, and <a class="el" href="#l00021">common::GraphRepresentation::kRepresentationTypeList</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="graphs_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph.png" border="0" usemap="#agraphs_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph" alt=""/></div>
+<map name="agraphs_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph" id="agraphs_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html#" title=" " alt="" coords="104,5,176,32"/>
+</map>
+</div>
 
 </div>
 </div>

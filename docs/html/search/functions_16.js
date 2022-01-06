@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['valid_6494',['valid',['http://en.cppreference.com/w/cpp/thread/future/valid.html',0,'std::future::valid()'],['http://en.cppreference.com/w/cpp/thread/packaged_task/valid.html',0,'std::packaged_task::valid()'],['http://en.cppreference.com/w/cpp/thread/shared_future/valid.html',0,'std::shared_future::valid()']]],
+  ['validatetestproperty_6495',['ValidateTestProperty',['../classtesting_1_1TestResult.html#a818c06cd2bfc00d6c81b0cebca044cb1',1,'testing::TestResult']]],
+  ['validatetestpropertyname_6496',['ValidateTestPropertyName',['../namespacetesting.html#a4c9bd414747bf0563bfdb32a2307dcdf',1,'testing']]],
+  ['value_6497',['value',['http://en.cppreference.com/w/cpp/error/error_code/value.html',0,'std::error_code::value()'],['http://en.cppreference.com/w/cpp/error/error_condition/value.html',0,'std::error_condition::value()'],['http://en.cppreference.com/w/cpp/experimental/optional/value.html',0,'std::experimental::optional::value()'],['http://en.cppreference.com/w/cpp/utility/optional/value.html',0,'std::optional::value()'],['http://en.cppreference.com/w/cpp/regex/regex_traits/value.html',0,'std::regex_traits::value()'],['../classtesting_1_1TestProperty.html#ad423a07af33c88b0c9ed33ee74815a63',1,'testing::TestProperty::value()']]],
+  ['value_5fcomp_6498',['value_comp',['http://en.cppreference.com/w/cpp/container/map/value_comp.html',0,'std::map::value_comp()'],['http://en.cppreference.com/w/cpp/container/multimap/value_comp.html',0,'std::multimap::value_comp()'],['http://en.cppreference.com/w/cpp/container/multiset/value_comp.html',0,'std::multiset::value_comp()'],['http://en.cppreference.com/w/cpp/container/map/value_comp.html',0,'std::pmr::map::value_comp()'],['http://en.cppreference.com/w/cpp/container/multimap/value_comp.html',0,'std::pmr::multimap::value_comp()'],['http://en.cppreference.com/w/cpp/container/multiset/value_comp.html',0,'std::pmr::multiset::value_comp()'],['http://en.cppreference.com/w/cpp/container/set/value_comp.html',0,'std::pmr::set::value_comp()'],['http://en.cppreference.com/w/cpp/container/set/value_comp.html',0,'std::set::value_comp()']]],
+  ['value_5for_6499',['value_or',['http://en.cppreference.com/w/cpp/experimental/optional/value_or.html',0,'std::experimental::optional::value_or()'],['http://en.cppreference.com/w/cpp/utility/optional/value_or.html',0,'std::optional::value_or()']]],
+  ['value_5fparam_6500',['value_param',['../classtesting_1_1TestInfo.html#abdf2c6cfcf4819e725816c64e1c1fc24',1,'testing::TestInfo']]],
+  ['valueless_5fby_5fexception_6501',['valueless_by_exception',['http://en.cppreference.com/w/cpp/utility/variant/valueless_by_exception.html',0,'std::variant']]],
+  ['variant_6502',['variant',['http://en.cppreference.com/w/cpp/utility/variant/variant.html',0,'std::variant']]],
+  ['vector_6503',['vector',['http://en.cppreference.com/w/cpp/container/vector/vector.html',0,'std::vector::vector()'],['http://en.cppreference.com/w/cpp/container/vector/vector.html',0,'std::pmr::vector::vector()']]],
+  ['vfprintf_6504',['vfprintf',['http://en.cppreference.com/w/cpp/io/c/vfprintf.html',0,'std']]],
+  ['vfscanf_6505',['vfscanf',['http://en.cppreference.com/w/cpp/io/c/vfscanf.html',0,'std']]],
+  ['vfwprintf_6506',['vfwprintf',['http://en.cppreference.com/w/cpp/io/c/vfwprintf.html',0,'std']]],
+  ['vfwscanf_6507',['vfwscanf',['http://en.cppreference.com/w/cpp/io/c/vfwscanf.html',0,'std']]],
+  ['visit_6508',['visit',['http://en.cppreference.com/w/cpp/utility/variant/visit.html',0,'std']]],
+  ['voltage_6509',['voltage',['../classEuropeanSocketInterface.html#aa4b6b6718a501eeaa7c9dcd7f7906ac4',1,'EuropeanSocketInterface::voltage()'],['../classSocket.html#ae54bbcb330bbe024f30da2cbbb646308',1,'Socket::voltage()'],['../classUSASocketInterface.html#abd8b5d70c2463dfb825e8214056a909b',1,'USASocketInterface::voltage()'],['../classAdapter.html#a5037c7c53d9efe4ad8996c5237719a8f',1,'Adapter::voltage()']]],
+  ['vprintf_6510',['vprintf',['http://en.cppreference.com/w/cpp/io/c/vfprintf.html',0,'std']]],
+  ['vscanf_6511',['vscanf',['http://en.cppreference.com/w/cpp/io/c/vfscanf.html',0,'std']]],
+  ['vsnprintf_6512',['vsnprintf',['http://en.cppreference.com/w/cpp/io/c/vfprintf.html',0,'std']]],
+  ['vsprintf_6513',['vsprintf',['http://en.cppreference.com/w/cpp/io/c/vfprintf.html',0,'std']]],
+  ['vsscanf_6514',['vsscanf',['http://en.cppreference.com/w/cpp/io/c/vfscanf.html',0,'std']]],
+  ['vswprintf_6515',['vswprintf',['http://en.cppreference.com/w/cpp/io/c/vfwprintf.html',0,'std']]],
+  ['vswscanf_6516',['vswscanf',['http://en.cppreference.com/w/cpp/io/c/vfwscanf.html',0,'std']]],
+  ['vwprintf_6517',['vwprintf',['http://en.cppreference.com/w/cpp/io/c/vfwprintf.html',0,'std']]],
+  ['vwscanf_6518',['vwscanf',['http://en.cppreference.com/w/cpp/io/c/vfwscanf.html',0,'std']]]
+];

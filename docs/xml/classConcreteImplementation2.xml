@@ -16,7 +16,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bridge_pattern/main.cc" line="93" column="14" bodyfile="bridge_pattern/main.cc" bodystart="93" bodyend="96"/>
+        <location file="design_pattern/bridge_pattern/main.cc" line="93" column="14" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="93" bodyend="96"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -47,7 +48,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="bridge_pattern/main.cc" line="90" column="1" bodyfile="bridge_pattern/main.cc" bodystart="91" bodyend="97"/>
+    <location file="design_pattern/bridge_pattern/main.cc" line="90" column="1" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="91" bodyend="97"/>
     <listofallmembers>
       <member refid="classConcreteImplementation2_1a81898b1f1fa1065049f71b40376787aa" prot="public" virt="virtual"><scope>ConcreteImplementation2</scope><name>anotherFunctionality</name></member>
     </listofallmembers>

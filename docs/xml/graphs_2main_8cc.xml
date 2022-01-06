@@ -7,12 +7,6 @@
     <includes refid="graph_8h" local="yes">./graph.h</includes>
     <includes local="no">iostream</includes>
     <incdepgraph>
-      <node id="5">
-        <label>./graph_directed.h</label>
-        <link refid="graph__directed_8h"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
       <node id="1">
         <label>graphs/main.cc</label>
         <link refid="graphs_2main_8cc"/>
@@ -25,6 +19,24 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
+      <node id="6">
+        <label>./graph.h</label>
+        <link refid="graph_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>./graph_directed.h</label>
+        <link refid="graph__directed_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector</label>
+        <link refid="cpp/header/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
       <node id="2">
         <label>./graph_representation.h</label>
         <link refid="graph__representation_8h"/>
@@ -35,23 +47,15 @@
       </node>
       <node id="3">
         <label>string</label>
-      </node>
-      <node id="7">
-        <label>map</label>
-      </node>
-      <node id="6">
-        <label>./graph.h</label>
-        <link refid="graph_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>vector</label>
+        <link refid="cpp/header/string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
       </node>
       <node id="8">
         <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="7">
+        <label>map</label>
+        <link refid="cpp/header/map" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
@@ -76,6 +80,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="graphs/main.cc" line="6" column="5" bodyfile="graphs/main.cc" bodystart="6" bodyend="32"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
         <references refid="classcommon_1_1GraphRepresentation_1a9ff855e37b512172683c74065fd98e6e" compoundref="graph__representation_8h" startline="21">common::GraphRepresentation::kRepresentationTypeList</references>
       </memberdef>
       </sectiondef>
@@ -87,7 +92,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="graph__representation_8h" kindref="compound">./graph_representation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="graph__directed_8h" kindref="compound">./graph_directed.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="graph_8h" kindref="compound">./graph.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/iostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">iostream</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6" refid="graphs_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="graphs_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
 <codeline lineno="7"><highlight class="normal">{</highlight></codeline>
@@ -111,7 +116,7 @@
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>graph_node-&gt;PrintDebug();</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Contains<sp/>Cycle:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>graph_node-&gt;ContainsCycle()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Contains<sp/>Cycle:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>graph_node-&gt;ContainsCycle()<sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>

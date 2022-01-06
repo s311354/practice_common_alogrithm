@@ -5,9 +5,6 @@
     <includes refid="binary__search_8h" local="yes">binary_search.h</includes>
     <includedby refid="binary__search_2main_8cc" local="yes">binary_search/main.cc</includedby>
     <incdepgraph>
-      <node id="5">
-        <label>queue</label>
-      </node>
       <node id="3">
         <label>stdlib.h</label>
       </node>
@@ -21,8 +18,13 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
+      <node id="5">
+        <label>queue</label>
+        <link refid="cpp/header/queue" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
       <node id="4">
         <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
       </node>
       <node id="1">
         <label>binary_search/binary_search.cc</label>
@@ -144,7 +146,7 @@
 <codeline lineno="93" refid="namespacecommon_1a5a885592e59041938086a74bd43dd6ec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacecommon_1a5a885592e59041938086a74bd43dd6ec" kindref="member">GetHeight</ref>(<ref refid="structcommon_1_1BSTNode" kindref="compound">BSTNode</ref>*<sp/>node)<sp/>{</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1<sp/>+<sp/>std::max(<ref refid="namespacecommon_1a5a885592e59041938086a74bd43dd6ec" kindref="member">GetHeight</ref>(node-&gt;<ref refid="structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" kindref="member">left</ref>),<sp/><ref refid="namespacecommon_1a5a885592e59041938086a74bd43dd6ec" kindref="member">GetHeight</ref>(node-&gt;<ref refid="structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" kindref="member">right</ref>));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1<sp/>+<sp/><ref refid="cpp/algorithm/max" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::max</ref>(<ref refid="namespacecommon_1a5a885592e59041938086a74bd43dd6ec" kindref="member">GetHeight</ref>(node-&gt;<ref refid="structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" kindref="member">left</ref>),<sp/><ref refid="namespacecommon_1a5a885592e59041938086a74bd43dd6ec" kindref="member">GetHeight</ref>(node-&gt;<ref refid="structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" kindref="member">right</ref>));</highlight></codeline>
 <codeline lineno="97"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
 <codeline lineno="99" refid="namespacecommon_1a951a6c058a6a852e5a3906c70f7b602a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacecommon_1a951a6c058a6a852e5a3906c70f7b602a" kindref="member">DeleteTree</ref>(<ref refid="structcommon_1_1BSTNode" kindref="compound">BSTNode</ref>*<sp/>node)<sp/>{</highlight></codeline>
@@ -187,19 +189,19 @@
 <codeline lineno="136"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight></codeline>
 <codeline lineno="138" refid="namespacecommon_1a9c6049ee02fd40aeb6cc7e4b5384f581" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacecommon_1a9c6049ee02fd40aeb6cc7e4b5384f581" kindref="member">PrintBFS</ref>(<ref refid="structcommon_1_1BSTNode" kindref="compound">BSTNode</ref>*<sp/>node)<sp/>{</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>std::queue&lt;BSTNode*&gt;<sp/>node_queue;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/container/queue" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::queue&lt;BSTNode*&gt;</ref><sp/>node_queue;</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcommon_1_1BSTNode" kindref="compound">BSTNode</ref>*<sp/>current;</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>node_queue.push(node);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>node_queue.<ref refid="cpp/container/queue/push" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">push</ref>(node);</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<sp/>node_queue.empty())<sp/>{</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current<sp/>=<sp/>node_queue.front();</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node_queue.pop();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<sp/>node_queue.<ref refid="cpp/container/queue/empty" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">empty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current<sp/>=<sp/>node_queue.<ref refid="cpp/container/queue/front" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">front</ref>();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node_queue.<ref refid="cpp/container/queue/pop" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">pop</ref>();</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"></highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>current-&gt;<ref refid="structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" kindref="member">data</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current-&gt;<ref refid="structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" kindref="member">left</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>node_queue.push(current-&gt;<ref refid="structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" kindref="member">left</ref>);</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current-&gt;<ref refid="structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" kindref="member">right</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>node_queue.push(current-&gt;<ref refid="structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" kindref="member">right</ref>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/>current-&gt;<ref refid="structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" kindref="member">data</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current-&gt;<ref refid="structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" kindref="member">left</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>node_queue.<ref refid="cpp/container/queue/push" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">push</ref>(current-&gt;<ref refid="structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" kindref="member">left</ref>);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current-&gt;<ref refid="structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" kindref="member">right</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>node_queue.<ref refid="cpp/container/queue/push" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">push</ref>(current-&gt;<ref refid="structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" kindref="member">right</ref>);</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="154"><highlight class="normal">}</highlight></codeline>
@@ -209,7 +211,7 @@
 <codeline lineno="158"><highlight class="normal"></highlight></codeline>
 <codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node-&gt;<ref refid="structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" kindref="member">left</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/><ref refid="namespacecommon_1a25d561230f553fe7281397bf9a88c8ed" kindref="member">PrintInOrder</ref>(node-&gt;<ref refid="structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" kindref="member">left</ref>);</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"></highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>node-&gt;<ref refid="structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" kindref="member">data</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/>node-&gt;<ref refid="structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" kindref="member">data</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"></highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node-&gt;<ref refid="structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" kindref="member">right</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/><ref refid="namespacecommon_1a25d561230f553fe7281397bf9a88c8ed" kindref="member">PrintInOrder</ref>(node-&gt;<ref refid="structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" kindref="member">right</ref>);</highlight></codeline>
 <codeline lineno="164"><highlight class="normal">}</highlight></codeline>

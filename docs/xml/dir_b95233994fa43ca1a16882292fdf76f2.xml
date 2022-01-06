@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_b95233994fa43ca1a16882292fdf76f2" kind="dir">
+    <compoundname>graphs/src</compoundname>
+    <innerdir refid="dir_8327f540b42a9053f27d146936e37961">graphs/src/CMakeFiles</innerdir>
+    <innerfile refid="graph_8cc">graph.cc</innerfile>
+    <innerfile refid="graph_8h">graph.h</innerfile>
+    <innerfile refid="graph__directed_8cc">graph_directed.cc</innerfile>
+    <innerfile refid="graph__directed_8h">graph_directed.h</innerfile>
+    <innerfile refid="graph__representation_8cc">graph_representation.cc</innerfile>
+    <innerfile refid="graph__representation_8h">graph_representation.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphs/src/"/>
+  </compounddef>
+</doxygen>

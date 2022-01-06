@@ -67,10 +67,10 @@ RM = /usr/local/Cellar/cmake/3.19.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array
+CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array
+CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/CMakeFiles /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/CMakeFiles 0
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array//CMakeFiles/progress.marks
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,30 +116,32 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named array
+# Convenience name for target.
+array/CMakeFiles/array.dir/rule:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array/CMakeFiles/array.dir/rule
+.PHONY : array/CMakeFiles/array.dir/rule
 
-# Build rule for target.
-array: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array
+# Convenience name for target.
+array: array/CMakeFiles/array.dir/rule
+
 .PHONY : array
 
 # fast build rule for target.
 array/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/build
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/build
 .PHONY : array/fast
 
 jvector.o: jvector.cc.o
@@ -148,7 +150,7 @@ jvector.o: jvector.cc.o
 
 # target to build an object file
 jvector.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/jvector.cc.o
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/jvector.cc.o
 .PHONY : jvector.cc.o
 
 jvector.i: jvector.cc.i
@@ -157,7 +159,7 @@ jvector.i: jvector.cc.i
 
 # target to preprocess a source file
 jvector.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/jvector.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/jvector.cc.i
 .PHONY : jvector.cc.i
 
 jvector.s: jvector.cc.s
@@ -166,7 +168,7 @@ jvector.s: jvector.cc.s
 
 # target to generate assembly for a file
 jvector.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/jvector.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/jvector.cc.s
 .PHONY : jvector.cc.s
 
 jvector_test.o: jvector_test.cc.o
@@ -175,7 +177,7 @@ jvector_test.o: jvector_test.cc.o
 
 # target to build an object file
 jvector_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/jvector_test.cc.o
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/jvector_test.cc.o
 .PHONY : jvector_test.cc.o
 
 jvector_test.i: jvector_test.cc.i
@@ -184,7 +186,7 @@ jvector_test.i: jvector_test.cc.i
 
 # target to preprocess a source file
 jvector_test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/jvector_test.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/jvector_test.cc.i
 .PHONY : jvector_test.cc.i
 
 jvector_test.s: jvector_test.cc.s
@@ -193,7 +195,7 @@ jvector_test.s: jvector_test.cc.s
 
 # target to generate assembly for a file
 jvector_test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/jvector_test.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/jvector_test.cc.s
 .PHONY : jvector_test.cc.s
 
 main.o: main.cc.o
@@ -202,7 +204,7 @@ main.o: main.cc.o
 
 # target to build an object file
 main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/main.cc.o
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -211,7 +213,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/main.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -220,7 +222,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/main.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/main.cc.s
 .PHONY : main.cc.s
 
 # Help Target
@@ -252,6 +254,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

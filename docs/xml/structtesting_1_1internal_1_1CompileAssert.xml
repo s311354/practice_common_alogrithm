@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structtesting_1_1internal_1_1CompileAssert" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::CompileAssert</compoundname>
+    <includes refid="gtest-port_8h" local="no">gtest-port.h</includes>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>testing::internal::CompileAssert&lt; bool &gt;</label>
+        <link refid="structtesting_1_1internal_1_1CompileAssert"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1029" column="3" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1029" bodyend="1030"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

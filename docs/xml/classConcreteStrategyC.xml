@@ -16,7 +16,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="strategy_pattern/main.cc" line="56" column="10" bodyfile="strategy_pattern/main.cc" bodystart="56" bodyend="59"/>
+        <location file="design_pattern/strategy_pattern/main.cc" line="56" column="10" bodyfile="design_pattern/strategy_pattern/main.cc" bodystart="56" bodyend="59"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
       </memberdef>
       <memberdef kind="function" id="classConcreteStrategyC_1a68180e42b7c5755a7c47b56e7b23d45a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -29,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="strategy_pattern/main.cc" line="52" column="5" bodyfile="strategy_pattern/main.cc" bodystart="52" bodyend="54"/>
+        <location file="design_pattern/strategy_pattern/main.cc" line="52" column="5" bodyfile="design_pattern/strategy_pattern/main.cc" bodystart="52" bodyend="54"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -60,7 +61,7 @@
         <link refid="classStrategy"/>
       </node>
     </collaborationgraph>
-    <location file="strategy_pattern/main.cc" line="49" column="1" bodyfile="strategy_pattern/main.cc" bodystart="50" bodyend="60"/>
+    <location file="design_pattern/strategy_pattern/main.cc" line="49" column="1" bodyfile="design_pattern/strategy_pattern/main.cc" bodystart="50" bodyend="60"/>
     <listofallmembers>
       <member refid="classConcreteStrategyC_1a9f11e7725a0520503718f38458e0ed70" prot="public" virt="virtual"><scope>ConcreteStrategyC</scope><name>algorithmInterface</name></member>
       <member refid="classConcreteStrategyC_1a68180e42b7c5755a7c47b56e7b23d45a" prot="public" virt="non-virtual"><scope>ConcreteStrategyC</scope><name>~ConcreteStrategyC</name></member>

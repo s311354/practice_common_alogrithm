@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/design_pattern/bridge_pattern/main.cc
+iostream
+-
+string
+-
+iostream
+-
+string
+-
+

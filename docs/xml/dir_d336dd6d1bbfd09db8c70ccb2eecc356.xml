@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_d336dd6d1bbfd09db8c70ccb2eecc356" kind="dir">
+    <compoundname>design_pattern/adapter_pattern</compoundname>
+    <innerdir refid="dir_a5e1455d0834af511c0a241bc178e5a6">design_pattern/adapter_pattern/CMakeFiles</innerdir>
+    <innerfile refid="design__pattern_2adapter__pattern_2main_8cc">main.cc</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="design_pattern/adapter_pattern/"/>
+  </compounddef>
+</doxygen>

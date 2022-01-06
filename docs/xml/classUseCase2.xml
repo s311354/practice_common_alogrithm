@@ -16,9 +16,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bridge_pattern/main.cc" line="72" column="14" bodyfile="bridge_pattern/main.cc" bodystart="72" bodyend="76"/>
+        <location file="design_pattern/bridge_pattern/main.cc" line="72" column="14" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="72" bodyend="76"/>
         <references refid="classImplementationInterface_1a436dfd4fda2d04cb83309e6b64e16473">ImplementationInterface::anotherFunctionality</references>
-        <references refid="classBridge_1ae85081759b4abbc481e728c1421249af" compoundref="bridge__pattern_2main_8cc" startline="40">Bridge::implementation</references>
+        <references refid="classBridge_1ae85081759b4abbc481e728c1421249af" compoundref="design__pattern_2bridge__pattern_2main_8cc" startline="40">Bridge::implementation</references>
       </memberdef>
       <memberdef kind="function" id="classUseCase2_1ab48fcea5fad3cfce8e938cd0cd1bcf47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bridge_pattern/main.cc" line="68" column="9" bodyfile="bridge_pattern/main.cc" bodystart="68" bodyend="70"/>
+        <location file="design_pattern/bridge_pattern/main.cc" line="68" column="9" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="68" bodyend="70"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -50,10 +50,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bridge_pattern/main.cc" line="40" column="33" bodyfile="bridge_pattern/main.cc" bodystart="40" bodyend="-1"/>
-        <referencedby refid="classBridge_1a1eacfb87aa96f5fda008f7ca8feefcad" compoundref="bridge__pattern_2main_8cc" startline="43" endline="46">Bridge::Bridge</referencedby>
-        <referencedby refid="classUseCase1_1a5da10bf08a63d888a4a3dce85061e6cc" compoundref="bridge__pattern_2main_8cc" startline="58" endline="62">UseCase1::someFunctionality</referencedby>
-        <referencedby refid="classUseCase2_1a784ddb5212947250bc4e2c5c22c5807c" compoundref="bridge__pattern_2main_8cc" startline="72" endline="76">someFunctionality</referencedby>
+        <location file="design_pattern/bridge_pattern/main.cc" line="40" column="33" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classBridge_1a1eacfb87aa96f5fda008f7ca8feefcad" compoundref="design__pattern_2bridge__pattern_2main_8cc" startline="43" endline="46">Bridge::Bridge</referencedby>
+        <referencedby refid="classUseCase1_1a5da10bf08a63d888a4a3dce85061e6cc" compoundref="design__pattern_2bridge__pattern_2main_8cc" startline="58" endline="62">UseCase1::someFunctionality</referencedby>
+        <referencedby refid="classUseCase2_1a784ddb5212947250bc4e2c5c22c5807c" compoundref="design__pattern_2bridge__pattern_2main_8cc" startline="72" endline="76">someFunctionality</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -103,7 +103,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="bridge_pattern/main.cc" line="65" column="1" bodyfile="bridge_pattern/main.cc" bodystart="66" bodyend="77"/>
+    <location file="design_pattern/bridge_pattern/main.cc" line="65" column="1" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="66" bodyend="77"/>
     <listofallmembers>
       <member refid="classBridge_1a1eacfb87aa96f5fda008f7ca8feefcad" prot="public" virt="non-virtual"><scope>UseCase2</scope><name>Bridge</name></member>
       <member refid="classBridge_1ae85081759b4abbc481e728c1421249af" prot="protected" virt="non-virtual"><scope>UseCase2</scope><name>implementation</name></member>

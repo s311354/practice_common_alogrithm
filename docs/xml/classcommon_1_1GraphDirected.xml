@@ -25,7 +25,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph_directed.h" line="22" column="10" bodyfile="graphs/graph_directed.cc" bodystart="18" bodyend="20"/>
+        <location file="graphs/src/graph_directed.h" line="22" column="10" bodyfile="graphs/src/graph_directed.cc" bodystart="18" bodyend="20"/>
+        <references refid="classcommon_1_1GraphRepresentation_1a0ac19bf9f7bbca8250ebf3a640cc9c9a" compoundref="graph__representation_8h" startline="29" endline="29">common::GraphRepresentation::AddEdge</references>
         <references refid="classcommon_1_1Graph_1ae918c97315c7e558c31dfd49edb80581" compoundref="graph_8h" startline="23">common::Graph::representation</references>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1GraphDirected_1ad7a1e6e78aae38c5b4db5c0938e7c16d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
@@ -40,7 +41,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph_directed.h" line="20" column="10" bodyfile="graphs/graph_directed.cc" bodystart="10" bodyend="12"/>
+        <location file="graphs/src/graph_directed.h" line="20" column="10" bodyfile="graphs/src/graph_directed.cc" bodystart="10" bodyend="12"/>
+        <references refid="classcommon_1_1GraphRepresentation_1a99eefd11b6fdf3b6aa6c6bd372e533da" compoundref="graph__representation_8h" startline="31" endline="31">common::GraphRepresentation::BFS</references>
         <references refid="classcommon_1_1Graph_1ae918c97315c7e558c31dfd49edb80581" compoundref="graph_8h" startline="23">common::Graph::representation</references>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1GraphDirected_1ad247c289f79dfbbb37abdbaacbe0b0a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -54,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph_directed.h" line="23" column="10" bodyfile="graphs/graph_directed.h" bodystart="23" bodyend="23"/>
+        <location file="graphs/src/graph_directed.h" line="23" column="10" bodyfile="graphs/src/graph_directed.h" bodystart="23" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1GraphDirected_1a486b07ce70a871e9d48d502c9ec2cb8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -68,7 +70,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph_directed.h" line="21" column="10" bodyfile="graphs/graph_directed.cc" bodystart="14" bodyend="16"/>
+        <location file="graphs/src/graph_directed.h" line="21" column="10" bodyfile="graphs/src/graph_directed.cc" bodystart="14" bodyend="16"/>
+        <references refid="classcommon_1_1GraphRepresentation_1a03108057447c99e3afb9730e67321ab0" compoundref="graph__representation_8h" startline="30" endline="30">common::GraphRepresentation::DFS</references>
         <references refid="classcommon_1_1Graph_1ae918c97315c7e558c31dfd49edb80581" compoundref="graph_8h" startline="23">common::Graph::representation</references>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1GraphDirected_1a65868d0a259eb4303abce1651607db11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -82,8 +85,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph_directed.h" line="25" column="15" bodyfile="graphs/graph_directed.cc" bodystart="26" bodyend="28"/>
+        <location file="graphs/src/graph_directed.h" line="25" column="15" bodyfile="graphs/src/graph_directed.cc" bodystart="26" bodyend="28"/>
         <references refid="classcommon_1_1Graph_1ae918c97315c7e558c31dfd49edb80581" compoundref="graph_8h" startline="23">common::Graph::representation</references>
+        <references refid="classcommon_1_1GraphRepresentation_1aed22c26c2bd7c5b90d7f178e5cc82954" compoundref="graph__representation_8h" startline="38">common::GraphRepresentation::vertices</references>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1GraphDirected_1a807149f0886a39514090341b746368e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -96,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph_directed.h" line="15" column="5" bodyfile="graphs/graph_directed.h" bodystart="15" bodyend="15"/>
+        <location file="graphs/src/graph_directed.h" line="15" column="5" bodyfile="graphs/src/graph_directed.h" bodystart="15" bodyend="15"/>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1GraphDirected_1ab7cb0044fbd1c6fbbeefadc42e26513a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -114,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph_directed.h" line="16" column="5" bodyfile="graphs/graph_directed.cc" bodystart="6" bodyend="8"/>
+        <location file="graphs/src/graph_directed.h" line="16" column="5" bodyfile="graphs/src/graph_directed.cc" bodystart="6" bodyend="8"/>
         <references refid="classcommon_1_1GraphRepresentation_1a44b6f9ec47a5da7661eba4d60f2435fd" compoundref="graph__representation_8cc" startline="15" endline="22">common::GraphRepresentation::GetRepresentation</references>
         <references refid="classcommon_1_1GraphRepresentation_1a93bcf4b3b1c2eb89977912288ca0906f" compoundref="graph__representation_8h" startline="26">common::GraphRepresentation::kGraphTypeDirected</references>
         <references refid="classcommon_1_1Graph_1ae918c97315c7e558c31dfd49edb80581" compoundref="graph_8h" startline="23">common::Graph::representation</references>
@@ -131,7 +135,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph_directed.h" line="24" column="10" bodyfile="graphs/graph_directed.cc" bodystart="22" bodyend="24"/>
+        <location file="graphs/src/graph_directed.h" line="24" column="10" bodyfile="graphs/src/graph_directed.cc" bodystart="22" bodyend="24"/>
+        <references refid="classcommon_1_1GraphRepresentation_1a80343a9d1c3ec8e73227b7a32e92ba95" compoundref="graph__representation_8h" startline="33" endline="33">common::GraphRepresentation::PrintDebug</references>
         <references refid="classcommon_1_1Graph_1ae918c97315c7e558c31dfd49edb80581" compoundref="graph_8h" startline="23">common::Graph::representation</references>
       </memberdef>
       <memberdef kind="function" id="classcommon_1_1GraphDirected_1a24c3c1f42e07e73ece0f8c1fe56e0d57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
@@ -145,12 +150,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph_directed.h" line="17" column="13" bodyfile="graphs/graph_directed.h" bodystart="17" bodyend="17"/>
+        <location file="graphs/src/graph_directed.h" line="17" column="13" bodyfile="graphs/src/graph_directed.h" bodystart="17" bodyend="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classcommon_1_1Graph_1ae918c97315c7e558c31dfd49edb80581" prot="public" static="no" mutable="no">
-        <type>unique_ptr&lt; <ref refid="classcommon_1_1GraphRepresentation" kindref="compound">common::GraphRepresentation</ref> &gt;</type>
+        <type><ref refid="cpp/memory/unique_ptr" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">unique_ptr</ref>&lt; <ref refid="classcommon_1_1GraphRepresentation" kindref="compound">common::GraphRepresentation</ref> &gt;</type>
         <definition>unique_ptr&lt;common::GraphRepresentation&gt; common::Graph::representation</definition>
         <argsstring></argsstring>
         <name>representation</name>
@@ -160,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph.h" line="26" column="16" bodyfile="graphs/graph.h" bodystart="23" bodyend="-1"/>
+        <location file="graphs/src/graph.h" line="26" column="16" bodyfile="graphs/src/graph.h" bodystart="23" bodyend="-1"/>
         <referencedby refid="classcommon_1_1GraphDirected_1a4a7f1b270a449aa7f0e6b88397215c92" compoundref="graph__directed_8cc" startline="18" endline="20">AddEdge</referencedby>
         <referencedby refid="classcommon_1_1GraphDirected_1ad7a1e6e78aae38c5b4db5c0938e7c16d" compoundref="graph__directed_8cc" startline="10" endline="12">BFS</referencedby>
         <referencedby refid="classcommon_1_1GraphDirected_1a486b07ce70a871e9d48d502c9ec2cb8a" compoundref="graph__directed_8cc" startline="14" endline="16">DFS</referencedby>
@@ -179,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/graph.h" line="27" column="9" bodyfile="graphs/graph.h" bodystart="27" bodyend="-1"/>
+        <location file="graphs/src/graph.h" line="27" column="9" bodyfile="graphs/src/graph.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -204,6 +209,7 @@
       </node>
       <node id="4">
         <label>std::unique_ptr&lt; T &gt;</label>
+        <link refid="cpp/memory/unique_ptr" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
         <childnode refid="5" relation="usage">
           <edgelabel>+ptr</edgelabel>
         </childnode>
@@ -216,6 +222,7 @@
       </node>
       <node id="3">
         <label>std::unique_ptr&lt; common::GraphRepresentation &gt;</label>
+        <link refid="cpp/memory/unique_ptr" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
         <childnode refid="4" relation="template-instance">
           <edgelabel>&lt; common::GraphRepresentation &gt;</edgelabel>
         </childnode>
@@ -228,7 +235,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="graphs/graph_directed.h" line="10" column="1" bodyfile="graphs/graph_directed.h" bodystart="11" bodyend="26"/>
+    <location file="graphs/src/graph_directed.h" line="10" column="1" bodyfile="graphs/src/graph_directed.h" bodystart="11" bodyend="26"/>
     <listofallmembers>
       <member refid="classcommon_1_1GraphDirected_1a4a7f1b270a449aa7f0e6b88397215c92" prot="public" virt="virtual"><scope>common::GraphDirected</scope><name>AddEdge</name></member>
       <member refid="classcommon_1_1GraphDirected_1ad7a1e6e78aae38c5b4db5c0938e7c16d" prot="public" virt="virtual"><scope>common::GraphDirected</scope><name>BFS</name></member>

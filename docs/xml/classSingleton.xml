@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classSingleton" kind="class" language="C++" prot="public">
+    <compoundname>Singleton</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classSingleton_1a3894c0bb19489fbc82e719aa47800712" prot="private" static="yes" mutable="no">
+        <type><ref refid="classSingleton" kindref="compound">Singleton</ref> *</type>
+        <definition>Singleton * Singleton::instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/singleton_pattern/main.cc" line="22" column="26" bodyfile="design_pattern/singleton_pattern/main.cc" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classSingleton_1ae5cc005e947b0f851ea8db2d97123d66" compoundref="design__pattern_2singleton__pattern_2main_8cc" startline="34" endline="42">getInstance</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classSingleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Singleton::Singleton</definition>
+        <argsstring>()</argsstring>
+        <name>Singleton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/singleton_pattern/main.cc" line="25" column="9" bodyfile="design_pattern/singleton_pattern/main.cc" bodystart="44" bodyend="45"/>
+        <referencedby refid="classSingleton_1ae5cc005e947b0f851ea8db2d97123d66" compoundref="design__pattern_2singleton__pattern_2main_8cc" startline="34" endline="42">getInstance</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classSingleton_1ae5cc005e947b0f851ea8db2d97123d66" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classSingleton" kindref="compound">Singleton</ref> *</type>
+        <definition>Singleton * Singleton::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/singleton_pattern/main.cc" line="28" column="26" bodyfile="design_pattern/singleton_pattern/main.cc" bodystart="34" bodyend="42"/>
+        <references refid="classSingleton_1a3894c0bb19489fbc82e719aa47800712" compoundref="design__pattern_2singleton__pattern_2main_8cc" startline="22">instance</references>
+        <references refid="classSingleton_1a0e21dfc9afab45b0a6a70f6665ce5819" compoundref="design__pattern_2singleton__pattern_2main_8cc" startline="44" endline="45">Singleton</references>
+        <referencedby refid="design__pattern_2singleton__pattern_2main_8cc_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="design__pattern_2singleton__pattern_2main_8cc" startline="47" endline="56">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Singleton</label>
+        <link refid="classSingleton"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>-instance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="design_pattern/singleton_pattern/main.cc" line="18" column="1" bodyfile="design_pattern/singleton_pattern/main.cc" bodystart="19" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classSingleton_1ae5cc005e947b0f851ea8db2d97123d66" prot="public" virt="non-virtual"><scope>Singleton</scope><name>getInstance</name></member>
+      <member refid="classSingleton_1a3894c0bb19489fbc82e719aa47800712" prot="private" virt="non-virtual"><scope>Singleton</scope><name>instance</name></member>
+      <member refid="classSingleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="private" virt="non-virtual"><scope>Singleton</scope><name>Singleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
