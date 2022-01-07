@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d6e/classtesting_1_1internal_1_1UniversalPrinter_3_01T_01_6_01_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::UniversalPrinter&lt; T &amp; &gt;</compoundname>
+    <includes refid="d0/d6d/gtest-printers_8h" local="no">gtest-printers.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="db/d6e/classtesting_1_1internal_1_1UniversalPrinter_3_01T_01_6_01_4_1a923a694be8aa66117848c1c5f57ede35" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void testing::internal::UniversalPrinter&lt; T &amp; &gt;::Print</definition>
+        <argsstring>(const T &amp;value, ::std::ostream *os)</argsstring>
+        <name>Print</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-printers.h" line="764" column="15" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="764" bodyend="771"/>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a30708fa2bacf11895b03bdb21eb72309" compoundref="d0/d6d/gtest-printers_8h" startline="852" endline="857">testing::internal::UniversalPrint</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>testing::internal::UniversalPrinter&lt; T &amp; &gt;</label>
+        <link refid="db/d6e/classtesting_1_1internal_1_1UniversalPrinter_3_01T_01_6_01_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/gtest-printers.h" line="758" column="1" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="758" bodyend="774"/>
+    <listofallmembers>
+      <member refid="db/d6e/classtesting_1_1internal_1_1UniversalPrinter_3_01T_01_6_01_4_1a923a694be8aa66117848c1c5f57ede35" prot="public" virt="non-virtual"><scope>testing::internal::UniversalPrinter&lt; T &amp; &gt;</scope><name>Print</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/d3b/hash__table_8cc" kind="file" language="C++">
+    <compoundname>hash_table.cc</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="d4/ddb/hash__table_8h" local="yes">./hash_table.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>hash_table/hash_table.cc</label>
+        <link refid="dd/d3b/hash__table_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>./hash_table.h</label>
+        <link refid="d4/ddb/hash__table_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+        <link refid="cpp/header/string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="4">
+        <label>./hash_object.h</label>
+        <link refid="dc/d62/hash__object_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="d9/d0c/namespacecommon">common</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/iostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">iostream</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/ddb/hash__table_8h" kindref="compound">./hash_table.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d9/d0c/namespacecommon" kindref="compound">common</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d1/d2d/classcommon_1_1_hash_table_1a9345189fd2bc1cc9ae3150bc43bac708" refkind="member"><highlight class="normal"><ref refid="d1/d2d/classcommon_1_1_hash_table_1a9345189fd2bc1cc9ae3150bc43bac708" kindref="member">HashTable::HashTable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a6947fa5d6ba628dd62d59ffbad8b8d80" kindref="member">size_</ref><sp/>=<sp/>size;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="db/de7/classcommon_1_1_hash_object" kindref="compound">HashObject</ref>[size];</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(<ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>size;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[i].<ref refid="db/de7/classcommon_1_1_hash_object_1a63d8d4c0aeb6f55b1fd4ad33a728ea09" kindref="member">SetKey</ref>(<ref refid="db/de7/classcommon_1_1_hash_object_1a77e01d7761577b1cf1a6fa02e5f1f4fd" kindref="member">HashObject::GetNullKey</ref>());</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d1/d2d/classcommon_1_1_hash_table_1aaf0dfe5ff8f321274e1a349503461a48" refkind="member"><highlight class="normal"><ref refid="d1/d2d/classcommon_1_1_hash_table_1aaf0dfe5ff8f321274e1a349503461a48" kindref="member">HashTable::~HashTable</ref>()<sp/>{</highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>;};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d1/d2d/classcommon_1_1_hash_table_1a1f9d74426ead6df411fd1162a7389521" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a1f9d74426ead6df411fd1162a7389521" kindref="member">HashTable::Add</ref>(<ref refid="db/de7/classcommon_1_1_hash_object" kindref="compound">HashObject</ref><sp/>*<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1ae4d8cb956c4556fbff01e3a0b64cc42e" kindref="member">Hash</ref>(object-&gt;<ref refid="db/de7/classcommon_1_1_hash_object_1a427c1ae83059ba3178e292a41bc8bd61" kindref="member">Getkey</ref>());</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>original_index<sp/>=<sp/>index;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dummyIndex<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>found<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].Getkey()<sp/>!=<sp/><ref refid="db/de7/classcommon_1_1_hash_object_1a77e01d7761577b1cf1a6fa02e5f1f4fd" kindref="member">HashObject::GetNullKey</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].Getkey()<sp/>==<sp/>object-&gt;<ref refid="db/de7/classcommon_1_1_hash_object_1a427c1ae83059ba3178e292a41bc8bd61" kindref="member">Getkey</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>found<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].Getkey()<sp/>==<sp/><ref refid="db/de7/classcommon_1_1_hash_object_1a79346f6acc1b3eb9d6e946e2263e5010" kindref="member">HashObject::GetDummyKey</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dummyIndex<sp/>=<sp/>index;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>=<sp/>(index<sp/>+<sp/>1)<sp/>%<sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a6947fa5d6ba628dd62d59ffbad8b8d80" kindref="member">size_</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index<sp/>==<sp/>original_index)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!found<sp/>&amp;&amp;<sp/>dummyIndex<sp/>!=<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>=<sp/>dummyIndex;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].<ref refid="db/de7/classcommon_1_1_hash_object_1a63d8d4c0aeb6f55b1fd4ad33a728ea09" kindref="member">SetKey</ref>(object-&gt;<ref refid="db/de7/classcommon_1_1_hash_object_1a427c1ae83059ba3178e292a41bc8bd61" kindref="member">Getkey</ref>());</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].<ref refid="db/de7/classcommon_1_1_hash_object_1a35fa195e8796b1228e2d4787bebacdc1" kindref="member">SetValue</ref>(object-&gt;<ref refid="db/de7/classcommon_1_1_hash_object_1ac147df914005ba8c736a9b017ac8abdc" kindref="member">GetValue</ref>());</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="d1/d2d/classcommon_1_1_hash_table_1ae4d8cb956c4556fbff01e3a0b64cc42e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1ae4d8cb956c4556fbff01e3a0b64cc42e" kindref="member">HashTable::Hash</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>key)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hash<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>key_length<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(key.<ref refid="cpp/string/basic_string/size" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">length</ref>());</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>key_length;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hash<sp/>=<sp/>hash<sp/>*<sp/>31<sp/>+<sp/>key[i];</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>abs(hash<sp/>%<sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a6947fa5d6ba628dd62d59ffbad8b8d80" kindref="member">size_</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="d1/d2d/classcommon_1_1_hash_table_1ab037afa87b74f0a1c15865150725c442" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1ab037afa87b74f0a1c15865150725c442" kindref="member">HashTable::Exists</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>key)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1ae4d8cb956c4556fbff01e3a0b64cc42e" kindref="member">Hash</ref>(key);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>original_index<sp/>=<sp/>index;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>found<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].Getkey()<sp/>!=<sp/><ref refid="db/de7/classcommon_1_1_hash_object_1a77e01d7761577b1cf1a6fa02e5f1f4fd" kindref="member">HashObject::GetNullKey</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].Getkey()<sp/>==<sp/>key)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>found<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>=<sp/>(index<sp/>+<sp/>1)<sp/>%<sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a6947fa5d6ba628dd62d59ffbad8b8d80" kindref="member">size_</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>break<sp/>out<sp/>of<sp/>while<sp/>loop<sp/>while<sp/>traveling<sp/>one<sp/>cycle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index<sp/>==<sp/>original_index)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>found;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="d1/d2d/classcommon_1_1_hash_table_1a96b27a16691e44f4bea04e3f3baeb6bb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a96b27a16691e44f4bea04e3f3baeb6bb" kindref="member">HashTable::Get</ref>(<ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>key)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1ae4d8cb956c4556fbff01e3a0b64cc42e" kindref="member">Hash</ref>(key);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>original_index<sp/>=<sp/>index;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].Getkey()<sp/>!=<sp/><ref refid="db/de7/classcommon_1_1_hash_object_1a77e01d7761577b1cf1a6fa02e5f1f4fd" kindref="member">HashObject::GetNullKey</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].Getkey()<sp/>==<sp/>key)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].<ref refid="db/de7/classcommon_1_1_hash_object_1ac147df914005ba8c736a9b017ac8abdc" kindref="member">GetValue</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>=<sp/>(index<sp/>+<sp/>1)<sp/>%<sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a6947fa5d6ba628dd62d59ffbad8b8d80" kindref="member">size_</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index<sp/>==<sp/>original_index)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="d1/d2d/classcommon_1_1_hash_table_1af2f608b0daa2454164659ffbba4c71db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1af2f608b0daa2454164659ffbba4c71db" kindref="member">HashTable::Remove</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>key)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1ae4d8cb956c4556fbff01e3a0b64cc42e" kindref="member">Hash</ref>(key);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>original_index<sp/>=<sp/>index;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].Getkey()<sp/>!=<sp/><ref refid="db/de7/classcommon_1_1_hash_object_1a77e01d7761577b1cf1a6fa02e5f1f4fd" kindref="member">HashObject::GetNullKey</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].Getkey()<sp/>==<sp/>key)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].<ref refid="db/de7/classcommon_1_1_hash_object_1a63d8d4c0aeb6f55b1fd4ad33a728ea09" kindref="member">SetKey</ref>(<ref refid="db/de7/classcommon_1_1_hash_object_1a79346f6acc1b3eb9d6e946e2263e5010" kindref="member">HashObject::GetDummyKey</ref>());</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[index].<ref refid="db/de7/classcommon_1_1_hash_object_1a35fa195e8796b1228e2d4787bebacdc1" kindref="member">SetValue</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>=<sp/>(index<sp/>+<sp/>1)<sp/>%<sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a6947fa5d6ba628dd62d59ffbad8b8d80" kindref="member">size_</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index<sp/>==<sp/>original_index)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="d1/d2d/classcommon_1_1_hash_table_1ad4be3369313a7d7d22098510b1ab0c84" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1ad4be3369313a7d7d22098510b1ab0c84" kindref="member">HashTable::PringDebug</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a6947fa5d6ba628dd62d59ffbad8b8d80" kindref="member">size_</ref>;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[i].<ref refid="db/de7/classcommon_1_1_hash_object_1a427c1ae83059ba3178e292a41bc8bd61" kindref="member">Getkey</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="d1/d2d/classcommon_1_1_hash_table_1a2654a29c2a3b9e5714d5ddfea01123f5" kindref="member">data_</ref>[i].<ref refid="db/de7/classcommon_1_1_hash_object_1ac147df914005ba8c736a9b017ac8abdc" kindref="member">GetValue</ref>()<sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;-----------------------------\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>common<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="hash_table/hash_table.cc"/>
+  </compounddef>
+</doxygen>

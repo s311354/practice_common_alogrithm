@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/dfb/structtesting_1_1Test_1_1Setup__should__be__spelled__SetUp" kind="struct" language="C++" prot="package">
+    <compoundname>testing::Test::Setup_should_be_spelled_SetUp</compoundname>
+    <includes refid="d8/d73/gtest_8h" local="no">gtest.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Test::Setup_should_be_spelled_SetUp</label>
+        <link refid="d7/dfb/structtesting_1_1Test_1_1Setup__should__be__spelled__SetUp"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/gtest.h" line="473" column="3" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="473" bodyend="473"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

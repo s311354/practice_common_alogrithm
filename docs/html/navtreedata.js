@@ -25,11 +25,18 @@
 var NAVTREE =
 [
   [ "Common Alogrithm", "index.html", [
-    [ "The concept of Directed Graph", "md_graphs_README.html", null ],
-    [ "The concept of Hash Tables", "md_hash_table_README.html", null ],
-    [ "Modules", "namespaces.html", [
-      [ "Modules List", "namespaces.html", "namespaces_dup" ],
-      [ "Module Members", "namespacemembers.html", [
+    [ "The concept of struct and class declarations", "d6/db5/md_binary_search__r_e_a_d_m_e.html", [
+      [ "Reference", "d6/db5/md_binary_search__r_e_a_d_m_e.html#autotoc_md1", null ]
+    ] ],
+    [ "The concept of Directed Graph", "d7/de5/md_graphs__r_e_a_d_m_e.html", [
+      [ "Reference", "d7/de5/md_graphs__r_e_a_d_m_e.html#autotoc_md3", null ]
+    ] ],
+    [ "The concept of Hash Tables", "df/d05/md_hash_table__r_e_a_d_m_e.html", [
+      [ "Reference", "df/d05/md_hash_table__r_e_a_d_m_e.html#autotoc_md5", null ]
+    ] ],
+    [ "Packages", "namespaces.html", [
+      [ "Packages", "namespaces.html", "namespaces_dup" ],
+      [ "Package Functions", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
         [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
         [ "Constants", "namespacemembers_vars.html", null ],
@@ -50,14 +57,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classtesting_1_1TestEventListeners.html#afddba49fdf3f493532b4d5efb9814f4e",
-"cpp/algorithm/make_heap.html",
-"cpp/experimental/search.html",
-"cpp/io/manip/get_time.html",
-"cpp/numeric/math/tgamma.html",
-"cpp/string/wide/wcschr.html",
-"cpp/utility/variant/variant_size.html",
-"namespacetesting_1_1internal.html#a472880afbcc592a41e3d623e2dec8412"
+"cpp/experimental/fs/absolute.html",
+"cpp/io/c/getwchar.html",
+"cpp/numeric/math/exp2.html",
+"cpp/string/byte/strtof.html",
+"cpp/utility/functional/not2.html",
+"d0/da7/namespacetesting_1_1internal.html#a5bfafb8c85988c397157e055965ad46c",
+"d0/dfa/classtesting_1_1_test_case.html#aee5d98a0807fdd67250534a4b491e3d0",
+"d5/dec/classtesting_1_1_assertion_result.html#a0aafa5774976d7f082bb6f1d19da61cb",
+"de/d42/classtesting_1_1anonymous__namespace_02gtest_8cc_03_1_1_test_name_is.html#ac760376da9bea59bb4df3a4ee5065008"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

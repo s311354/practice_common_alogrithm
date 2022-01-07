@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/d9b/classcommon_1_1GraphRepresentationList" kind="class" language="C++" prot="public">
+    <compoundname>common::GraphRepresentationList</compoundname>
+    <basecompoundref refid="dc/d62/classcommon_1_1GraphRepresentation" prot="public" virt="non-virtual">common::GraphRepresentation</basecompoundref>
+    <includes refid="d7/d90/graph__representation_8h" local="no">graph_representation.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/d9b/classcommon_1_1GraphRepresentationList_1af276814e34ea5f16fcc696014a1c4d54" prot="public" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">vector</ref>&lt; <ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">vector</ref>&lt; int &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;int&gt; &gt; common::GraphRepresentationList::adjust_list</definition>
+        <argsstring></argsstring>
+        <name>adjust_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="59" column="13" bodyfile="graphs/src/graph_representation.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d62/classcommon_1_1GraphRepresentation_1adef161f4e49d1234da78baf0c67f963d" prot="public" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref></type>
+        <definition>string common::GraphRepresentation::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="37" column="12" bodyfile="graphs/src/graph_representation.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d62/classcommon_1_1GraphRepresentation_1aed22c26c2bd7c5b90d7f178e5cc82954" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int common::GraphRepresentation::vertices</definition>
+        <argsstring></argsstring>
+        <name>vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="38" column="9" bodyfile="graphs/src/graph_representation.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="d2/d0d/classcommon_1_1GraphDirected_1a65868d0a259eb4303abce1651607db11" compoundref="dd/dba/graph__directed_8cc" startline="26" endline="28">common::GraphDirected::GetVertexCount</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d9b/classcommon_1_1GraphRepresentationList_1a8a40c21abe6df8459d2f9e9cffb4d28d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void common::GraphRepresentationList::AddEdge</definition>
+        <argsstring>(const int source, const int destination)</argsstring>
+        <name>AddEdge</name>
+        <reimplements refid="dc/d62/classcommon_1_1GraphRepresentation_1a0ac19bf9f7bbca8250ebf3a640cc9c9a">AddEdge</reimplements>
+        <param>
+          <type>const int</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>destination</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="53" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="34" bodyend="56"/>
+        <references refid="cpp/container/vector/end_1">std::vector&lt; T &gt;::end</references>
+        <references refid="cpp/algorithm/find_1">std::find</references>
+        <references refid="cpp/algorithm/max_1">std::max</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d9b/classcommon_1_1GraphRepresentationList_1ac257e19758cafea0b9b633675939b799" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void common::GraphRepresentationList::BFS</definition>
+        <argsstring>()</argsstring>
+        <name>BFS</name>
+        <reimplements refid="dc/d62/classcommon_1_1GraphRepresentation_1a99eefd11b6fdf3b6aa6c6bd372e533da">BFS</reimplements>
+        <briefdescription>
+<para>Brief function description here. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Detailed description: Breadth First Search is traversing algorithm where you should start traversing from a selected node (source or parent node) and traverse the graph layerwise thus exploring the neighbour nodes. refer to <ulink url="https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/">https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/</ulink></para>
+<para><simplesect kind="return"><para>Return parameter description </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="54" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="64" bodyend="115"/>
+        <references refid="cpp/container/vector/begin_1">std::vector&lt; T &gt;::begin</references>
+        <references refid="cpp/container/queue/empty_1">std::queue&lt; T &gt;::empty</references>
+        <references refid="cpp/container/vector/end_1">std::vector&lt; T &gt;::end</references>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <references refid="cpp/algorithm/fill_n_1">std::fill_n</references>
+        <references refid="cpp/container/queue/front_1">std::queue&lt; T &gt;::front</references>
+        <references refid="cpp/container/queue/pop_1">std::queue&lt; T &gt;::pop</references>
+        <references refid="cpp/container/queue/push_1">std::queue&lt; T &gt;::push</references>
+        <references refid="cpp/container/vector/push_back_1">std::vector&lt; T &gt;::push_back</references>
+        <references refid="cpp/container/vector/size_1">std::vector&lt; T &gt;::size</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d9b/classcommon_1_1GraphRepresentationList_1a921721803dd2db385ad0f0700e61495e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool common::GraphRepresentationList::ContainsCycle</definition>
+        <argsstring>()</argsstring>
+        <name>ContainsCycle</name>
+        <reimplements refid="dc/d62/classcommon_1_1GraphRepresentation_1a1b9dd76c745faf2c649240abd1b7c457">ContainsCycle</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="56" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="174" bodyend="219"/>
+        <references refid="cpp/container/stack/empty_1">std::stack&lt; T &gt;::empty</references>
+        <references refid="cpp/algorithm/fill_n_1">std::fill_n</references>
+        <references refid="cpp/container/stack/pop_1">std::stack&lt; T &gt;::pop</references>
+        <references refid="cpp/container/stack/push_1">std::stack&lt; T &gt;::push</references>
+        <references refid="cpp/container/stack/top_1">std::stack&lt; T &gt;::top</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d9b/classcommon_1_1GraphRepresentationList_1a0900a0619e3423cfaf1ddcf9a7750b7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void common::GraphRepresentationList::DFS</definition>
+        <argsstring>()</argsstring>
+        <name>DFS</name>
+        <reimplements refid="dc/d62/classcommon_1_1GraphRepresentation_1a03108057447c99e3afb9730e67321ab0">DFS</reimplements>
+        <briefdescription>
+<para>Brief function description here. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Detailed description: Depth First Search is a recursive algorithm that uses the idea of backtracking. It involves searches of all the nodes by going ahead if possible, else by backtracking. refer to <ulink url="https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/">https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/</ulink></para>
+<para><simplesect kind="return"><para>Return parameter description </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="55" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="123" bodyend="172"/>
+        <references refid="cpp/container/vector/begin_1">std::vector&lt; T &gt;::begin</references>
+        <references refid="cpp/container/stack/empty_1">std::stack&lt; T &gt;::empty</references>
+        <references refid="cpp/container/vector/end_1">std::vector&lt; T &gt;::end</references>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <references refid="cpp/algorithm/fill_n_1">std::fill_n</references>
+        <references refid="cpp/container/stack/pop_1">std::stack&lt; T &gt;::pop</references>
+        <references refid="cpp/container/stack/push_1">std::stack&lt; T &gt;::push</references>
+        <references refid="cpp/container/vector/push_back_1">std::vector&lt; T &gt;::push_back</references>
+        <references refid="cpp/container/vector/size_1">std::vector&lt; T &gt;::size</references>
+        <references refid="cpp/container/stack/top_1">std::stack&lt; T &gt;::top</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d9b/classcommon_1_1GraphRepresentationList_1a4a68054d32d42e3a28d4da8fe15c0326" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>common::GraphRepresentationList::GraphRepresentationList</definition>
+        <argsstring>(const string graph_type)</argsstring>
+        <name>GraphRepresentationList</name>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref></type>
+          <declname>graph_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="50" column="5" bodyfile="graphs/src/graph_representation.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d9b/classcommon_1_1GraphRepresentationList_1a2dfec81233f4aa057c42b5a7cadc66bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void common::GraphRepresentationList::PrintDebug</definition>
+        <argsstring>()</argsstring>
+        <name>PrintDebug</name>
+        <reimplements refid="dc/d62/classcommon_1_1GraphRepresentation_1a80343a9d1c3ec8e73227b7a32e92ba95">PrintDebug</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="57" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="221" bodyend="232"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d9b/classcommon_1_1GraphRepresentationList_1a8898f87cda1d6cdfb024f4dd81eba7f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual common::GraphRepresentationList::~GraphRepresentationList</definition>
+        <argsstring>()</argsstring>
+        <name>~GraphRepresentationList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="51" column="13" bodyfile="graphs/src/graph_representation.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="dc/d62/classcommon_1_1GraphRepresentation_1a93bcf4b3b1c2eb89977912288ca0906f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref></type>
+        <definition>const string common::GraphRepresentation::kGraphTypeDirected</definition>
+        <argsstring></argsstring>
+        <name>kGraphTypeDirected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="26" column="25" bodyfile="graphs/src/graph_representation.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="d2/d0d/classcommon_1_1GraphDirected_1ab7cb0044fbd1c6fbbeefadc42e26513a" compoundref="dd/dba/graph__directed_8cc" startline="6" endline="8">common::GraphDirected::GraphDirected</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d62/classcommon_1_1GraphRepresentation_1a28b2c237c7829b997693bec263fc3013" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref></type>
+        <definition>const string common::GraphRepresentation::kGraphTypeUndirected</definition>
+        <argsstring></argsstring>
+        <name>kGraphTypeUndirected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="27" column="25" bodyfile="graphs/src/graph_representation.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d62/classcommon_1_1GraphRepresentation_1a9ff855e37b512172683c74065fd98e6e" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref></type>
+        <definition>const string common::GraphRepresentation::kRepresentationTypeList</definition>
+        <argsstring></argsstring>
+        <name>kRepresentationTypeList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="24" column="25" bodyfile="graphs/src/graph_representation.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="db/df7/graphs_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="db/df7/graphs_2main_8cc" startline="6" endline="32">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d62/classcommon_1_1GraphRepresentation_1aa53fcd0da0759d335112bbaaa332b1f3" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref></type>
+        <definition>const string common::GraphRepresentation::kRepresentationTypeMatrix</definition>
+        <argsstring></argsstring>
+        <name>kRepresentationTypeMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="25" column="25" bodyfile="graphs/src/graph_representation.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="dc/d62/classcommon_1_1GraphRepresentation_1a44b6f9ec47a5da7661eba4d60f2435fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/memory/unique_ptr" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">unique_ptr</ref>&lt; <ref refid="dc/d62/classcommon_1_1GraphRepresentation" kindref="compound">common::GraphRepresentation</ref> &gt;</type>
+        <definition>unique_ptr&lt; GraphRepresentation &gt; common::GraphRepresentation::GetRepresentation</definition>
+        <argsstring>(const string representation_type, const string graph_type)</argsstring>
+        <name>GetRepresentation</name>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref></type>
+          <declname>representation_type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref></type>
+          <declname>graph_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_representation.h" line="36" column="23" bodyfile="graphs/src/graph_representation.cc" bodystart="15" bodyend="22"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <references refid="cpp/utility/program/exit_1">std::exit</references>
+        <referencedby refid="d2/d0d/classcommon_1_1GraphDirected_1ab7cb0044fbd1c6fbbeefadc42e26513a" compoundref="dd/dba/graph__directed_8cc" startline="6" endline="8">common::GraphDirected::GraphDirected</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Brief class description. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Detailed description </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>common::GraphRepresentation</label>
+        <link refid="dc/d62/classcommon_1_1GraphRepresentation"/>
+      </node>
+      <node id="1">
+        <label>common::GraphRepresentationList</label>
+        <link refid="df/d9b/classcommon_1_1GraphRepresentationList"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>T</label>
+      </node>
+      <node id="2">
+        <label>common::GraphRepresentation</label>
+        <link refid="dc/d62/classcommon_1_1GraphRepresentation"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+kGraphTypeDirected</edgelabel>
+          <edgelabel>+kGraphTypeUndirected</edgelabel>
+          <edgelabel>+kRepresentationTypeList</edgelabel>
+          <edgelabel>+kRepresentationTypeMatrix</edgelabel>
+          <edgelabel>+type</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::vector&lt; T &gt;</label>
+        <link refid="cpp/container/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::basic_string&lt; Char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>common::GraphRepresentationList</label>
+        <link refid="df/d9b/classcommon_1_1GraphRepresentationList"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+adjust_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::vector&lt; vector&lt; int &gt; &gt;</label>
+        <link refid="cpp/container/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; vector&lt; int &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="graphs/src/graph_representation.h" line="47" column="1" bodyfile="graphs/src/graph_representation.h" bodystart="48" bodyend="62"/>
+    <listofallmembers>
+      <member refid="df/d9b/classcommon_1_1GraphRepresentationList_1a8a40c21abe6df8459d2f9e9cffb4d28d" prot="public" virt="virtual"><scope>common::GraphRepresentationList</scope><name>AddEdge</name></member>
+      <member refid="df/d9b/classcommon_1_1GraphRepresentationList_1af276814e34ea5f16fcc696014a1c4d54" prot="public" virt="non-virtual"><scope>common::GraphRepresentationList</scope><name>adjust_list</name></member>
+      <member refid="df/d9b/classcommon_1_1GraphRepresentationList_1ac257e19758cafea0b9b633675939b799" prot="public" virt="virtual"><scope>common::GraphRepresentationList</scope><name>BFS</name></member>
+      <member refid="df/d9b/classcommon_1_1GraphRepresentationList_1a921721803dd2db385ad0f0700e61495e" prot="public" virt="virtual"><scope>common::GraphRepresentationList</scope><name>ContainsCycle</name></member>
+      <member refid="df/d9b/classcommon_1_1GraphRepresentationList_1a0900a0619e3423cfaf1ddcf9a7750b7a" prot="public" virt="virtual"><scope>common::GraphRepresentationList</scope><name>DFS</name></member>
+      <member refid="dc/d62/classcommon_1_1GraphRepresentation_1a44b6f9ec47a5da7661eba4d60f2435fd" prot="public" virt="non-virtual"><scope>common::GraphRepresentationList</scope><name>GetRepresentation</name></member>
+      <member refid="dc/d62/classcommon_1_1GraphRepresentation_1a19bbccd8200cf068acccca8521576418" prot="public" virt="non-virtual"><scope>common::GraphRepresentationList</scope><name>GraphRepresentation</name></member>
+      <member refid="dc/d62/classcommon_1_1GraphRepresentation_1a81674139506d51749f0c08604c270d52" prot="public" virt="non-virtual"><scope>common::GraphRepresentationList</scope><name>GraphRepresentation</name></member>
+      <member refid="dc/d62/classcommon_1_1GraphRepresentation_1a31a5d06ebb8224bc7fc33eba26d41805" prot="public" virt="non-virtual"><scope>common::GraphRepresentationList</scope><name>GraphRepresentation</name></member>
+      <member refid="df/d9b/classcommon_1_1GraphRepresentationList_1a4a68054d32d42e3a28d4da8fe15c0326" prot="public" virt="non-virtual"><scope>common::GraphRepresentationList</scope><name>GraphRepresentationList</name></member>
+      <member refid="dc/d62/classcommon_1_1GraphRepresentation_1a93bcf4b3b1c2eb89977912288ca0906f" prot="public" virt="non-virtual"><scope>common::GraphRepresentationList</scope><name>kGraphTypeDirected</name></member>
+      <member refid="dc/d62/classcommon_1_1GraphRepresentation_1a28b2c237c7829b997693bec263fc3013" prot="public" virt="non-virtual"><scope>common::GraphRepresentationList</scope><name>kGraphTypeUndirected</name></member>
+      <member refid="dc/d62/classcommon_1_1GraphRepresentation_1a9ff855e37b512172683c74065fd98e6e" prot="public" virt="non-virtual"><scope>common::GraphRepresentationList</scope><name>kRepresentationTypeList</name></member>
+      <member refid="dc/d62/classcommon_1_1GraphRepresentation_1aa53fcd0da0759d335112bbaaa332b1f3" prot="public" virt="non-virtual"><scope>common::GraphRepresentationList</scope><name>kRepresentationTypeMatrix</name></member>
+      <member refid="df/d9b/classcommon_1_1GraphRepresentationList_1a2dfec81233f4aa057c42b5a7cadc66bd" prot="public" virt="virtual"><scope>common::GraphRepresentationList</scope><name>PrintDebug</name></member>
+      <member refid="dc/d62/classcommon_1_1GraphRepresentation_1adef161f4e49d1234da78baf0c67f963d" prot="public" virt="non-virtual"><scope>common::GraphRepresentationList</scope><name>type</name></member>
+      <member refid="dc/d62/classcommon_1_1GraphRepresentation_1aed22c26c2bd7c5b90d7f178e5cc82954" prot="public" virt="non-virtual"><scope>common::GraphRepresentationList</scope><name>vertices</name></member>
+      <member refid="dc/d62/classcommon_1_1GraphRepresentation_1ac8016aa32180e2b1a17f8f8e1bf5a571" prot="public" virt="virtual"><scope>common::GraphRepresentationList</scope><name>~GraphRepresentation</name></member>
+      <member refid="df/d9b/classcommon_1_1GraphRepresentationList_1a8898f87cda1d6cdfb024f4dd81eba7f3" prot="public" virt="virtual"><scope>common::GraphRepresentationList</scope><name>~GraphRepresentationList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

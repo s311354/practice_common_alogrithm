@@ -1,0 +1,820 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+LinkedList< T > Class Template Reference\par \pard\plain 
+{\tc\tcl2 \v LinkedList< T >}
+{\xe \v LinkedList< T >}
+{\bkmkstart AAAAAAABDA}
+{\bkmkend AAAAAAABDA}
+\par
+{
+{\f2 #include <linked_list.h>}}\par
+Collaboration diagram for LinkedList< T >:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/dbd/classcommon_1_1LinkedList__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const T {\b Back} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b Empty} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Erase} (int index)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const T {\b Front} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Insert} (int index, T value)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b LinkedList} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b LinkedList} (const {\b LinkedList} &)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b LinkedList} & {\b operator=} (const {\b LinkedList} &)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const T {\b PopBack} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const T {\b PopFront} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b PrintDebug} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b PushBack} (T value)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b PushFront} (T value)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b RemoveValue} (T value)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Reverse} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b Size} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const T & {\b ValueAt} (int index) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const T {\b ValueNFromEnd} (int n)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~LinkedList} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ListElement}< T > * {\b head}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+template<class T>\par
+class common::LinkedList< T >\par
+}
+
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v LinkedList\:LinkedList< T >}
+{\xe \v LinkedList< T >\:LinkedList}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b LinkedList} (){\f2 [explicit]}}}
+\par
+{\bkmkstart AAAAAAABDB}
+{\bkmkend AAAAAAABDB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 17 : head({\cf17 nullptr}) \{\};\par
+}
+}
+{\xe \v LinkedList\:LinkedList< T >}
+{\xe \v LinkedList< T >\:LinkedList}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b LinkedList} (const {\b LinkedList}< T > & )}}
+\par
+{\bkmkstart AAAAAAABDC}
+{\bkmkend AAAAAAABDC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 19 \{\};\par
+}
+}
+{\xe \v ~LinkedList\:LinkedList< T >}
+{\xe \v LinkedList< T >\:~LinkedList}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+~{\b LinkedList} ()}}
+\par
+{\bkmkstart AAAAAAABDD}
+{\bkmkend AAAAAAABDD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 22                   \{\par
+23         ListElement<T>* current = head;\par
+24         ListElement<T>* next = {\cf17 nullptr};\par
+25 \par
+26         {\cf19 while} (current) \{\par
+27             next = current->GetNext();\par
+28             {\cf17 delete} current;\par
+29             current = next;\par
+30         \}\par
+31     \};\par
+}
+{
+\ql
+References ListElement< T >::GetNext(), and LinkedList< T >::head.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d7f/classcommon_1_1LinkedList_ab2cd0a10d50aeffd524b75b36fb2be05_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Back\:LinkedList< T >}
+{\xe \v LinkedList< T >\:Back}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const T Back}}
+\par
+{\bkmkstart AAAAAAABDE}
+{\bkmkend AAAAAAABDE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 46                             \{\par
+47     {\cf19 if}(head == {\cf17 nullptr}) \{\par
+48         std::cout << {\cf22 "List is empty"} << std::endl;\par
+49         exit(EXIT_FAILURE);\par
+50     \} \par
+51 \par
+52     {\cf17 auto}* current = head;\par
+53     {\cf19 while} (current->GetNext()) \{\par
+54         current = head->GetNext();\par
+55     \}\par
+56 \par
+57     {\cf19 return} current->GetData();\par
+58 \}\par
+}
+{
+\ql
+References std::endl().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d7f/classcommon_1_1LinkedList_a58eca8e9e3e4f5bfe50033256d17bdc7_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Empty\:LinkedList< T >}
+{\xe \v LinkedList< T >\:Empty}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Empty}}
+\par
+{\bkmkstart AAAAAAABDF}
+{\bkmkend AAAAAAABDF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 145                                 \{\par
+146    {\cf19 return} head == {\cf17 nullptr};\par
+147 \}\par
+}
+}
+{\xe \v Erase\:LinkedList< T >}
+{\xe \v LinkedList< T >\:Erase}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Erase (int  {\i index})}}
+\par
+{\bkmkstart AAAAAAABDG}
+{\bkmkend AAAAAAABDG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 213                                    \{\par
+214     {\cf19 if}(head == {\cf17 nullptr}) \{\par
+215         std::cout << {\cf22 "List is empty"} << std::endl;\par
+216         exit(EXIT_FAILURE);\par
+217     \}\par
+218 \par
+219     ListElement<T>* prev = {\cf17 nullptr};\par
+220     {\cf17 auto} * current = head;\par
+221 \par
+222     {\cf19 for} ({\cf18 int} i = 0; i < index && current != {\cf17 nullptr}; ++i) \{\par
+223         prev = current;\par
+224         current = current->GetNext();\par
+225     \}\par
+226 \par
+227     {\cf19 if}(current == {\cf17 nullptr}) \{\par
+228         std::cout << {\cf22 "Index out of bounds"} << std::endl;\par
+229         exit(EXIT_FAILURE);\par
+230     \}\par
+231 \par
+232 \par
+233     {\cf19 if} (prev == {\cf17 nullptr}) \{\par
+234         head = current->GetNext();\par
+235     \} {\cf19 else} \{\par
+236         prev->SetNext(current->GetNext());\par
+237         head = prev;\par
+238     \}\par
+239 \par
+240     {\cf17 delete} current;\par
+241 \}\par
+}
+{
+\ql
+References std::endl().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d7f/classcommon_1_1LinkedList_af1789852a6074c3c5ae8c6738d5f7160_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Front\:LinkedList< T >}
+{\xe \v LinkedList< T >\:Front}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const T Front}}
+\par
+{\bkmkstart AAAAAAABDH}
+{\bkmkend AAAAAAABDH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 33                              \{\par
+34     {\cf19 if}(head == {\cf17 nullptr}) \{\par
+35         std::cout << {\cf22 "List is empty"} << std::endl;\par
+36         exit(EXIT_FAILURE);\par
+37     \}\par
+38 \par
+39     {\cf19 return} head->GetData();\par
+40 \}\par
+}
+{
+\ql
+References std::endl().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d7f/classcommon_1_1LinkedList_a510df6a9340094440277fec608697fcd_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Insert\:LinkedList< T >}
+{\xe \v LinkedList< T >\:Insert}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Insert (int  {\i index}, T  {\i value})}}
+\par
+{\bkmkstart AAAAAAABDI}
+{\bkmkend AAAAAAABDI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 178                                              \{\par
+179     {\cf19 if}(head == {\cf17 nullptr}) \{\par
+180         std::cout << {\cf22 "List is empty"} << std::endl;\par
+181         exit(EXIT_FAILURE);\par
+182     \}\par
+183 \par
+184     {\cf17 auto} * current = head; {\cf20 // asterisk (*), the dereference operator: dereference the pointer prev to access the LinkedList object it refers to}\par
+185     ListElement<T> * prev = {\cf17 nullptr};\par
+186 \par
+187     {\cf18 int} i;\par
+188     {\cf19 for} (i = 0; i < index && current != {\cf17 nullptr}; ++i) \{\par
+189         prev = current;\par
+190         current = current->GetNext();\par
+191     \}\par
+192 \par
+193     {\cf19 if}(i != index) \{\par
+194         std::cout << {\cf22 "Index out of bounds"} << std::endl;\par
+195         exit(EXIT_FAILURE);\par
+196     \}\par
+197 \par
+198     {\cf17 auto} * node = {\cf17 new} ListElement<T>(value);\par
+199 \par
+200     {\cf19 if}(prev == {\cf17 nullptr}) \{\par
+201         node->SetNext(head);\par
+202         head = node;\par
+203     \} {\cf19 else} \{\par
+204         node->SetNext(prev->GetNext());\par
+205         prev->SetNext(node);\par
+206     \}\par
+207 \}\par
+}
+{
+\ql
+References std::endl().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d7f/classcommon_1_1LinkedList_a60af5df9c2152ed214bf6c2ae4b27bb3_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v operator=\:LinkedList< T >}
+{\xe \v LinkedList< T >\:operator=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b LinkedList}& operator= (const {\b LinkedList}< T > & )}}
+\par
+{\bkmkstart AAAAAAABDJ}
+{\bkmkend AAAAAAABDJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v PopBack\:LinkedList< T >}
+{\xe \v LinkedList< T >\:PopBack}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const T PopBack}}
+\par
+{\bkmkstart AAAAAAABDK}
+{\bkmkend AAAAAAABDK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 116                                \{\par
+117     {\cf19 if}(head == {\cf17 nullptr}) \{\par
+118         std::cout << {\cf22 "List is empty"} << std::endl;\par
+119         exit(EXIT_FAILURE);\par
+120     \}\par
+121 \par
+122     {\cf17 auto}* current = head;\par
+123     ListElement<T>* prev = {\cf17 nullptr};\par
+124 \par
+125     {\cf20 // Pop Back}\par
+126     {\cf19 while} (current->GetNext()) \{\par
+127         prev = current;\par
+128         current = current->GetNext();\par
+129     \}\par
+130 \par
+131     T value = current->GetData();\par
+132 \par
+133     {\cf19 if}(prev == {\cf17 nullptr}) \{\par
+134         head = {\cf17 nullptr};\par
+135     \} {\cf19 else} \{\par
+136         prev->SetNext({\cf17 nullptr});\par
+137     \}\par
+138 \par
+139     {\cf17 delete} current;\par
+140 \par
+141     {\cf19 return} value;\par
+142 \}\par
+}
+{
+\ql
+References std::endl().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d7f/classcommon_1_1LinkedList_a8f1814ae66e117738921f5d400d85ec3_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v PopFront\:LinkedList< T >}
+{\xe \v LinkedList< T >\:PopFront}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const T PopFront}}
+\par
+{\bkmkstart AAAAAAABDL}
+{\bkmkend AAAAAAABDL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 77                                 \{\par
+78     {\cf19 if}(head == {\cf17 nullptr}) \{\par
+79         std::cout << {\cf22 "List is empty"} << std::endl;\par
+80         exit(EXIT_FAILURE);\par
+81     \}\par
+82 \par
+83     ListElement<T> *node = head;\par
+84     T value = node->GetData();\par
+85     head = head->GetNext();\par
+86 \par
+87     {\cf17 delete} node;\par
+88     {\cf19 return} value;\par
+89 \}\par
+}
+{
+\ql
+References std::endl(), and ListElement< T >::GetData().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d7f/classcommon_1_1LinkedList_a3526dd92e36ccd73dea6abb0d671b388_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v PrintDebug\:LinkedList< T >}
+{\xe \v LinkedList< T >\:PrintDebug}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PrintDebug}}
+\par
+{\bkmkstart AAAAAAABDM}
+{\bkmkend AAAAAAABDM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 330                                      \{\par
+331     {\cf17 auto} * current = head;\par
+332 \par
+333     std::cout << {\cf22 " "} << std::endl;\par
+334     {\cf19 while} (current) \{\par
+335         std::cout << current->GetData() << {\cf22 " ---> "} ;\par
+336         current = current->GetNext();\par
+337     \}\par
+338     std::cout << {\cf22 " "} << std::endl;\par
+339 \}\par
+}
+{
+\ql
+References std::endl().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d7f/classcommon_1_1LinkedList_a96f5737c64edc912fe53681ccc9ea057_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v PushBack\:LinkedList< T >}
+{\xe \v LinkedList< T >\:PushBack}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PushBack (T  {\i value})}}
+\par
+{\bkmkstart AAAAAAABDN}
+{\bkmkend AAAAAAABDN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 95                                     \{\par
+96     {\cf17 auto}* node = {\cf17 new} ListElement<T>(value);\par
+97     node->SetNext({\cf17 nullptr});\par
+98 \par
+99     {\cf19 if} (head == {\cf17 nullptr}) \{\par
+100         head = node;\par
+101         {\cf19 return};\par
+102     \}\par
+103 \par
+104     ListElement<T> * current = head;\par
+105     {\cf19 while} (current->GetNext()) \{\par
+106         current = current->GetNext();\par
+107     \}\par
+108 \par
+109     current->SetNext(node);\par
+110 \}\par
+}
+{
+\ql
+References ListElement< T >::GetNext(), and ListElement< T >::SetNext().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d7f/classcommon_1_1LinkedList_a6b6681f762c6f6f8bc92ebd9c8d5dc66_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v PushFront\:LinkedList< T >}
+{\xe \v LinkedList< T >\:PushFront}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PushFront (T  {\i value})}}
+\par
+{\bkmkstart AAAAAAABDO}
+{\bkmkend AAAAAAABDO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 65                                      \{\par
+66     {\cf17 auto}* node = {\cf17 new} ListElement<T>(value); \par
+67 \par
+68     node->SetNext(head);\par
+69 \par
+70     head = node;\par
+71 \}\par
+}
+}
+{\xe \v RemoveValue\:LinkedList< T >}
+{\xe \v LinkedList< T >\:RemoveValue}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void RemoveValue (T  {\i value})}}
+\par
+{\bkmkstart AAAAAAABDP}
+{\bkmkend AAAAAAABDP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 246                                        \{\par
+247     {\cf19 if}(head == {\cf17 nullptr}) \{\par
+248         std::cout << {\cf22 "List is empty"} << std::endl;\par
+249         exit(EXIT_FAILURE);\par
+250     \}\par
+251 \par
+252     ListElement<T>* prev = {\cf17 nullptr};\par
+253     {\cf17 auto} * current = head;\par
+254 \par
+255     {\cf19 while} (current) \{\par
+256         {\cf19 if} (current->GetData() == value) \{\par
+257             {\cf19 if}(prev == {\cf17 nullptr}) \{\par
+258                 head = current->GetNext();\par
+259             \} {\cf19 else} \{\par
+260                 prev->SetNext(current->GetNext());\par
+261                 head = prev;\par
+262             \}\par
+263             {\cf17 delete} current;\par
+264             {\cf19 break};\par
+265         \}\par
+266 \par
+267         prev = current;\par
+268         current = current->GetNext();\par
+269     \}\par
+270 \}\par
+}
+{
+\ql
+References std::endl().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d7f/classcommon_1_1LinkedList_aa40f387b3fb06df3997974b66ed1d40c_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Reverse\:LinkedList< T >}
+{\xe \v LinkedList< T >\:Reverse}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Reverse}}
+\par
+{\bkmkstart AAAAAAABDQ}
+{\bkmkend AAAAAAABDQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 276                             \{\par
+277     {\cf19 if}(head == {\cf17 nullptr}) \{\par
+278         std::cout << {\cf22 "List is empty"} << std::endl;\par
+279         exit(EXIT_FAILURE);\par
+280     \}\par
+281     ListElement<T>* prev = {\cf17 nullptr};\par
+282     {\cf17 auto} * current = head;\par
+283     ListElement<T>* next = {\cf17 nullptr};\par
+284 \par
+285     {\cf19 while} (current != {\cf17 nullptr}) \{\par
+286         next = current->GetNext();\par
+287         current->SetNext(prev);\par
+288         prev = current;\par
+289         current = next;\par
+290     \}\par
+291 \par
+292     head = prev;\par
+293 \}\par
+}
+{
+\ql
+References std::endl().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d7f/classcommon_1_1LinkedList_ae1b551cc51c9d556342b27b466a7c7cb_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Size\:LinkedList< T >}
+{\xe \v LinkedList< T >\:Size}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Size}}
+\par
+{\bkmkstart AAAAAAABDR}
+{\bkmkend AAAAAAABDR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 15                         \{\par
+16 \par
+17     {\cf18 int} size = 0;\par
+18 \par
+19     {\cf17 auto}* current = head;\par
+20     {\cf19 while} (current) \{\par
+21         current = current->GetNext();\par
+22         size ++;\par
+23     \}\par
+24 \par
+25     {\cf19 return} size;\par
+26 \}\par
+}
+}
+{\xe \v ValueAt\:LinkedList< T >}
+{\xe \v LinkedList< T >\:ValueAt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const T & ValueAt (int  {\i index}) const}}
+\par
+{\bkmkstart AAAAAAABDS}
+{\bkmkend AAAAAAABDS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 154                                                \{\par
+155     {\cf19 if}(head == {\cf17 nullptr}) \{\par
+156         std::cout << {\cf22 "List is empty"} << std::endl;\par
+157         exit(EXIT_FAILURE);\par
+158     \}\par
+159 \par
+160     {\cf17 auto} * current = head;\par
+161 \par
+162     {\cf19 for} ({\cf18 int} i = 0; i < index && current != {\cf17 nullptr}; ++i) \{\par
+163         current = current->GetNext();\par
+164     \}\par
+165 \par
+166     {\cf19 if}(current == {\cf17 nullptr}) \{\par
+167         std::cout << {\cf22 "Index out of bounds"} << std::endl;\par
+168         exit(EXIT_FAILURE);\par
+169     \}\par
+170 \par
+171     {\cf19 return} current->GetData();\par
+172 \}\par
+}
+{
+\ql
+References std::endl().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d7f/classcommon_1_1LinkedList_a41778863ac9905141650a07d08146115_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v ValueNFromEnd\:LinkedList< T >}
+{\xe \v LinkedList< T >\:ValueNFromEnd}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const T ValueNFromEnd (int  {\i n})}}
+\par
+{\bkmkstart AAAAAAABDT}
+{\bkmkend AAAAAAABDT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 299                                           \{\par
+300     {\cf19 if}( n < 1 || head == {\cf17 nullptr}) \{\par
+301         std::cout << {\cf22 "List is empty"} << std::endl;\par
+302         exit(EXIT_FAILURE);\par
+303     \}\par
+304 \par
+305     {\cf17 auto} * current = head;\par
+306     {\cf17 auto} * match = head;\par
+307 \par
+308     {\cf18 int} i;\par
+309     {\cf19 for} (i = 0; i < n && current != nullptr ; ++i) \{\par
+310         current = current->GetNext();\par
+311     \}\par
+312 \par
+313     {\cf19 if}(i != n) \{\par
+314         std::cout << {\cf22 "Index out of bounds"} << std::endl;\par
+315         exit(EXIT_FAILURE);\par
+316     \}\par
+317 \par
+318     {\cf19 while} (current) \{\par
+319         match = match->GetNext();\par
+320         current = current->GetNext();\par
+321     \}\par
+322 \par
+323     {\cf19 return} match->GetData();\par
+324 \}\par
+}
+{
+\ql
+References std::endl().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d7f/classcommon_1_1LinkedList_a1e3c93770d25a042944efa1e83d449c1_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v head\:LinkedList< T >}
+{\xe \v LinkedList< T >\:head}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b ListElement}<T>* head{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABDU}
+{\bkmkend AAAAAAABDU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by LinkedList< T >::~LinkedList().}\par
+}
+}

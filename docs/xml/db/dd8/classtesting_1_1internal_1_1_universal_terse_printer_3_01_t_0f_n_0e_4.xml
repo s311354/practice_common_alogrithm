@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/dd8/classtesting_1_1internal_1_1_universal_terse_printer_3_01_t_0f_n_0e_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::UniversalTersePrinter&lt; T[N]&gt;</compoundname>
+    <includes refid="d0/d6d/gtest-printers_8h" local="no">gtest-printers.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>size_t</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="db/dd8/classtesting_1_1internal_1_1_universal_terse_printer_3_01_t_0f_n_0e_4_1a0499f289051c1cfc4df687d023b52dfd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Print</definition>
+        <argsstring>(const T(&amp;value)[N], ::std::ostream *os)</argsstring>
+        <name>Print</name>
+        <param>
+          <type>const T(&amp;)</type>
+          <declname>value</declname>
+          <array>[N]</array>
+        </param>
+        <param>
+          <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-printers.h" line="797" column="15" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="797" bodyend="799"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>UniversalTersePrinter&lt; T[N]&gt;</label>
+        <link refid="db/dd8/classtesting_1_1internal_1_1_universal_terse_printer_3_01_t_0f_n_0e_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/gtest-printers.h" line="795" column="1" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="795" bodyend="800"/>
+    <listofallmembers>
+      <member refid="db/dd8/classtesting_1_1internal_1_1_universal_terse_printer_3_01_t_0f_n_0e_4_1a0499f289051c1cfc4df687d023b52dfd" prot="public" virt="non-virtual"><scope>testing::internal::UniversalTersePrinter&lt; T[N]&gt;</scope><name>Print</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

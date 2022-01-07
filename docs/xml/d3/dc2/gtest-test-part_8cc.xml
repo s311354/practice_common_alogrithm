@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/dc2/gtest-test-part_8cc" kind="file" language="C++">
+    <compoundname>gtest-test-part.cc</compoundname>
+    <includes refid="d1/d01/gtest-test-part_8h" local="yes">gtest/gtest-test-part.h</includes>
+    <includes refid="d0/da1/gtest-internal-inl_8h" local="yes">src/gtest-internal-inl.h</includes>
+    <includedby refid="d1/d8c/gtest-all_8cc" local="yes">lib/googletest/src/gtest-all.cc</includedby>
+    <incdepgraph>
+      <node id="13">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="42">
+        <label>gtest/internal/gtest-param-util.h</label>
+        <link refid="dc/df2/gtest-param-util_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>gtest/gtest.h</label>
+        <link refid="d8/d73/gtest_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>typeinfo</label>
+        <link refid="cpp/header/typeinfo" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="35">
+        <label>src/gtest-internal-inl.h</label>
+        <link refid="d0/da1/gtest-internal-inl_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>assert.h</label>
+      </node>
+      <node id="26">
+        <label>float.h</label>
+      </node>
+      <node id="49">
+        <label>gtest/gtest_prod.h</label>
+        <link refid="d4/db1/gtest__prod_8h"/>
+      </node>
+      <node id="19">
+        <label>gtest/internal/gtest-port-arch.h</label>
+        <link refid="d6/d76/gtest-port-arch_8h"/>
+      </node>
+      <node id="38">
+        <label>ostream</label>
+        <link refid="cpp/header/ostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="33">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="dc/d79/gtest-filepath_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stdlib.h</label>
+      </node>
+      <node id="48">
+        <label>gtest/internal/gtest-param-util-generated.h</label>
+        <link refid="dc/db7/gtest-param-util-generated_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>errno.h</label>
+      </node>
+      <node id="27">
+        <label>iomanip</label>
+        <link refid="cpp/header/iomanip" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="30">
+        <label>set</label>
+        <link refid="cpp/header/set" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="32">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="d0/d45/gtest-string_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="d5/da1/gtest-internal_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>gtest/gtest-death-test.h</label>
+        <link refid="d4/d59/gtest-death-test_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>algorithm</label>
+        <link refid="cpp/header/algorithm" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="25">
+        <label>gtest/internal/gtest-tuple.h</label>
+        <link refid="d1/d63/gtest-tuple_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>iosfwd</label>
+        <link refid="cpp/header/iosfwd" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="34">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="d9/d97/gtest-type-util_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector</label>
+        <link refid="cpp/header/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="12">
+        <label>sys/types.h</label>
+      </node>
+      <node id="11">
+        <label>string.h</label>
+      </node>
+      <node id="6">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="d3/dc9/gtest-port_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>gtest/gtest-typed-test.h</label>
+        <link refid="de/dce/gtest-typed-test_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>gtest/internal/custom/gtest-printers.h</label>
+        <link refid="da/db0/internal_2custom_2gtest-printers_8h"/>
+      </node>
+      <node id="21">
+        <label>unistd.h</label>
+      </node>
+      <node id="1">
+        <label>lib/googletest/src/gtest-test-part.cc</label>
+        <link refid="d3/dc2/gtest-test-part_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>limits</label>
+        <link refid="cpp/header/limits" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="18">
+        <label>utility</label>
+        <link refid="cpp/header/utility" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="40">
+        <label>gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="d0/d1a/gtest-death-test-internal_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>string</label>
+        <link refid="cpp/header/string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="31">
+        <label>gtest/gtest-message.h</label>
+        <link refid="d6/da4/gtest-message_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>strings.h</label>
+      </node>
+      <node id="43">
+        <label>iterator</label>
+        <link refid="cpp/header/iterator" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="7">
+        <label>ctype.h</label>
+      </node>
+      <node id="52">
+        <label>gtest/gtest-spi.h</label>
+        <link refid="dc/dbe/gtest-spi_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="51">
+        <label>gtest/gtest_pred_impl.h</label>
+        <link refid="db/d6e/gtest__pred__impl_8h"/>
+      </node>
+      <node id="2">
+        <label>gtest/gtest-test-part.h</label>
+        <link refid="d1/d01/gtest-test-part_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>gtest/gtest-param-test.h</label>
+        <link refid="d0/d31/gtest-param-test_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>sstream</label>
+        <link refid="cpp/header/sstream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="44">
+        <label>gtest/internal/gtest-linked_ptr.h</label>
+        <link refid="d0/d03/gtest-linked__ptr_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>regex.h</label>
+      </node>
+      <node id="20">
+        <label>gtest/internal/custom/gtest-port.h</label>
+        <link refid="d5/d66/custom_2gtest-port_8h"/>
+      </node>
+      <node id="10">
+        <label>stdio.h</label>
+      </node>
+      <node id="46">
+        <label>gtest/gtest-printers.h</label>
+        <link refid="d0/d6d/gtest-printers_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>map</label>
+        <link refid="cpp/header/map" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>lib/googletest/src/gtest-all.cc</label>
+        <link refid="d1/d8c/gtest-all_8cc"/>
+      </node>
+      <node id="1">
+        <label>lib/googletest/src/gtest-test-part.cc</label>
+        <link refid="d3/dc2/gtest-test-part_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="d0/d75/namespacetesting">testing</innernamespace>
+    <innernamespace refid="d0/da7/namespacetesting_1_1internal">testing::internal</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d3/dc2/gtest-test-part_8cc_1a83bd232fd1077579fada92c31bb7469f" prot="public" static="no">
+        <name>GTEST_IMPLEMENTATION_</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-test-part.cc" line="41" column="9" bodyfile="lib/googletest/src/gtest-test-part.cc" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d0/d75/namespacetesting_1ae8b6df347210c0ebfe5ec995d03c7aed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const TestPartResult &amp;result)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type><ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const TestPartResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-test-part.cc" line="58" column="1" bodyfile="lib/googletest/src/gtest-test-part.cc" bodystart="58" bodyend="65" declfile="lib/googletest/include/gtest/gtest-test-part.h" declline="120" declcolumn="1"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1ad5e655e4f5a697870e836f380a16797c" compoundref="d1/d01/gtest-test-part_8h" startline="76" endline="78">TestPartResult::file_name</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7afff22986360310b0356db600c8c2187d" compoundref="d1/d01/gtest-test-part_8h" startline="54">TestPartResult::kFatalFailure</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7af0536797208144380691e2b376ffc1d1" compoundref="d1/d01/gtest-test-part_8h" startline="52">TestPartResult::kSuccess</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1a10a4f56de3322c42846ad149b1227d86" compoundref="d1/d01/gtest-test-part_8h" startline="82" endline="82">TestPartResult::line_number</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1aea6220e002a8039b97dc6fbd9ff79f46" compoundref="d1/d01/gtest-test-part_8h" startline="88" endline="88">TestPartResult::message</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1adf4a6727c689e0038cf2cdd158d5ed2c" compoundref="d1/d01/gtest-test-part_8h" startline="72" endline="72">TestPartResult::type</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2008,<sp/>Google<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Google<sp/>Inc.<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author:<sp/>mheule@google.com<sp/>(Markus<sp/>Heule)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>Google<sp/>C++<sp/>Testing<sp/>Framework<sp/>(Google<sp/>Test)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d01/gtest-test-part_8h" kindref="compound">gtest/gtest-test-part.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Indicates<sp/>that<sp/>this<sp/>translation<sp/>unit<sp/>is<sp/>part<sp/>of<sp/>Google<sp/>Test&apos;s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>implementation.<sp/><sp/>It<sp/>must<sp/>come<sp/>before<sp/>gtest-internal-inl.h<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>included,<sp/>or<sp/>there<sp/>will<sp/>be<sp/>a<sp/>compiler<sp/>error.<sp/><sp/>This<sp/>trick<sp/>exists<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>prevent<sp/>the<sp/>accidental<sp/>inclusion<sp/>of<sp/>gtest-internal-inl.h<sp/>in<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>user&apos;s<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="d3/dc2/gtest-test-part_8cc_1a83bd232fd1077579fada92c31bb7469f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_IMPLEMENTATION_<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/da1/gtest-internal-inl_8h" kindref="compound">src/gtest-internal-inl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>GTEST_IMPLEMENTATION_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d0/d75/namespacetesting" kindref="compound">testing</ref><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d0/da7/namespacetesting_1_1internal_1ad104a3ca418dd1726ea22240b5d77258" kindref="member">internal::GetUnitTestImpl</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Gets<sp/>the<sp/>summary<sp/>of<sp/>the<sp/>failure<sp/>message<sp/>by<sp/>omitting<sp/>the<sp/>stack<sp/>trace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>it.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="d0/d4b/classtesting_1_1_test_part_result_1a67f08a152a2a3c8d46aab05937e10ba4" refkind="member"><highlight class="normal"><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a67f08a152a2a3c8d46aab05937e10ba4" kindref="member">TestPartResult::ExtractSummary</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>message)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>stack_trace<sp/>=<sp/>strstr(<ref refid="d0/d4b/classtesting_1_1_test_part_result_1aea6220e002a8039b97dc6fbd9ff79f46" kindref="member">message</ref>,<sp/><ref refid="d0/da7/namespacetesting_1_1internal_1a728a6aad655cf4704dad1a048212c570" kindref="member">internal::kStackTraceMarker</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stack_trace<sp/>==<sp/>NULL<sp/>?<sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1aea6220e002a8039b97dc6fbd9ff79f46" kindref="member">message</ref><sp/>:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/da7/namespacetesting_1_1internal_1a3641bb11325903fefdc4d22ab0b92fd6" kindref="member">std::string</ref>(<ref refid="d0/d4b/classtesting_1_1_test_part_result_1aea6220e002a8039b97dc6fbd9ff79f46" kindref="member">message</ref>,<sp/>stack_trace);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Prints<sp/>a<sp/>TestPartResult<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="d0/d75/namespacetesting_1ae8b6df347210c0ebfe5ec995d03c7aed" refkind="member"><highlight class="normal"><ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref>&amp;<sp/><ref refid="d0/d75/namespacetesting_1ae8b6df347210c0ebfe5ec995d03c7aed" kindref="member">operator&lt;&lt;</ref>(<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref>&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref>&amp;<sp/>result)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>result.<ref refid="d0/d4b/classtesting_1_1_test_part_result_1ad5e655e4f5a697870e836f380a16797c" kindref="member">file_name</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>result.<ref refid="d0/d4b/classtesting_1_1_test_part_result_1a10a4f56de3322c42846ad149b1227d86" kindref="member">line_number</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>(result.<ref refid="d0/d4b/classtesting_1_1_test_part_result_1adf4a6727c689e0038cf2cdd158d5ed2c" kindref="member">type</ref>()<sp/>==<sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7af0536797208144380691e2b376ffc1d1" kindref="member">TestPartResult::kSuccess</ref><sp/>?<sp/></highlight><highlight class="stringliteral">&quot;Success&quot;</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d0/d4b/classtesting_1_1_test_part_result_1adf4a6727c689e0038cf2cdd158d5ed2c" kindref="member">type</ref>()<sp/>==<sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7afff22986360310b0356db600c8c2187d" kindref="member">TestPartResult::kFatalFailure</ref><sp/>?<sp/></highlight><highlight class="stringliteral">&quot;Fatal<sp/>failure&quot;</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Non-fatal<sp/>failure&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>result.<ref refid="d0/d4b/classtesting_1_1_test_part_result_1aea6220e002a8039b97dc6fbd9ff79f46" kindref="member">message</ref>()<sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Appends<sp/>a<sp/>TestPartResult<sp/>to<sp/>the<sp/>array.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="d4/d5d/classtesting_1_1_test_part_result_array_1a3a9ecce0ea05e8ce5e1d3dbb2b8e1f97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array_1a3a9ecce0ea05e8ce5e1d3dbb2b8e1f97" kindref="member">TestPartResultArray::Append</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref>&amp;<sp/>result)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array_1abd16b2eaae5591d28abe9c42b8a197ad" kindref="member">array_</ref>.push_back(result);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Returns<sp/>the<sp/>TestPartResult<sp/>at<sp/>the<sp/>given<sp/>index<sp/>(0-based).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="d4/d5d/classtesting_1_1_test_part_result_array_1ab619c316b3350fd64fee6f9aa4c6506f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref>&amp;<sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array_1ab619c316b3350fd64fee6f9aa4c6506f" kindref="member">TestPartResultArray::GetTestPartResult</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index<sp/>&lt;<sp/>0<sp/>||<sp/>index<sp/>&gt;=<sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array_1af9593d4a5ff4274efaf429cb4f9e57cc" kindref="member">size</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\nInvalid<sp/>index<sp/>(%d)<sp/>into<sp/>TestPartResultArray.\n&quot;</highlight><highlight class="normal">,<sp/>index);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>internal::posix::Abort();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array_1abd16b2eaae5591d28abe9c42b8a197ad" kindref="member">array_</ref>[index];</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Returns<sp/>the<sp/>number<sp/>of<sp/>TestPartResult<sp/>objects<sp/>in<sp/>the<sp/>array.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="d4/d5d/classtesting_1_1_test_part_result_array_1af9593d4a5ff4274efaf429cb4f9e57cc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array_1af9593d4a5ff4274efaf429cb4f9e57cc" kindref="member">TestPartResultArray::size</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="d4/d5d/classtesting_1_1_test_part_result_array_1abd16b2eaae5591d28abe9c42b8a197ad" kindref="member">array_</ref>.size());</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">internal<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1a261bc4cd55c6bd4e33a90effb7c3b56c" refkind="member"><highlight class="normal"><ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1a261bc4cd55c6bd4e33a90effb7c3b56c" kindref="member">HasNewFatalFailureHelper::HasNewFatalFailureHelper</ref>()</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>has_new_fatal_failure_(false),</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>original_reporter_(<ref refid="d0/da7/namespacetesting_1_1internal_1ad104a3ca418dd1726ea22240b5d77258" kindref="member">GetUnitTestImpl</ref>()-&gt;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetTestPartResultReporterForCurrentThread())<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><ref refid="d0/da7/namespacetesting_1_1internal_1ad104a3ca418dd1726ea22240b5d77258" kindref="member">GetUnitTestImpl</ref>()-&gt;<ref refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1ab71b8e31b6a6f77a3c80e76f1a17336c" kindref="member">SetTestPartResultReporterForCurrentThread</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1ad686cd16900a0b971427c790c1375ef7" refkind="member"><highlight class="normal"><ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1ad686cd16900a0b971427c790c1375ef7" kindref="member">HasNewFatalFailureHelper::~HasNewFatalFailureHelper</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><ref refid="d0/da7/namespacetesting_1_1internal_1ad104a3ca418dd1726ea22240b5d77258" kindref="member">GetUnitTestImpl</ref>()-&gt;<ref refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1ab71b8e31b6a6f77a3c80e76f1a17336c" kindref="member">SetTestPartResultReporterForCurrentThread</ref>(</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1ab9c4c39baebd88a283300d67bf8f9ffa" kindref="member">original_reporter_</ref>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1acd54d55b39f168c91b6370be62cef448" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1acd54d55b39f168c91b6370be62cef448" kindref="member">HasNewFatalFailureHelper::ReportTestPartResult</ref>(</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref>&amp;<sp/>result)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(result.<ref refid="d0/d4b/classtesting_1_1_test_part_result_1ab380b978032e5896435ef73d1a4bef6d" kindref="member">fatally_failed</ref>())</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1ac016dfb0d4a098e75505d926cf6cae69" kindref="member">has_new_fatal_failure_</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1ab9c4c39baebd88a283300d67bf8f9ffa" kindref="member">original_reporter_</ref>-&gt;<ref refid="da/d6e/classtesting_1_1_test_part_result_reporter_interface_1a49d731c71005e51d8531193f29efb71f" kindref="member">ReportTestPartResult</ref>(result);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>internal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>testing</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/googletest/src/gtest-test-part.cc"/>
+  </compounddef>
+</doxygen>

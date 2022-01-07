@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/d33/classSocket" kind="class" language="C++" prot="public">
+    <compoundname>Socket</compoundname>
+    <basecompoundref refid="d7/d2d/classEuropeanSocketInterface" prot="public" virt="non-virtual">EuropeanSocketInterface</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d33/classSocket_1ad2d9094718f214baff2ebe20a166ca73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="d0/d88/design__pattern_2adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref></type>
+        <definition>Cable earth</definition>
+        <argsstring>()</argsstring>
+        <name>earth</name>
+        <reimplements refid="d7/d2d/classEuropeanSocketInterface_1adeb35ccc7867abcb5cd4f455270ea170">earth</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/adapter_pattern/main.cc" line="40" column="15" bodyfile="design_pattern/adapter_pattern/main.cc" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d33/classSocket_1a770ecc123680489cfb3c780d86bf46d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="d0/d88/design__pattern_2adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref></type>
+        <definition>Cable live</definition>
+        <argsstring>()</argsstring>
+        <name>live</name>
+        <reimplements refid="d7/d2d/classEuropeanSocketInterface_1ae74c8358dcb4ad77107501d3d36365ad">live</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/adapter_pattern/main.cc" line="38" column="15" bodyfile="design_pattern/adapter_pattern/main.cc" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d33/classSocket_1a2a0e12fe4604e1996850a4d56e0fd299" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="d0/d88/design__pattern_2adapter__pattern_2main_8cc_1aaaae0ed7582110f33c9633f1141f216f" kindref="member">Cable</ref></type>
+        <definition>Cable neutral</definition>
+        <argsstring>()</argsstring>
+        <name>neutral</name>
+        <reimplements refid="d7/d2d/classEuropeanSocketInterface_1af93b4cbb72535556fff6bce8e06b0f51">neutral</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/adapter_pattern/main.cc" line="39" column="15" bodyfile="design_pattern/adapter_pattern/main.cc" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d33/classSocket_1acbe88748e5218a5969d2602c3a3f7112" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int voltage</definition>
+        <argsstring>()</argsstring>
+        <name>voltage</name>
+        <reimplements refid="d7/d2d/classEuropeanSocketInterface_1aa201666785af2136d52b4affb45867ee">voltage</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/adapter_pattern/main.cc" line="36" column="13" bodyfile="design_pattern/adapter_pattern/main.cc" bodystart="36" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>EuropeanSocketInterface</label>
+        <link refid="d7/d2d/classEuropeanSocketInterface"/>
+      </node>
+      <node id="1">
+        <label>Socket</label>
+        <link refid="d4/d33/classSocket"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>EuropeanSocketInterface</label>
+        <link refid="d7/d2d/classEuropeanSocketInterface"/>
+      </node>
+      <node id="1">
+        <label>Socket</label>
+        <link refid="d4/d33/classSocket"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="design_pattern/adapter_pattern/main.cc" line="33" column="1" bodyfile="design_pattern/adapter_pattern/main.cc" bodystart="34" bodyend="41"/>
+    <listofallmembers>
+      <member refid="d4/d33/classSocket_1ad2d9094718f214baff2ebe20a166ca73" prot="public" virt="virtual"><scope>Socket</scope><name>earth</name></member>
+      <member refid="d4/d33/classSocket_1a770ecc123680489cfb3c780d86bf46d9" prot="public" virt="virtual"><scope>Socket</scope><name>live</name></member>
+      <member refid="d4/d33/classSocket_1a2a0e12fe4604e1996850a4d56e0fd299" prot="public" virt="virtual"><scope>Socket</scope><name>neutral</name></member>
+      <member refid="d4/d33/classSocket_1acbe88748e5218a5969d2602c3a3f7112" prot="public" virt="virtual"><scope>Socket</scope><name>voltage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

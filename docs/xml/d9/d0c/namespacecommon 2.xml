@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d0c/namespacecommon" kind="namespace" language="C++">
+    <compoundname>common</compoundname>
+    <innerclass refid="d3/d2e/classcommon_1_1BinarySearch" prot="public">common::BinarySearch</innerclass>
+    <innerclass refid="d2/dbd/structcommon_1_1BSTNode" prot="public">common::BSTNode</innerclass>
+    <innerclass refid="dc/d7f/classcommon_1_1LinkedList" prot="public">common::LinkedList</innerclass>
+    <innerclass refid="d2/dc6/classcommon_1_1ListElement" prot="public">common::ListElement</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphs/src/graph.cc" line="3" column="1"/>
+  </compounddef>
+</doxygen>

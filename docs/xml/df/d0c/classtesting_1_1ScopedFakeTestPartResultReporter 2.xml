@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" kind="class" language="C++" prot="public">
+    <compoundname>testing::ScopedFakeTestPartResultReporter</compoundname>
+    <basecompoundref refid="df/d70/classtesting_1_1TestPartResultReporterInterface" prot="public" virt="non-virtual">testing::TestPartResultReporterInterface</basecompoundref>
+    <includes refid="dc/dbe/gtest-spi_8h" local="no">gtest-spi.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>InterceptMode</name>
+        <enumvalue id="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5aed6c5f87d33207768db503526e6a1e8a" prot="public">
+          <name>INTERCEPT_ONLY_CURRENT_THREAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5a187f4164aad7fbb9414b263c68a693cd" prot="public">
+          <name>INTERCEPT_ALL_THREADS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-spi.h" line="55" column="3" bodyfile="lib/googletest/include/gtest/gtest-spi.h" bodystart="55" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1ae62ed825619c11ac21fdd06480e0d982" prot="private" static="no" mutable="no">
+        <type>const <ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5" kindref="member">InterceptMode</ref></type>
+        <definition>const InterceptMode testing::ScopedFakeTestPartResultReporter::intercept_mode_</definition>
+        <argsstring></argsstring>
+        <name>intercept_mode_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-spi.h" line="82" column="23" bodyfile="lib/googletest/include/gtest/gtest-spi.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a28d280a3f5d172d63b94f70b8e7660d7" compoundref="df/d5b/gtest_8cc" startline="580" endline="589">Init</referencedby>
+        <referencedby refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a4817d59ca70228ebd5d5c3c4e8dd729d" compoundref="df/d5b/gtest_8cc" startline="593" endline="600">~ScopedFakeTestPartResultReporter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a4183b091842a83dd8ce4927746c43092" prot="private" static="no" mutable="no">
+        <type><ref refid="df/d70/classtesting_1_1TestPartResultReporterInterface" kindref="compound">TestPartResultReporterInterface</ref> *</type>
+        <definition>TestPartResultReporterInterface* testing::ScopedFakeTestPartResultReporter::old_reporter_</definition>
+        <argsstring></argsstring>
+        <name>old_reporter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-spi.h" line="83" column="35" bodyfile="lib/googletest/include/gtest/gtest-spi.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a28d280a3f5d172d63b94f70b8e7660d7" compoundref="df/d5b/gtest_8cc" startline="580" endline="589">Init</referencedby>
+        <referencedby refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a4817d59ca70228ebd5d5c3c4e8dd729d" compoundref="df/d5b/gtest_8cc" startline="593" endline="600">~ScopedFakeTestPartResultReporter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a729a26c94e4082ee0dc3312395a3f480" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/dce/classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref> *const</type>
+        <definition>TestPartResultArray* const testing::ScopedFakeTestPartResultReporter::result_</definition>
+        <argsstring></argsstring>
+        <name>result_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-spi.h" line="84" column="29" bodyfile="lib/googletest/include/gtest/gtest-spi.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82531434f51632d98ed7cdcdb10b8b92" compoundref="df/d5b/gtest_8cc" startline="604" endline="607">ReportTestPartResult</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82531434f51632d98ed7cdcdb10b8b92" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void testing::ScopedFakeTestPartResultReporter::ReportTestPartResult</definition>
+        <argsstring>(const TestPartResult &amp;result)</argsstring>
+        <name>ReportTestPartResult</name>
+        <reimplements refid="df/d70/classtesting_1_1TestPartResultReporterInterface_1aa2f920e7a5a0a6d0faf19e3727928c22">ReportTestPartResult</reimplements>
+        <param>
+          <type>const <ref refid="d9/d98/classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-spi.h" line="78" column="16" bodyfile="lib/googletest/src/gtest.cc" bodystart="604" bodyend="607"/>
+        <references refid="dc/dce/classtesting_1_1TestPartResultArray_1a01844bd505b18a666324617a1b459558" compoundref="d3/dc2/gtest-test-part_8cc" startline="68" endline="70">testing::TestPartResultArray::Append</references>
+        <references refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a729a26c94e4082ee0dc3312395a3f480" compoundref="dc/dbe/gtest-spi_8h" startline="84">result_</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a57cbc09ed48627c8a73e622618dc4b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::ScopedFakeTestPartResultReporter::ScopedFakeTestPartResultReporter</definition>
+        <argsstring>(InterceptMode intercept_mode, TestPartResultArray *result)</argsstring>
+        <name>ScopedFakeTestPartResultReporter</name>
+        <param>
+          <type><ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5" kindref="member">InterceptMode</ref></type>
+          <declname>intercept_mode</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/dce/classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-spi.h" line="67" column="3" bodyfile="lib/googletest/src/gtest.cc" bodystart="573" bodyend="578"/>
+        <references refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a28d280a3f5d172d63b94f70b8e7660d7" compoundref="df/d5b/gtest_8cc" startline="580" endline="589">Init</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1aa0100ecf4799fb51d45167be6a5de1d5" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::ScopedFakeTestPartResultReporter::ScopedFakeTestPartResultReporter</definition>
+        <argsstring>(TestPartResultArray *result)</argsstring>
+        <name>ScopedFakeTestPartResultReporter</name>
+        <param>
+          <type><ref refid="dc/dce/classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-spi.h" line="64" column="12" bodyfile="lib/googletest/src/gtest.cc" bodystart="563" bodyend="568"/>
+        <references refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a28d280a3f5d172d63b94f70b8e7660d7" compoundref="df/d5b/gtest_8cc" startline="580" endline="589">Init</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a4817d59ca70228ebd5d5c3c4e8dd729d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>testing::ScopedFakeTestPartResultReporter::~ScopedFakeTestPartResultReporter</definition>
+        <argsstring>()</argsstring>
+        <name>~ScopedFakeTestPartResultReporter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-spi.h" line="71" column="11" bodyfile="lib/googletest/src/gtest.cc" bodystart="593" bodyend="600"/>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a18ef697b64e28a78625c7a53cf28344c" compoundref="d0/da1/gtest-internal-inl_8h" startline="927" endline="929">testing::internal::GetUnitTestImpl</references>
+        <references refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5a187f4164aad7fbb9414b263c68a693cd" compoundref="dc/dbe/gtest-spi_8h" startline="57">INTERCEPT_ALL_THREADS</references>
+        <references refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1ae62ed825619c11ac21fdd06480e0d982" compoundref="dc/dbe/gtest-spi_8h" startline="82">intercept_mode_</references>
+        <references refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a4183b091842a83dd8ce4927746c43092" compoundref="dc/dbe/gtest-spi_8h" startline="83">old_reporter_</references>
+        <references refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a892b0e25b28af5e4400cf6fac336f2d8" compoundref="df/d5b/gtest_8cc" startline="711" endline="715">testing::internal::UnitTestImpl::SetGlobalTestPartResultReporter</references>
+        <references refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a1403fc10aebcc64479c5ee980c9b4eb4" compoundref="df/d5b/gtest_8cc" startline="724" endline="727">testing::internal::UnitTestImpl::SetTestPartResultReporterForCurrentThread</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1ad7d21ddf4a50ff918571e8a08e73fd59" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::ScopedFakeTestPartResultReporter::GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(ScopedFakeTestPartResultReporter)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" kindref="compound">ScopedFakeTestPartResultReporter</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-spi.h" line="86" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a28d280a3f5d172d63b94f70b8e7660d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::ScopedFakeTestPartResultReporter::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-spi.h" line="80" column="8" bodyfile="lib/googletest/src/gtest.cc" bodystart="580" bodyend="589"/>
+        <references refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a1cd291fd6751654924362164735d4b49" compoundref="df/d5b/gtest_8cc" startline="705" endline="708">testing::internal::UnitTestImpl::GetGlobalTestPartResultReporter</references>
+        <references refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a5fb3dd8bc839e10b62eba07790704132" compoundref="df/d5b/gtest_8cc" startline="719" endline="721">testing::internal::UnitTestImpl::GetTestPartResultReporterForCurrentThread</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a18ef697b64e28a78625c7a53cf28344c" compoundref="d0/da1/gtest-internal-inl_8h" startline="927" endline="929">testing::internal::GetUnitTestImpl</references>
+        <references refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5a187f4164aad7fbb9414b263c68a693cd" compoundref="dc/dbe/gtest-spi_8h" startline="57">INTERCEPT_ALL_THREADS</references>
+        <references refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1ae62ed825619c11ac21fdd06480e0d982" compoundref="dc/dbe/gtest-spi_8h" startline="82">intercept_mode_</references>
+        <references refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a4183b091842a83dd8ce4927746c43092" compoundref="dc/dbe/gtest-spi_8h" startline="83">old_reporter_</references>
+        <references refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a892b0e25b28af5e4400cf6fac336f2d8" compoundref="df/d5b/gtest_8cc" startline="711" endline="715">testing::internal::UnitTestImpl::SetGlobalTestPartResultReporter</references>
+        <references refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a1403fc10aebcc64479c5ee980c9b4eb4" compoundref="df/d5b/gtest_8cc" startline="724" endline="727">testing::internal::UnitTestImpl::SetTestPartResultReporterForCurrentThread</references>
+        <referencedby refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1aa0100ecf4799fb51d45167be6a5de1d5" compoundref="df/d5b/gtest_8cc" startline="563" endline="568">ScopedFakeTestPartResultReporter</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>testing::TestPartResultReporterInterface</label>
+        <link refid="df/d70/classtesting_1_1TestPartResultReporterInterface"/>
+      </node>
+      <node id="1">
+        <label>testing::ScopedFakeTestPartResultReporter</label>
+        <link refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>T</label>
+      </node>
+      <node id="9">
+        <label>std::vector&lt; T &gt;</label>
+        <link refid="cpp/container/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>testing::TestPartResultReporterInterface</label>
+        <link refid="df/d70/classtesting_1_1TestPartResultReporterInterface"/>
+      </node>
+      <node id="1">
+        <label>testing::ScopedFakeTestPartResultReporter</label>
+        <link refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-old_reporter_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-result_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>std::basic_string&lt; Char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="7">
+        <label>std::basic_string&lt; char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="8" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>testing::TestPartResult</label>
+        <link refid="d9/d98/classtesting_1_1TestPartResult"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>-file_name_</edgelabel>
+          <edgelabel>-message_</edgelabel>
+          <edgelabel>-summary_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::vector&lt; testing::TestPartResult &gt;</label>
+        <link refid="cpp/container/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="template-instance">
+          <edgelabel>&lt; testing::TestPartResult &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>testing::TestPartResultArray</label>
+        <link refid="dc/dce/classtesting_1_1TestPartResultArray"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-array_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::string</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/gtest-spi.h" line="51" column="1" bodyfile="lib/googletest/include/gtest/gtest-spi.h" bodystart="52" bodyend="87"/>
+    <listofallmembers>
+      <member refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1ad7d21ddf4a50ff918571e8a08e73fd59" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a28d280a3f5d172d63b94f70b8e7660d7" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>Init</name></member>
+      <member refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5a187f4164aad7fbb9414b263c68a693cd" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>INTERCEPT_ALL_THREADS</name></member>
+      <member refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1ae62ed825619c11ac21fdd06480e0d982" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>intercept_mode_</name></member>
+      <member refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5aed6c5f87d33207768db503526e6a1e8a" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>INTERCEPT_ONLY_CURRENT_THREAD</name></member>
+      <member refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>InterceptMode</name></member>
+      <member refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a4183b091842a83dd8ce4927746c43092" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>old_reporter_</name></member>
+      <member refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82531434f51632d98ed7cdcdb10b8b92" prot="public" virt="virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>ReportTestPartResult</name></member>
+      <member refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a729a26c94e4082ee0dc3312395a3f480" prot="private" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>result_</name></member>
+      <member refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1aa0100ecf4799fb51d45167be6a5de1d5" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>ScopedFakeTestPartResultReporter</name></member>
+      <member refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a57cbc09ed48627c8a73e622618dc4b4f" prot="public" virt="non-virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>ScopedFakeTestPartResultReporter</name></member>
+      <member refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a4817d59ca70228ebd5d5c3c4e8dd729d" prot="public" virt="virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>~ScopedFakeTestPartResultReporter</name></member>
+      <member refid="df/d70/classtesting_1_1TestPartResultReporterInterface_1a338b51591ed654f84dc0feaaf2b66917" prot="public" virt="virtual"><scope>testing::ScopedFakeTestPartResultReporter</scope><name>~TestPartResultReporterInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

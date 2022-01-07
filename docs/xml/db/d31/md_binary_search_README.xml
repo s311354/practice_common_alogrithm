@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d31/md_binary_search_README" kind="page">
+    <compoundname>md_binary_search_README</compoundname>
+    <title>The concept of struct and class declarations</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>For C program, a struct is a type consisting of a sequence of members whose storage is allocated in an ordered sequence. (as opposed to union, which is a type consisting of a sequence of members whose storage overlaps) Within a struct object, addresses of its elements increase in order in which the members were defined.</para>
+<para>For C++ program, classes and structs are user-defined types, defined by class-specifier.</para>
+<sect1 id="db/d31/md_binary_search_README_1autotoc_md1">
+<title>Reference</title>
+<para>[1] <ulink url="https://en.cppreference.com/w/c/language/struct">cppreference: Struct declaration</ulink></para>
+<para>[2] <ulink url="https://en.cppreference.com/w/cpp/language/class">cppreference: Class declaration</ulink></para>
+<para>[3] <ulink url="https://en.cppreference.com/w/c/language/union">cppreference: Union declaration</ulink> </para>
+</sect1>
+    </detaileddescription>
+    <location file="binary_search/README.md"/>
+  </compounddef>
+</doxygen>

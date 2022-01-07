@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d0c/namespacecommon" kind="namespace" language="C++">
+    <compoundname>common</compoundname>
+    <innerclass refid="dc/df2/classcommon_1_1_binary_search" prot="public">common::BinarySearch</innerclass>
+    <innerclass refid="d5/d36/structcommon_1_1_b_s_t_node" prot="public">common::BSTNode</innerclass>
+    <innerclass refid="de/d16/classcommon_1_1_graph" prot="public">common::Graph</innerclass>
+    <innerclass refid="d8/dec/classcommon_1_1_graph_directed" prot="public">common::GraphDirected</innerclass>
+    <innerclass refid="d4/df5/classcommon_1_1_graph_representation" prot="public">common::GraphRepresentation</innerclass>
+    <innerclass refid="db/df9/classcommon_1_1_graph_representation_list" prot="public">common::GraphRepresentationList</innerclass>
+    <innerclass refid="db/de7/classcommon_1_1_hash_object" prot="public">common::HashObject</innerclass>
+    <innerclass refid="d1/d2d/classcommon_1_1_hash_table" prot="public">common::HashTable</innerclass>
+    <innerclass refid="d7/d8e/classcommon_1_1_linked_list" prot="public">common::LinkedList</innerclass>
+    <innerclass refid="dd/d71/classcommon_1_1_list_element" prot="public">common::ListElement</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="binary_search/binary_search.cc" line="3" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/d9c/hash__table__tests_8cc" kind="file" language="C++">
+    <compoundname>hash_table_tests.cc</compoundname>
+    <includes refid="d4/d6e/hash__table__tests_8h" local="yes">./hash_table_tests.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>./hash_table.h</label>
+        <link refid="d4/ddb/hash__table_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>./hash_table_tests.h</label>
+        <link refid="d4/d6e/hash__table__tests_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>string</label>
+        <link refid="cpp/header/string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="5">
+        <label>./hash_object.h</label>
+        <link refid="dc/d62/hash__object_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>hash_table/hash_table_tests.cc</label>
+        <link refid="d4/d9c/hash__table__tests_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d4/d9c/hash__table__tests_8cc_1adf5fa5d1a8867dba73315c105f40b449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void run_all_tests</definition>
+        <argsstring>()</argsstring>
+        <name>run_all_tests</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_table_tests.cc" line="3" column="6" bodyfile="hash_table/hash_table_tests.cc" bodystart="3" bodyend="8"/>
+        <references refid="d4/d9c/hash__table__tests_8cc_1ae207a73fbaebdeb47d9a21e2c9bad021" compoundref="d4/d9c/hash__table__tests_8cc" startline="10" endline="20">test_add_exists</references>
+        <references refid="d4/d9c/hash__table__tests_8cc_1a52c40e38fb822ad8803972493055abaf" compoundref="d4/d9c/hash__table__tests_8cc" startline="60" endline="70">test_get</references>
+        <references refid="d4/d9c/hash__table__tests_8cc_1a30e225ab10fafd5b2befe84cb59ed57e" compoundref="d4/d9c/hash__table__tests_8cc" startline="22" endline="58">test_probing</references>
+        <references refid="d4/d9c/hash__table__tests_8cc_1a1da79732717337e8731f76c7a155c24a" compoundref="d4/d9c/hash__table__tests_8cc" startline="72" endline="88">test_remove</references>
+        <referencedby refid="df/d46/hash__table_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="df/d46/hash__table_2main_8cc" startline="28" endline="34">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d9c/hash__table__tests_8cc_1ae207a73fbaebdeb47d9a21e2c9bad021" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_add_exists</definition>
+        <argsstring>()</argsstring>
+        <name>test_add_exists</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_table_tests.cc" line="10" column="6" bodyfile="hash_table/hash_table_tests.cc" bodystart="10" bodyend="20"/>
+        <references refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">common::HashTable::Add</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" compoundref="dd/d3b/hash__table_8cc" startline="84" endline="103">common::HashTable::Exists</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" compoundref="dc/d62/hash__object_8h" startline="22" endline="22">common::HashObject::SetKey</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" compoundref="dc/d62/hash__object_8h" startline="23" endline="23">common::HashObject::SetValue</references>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1adf5fa5d1a8867dba73315c105f40b449" compoundref="d4/d9c/hash__table__tests_8cc" startline="3" endline="8">run_all_tests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d9c/hash__table__tests_8cc_1a52c40e38fb822ad8803972493055abaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_get</definition>
+        <argsstring>()</argsstring>
+        <name>test_get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_table_tests.cc" line="60" column="6" bodyfile="hash_table/hash_table_tests.cc" bodystart="60" bodyend="70"/>
+        <references refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">common::HashTable::Add</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1a3e93186097466627afabd3cf87918aea" compoundref="dd/d3b/hash__table_8cc" startline="111" endline="128">common::HashTable::Get</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" compoundref="dc/d62/hash__object_8h" startline="22" endline="22">common::HashObject::SetKey</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" compoundref="dc/d62/hash__object_8h" startline="23" endline="23">common::HashObject::SetValue</references>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1adf5fa5d1a8867dba73315c105f40b449" compoundref="d4/d9c/hash__table__tests_8cc" startline="3" endline="8">run_all_tests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d9c/hash__table__tests_8cc_1a30e225ab10fafd5b2befe84cb59ed57e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_probing</definition>
+        <argsstring>()</argsstring>
+        <name>test_probing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_table_tests.cc" line="22" column="6" bodyfile="hash_table/hash_table_tests.cc" bodystart="22" bodyend="58"/>
+        <references refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">common::HashTable::Add</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" compoundref="dd/d3b/hash__table_8cc" startline="84" endline="103">common::HashTable::Exists</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1af31fdd02d0dfcbf2b18018775c953454" compoundref="dd/d3b/hash__table_8cc" startline="155" endline="161">common::HashTable::PringDebug</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" compoundref="dc/d62/hash__object_8h" startline="22" endline="22">common::HashObject::SetKey</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" compoundref="dc/d62/hash__object_8h" startline="23" endline="23">common::HashObject::SetValue</references>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1adf5fa5d1a8867dba73315c105f40b449" compoundref="d4/d9c/hash__table__tests_8cc" startline="3" endline="8">run_all_tests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d9c/hash__table__tests_8cc_1a1da79732717337e8731f76c7a155c24a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_remove</definition>
+        <argsstring>()</argsstring>
+        <name>test_remove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_table_tests.cc" line="72" column="6" bodyfile="hash_table/hash_table_tests.cc" bodystart="72" bodyend="88"/>
+        <references refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">common::HashTable::Add</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" compoundref="dd/d3b/hash__table_8cc" startline="84" endline="103">common::HashTable::Exists</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1af31fdd02d0dfcbf2b18018775c953454" compoundref="dd/d3b/hash__table_8cc" startline="155" endline="161">common::HashTable::PringDebug</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1ac9a6adc252dfb1634d790999c401c473" compoundref="dd/d3b/hash__table_8cc" startline="136" endline="153">common::HashTable::Remove</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" compoundref="dc/d62/hash__object_8h" startline="22" endline="22">common::HashObject::SetKey</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" compoundref="dc/d62/hash__object_8h" startline="23" endline="23">common::HashObject::SetValue</references>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1adf5fa5d1a8867dba73315c105f40b449" compoundref="d4/d9c/hash__table__tests_8cc" startline="3" endline="8">run_all_tests</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d6e/hash__table__tests_8h" kindref="compound">./hash_table_tests.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="d4/d9c/hash__table__tests_8cc_1adf5fa5d1a8867dba73315c105f40b449" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d9c/hash__table__tests_8cc_1adf5fa5d1a8867dba73315c105f40b449" kindref="member">run_all_tests</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d9c/hash__table__tests_8cc_1ae207a73fbaebdeb47d9a21e2c9bad021" kindref="member">test_add_exists</ref>();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d9c/hash__table__tests_8cc_1a30e225ab10fafd5b2befe84cb59ed57e" kindref="member">test_probing</ref>();</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d9c/hash__table__tests_8cc_1a52c40e38fb822ad8803972493055abaf" kindref="member">test_get</ref>();</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d9c/hash__table__tests_8cc_1a1da79732717337e8731f76c7a155c24a" kindref="member">test_remove</ref>();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="d4/d9c/hash__table__tests_8cc_1ae207a73fbaebdeb47d9a21e2c9bad021" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d9c/hash__table__tests_8cc_1ae207a73fbaebdeb47d9a21e2c9bad021" kindref="member">test_add_exists</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d4c/classcommon_1_1HashTable" kindref="compound">common::HashTable</ref><sp/>states(100);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dd5/classcommon_1_1HashObject" kindref="compound">common::HashObject</ref><sp/>tx;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>tx.<ref refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" kindref="member">SetKey</ref>(</highlight><highlight class="stringliteral">&quot;Texas&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>tx.<ref refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" kindref="member">SetValue</ref>(</highlight><highlight class="stringliteral">&quot;Austin&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>states.<ref refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" kindref="member">Add</ref>(&amp;tx);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(states.<ref refid="de/d4c/classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" kindref="member">Exists</ref>(</highlight><highlight class="stringliteral">&quot;Texas&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="d4/d9c/hash__table__tests_8cc_1a30e225ab10fafd5b2befe84cb59ed57e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d9c/hash__table__tests_8cc_1a30e225ab10fafd5b2befe84cb59ed57e" kindref="member">test_probing</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d4c/classcommon_1_1HashTable" kindref="compound">common::HashTable</ref><sp/>states(8);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dd5/classcommon_1_1HashObject" kindref="compound">common::HashObject</ref><sp/>tx;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>tx.<ref refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" kindref="member">SetKey</ref>(</highlight><highlight class="stringliteral">&quot;Texas&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>tx.<ref refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" kindref="member">SetValue</ref>(</highlight><highlight class="stringliteral">&quot;Austin&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dd5/classcommon_1_1HashObject" kindref="compound">common::HashObject</ref><sp/>ca;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>ca.<ref refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" kindref="member">SetKey</ref>(</highlight><highlight class="stringliteral">&quot;California&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>ca.<ref refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" kindref="member">SetValue</ref>(</highlight><highlight class="stringliteral">&quot;Sacramento&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dd5/classcommon_1_1HashObject" kindref="compound">common::HashObject</ref><sp/>nm;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>nm.<ref refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" kindref="member">SetKey</ref>(</highlight><highlight class="stringliteral">&quot;New<sp/>Mexico&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>nm.<ref refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" kindref="member">SetValue</ref>(</highlight><highlight class="stringliteral">&quot;Santa<sp/>Fe&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dd5/classcommon_1_1HashObject" kindref="compound">common::HashObject</ref><sp/>fl;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>fl.<ref refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" kindref="member">SetKey</ref>(</highlight><highlight class="stringliteral">&quot;Florida&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>fl.<ref refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" kindref="member">SetValue</ref>(</highlight><highlight class="stringliteral">&quot;Tallahassee&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dd5/classcommon_1_1HashObject" kindref="compound">common::HashObject</ref><sp/>oregon;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>oregon.<ref refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" kindref="member">SetKey</ref>(</highlight><highlight class="stringliteral">&quot;Oregon&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>oregon.<ref refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" kindref="member">SetValue</ref>(</highlight><highlight class="stringliteral">&quot;Salem&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>states.<ref refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" kindref="member">Add</ref>(&amp;tx);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>states.<ref refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" kindref="member">Add</ref>(&amp;ca);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>states.<ref refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" kindref="member">Add</ref>(&amp;nm);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>states.<ref refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" kindref="member">Add</ref>(&amp;fl);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>states.<ref refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" kindref="member">Add</ref>(&amp;oregon);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>states.<ref refid="de/d4c/classcommon_1_1HashTable_1af31fdd02d0dfcbf2b18018775c953454" kindref="member">PringDebug</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(states.<ref refid="de/d4c/classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" kindref="member">Exists</ref>(</highlight><highlight class="stringliteral">&quot;California&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(states.<ref refid="de/d4c/classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" kindref="member">Exists</ref>(</highlight><highlight class="stringliteral">&quot;New<sp/>Mexico&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(states.<ref refid="de/d4c/classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" kindref="member">Exists</ref>(</highlight><highlight class="stringliteral">&quot;Florida&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(states.<ref refid="de/d4c/classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" kindref="member">Exists</ref>(</highlight><highlight class="stringliteral">&quot;Oregon&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d4/d9c/hash__table__tests_8cc_1a52c40e38fb822ad8803972493055abaf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d9c/hash__table__tests_8cc_1a52c40e38fb822ad8803972493055abaf" kindref="member">test_get</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d4c/classcommon_1_1HashTable" kindref="compound">common::HashTable</ref><sp/>states(100);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dd5/classcommon_1_1HashObject" kindref="compound">common::HashObject</ref><sp/>tx;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>tx.<ref refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" kindref="member">SetKey</ref>(</highlight><highlight class="stringliteral">&quot;Texas&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>tx.<ref refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" kindref="member">SetValue</ref>(</highlight><highlight class="stringliteral">&quot;Austin&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>states.<ref refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" kindref="member">Add</ref>(&amp;tx);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(states.<ref refid="de/d4c/classcommon_1_1HashTable_1a3e93186097466627afabd3cf87918aea" kindref="member">Get</ref>(</highlight><highlight class="stringliteral">&quot;Texas&quot;</highlight><highlight class="normal">)<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Austin&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="d4/d9c/hash__table__tests_8cc_1a1da79732717337e8731f76c7a155c24a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d9c/hash__table__tests_8cc_1a1da79732717337e8731f76c7a155c24a" kindref="member">test_remove</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d4c/classcommon_1_1HashTable" kindref="compound">common::HashTable</ref><sp/>states(3);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dd5/classcommon_1_1HashObject" kindref="compound">common::HashObject</ref><sp/>tx;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>tx.<ref refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" kindref="member">SetKey</ref>(</highlight><highlight class="stringliteral">&quot;Texas&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>tx.<ref refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" kindref="member">SetValue</ref>(</highlight><highlight class="stringliteral">&quot;Austin&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>states.<ref refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" kindref="member">Add</ref>(&amp;tx);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(states.<ref refid="de/d4c/classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" kindref="member">Exists</ref>(</highlight><highlight class="stringliteral">&quot;Texas&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>states.<ref refid="de/d4c/classcommon_1_1HashTable_1ac9a6adc252dfb1634d790999c401c473" kindref="member">Remove</ref>(</highlight><highlight class="stringliteral">&quot;Texas&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(!states.<ref refid="de/d4c/classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" kindref="member">Exists</ref>(</highlight><highlight class="stringliteral">&quot;Texas&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>states.<ref refid="de/d4c/classcommon_1_1HashTable_1af31fdd02d0dfcbf2b18018775c953454" kindref="member">PringDebug</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="hash_table/hash_table_tests.cc"/>
+  </compounddef>
+</doxygen>

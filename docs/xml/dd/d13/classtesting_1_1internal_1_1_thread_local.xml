@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/d13/classtesting_1_1internal_1_1_thread_local" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::ThreadLocal</compoundname>
+    <includes refid="d3/dc9/gtest-port_8h" local="no">gtest-port.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/d13/classtesting_1_1internal_1_1_thread_local_1ae496c0f6edafccdab7ef2e2b9d0c7e03" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2171" column="5" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2171" bodyend="-1"/>
+        <referencedby refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1a1bfb20d09743b0dad247746b528b5650" compoundref="d3/dc9/gtest-port_8h" startline="2168" endline="2168">ThreadLocal&lt; T &gt;::get</referencedby>
+        <referencedby refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1af8cafc8f330a0ca9e7097b5b4bf60423" compoundref="d3/dc9/gtest-port_8h" startline="2166" endline="2166">ThreadLocal&lt; T &gt;::pointer</referencedby>
+        <referencedby refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1a0f806efa754adc9f722b43aabba42dd4" compoundref="d3/dc9/gtest-port_8h" startline="2169" endline="2169">ThreadLocal&lt; T &gt;::set</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d13/classtesting_1_1internal_1_1_thread_local_1a1bfb20d09743b0dad247746b528b5650" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2168" column="11" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2168" bodyend="2168"/>
+        <references refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1ae496c0f6edafccdab7ef2e2b9d0c7e03" compoundref="d3/dc9/gtest-port_8h" startline="2171">ThreadLocal&lt; T &gt;::value_</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d13/classtesting_1_1internal_1_1_thread_local_1af8cafc8f330a0ca9e7097b5b4bf60423" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* pointer</definition>
+        <argsstring>()</argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2166" column="5" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2166" bodyend="2166"/>
+        <references refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1ae496c0f6edafccdab7ef2e2b9d0c7e03" compoundref="d3/dc9/gtest-port_8h" startline="2171">ThreadLocal&lt; T &gt;::value_</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d13/classtesting_1_1internal_1_1_thread_local_1a353c7f1d4911580b34cb07f4a15ff25d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T* pointer</definition>
+        <argsstring>() const</argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2167" column="11" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2167" bodyend="2167"/>
+        <references refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1ae496c0f6edafccdab7ef2e2b9d0c7e03" compoundref="d3/dc9/gtest-port_8h" startline="2171">ThreadLocal&lt; T &gt;::value_</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d13/classtesting_1_1internal_1_1_thread_local_1a0f806efa754adc9f722b43aabba42dd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void set</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2169" column="8" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2169" bodyend="2169"/>
+        <references refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1ae496c0f6edafccdab7ef2e2b9d0c7e03" compoundref="d3/dc9/gtest-port_8h" startline="2171">ThreadLocal&lt; T &gt;::value_</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d13/classtesting_1_1internal_1_1_thread_local_1a29759b045add7cf2215a0bd2ab2c70db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ThreadLocal</definition>
+        <argsstring>()</argsstring>
+        <name>ThreadLocal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2164" column="3" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2164" bodyend="2164"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d13/classtesting_1_1internal_1_1_thread_local_1ad9f003ffe909d9c44360041524ac3001" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ThreadLocal</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>ThreadLocal</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2165" column="12" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2165" bodyend="2165"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ThreadLocal&lt; T &gt;</label>
+        <link refid="dd/d13/classtesting_1_1internal_1_1_thread_local"/>
+      </node>
+      <node id="2">
+        <label>ThreadLocal&lt; std::vector&lt; testing::internal::TraceInfo &gt; &gt;</label>
+        <link refid="dd/d13/classtesting_1_1internal_1_1_thread_local"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; std::vector&lt; testing::internal::TraceInfo &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ThreadLocal&lt; testing::TestPartResultReporterInterface * &gt;</label>
+        <link refid="dd/d13/classtesting_1_1internal_1_1_thread_local"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; testing::TestPartResultReporterInterface * &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>T</label>
+      </node>
+      <node id="1">
+        <label>ThreadLocal&lt; T &gt;</label>
+        <link refid="dd/d13/classtesting_1_1internal_1_1_thread_local"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-value_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2162" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2162" bodyend="2172"/>
+    <listofallmembers>
+      <member refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1a1bfb20d09743b0dad247746b528b5650" prot="public" virt="non-virtual"><scope>testing::internal::ThreadLocal</scope><name>get</name></member>
+      <member refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1af8cafc8f330a0ca9e7097b5b4bf60423" prot="public" virt="non-virtual"><scope>testing::internal::ThreadLocal</scope><name>pointer</name></member>
+      <member refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1a353c7f1d4911580b34cb07f4a15ff25d" prot="public" virt="non-virtual"><scope>testing::internal::ThreadLocal</scope><name>pointer</name></member>
+      <member refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1a0f806efa754adc9f722b43aabba42dd4" prot="public" virt="non-virtual"><scope>testing::internal::ThreadLocal</scope><name>set</name></member>
+      <member refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1a29759b045add7cf2215a0bd2ab2c70db" prot="public" virt="non-virtual"><scope>testing::internal::ThreadLocal</scope><name>ThreadLocal</name></member>
+      <member refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1ad9f003ffe909d9c44360041524ac3001" prot="public" virt="non-virtual"><scope>testing::internal::ThreadLocal</scope><name>ThreadLocal</name></member>
+      <member refid="dd/d13/classtesting_1_1internal_1_1_thread_local_1ae496c0f6edafccdab7ef2e2b9d0c7e03" prot="private" virt="non-virtual"><scope>testing::internal::ThreadLocal</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

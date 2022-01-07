@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/d01/gtest-test-part_8h" kind="file" language="C++">
+    <compoundname>gtest-test-part.h</compoundname>
+    <includes local="no">iosfwd</includes>
+    <includes local="no">vector</includes>
+    <includes refid="d5/da1/gtest-internal_8h" local="yes">gtest/internal/gtest-internal.h</includes>
+    <includes refid="d0/d45/gtest-string_8h" local="yes">gtest/internal/gtest-string.h</includes>
+    <includedby refid="d3/dc2/gtest-test-part_8cc" local="yes">lib/googletest/src/gtest-test-part.cc</includedby>
+    <includedby refid="d8/d73/gtest_8h" local="yes">lib/googletest/include/gtest/gtest.h</includedby>
+    <incdepgraph>
+      <node id="12">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="23">
+        <label>typeinfo</label>
+        <link refid="cpp/header/typeinfo" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="25">
+        <label>float.h</label>
+      </node>
+      <node id="18">
+        <label>gtest/internal/gtest-port-arch.h</label>
+        <link refid="d6/d76/gtest-port-arch_8h"/>
+      </node>
+      <node id="32">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="dc/d79/gtest-filepath_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="26">
+        <label>iomanip</label>
+        <link refid="cpp/header/iomanip" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="29">
+        <label>set</label>
+        <link refid="cpp/header/set" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="31">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="d0/d45/gtest-string_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="d5/da1/gtest-internal_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+        <link refid="cpp/header/algorithm" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="24">
+        <label>gtest/internal/gtest-tuple.h</label>
+        <link refid="d1/d63/gtest-tuple_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>iosfwd</label>
+        <link refid="cpp/header/iosfwd" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="33">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="d9/d97/gtest-type-util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vector</label>
+        <link refid="cpp/header/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="11">
+        <label>sys/types.h</label>
+      </node>
+      <node id="10">
+        <label>string.h</label>
+      </node>
+      <node id="5">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="d3/dc9/gtest-port_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>unistd.h</label>
+      </node>
+      <node id="27">
+        <label>limits</label>
+        <link refid="cpp/header/limits" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="17">
+        <label>utility</label>
+        <link refid="cpp/header/utility" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="16">
+        <label>string</label>
+        <link refid="cpp/header/string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="30">
+        <label>gtest/gtest-message.h</label>
+        <link refid="d6/da4/gtest-message_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>strings.h</label>
+      </node>
+      <node id="6">
+        <label>ctype.h</label>
+      </node>
+      <node id="14">
+        <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="1">
+        <label>lib/googletest/include/gtest/gtest-test-part.h</label>
+        <link refid="d1/d01/gtest-test-part_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>sstream</label>
+        <link refid="cpp/header/sstream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="22">
+        <label>regex.h</label>
+      </node>
+      <node id="19">
+        <label>gtest/internal/custom/gtest-port.h</label>
+        <link refid="d5/d66/custom_2gtest-port_8h"/>
+      </node>
+      <node id="9">
+        <label>stdio.h</label>
+      </node>
+      <node id="28">
+        <label>map</label>
+        <link refid="cpp/header/map" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>lib/googletest/include/gtest/gtest.h</label>
+        <link refid="d8/d73/gtest_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lib/googletest/src/gtest-internal-inl.h</label>
+        <link refid="d0/da1/gtest-internal-inl_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lib/googletest/src/gtest-all.cc</label>
+        <link refid="d1/d8c/gtest-all_8cc"/>
+      </node>
+      <node id="6">
+        <label>lib/googletest/src/gtest-death-test.cc</label>
+        <link refid="de/d50/gtest-death-test_8cc"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lib/googletest/src/gtest_main.cc</label>
+        <link refid="d3/d3a/gtest__main_8cc"/>
+      </node>
+      <node id="8">
+        <label>lib/googletest/src/gtest.cc</label>
+        <link refid="df/d5b/gtest_8cc"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lib/googletest/src/gtest-typed-test.cc</label>
+        <link refid="d9/d5a/gtest-typed-test_8cc"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lib/googletest/src/gtest-test-part.cc</label>
+        <link refid="d3/dc2/gtest-test-part_8cc"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lib/googletest/src/gtest-port.cc</label>
+        <link refid="df/d09/gtest-port_8cc"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lib/googletest/include/gtest/gtest-spi.h</label>
+        <link refid="dc/dbe/gtest-spi_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/googletest/include/gtest/gtest-test-part.h</label>
+        <link refid="d1/d01/gtest-test-part_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper" prot="public">testing::internal::HasNewFatalFailureHelper</innerclass>
+    <innerclass refid="d0/d4b/classtesting_1_1_test_part_result" prot="public">testing::TestPartResult</innerclass>
+    <innerclass refid="d4/d5d/classtesting_1_1_test_part_result_array" prot="public">testing::TestPartResultArray</innerclass>
+    <innerclass refid="da/d6e/classtesting_1_1_test_part_result_reporter_interface" prot="public">testing::TestPartResultReporterInterface</innerclass>
+    <innernamespace refid="d0/d75/namespacetesting">testing</innernamespace>
+    <innernamespace refid="d0/da7/namespacetesting_1_1internal">testing::internal</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d0/d75/namespacetesting_1ae8b6df347210c0ebfe5ec995d03c7aed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const TestPartResult &amp;result)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type><ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const TestPartResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-test-part.cc" line="58" column="1" bodyfile="lib/googletest/src/gtest-test-part.cc" bodystart="58" bodyend="65" declfile="lib/googletest/include/gtest/gtest-test-part.h" declline="120" declcolumn="1"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1ad5e655e4f5a697870e836f380a16797c" compoundref="d1/d01/gtest-test-part_8h" startline="76" endline="78">TestPartResult::file_name</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7afff22986360310b0356db600c8c2187d" compoundref="d1/d01/gtest-test-part_8h" startline="54">TestPartResult::kFatalFailure</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7af0536797208144380691e2b376ffc1d1" compoundref="d1/d01/gtest-test-part_8h" startline="52">TestPartResult::kSuccess</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1a10a4f56de3322c42846ad149b1227d86" compoundref="d1/d01/gtest-test-part_8h" startline="82" endline="82">TestPartResult::line_number</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1aea6220e002a8039b97dc6fbd9ff79f46" compoundref="d1/d01/gtest-test-part_8h" startline="88" endline="88">TestPartResult::message</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1adf4a6727c689e0038cf2cdd158d5ed2c" compoundref="d1/d01/gtest-test-part_8h" startline="72" endline="72">TestPartResult::type</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2008,<sp/>Google<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Google<sp/>Inc.<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author:<sp/>mheule@google.com<sp/>(Markus<sp/>Heule)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/iosfwd" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">iosfwd</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">vector</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/da1/gtest-internal_8h" kindref="compound">gtest/internal/gtest-internal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/d45/gtest-string_8h" kindref="compound">gtest/internal/gtest-string.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d0/d75/namespacetesting" kindref="compound">testing</ref><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>copyable<sp/>object<sp/>representing<sp/>the<sp/>result<sp/>of<sp/>a<sp/>test<sp/>part<sp/>(i.e.<sp/>an</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>assertion<sp/>or<sp/>an<sp/>explicit<sp/>FAIL(),<sp/>ADD_FAILURE(),<sp/>or<sp/>SUCCESS()).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Don&apos;t<sp/>inherit<sp/>from<sp/>TestPartResult<sp/>as<sp/>its<sp/>destructor<sp/>is<sp/>not<sp/>virtual.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="d0/d4b/classtesting_1_1_test_part_result" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>possible<sp/>outcomes<sp/>of<sp/>a<sp/>test<sp/>part<sp/>(i.e.<sp/>an<sp/>assertion<sp/>or<sp/>an</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>explicit<sp/>SUCCEED(),<sp/>FAIL(),<sp/>or<sp/>ADD_FAILURE()).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">Type</ref><sp/>{</highlight></codeline>
+<codeline lineno="52" refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7af0536797208144380691e2b376ffc1d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7af0536797208144380691e2b376ffc1d1" kindref="member">kSuccess</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Succeeded.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7ae354b0d94856044d54b2066ebb74635c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7ae354b0d94856044d54b2066ebb74635c" kindref="member">kNonFatalFailure</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>Failed<sp/>but<sp/>the<sp/>test<sp/>can<sp/>continue.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>kFatalFailure<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Failed<sp/>and<sp/>the<sp/>test<sp/>should<sp/>be<sp/>terminated.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7afff22986360310b0356db600c8c2187d" refkind="member"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>C&apos;tor.<sp/><sp/>TestPartResult<sp/>does<sp/>NOT<sp/>have<sp/>a<sp/>default<sp/>constructor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Always<sp/>use<sp/>this<sp/>constructor<sp/>(with<sp/>parameters)<sp/>to<sp/>create<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>TestPartResult<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d0/d4b/classtesting_1_1_test_part_result_1a563703671116c924ec57ba3e3e68a413" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a563703671116c924ec57ba3e3e68a413" kindref="member">TestPartResult</ref>(<ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">Type</ref><sp/>a_type,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>a_file_name,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a_line_number,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>a_message)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>type_(a_type),</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file_name_(a_file_name<sp/>==<sp/>NULL<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>:<sp/>a_file_name),</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>line_number_(a_line_number),</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>summary_(ExtractSummary(a_message)),</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message_(a_message)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Gets<sp/>the<sp/>outcome<sp/>of<sp/>the<sp/>test<sp/>part.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="d0/d4b/classtesting_1_1_test_part_result_1adf4a6727c689e0038cf2cdd158d5ed2c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">Type</ref><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1adf4a6727c689e0038cf2cdd158d5ed2c" kindref="member">type</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>type_;<sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Gets<sp/>the<sp/>name<sp/>of<sp/>the<sp/>source<sp/>file<sp/>where<sp/>the<sp/>test<sp/>part<sp/>took<sp/>place,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NULL<sp/>if<sp/>it&apos;s<sp/>unknown.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="d0/d4b/classtesting_1_1_test_part_result_1ad5e655e4f5a697870e836f380a16797c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1ad5e655e4f5a697870e836f380a16797c" kindref="member">file_name</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>file_name_.empty()<sp/>?<sp/>NULL<sp/>:<sp/>file_name_.c_str();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Gets<sp/>the<sp/>line<sp/>in<sp/>the<sp/>source<sp/>file<sp/>where<sp/>the<sp/>test<sp/>part<sp/>took<sp/>place,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>or<sp/>-1<sp/>if<sp/>it&apos;s<sp/>unknown.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="d0/d4b/classtesting_1_1_test_part_result_1a10a4f56de3322c42846ad149b1227d86" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a10a4f56de3322c42846ad149b1227d86" kindref="member">line_number</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>line_number_;<sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Gets<sp/>the<sp/>summary<sp/>of<sp/>the<sp/>failure<sp/>message.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="d0/d4b/classtesting_1_1_test_part_result_1a4e009fb3d1ece6cd065fa5aa070df80d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a4e009fb3d1ece6cd065fa5aa070df80d" kindref="member">summary</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>summary_.c_str();<sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Gets<sp/>the<sp/>message<sp/>associated<sp/>with<sp/>the<sp/>test<sp/>part.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="d0/d4b/classtesting_1_1_test_part_result_1aea6220e002a8039b97dc6fbd9ff79f46" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1aea6220e002a8039b97dc6fbd9ff79f46" kindref="member">message</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>message_.c_str();<sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>true<sp/>iff<sp/>the<sp/>test<sp/>part<sp/>passed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="d0/d4b/classtesting_1_1_test_part_result_1aa2a85b02933ddc39a5121f7d9ecbb4df" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1aa2a85b02933ddc39a5121f7d9ecbb4df" kindref="member">passed</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>type_<sp/>==<sp/>kSuccess;<sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>true<sp/>iff<sp/>the<sp/>test<sp/>part<sp/>failed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="d0/d4b/classtesting_1_1_test_part_result_1a03c20ddaa381f1926a24672f545b70eb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a03c20ddaa381f1926a24672f545b70eb" kindref="member">failed</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>type_<sp/>!=<sp/>kSuccess;<sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>true<sp/>iff<sp/>the<sp/>test<sp/>part<sp/>non-fatally<sp/>failed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="d0/d4b/classtesting_1_1_test_part_result_1a8c3112659a6430e10b97546d18d6b5c5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a8c3112659a6430e10b97546d18d6b5c5" kindref="member">nonfatally_failed</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>type_<sp/>==<sp/>kNonFatalFailure;<sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>true<sp/>iff<sp/>the<sp/>test<sp/>part<sp/>fatally<sp/>failed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="d0/d4b/classtesting_1_1_test_part_result_1ab380b978032e5896435ef73d1a4bef6d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1ab380b978032e5896435ef73d1a4bef6d" kindref="member">fatally_failed</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>type_<sp/>==<sp/>kFatalFailure;<sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103" refid="d0/d4b/classtesting_1_1_test_part_result_1ae96b07c06ceff094f476fd92cbe89e10" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">Type</ref><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1ae96b07c06ceff094f476fd92cbe89e10" kindref="member">type_</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Gets<sp/>the<sp/>summary<sp/>of<sp/>the<sp/>failure<sp/>message<sp/>by<sp/>omitting<sp/>the<sp/>stack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>trace<sp/>in<sp/>it.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>ExtractSummary(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>message);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>name<sp/>of<sp/>the<sp/>source<sp/>file<sp/>where<sp/>the<sp/>test<sp/>part<sp/>took<sp/>place,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;&quot;<sp/>if<sp/>the<sp/>source<sp/>file<sp/>is<sp/>unknown.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="d0/d4b/classtesting_1_1_test_part_result_1a4a221eb47bee012aa2d1edbee3765e3c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a4a221eb47bee012aa2d1edbee3765e3c" kindref="member">file_name_</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>line<sp/>in<sp/>the<sp/>source<sp/>file<sp/>where<sp/>the<sp/>test<sp/>part<sp/>took<sp/>place,<sp/>or<sp/>-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>the<sp/>line<sp/>number<sp/>is<sp/>unknown.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="d0/d4b/classtesting_1_1_test_part_result_1ac2abc3804f68a1a280e475701fe4eeb1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1ac2abc3804f68a1a280e475701fe4eeb1" kindref="member">line_number_</ref>;</highlight></codeline>
+<codeline lineno="115" refid="d0/d4b/classtesting_1_1_test_part_result_1ad9d0ec9aad31f7227dbf9066df0c6d23" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1ad9d0ec9aad31f7227dbf9066df0c6d23" kindref="member">summary_</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>test<sp/>failure<sp/>summary.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="d0/d4b/classtesting_1_1_test_part_result_1a4136f421e413f118b2b0da52e128ba5b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a4136f421e413f118b2b0da52e128ba5b" kindref="member">message_</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>test<sp/>failure<sp/>message.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Prints<sp/>a<sp/>TestPartResult<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref>&amp;<sp/><ref refid="d0/d75/namespacetesting_1ae8b6df347210c0ebfe5ec995d03c7aed" kindref="member">operator&lt;&lt;</ref>(<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref>&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref>&amp;<sp/>result);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//<sp/>An<sp/>array<sp/>of<sp/>TestPartResult<sp/>objects.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Don&apos;t<sp/>inherit<sp/>from<sp/>TestPartResultArray<sp/>as<sp/>its<sp/>destructor<sp/>is<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//<sp/>virtual.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="d4/d5d/classtesting_1_1_test_part_result_array" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array" kindref="compound">TestPartResultArray</ref><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="128" refid="d4/d5d/classtesting_1_1_test_part_result_array_1aa250e77c4c72ec045d18b1fcd9af65db" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array_1aa250e77c4c72ec045d18b1fcd9af65db" kindref="member">TestPartResultArray</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Appends<sp/>the<sp/>given<sp/>TestPartResult<sp/>to<sp/>the<sp/>array.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Append(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref>&amp;<sp/>result);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>the<sp/>TestPartResult<sp/>at<sp/>the<sp/>given<sp/>index<sp/>(0-based).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref>&amp;<sp/>GetTestPartResult(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>the<sp/>number<sp/>of<sp/>TestPartResult<sp/>objects<sp/>in<sp/>the<sp/>array.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="140" refid="d4/d5d/classtesting_1_1_test_part_result_array_1abd16b2eaae5591d28abe9c42b8a197ad" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;TestPartResult&gt;</ref><sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array_1abd16b2eaae5591d28abe9c42b8a197ad" kindref="member">array_</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="d4/d5d/classtesting_1_1_test_part_result_array_1afa8b17bf6cfd16bb6a46b5f4a7b05585" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array_1afa8b17bf6cfd16bb6a46b5f4a7b05585" kindref="member">GTEST_DISALLOW_COPY_AND_ASSIGN_</ref>(<ref refid="d4/d5d/classtesting_1_1_test_part_result_array" kindref="compound">TestPartResultArray</ref>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>interface<sp/>knows<sp/>how<sp/>to<sp/>report<sp/>a<sp/>test<sp/>part<sp/>result.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="da/d6e/classtesting_1_1_test_part_result_reporter_interface" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="da/d6e/classtesting_1_1_test_part_result_reporter_interface" kindref="compound">TestPartResultReporterInterface</ref><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="148" refid="da/d6e/classtesting_1_1_test_part_result_reporter_interface_1aaed7a5d1c354f720bb9606382a7cbb53" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="da/d6e/classtesting_1_1_test_part_result_reporter_interface_1aaed7a5d1c354f720bb9606382a7cbb53" kindref="member">~TestPartResultReporterInterface</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="da/d6e/classtesting_1_1_test_part_result_reporter_interface_1a49d731c71005e51d8531193f29efb71f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d6e/classtesting_1_1_test_part_result_reporter_interface_1a49d731c71005e51d8531193f29efb71f" kindref="member">ReportTestPartResult</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref>&amp;<sp/>result)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">internal<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>helper<sp/>class<sp/>is<sp/>used<sp/>by<sp/>{ASSERT|EXPECT}_NO_FATAL_FAILURE<sp/>to<sp/>check<sp/>if<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//<sp/>statement<sp/>generates<sp/>new<sp/>fatal<sp/>failures.<sp/>To<sp/>do<sp/>so<sp/>it<sp/>registers<sp/>itself<sp/>as<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//<sp/>current<sp/>test<sp/>part<sp/>result<sp/>reporter.<sp/>Besides<sp/>checking<sp/>if<sp/>fatal<sp/>failures<sp/>were</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">//<sp/>reported,<sp/>it<sp/>only<sp/>delegates<sp/>the<sp/>reporting<sp/>to<sp/>the<sp/>former<sp/>result<sp/>reporter.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>original<sp/>result<sp/>reporter<sp/>is<sp/>restored<sp/>in<sp/>the<sp/>destructor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//<sp/>INTERNAL<sp/>IMPLEMENTATION<sp/>-<sp/>DO<sp/>NOT<sp/>USE<sp/>IN<sp/>A<sp/>USER<sp/>PROGRAM.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper" kindref="compound">HasNewFatalFailureHelper</ref></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="da/d6e/classtesting_1_1_test_part_result_reporter_interface" kindref="compound">TestPartResultReporterInterface</ref><sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper" kindref="compound">HasNewFatalFailureHelper</ref>();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper" kindref="compound">HasNewFatalFailureHelper</ref>();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ReportTestPartResult(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref>&amp;<sp/>result);</highlight></codeline>
+<codeline lineno="167" refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1a94a93d26f93f3c3d569f984d23049cc3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1a94a93d26f93f3c3d569f984d23049cc3" kindref="member">has_new_fatal_failure</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>has_new_fatal_failure_;<sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="169" refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1ac016dfb0d4a098e75505d926cf6cae69" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1ac016dfb0d4a098e75505d926cf6cae69" kindref="member">has_new_fatal_failure_</ref>;</highlight></codeline>
+<codeline lineno="170" refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1ab9c4c39baebd88a283300d67bf8f9ffa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="da/d6e/classtesting_1_1_test_part_result_reporter_interface" kindref="compound">TestPartResultReporterInterface</ref>*<sp/><ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1ab9c4c39baebd88a283300d67bf8f9ffa" kindref="member">original_reporter_</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1a152e2f14c24601957770d46ee3edf8c8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper_1a152e2f14c24601957770d46ee3edf8c8" kindref="member">GTEST_DISALLOW_COPY_AND_ASSIGN_</ref>(<ref refid="d7/d43/classtesting_1_1internal_1_1_has_new_fatal_failure_helper" kindref="compound">HasNewFatalFailureHelper</ref>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>internal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>testing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/googletest/include/gtest/gtest-test-part.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1358 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TestCase Class Reference\par \pard\plain 
+{\tc\tcl2 \v TestCase}
+{\xe \v TestCase}
+{\bkmkstart AAAAAAABMO}
+{\bkmkend AAAAAAABMO}
+\par
+{
+{\f2 #include <gtest.h>}}\par
+Collaboration diagram for TestCase:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "da/dd6/classtesting_1_1TestCase__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b TestResult} & {\b ad_hoc_test_result} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b disabled_test_count} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+TimeInMillis {\b elapsed_time} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b Failed} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b failed_test_count} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b TestInfo} * {\b GetTestInfo} (int i) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char * {\b name} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b Passed} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b reportable_disabled_test_count} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b reportable_test_count} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b should_run} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b successful_test_count} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b test_to_run_count} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b TestCase} (const char *{\b name}, const char *a_type_param, Test::SetUpTestCaseFunc set_up_tc, Test::TearDownTestCaseFunc tear_down_tc)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b total_test_count} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char * {\b type_param} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual {\b ~TestCase} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Package Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GTEST_DISALLOW_COPY_AND_ASSIGN_} ({\b TestCase})\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Package Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b __pad0__}:scoped_ptr<const ::{\b std::string}> type_param_\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b TestResult} {\b ad_hoc_test_result_}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+TimeInMillis {\b elapsed_time_}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Test::SetUpTestCaseFunc {\b set_up_tc_}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b should_run_}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Test::TearDownTestCaseFunc {\b tear_down_tc_}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b std::vector}< int > {\b test_indices_}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b std::vector}< {\b TestInfo} * > {\b test_info_list_}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b AddTestInfo} ({\b TestInfo} *test_info)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ClearResult} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b TestInfo} * {\b GetMutableTestInfo} (int i)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Run} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b RunSetUpTestCase} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b RunTearDownTestCase} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b set_should_run} (bool should)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ShuffleTests} ({\b internal::Random} *random)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b std::vector}< {\b TestInfo} * > & {\b test_info_list} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b std::vector}< {\b TestInfo} * > & {\b test_info_list} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b UnshuffleTests} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Private Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\b ClearTestCaseResult} ({\b TestCase} *test_case)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\b ShouldRunTest} (const {\b TestInfo} *test_info)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\b TestDisabled} (const {\b TestInfo} *test_info)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\b TestFailed} (const {\b TestInfo} *test_info)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\b TestPassed} (const {\b TestInfo} *test_info)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\b TestReportable} (const {\b TestInfo} *test_info)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\b TestReportableDisabled} (const {\b TestInfo} *test_info)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b std::string} {\b name_}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b internal::UnitTestImpl}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Test}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid }
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v TestCase\:TestCase}
+{\xe \v TestCase\:TestCase}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b TestCase} (const char *  {\i name}, const char *  {\i a_type_param}, Test::SetUpTestCaseFunc  {\i set_up_tc}, Test::TearDownTestCaseFunc  {\i tear_down_tc})}}
+\par
+{\bkmkstart AAAAAAABMP}
+{\bkmkend AAAAAAABMP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2723     : name_(a_name),\par
+2724       type_param_(a_type_param ? {\cf17 new} std::string(a_type_param) : NULL),\par
+2725       set_up_tc_(set_up_tc),\par
+2726       tear_down_tc_(tear_down_tc),\par
+2727       should_run_({\cf17 false}),\par
+2728       elapsed_time_(0) \{\par
+2729 \}\par
+}
+}
+{\xe \v ~TestCase\:TestCase}
+{\xe \v TestCase\:~TestCase}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+~{\b TestCase} (){\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAABMQ}
+{\bkmkend AAAAAAABMQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2732                     \{\par
+2733   {\cf20 // Deletes every Test in the collection.}\par
+2734   ForEach(test_info_list_, internal::Delete<TestInfo>);\par
+2735 \}\par
+}
+{
+\ql
+References testing::internal::ForEach(), and TestCase::test_info_list_.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_ab5565cf238c1b95c8113950cf9eb80b5_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v ad_hoc_test_result\:TestCase}
+{\xe \v TestCase\:ad_hoc_test_result}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b TestResult}& ad_hoc_test_result () const}}
+\par
+{\bkmkstart AAAAAAABMR}
+{\bkmkend AAAAAAABMR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 849 \{ {\cf19 return} ad_hoc_test_result_; \}\par
+}
+{
+\ql
+Referenced by XmlUnitTestResultPrinter::PrintXmlTestCase().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a0f8738e1646472a8dd4061aff7b58d6b_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v AddTestInfo\:TestCase}
+{\xe \v TestCase\:AddTestInfo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void AddTestInfo ({\b TestInfo} *  {\i test_info}){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABMS}
+{\bkmkend AAAAAAABMS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2753                                                \{\par
+2754   test_info_list_.push_back(test_info);\par
+2755   test_indices_.push_back({\cf17 static_cast<}{\cf18 int}{\cf17 >}(test_indices_.size()));\par
+2756 \}\par
+}
+{
+\ql
+References vector< T >::push_back(), vector< T >::size(), TestCase::test_indices_, and TestCase::test_info_list_.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a2a0417de1ee92080aae4676c77318b01_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v ClearResult\:TestCase}
+{\xe \v TestCase\:ClearResult}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ClearResult (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABMT}
+{\bkmkend AAAAAAABMT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2787                            \{\par
+2788   ad_hoc_test_result_.Clear();\par
+2789   ForEach(test_info_list_, TestInfo::ClearTestResult);\par
+2790 \}\par
+}
+{
+\ql
+References TestCase::ad_hoc_test_result_, TestResult::Clear(), TestInfo::ClearTestResult(), testing::internal::ForEach(), and TestCase::test_info_list_.}\par
+{
+\ql
+Referenced by TestCase::ClearTestCaseResult().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a566dca6156477ed747aa781f341d13d5_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a566dca6156477ed747aa781f341d13d5_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v ClearTestCaseResult\:TestCase}
+{\xe \v TestCase\:ClearTestCaseResult}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void ClearTestCaseResult ({\b TestCase} *  {\i test_case}){\f2 [static]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABMU}
+{\bkmkend AAAAAAABMU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 878                                                        \{\par
+879     test_case->ClearResult();\par
+880   \}\par
+}
+{
+\ql
+References TestCase::ClearResult().}\par
+{
+\ql
+Referenced by UnitTestImpl::ClearNonAdHocTestResult().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_ad1d1fd605ca6c25a6f71b40c5216a8e0_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_ad1d1fd605ca6c25a6f71b40c5216a8e0_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v disabled_test_count\:TestCase}
+{\xe \v TestCase\:disabled_test_count}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int disabled_test_count () const}}
+\par
+{\bkmkstart AAAAAAABMV}
+{\bkmkend AAAAAAABMV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2692                                         \{\par
+2693   {\cf19 return} CountIf(test_info_list_, TestDisabled);\par
+2694 \}\par
+}
+{
+\ql
+References testing::internal::CountIf(), TestCase::test_info_list_, and TestCase::TestDisabled().}\par
+{
+\ql
+Referenced by UnitTestImpl::disabled_test_count().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a306df17b97d7adb53a092db57dd2ed2b_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a306df17b97d7adb53a092db57dd2ed2b_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v elapsed_time\:TestCase}
+{\xe \v TestCase\:elapsed_time}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TimeInMillis elapsed_time () const}}
+\par
+{\bkmkstart AAAAAAABMW}
+{\bkmkend AAAAAAABMW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 841 \{ {\cf19 return} elapsed_time_; \}\par
+}
+{
+\ql
+Referenced by PrettyUnitTestResultPrinter::OnTestCaseEnd(), and XmlUnitTestResultPrinter::PrintXmlTestCase().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_afc30650e1ab3e777836e49831149f429_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Failed\:TestCase}
+{\xe \v TestCase\:Failed}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Failed () const}}
+\par
+{\bkmkstart AAAAAAABMX}
+{\bkmkend AAAAAAABMX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 838 \{ {\cf19 return} failed_test_count() > 0; \}\par
+}
+{
+\ql
+Referenced by testing::internal::TestCaseFailed().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a365c0e4f912940e9cf7d844d06986445_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v failed_test_count\:TestCase}
+{\xe \v TestCase\:failed_test_count}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int failed_test_count () const}}
+\par
+{\bkmkstart AAAAAAABMY}
+{\bkmkend AAAAAAABMY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2682                                       \{\par
+2683   {\cf19 return} CountIf(test_info_list_, TestFailed);\par
+2684 \}\par
+}
+{
+\ql
+References testing::internal::CountIf(), TestCase::test_info_list_, and TestCase::TestFailed().}\par
+{
+\ql
+Referenced by UnitTestImpl::failed_test_count(), PrettyUnitTestResultPrinter::PrintFailedTests(), and XmlUnitTestResultPrinter::PrintXmlTestCase().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a527d55a764fa3193cda01aaa95a75e8b_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a527d55a764fa3193cda01aaa95a75e8b_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v GetMutableTestInfo\:TestCase}
+{\xe \v TestCase\:GetMutableTestInfo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b TestInfo} * GetMutableTestInfo (int  {\i i}){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABMZ}
+{\bkmkend AAAAAAABMZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2746                                             \{\par
+2747   {\cf17 const} {\cf18 int} index = GetElementOr(test_indices_, i, -1);\par
+2748   {\cf19 return} index < 0 ? NULL : test_info_list_[index];\par
+2749 \}\par
+}
+{
+\ql
+References testing::internal::GetElementOr(), TestCase::test_indices_, and TestCase::test_info_list_.}\par
+{
+\ql
+Referenced by TestCase::Run().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_aeea35099284cdd7127924592152e3b73_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_aeea35099284cdd7127924592152e3b73_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v GetTestInfo\:TestCase}
+{\xe \v TestCase\:GetTestInfo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b TestInfo} * GetTestInfo (int  {\i i}) const}}
+\par
+{\bkmkstart AAAAAAABNA}
+{\bkmkend AAAAAAABNA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2739                                                  \{\par
+2740   {\cf17 const} {\cf18 int} index = GetElementOr(test_indices_, i, -1);\par
+2741   {\cf19 return} index < 0 ? NULL : test_info_list_[index];\par
+2742 \}\par
+}
+{
+\ql
+References testing::internal::GetElementOr(), TestCase::test_indices_, and TestCase::test_info_list_.}\par
+{
+\ql
+Referenced by PrettyUnitTestResultPrinter::PrintFailedTests(), and XmlUnitTestResultPrinter::PrintXmlTestCase().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a184e6f335c5c8a78e37f9ab1d537de92_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a184e6f335c5c8a78e37f9ab1d537de92_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v GTEST_DISALLOW_COPY_AND_ASSIGN_\:TestCase}
+{\xe \v TestCase\:GTEST_DISALLOW_COPY_AND_ASSIGN_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+GTEST_DISALLOW_COPY_AND_ASSIGN_ ({\b TestCase} ){\f2 [package]}}}
+\par
+{\bkmkstart AAAAAAABNB}
+{\bkmkend AAAAAAABNB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v name\:TestCase}
+{\xe \v TestCase\:name}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char* name () const}}
+\par
+{\bkmkstart AAAAAAABNC}
+{\bkmkend AAAAAAABNC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 800 \{ {\cf19 return} name_.c_str(); \}\par
+}
+{
+\ql
+Referenced by UnitTestImpl::FilterTests(), UnitTestImpl::ListTestsMatchingFilter(), PrettyUnitTestResultPrinter::OnTestCaseEnd(), PrettyUnitTestResultPrinter::OnTestCaseStart(), TestCaseNameIs::operator()(), PrettyUnitTestResultPrinter::PrintFailedTests(), and XmlUnitTestResultPrinter::PrintXmlTestCase().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a8c4da4b626748f746b1f9fdbe885edfb_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Passed\:TestCase}
+{\xe \v TestCase\:Passed}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Passed () const}}
+\par
+{\bkmkstart AAAAAAABND}
+{\bkmkend AAAAAAABND}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 835 \{ {\cf19 return} !Failed(); \}\par
+}
+{
+\ql
+Referenced by testing::internal::TestCasePassed().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_aad2f13a7fb077e9e26c761dea838c160_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v reportable_disabled_test_count\:TestCase}
+{\xe \v TestCase\:reportable_disabled_test_count}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int reportable_disabled_test_count () const}}
+\par
+{\bkmkstart AAAAAAABNE}
+{\bkmkend AAAAAAABNE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2687                                                    \{\par
+2688   {\cf19 return} CountIf(test_info_list_, TestReportableDisabled);\par
+2689 \}\par
+}
+{
+\ql
+References testing::internal::CountIf(), TestCase::test_info_list_, and TestCase::TestReportableDisabled().}\par
+{
+\ql
+Referenced by XmlUnitTestResultPrinter::PrintXmlTestCase(), and UnitTestImpl::reportable_disabled_test_count().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_ae79e09f147841ac66b6478137e2260c8_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_ae79e09f147841ac66b6478137e2260c8_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v reportable_test_count\:TestCase}
+{\xe \v TestCase\:reportable_test_count}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int reportable_test_count () const}}
+\par
+{\bkmkstart AAAAAAABNF}
+{\bkmkend AAAAAAABNF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2697                                           \{\par
+2698   {\cf19 return} CountIf(test_info_list_, TestReportable);\par
+2699 \}\par
+}
+{
+\ql
+References testing::internal::CountIf(), TestCase::test_info_list_, and TestCase::TestReportable().}\par
+{
+\ql
+Referenced by XmlUnitTestResultPrinter::PrintXmlTestCase(), XmlUnitTestResultPrinter::PrintXmlUnitTest(), and UnitTestImpl::reportable_test_count().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a5b3b073637db1a071ba2d749128e9f8c_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a5b3b073637db1a071ba2d749128e9f8c_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Run\:TestCase}
+{\xe \v TestCase\:Run}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Run (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNG}
+{\bkmkend AAAAAAABNG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2759                    \{\par
+2760   {\cf19 if} (!should_run_) {\cf19 return};\par
+2761 \par
+2762   internal::UnitTestImpl* {\cf17 const} impl = internal::GetUnitTestImpl();\par
+2763   impl->set_current_test_case({\cf17 this});\par
+2764 \par
+2765   TestEventListener* repeater = UnitTest::GetInstance()->listeners().repeater();\par
+2766 \par
+2767   repeater->OnTestCaseStart(*{\cf17 this});\par
+2768   impl->os_stack_trace_getter()->UponLeavingGTest();\par
+2769   internal::HandleExceptionsInMethodIfSupported(\par
+2770       {\cf17 this}, &TestCase::RunSetUpTestCase, {\cf22 "SetUpTestCase()"});\par
+2771 \par
+2772   {\cf17 const} internal::TimeInMillis start = internal::GetTimeInMillis();\par
+2773   {\cf19 for} ({\cf18 int} i = 0; i < total_test_count(); i++) \{\par
+2774     GetMutableTestInfo(i)->Run();\par
+2775   \}\par
+2776   elapsed_time_ = internal::GetTimeInMillis() - start;\par
+2777 \par
+2778   impl->os_stack_trace_getter()->UponLeavingGTest();\par
+2779   internal::HandleExceptionsInMethodIfSupported(\par
+2780       {\cf17 this}, &TestCase::RunTearDownTestCase, {\cf22 "TearDownTestCase()"});\par
+2781 \par
+2782   repeater->OnTestCaseEnd(*{\cf17 this});\par
+2783   impl->set_current_test_case(NULL);\par
+2784 \}\par
+}
+{
+\ql
+References TestCase::elapsed_time_, UnitTest::GetInstance(), TestCase::GetMutableTestInfo(), testing::internal::GetTimeInMillis(), testing::internal::GetUnitTestImpl(), testing::internal::HandleExceptionsInMethodIfSupported(), UnitTest::listeners(), TestEventListener::OnTestCaseEnd(), TestEventListener::OnTestCaseStart(), UnitTestImpl::os_stack_trace_getter(), TestEventListeners::repeater(), TestInfo::Run(), TestCase::RunSetUpTestCase(), TestCase::RunTearDownTestCase(), UnitTestImpl::set_current_test_case(), TestCase::should_run_, TestCase::total_test_count(), and OsStackTraceGetterInterface::UponLeavingGTest().}\par
+{
+\ql
+Referenced by UnitTestImpl::RunAllTests().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_aa3eca255b6be227d7d901cc2a72017a5_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_aa3eca255b6be227d7d901cc2a72017a5_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v RunSetUpTestCase\:TestCase}
+{\xe \v TestCase\:RunSetUpTestCase}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void RunSetUpTestCase (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNH}
+{\bkmkend AAAAAAABNH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 887 \{ (*set_up_tc_)(); \}\par
+}
+{
+\ql
+Referenced by TestCase::Run().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a0a9185d58f27f485506f4c0dedaab124_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v RunTearDownTestCase\:TestCase}
+{\xe \v TestCase\:RunTearDownTestCase}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void RunTearDownTestCase (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNI}
+{\bkmkend AAAAAAABNI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 891 \{ (*tear_down_tc_)(); \}\par
+}
+{
+\ql
+Referenced by TestCase::Run().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a68c2b3492b96c37271344d40a79caa84_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v set_should_run\:TestCase}
+{\xe \v TestCase\:set_should_run}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void set_should_run (bool  {\i should}){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNJ}
+{\bkmkend AAAAAAABNJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 868 \{ should_run_ = should; \}\par
+}
+{
+\ql
+Referenced by UnitTestImpl::FilterTests().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_ab3f3dbe8ef52473f912aef44d04193d5_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v should_run\:TestCase}
+{\xe \v TestCase\:should_run}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool should_run () const}}
+\par
+{\bkmkstart AAAAAAABNK}
+{\bkmkend AAAAAAABNK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 811 \{ {\cf19 return} should_run_; \}\par
+}
+{
+\ql
+Referenced by UnitTestImpl::FilterTests(), PrettyUnitTestResultPrinter::PrintFailedTests(), testing::internal::ShouldRunTestCase(), testing::internal::TestCaseFailed(), and testing::internal::TestCasePassed().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a80b7dba9dc7b6b640c8ba46897c8e181_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v ShouldRunTest\:TestCase}
+{\xe \v TestCase\:ShouldRunTest}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static bool ShouldRunTest (const {\b TestInfo} *  {\i test_info}){\f2 [static]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNL}
+{\bkmkend AAAAAAABNL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 920                                                        \{\par
+921     {\cf19 return} test_info->should_run();\par
+922   \}\par
+}
+{
+\ql
+References TestInfo::should_run().}\par
+{
+\ql
+Referenced by TestCase::test_to_run_count().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a8fdbfd24fea404421eb50c2450382e1d_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a8fdbfd24fea404421eb50c2450382e1d_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v ShuffleTests\:TestCase}
+{\xe \v TestCase\:ShuffleTests}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ShuffleTests ({\b internal::Random} *  {\i random}){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNM}
+{\bkmkend AAAAAAABNM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2793                                                   \{\par
+2794   Shuffle(random, &test_indices_);\par
+2795 \}\par
+}
+{
+\ql
+References testing::internal::Shuffle(), and TestCase::test_indices_.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a0005a140538304e16d0bbd0bf08b3b65_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v successful_test_count\:TestCase}
+{\xe \v TestCase\:successful_test_count}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int successful_test_count () const}}
+\par
+{\bkmkstart AAAAAAABNN}
+{\bkmkend AAAAAAABNN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2677                                           \{\par
+2678   {\cf19 return} CountIf(test_info_list_, TestPassed);\par
+2679 \}\par
+}
+{
+\ql
+References testing::internal::CountIf(), TestCase::test_info_list_, and TestCase::TestPassed().}\par
+{
+\ql
+Referenced by UnitTestImpl::successful_test_count().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_aadfe12d81153d7c5838a0eedad197d4e_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_aadfe12d81153d7c5838a0eedad197d4e_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v test_info_list\:TestCase}
+{\xe \v TestCase\:test_info_list}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b std::vector}<{\b TestInfo}*>& test_info_list (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNO}
+{\bkmkend AAAAAAABNO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 856 \{ {\cf19 return} test_info_list_; \}\par
+}
+{
+\ql
+Referenced by UnitTestImpl::FilterTests(), Test::HasSameFixtureClass(), and UnitTestImpl::ListTestsMatchingFilter().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_aaa94fcfd7f8161d39504f535fa995c2d_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v test_info_list\:TestCase}
+{\xe \v TestCase\:test_info_list}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b std::vector}<{\b TestInfo}*>& test_info_list () const{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNP}
+{\bkmkend AAAAAAABNP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 859                                                      \{\par
+860     {\cf19 return} test_info_list_;\par
+861   \}\par
+}
+}
+{\xe \v test_to_run_count\:TestCase}
+{\xe \v TestCase\:test_to_run_count}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int test_to_run_count () const}}
+\par
+{\bkmkstart AAAAAAABNQ}
+{\bkmkend AAAAAAABNQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2702                                       \{\par
+2703   {\cf19 return} CountIf(test_info_list_, ShouldRunTest);\par
+2704 \}\par
+}
+{
+\ql
+References testing::internal::CountIf(), TestCase::ShouldRunTest(), and TestCase::test_info_list_.}\par
+{
+\ql
+Referenced by PrettyUnitTestResultPrinter::OnTestCaseEnd(), PrettyUnitTestResultPrinter::OnTestCaseStart(), and UnitTestImpl::test_to_run_count().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a9964c29b369696df155b3adac96cfe66_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a9964c29b369696df155b3adac96cfe66_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v TestDisabled\:TestCase}
+{\xe \v TestCase\:TestDisabled}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static bool TestDisabled (const {\b TestInfo} *  {\i test_info}){\f2 [static]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNR}
+{\bkmkend AAAAAAABNR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 910                                                       \{\par
+911     {\cf19 return} test_info->is_disabled_;\par
+912   \}\par
+}
+{
+\ql
+References TestInfo::is_disabled_.}\par
+{
+\ql
+Referenced by TestCase::disabled_test_count().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a8cab09cdd57af464aec68c4dc9f45e96_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v TestFailed\:TestCase}
+{\xe \v TestCase\:TestFailed}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static bool TestFailed (const {\b TestInfo} *  {\i test_info}){\f2 [static]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNS}
+{\bkmkend AAAAAAABNS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 899                                                     \{\par
+900     {\cf19 return} test_info->should_run() && test_info->result()->Failed();\par
+901   \}\par
+}
+{
+\ql
+References TestResult::Failed(), TestInfo::result(), and TestInfo::should_run().}\par
+{
+\ql
+Referenced by TestCase::failed_test_count().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a34e1cd8d648d9df54eedbb17f02587a4_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a34e1cd8d648d9df54eedbb17f02587a4_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v TestPassed\:TestCase}
+{\xe \v TestCase\:TestPassed}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static bool TestPassed (const {\b TestInfo} *  {\i test_info}){\f2 [static]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNT}
+{\bkmkend AAAAAAABNT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 894                                                     \{\par
+895     {\cf19 return} test_info->should_run() && test_info->result()->Passed();\par
+896   \}\par
+}
+{
+\ql
+References TestResult::Passed(), TestInfo::result(), and TestInfo::should_run().}\par
+{
+\ql
+Referenced by TestCase::successful_test_count().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a90cec168fde1398dfc3b1db6e1a797a4_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a90cec168fde1398dfc3b1db6e1a797a4_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v TestReportable\:TestCase}
+{\xe \v TestCase\:TestReportable}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static bool TestReportable (const {\b TestInfo} *  {\i test_info}){\f2 [static]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNU}
+{\bkmkend AAAAAAABNU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 915                                                         \{\par
+916     {\cf19 return} test_info->is_reportable();\par
+917   \}\par
+}
+{
+\ql
+References TestInfo::is_reportable().}\par
+{
+\ql
+Referenced by TestCase::reportable_test_count().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a9862daa78e71563f6f5785afc36ca972_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a9862daa78e71563f6f5785afc36ca972_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v TestReportableDisabled\:TestCase}
+{\xe \v TestCase\:TestReportableDisabled}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static bool TestReportableDisabled (const {\b TestInfo} *  {\i test_info}){\f2 [static]}, {\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNV}
+{\bkmkend AAAAAAABNV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 905                                                                 \{\par
+906     {\cf19 return} test_info->is_reportable() && test_info->is_disabled_;\par
+907   \}\par
+}
+{
+\ql
+References TestInfo::is_disabled_, and TestInfo::is_reportable().}\par
+{
+\ql
+Referenced by TestCase::reportable_disabled_test_count().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_aee5d98a0807fdd67250534a4b491e3d0_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_aee5d98a0807fdd67250534a4b491e3d0_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v total_test_count\:TestCase}
+{\xe \v TestCase\:total_test_count}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int total_test_count () const}}
+\par
+{\bkmkstart AAAAAAABNW}
+{\bkmkend AAAAAAABNW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2707                                      \{\par
+2708   {\cf19 return} {\cf17 static_cast<}{\cf18 int}{\cf17 >}(test_info_list_.size());\par
+2709 \}\par
+}
+{
+\ql
+References TestCase::test_info_list_.}\par
+{
+\ql
+Referenced by PrettyUnitTestResultPrinter::PrintFailedTests(), XmlUnitTestResultPrinter::PrintXmlTestCase(), TestCase::Run(), and UnitTestImpl::total_test_count().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_ac11f534b6c4990ddada85360a2371c4a_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v type_param\:TestCase}
+{\xe \v TestCase\:type_param}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char* type_param () const}}
+\par
+{\bkmkstart AAAAAAABNX}
+{\bkmkend AAAAAAABNX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 804                                  \{\par
+805     {\cf19 if} (type_param_.get() != NULL)\par
+806       {\cf19 return} type_param_->c_str();\par
+807     {\cf19 return} NULL;\par
+808   \}\par
+}
+{
+\ql
+Referenced by UnitTestImpl::ListTestsMatchingFilter(), and PrettyUnitTestResultPrinter::OnTestCaseStart().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_a699abee960ad215748fa6408da345f84_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v UnshuffleTests\:TestCase}
+{\xe \v TestCase\:UnshuffleTests}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void UnshuffleTests (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABNY}
+{\bkmkend AAAAAAABNY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2798                               \{\par
+2799   {\cf19 for} ({\cf18 size_t} i = 0; i < test_indices_.size(); i++) \{\par
+2800     test_indices_[i] = {\cf17 static_cast<}{\cf18 int}{\cf17 >}(i);\par
+2801   \}\par
+2802 \}\par
+}
+{
+\ql
+References vector< T >::size(), and TestCase::test_indices_.}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d9a/classtesting_1_1TestCase_ae4c0afbfb6a7d13aece4c3a256a5d01d_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Friends And Related Function Documentation\par
+\pard\plain 
+{\xe \v internal::UnitTestImpl\:TestCase}
+{\xe \v TestCase\:internal::UnitTestImpl}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+friend class {\b internal::UnitTestImpl}{\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAABNZ}
+{\bkmkend AAAAAAABNZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Test\:TestCase}
+{\xe \v TestCase\:Test}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+friend class {\b Test}{\f2 [friend]}}}
+\par
+{\bkmkstart AAAAAAABOA}
+{\bkmkend AAAAAAABOA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v __pad0__\:TestCase}
+{\xe \v TestCase\:__pad0__}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+__pad0__{\f2 [package]}}}
+\par
+{\bkmkstart AAAAAAABOB}
+{\bkmkend AAAAAAABOB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ad_hoc_test_result_\:TestCase}
+{\xe \v TestCase\:ad_hoc_test_result_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b TestResult} ad_hoc_test_result_{\f2 [package]}}}
+\par
+{\bkmkstart AAAAAAABOC}
+{\bkmkend AAAAAAABOC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by TestCase::ClearResult(), and UnitTestImpl::RecordProperty().}\par
+}
+{\xe \v elapsed_time_\:TestCase}
+{\xe \v TestCase\:elapsed_time_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TimeInMillis elapsed_time_{\f2 [package]}}}
+\par
+{\bkmkstart AAAAAAABOD}
+{\bkmkend AAAAAAABOD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by TestCase::Run().}\par
+}
+{\xe \v name_\:TestCase}
+{\xe \v TestCase\:name_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b std::string} name_{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAABOE}
+{\bkmkend AAAAAAABOE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v set_up_tc_\:TestCase}
+{\xe \v TestCase\:set_up_tc_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Test::SetUpTestCaseFunc set_up_tc_{\f2 [package]}}}
+\par
+{\bkmkstart AAAAAAABOF}
+{\bkmkend AAAAAAABOF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v should_run_\:TestCase}
+{\xe \v TestCase\:should_run_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool should_run_{\f2 [package]}}}
+\par
+{\bkmkstart AAAAAAABOG}
+{\bkmkend AAAAAAABOG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by TestCase::Run().}\par
+}
+{\xe \v tear_down_tc_\:TestCase}
+{\xe \v TestCase\:tear_down_tc_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Test::TearDownTestCaseFunc tear_down_tc_{\f2 [package]}}}
+\par
+{\bkmkstart AAAAAAABOH}
+{\bkmkend AAAAAAABOH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v test_indices_\:TestCase}
+{\xe \v TestCase\:test_indices_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b std::vector}<int> test_indices_{\f2 [package]}}}
+\par
+{\bkmkstart AAAAAAABOI}
+{\bkmkend AAAAAAABOI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by TestCase::AddTestInfo(), TestCase::GetMutableTestInfo(), TestCase::GetTestInfo(), TestCase::ShuffleTests(), and TestCase::UnshuffleTests().}\par
+}
+{\xe \v test_info_list_\:TestCase}
+{\xe \v TestCase\:test_info_list_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b std::vector}<{\b TestInfo}*> test_info_list_{\f2 [package]}}}
+\par
+{\bkmkstart AAAAAAABOJ}
+{\bkmkend AAAAAAABOJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\ql
+Referenced by TestCase::AddTestInfo(), TestCase::ClearResult(), TestCase::disabled_test_count(), TestCase::failed_test_count(), TestCase::GetMutableTestInfo(), TestCase::GetTestInfo(), TestCase::reportable_disabled_test_count(), TestCase::reportable_test_count(), TestCase::successful_test_count(), TestCase::test_to_run_count(), TestCase::total_test_count(), and TestCase::~TestCase().}\par
+}
+}

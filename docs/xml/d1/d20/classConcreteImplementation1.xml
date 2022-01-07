@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/d20/classConcreteImplementation1" kind="class" language="C++" prot="public">
+    <compoundname>ConcreteImplementation1</compoundname>
+    <basecompoundref refid="d3/d29/classImplementationInterface" prot="public" virt="non-virtual">ImplementationInterface</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d20/classConcreteImplementation1_1aba226fc7521b37b67e57dc4138b1ac54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void anotherFunctionality</definition>
+        <argsstring>()</argsstring>
+        <name>anotherFunctionality</name>
+        <reimplements refid="d3/d29/classImplementationInterface_1af8c356ee8ab29157f8b00cc286e3f490">anotherFunctionality</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/bridge_pattern/main.cc" line="84" column="14" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="84" bodyend="87"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ImplementationInterface</label>
+        <link refid="d3/d29/classImplementationInterface"/>
+      </node>
+      <node id="1">
+        <label>ConcreteImplementation1</label>
+        <link refid="d1/d20/classConcreteImplementation1"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ImplementationInterface</label>
+        <link refid="d3/d29/classImplementationInterface"/>
+      </node>
+      <node id="1">
+        <label>ConcreteImplementation1</label>
+        <link refid="d1/d20/classConcreteImplementation1"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="design_pattern/bridge_pattern/main.cc" line="81" column="1" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="82" bodyend="88"/>
+    <listofallmembers>
+      <member refid="d1/d20/classConcreteImplementation1_1aba226fc7521b37b67e57dc4138b1ac54" prot="public" virt="virtual"><scope>ConcreteImplementation1</scope><name>anotherFunctionality</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/d6e/hash__table__tests_8h" kind="file" language="C++">
+    <compoundname>hash_table_tests.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="d4/ddb/hash__table_8h" local="yes">./hash_table.h</includes>
+    <includedby refid="d4/d9c/hash__table__tests_8cc" local="yes">hash_table/hash_table_tests.cc</includedby>
+    <includedby refid="df/d46/hash__table_2main_8cc" local="yes">hash_table/main.cc</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>./hash_table.h</label>
+        <link refid="d4/ddb/hash__table_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>hash_table/hash_table_tests.h</label>
+        <link refid="d4/d6e/hash__table__tests_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+        <link refid="cpp/header/string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="4">
+        <label>./hash_object.h</label>
+        <link refid="dc/d62/hash__object_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>hash_table/main.cc</label>
+        <link refid="df/d46/hash__table_2main_8cc"/>
+      </node>
+      <node id="1">
+        <label>hash_table/hash_table_tests.h</label>
+        <link refid="d4/d6e/hash__table__tests_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>hash_table/hash_table_tests.cc</label>
+        <link refid="d4/d9c/hash__table__tests_8cc"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d4/d6e/hash__table__tests_8h_1adf5fa5d1a8867dba73315c105f40b449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void run_all_tests</definition>
+        <argsstring>()</argsstring>
+        <name>run_all_tests</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_table_tests.h" line="7" column="6" bodyfile="hash_table/hash_table_tests.cc" bodystart="3" bodyend="8" declfile="hash_table/hash_table_tests.h" declline="7" declcolumn="6"/>
+        <references refid="d4/d9c/hash__table__tests_8cc_1ae207a73fbaebdeb47d9a21e2c9bad021" compoundref="d4/d9c/hash__table__tests_8cc" startline="10" endline="20">test_add_exists</references>
+        <references refid="d4/d9c/hash__table__tests_8cc_1a52c40e38fb822ad8803972493055abaf" compoundref="d4/d9c/hash__table__tests_8cc" startline="60" endline="70">test_get</references>
+        <references refid="d4/d9c/hash__table__tests_8cc_1a30e225ab10fafd5b2befe84cb59ed57e" compoundref="d4/d9c/hash__table__tests_8cc" startline="22" endline="58">test_probing</references>
+        <references refid="d4/d9c/hash__table__tests_8cc_1a1da79732717337e8731f76c7a155c24a" compoundref="d4/d9c/hash__table__tests_8cc" startline="72" endline="88">test_remove</references>
+        <referencedby refid="df/d46/hash__table_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="df/d46/hash__table_2main_8cc" startline="28" endline="34">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d6e/hash__table__tests_8h_1ae207a73fbaebdeb47d9a21e2c9bad021" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_add_exists</definition>
+        <argsstring>()</argsstring>
+        <name>test_add_exists</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_table_tests.h" line="9" column="6" bodyfile="hash_table/hash_table_tests.cc" bodystart="10" bodyend="20" declfile="hash_table/hash_table_tests.h" declline="9" declcolumn="6"/>
+        <references refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">common::HashTable::Add</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" compoundref="dd/d3b/hash__table_8cc" startline="84" endline="103">common::HashTable::Exists</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" compoundref="dc/d62/hash__object_8h" startline="22" endline="22">common::HashObject::SetKey</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" compoundref="dc/d62/hash__object_8h" startline="23" endline="23">common::HashObject::SetValue</references>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1adf5fa5d1a8867dba73315c105f40b449" compoundref="d4/d9c/hash__table__tests_8cc" startline="3" endline="8">run_all_tests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d6e/hash__table__tests_8h_1a52c40e38fb822ad8803972493055abaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_get</definition>
+        <argsstring>()</argsstring>
+        <name>test_get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_table_tests.h" line="11" column="6" bodyfile="hash_table/hash_table_tests.cc" bodystart="60" bodyend="70" declfile="hash_table/hash_table_tests.h" declline="11" declcolumn="6"/>
+        <references refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">common::HashTable::Add</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1a3e93186097466627afabd3cf87918aea" compoundref="dd/d3b/hash__table_8cc" startline="111" endline="128">common::HashTable::Get</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" compoundref="dc/d62/hash__object_8h" startline="22" endline="22">common::HashObject::SetKey</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" compoundref="dc/d62/hash__object_8h" startline="23" endline="23">common::HashObject::SetValue</references>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1adf5fa5d1a8867dba73315c105f40b449" compoundref="d4/d9c/hash__table__tests_8cc" startline="3" endline="8">run_all_tests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d6e/hash__table__tests_8h_1a30e225ab10fafd5b2befe84cb59ed57e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_probing</definition>
+        <argsstring>()</argsstring>
+        <name>test_probing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_table_tests.h" line="10" column="6" bodyfile="hash_table/hash_table_tests.cc" bodystart="22" bodyend="58" declfile="hash_table/hash_table_tests.h" declline="10" declcolumn="6"/>
+        <references refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">common::HashTable::Add</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" compoundref="dd/d3b/hash__table_8cc" startline="84" endline="103">common::HashTable::Exists</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1af31fdd02d0dfcbf2b18018775c953454" compoundref="dd/d3b/hash__table_8cc" startline="155" endline="161">common::HashTable::PringDebug</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" compoundref="dc/d62/hash__object_8h" startline="22" endline="22">common::HashObject::SetKey</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" compoundref="dc/d62/hash__object_8h" startline="23" endline="23">common::HashObject::SetValue</references>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1adf5fa5d1a8867dba73315c105f40b449" compoundref="d4/d9c/hash__table__tests_8cc" startline="3" endline="8">run_all_tests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d6e/hash__table__tests_8h_1a1da79732717337e8731f76c7a155c24a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_remove</definition>
+        <argsstring>()</argsstring>
+        <name>test_remove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_table_tests.h" line="12" column="6" bodyfile="hash_table/hash_table_tests.cc" bodystart="72" bodyend="88" declfile="hash_table/hash_table_tests.h" declline="12" declcolumn="6"/>
+        <references refid="de/d4c/classcommon_1_1HashTable_1a7be016ae0c0d352ccc056f8ca6b9fbc2" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">common::HashTable::Add</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1aae71edf0c6b6c8e9417c7b5b0c614440" compoundref="dd/d3b/hash__table_8cc" startline="84" endline="103">common::HashTable::Exists</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1af31fdd02d0dfcbf2b18018775c953454" compoundref="dd/d3b/hash__table_8cc" startline="155" endline="161">common::HashTable::PringDebug</references>
+        <references refid="de/d4c/classcommon_1_1HashTable_1ac9a6adc252dfb1634d790999c401c473" compoundref="dd/d3b/hash__table_8cc" startline="136" endline="153">common::HashTable::Remove</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a4161b90a1bd06ba716ea0a161f182e58" compoundref="dc/d62/hash__object_8h" startline="22" endline="22">common::HashObject::SetKey</references>
+        <references refid="de/dd5/classcommon_1_1HashObject_1a5b9f7f63cc4475093363d8b876109d0d" compoundref="dc/d62/hash__object_8h" startline="23" endline="23">common::HashObject::SetValue</references>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1adf5fa5d1a8867dba73315c105f40b449" compoundref="d4/d9c/hash__table__tests_8cc" startline="3" endline="8">run_all_tests</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>HASH_TABLES_TESTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HASH_TABLES_TESTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/iostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">iostream</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/ddb/hash__table_8h" kindref="compound">./hash_table.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d6e/hash__table__tests_8h_1adf5fa5d1a8867dba73315c105f40b449" kindref="member">run_all_tests</ref>();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d6e/hash__table__tests_8h_1ae207a73fbaebdeb47d9a21e2c9bad021" kindref="member">test_add_exists</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d6e/hash__table__tests_8h_1a30e225ab10fafd5b2befe84cb59ed57e" kindref="member">test_probing</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d6e/hash__table__tests_8h_1a52c40e38fb822ad8803972493055abaf" kindref="member">test_get</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d6e/hash__table__tests_8h_1a1da79732717337e8731f76c7a155c24a" kindref="member">test_remove</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ifndef<sp/>HASH_TABLES_TESTS<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="hash_table/hash_table_tests.h"/>
+  </compounddef>
+</doxygen>

@@ -3,7 +3,7 @@
   <compounddef id="dir_f98011afbbddabd89a092c7f4a7877a0" kind="dir">
     <compoundname>design_pattern/bridge_pattern</compoundname>
     <innerdir refid="dir_931d6cb861e513c32bf08d875600358f">design_pattern/bridge_pattern/CMakeFiles</innerdir>
-    <innerfile refid="design__pattern_2bridge__pattern_2main_8cc">main.cc</innerfile>
+    <innerfile refid="de/d6c/design__pattern_2bridge__pattern_2main_8cc">main.cc</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

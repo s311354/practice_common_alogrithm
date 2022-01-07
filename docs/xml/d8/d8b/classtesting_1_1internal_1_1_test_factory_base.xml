@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d8/d8b/classtesting_1_1internal_1_1_test_factory_base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>testing::internal::TestFactoryBase</compoundname>
+    <derivedcompoundref refid="df/d14/classtesting_1_1internal_1_1_test_factory_impl" prot="public" virt="non-virtual">TestFactoryImpl&lt; TestClass &gt;</derivedcompoundref>
+    <includes refid="d5/da1/gtest-internal_8h" local="no">gtest-internal.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d8b/classtesting_1_1internal_1_1_test_factory_base_1a54ad95f17b20927fd00c337710813519" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="df/d69/classtesting_1_1_test" kindref="compound">Test</ref> *</type>
+        <definition>virtual Test* CreateTest</definition>
+        <argsstring>()=0</argsstring>
+        <name>CreateTest</name>
+        <reimplementedby refid="df/d14/classtesting_1_1internal_1_1_test_factory_impl_1a0c8d3cb7d986c562f4b2913a2650e3e0">CreateTest</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="470" column="16"/>
+        <referencedby refid="d1/d79/classtesting_1_1_test_info_1aa3eca255b6be227d7d901cc2a72017a5" compoundref="df/d5b/gtest_8cc" startline="2630" endline="2672">TestInfo::Run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d8b/classtesting_1_1internal_1_1_test_factory_base_1ad1caa56f70c11f47320e43cd0b1885dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~TestFactoryBase</definition>
+        <argsstring>()</argsstring>
+        <name>~TestFactoryBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="466" column="11" bodyfile="lib/googletest/include/gtest/internal/gtest-internal.h" bodystart="466" bodyend="466"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d8/d8b/classtesting_1_1internal_1_1_test_factory_base_1a29dc02b271a58548a72a9440595d58f9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TestFactoryBase</definition>
+        <argsstring>()</argsstring>
+        <name>TestFactoryBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="473" column="3" bodyfile="lib/googletest/include/gtest/internal/gtest-internal.h" bodystart="473" bodyend="473"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d8/d8b/classtesting_1_1internal_1_1_test_factory_base_1abd93f87cde0d8a775ee544c7337ef453" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(TestFactoryBase)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="d8/d8b/classtesting_1_1internal_1_1_test_factory_base" kindref="compound">TestFactoryBase</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="476" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>TestFactoryImpl&lt; TestClass &gt;</label>
+        <link refid="df/d14/classtesting_1_1internal_1_1_test_factory_impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TestFactoryBase</label>
+        <link refid="d8/d8b/classtesting_1_1internal_1_1_test_factory_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>TestFactoryBase</label>
+        <link refid="d8/d8b/classtesting_1_1internal_1_1_test_factory_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="464" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-internal.h" bodystart="464" bodyend="477"/>
+    <listofallmembers>
+      <member refid="d8/d8b/classtesting_1_1internal_1_1_test_factory_base_1a54ad95f17b20927fd00c337710813519" prot="public" virt="pure-virtual"><scope>testing::internal::TestFactoryBase</scope><name>CreateTest</name></member>
+      <member refid="d8/d8b/classtesting_1_1internal_1_1_test_factory_base_1abd93f87cde0d8a775ee544c7337ef453" prot="private" virt="non-virtual"><scope>testing::internal::TestFactoryBase</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="d8/d8b/classtesting_1_1internal_1_1_test_factory_base_1a29dc02b271a58548a72a9440595d58f9" prot="protected" virt="non-virtual"><scope>testing::internal::TestFactoryBase</scope><name>TestFactoryBase</name></member>
+      <member refid="d8/d8b/classtesting_1_1internal_1_1_test_factory_base_1ad1caa56f70c11f47320e43cd0b1885dc" prot="public" virt="virtual"><scope>testing::internal::TestFactoryBase</scope><name>~TestFactoryBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

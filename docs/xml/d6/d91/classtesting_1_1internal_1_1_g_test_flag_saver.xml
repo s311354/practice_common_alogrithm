@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::GTestFlagSaver</compoundname>
+    <includes refid="d0/da1/gtest-internal-inl_8h" local="no">gtest-internal-inl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a4c0b47eabe09d8dabd35db7a0dff3abd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool also_run_disabled_tests_</definition>
+        <argsstring></argsstring>
+        <name>also_run_disabled_tests_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="208" column="8" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="208" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ad54ec55a62882eba9af161df13b2e7c6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool break_on_failure_</definition>
+        <argsstring></argsstring>
+        <name>break_on_failure_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="209" column="8" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="209" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ae7865b4eb9284346a5fd86cc41dc5e3f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool catch_exceptions_</definition>
+        <argsstring></argsstring>
+        <name>catch_exceptions_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="210" column="8" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="210" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ad2e22a2f03ddfbe60d196f97a29f8577" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string color_</definition>
+        <argsstring></argsstring>
+        <name>color_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="211" column="15" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="211" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a515e75428130efc8548d36b1338fef26" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string death_test_style_</definition>
+        <argsstring></argsstring>
+        <name>death_test_style_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="212" column="15" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="212" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1afdfd075f51ede227b035ea4c87d050d3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool death_test_use_fork_</definition>
+        <argsstring></argsstring>
+        <name>death_test_use_fork_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="213" column="8" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="213" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ab3adc76336214495862dd4000dd2b11e" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string filter_</definition>
+        <argsstring></argsstring>
+        <name>filter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="214" column="15" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="214" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a7df45f359708ff2f041099935b4440f9" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string internal_run_death_test_</definition>
+        <argsstring></argsstring>
+        <name>internal_run_death_test_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="215" column="15" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="215" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a2c9a3b5435ec6c216b5d39f8c433f173" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool list_tests_</definition>
+        <argsstring></argsstring>
+        <name>list_tests_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="216" column="8" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="216" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a91971dd778fc7b00da8dc5645ab4afe4" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string output_</definition>
+        <argsstring></argsstring>
+        <name>output_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="217" column="15" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="217" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1adb51b8e5a90edf31c418b2f19895ed27" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool print_time_</definition>
+        <argsstring></argsstring>
+        <name>print_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="218" column="8" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="218" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a176d3c01cee3b31940516079c71880e0" prot="private" static="no" mutable="no">
+        <type><ref refid="d0/da7/namespacetesting_1_1internal_1a2f32e8087820ba11f87940176f14d58c" kindref="member">internal::Int32</ref></type>
+        <definition>internal::Int32 random_seed_</definition>
+        <argsstring></argsstring>
+        <name>random_seed_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="219" column="19" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="219" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af698d6f7caae8eda5a0186890206980d" prot="private" static="no" mutable="no">
+        <type><ref refid="d0/da7/namespacetesting_1_1internal_1a2f32e8087820ba11f87940176f14d58c" kindref="member">internal::Int32</ref></type>
+        <definition>internal::Int32 repeat_</definition>
+        <argsstring></argsstring>
+        <name>repeat_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="220" column="19" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="220" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a9a807dde54192d85688bf5dfdc616656" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool shuffle_</definition>
+        <argsstring></argsstring>
+        <name>shuffle_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="221" column="8" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="221" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a94fcb0013b6bc5ca292d92522ece412d" prot="private" static="no" mutable="no">
+        <type><ref refid="d0/da7/namespacetesting_1_1internal_1a2f32e8087820ba11f87940176f14d58c" kindref="member">internal::Int32</ref></type>
+        <definition>internal::Int32 stack_trace_depth_</definition>
+        <argsstring></argsstring>
+        <name>stack_trace_depth_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="222" column="19" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="222" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a39aca3ce5a87c668136331cd5d1036d6" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string stream_result_to_</definition>
+        <argsstring></argsstring>
+        <name>stream_result_to_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="223" column="15" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="223" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1add5ba2b420706911ad97a5633ceb67c0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool throw_on_failure_</definition>
+        <argsstring></argsstring>
+        <name>throw_on_failure_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="224" column="8" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="224" bodyend="-1"/>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" compoundref="d0/da1/gtest-internal-inl_8h" startline="165" endline="183">GTestFlagSaver::GTestFlagSaver</referencedby>
+        <referencedby refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" compoundref="d0/da1/gtest-internal-inl_8h" startline="186" endline="204">GTestFlagSaver::~GTestFlagSaver</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GTestFlagSaver</definition>
+        <argsstring>()</argsstring>
+        <name>GTestFlagSaver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="165" column="3" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="165" bodyend="183"/>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a4c0b47eabe09d8dabd35db7a0dff3abd" compoundref="d0/da1/gtest-internal-inl_8h" startline="208">GTestFlagSaver::also_run_disabled_tests_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ad54ec55a62882eba9af161df13b2e7c6" compoundref="d0/da1/gtest-internal-inl_8h" startline="209">GTestFlagSaver::break_on_failure_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ae7865b4eb9284346a5fd86cc41dc5e3f" compoundref="d0/da1/gtest-internal-inl_8h" startline="210">GTestFlagSaver::catch_exceptions_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ad2e22a2f03ddfbe60d196f97a29f8577" compoundref="d0/da1/gtest-internal-inl_8h" startline="211">GTestFlagSaver::color_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a515e75428130efc8548d36b1338fef26" compoundref="d0/da1/gtest-internal-inl_8h" startline="212">GTestFlagSaver::death_test_style_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1afdfd075f51ede227b035ea4c87d050d3" compoundref="d0/da1/gtest-internal-inl_8h" startline="213">GTestFlagSaver::death_test_use_fork_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ab3adc76336214495862dd4000dd2b11e" compoundref="d0/da1/gtest-internal-inl_8h" startline="214">GTestFlagSaver::filter_</references>
+        <references refid="d3/dc9/gtest-port_8h_1a828f4e34a1c4b510da50ec1563e3562a" compoundref="d3/dc9/gtest-port_8h" startline="2504">GTEST_FLAG</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a7df45f359708ff2f041099935b4440f9" compoundref="d0/da1/gtest-internal-inl_8h" startline="215">GTestFlagSaver::internal_run_death_test_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a2c9a3b5435ec6c216b5d39f8c433f173" compoundref="d0/da1/gtest-internal-inl_8h" startline="216">GTestFlagSaver::list_tests_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a91971dd778fc7b00da8dc5645ab4afe4" compoundref="d0/da1/gtest-internal-inl_8h" startline="217">GTestFlagSaver::output_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1adb51b8e5a90edf31c418b2f19895ed27" compoundref="d0/da1/gtest-internal-inl_8h" startline="218">GTestFlagSaver::print_time_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a176d3c01cee3b31940516079c71880e0" compoundref="d0/da1/gtest-internal-inl_8h" startline="219">GTestFlagSaver::random_seed_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af698d6f7caae8eda5a0186890206980d" compoundref="d0/da1/gtest-internal-inl_8h" startline="220">GTestFlagSaver::repeat_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a9a807dde54192d85688bf5dfdc616656" compoundref="d0/da1/gtest-internal-inl_8h" startline="221">GTestFlagSaver::shuffle_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a94fcb0013b6bc5ca292d92522ece412d" compoundref="d0/da1/gtest-internal-inl_8h" startline="222">GTestFlagSaver::stack_trace_depth_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a39aca3ce5a87c668136331cd5d1036d6" compoundref="d0/da1/gtest-internal-inl_8h" startline="223">GTestFlagSaver::stream_result_to_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1add5ba2b420706911ad97a5633ceb67c0" compoundref="d0/da1/gtest-internal-inl_8h" startline="224">GTestFlagSaver::throw_on_failure_</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~GTestFlagSaver</definition>
+        <argsstring>()</argsstring>
+        <name>~GTestFlagSaver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="186" column="3" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="186" bodyend="204"/>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a4c0b47eabe09d8dabd35db7a0dff3abd" compoundref="d0/da1/gtest-internal-inl_8h" startline="208">GTestFlagSaver::also_run_disabled_tests_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ad54ec55a62882eba9af161df13b2e7c6" compoundref="d0/da1/gtest-internal-inl_8h" startline="209">GTestFlagSaver::break_on_failure_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ae7865b4eb9284346a5fd86cc41dc5e3f" compoundref="d0/da1/gtest-internal-inl_8h" startline="210">GTestFlagSaver::catch_exceptions_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ad2e22a2f03ddfbe60d196f97a29f8577" compoundref="d0/da1/gtest-internal-inl_8h" startline="211">GTestFlagSaver::color_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a515e75428130efc8548d36b1338fef26" compoundref="d0/da1/gtest-internal-inl_8h" startline="212">GTestFlagSaver::death_test_style_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1afdfd075f51ede227b035ea4c87d050d3" compoundref="d0/da1/gtest-internal-inl_8h" startline="213">GTestFlagSaver::death_test_use_fork_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ab3adc76336214495862dd4000dd2b11e" compoundref="d0/da1/gtest-internal-inl_8h" startline="214">GTestFlagSaver::filter_</references>
+        <references refid="d3/dc9/gtest-port_8h_1a828f4e34a1c4b510da50ec1563e3562a" compoundref="d3/dc9/gtest-port_8h" startline="2504">GTEST_FLAG</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a7df45f359708ff2f041099935b4440f9" compoundref="d0/da1/gtest-internal-inl_8h" startline="215">GTestFlagSaver::internal_run_death_test_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a2c9a3b5435ec6c216b5d39f8c433f173" compoundref="d0/da1/gtest-internal-inl_8h" startline="216">GTestFlagSaver::list_tests_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a91971dd778fc7b00da8dc5645ab4afe4" compoundref="d0/da1/gtest-internal-inl_8h" startline="217">GTestFlagSaver::output_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1adb51b8e5a90edf31c418b2f19895ed27" compoundref="d0/da1/gtest-internal-inl_8h" startline="218">GTestFlagSaver::print_time_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a176d3c01cee3b31940516079c71880e0" compoundref="d0/da1/gtest-internal-inl_8h" startline="219">GTestFlagSaver::random_seed_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af698d6f7caae8eda5a0186890206980d" compoundref="d0/da1/gtest-internal-inl_8h" startline="220">GTestFlagSaver::repeat_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a9a807dde54192d85688bf5dfdc616656" compoundref="d0/da1/gtest-internal-inl_8h" startline="221">GTestFlagSaver::shuffle_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a94fcb0013b6bc5ca292d92522ece412d" compoundref="d0/da1/gtest-internal-inl_8h" startline="222">GTestFlagSaver::stack_trace_depth_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a39aca3ce5a87c668136331cd5d1036d6" compoundref="d0/da1/gtest-internal-inl_8h" startline="223">GTestFlagSaver::stream_result_to_</references>
+        <references refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1add5ba2b420706911ad97a5633ceb67c0" compoundref="d0/da1/gtest-internal-inl_8h" startline="224">GTestFlagSaver::throw_on_failure_</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>basic_string&lt; Char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="3">
+        <label>string</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GTestFlagSaver</label>
+        <link refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-random_seed_</edgelabel>
+          <edgelabel>-repeat_</edgelabel>
+          <edgelabel>-stack_trace_depth_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-color_</edgelabel>
+          <edgelabel>-death_test_style_</edgelabel>
+          <edgelabel>-filter_</edgelabel>
+          <edgelabel>-internal_run_death_test_</edgelabel>
+          <edgelabel>-output_</edgelabel>
+          <edgelabel>-stream_result_to_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TypeWithSize&lt; 4 &gt;</label>
+        <link refid="d1/d9a/classtesting_1_1internal_1_1_type_with_size_3_014_01_4"/>
+      </node>
+      <node id="4">
+        <label>basic_string&lt; char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/src/gtest-internal-inl.h" line="162" column="1" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="162" bodyend="225"/>
+    <listofallmembers>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a4c0b47eabe09d8dabd35db7a0dff3abd" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>also_run_disabled_tests_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ad54ec55a62882eba9af161df13b2e7c6" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>break_on_failure_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ae7865b4eb9284346a5fd86cc41dc5e3f" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>catch_exceptions_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ad2e22a2f03ddfbe60d196f97a29f8577" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>color_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a515e75428130efc8548d36b1338fef26" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>death_test_style_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1afdfd075f51ede227b035ea4c87d050d3" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>death_test_use_fork_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1ab3adc76336214495862dd4000dd2b11e" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>filter_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af8bb58de70e4599ba7ec7ec2ee645ca4" prot="public" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>GTestFlagSaver</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a7df45f359708ff2f041099935b4440f9" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>internal_run_death_test_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a2c9a3b5435ec6c216b5d39f8c433f173" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>list_tests_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a91971dd778fc7b00da8dc5645ab4afe4" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>output_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1adb51b8e5a90edf31c418b2f19895ed27" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>print_time_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a176d3c01cee3b31940516079c71880e0" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>random_seed_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1af698d6f7caae8eda5a0186890206980d" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>repeat_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a9a807dde54192d85688bf5dfdc616656" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>shuffle_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a94fcb0013b6bc5ca292d92522ece412d" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>stack_trace_depth_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a39aca3ce5a87c668136331cd5d1036d6" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>stream_result_to_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1add5ba2b420706911ad97a5633ceb67c0" prot="private" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>throw_on_failure_</name></member>
+      <member refid="d6/d91/classtesting_1_1internal_1_1_g_test_flag_saver_1a31fdc095cacf255eb30aefd46dd05cb0" prot="public" virt="non-virtual"><scope>testing::internal::GTestFlagSaver</scope><name>~GTestFlagSaver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

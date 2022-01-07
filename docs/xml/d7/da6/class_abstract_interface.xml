@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/da6/class_abstract_interface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>AbstractInterface</compoundname>
+    <derivedcompoundref refid="d3/dc0/class_bridge" prot="public" virt="non-virtual">Bridge</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/da6/class_abstract_interface_1aa659d40ff29cac697e2fc1349b1458f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void someFunctionality</definition>
+        <argsstring>()=0</argsstring>
+        <name>someFunctionality</name>
+        <reimplementedby refid="dd/da9/class_use_case1_1ade7253500755cdd870a579c7c4b023ed">someFunctionality</reimplementedby>
+        <reimplementedby refid="d7/d1d/class_use_case2_1ade7253500755cdd870a579c7c4b023ed">someFunctionality</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/bridge_pattern/main.cc" line="26" column="22"/>
+        <referencedby refid="de/d6c/design__pattern_2bridge__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="de/d6c/design__pattern_2bridge__pattern_2main_8cc" startline="100" endline="123">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>UseCase1</label>
+        <link refid="dd/da9/class_use_case1"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UseCase2</label>
+        <link refid="d7/d1d/class_use_case2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AbstractInterface</label>
+        <link refid="d7/da6/class_abstract_interface"/>
+      </node>
+      <node id="2">
+        <label>Bridge</label>
+        <link refid="d3/dc0/class_bridge"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AbstractInterface</label>
+        <link refid="d7/da6/class_abstract_interface"/>
+      </node>
+    </collaborationgraph>
+    <location file="design_pattern/bridge_pattern/main.cc" line="23" column="1" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="24" bodyend="27"/>
+    <listofallmembers>
+      <member refid="d7/da6/class_abstract_interface_1aa659d40ff29cac697e2fc1349b1458f6" prot="public" virt="pure-virtual"><scope>AbstractInterface</scope><name>someFunctionality</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

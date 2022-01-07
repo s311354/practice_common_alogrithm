@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/df7/namespacetesting_1_1internal2" kind="namespace" language="C++">
+    <compoundname>testing::internal2</compoundname>
+    <innerclass refid="df/d5e/classtesting_1_1internal2_1_1_type_without_formatter" prot="public">testing::internal2::TypeWithoutFormatter</innerclass>
+    <innerclass refid="db/d44/classtesting_1_1internal2_1_1_type_without_formatter_3_01_t_00_01k_convertible_to_integer_01_4" prot="public">testing::internal2::TypeWithoutFormatter&lt; T, kConvertibleToInteger &gt;</innerclass>
+    <innerclass refid="d9/d6c/classtesting_1_1internal2_1_1_type_without_formatter_3_01_t_00_01k_protobuf_01_4" prot="public">testing::internal2::TypeWithoutFormatter&lt; T, kProtobuf &gt;</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="da/df7/namespacetesting_1_1internal2_1ab4dd8308e08805aedfe646096be0e4e7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TypeKind</name>
+        <enumvalue id="da/df7/namespacetesting_1_1internal2_1ab4dd8308e08805aedfe646096be0e4e7a8c0085df0ce57d228bef0478bcdcf0b0" prot="public">
+          <name>kProtobuf</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/df7/namespacetesting_1_1internal2_1ab4dd8308e08805aedfe646096be0e4e7a3b1300c6e02d5d0c6b91a781363a5108" prot="public">
+          <name>kConvertibleToInteger</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/df7/namespacetesting_1_1internal2_1ab4dd8308e08805aedfe646096be0e4e7aaaa3810fba03f8b77af2e3e900ea9175" prot="public">
+          <name>kOtherType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-printers.h" line="124" column="1" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="124" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="da/df7/namespacetesting_1_1internal2_1a11cfb2a8b08f10a62ea02a1ea23044d0" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t kProtobufOneLinerMaxLength</definition>
+        <argsstring></argsstring>
+        <name>kProtobufOneLinerMaxLength</name>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-printers.h" line="148" column="14" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="148" bodyend="-1"/>
+        <referencedby refid="d9/d6c/classtesting_1_1internal2_1_1_type_without_formatter_3_01_t_00_01k_protobuf_01_4_1ab2db3a3b620936ce148e9d961bb505bd" compoundref="d0/d6d/gtest-printers_8h" startline="153" endline="159">TypeWithoutFormatter&lt; T, kProtobuf &gt;::PrintValue</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="da/df7/namespacetesting_1_1internal2_1a07dbe129beb8952074f04b599dfce39b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Char</type>
+          </param>
+          <param>
+            <type>typename CharTraits</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::basic_ostream</ref>&lt; Char, CharTraits &gt; &amp;</type>
+        <definition>::std::basic_ostream&lt;Char, CharTraits&gt;&amp; testing::internal2::operator&lt;&lt;</definition>
+        <argsstring>(::std::basic_ostream&lt; Char, CharTraits &gt; &amp;os, const T &amp;x)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::basic_ostream</ref>&lt; Char, CharTraits &gt; &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-printers.h" line="148" column="14" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="203" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="da/df7/namespacetesting_1_1internal2_1a9fbf8e07c0f94dc74d6ef5e56cd3c553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref> void</type>
+        <definition>GTEST_API_ void testing::internal2::PrintBytesInObjectTo</definition>
+        <argsstring>(const unsigned char *obj_bytes, size_t count, ::std::ostream *os)</argsstring>
+        <name>PrintBytesInObjectTo</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>obj_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-printers.h" line="118" column="17" declfile="lib/googletest/include/gtest/gtest-printers.h" declline="118" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="da/df7/namespacetesting_1_1internal2_1abfb9aa80365f93b952e9a4bea09947a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testing::internal2::PrintBytesInObjectTo</definition>
+        <argsstring>(const unsigned char *obj_bytes, size_t count, ostream *os)</argsstring>
+        <name>PrintBytesInObjectTo</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>obj_bytes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>ostream *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-printers.cc" line="114" column="6" bodyfile="lib/googletest/src/gtest-printers.cc" bodystart="114" bodyend="117"/>
+        <references refid="d2/d38/namespacetesting_1_1anonymous__namespace_02gtest-printers_8cc_03_1a7c3551691f3b4ab868eb5b8ceba41bde" compoundref="db/d74/gtest-printers_8cc" startline="82" endline="103">testing::anonymous_namespace{gtest-printers.cc}::PrintBytesInObjectToImpl</references>
+        <referencedby refid="df/d5e/classtesting_1_1internal2_1_1_type_without_formatter_1ab2db3a3b620936ce148e9d961bb505bd" compoundref="d0/d6d/gtest-printers_8h" startline="139" endline="142">TypeWithoutFormatter&lt; T, kTypeKind &gt;::PrintValue</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/googletest/src/gtest-printers.cc" line="107" column="1"/>
+  </compounddef>
+</doxygen>

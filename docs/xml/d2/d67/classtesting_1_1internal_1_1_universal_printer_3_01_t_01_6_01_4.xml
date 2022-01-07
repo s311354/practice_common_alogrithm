@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/d67/classtesting_1_1internal_1_1_universal_printer_3_01_t_01_6_01_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::UniversalPrinter&lt; T &amp; &gt;</compoundname>
+    <includes refid="d0/d6d/gtest-printers_8h" local="no">gtest-printers.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/d67/classtesting_1_1internal_1_1_universal_printer_3_01_t_01_6_01_4_1a8dc219f6da7ae779a1762c21d49490a9" prot="public" static="no" mutable="no">
+        <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+        <definition>::std::ostream* os</definition>
+        <argsstring></argsstring>
+        <name>os</name>
+        <initializer>{
+    
+    
+    *os &lt;&lt; &quot;@&quot; &lt;&lt; reinterpret_cast&lt;const void*&gt;(&amp;value) &lt;&lt; &quot; &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-printers.h" line="764" column="28" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="764" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d67/classtesting_1_1internal_1_1_universal_printer_3_01_t_01_6_01_4_1a9383d228e8dcf874343692cd0785dc50" prot="public" static="no" const="yes" explicit="no" inline="no" refqual="lvalue" virt="non-virtual">
+        <type></type>
+        <definition>GTEST_DISABLE_MSC_WARNINGS_PUSH_</definition>
+        <argsstring>(4180) static void Print(const T &amp;value</argsstring>
+        <name>GTEST_DISABLE_MSC_WARNINGS_PUSH_</name>
+        <param>
+          <type>4180</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-printers.h" line="762" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d67/classtesting_1_1internal_1_1_universal_printer_3_01_t_01_6_01_4_1acabeb3e51a17ee82cd92fa29d55ffb1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UniversalPrint</definition>
+        <argsstring>(value, os)</argsstring>
+        <name>UniversalPrint</name>
+        <param>
+          <type>value</type>
+        </param>
+        <param>
+          <type><ref refid="d2/d67/classtesting_1_1internal_1_1_universal_printer_3_01_t_01_6_01_4_1a8dc219f6da7ae779a1762c21d49490a9" kindref="member">os</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-printers.h" line="770" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>basic_ostream&lt; char &gt;</label>
+        <link refid="cpp/io/basic_ostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ostream</label>
+        <link refid="cpp/io/basic_ostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <link refid="cpp/io/basic_ostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>basic_ios&lt; Char &gt;</label>
+        <link refid="cpp/io/basic_ios" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ios_base</label>
+        <link refid="cpp/io/ios_base" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="4">
+        <label>basic_ios&lt; char &gt;</label>
+        <link refid="cpp/io/basic_ios" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UniversalPrinter&lt; T &amp; &gt;</label>
+        <link refid="d2/d67/classtesting_1_1internal_1_1_universal_printer_3_01_t_01_6_01_4"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+os</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/gtest-printers.h" line="758" column="1" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="758" bodyend="774"/>
+    <listofallmembers>
+      <member refid="d2/d67/classtesting_1_1internal_1_1_universal_printer_3_01_t_01_6_01_4_1a9383d228e8dcf874343692cd0785dc50" prot="public" virt="non-virtual"><scope>testing::internal::UniversalPrinter&lt; T &amp; &gt;</scope><name>GTEST_DISABLE_MSC_WARNINGS_PUSH_</name></member>
+      <member refid="d2/d67/classtesting_1_1internal_1_1_universal_printer_3_01_t_01_6_01_4_1a8dc219f6da7ae779a1762c21d49490a9" prot="public" virt="non-virtual"><scope>testing::internal::UniversalPrinter&lt; T &amp; &gt;</scope><name>os</name></member>
+      <member refid="d2/d67/classtesting_1_1internal_1_1_universal_printer_3_01_t_01_6_01_4_1acabeb3e51a17ee82cd92fa29d55ffb1f" prot="public" virt="non-virtual"><scope>testing::internal::UniversalPrinter&lt; T &amp; &gt;</scope><name>UniversalPrint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

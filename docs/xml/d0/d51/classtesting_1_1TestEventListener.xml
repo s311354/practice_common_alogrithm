@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/d51/classtesting_1_1TestEventListener" kind="class" language="C++" prot="package" abstract="yes">
+    <compoundname>testing::TestEventListener</compoundname>
+    <derivedcompoundref refid="d6/d86/classtesting_1_1EmptyTestEventListener" prot="public" virt="non-virtual">EmptyTestEventListener</derivedcompoundref>
+    <derivedcompoundref refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter" prot="public" virt="non-virtual">PrettyUnitTestResultPrinter</derivedcompoundref>
+    <derivedcompoundref refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater" prot="public" virt="non-virtual">TestEventRepeater</derivedcompoundref>
+    <includes refid="d8/d73/gtest_8h" local="no">gtest.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1a9ff0d48e0f7c64dea5cb0a607498d6f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OnEnvironmentsSetUpEnd</definition>
+        <argsstring>(const UnitTest &amp;unit_test)=0</argsstring>
+        <name>OnEnvironmentsSetUpEnd</name>
+        <reimplementedby refid="d6/d86/classtesting_1_1EmptyTestEventListener_1a4ab2823e779a053ad65cf7f01bb76b54">OnEnvironmentsSetUpEnd</reimplementedby>
+        <reimplementedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1a4ab2823e779a053ad65cf7f01bb76b54">OnEnvironmentsSetUpEnd</reimplementedby>
+        <reimplementedby refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater_1a4ff3e9c1eca9b8c7d17c39c260283985">OnEnvironmentsSetUpEnd</reimplementedby>
+        <param>
+          <type>const <ref refid="d5/d21/classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1008" column="16"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a4d5d6a2e8fa3b918a284252602a98279" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">UnitTestImpl::RunAllTests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1a070798921b8d09f891e02762287ee5b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OnEnvironmentsSetUpStart</definition>
+        <argsstring>(const UnitTest &amp;unit_test)=0</argsstring>
+        <name>OnEnvironmentsSetUpStart</name>
+        <reimplementedby refid="d6/d86/classtesting_1_1EmptyTestEventListener_1a960b8082afebb8b336547c3dc6bd079f">OnEnvironmentsSetUpStart</reimplementedby>
+        <reimplementedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1a47648ecaae8cb68691d2104531d0ece0">OnEnvironmentsSetUpStart</reimplementedby>
+        <reimplementedby refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater_1a54e314e87dd4f40cf054af17214fe5d8">OnEnvironmentsSetUpStart</reimplementedby>
+        <param>
+          <type>const <ref refid="d5/d21/classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1005" column="16"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a4d5d6a2e8fa3b918a284252602a98279" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">UnitTestImpl::RunAllTests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1a9cc8d7ef2c9e722a301ec4cee20633e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OnEnvironmentsTearDownEnd</definition>
+        <argsstring>(const UnitTest &amp;unit_test)=0</argsstring>
+        <name>OnEnvironmentsTearDownEnd</name>
+        <reimplementedby refid="d6/d86/classtesting_1_1EmptyTestEventListener_1af00cb6141021245e02c511782ce66b46">OnEnvironmentsTearDownEnd</reimplementedby>
+        <reimplementedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1af00cb6141021245e02c511782ce66b46">OnEnvironmentsTearDownEnd</reimplementedby>
+        <reimplementedby refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater_1aa4355567b2991e8e38e4fcb964f44387">OnEnvironmentsTearDownEnd</reimplementedby>
+        <param>
+          <type>const <ref refid="d5/d21/classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1029" column="16"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a4d5d6a2e8fa3b918a284252602a98279" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">UnitTestImpl::RunAllTests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1a1246b8fa84a0807afeffa6e986254ee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OnEnvironmentsTearDownStart</definition>
+        <argsstring>(const UnitTest &amp;unit_test)=0</argsstring>
+        <name>OnEnvironmentsTearDownStart</name>
+        <reimplementedby refid="d6/d86/classtesting_1_1EmptyTestEventListener_1a83a18f877ee8d1885a43667f00b51268">OnEnvironmentsTearDownStart</reimplementedby>
+        <reimplementedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1a7f429e4591b590d3429263c7c5ab0ceb">OnEnvironmentsTearDownStart</reimplementedby>
+        <reimplementedby refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater_1a3dd57271e7f1c9b85e8280acc6114b03">OnEnvironmentsTearDownStart</reimplementedby>
+        <param>
+          <type>const <ref refid="d5/d21/classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1026" column="16"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a4d5d6a2e8fa3b918a284252602a98279" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">UnitTestImpl::RunAllTests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1ab92df2852da3e002303be838d8550c76" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OnTestCaseEnd</definition>
+        <argsstring>(const TestCase &amp;test_case)=0</argsstring>
+        <name>OnTestCaseEnd</name>
+        <reimplementedby refid="d6/d86/classtesting_1_1EmptyTestEventListener_1a764828afa3c4b25fe85e9f0668f37297">OnTestCaseEnd</reimplementedby>
+        <reimplementedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1adecad7fba2c2b8083a93a152046f06dd">OnTestCaseEnd</reimplementedby>
+        <reimplementedby refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater_1a3cc06a6f14e5734766b458543ca2115e">OnTestCaseEnd</reimplementedby>
+        <param>
+          <type>const <ref refid="d0/d9a/classtesting_1_1TestCase" kindref="compound">TestCase</ref> &amp;</type>
+          <declname>test_case</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1023" column="16"/>
+        <referencedby refid="d0/d9a/classtesting_1_1TestCase_1aa3eca255b6be227d7d901cc2a72017a5" compoundref="df/d5b/gtest_8cc" startline="2759" endline="2784">TestCase::Run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1aaf531e12c423fe117b7a4c6d2217dcf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OnTestCaseStart</definition>
+        <argsstring>(const TestCase &amp;test_case)=0</argsstring>
+        <name>OnTestCaseStart</name>
+        <reimplementedby refid="d6/d86/classtesting_1_1EmptyTestEventListener_1ad458fc9c991a0888807d241e90da098e">OnTestCaseStart</reimplementedby>
+        <reimplementedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1ac6bcd29fa938fde58ea70012e7ea420a">OnTestCaseStart</reimplementedby>
+        <reimplementedby refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater_1adeff7f41a379b240b282fe511ff8bcbf">OnTestCaseStart</reimplementedby>
+        <param>
+          <type>const <ref refid="d0/d9a/classtesting_1_1TestCase" kindref="compound">TestCase</ref> &amp;</type>
+          <declname>test_case</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1011" column="16"/>
+        <referencedby refid="d0/d9a/classtesting_1_1TestCase_1aa3eca255b6be227d7d901cc2a72017a5" compoundref="df/d5b/gtest_8cc" startline="2759" endline="2784">TestCase::Run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1a48d3993f2b69de40ecca5476ff940e24" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OnTestEnd</definition>
+        <argsstring>(const TestInfo &amp;test_info)=0</argsstring>
+        <name>OnTestEnd</name>
+        <reimplementedby refid="d6/d86/classtesting_1_1EmptyTestEventListener_1afa42d87fd1a3c0377447be4791d472c9">OnTestEnd</reimplementedby>
+        <reimplementedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1a41824a58ecc1d0bf99a2b691cd865701">OnTestEnd</reimplementedby>
+        <reimplementedby refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater_1a57247960bc1147abddf11908402394c1">OnTestEnd</reimplementedby>
+        <param>
+          <type>const <ref refid="df/d65/classtesting_1_1TestInfo" kindref="compound">TestInfo</ref> &amp;</type>
+          <declname>test_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1020" column="16"/>
+        <referencedby refid="df/d65/classtesting_1_1TestInfo_1aa3eca255b6be227d7d901cc2a72017a5" compoundref="df/d5b/gtest_8cc" startline="2630" endline="2672">TestInfo::Run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1a7e35fec33b744e6a410f10e2fa090015" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OnTestIterationEnd</definition>
+        <argsstring>(const UnitTest &amp;unit_test, int iteration)=0</argsstring>
+        <name>OnTestIterationEnd</name>
+        <reimplementedby refid="d6/d86/classtesting_1_1EmptyTestEventListener_1ae2104e936a08019242b519d2274237eb">OnTestIterationEnd</reimplementedby>
+        <reimplementedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1aa21b349a51378e47877ee6d153c37116">OnTestIterationEnd</reimplementedby>
+        <reimplementedby refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater_1aa21b349a51378e47877ee6d153c37116">OnTestIterationEnd</reimplementedby>
+        <reimplementedby refid="d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa21b349a51378e47877ee6d153c37116">OnTestIterationEnd</reimplementedby>
+        <param>
+          <type>const <ref refid="d5/d21/classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iteration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1032" column="16"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a4d5d6a2e8fa3b918a284252602a98279" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">UnitTestImpl::RunAllTests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1ac7cacc17e8a9b6e18d7c6031df762608" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OnTestIterationStart</definition>
+        <argsstring>(const UnitTest &amp;unit_test, int iteration)=0</argsstring>
+        <name>OnTestIterationStart</name>
+        <reimplementedby refid="d6/d86/classtesting_1_1EmptyTestEventListener_1abd0cb3cd389369f180bed8a9f855d30f">OnTestIterationStart</reimplementedby>
+        <reimplementedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1aab7032bcb450f58f2ce48c00ad6401e8">OnTestIterationStart</reimplementedby>
+        <reimplementedby refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater_1aab7032bcb450f58f2ce48c00ad6401e8">OnTestIterationStart</reimplementedby>
+        <param>
+          <type>const <ref refid="d5/d21/classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iteration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1001" column="16"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a4d5d6a2e8fa3b918a284252602a98279" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">UnitTestImpl::RunAllTests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1a6897200761af7db2d3212d5d3c1571d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OnTestPartResult</definition>
+        <argsstring>(const TestPartResult &amp;test_part_result)=0</argsstring>
+        <name>OnTestPartResult</name>
+        <reimplementedby refid="d6/d86/classtesting_1_1EmptyTestEventListener_1af67393a10ad8d397e2c981f9d7aff7a6">OnTestPartResult</reimplementedby>
+        <reimplementedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1ad655f93fa60c0aeb7be4f44edeb10e0f">OnTestPartResult</reimplementedby>
+        <reimplementedby refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater_1a2999e3c9131fe27efd468fb4c20aef3a">OnTestPartResult</reimplementedby>
+        <param>
+          <type>const <ref refid="d9/d98/classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref> &amp;</type>
+          <declname>test_part_result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1017" column="16"/>
+        <referencedby refid="d1/d1c/classtesting_1_1internal_1_1DefaultGlobalTestPartResultReporter_1acd54d55b39f168c91b6370be62cef448" compoundref="df/d5b/gtest_8cc" startline="689" endline="693">DefaultGlobalTestPartResultReporter::ReportTestPartResult</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1a543233908c4fd972550c7198c31c895a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OnTestProgramEnd</definition>
+        <argsstring>(const UnitTest &amp;unit_test)=0</argsstring>
+        <name>OnTestProgramEnd</name>
+        <reimplementedby refid="d6/d86/classtesting_1_1EmptyTestEventListener_1a79232f629150d6a1e560f6729271e729">OnTestProgramEnd</reimplementedby>
+        <reimplementedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1a79232f629150d6a1e560f6729271e729">OnTestProgramEnd</reimplementedby>
+        <reimplementedby refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater_1a01d008c30d3b3e73f55f77aabc4cbbb9">OnTestProgramEnd</reimplementedby>
+        <param>
+          <type>const <ref refid="d5/d21/classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1036" column="16"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a4d5d6a2e8fa3b918a284252602a98279" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">UnitTestImpl::RunAllTests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1a1dceff89a70d9e37ca025e8db3674eac" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OnTestProgramStart</definition>
+        <argsstring>(const UnitTest &amp;unit_test)=0</argsstring>
+        <name>OnTestProgramStart</name>
+        <reimplementedby refid="d6/d86/classtesting_1_1EmptyTestEventListener_1a9d43d6e5c4c37ade824998de2d83bd20">OnTestProgramStart</reimplementedby>
+        <reimplementedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1a9d43d6e5c4c37ade824998de2d83bd20">OnTestProgramStart</reimplementedby>
+        <reimplementedby refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater_1a99623b41fa569a273446aafb98cc43b0">OnTestProgramStart</reimplementedby>
+        <param>
+          <type>const <ref refid="d5/d21/classtesting_1_1UnitTest" kindref="compound">UnitTest</ref> &amp;</type>
+          <declname>unit_test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="996" column="16"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a4d5d6a2e8fa3b918a284252602a98279" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">UnitTestImpl::RunAllTests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1a02f601dff022b7d252f54f559acaf3f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OnTestStart</definition>
+        <argsstring>(const TestInfo &amp;test_info)=0</argsstring>
+        <name>OnTestStart</name>
+        <reimplementedby refid="d6/d86/classtesting_1_1EmptyTestEventListener_1a4ee6b680b188b358efdd3705aaa67c66">OnTestStart</reimplementedby>
+        <reimplementedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1abc248085e6dcbfc41789bd620e5bdbae">OnTestStart</reimplementedby>
+        <reimplementedby refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater_1ae19a0ede8525bdc3ec6e05725004769b">OnTestStart</reimplementedby>
+        <param>
+          <type>const <ref refid="df/d65/classtesting_1_1TestInfo" kindref="compound">TestInfo</ref> &amp;</type>
+          <declname>test_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="1014" column="16"/>
+        <referencedby refid="df/d65/classtesting_1_1TestInfo_1aa3eca255b6be227d7d901cc2a72017a5" compoundref="df/d5b/gtest_8cc" startline="2630" endline="2672">TestInfo::Run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d51/classtesting_1_1TestEventListener_1aa248195927071de64a72a5557296497f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~TestEventListener</definition>
+        <argsstring>()</argsstring>
+        <name>~TestEventListener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="993" column="11" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="993" bodyend="993"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>TestEventListener</label>
+        <link refid="d0/d51/classtesting_1_1TestEventListener"/>
+      </node>
+      <node id="5">
+        <label>TestEventRepeater</label>
+        <link refid="d9/df1/classtesting_1_1internal_1_1TestEventRepeater"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>XmlUnitTestResultPrinter</label>
+        <link refid="d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PrettyUnitTestResultPrinter</label>
+        <link refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>EmptyTestEventListener</label>
+        <link refid="d6/d86/classtesting_1_1EmptyTestEventListener"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>TestEventListener</label>
+        <link refid="d0/d51/classtesting_1_1TestEventListener"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/gtest.h" line="991" column="1" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="991" bodyend="1037"/>
+    <listofallmembers>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1a9ff0d48e0f7c64dea5cb0a607498d6f6" prot="public" virt="pure-virtual"><scope>testing::TestEventListener</scope><name>OnEnvironmentsSetUpEnd</name></member>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1a070798921b8d09f891e02762287ee5b0" prot="public" virt="pure-virtual"><scope>testing::TestEventListener</scope><name>OnEnvironmentsSetUpStart</name></member>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1a9cc8d7ef2c9e722a301ec4cee20633e2" prot="public" virt="pure-virtual"><scope>testing::TestEventListener</scope><name>OnEnvironmentsTearDownEnd</name></member>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1a1246b8fa84a0807afeffa6e986254ee8" prot="public" virt="pure-virtual"><scope>testing::TestEventListener</scope><name>OnEnvironmentsTearDownStart</name></member>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1ab92df2852da3e002303be838d8550c76" prot="public" virt="pure-virtual"><scope>testing::TestEventListener</scope><name>OnTestCaseEnd</name></member>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1aaf531e12c423fe117b7a4c6d2217dcf7" prot="public" virt="pure-virtual"><scope>testing::TestEventListener</scope><name>OnTestCaseStart</name></member>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1a48d3993f2b69de40ecca5476ff940e24" prot="public" virt="pure-virtual"><scope>testing::TestEventListener</scope><name>OnTestEnd</name></member>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1a7e35fec33b744e6a410f10e2fa090015" prot="public" virt="pure-virtual"><scope>testing::TestEventListener</scope><name>OnTestIterationEnd</name></member>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1ac7cacc17e8a9b6e18d7c6031df762608" prot="public" virt="pure-virtual"><scope>testing::TestEventListener</scope><name>OnTestIterationStart</name></member>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1a6897200761af7db2d3212d5d3c1571d9" prot="public" virt="pure-virtual"><scope>testing::TestEventListener</scope><name>OnTestPartResult</name></member>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1a543233908c4fd972550c7198c31c895a" prot="public" virt="pure-virtual"><scope>testing::TestEventListener</scope><name>OnTestProgramEnd</name></member>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1a1dceff89a70d9e37ca025e8db3674eac" prot="public" virt="pure-virtual"><scope>testing::TestEventListener</scope><name>OnTestProgramStart</name></member>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1a02f601dff022b7d252f54f559acaf3f7" prot="public" virt="pure-virtual"><scope>testing::TestEventListener</scope><name>OnTestStart</name></member>
+      <member refid="d0/d51/classtesting_1_1TestEventListener_1aa248195927071de64a72a5557296497f" prot="public" virt="virtual"><scope>testing::TestEventListener</scope><name>~TestEventListener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

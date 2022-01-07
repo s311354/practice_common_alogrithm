@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d92/structtesting_1_1internal_1_1IsAProtocolMessage" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::IsAProtocolMessage</compoundname>
+    <basecompoundref refid="d3/d75/structtesting_1_1internal_1_1bool__constant" prot="public" virt="non-virtual">bool_constant&lt; ImplicitlyConvertible&lt; const T *, const ::ProtocolMessage * &gt;::value||ImplicitlyConvertible&lt; const T *, const ::proto2::Message * &gt;::value &gt;</basecompoundref>
+    <includes refid="d5/da1/gtest-internal_8h" local="no">gtest-internal.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d3/d75/structtesting_1_1internal_1_1bool__constant_1a78018012842840cbf67b94799d759ef7" prot="public" static="no">
+        <type><ref refid="d3/d75/structtesting_1_1internal_1_1bool__constant" kindref="compound">bool_constant</ref>&lt; bool_value &gt;</type>
+        <definition>typedef bool_constant&lt;bool_value&gt; type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2204" column="25" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d3/d75/structtesting_1_1internal_1_1bool__constant_1a11ddd051208250c32dc4985abcafa86d" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2205" column="21" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2205" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>bool_constant&lt; ImplicitlyConvertible&lt; const T *, const ::ProtocolMessage * &gt;::value||ImplicitlyConvertible&lt; const T *, const ::proto2::Message * &gt;::value &gt;</label>
+        <link refid="d3/d75/structtesting_1_1internal_1_1bool__constant"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; ImplicitlyConvertible&lt; const T *, const ::ProtocolMessage * &gt;::value||ImplicitlyConvertible&lt; const T *, const ::proto2::Message * &gt;::value &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>bool_constant&lt; bool_value &gt;</label>
+        <link refid="d3/d75/structtesting_1_1internal_1_1bool__constant"/>
+      </node>
+      <node id="1">
+        <label>IsAProtocolMessage&lt; T &gt;</label>
+        <link refid="d9/d92/structtesting_1_1internal_1_1IsAProtocolMessage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>bool_constant&lt; ImplicitlyConvertible&lt; const T *, const ::ProtocolMessage * &gt;::value||ImplicitlyConvertible&lt; const T *, const ::proto2::Message * &gt;::value &gt;</label>
+        <link refid="d3/d75/structtesting_1_1internal_1_1bool__constant"/>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; ImplicitlyConvertible&lt; const T *, const ::ProtocolMessage * &gt;::value||ImplicitlyConvertible&lt; const T *, const ::proto2::Message * &gt;::value &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>bool_constant&lt; bool_value &gt;</label>
+        <link refid="d3/d75/structtesting_1_1internal_1_1bool__constant"/>
+      </node>
+      <node id="1">
+        <label>IsAProtocolMessage&lt; T &gt;</label>
+        <link refid="d9/d92/structtesting_1_1internal_1_1IsAProtocolMessage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="903" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-internal.h" bodystart="906" bodyend="907"/>
+    <listofallmembers>
+      <member refid="d3/d75/structtesting_1_1internal_1_1bool__constant_1a78018012842840cbf67b94799d759ef7" prot="public" virt="non-virtual"><scope>testing::internal::IsAProtocolMessage</scope><name>type</name></member>
+      <member refid="d3/d75/structtesting_1_1internal_1_1bool__constant_1a11ddd051208250c32dc4985abcafa86d" prot="public" virt="non-virtual"><scope>testing::internal::IsAProtocolMessage</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

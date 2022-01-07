@@ -3,7 +3,7 @@
   <compounddef id="dir_f6058f045a35df20fa1a415aafff6e1c" kind="dir">
     <compoundname>design_pattern/strategy_pattern</compoundname>
     <innerdir refid="dir_2b5a98971d1c3f1462c09e8e1e67d69b">design_pattern/strategy_pattern/CMakeFiles</innerdir>
-    <innerfile refid="design__pattern_2strategy__pattern_2main_8cc">main.cc</innerfile>
+    <innerfile refid="d4/d51/design__pattern_2strategy__pattern_2main_8cc">main.cc</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

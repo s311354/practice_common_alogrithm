@@ -2,16 +2,16 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_413744d01ad3bfc6a23a3cf4ea72332c" kind="dir">
     <compoundname>lib/googletest/src</compoundname>
-    <innerfile refid="gtest-all_8cc">gtest-all.cc</innerfile>
-    <innerfile refid="gtest-death-test_8cc">gtest-death-test.cc</innerfile>
-    <innerfile refid="gtest-filepath_8cc">gtest-filepath.cc</innerfile>
-    <innerfile refid="gtest-internal-inl_8h">gtest-internal-inl.h</innerfile>
-    <innerfile refid="gtest-port_8cc">gtest-port.cc</innerfile>
-    <innerfile refid="gtest-printers_8cc">gtest-printers.cc</innerfile>
-    <innerfile refid="gtest-test-part_8cc">gtest-test-part.cc</innerfile>
-    <innerfile refid="gtest-typed-test_8cc">gtest-typed-test.cc</innerfile>
-    <innerfile refid="gtest_8cc">gtest.cc</innerfile>
-    <innerfile refid="gtest__main_8cc">gtest_main.cc</innerfile>
+    <innerfile refid="d1/d8c/gtest-all_8cc">gtest-all.cc</innerfile>
+    <innerfile refid="de/d50/gtest-death-test_8cc">gtest-death-test.cc</innerfile>
+    <innerfile refid="dc/d20/gtest-filepath_8cc">gtest-filepath.cc</innerfile>
+    <innerfile refid="d0/da1/gtest-internal-inl_8h">gtest-internal-inl.h</innerfile>
+    <innerfile refid="df/d09/gtest-port_8cc">gtest-port.cc</innerfile>
+    <innerfile refid="db/d74/gtest-printers_8cc">gtest-printers.cc</innerfile>
+    <innerfile refid="d3/dc2/gtest-test-part_8cc">gtest-test-part.cc</innerfile>
+    <innerfile refid="d9/d5a/gtest-typed-test_8cc">gtest-typed-test.cc</innerfile>
+    <innerfile refid="df/d5b/gtest_8cc">gtest.cc</innerfile>
+    <innerfile refid="d3/d3a/gtest__main_8cc">gtest_main.cc</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

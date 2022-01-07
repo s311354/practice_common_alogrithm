@@ -1,7 +1,0 @@
-<map id="testing::TestPartResultReporterInterface" name="testing::TestPartResultReporterInterface">
-<area shape="rect" id="node1" title=" " alt="" coords="387,5,606,156"/>
-<area shape="rect" id="node2" href="$classtesting_1_1ScopedFakeTestPartResultReporter.html" title=" " alt="" coords="5,204,231,589"/>
-<area shape="rect" id="node3" href="$classtesting_1_1internal_1_1DefaultGlobalTestPartResultReporter.html" title=" " alt="" coords="255,285,485,509"/>
-<area shape="rect" id="node4" href="$classtesting_1_1internal_1_1DefaultPerThreadTestPartResultReporter.html" title=" " alt="" coords="510,277,739,516"/>
-<area shape="rect" id="node5" href="$classtesting_1_1internal_1_1HasNewFatalFailureHelper.html" title=" " alt="" coords="764,255,1011,538"/>
-</map>

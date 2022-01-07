@@ -3,17 +3,17 @@
   <compounddef id="dir_e93e7414dc2c68ff1f2c6706f5677270" kind="dir">
     <compoundname>lib/googletest/include/gtest/internal</compoundname>
     <innerdir refid="dir_20092d0c84f7e37a5d543e8e1b2c8c3b">lib/googletest/include/gtest/internal/custom</innerdir>
-    <innerfile refid="gtest-death-test-internal_8h">gtest-death-test-internal.h</innerfile>
-    <innerfile refid="gtest-filepath_8h">gtest-filepath.h</innerfile>
-    <innerfile refid="gtest-internal_8h">gtest-internal.h</innerfile>
-    <innerfile refid="gtest-linked__ptr_8h">gtest-linked_ptr.h</innerfile>
-    <innerfile refid="gtest-param-util-generated_8h">gtest-param-util-generated.h</innerfile>
-    <innerfile refid="gtest-param-util_8h">gtest-param-util.h</innerfile>
-    <innerfile refid="gtest-port-arch_8h">gtest-port-arch.h</innerfile>
-    <innerfile refid="gtest-port_8h">gtest-port.h</innerfile>
-    <innerfile refid="gtest-string_8h">gtest-string.h</innerfile>
-    <innerfile refid="gtest-tuple_8h">gtest-tuple.h</innerfile>
-    <innerfile refid="gtest-type-util_8h">gtest-type-util.h</innerfile>
+    <innerfile refid="d0/d1a/gtest-death-test-internal_8h">gtest-death-test-internal.h</innerfile>
+    <innerfile refid="dc/d79/gtest-filepath_8h">gtest-filepath.h</innerfile>
+    <innerfile refid="d5/da1/gtest-internal_8h">gtest-internal.h</innerfile>
+    <innerfile refid="d0/d03/gtest-linked__ptr_8h">gtest-linked_ptr.h</innerfile>
+    <innerfile refid="dc/db7/gtest-param-util-generated_8h">gtest-param-util-generated.h</innerfile>
+    <innerfile refid="dc/df2/gtest-param-util_8h">gtest-param-util.h</innerfile>
+    <innerfile refid="d6/d76/gtest-port-arch_8h">gtest-port-arch.h</innerfile>
+    <innerfile refid="d3/dc9/gtest-port_8h">gtest-port.h</innerfile>
+    <innerfile refid="d0/d45/gtest-string_8h">gtest-string.h</innerfile>
+    <innerfile refid="d1/d63/gtest-tuple_8h">gtest-tuple.h</innerfile>
+    <innerfile refid="d9/d97/gtest-type-util_8h">gtest-type-util.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

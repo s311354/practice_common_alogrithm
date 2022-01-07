@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/df3/graph_8h" kind="file" language="C++">
+    <compoundname>graph.h</compoundname>
+    <includes refid="d7/d90/graph__representation_8h" local="yes">./graph_representation.h</includes>
+    <includes local="no">map</includes>
+    <includedby refid="db/df7/graphs_2main_8cc" local="yes">graphs/main.cc</includedby>
+    <includedby refid="d5/dc5/graph_8cc" local="yes">graphs/src/graph.cc</includedby>
+    <includedby refid="de/d87/graph__directed_8h" local="yes">graphs/src/graph_directed.h</includedby>
+    <includedby refid="dd/dba/graph__directed_8cc" local="yes">graphs/src/graph_directed.cc</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>graphs/src/graph.h</label>
+        <link refid="d6/df3/graph_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector</label>
+        <link refid="cpp/header/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="2">
+        <label>./graph_representation.h</label>
+        <link refid="d7/d90/graph__representation_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+        <link refid="cpp/header/string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="5">
+        <label>map</label>
+        <link refid="cpp/header/map" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>graphs/main.cc</label>
+        <link refid="db/df7/graphs_2main_8cc"/>
+      </node>
+      <node id="1">
+        <label>graphs/src/graph.h</label>
+        <link refid="d6/df3/graph_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>graphs/src/graph.cc</label>
+        <link refid="d5/dc5/graph_8cc"/>
+      </node>
+      <node id="4">
+        <label>graphs/src/graph_directed.h</label>
+        <link refid="de/d87/graph__directed_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>graphs/src/graph_directed.cc</label>
+        <link refid="dd/dba/graph__directed_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="de/d16/classcommon_1_1_graph" prot="public">common::Graph</innerclass>
+    <innernamespace refid="d9/d0c/namespacecommon">common</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d6/df3/graph_8h_1a75f1d9ff4d7a931fe499453e94dd64e9" prot="public" static="no">
+        <name>GRAPH_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph.h" line="5" column="9" bodyfile="graphs/src/graph.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d90/graph__representation_8h" kindref="compound">./graph_representation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/map" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">map</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GRAPH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="d6/df3/graph_8h_1a75f1d9ff4d7a931fe499453e94dd64e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GRAPH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d9/d0c/namespacecommon" kindref="compound">common</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="de/d16/classcommon_1_1_graph" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="de/d16/classcommon_1_1_graph" kindref="compound">Graph</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14" refid="de/d16/classcommon_1_1_graph_1afc5ef9d72cc2c509814200791eaef62c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d16/classcommon_1_1_graph_1afc5ef9d72cc2c509814200791eaef62c" kindref="member">Graph</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="15" refid="de/d16/classcommon_1_1_graph_1ad958d0962c6f5876c5fff1c0ae84ed03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d16/classcommon_1_1_graph_1ad958d0962c6f5876c5fff1c0ae84ed03" kindref="member">Graph</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>)<sp/>{};</highlight></codeline>
+<codeline lineno="16" refid="de/d16/classcommon_1_1_graph_1a12f75f10f87092e6a58597cbfe17944c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d16/classcommon_1_1_graph_1a12f75f10f87092e6a58597cbfe17944c" kindref="member">Graph</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d16/classcommon_1_1_graph" kindref="compound">Graph</ref><sp/>&amp;)<sp/>{};</highlight></codeline>
+<codeline lineno="17" refid="de/d16/classcommon_1_1_graph_1abc74f73353e7d187d9a3c846001011d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="de/d16/classcommon_1_1_graph_1abc74f73353e7d187d9a3c846001011d2" kindref="member">~Graph</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*ISO<sp/>14882<sp/>wrote:<sp/>A<sp/>virtual<sp/>function<sp/>call<sp/>uses<sp/>the<sp/>default<sp/>arguments<sp/>in<sp/>the<sp/>declaration<sp/>of<sp/>the<sp/>virtual<sp/>function<sp/>determined<sp/>by<sp/>the<sp/>static<sp/>type<sp/>of<sp/>the<sp/>pointer<sp/>or<sp/>reference<sp/>denoting<sp/>the<sp/>object.<sp/>An<sp/>overriding<sp/>function<sp/>in<sp/>a<sp/>derived<sp/>class<sp/>does<sp/>not<sp/>acquire<sp/>default<sp/>arguments<sp/>from<sp/>the<sp/>function<sp/>it<sp/>overrides.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="de/d16/classcommon_1_1_graph_1abbd73755320db99679c74c3a57c70fb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d16/classcommon_1_1_graph_1abbd73755320db99679c74c3a57c70fb1" kindref="member">BFS</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="21" refid="de/d16/classcommon_1_1_graph_1a593c3553d7636f1bbd89f37f667fc904" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d16/classcommon_1_1_graph_1a593c3553d7636f1bbd89f37f667fc904" kindref="member">DFS</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="22" refid="de/d16/classcommon_1_1_graph_1aca687d838fec6c8849ea41d61eeae300" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d16/classcommon_1_1_graph_1aca687d838fec6c8849ea41d61eeae300" kindref="member">AddEdge</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>source,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>destination)<sp/>{};</highlight></codeline>
+<codeline lineno="23" refid="de/d16/classcommon_1_1_graph_1a219030653119fba49b3d60146c568014" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d16/classcommon_1_1_graph_1a219030653119fba49b3d60146c568014" kindref="member">PrintDebug</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>unique<sp/>pointer<sp/>manages<sp/>the<sp/>storage<sp/>of<sp/>a<sp/>pointer,<sp/>providing<sp/>a<sp/>limited<sp/>garbage-collection<sp/>facility,<sp/>with<sp/>little<sp/>to<sp/>no<sp/>overhead<sp/>over<sp/>built-in<sp/>pointers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="de/d16/classcommon_1_1_graph_1a3eaeac38147dd6d6f4c4bb6228980baf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/memory/unique_ptr" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">unique_ptr&lt;common::GraphRepresentation&gt;</ref><sp/><ref refid="de/d16/classcommon_1_1_graph_1a3eaeac38147dd6d6f4c4bb6228980baf" kindref="member">representation</ref>;</highlight></codeline>
+<codeline lineno="27" refid="de/d16/classcommon_1_1_graph_1ae8f2640efa2f2e1875e75aee1bc7c248" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="de/d16/classcommon_1_1_graph_1ae8f2640efa2f2e1875e75aee1bc7c248" kindref="member">vertices</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GRAPH_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="graphs/src/graph.h"/>
+  </compounddef>
+</doxygen>

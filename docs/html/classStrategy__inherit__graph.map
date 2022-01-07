@@ -1,6 +1,0 @@
-<map id="Strategy" name="Strategy">
-<area shape="rect" id="node1" title=" " alt="" coords="177,5,405,97"/>
-<area shape="rect" id="node2" href="$classConcreteStrategyA.html" title=" " alt="" coords="5,145,180,237"/>
-<area shape="rect" id="node3" href="$classConcreteStrategyB.html" title=" " alt="" coords="204,145,379,237"/>
-<area shape="rect" id="node4" href="$classConcreteStrategyC.html" title=" " alt="" coords="403,145,577,237"/>
-</map>

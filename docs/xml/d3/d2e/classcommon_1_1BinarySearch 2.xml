@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d2e/classcommon_1_1BinarySearch" kind="class" language="C++" prot="public">
+    <compoundname>common::BinarySearch</compoundname>
+    <includes refid="d8/d1e/binary__search_8h" local="no">binary_search.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1a0bae2549747f1ba11bbc62946f933b05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>common::BinarySearch::BinarySearch</definition>
+        <argsstring>()</argsstring>
+        <name>BinarySearch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="23" column="5" bodyfile="binary_search/binary_search.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1a355b65e2dceea1526bf0e97ae8f503bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+        <definition>BSTNode* common::BinarySearch::BinarySearchGetNewNode</definition>
+        <argsstring>(int value)</argsstring>
+        <name>BinarySearchGetNewNode</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="26" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1a20e8cb86f51e3cc02bfc138b7d86bf37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void common::BinarySearch::DeleteTree</definition>
+        <argsstring>(BSTNode *node)</argsstring>
+        <name>DeleteTree</name>
+        <param>
+          <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="51" column="10" bodyfile="binary_search/binary_search.cc" bodystart="99" bodyend="106"/>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" compoundref="d8/d1e/binary__search_8h" startline="12">common::BSTNode::left</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" compoundref="d8/d1e/binary__search_8h" startline="13">common::BSTNode::right</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1a9286e68d71049b4c0225698f5584b720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+        <definition>BSTNode * common::BinarySearch::DeleteValue</definition>
+        <argsstring>(BSTNode *node, int value)</argsstring>
+        <name>DeleteValue</name>
+        <param>
+          <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="49" column="13" bodyfile="binary_search/binary_search.cc" bodystart="108" bodyend="136"/>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" compoundref="d8/d1e/binary__search_8h" startline="11">common::BSTNode::data</references>
+        <references refid="d3/d2e/classcommon_1_1BinarySearch_1abf445f56b34200993f66b829b9481bee" compoundref="dd/d7c/binary__search_8cc" startline="57" endline="64">GetMinNode</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" compoundref="d8/d1e/binary__search_8h" startline="12">common::BSTNode::left</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" compoundref="d8/d1e/binary__search_8h" startline="13">common::BSTNode::right</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1af5da473ef8f59204d9378229ad96d74c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int common::BinarySearch::GetHeight</definition>
+        <argsstring>(BSTNode *node)</argsstring>
+        <name>GetHeight</name>
+        <param>
+          <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="47" column="9" bodyfile="binary_search/binary_search.cc" bodystart="93" bodyend="97"/>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" compoundref="d8/d1e/binary__search_8h" startline="12">common::BSTNode::left</references>
+        <references refid="cpp/algorithm/max_1">std::max</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" compoundref="d8/d1e/binary__search_8h" startline="13">common::BSTNode::right</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1a2cf0ec9ac9e01874db222e61d6196d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int common::BinarySearch::GetMax</definition>
+        <argsstring>(BSTNode *node)</argsstring>
+        <name>GetMax</name>
+        <param>
+          <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="45" column="9" bodyfile="binary_search/binary_search.cc" bodystart="84" bodyend="91"/>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" compoundref="d8/d1e/binary__search_8h" startline="11">common::BSTNode::data</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" compoundref="d8/d1e/binary__search_8h" startline="13">common::BSTNode::right</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1a90d8c5c674ca02edcd70302f9687cddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+        <definition>BSTNode * common::BinarySearch::GetMaxNode</definition>
+        <argsstring>(BSTNode *node)</argsstring>
+        <name>GetMaxNode</name>
+        <param>
+          <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="43" column="13" bodyfile="binary_search/binary_search.cc" bodystart="75" bodyend="82"/>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" compoundref="d8/d1e/binary__search_8h" startline="13">common::BSTNode::right</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1ae76b080c03adc9d4bbeebd9289bca634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int common::BinarySearch::GetMin</definition>
+        <argsstring>(BSTNode *node)</argsstring>
+        <name>GetMin</name>
+        <param>
+          <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="41" column="9" bodyfile="binary_search/binary_search.cc" bodystart="66" bodyend="73"/>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" compoundref="d8/d1e/binary__search_8h" startline="11">common::BSTNode::data</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" compoundref="d8/d1e/binary__search_8h" startline="12">common::BSTNode::left</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1abf445f56b34200993f66b829b9481bee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+        <definition>BSTNode * common::BinarySearch::GetMinNode</definition>
+        <argsstring>(BSTNode *node)</argsstring>
+        <name>GetMinNode</name>
+        <param>
+          <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="39" column="13" bodyfile="binary_search/binary_search.cc" bodystart="57" bodyend="64"/>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" compoundref="d8/d1e/binary__search_8h" startline="12">common::BSTNode::left</references>
+        <referencedby refid="d3/d2e/classcommon_1_1BinarySearch_1a9286e68d71049b4c0225698f5584b720" compoundref="dd/d7c/binary__search_8cc" startline="108" endline="136">DeleteValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1a518555c24c8d42b37d27456f597fc6a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+        <definition>BSTNode * common::BinarySearch::GetNewNode</definition>
+        <argsstring>(int value)</argsstring>
+        <name>GetNewNode</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="29" column="13" bodyfile="binary_search/binary_search.cc" bodystart="5" bodyend="12"/>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" compoundref="d8/d1e/binary__search_8h" startline="11">common::BSTNode::data</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" compoundref="d8/d1e/binary__search_8h" startline="12">common::BSTNode::left</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" compoundref="d8/d1e/binary__search_8h" startline="13">common::BSTNode::right</references>
+        <referencedby refid="d3/d2e/classcommon_1_1BinarySearch_1a123c53dcbf6b8e9c8d8238a4c5dc7ef4" compoundref="dd/d7c/binary__search_8cc" startline="14" endline="28">Insert</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1a123c53dcbf6b8e9c8d8238a4c5dc7ef4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+        <definition>BSTNode * common::BinarySearch::Insert</definition>
+        <argsstring>(BSTNode *node, int value)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="31" column="13" bodyfile="binary_search/binary_search.cc" bodystart="14" bodyend="28"/>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" compoundref="d8/d1e/binary__search_8h" startline="11">common::BSTNode::data</references>
+        <references refid="d3/d2e/classcommon_1_1BinarySearch_1a518555c24c8d42b37d27456f597fc6a3" compoundref="dd/d7c/binary__search_8cc" startline="5" endline="12">GetNewNode</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" compoundref="d8/d1e/binary__search_8h" startline="12">common::BSTNode::left</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" compoundref="d8/d1e/binary__search_8h" startline="13">common::BSTNode::right</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1af71b6343ea75fcc8ce8378d73fa9c6ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool common::BinarySearch::IsBetween</definition>
+        <argsstring>(BSTNode *node, int min, int max)</argsstring>
+        <name>IsBetween</name>
+        <param>
+          <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="37" column="10" bodyfile="binary_search/binary_search.cc" bodystart="46" bodyend="55"/>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" compoundref="d8/d1e/binary__search_8h" startline="11">common::BSTNode::data</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" compoundref="d8/d1e/binary__search_8h" startline="12">common::BSTNode::left</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" compoundref="d8/d1e/binary__search_8h" startline="13">common::BSTNode::right</references>
+        <referencedby refid="d3/d2e/classcommon_1_1BinarySearch_1ac809cfc7dabff0711f0d1884493ceeed" compoundref="dd/d7c/binary__search_8cc" startline="42" endline="44">IsBinarySearchTree</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1ac809cfc7dabff0711f0d1884493ceeed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool common::BinarySearch::IsBinarySearchTree</definition>
+        <argsstring>(BSTNode *node)</argsstring>
+        <name>IsBinarySearchTree</name>
+        <param>
+          <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="35" column="10" bodyfile="binary_search/binary_search.cc" bodystart="42" bodyend="44"/>
+        <references refid="d3/d2e/classcommon_1_1BinarySearch_1af71b6343ea75fcc8ce8378d73fa9c6ae" compoundref="dd/d7c/binary__search_8cc" startline="46" endline="55">IsBetween</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1a5b9b8c7fe6e6e3610fb67959b8268a2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void common::BinarySearch::PrintBFS</definition>
+        <argsstring>(BSTNode *node)</argsstring>
+        <name>PrintBFS</name>
+        <param>
+          <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="55" column="10" bodyfile="binary_search/binary_search.cc" bodystart="138" bodyend="154"/>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" compoundref="d8/d1e/binary__search_8h" startline="11">common::BSTNode::data</references>
+        <references refid="cpp/container/queue/empty_1">std::queue&lt; T &gt;::empty</references>
+        <references refid="cpp/container/queue/front_1">std::queue&lt; T &gt;::front</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" compoundref="d8/d1e/binary__search_8h" startline="12">common::BSTNode::left</references>
+        <references refid="cpp/container/queue/pop_1">std::queue&lt; T &gt;::pop</references>
+        <references refid="cpp/container/queue/push_1">std::queue&lt; T &gt;::push</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" compoundref="d8/d1e/binary__search_8h" startline="13">common::BSTNode::right</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1aff88341eff3205aa298d54252dcf12e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void common::BinarySearch::PrintInOrder</definition>
+        <argsstring>(BSTNode *node)</argsstring>
+        <name>PrintInOrder</name>
+        <param>
+          <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="53" column="10" bodyfile="binary_search/binary_search.cc" bodystart="156" bodyend="164"/>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" compoundref="d8/d1e/binary__search_8h" startline="11">common::BSTNode::data</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" compoundref="d8/d1e/binary__search_8h" startline="12">common::BSTNode::left</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" compoundref="d8/d1e/binary__search_8h" startline="13">common::BSTNode::right</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1af966dc3312822c8ffb9dd6b47a86323c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool common::BinarySearch::Search</definition>
+        <argsstring>(BSTNode *node, int value)</argsstring>
+        <name>Search</name>
+        <param>
+          <type><ref refid="d2/dbd/structcommon_1_1BSTNode" kindref="compound">BSTNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="33" column="10" bodyfile="binary_search/binary_search.cc" bodystart="30" bodyend="40"/>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1abd25d73eeda629c89624edc808dbb8d2" compoundref="d8/d1e/binary__search_8h" startline="11">common::BSTNode::data</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a404c84b494cb19afc8101c08741ab978" compoundref="d8/d1e/binary__search_8h" startline="12">common::BSTNode::left</references>
+        <references refid="d2/dbd/structcommon_1_1BSTNode_1a6c53b106cde01d23e7f92b7366976b96" compoundref="d8/d1e/binary__search_8h" startline="13">common::BSTNode::right</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d2e/classcommon_1_1BinarySearch_1a5e7fb1e4bba49438990654b773b5eea6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual common::BinarySearch::~BinarySearch</definition>
+        <argsstring>()</argsstring>
+        <name>~BinarySearch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="binary_search/binary_search.h" line="24" column="13" bodyfile="binary_search/binary_search.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>common::BinarySearch</label>
+        <link refid="d3/d2e/classcommon_1_1BinarySearch"/>
+      </node>
+    </collaborationgraph>
+    <location file="binary_search/binary_search.h" line="17" column="1" bodyfile="binary_search/binary_search.h" bodystart="18" bodyend="57"/>
+    <listofallmembers>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1a0bae2549747f1ba11bbc62946f933b05" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>BinarySearch</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1a355b65e2dceea1526bf0e97ae8f503bb" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>BinarySearchGetNewNode</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1a20e8cb86f51e3cc02bfc138b7d86bf37" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>DeleteTree</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1a9286e68d71049b4c0225698f5584b720" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>DeleteValue</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1af5da473ef8f59204d9378229ad96d74c" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>GetHeight</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1a2cf0ec9ac9e01874db222e61d6196d73" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>GetMax</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1a90d8c5c674ca02edcd70302f9687cddc" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>GetMaxNode</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1ae76b080c03adc9d4bbeebd9289bca634" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>GetMin</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1abf445f56b34200993f66b829b9481bee" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>GetMinNode</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1a518555c24c8d42b37d27456f597fc6a3" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>GetNewNode</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1a123c53dcbf6b8e9c8d8238a4c5dc7ef4" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>Insert</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1af71b6343ea75fcc8ce8378d73fa9c6ae" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>IsBetween</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1ac809cfc7dabff0711f0d1884493ceeed" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>IsBinarySearchTree</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1a5b9b8c7fe6e6e3610fb67959b8268a2b" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>PrintBFS</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1aff88341eff3205aa298d54252dcf12e6" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>PrintInOrder</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1af966dc3312822c8ffb9dd6b47a86323c" prot="public" virt="non-virtual"><scope>common::BinarySearch</scope><name>Search</name></member>
+      <member refid="d3/d2e/classcommon_1_1BinarySearch_1a5e7fb1e4bba49438990654b773b5eea6" prot="public" virt="virtual"><scope>common::BinarySearch</scope><name>~BinarySearch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

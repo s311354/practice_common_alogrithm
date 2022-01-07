@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/d15/structtesting_1_1internal_1_1is__pointer_3_01_t_01_5_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::is_pointer&lt; T * &gt;</compoundname>
+    <basecompoundref refid="d3/d75/structtesting_1_1internal_1_1bool__constant" prot="public" virt="non-virtual">testing::internal::bool_constant&lt; true &gt;</basecompoundref>
+    <includes refid="d3/dc9/gtest-port_8h" local="no">gtest-port.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d3/d75/structtesting_1_1internal_1_1bool__constant_1a78018012842840cbf67b94799d759ef7" prot="public" static="no">
+        <type><ref refid="d3/d75/structtesting_1_1internal_1_1bool__constant" kindref="compound">bool_constant</ref>&lt; bool_value &gt;</type>
+        <definition>typedef bool_constant&lt;bool_value&gt; type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2204" column="25" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d3/d75/structtesting_1_1internal_1_1bool__constant_1a11ddd051208250c32dc4985abcafa86d" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= bool_value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2205" column="21" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2205" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>true_type</label>
+        <link refid="d3/d75/structtesting_1_1internal_1_1bool__constant"/>
+      </node>
+      <node id="1">
+        <label>is_pointer&lt; T * &gt;</label>
+        <link refid="de/d15/structtesting_1_1internal_1_1is__pointer_3_01_t_01_5_01_4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>true_type</label>
+        <link refid="d3/d75/structtesting_1_1internal_1_1bool__constant"/>
+      </node>
+      <node id="1">
+        <label>is_pointer&lt; T * &gt;</label>
+        <link refid="de/d15/structtesting_1_1internal_1_1is__pointer_3_01_t_01_5_01_4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2216" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2216" bodyend="2216"/>
+    <listofallmembers>
+      <member refid="d3/d75/structtesting_1_1internal_1_1bool__constant_1a78018012842840cbf67b94799d759ef7" prot="public" virt="non-virtual"><scope>testing::internal::is_pointer&lt; T * &gt;</scope><name>type</name></member>
+      <member refid="d3/d75/structtesting_1_1internal_1_1bool__constant_1a11ddd051208250c32dc4985abcafa86d" prot="public" virt="non-virtual"><scope>testing::internal::is_pointer&lt; T * &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

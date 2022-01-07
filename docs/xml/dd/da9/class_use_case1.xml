@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/da9/class_use_case1" kind="class" language="C++" prot="public">
+    <compoundname>UseCase1</compoundname>
+    <basecompoundref refid="d3/dc0/class_bridge" prot="public" virt="non-virtual">Bridge</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/da9/class_use_case1_1ade7253500755cdd870a579c7c4b023ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void someFunctionality</definition>
+        <argsstring>()</argsstring>
+        <name>someFunctionality</name>
+        <reimplements refid="d7/da6/class_abstract_interface_1aa659d40ff29cac697e2fc1349b1458f6">someFunctionality</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/bridge_pattern/main.cc" line="58" column="14" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="58" bodyend="62"/>
+        <references refid="d0/de9/class_implementation_interface_1af8c356ee8ab29157f8b00cc286e3f490">ImplementationInterface::anotherFunctionality</references>
+        <references refid="d3/dc0/class_bridge_1a0019b7bc5dfe65c7c80394df5526eecf" compoundref="de/d6c/design__pattern_2bridge__pattern_2main_8cc" startline="40">Bridge::implementation</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/da9/class_use_case1_1a82f5ff42c6182bcdfd378ab3019b55a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UseCase1</definition>
+        <argsstring>(ImplementationInterface *backend)</argsstring>
+        <name>UseCase1</name>
+        <param>
+          <type><ref refid="d0/de9/class_implementation_interface" kindref="compound">ImplementationInterface</ref> *</type>
+          <declname>backend</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/bridge_pattern/main.cc" line="54" column="9" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="54" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d3/dc0/class_bridge_1a0019b7bc5dfe65c7c80394df5526eecf" prot="protected" static="no" mutable="no">
+        <type><ref refid="d0/de9/class_implementation_interface" kindref="compound">ImplementationInterface</ref> *</type>
+        <definition>ImplementationInterface* implementation</definition>
+        <argsstring></argsstring>
+        <name>implementation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/bridge_pattern/main.cc" line="40" column="33" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="40" bodyend="-1"/>
+        <referencedby refid="d3/dc0/class_bridge_1a84230fad93690ce7537935066219257c" compoundref="de/d6c/design__pattern_2bridge__pattern_2main_8cc" startline="43" endline="46">Bridge::Bridge</referencedby>
+        <referencedby refid="dd/da9/class_use_case1_1ade7253500755cdd870a579c7c4b023ed" compoundref="de/d6c/design__pattern_2bridge__pattern_2main_8cc" startline="58" endline="62">someFunctionality</referencedby>
+        <referencedby refid="d7/d1d/class_use_case2_1ade7253500755cdd870a579c7c4b023ed" compoundref="de/d6c/design__pattern_2bridge__pattern_2main_8cc" startline="72" endline="76">UseCase2::someFunctionality</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UseCase1</label>
+        <link refid="dd/da9/class_use_case1"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AbstractInterface</label>
+        <link refid="d7/da6/class_abstract_interface"/>
+      </node>
+      <node id="2">
+        <label>Bridge</label>
+        <link refid="d3/dc0/class_bridge"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>ImplementationInterface</label>
+        <link refid="d0/de9/class_implementation_interface"/>
+      </node>
+      <node id="1">
+        <label>UseCase1</label>
+        <link refid="dd/da9/class_use_case1"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AbstractInterface</label>
+        <link refid="d7/da6/class_abstract_interface"/>
+      </node>
+      <node id="2">
+        <label>Bridge</label>
+        <link refid="d3/dc0/class_bridge"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>#implementation</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="design_pattern/bridge_pattern/main.cc" line="51" column="1" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="52" bodyend="63"/>
+    <listofallmembers>
+      <member refid="d3/dc0/class_bridge_1a84230fad93690ce7537935066219257c" prot="public" virt="non-virtual"><scope>UseCase1</scope><name>Bridge</name></member>
+      <member refid="d3/dc0/class_bridge_1a0019b7bc5dfe65c7c80394df5526eecf" prot="protected" virt="non-virtual"><scope>UseCase1</scope><name>implementation</name></member>
+      <member refid="dd/da9/class_use_case1_1ade7253500755cdd870a579c7c4b023ed" prot="public" virt="virtual"><scope>UseCase1</scope><name>someFunctionality</name></member>
+      <member refid="dd/da9/class_use_case1_1a82f5ff42c6182bcdfd378ab3019b55a7" prot="public" virt="non-virtual"><scope>UseCase1</scope><name>UseCase1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

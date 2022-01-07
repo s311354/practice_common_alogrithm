@@ -1,0 +1,805 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/d65/classtesting_1_1TestInfo" kind="class" language="C++" prot="package">
+    <compoundname>testing::TestInfo</compoundname>
+    <includes refid="d8/d73/gtest_8h" local="no">gtest.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="df/d65/classtesting_1_1TestInfo_1adc037d188dab349a94868991955c9cd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class internal::StreamingListenerTest</definition>
+        <argsstring></argsstring>
+        <name>internal::StreamingListenerTest</name>
+        <param>
+          <type>internal::StreamingListenerTest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="714" column="3" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="df/d65/classtesting_1_1TestInfo_1acc0a5e7573fd6ae7ad1878613bb86853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class internal::UnitTestImpl</definition>
+        <argsstring></argsstring>
+        <name>internal::UnitTestImpl</name>
+        <param>
+          <type><ref refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl" kindref="compound">internal::UnitTestImpl</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="713" column="3" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="df/d65/classtesting_1_1TestInfo_1a5b78b1c2e1fa07ffed92da365593eaa4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Test</definition>
+        <argsstring></argsstring>
+        <name>Test</name>
+        <param>
+          <type><ref refid="db/d9f/classtesting_1_1Test" kindref="compound">Test</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="711" column="3" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="df/d65/classtesting_1_1TestInfo_1aff779e55b06adfa7c0088bd10253f0f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestCase</definition>
+        <argsstring></argsstring>
+        <name>TestCase</name>
+        <param>
+          <type><ref refid="d0/d9a/classtesting_1_1TestCase" kindref="compound">TestCase</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="712" column="3" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="712" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1ab6f3c269fc46c9c1c0f81b3431240138" prot="package" static="no" mutable="no">
+        <type></type>
+        <definition>__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <bitfield>MakeAndRegisterTestInfo( const char* test_case_name</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="715" column="10" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="716" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1ae31ac69c75bb42f47c8d6a7cde4937c6" prot="package" static="no" mutable="no">
+        <type></type>
+        <definition>__pad1__</definition>
+        <argsstring></argsstring>
+        <name>__pad1__</name>
+        <bitfield>scoped_ptr&lt;const ::std::string&gt; type_param_</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="755" column="3" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="755" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1acb405321a5c6ae16fef21290649f2666" prot="package" static="no" mutable="no">
+        <type></type>
+        <definition>__pad2__</definition>
+        <argsstring></argsstring>
+        <name>__pad2__</name>
+        <bitfield>scoped_ptr&lt;const ::std::string&gt; value_param_</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="758" column="3" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="758" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1aa6f626203c740423c9dfcbbe727f90b4" prot="package" static="no" mutable="no">
+        <type></type>
+        <definition>__pad3__</definition>
+        <argsstring></argsstring>
+        <name>__pad3__</name>
+        <bitfield>TypeId fixture_class_id_</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="760" column="3" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="760" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1a044b30d8201075e1768dfa54a41b6cec" prot="package" static="no" mutable="no">
+        <type>const char const char const char <ref refid="d8/d02/structtesting_1_1internal_1_1CodeLocation" kindref="compound">internal::CodeLocation</ref></type>
+        <definition>const char const char const char internal::CodeLocation code_location</definition>
+        <argsstring></argsstring>
+        <name>code_location</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="720" column="30" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="720" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1ad7d58637c850478235d4ddeb9119c0f9" prot="package" static="no" mutable="no">
+        <type>const char const char const char <ref refid="d8/d02/structtesting_1_1internal_1_1CodeLocation" kindref="compound">internal::CodeLocation</ref> <ref refid="d0/da7/namespacetesting_1_1internal_1ac535957ba2fde769ce297f9b23db057d" kindref="member">internal::TypeId</ref> Test::SetUpTestCaseFunc Test::TearDownTestCaseFunc <ref refid="d0/deb/classtesting_1_1internal_1_1TestFactoryBase" kindref="compound">internal::TestFactoryBase</ref> *</type>
+        <definition>const char const char const char internal::CodeLocation internal::TypeId Test::SetUpTestCaseFunc Test::TearDownTestCaseFunc internal::TestFactoryBase* factory</definition>
+        <argsstring></argsstring>
+        <name>factory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="724" column="33" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="724" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1a5350444f72fd50e09ca9807dbbd20d39" prot="package" static="no" mutable="no">
+        <type><ref refid="d0/deb/classtesting_1_1internal_1_1TestFactoryBase" kindref="compound">internal::TestFactoryBase</ref> *const</type>
+        <definition>internal::TestFactoryBase* const factory_</definition>
+        <argsstring></argsstring>
+        <name>factory_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="765" column="35" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="765" bodyend="-1"/>
+        <referencedby refid="df/d65/classtesting_1_1TestInfo_1aa3eca255b6be227d7d901cc2a72017a5" compoundref="df/d5b/gtest_8cc" startline="2630" endline="2672">TestInfo::Run</referencedby>
+        <referencedby refid="df/d65/classtesting_1_1TestInfo_1aef4e5ab35d68c6c5b82d87246a1ec811" compoundref="df/d5b/gtest_8cc" startline="2521" endline="2521">TestInfo::~TestInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1a60bc411a1fc7ef1688ffbb4d2cb14dca" prot="package" static="no" mutable="no">
+        <type>const char const char const char <ref refid="d8/d02/structtesting_1_1internal_1_1CodeLocation" kindref="compound">internal::CodeLocation</ref> <ref refid="d0/da7/namespacetesting_1_1internal_1ac535957ba2fde769ce297f9b23db057d" kindref="member">internal::TypeId</ref></type>
+        <definition>const char const char const char internal::CodeLocation internal::TypeId fixture_class_id</definition>
+        <argsstring></argsstring>
+        <name>fixture_class_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="721" column="24" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="721" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1a461785b0a586f2fa2c146f1599293015" prot="package" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool is_disabled_</definition>
+        <argsstring></argsstring>
+        <name>is_disabled_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="762" column="8" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="762" bodyend="-1"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1af8cfcffb71cba69a55105ddac96786aa" compoundref="df/d5b/gtest_8cc" startline="4789" endline="4840">UnitTestImpl::FilterTests</referencedby>
+        <referencedby refid="d0/d9a/classtesting_1_1TestCase_1a8cab09cdd57af464aec68c4dc9f45e96" compoundref="d8/d73/gtest_8h" startline="910" endline="912">TestCase::TestDisabled</referencedby>
+        <referencedby refid="d0/d9a/classtesting_1_1TestCase_1aee5d98a0807fdd67250534a4b491e3d0" compoundref="d8/d73/gtest_8h" startline="905" endline="907">TestCase::TestReportableDisabled</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1af2e1ae4069955510c0f07853a45ce22a" prot="package" static="no" mutable="no">
+        <type><ref refid="d8/d02/structtesting_1_1internal_1_1CodeLocation" kindref="compound">internal::CodeLocation</ref></type>
+        <definition>internal::CodeLocation location_</definition>
+        <argsstring></argsstring>
+        <name>location_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="759" column="26" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="759" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1aff50a5d6360f8193a19682c01593b42b" prot="package" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool matches_filter_</definition>
+        <argsstring></argsstring>
+        <name>matches_filter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="763" column="8" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="763" bodyend="-1"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1af8cfcffb71cba69a55105ddac96786aa" compoundref="df/d5b/gtest_8cc" startline="4789" endline="4840">UnitTestImpl::FilterTests</referencedby>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1abc77b71cd244096a75b13b8a2d9f7d14" compoundref="df/d5b/gtest_8cc" startline="4865" endline="4900">UnitTestImpl::ListTestsMatchingFilter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1a8f8f80d37794cde9472343e4487ba3eb" prot="package" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="717" column="18" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="717" bodyend="-1"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1af8cfcffb71cba69a55105ddac96786aa" compoundref="df/d5b/gtest_8cc" startline="4789" endline="4840">UnitTestImpl::FilterTests</referencedby>
+        <referencedby refid="db/d9f/classtesting_1_1Test_1a33853de09fa3a19530ef4db93e81d4a9" compoundref="df/d5b/gtest_8cc" startline="2269" endline="2328">Test::HasSameFixtureClass</referencedby>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1abc77b71cd244096a75b13b8a2d9f7d14" compoundref="df/d5b/gtest_8cc" startline="4865" endline="4900">UnitTestImpl::ListTestsMatchingFilter</referencedby>
+        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1a41824a58ecc1d0bf99a2b691cd865701" compoundref="df/d5b/gtest_8cc" startline="3130" endline="3147">PrettyUnitTestResultPrinter::OnTestEnd</referencedby>
+        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1abc248085e6dcbfc41789bd620e5bdbae" compoundref="df/d5b/gtest_8cc" startline="3111" endline="3116">PrettyUnitTestResultPrinter::OnTestStart</referencedby>
+        <referencedby refid="d4/dac/classtesting_1_1anonymous__namespace_02gtest_8cc_03_1_1TestNameIs_1ac760376da9bea59bb4df3a4ee5065008" compoundref="df/d5b/gtest_8cc" startline="2602" endline="2604">TestNameIs::operator()</referencedby>
+        <referencedby refid="d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a1385d3994e1daf7d80693bc6936e9853" compoundref="df/d5b/gtest_8cc" startline="3625" endline="3672">XmlUnitTestResultPrinter::OutputXmlTestInfo</referencedby>
+        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1a7af737d93a96c26c3af9501b4cc78d93" compoundref="df/d5b/gtest_8cc" startline="3169" endline="3191">PrettyUnitTestResultPrinter::PrintFailedTests</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1a723d30392e2c4f36252de0528a1b246d" prot="package" static="no" mutable="no">
+        <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>const std::string name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="752" column="21" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="752" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1afb2ec6cf0ab3f3e57bc2304e0df97c29" prot="package" static="no" mutable="no">
+        <type><ref refid="d6/d6e/classtesting_1_1TestResult" kindref="compound">TestResult</ref></type>
+        <definition>TestResult result_</definition>
+        <argsstring></argsstring>
+        <name>result_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="770" column="14" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="770" bodyend="-1"/>
+        <referencedby refid="df/d65/classtesting_1_1TestInfo_1a2230ddd76d3cfef898ecb4f8fb722f35" compoundref="d8/d73/gtest_8h" startline="746" endline="748">TestInfo::ClearTestResult</referencedby>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a385bee93ae6043262a860574aa59ba1a" compoundref="df/d5b/gtest_8cc" startline="4932" endline="4935">UnitTestImpl::current_test_result</referencedby>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1aaeadbc79a8d2cc722ecffc52b03c3a08" compoundref="df/d5b/gtest_8cc" startline="4372" endline="4387">UnitTestImpl::RecordProperty</referencedby>
+        <referencedby refid="df/d65/classtesting_1_1TestInfo_1aa3eca255b6be227d7d901cc2a72017a5" compoundref="df/d5b/gtest_8cc" startline="2630" endline="2672">TestInfo::Run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1abe7404e708c56f0506bb1c5d606198b5" prot="package" static="no" mutable="no">
+        <type>const char const char const char <ref refid="d8/d02/structtesting_1_1internal_1_1CodeLocation" kindref="compound">internal::CodeLocation</ref> <ref refid="d0/da7/namespacetesting_1_1internal_1ac535957ba2fde769ce297f9b23db057d" kindref="member">internal::TypeId</ref> Test::SetUpTestCaseFunc</type>
+        <definition>const char const char const char internal::CodeLocation internal::TypeId Test::SetUpTestCaseFunc set_up_tc</definition>
+        <argsstring></argsstring>
+        <name>set_up_tc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="722" column="31" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1ade0e3d581d82aaeaf7263d575564cb40" prot="package" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool should_run_</definition>
+        <argsstring></argsstring>
+        <name>should_run_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="761" column="8" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="761" bodyend="-1"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1af8cfcffb71cba69a55105ddac96786aa" compoundref="df/d5b/gtest_8cc" startline="4789" endline="4840">UnitTestImpl::FilterTests</referencedby>
+        <referencedby refid="df/d65/classtesting_1_1TestInfo_1aa3eca255b6be227d7d901cc2a72017a5" compoundref="df/d5b/gtest_8cc" startline="2630" endline="2672">TestInfo::Run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1ad28d1fececc3f6e1c20d8663f1b35e06" prot="package" static="no" mutable="no">
+        <type>const char const char const char <ref refid="d8/d02/structtesting_1_1internal_1_1CodeLocation" kindref="compound">internal::CodeLocation</ref> <ref refid="d0/da7/namespacetesting_1_1internal_1ac535957ba2fde769ce297f9b23db057d" kindref="member">internal::TypeId</ref> Test::SetUpTestCaseFunc Test::TearDownTestCaseFunc</type>
+        <definition>const char const char const char internal::CodeLocation internal::TypeId Test::SetUpTestCaseFunc Test::TearDownTestCaseFunc tear_down_tc</definition>
+        <argsstring></argsstring>
+        <name>tear_down_tc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="723" column="34" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="723" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1a01e1936a2c4b36dcf45ea5697f75a335" prot="package" static="no" mutable="no">
+        <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>const std::string test_case_name_</definition>
+        <argsstring></argsstring>
+        <name>test_case_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="751" column="21" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1af7c235854a4f2716ffe707d712673772" prot="package" static="no" mutable="no">
+        <type>const char const char *</type>
+        <definition>const char const char* type_param</definition>
+        <argsstring></argsstring>
+        <name>type_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="718" column="18" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="718" bodyend="-1"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a0f73735489a968e6f6d57f791a246615" compoundref="d0/da1/gtest-internal-inl_8h" startline="645" endline="665">UnitTestImpl::AddTestInfo</referencedby>
+        <referencedby refid="d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a1385d3994e1daf7d80693bc6936e9853" compoundref="df/d5b/gtest_8cc" startline="3625" endline="3672">XmlUnitTestResultPrinter::OutputXmlTestInfo</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a7a85ebe3b4de93a1edb091f92f1fb393" compoundref="df/d5b/gtest_8cc" startline="3009" endline="3024">testing::internal::PrintFullTestCommentIfPresent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d65/classtesting_1_1TestInfo_1af89b13e99f07353bc39ca99ce8086553" prot="package" static="no" mutable="no">
+        <type>const char const char const char *</type>
+        <definition>const char const char const char* value_param</definition>
+        <argsstring></argsstring>
+        <name>value_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="719" column="18" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="719" bodyend="-1"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1abc77b71cd244096a75b13b8a2d9f7d14" compoundref="df/d5b/gtest_8cc" startline="4865" endline="4900">UnitTestImpl::ListTestsMatchingFilter</referencedby>
+        <referencedby refid="d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a1385d3994e1daf7d80693bc6936e9853" compoundref="df/d5b/gtest_8cc" startline="3625" endline="3672">XmlUnitTestResultPrinter::OutputXmlTestInfo</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a7a85ebe3b4de93a1edb091f92f1fb393" compoundref="df/d5b/gtest_8cc" startline="3009" endline="3024">testing::internal::PrintFullTestCommentIfPresent</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1a52b0302c5f6eaab4acdc3c95e392db25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* file</definition>
+        <argsstring>() const</argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="673" column="14" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="673" bodyend="673"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1a2bda7f5b5e6c4149215ee073f7ec6e7b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool is_reportable</definition>
+        <argsstring>() const</argsstring>
+        <name>is_reportable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="697" column="8" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="697" bodyend="702"/>
+        <referencedby refid="d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1addf25742548aa0376bf180ed28187460" compoundref="df/d5b/gtest_8cc" startline="3675" endline="3698">XmlUnitTestResultPrinter::PrintXmlTestCase</referencedby>
+        <referencedby refid="d0/d9a/classtesting_1_1TestCase_1a9862daa78e71563f6f5785afc36ca972" compoundref="d8/d73/gtest_8h" startline="915" endline="917">TestCase::TestReportable</referencedby>
+        <referencedby refid="d0/d9a/classtesting_1_1TestCase_1aee5d98a0807fdd67250534a4b491e3d0" compoundref="d8/d73/gtest_8h" startline="905" endline="907">TestCase::TestReportableDisabled</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1a9834cd1b21362a1c8b503e9eab45c406" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int line</definition>
+        <argsstring>() const</argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="676" column="7" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="676" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1a8c4da4b626748f746b1f9fdbe885edfb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="654" column="14" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="654" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1af9eee0a44c398bf857c0ab4f961c2bd7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="d6/d6e/classtesting_1_1TestResult" kindref="compound">TestResult</ref> *</type>
+        <definition>const TestResult* result</definition>
+        <argsstring>() const</argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="705" column="20" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="705" bodyend="705"/>
+        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1a41824a58ecc1d0bf99a2b691cd865701" compoundref="df/d5b/gtest_8cc" startline="3130" endline="3147">PrettyUnitTestResultPrinter::OnTestEnd</referencedby>
+        <referencedby refid="d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a1385d3994e1daf7d80693bc6936e9853" compoundref="df/d5b/gtest_8cc" startline="3625" endline="3672">XmlUnitTestResultPrinter::OutputXmlTestInfo</referencedby>
+        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1a7af737d93a96c26c3af9501b4cc78d93" compoundref="df/d5b/gtest_8cc" startline="3169" endline="3191">PrettyUnitTestResultPrinter::PrintFailedTests</referencedby>
+        <referencedby refid="d0/d9a/classtesting_1_1TestCase_1a34e1cd8d648d9df54eedbb17f02587a4" compoundref="d8/d73/gtest_8h" startline="899" endline="901">TestCase::TestFailed</referencedby>
+        <referencedby refid="d0/d9a/classtesting_1_1TestCase_1a90cec168fde1398dfc3b1db6e1a797a4" compoundref="d8/d73/gtest_8h" startline="894" endline="896">TestCase::TestPassed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1a80b7dba9dc7b6b640c8ba46897c8e181" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool should_run</definition>
+        <argsstring>() const</argsstring>
+        <name>should_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="694" column="8" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="694" bodyend="694"/>
+        <referencedby refid="d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a1385d3994e1daf7d80693bc6936e9853" compoundref="df/d5b/gtest_8cc" startline="3625" endline="3672">XmlUnitTestResultPrinter::OutputXmlTestInfo</referencedby>
+        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1a7af737d93a96c26c3af9501b4cc78d93" compoundref="df/d5b/gtest_8cc" startline="3169" endline="3191">PrettyUnitTestResultPrinter::PrintFailedTests</referencedby>
+        <referencedby refid="d0/d9a/classtesting_1_1TestCase_1a8fdbfd24fea404421eb50c2450382e1d" compoundref="d8/d73/gtest_8h" startline="920" endline="922">TestCase::ShouldRunTest</referencedby>
+        <referencedby refid="d0/d9a/classtesting_1_1TestCase_1a34e1cd8d648d9df54eedbb17f02587a4" compoundref="d8/d73/gtest_8h" startline="899" endline="901">TestCase::TestFailed</referencedby>
+        <referencedby refid="d0/d9a/classtesting_1_1TestCase_1a90cec168fde1398dfc3b1db6e1a797a4" compoundref="d8/d73/gtest_8h" startline="894" endline="896">TestCase::TestPassed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1a36f45ddad070bbd6e8f06d3923934dba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* test_case_name</definition>
+        <argsstring>() const</argsstring>
+        <name>test_case_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="651" column="14" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="651" bodyend="651"/>
+        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a0f73735489a968e6f6d57f791a246615" compoundref="d0/da1/gtest-internal-inl_8h" startline="645" endline="665">UnitTestImpl::AddTestInfo</referencedby>
+        <referencedby refid="db/d9f/classtesting_1_1Test_1a33853de09fa3a19530ef4db93e81d4a9" compoundref="df/d5b/gtest_8cc" startline="2269" endline="2328">Test::HasSameFixtureClass</referencedby>
+        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1a41824a58ecc1d0bf99a2b691cd865701" compoundref="df/d5b/gtest_8cc" startline="3130" endline="3147">PrettyUnitTestResultPrinter::OnTestEnd</referencedby>
+        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1abc248085e6dcbfc41789bd620e5bdbae" compoundref="df/d5b/gtest_8cc" startline="3111" endline="3116">PrettyUnitTestResultPrinter::OnTestStart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1a699abee960ad215748fa6408da345f84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* type_param</definition>
+        <argsstring>() const</argsstring>
+        <name>type_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="658" column="14" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="658" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1aaeb9de7e7f182d99fda5b070b1c1f677" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* value_param</definition>
+        <argsstring>() const</argsstring>
+        <name>value_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="666" column="14" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="666" bodyend="670"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1aef4e5ab35d68c6c5b82d87246a1ec811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~TestInfo</definition>
+        <argsstring>()</argsstring>
+        <name>~TestInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="648" column="3" bodyfile="lib/googletest/src/gtest.cc" bodystart="2521" bodyend="2521"/>
+        <references refid="df/d65/classtesting_1_1TestInfo_1a5350444f72fd50e09ca9807dbbd20d39" compoundref="d8/d73/gtest_8h" startline="765">TestInfo::factory_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1a93f1c5c860fc105e82b2bde1468e126c" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(TestInfo)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="df/d65/classtesting_1_1TestInfo" kindref="compound">TestInfo</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="772" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1ab32dced99547d83699c327dc67d45f96" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int increment_death_test_count</definition>
+        <argsstring>()</argsstring>
+        <name>increment_death_test_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="738" column="7" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="738" bodyend="740"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1aa3eca255b6be227d7d901cc2a72017a5" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="744" column="8" bodyfile="lib/googletest/src/gtest.cc" bodystart="2630" bodyend="2672"/>
+        <references refid="d0/deb/classtesting_1_1internal_1_1TestFactoryBase_1a54ad95f17b20927fd00c337710813519">TestFactoryBase::CreateTest</references>
+        <references refid="db/d9f/classtesting_1_1Test_1a596a17de4388a65184028210bc5bbecb" compoundref="d8/d73/gtest_8h" startline="453" endline="453">Test::DeleteSelf_</references>
+        <references refid="df/d65/classtesting_1_1TestInfo_1a5350444f72fd50e09ca9807dbbd20d39" compoundref="d8/d73/gtest_8h" startline="765">TestInfo::factory_</references>
+        <references refid="d5/d21/classtesting_1_1UnitTest_1ad200090b11104aca39f25043701886cf" compoundref="df/d5b/gtest_8cc" startline="3972" endline="3991">UnitTest::GetInstance</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1ae0c6fd4543c65945515c42d6f43cc138" compoundref="df/d5b/gtest_8cc" startline="806" endline="847">testing::internal::GetTimeInMillis</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1ad104a3ca418dd1726ea22240b5d77258" compoundref="d0/da1/gtest-internal-inl_8h" startline="927" endline="929">testing::internal::GetUnitTestImpl</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1addb2ed165b92b74e25fe9ebe9e46b9f9" compoundref="df/d5b/gtest_8cc" startline="2410" endline="2460">testing::internal::HandleExceptionsInMethodIfSupported</references>
+        <references refid="db/d9f/classtesting_1_1Test_1a4f237fa994f623a704494cd821fb761f" compoundref="df/d5b/gtest_8cc" startline="2487" endline="2489">Test::HasFatalFailure</references>
+        <references refid="d5/d21/classtesting_1_1UnitTest_1aeb82a98c4da4afafa5b68547c8ac380a" compoundref="df/d5b/gtest_8cc" startline="4081" endline="4083">UnitTest::listeners</references>
+        <references refid="d0/d51/classtesting_1_1TestEventListener_1a48d3993f2b69de40ecca5476ff940e24">TestEventListener::OnTestEnd</references>
+        <references refid="d0/d51/classtesting_1_1TestEventListener_1a02f601dff022b7d252f54f559acaf3f7">TestEventListener::OnTestStart</references>
+        <references refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1accb552ad4af910904a9e48c49c5c79a2" compoundref="df/d5b/gtest_8cc" startline="4918" endline="4928">UnitTestImpl::os_stack_trace_getter</references>
+        <references refid="db/d70/classtesting_1_1TestEventListeners_1af7cfacdf90b4ba59566c16d95ee5d6cc" compoundref="df/d5b/gtest_8cc" startline="3919" endline="3919">TestEventListeners::repeater</references>
+        <references refid="df/d65/classtesting_1_1TestInfo_1afb2ec6cf0ab3f3e57bc2304e0df97c29" compoundref="d8/d73/gtest_8h" startline="770">TestInfo::result_</references>
+        <references refid="db/d9f/classtesting_1_1Test_1aa3eca255b6be227d7d901cc2a72017a5" compoundref="df/d5b/gtest_8cc" startline="2465" endline="2484">Test::Run</references>
+        <references refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a8bfd2a1906902da5fa95a75792883177" compoundref="d0/da1/gtest-internal-inl_8h" startline="683" endline="685">UnitTestImpl::set_current_test_info</references>
+        <references refid="d6/d6e/classtesting_1_1TestResult_1a0ca28ac81670a01fff5c6660e78065bb" compoundref="d8/d73/gtest_8h" startline="584" endline="584">TestResult::set_elapsed_time</references>
+        <references refid="df/d65/classtesting_1_1TestInfo_1ade0e3d581d82aaeaf7263d575564cb40" compoundref="d8/d73/gtest_8h" startline="761">TestInfo::should_run_</references>
+        <references refid="da/ddd/classtesting_1_1internal_1_1OsStackTraceGetterInterface_1a62a522fb4e6a18ae9a8799d1cd0b8bc6">OsStackTraceGetterInterface::UponLeavingGTest</references>
+        <referencedby refid="d0/d9a/classtesting_1_1TestCase_1aa3eca255b6be227d7d901cc2a72017a5" compoundref="df/d5b/gtest_8cc" startline="2759" endline="2784">TestCase::Run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1a3d2c0f8f264f6d8c525a4a28b881226d" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TestInfo</definition>
+        <argsstring>(const std::string &amp;test_case_name, const std::string &amp;name, const char *a_type_param, const char *a_value_param, internal::CodeLocation a_code_location, internal::TypeId fixture_class_id, internal::TestFactoryBase *factory)</argsstring>
+        <name>TestInfo</name>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>test_case_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>a_type_param</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>a_value_param</declname>
+        </param>
+        <param>
+          <type><ref refid="d8/d02/structtesting_1_1internal_1_1CodeLocation" kindref="compound">internal::CodeLocation</ref></type>
+          <declname>a_code_location</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1ac535957ba2fde769ce297f9b23db057d" kindref="member">internal::TypeId</ref></type>
+          <declname>fixture_class_id</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/deb/classtesting_1_1internal_1_1TestFactoryBase" kindref="compound">internal::TestFactoryBase</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="728" column="3" bodyfile="lib/googletest/src/gtest.cc" bodystart="2501" bodyend="2518"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="df/d65/classtesting_1_1TestInfo_1a2230ddd76d3cfef898ecb4f8fb722f35" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ClearTestResult</definition>
+        <argsstring>(TestInfo *test_info)</argsstring>
+        <name>ClearTestResult</name>
+        <param>
+          <type><ref refid="df/d65/classtesting_1_1TestInfo" kindref="compound">TestInfo</ref> *</type>
+          <declname>test_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest.h" line="746" column="15" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="746" bodyend="748"/>
+        <references refid="d6/d6e/classtesting_1_1TestResult_1aa71d36872f416feaa853788a7a7a7ef8" compoundref="df/d5b/gtest_8cc" startline="2162" endline="2167">TestResult::Clear</references>
+        <references refid="df/d65/classtesting_1_1TestInfo_1afb2ec6cf0ab3f3e57bc2304e0df97c29" compoundref="d8/d73/gtest_8h" startline="770">TestInfo::result_</references>
+        <referencedby refid="d0/d9a/classtesting_1_1TestCase_1a566dca6156477ed747aa781f341d13d5" compoundref="df/d5b/gtest_8cc" startline="2787" endline="2790">TestCase::ClearResult</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>T</label>
+      </node>
+      <node id="7">
+        <label>basic_string&lt; Char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="11">
+        <label>vector&lt; testing::TestProperty &gt;</label>
+        <link refid="cpp/container/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="template-instance">
+          <edgelabel>&lt; testing::TestProperty &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>CodeLocation</label>
+        <link refid="d8/d02/structtesting_1_1internal_1_1CodeLocation"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+file</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Mutex</label>
+        <link refid="d3/d5c/classtesting_1_1internal_1_1Mutex"/>
+      </node>
+      <node id="4">
+        <label>TestPartResult</label>
+        <link refid="d9/d98/classtesting_1_1TestPartResult"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-file_name_</edgelabel>
+          <edgelabel>-message_</edgelabel>
+          <edgelabel>-summary_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TestResult</label>
+        <link refid="d6/d6e/classtesting_1_1TestResult"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-test_part_results_</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>-test_properites_mutex_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-test_properties_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>TestProperty</label>
+        <link refid="dd/dde/classtesting_1_1TestProperty"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-key_</edgelabel>
+          <edgelabel>-value_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vector&lt; testing::TestPartResult &gt;</label>
+        <link refid="cpp/container/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="template-instance">
+          <edgelabel>&lt; testing::TestPartResult &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vector&lt; T &gt;</label>
+        <link refid="cpp/container/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>TestFactoryBase</label>
+        <link refid="d0/deb/classtesting_1_1internal_1_1TestFactoryBase"/>
+      </node>
+      <node id="1">
+        <label>TestInfo</label>
+        <link refid="df/d65/classtesting_1_1TestInfo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>~result_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>~factory_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>~code_location</edgelabel>
+          <edgelabel>~factory</edgelabel>
+          <edgelabel>~fixture_class_id</edgelabel>
+          <edgelabel>~location_</edgelabel>
+          <edgelabel>~set_up_tc</edgelabel>
+          <edgelabel>~tear_down_tc</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>~name_</edgelabel>
+          <edgelabel>~test_case_name_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>basic_string&lt; char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/gtest.h" line="644" column="1" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="644" bodyend="773"/>
+    <listofallmembers>
+      <member refid="df/d65/classtesting_1_1TestInfo_1ab6f3c269fc46c9c1c0f81b3431240138" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>__pad0__</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1ae31ac69c75bb42f47c8d6a7cde4937c6" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>__pad1__</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1acb405321a5c6ae16fef21290649f2666" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>__pad2__</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1aa6f626203c740423c9dfcbbe727f90b4" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>__pad3__</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a2230ddd76d3cfef898ecb4f8fb722f35" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>ClearTestResult</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a044b30d8201075e1768dfa54a41b6cec" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>code_location</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1ad7d58637c850478235d4ddeb9119c0f9" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>factory</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a5350444f72fd50e09ca9807dbbd20d39" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>factory_</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a52b0302c5f6eaab4acdc3c95e392db25" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>file</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a60bc411a1fc7ef1688ffbb4d2cb14dca" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>fixture_class_id</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a93f1c5c860fc105e82b2bde1468e126c" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1ab32dced99547d83699c327dc67d45f96" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>increment_death_test_count</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1adc037d188dab349a94868991955c9cd4" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>internal::StreamingListenerTest</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1acc0a5e7573fd6ae7ad1878613bb86853" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>internal::UnitTestImpl</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a461785b0a586f2fa2c146f1599293015" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>is_disabled_</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a2bda7f5b5e6c4149215ee073f7ec6e7b" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>is_reportable</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a9834cd1b21362a1c8b503e9eab45c406" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>line</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1af2e1ae4069955510c0f07853a45ce22a" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>location_</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1aff50a5d6360f8193a19682c01593b42b" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>matches_filter_</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a8f8f80d37794cde9472343e4487ba3eb" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>name</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a8c4da4b626748f746b1f9fdbe885edfb" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>name</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a723d30392e2c4f36252de0528a1b246d" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>name_</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1af9eee0a44c398bf857c0ab4f961c2bd7" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>result</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1afb2ec6cf0ab3f3e57bc2304e0df97c29" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>result_</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1aa3eca255b6be227d7d901cc2a72017a5" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>Run</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1abe7404e708c56f0506bb1c5d606198b5" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>set_up_tc</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a80b7dba9dc7b6b640c8ba46897c8e181" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>should_run</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1ade0e3d581d82aaeaf7263d575564cb40" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>should_run_</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1ad28d1fececc3f6e1c20d8663f1b35e06" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>tear_down_tc</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a5b78b1c2e1fa07ffed92da365593eaa4" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>Test</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a36f45ddad070bbd6e8f06d3923934dba" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>test_case_name</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a01e1936a2c4b36dcf45ea5697f75a335" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>test_case_name_</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1aff779e55b06adfa7c0088bd10253f0f0" prot="private" virt="non-virtual"><scope>testing::TestInfo</scope><name>TestCase</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a3d2c0f8f264f6d8c525a4a28b881226d" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>TestInfo</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1af7c235854a4f2716ffe707d712673772" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>type_param</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1a699abee960ad215748fa6408da345f84" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>type_param</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1af89b13e99f07353bc39ca99ce8086553" prot="package" virt="non-virtual"><scope>testing::TestInfo</scope><name>value_param</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1aaeb9de7e7f182d99fda5b070b1c1f677" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>value_param</name></member>
+      <member refid="df/d65/classtesting_1_1TestInfo_1aef4e5ab35d68c6c5b82d87246a1ec811" prot="public" virt="non-virtual"><scope>testing::TestInfo</scope><name>~TestInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

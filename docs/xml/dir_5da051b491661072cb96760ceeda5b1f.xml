@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_5da051b491661072cb96760ceeda5b1f" kind="dir">
     <compoundname>design_pattern/singleton_pattern</compoundname>
-    <innerfile refid="design__pattern_2singleton__pattern_2main_8cc">main.cc</innerfile>
+    <innerfile refid="db/d9c/design__pattern_2singleton__pattern_2main_8cc">main.cc</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

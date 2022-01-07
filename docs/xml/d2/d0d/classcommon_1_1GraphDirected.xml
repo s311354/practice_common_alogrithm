@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/d0d/classcommon_1_1GraphDirected" kind="class" language="C++" prot="public">
+    <compoundname>common::GraphDirected</compoundname>
+    <basecompoundref refid="da/d63/classcommon_1_1Graph" prot="public" virt="non-virtual">Graph</basecompoundref>
+    <includes refid="de/d87/graph__directed_8h" local="no">graph_directed.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d0d/classcommon_1_1GraphDirected_1af2711b2aec837d248c94c50cb7687648" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AddEdge</definition>
+        <argsstring>(const int source, const int destination)</argsstring>
+        <name>AddEdge</name>
+        <reimplements refid="da/d63/classcommon_1_1Graph_1aca687d838fec6c8849ea41d61eeae300">AddEdge</reimplements>
+        <param>
+          <type>const int</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>destination</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_directed.h" line="22" column="10" bodyfile="graphs/src/graph_directed.cc" bodystart="18" bodyend="20"/>
+        <references refid="dc/d62/classcommon_1_1GraphRepresentation_1aca687d838fec6c8849ea41d61eeae300" compoundref="d7/d90/graph__representation_8h" startline="29" endline="29">GraphRepresentation::AddEdge</references>
+        <references refid="da/d63/classcommon_1_1Graph_1a3eaeac38147dd6d6f4c4bb6228980baf" compoundref="d6/df3/graph_8h" startline="23">Graph::representation</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d0d/classcommon_1_1GraphDirected_1ade13d4605967d4ec20bb4d462eb6e624" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BFS</definition>
+        <argsstring>()</argsstring>
+        <name>BFS</name>
+        <reimplements refid="da/d63/classcommon_1_1Graph_1abbd73755320db99679c74c3a57c70fb1">BFS</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_directed.h" line="20" column="10" bodyfile="graphs/src/graph_directed.cc" bodystart="10" bodyend="12"/>
+        <references refid="dc/d62/classcommon_1_1GraphRepresentation_1abbd73755320db99679c74c3a57c70fb1" compoundref="d7/d90/graph__representation_8h" startline="31" endline="31">GraphRepresentation::BFS</references>
+        <references refid="da/d63/classcommon_1_1Graph_1a3eaeac38147dd6d6f4c4bb6228980baf" compoundref="d6/df3/graph_8h" startline="23">Graph::representation</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d0d/classcommon_1_1GraphDirected_1a094ec99ad1b124c0dd56e43760247b6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ContainsCycle</definition>
+        <argsstring>()</argsstring>
+        <name>ContainsCycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_directed.h" line="23" column="10" bodyfile="graphs/src/graph_directed.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d0d/classcommon_1_1GraphDirected_1a58d3be579a41554e41aa8c86cb8cf0a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DFS</definition>
+        <argsstring>()</argsstring>
+        <name>DFS</name>
+        <reimplements refid="da/d63/classcommon_1_1Graph_1a593c3553d7636f1bbd89f37f667fc904">DFS</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_directed.h" line="21" column="10" bodyfile="graphs/src/graph_directed.cc" bodystart="14" bodyend="16"/>
+        <references refid="dc/d62/classcommon_1_1GraphRepresentation_1a593c3553d7636f1bbd89f37f667fc904" compoundref="d7/d90/graph__representation_8h" startline="30" endline="30">GraphRepresentation::DFS</references>
+        <references refid="da/d63/classcommon_1_1Graph_1a3eaeac38147dd6d6f4c4bb6228980baf" compoundref="d6/df3/graph_8h" startline="23">Graph::representation</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d0d/classcommon_1_1GraphDirected_1a42ec668cdd1469a9b8276a2b4033aff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int GetVertexCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetVertexCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_directed.h" line="25" column="15" bodyfile="graphs/src/graph_directed.cc" bodystart="26" bodyend="28"/>
+        <references refid="da/d63/classcommon_1_1Graph_1a3eaeac38147dd6d6f4c4bb6228980baf" compoundref="d6/df3/graph_8h" startline="23">Graph::representation</references>
+        <references refid="dc/d62/classcommon_1_1GraphRepresentation_1ae8f2640efa2f2e1875e75aee1bc7c248" compoundref="d7/d90/graph__representation_8h" startline="38">GraphRepresentation::vertices</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d0d/classcommon_1_1GraphDirected_1a614a8131804d99af8746bce1ccefa9ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GraphDirected</definition>
+        <argsstring>()</argsstring>
+        <name>GraphDirected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_directed.h" line="15" column="5" bodyfile="graphs/src/graph_directed.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d0d/classcommon_1_1GraphDirected_1a9e690d73fa0370165a4152649e1ed567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GraphDirected</definition>
+        <argsstring>(const string)</argsstring>
+        <name>GraphDirected</name>
+        <param>
+          <type>const</type>
+          <declname>string</declname>
+          <defname>representation_type</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_directed.h" line="16" column="5" bodyfile="graphs/src/graph_directed.cc" bodystart="6" bodyend="8"/>
+        <references refid="dc/d62/classcommon_1_1GraphRepresentation_1ab5318abef6747ff8cc2e126abfc048be" compoundref="df/d42/graph__representation_8cc" startline="15" endline="22">GraphRepresentation::GetRepresentation</references>
+        <references refid="dc/d62/classcommon_1_1GraphRepresentation_1a591dc5c622608cd7852dcde51181d0a9" compoundref="d7/d90/graph__representation_8h" startline="26">GraphRepresentation::kGraphTypeDirected</references>
+        <references refid="da/d63/classcommon_1_1Graph_1a3eaeac38147dd6d6f4c4bb6228980baf" compoundref="d6/df3/graph_8h" startline="23">Graph::representation</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d0d/classcommon_1_1GraphDirected_1a7c4557fcada1ff8b18f1d62cec1056a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void PrintDebug</definition>
+        <argsstring>()</argsstring>
+        <name>PrintDebug</name>
+        <reimplements refid="da/d63/classcommon_1_1Graph_1a219030653119fba49b3d60146c568014">PrintDebug</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_directed.h" line="24" column="10" bodyfile="graphs/src/graph_directed.cc" bodystart="22" bodyend="24"/>
+        <references refid="dc/d62/classcommon_1_1GraphRepresentation_1a219030653119fba49b3d60146c568014" compoundref="d7/d90/graph__representation_8h" startline="33" endline="33">GraphRepresentation::PrintDebug</references>
+        <references refid="da/d63/classcommon_1_1Graph_1a3eaeac38147dd6d6f4c4bb6228980baf" compoundref="d6/df3/graph_8h" startline="23">Graph::representation</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d0d/classcommon_1_1GraphDirected_1a6cf1643547f325c5fcba7c6d32841631" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~GraphDirected</definition>
+        <argsstring>()</argsstring>
+        <name>~GraphDirected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph_directed.h" line="17" column="13" bodyfile="graphs/src/graph_directed.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="da/d63/classcommon_1_1Graph_1a3eaeac38147dd6d6f4c4bb6228980baf" prot="public" static="no" mutable="no">
+        <type><ref refid="cpp/memory/unique_ptr" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">unique_ptr</ref>&lt; <ref refid="dc/d62/classcommon_1_1GraphRepresentation" kindref="compound">common::GraphRepresentation</ref> &gt;</type>
+        <definition>unique_ptr&lt;common::GraphRepresentation&gt; representation</definition>
+        <argsstring></argsstring>
+        <name>representation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph.h" line="26" column="16" bodyfile="graphs/src/graph.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="d2/d0d/classcommon_1_1GraphDirected_1af2711b2aec837d248c94c50cb7687648" compoundref="dd/dba/graph__directed_8cc" startline="18" endline="20">GraphDirected::AddEdge</referencedby>
+        <referencedby refid="d2/d0d/classcommon_1_1GraphDirected_1ade13d4605967d4ec20bb4d462eb6e624" compoundref="dd/dba/graph__directed_8cc" startline="10" endline="12">GraphDirected::BFS</referencedby>
+        <referencedby refid="d2/d0d/classcommon_1_1GraphDirected_1a58d3be579a41554e41aa8c86cb8cf0a6" compoundref="dd/dba/graph__directed_8cc" startline="14" endline="16">GraphDirected::DFS</referencedby>
+        <referencedby refid="d2/d0d/classcommon_1_1GraphDirected_1a42ec668cdd1469a9b8276a2b4033aff4" compoundref="dd/dba/graph__directed_8cc" startline="26" endline="28">GraphDirected::GetVertexCount</referencedby>
+        <referencedby refid="d2/d0d/classcommon_1_1GraphDirected_1a9e690d73fa0370165a4152649e1ed567" compoundref="dd/dba/graph__directed_8cc" startline="6" endline="8">GraphDirected::GraphDirected</referencedby>
+        <referencedby refid="d2/d0d/classcommon_1_1GraphDirected_1a7c4557fcada1ff8b18f1d62cec1056a1" compoundref="dd/dba/graph__directed_8cc" startline="22" endline="24">GraphDirected::PrintDebug</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="da/d63/classcommon_1_1Graph_1ae8f2640efa2f2e1875e75aee1bc7c248" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vertices</definition>
+        <argsstring></argsstring>
+        <name>vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphs/src/graph.h" line="27" column="9" bodyfile="graphs/src/graph.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GraphDirected</label>
+        <link refid="d2/d0d/classcommon_1_1GraphDirected"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Graph</label>
+        <link refid="da/d63/classcommon_1_1Graph"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>T</label>
+      </node>
+      <node id="1">
+        <label>GraphDirected</label>
+        <link refid="d2/d0d/classcommon_1_1GraphDirected"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>unique_ptr&lt; T &gt;</label>
+        <link refid="cpp/memory/unique_ptr" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Graph</label>
+        <link refid="da/d63/classcommon_1_1Graph"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+representation</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>unique_ptr&lt; common::GraphRepresentation &gt;</label>
+        <link refid="cpp/memory/unique_ptr" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; common::GraphRepresentation &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="graphs/src/graph_directed.h" line="10" column="1" bodyfile="graphs/src/graph_directed.h" bodystart="11" bodyend="26"/>
+    <listofallmembers>
+      <member refid="d2/d0d/classcommon_1_1GraphDirected_1af2711b2aec837d248c94c50cb7687648" prot="public" virt="virtual"><scope>common::GraphDirected</scope><name>AddEdge</name></member>
+      <member refid="d2/d0d/classcommon_1_1GraphDirected_1ade13d4605967d4ec20bb4d462eb6e624" prot="public" virt="virtual"><scope>common::GraphDirected</scope><name>BFS</name></member>
+      <member refid="d2/d0d/classcommon_1_1GraphDirected_1a094ec99ad1b124c0dd56e43760247b6f" prot="public" virt="non-virtual"><scope>common::GraphDirected</scope><name>ContainsCycle</name></member>
+      <member refid="d2/d0d/classcommon_1_1GraphDirected_1a58d3be579a41554e41aa8c86cb8cf0a6" prot="public" virt="virtual"><scope>common::GraphDirected</scope><name>DFS</name></member>
+      <member refid="d2/d0d/classcommon_1_1GraphDirected_1a42ec668cdd1469a9b8276a2b4033aff4" prot="public" virt="non-virtual"><scope>common::GraphDirected</scope><name>GetVertexCount</name></member>
+      <member refid="da/d63/classcommon_1_1Graph_1afc5ef9d72cc2c509814200791eaef62c" prot="public" virt="non-virtual"><scope>common::GraphDirected</scope><name>Graph</name></member>
+      <member refid="da/d63/classcommon_1_1Graph_1ad958d0962c6f5876c5fff1c0ae84ed03" prot="public" virt="non-virtual"><scope>common::GraphDirected</scope><name>Graph</name></member>
+      <member refid="da/d63/classcommon_1_1Graph_1a12f75f10f87092e6a58597cbfe17944c" prot="public" virt="non-virtual"><scope>common::GraphDirected</scope><name>Graph</name></member>
+      <member refid="d2/d0d/classcommon_1_1GraphDirected_1a614a8131804d99af8746bce1ccefa9ce" prot="public" virt="non-virtual"><scope>common::GraphDirected</scope><name>GraphDirected</name></member>
+      <member refid="d2/d0d/classcommon_1_1GraphDirected_1a9e690d73fa0370165a4152649e1ed567" prot="public" virt="non-virtual"><scope>common::GraphDirected</scope><name>GraphDirected</name></member>
+      <member refid="d2/d0d/classcommon_1_1GraphDirected_1a7c4557fcada1ff8b18f1d62cec1056a1" prot="public" virt="virtual"><scope>common::GraphDirected</scope><name>PrintDebug</name></member>
+      <member refid="da/d63/classcommon_1_1Graph_1a3eaeac38147dd6d6f4c4bb6228980baf" prot="public" virt="non-virtual"><scope>common::GraphDirected</scope><name>representation</name></member>
+      <member refid="da/d63/classcommon_1_1Graph_1ae8f2640efa2f2e1875e75aee1bc7c248" prot="public" virt="non-virtual"><scope>common::GraphDirected</scope><name>vertices</name></member>
+      <member refid="da/d63/classcommon_1_1Graph_1abc74f73353e7d187d9a3c846001011d2" prot="public" virt="virtual"><scope>common::GraphDirected</scope><name>~Graph</name></member>
+      <member refid="d2/d0d/classcommon_1_1GraphDirected_1a6cf1643547f325c5fcba7c6d32841631" prot="public" virt="virtual"><scope>common::GraphDirected</scope><name>~GraphDirected</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

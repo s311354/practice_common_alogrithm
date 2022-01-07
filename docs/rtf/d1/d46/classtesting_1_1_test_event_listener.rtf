@@ -1,0 +1,549 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TestEventListener Class Reference\par \pard\plain 
+{\tc\tcl2 \v TestEventListener}
+{\xe \v TestEventListener}
+{\bkmkstart AAAAAAABXH}
+{\bkmkend AAAAAAABXH}
+\par
+{
+{\f2 #include <gtest.h>}}\par
+Inheritance diagram for TestEventListener:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/db7/classtesting_1_1_test_event_listener__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for TestEventListener:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d5/d70/classtesting_1_1_test_event_listener__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYN" }{}}{\fldrslt {\cs37\ul\cf2 OnEnvironmentsSetUpEnd}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &unit_test)=0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYO" }{}}{\fldrslt {\cs37\ul\cf2 OnEnvironmentsSetUpStart}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &unit_test)=0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYP" }{}}{\fldrslt {\cs37\ul\cf2 OnEnvironmentsTearDownEnd}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &unit_test)=0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYQ" }{}}{\fldrslt {\cs37\ul\cf2 OnEnvironmentsTearDownStart}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &unit_test)=0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYR" }{}}{\fldrslt {\cs37\ul\cf2 OnTestCaseEnd}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXG" }{}}{\fldrslt {\cs37\ul\cf2 TestCase}}}
+ &test_case)=0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYS" }{}}{\fldrslt {\cs37\ul\cf2 OnTestCaseStart}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXG" }{}}{\fldrslt {\cs37\ul\cf2 TestCase}}}
+ &test_case)=0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYT" }{}}{\fldrslt {\cs37\ul\cf2 OnTestEnd}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABFG" }{}}{\fldrslt {\cs37\ul\cf2 TestInfo}}}
+ &test_info)=0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYU" }{}}{\fldrslt {\cs37\ul\cf2 OnTestIterationEnd}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &unit_test, int iteration)=0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYW" }{}}{\fldrslt {\cs37\ul\cf2 OnTestIterationStart}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &unit_test, int iteration)=0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYX" }{}}{\fldrslt {\cs37\ul\cf2 OnTestPartResult}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAQR" }{}}{\fldrslt {\cs37\ul\cf2 TestPartResult}}}
+ &test_part_result)=0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYY" }{}}{\fldrslt {\cs37\ul\cf2 OnTestProgramEnd}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &unit_test)=0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYZ" }{}}{\fldrslt {\cs37\ul\cf2 OnTestProgramStart}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &unit_test)=0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABZA" }{}}{\fldrslt {\cs37\ul\cf2 OnTestStart}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABFG" }{}}{\fldrslt {\cs37\ul\cf2 TestInfo}}}
+ &test_info)=0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDI" }{}}{\fldrslt {\cs37\ul\cf2 ~TestEventListener}}}
+ ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line 991 of file gtest.h.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v ~TestEventListener\:TestEventListener}
+{\xe \v TestEventListener\:~TestEventListener}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual ~{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXH" }{}}{\fldrslt {\cs37\ul\cf2 TestEventListener}}}
+ (){\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAACDI}
+{\bkmkend AAAAAAACDI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 993 of file gtest.h.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 993 \{\}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v OnEnvironmentsSetUpEnd\:TestEventListener}
+{\xe \v TestEventListener\:OnEnvironmentsSetUpEnd}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void OnEnvironmentsSetUpEnd (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &  {\i unit_test}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAABYN}
+{\bkmkend AAAAAAABYN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDJ" }{}}{\fldrslt {\cs37\ul\cf2 TestEventRepeater}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDK" }{}}{\fldrslt {\cs37\ul\cf2 PrettyUnitTestResultPrinter}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYA" }{}}{\fldrslt {\cs37\ul\cf2 EmptyTestEventListener}}}
+.}\par
+{
+\ql
+Referenced by UnitTestImpl::RunAllTests().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d46/classtesting_1_1_test_event_listener_a9ff0d48e0f7c64dea5cb0a607498d6f6_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v OnEnvironmentsSetUpStart\:TestEventListener}
+{\xe \v TestEventListener\:OnEnvironmentsSetUpStart}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void OnEnvironmentsSetUpStart (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &  {\i unit_test}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAABYO}
+{\bkmkend AAAAAAABYO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDL" }{}}{\fldrslt {\cs37\ul\cf2 TestEventRepeater}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDM" }{}}{\fldrslt {\cs37\ul\cf2 PrettyUnitTestResultPrinter}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYB" }{}}{\fldrslt {\cs37\ul\cf2 EmptyTestEventListener}}}
+.}\par
+{
+\ql
+Referenced by UnitTestImpl::RunAllTests().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d46/classtesting_1_1_test_event_listener_a070798921b8d09f891e02762287ee5b0_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v OnEnvironmentsTearDownEnd\:TestEventListener}
+{\xe \v TestEventListener\:OnEnvironmentsTearDownEnd}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void OnEnvironmentsTearDownEnd (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &  {\i unit_test}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAABYP}
+{\bkmkend AAAAAAABYP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDN" }{}}{\fldrslt {\cs37\ul\cf2 TestEventRepeater}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDO" }{}}{\fldrslt {\cs37\ul\cf2 PrettyUnitTestResultPrinter}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYC" }{}}{\fldrslt {\cs37\ul\cf2 EmptyTestEventListener}}}
+.}\par
+{
+\ql
+Referenced by UnitTestImpl::RunAllTests().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d46/classtesting_1_1_test_event_listener_a9cc8d7ef2c9e722a301ec4cee20633e2_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v OnEnvironmentsTearDownStart\:TestEventListener}
+{\xe \v TestEventListener\:OnEnvironmentsTearDownStart}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void OnEnvironmentsTearDownStart (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &  {\i unit_test}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAABYQ}
+{\bkmkend AAAAAAABYQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDP" }{}}{\fldrslt {\cs37\ul\cf2 TestEventRepeater}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDQ" }{}}{\fldrslt {\cs37\ul\cf2 PrettyUnitTestResultPrinter}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYD" }{}}{\fldrslt {\cs37\ul\cf2 EmptyTestEventListener}}}
+.}\par
+{
+\ql
+Referenced by UnitTestImpl::RunAllTests().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d46/classtesting_1_1_test_event_listener_a1246b8fa84a0807afeffa6e986254ee8_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v OnTestCaseEnd\:TestEventListener}
+{\xe \v TestEventListener\:OnTestCaseEnd}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void OnTestCaseEnd (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXG" }{}}{\fldrslt {\cs37\ul\cf2 TestCase}}}
+ &  {\i test_case}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAABYR}
+{\bkmkend AAAAAAABYR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDR" }{}}{\fldrslt {\cs37\ul\cf2 TestEventRepeater}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDS" }{}}{\fldrslt {\cs37\ul\cf2 PrettyUnitTestResultPrinter}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYE" }{}}{\fldrslt {\cs37\ul\cf2 EmptyTestEventListener}}}
+.}\par
+{
+\ql
+Referenced by TestCase::Run().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d46/classtesting_1_1_test_event_listener_ab92df2852da3e002303be838d8550c76_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v OnTestCaseStart\:TestEventListener}
+{\xe \v TestEventListener\:OnTestCaseStart}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void OnTestCaseStart (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXG" }{}}{\fldrslt {\cs37\ul\cf2 TestCase}}}
+ &  {\i test_case}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAABYS}
+{\bkmkend AAAAAAABYS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDT" }{}}{\fldrslt {\cs37\ul\cf2 TestEventRepeater}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDU" }{}}{\fldrslt {\cs37\ul\cf2 PrettyUnitTestResultPrinter}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYF" }{}}{\fldrslt {\cs37\ul\cf2 EmptyTestEventListener}}}
+.}\par
+{
+\ql
+Referenced by TestCase::Run().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d46/classtesting_1_1_test_event_listener_aaf531e12c423fe117b7a4c6d2217dcf7_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v OnTestEnd\:TestEventListener}
+{\xe \v TestEventListener\:OnTestEnd}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void OnTestEnd (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABFG" }{}}{\fldrslt {\cs37\ul\cf2 TestInfo}}}
+ &  {\i test_info}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAABYT}
+{\bkmkend AAAAAAABYT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDV" }{}}{\fldrslt {\cs37\ul\cf2 TestEventRepeater}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDW" }{}}{\fldrslt {\cs37\ul\cf2 PrettyUnitTestResultPrinter}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYG" }{}}{\fldrslt {\cs37\ul\cf2 EmptyTestEventListener}}}
+.}\par
+{
+\ql
+Referenced by TestInfo::Run().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d46/classtesting_1_1_test_event_listener_a48d3993f2b69de40ecca5476ff940e24_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v OnTestIterationEnd\:TestEventListener}
+{\xe \v TestEventListener\:OnTestIterationEnd}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void OnTestIterationEnd (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &  {\i unit_test}, int  {\i iteration}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAABYU}
+{\bkmkend AAAAAAABYU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYV" }{}}{\fldrslt {\cs37\ul\cf2 XmlUnitTestResultPrinter}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDX" }{}}{\fldrslt {\cs37\ul\cf2 TestEventRepeater}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDY" }{}}{\fldrslt {\cs37\ul\cf2 PrettyUnitTestResultPrinter}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYH" }{}}{\fldrslt {\cs37\ul\cf2 EmptyTestEventListener}}}
+.}\par
+{
+\ql
+Referenced by UnitTestImpl::RunAllTests().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d46/classtesting_1_1_test_event_listener_a7e35fec33b744e6a410f10e2fa090015_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v OnTestIterationStart\:TestEventListener}
+{\xe \v TestEventListener\:OnTestIterationStart}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void OnTestIterationStart (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &  {\i unit_test}, int  {\i iteration}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAABYW}
+{\bkmkend AAAAAAABYW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDZ" }{}}{\fldrslt {\cs37\ul\cf2 TestEventRepeater}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACEA" }{}}{\fldrslt {\cs37\ul\cf2 PrettyUnitTestResultPrinter}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYI" }{}}{\fldrslt {\cs37\ul\cf2 EmptyTestEventListener}}}
+.}\par
+{
+\ql
+Referenced by UnitTestImpl::RunAllTests().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d46/classtesting_1_1_test_event_listener_ac7cacc17e8a9b6e18d7c6031df762608_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v OnTestPartResult\:TestEventListener}
+{\xe \v TestEventListener\:OnTestPartResult}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void OnTestPartResult (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAQR" }{}}{\fldrslt {\cs37\ul\cf2 TestPartResult}}}
+ &  {\i test_part_result}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAABYX}
+{\bkmkend AAAAAAABYX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACEB" }{}}{\fldrslt {\cs37\ul\cf2 TestEventRepeater}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACEC" }{}}{\fldrslt {\cs37\ul\cf2 PrettyUnitTestResultPrinter}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYJ" }{}}{\fldrslt {\cs37\ul\cf2 EmptyTestEventListener}}}
+.}\par
+{
+\ql
+Referenced by DefaultGlobalTestPartResultReporter::ReportTestPartResult().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d46/classtesting_1_1_test_event_listener_a6897200761af7db2d3212d5d3c1571d9_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v OnTestProgramEnd\:TestEventListener}
+{\xe \v TestEventListener\:OnTestProgramEnd}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void OnTestProgramEnd (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &  {\i unit_test}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAABYY}
+{\bkmkend AAAAAAABYY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACED" }{}}{\fldrslt {\cs37\ul\cf2 TestEventRepeater}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACEE" }{}}{\fldrslt {\cs37\ul\cf2 PrettyUnitTestResultPrinter}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYK" }{}}{\fldrslt {\cs37\ul\cf2 EmptyTestEventListener}}}
+.}\par
+{
+\ql
+Referenced by UnitTestImpl::RunAllTests().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d46/classtesting_1_1_test_event_listener_a543233908c4fd972550c7198c31c895a_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v OnTestProgramStart\:TestEventListener}
+{\xe \v TestEventListener\:OnTestProgramStart}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void OnTestProgramStart (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABXL" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest}}}
+ &  {\i unit_test}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAABYZ}
+{\bkmkend AAAAAAABYZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACEF" }{}}{\fldrslt {\cs37\ul\cf2 TestEventRepeater}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACEG" }{}}{\fldrslt {\cs37\ul\cf2 PrettyUnitTestResultPrinter}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYL" }{}}{\fldrslt {\cs37\ul\cf2 EmptyTestEventListener}}}
+.}\par
+{
+\ql
+Referenced by UnitTestImpl::RunAllTests().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d46/classtesting_1_1_test_event_listener_a1dceff89a70d9e37ca025e8db3674eac_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v OnTestStart\:TestEventListener}
+{\xe \v TestEventListener\:OnTestStart}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void OnTestStart (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABFG" }{}}{\fldrslt {\cs37\ul\cf2 TestInfo}}}
+ &  {\i test_info}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAABZA}
+{\bkmkend AAAAAAABZA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Implemented in {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACEH" }{}}{\fldrslt {\cs37\ul\cf2 TestEventRepeater}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACEI" }{}}{\fldrslt {\cs37\ul\cf2 PrettyUnitTestResultPrinter}}}
+, and {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABYM" }{}}{\fldrslt {\cs37\ul\cf2 EmptyTestEventListener}}}
+.}\par
+{
+\ql
+Referenced by TestInfo::Run().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d1/d46/classtesting_1_1_test_event_listener_a02f601dff022b7d252f54f559acaf3f7_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+}

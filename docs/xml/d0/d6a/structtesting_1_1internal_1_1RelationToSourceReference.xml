@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/d6a/structtesting_1_1internal_1_1RelationToSourceReference" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::RelationToSourceReference</compoundname>
+    <includes refid="d5/da1/gtest-internal_8h" local="no">gtest-internal.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RelationToSourceReference</label>
+        <link refid="d0/d6a/structtesting_1_1internal_1_1RelationToSourceReference"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="1022" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-internal.h" bodystart="1022" bodyend="1022"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/d02/classtesting_1_1internal_1_1TestCaseNameIs" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::TestCaseNameIs</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="df/d02/classtesting_1_1internal_1_1TestCaseNameIs_1a4d739cc5d335052eb9f5b2ca559b81d1" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="4487" column="15" bodyfile="lib/googletest/src/gtest.cc" bodystart="4487" bodyend="-1"/>
+        <referencedby refid="df/d02/classtesting_1_1internal_1_1TestCaseNameIs_1ad2bd07145d06040b3af248b4089707ef" compoundref="df/d5b/gtest_8cc" startline="4482" endline="4484">TestCaseNameIs::operator()</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d02/classtesting_1_1internal_1_1TestCaseNameIs_1ad2bd07145d06040b3af248b4089707ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator()</definition>
+        <argsstring>(const TestCase *test_case) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="d0/d9a/classtesting_1_1TestCase" kindref="compound">TestCase</ref> *</type>
+          <declname>test_case</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="4482" column="8" bodyfile="lib/googletest/src/gtest.cc" bodystart="4482" bodyend="4484"/>
+        <references refid="cpp/string/basic_string/c_str_1">string::c_str</references>
+        <references refid="d0/d9a/classtesting_1_1TestCase_1a8c4da4b626748f746b1f9fdbe885edfb" compoundref="d8/d73/gtest_8h" startline="800" endline="800">TestCase::name</references>
+        <references refid="df/d02/classtesting_1_1internal_1_1TestCaseNameIs_1a4d739cc5d335052eb9f5b2ca559b81d1" compoundref="df/d5b/gtest_8cc" startline="4487">TestCaseNameIs::name_</references>
+      </memberdef>
+      <memberdef kind="function" id="df/d02/classtesting_1_1internal_1_1TestCaseNameIs_1af1734d8eec54e78a38c69b6ceba21091" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TestCaseNameIs</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>TestCaseNameIs</name>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="4478" column="12" bodyfile="lib/googletest/src/gtest.cc" bodystart="4478" bodyend="4479"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>basic_string&lt; Char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="2">
+        <label>string</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TestCaseNameIs</label>
+        <link refid="df/d02/classtesting_1_1internal_1_1TestCaseNameIs"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-name_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>basic_string&lt; char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/src/gtest.cc" line="4475" column="1" bodyfile="lib/googletest/src/gtest.cc" bodystart="4475" bodyend="4488"/>
+    <listofallmembers>
+      <member refid="df/d02/classtesting_1_1internal_1_1TestCaseNameIs_1a4d739cc5d335052eb9f5b2ca559b81d1" prot="private" virt="non-virtual"><scope>testing::internal::TestCaseNameIs</scope><name>name_</name></member>
+      <member refid="df/d02/classtesting_1_1internal_1_1TestCaseNameIs_1ad2bd07145d06040b3af248b4089707ef" prot="public" virt="non-virtual"><scope>testing::internal::TestCaseNameIs</scope><name>operator()</name></member>
+      <member refid="df/d02/classtesting_1_1internal_1_1TestCaseNameIs_1af1734d8eec54e78a38c69b6ceba21091" prot="public" virt="non-virtual"><scope>testing::internal::TestCaseNameIs</scope><name>TestCaseNameIs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

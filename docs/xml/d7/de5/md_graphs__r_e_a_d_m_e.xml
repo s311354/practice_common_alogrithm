@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/de5/md_graphs__r_e_a_d_m_e" kind="page">
+    <compoundname>md_graphs_README</compoundname>
+    <title>The concept of Directed Graph</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>In mathematics, and more specifically in graph theory, a directed graph is the graph that is made up a set of vertices connected by directed edges often called arcs, i.e., a set of objects (called vertices or nodes) that are connected together, where all the edges are directed from one vertex to another. A directed graph is sometimes called a digraph or a directed network. In contrast, a graph where the edges are bidirectional is called an undirected graph.</para>
+<para>In this simple program, I recapped and practiced how to implement the directed graph with C++. The code initially extracted from <ulink url="https://github.com/jwasham/practice-cpp/tree/master/graphs">Practice Directed Graph</ulink> and then reworked. The basic functions for the directed graph are a follows:<itemizedlist>
+<listitem><para>BFS (Breadth-first search): use queue and traverse all the connected nodes</para>
+</listitem><listitem><para>DFS (Depth-first search): use stack and traverse all the connected nodes</para>
+</listitem><listitem><para>Detect Cycle in a Directed Graph: check whether the graph contains a cycle or not</para>
+</listitem><listitem><para>Iterate in a Directed Graph: pointing to all of vertices in the directed graph</para>
+</listitem></itemizedlist>
+</para>
+<para>The corresponding result: <preformatted><computeroutput>DFS: 0 5 8 1 2 6 4 1 2 3 4 5 6 7 8
+BFS: 0 1 5 2 8 4 6 1 2 3 4 5 6 7 8 </computeroutput></preformatted></para>
+<sect1 id="d7/de5/md_graphs__r_e_a_d_m_e_1autotoc_md3">
+<title>Reference</title>
+<para>[1] <ulink url="https://en.wikipedia.org/wiki/Directed_graph">Directed graph</ulink> [2] <ulink url="https://www.analyticsvidhya.com/blog/2018/04/introduction-to-graph-theory-network-analysis-python-codes/">An Introduction to Graph Theory and Network Analysis (with Python codes)</ulink> </para>
+</sect1>
+    </detaileddescription>
+    <location file="graphs/README.md"/>
+  </compounddef>
+</doxygen>

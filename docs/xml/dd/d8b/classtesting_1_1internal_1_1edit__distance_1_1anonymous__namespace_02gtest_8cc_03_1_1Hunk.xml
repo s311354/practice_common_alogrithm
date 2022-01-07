@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1af0e7bc81daf2ab6f18398612a935ffc3" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t adds_</definition>
+        <argsstring></argsstring>
+        <name>adds_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1190" column="10" bodyfile="lib/googletest/src/gtest.cc" bodystart="1190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1ad56557398c16a5c31782787e93bea2b8" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t common_</definition>
+        <argsstring></argsstring>
+        <name>common_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1190" column="25" bodyfile="lib/googletest/src/gtest.cc" bodystart="1190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1a5fa71e931e3016120aa198110172d943" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/list" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::list</ref>&lt; <ref refid="cpp/utility/pair" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::pair</ref>&lt; char, const char * &gt; &gt;</type>
+        <definition>std::list&lt;std::pair&lt;char, const char*&gt; &gt; hunk_</definition>
+        <argsstring></argsstring>
+        <name>hunk_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1191" column="13" bodyfile="lib/googletest/src/gtest.cc" bodystart="1191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1abd67977adc745576c5cc9bb3360111fd" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/list" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::list</ref>&lt; <ref refid="cpp/utility/pair" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::pair</ref>&lt; char, const char * &gt; &gt;</type>
+        <definition>std::list&lt;std::pair&lt;char, const char*&gt; &gt; hunk_adds_</definition>
+        <argsstring></argsstring>
+        <name>hunk_adds_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1191" column="19" bodyfile="lib/googletest/src/gtest.cc" bodystart="1191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1adb7609476a91dad975a145fc55a33dd7" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/list" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::list</ref>&lt; <ref refid="cpp/utility/pair" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::pair</ref>&lt; char, const char * &gt; &gt;</type>
+        <definition>std::list&lt;std::pair&lt;char, const char*&gt; &gt; hunk_removes_</definition>
+        <argsstring></argsstring>
+        <name>hunk_removes_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1191" column="30" bodyfile="lib/googletest/src/gtest.cc" bodystart="1191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1abe4bdaaa3c76256f548fc9f57c104785" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t left_start_</definition>
+        <argsstring></argsstring>
+        <name>left_start_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1189" column="10" bodyfile="lib/googletest/src/gtest.cc" bodystart="1189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1a382c68ace6bb229775261f928d41080f" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t removes_</definition>
+        <argsstring></argsstring>
+        <name>removes_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1190" column="16" bodyfile="lib/googletest/src/gtest.cc" bodystart="1190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1ae22358a0e3fa81f19832101a234e7df4" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t right_start_</definition>
+        <argsstring></argsstring>
+        <name>right_start_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1189" column="22" bodyfile="lib/googletest/src/gtest.cc" bodystart="1189" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1aef7a333b434b6bb6c1a443cb8aeba1e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool has_edits</definition>
+        <argsstring>() const</argsstring>
+        <name>has_edits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1163" column="8" bodyfile="lib/googletest/src/gtest.cc" bodystart="1163" bodyend="1163"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1acfbdaa7dc1dbea93c98c12b95e4ab49b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hunk</definition>
+        <argsstring>(size_t left_start, size_t right_start)</argsstring>
+        <name>Hunk</name>
+        <param>
+          <type>size_t</type>
+          <declname>left_start</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>right_start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1128" column="3" bodyfile="lib/googletest/src/gtest.cc" bodystart="1128" bodyend="1133"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1a30369fba8673b7c27403db64b874c9af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PrintTo</definition>
+        <argsstring>(std::ostream *os)</argsstring>
+        <name>PrintTo</name>
+        <param>
+          <type><ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1153" column="8" bodyfile="lib/googletest/src/gtest.cc" bodystart="1153" bodyend="1161"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1aa9c8517b93ac94a1ba9f9a2469a70a38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PushLine</definition>
+        <argsstring>(char edit, const char *line)</argsstring>
+        <name>PushLine</name>
+        <param>
+          <type>char</type>
+          <declname>edit</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1135" column="8" bodyfile="lib/googletest/src/gtest.cc" bodystart="1135" bodyend="1151"/>
+        <references refid="cpp/utility/pair/make_pair_1">std::make_pair</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1ae66fbc4fc3f2f8ecf4a0374a53c55728" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlushEdits</definition>
+        <argsstring>()</argsstring>
+        <name>FlushEdits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1166" column="8" bodyfile="lib/googletest/src/gtest.cc" bodystart="1166" bodyend="1169"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1ad011361605fc1302201883676e2d6c91" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PrintHeader</definition>
+        <argsstring>(std::ostream *ss) const</argsstring>
+        <name>PrintHeader</name>
+        <param>
+          <type><ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+          <declname>ss</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1175" column="8" bodyfile="lib/googletest/src/gtest.cc" bodystart="1175" bodyend="1187"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>list&lt; T &gt;</label>
+        <link refid="cpp/container/list" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pair</label>
+        <link refid="cpp/utility/pair" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+first</edgelabel>
+          <edgelabel>+second</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>list&lt; std::pair&lt; char, const char * &gt; &gt;</label>
+        <link refid="cpp/container/list" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; std::pair&lt; char, const char * &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>T</label>
+      </node>
+      <node id="1">
+        <label>Hunk</label>
+        <link refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-hunk_</edgelabel>
+          <edgelabel>-hunk_adds_</edgelabel>
+          <edgelabel>-hunk_removes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pair&lt; char, const char * &gt;</label>
+        <link refid="cpp/utility/pair" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; char, const char * &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/src/gtest.cc" line="1126" column="1" bodyfile="lib/googletest/src/gtest.cc" bodystart="1126" bodyend="1192"/>
+    <listofallmembers>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1af0e7bc81daf2ab6f18398612a935ffc3" prot="private" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>adds_</name></member>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1ad56557398c16a5c31782787e93bea2b8" prot="private" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>common_</name></member>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1ae66fbc4fc3f2f8ecf4a0374a53c55728" prot="private" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>FlushEdits</name></member>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1aef7a333b434b6bb6c1a443cb8aeba1e5" prot="public" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>has_edits</name></member>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1acfbdaa7dc1dbea93c98c12b95e4ab49b" prot="public" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>Hunk</name></member>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1a5fa71e931e3016120aa198110172d943" prot="private" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>hunk_</name></member>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1abd67977adc745576c5cc9bb3360111fd" prot="private" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>hunk_adds_</name></member>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1adb7609476a91dad975a145fc55a33dd7" prot="private" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>hunk_removes_</name></member>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1abe4bdaaa3c76256f548fc9f57c104785" prot="private" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>left_start_</name></member>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1ad011361605fc1302201883676e2d6c91" prot="private" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>PrintHeader</name></member>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1a30369fba8673b7c27403db64b874c9af" prot="public" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>PrintTo</name></member>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1aa9c8517b93ac94a1ba9f9a2469a70a38" prot="public" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>PushLine</name></member>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1a382c68ace6bb229775261f928d41080f" prot="private" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>removes_</name></member>
+      <member refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1ae22358a0e3fa81f19832101a234e7df4" prot="private" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</scope><name>right_start_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

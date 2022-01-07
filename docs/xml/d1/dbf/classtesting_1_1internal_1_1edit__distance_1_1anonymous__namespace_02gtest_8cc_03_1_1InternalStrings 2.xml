@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/dbf/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1InternalStrings" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::InternalStrings</compoundname>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="d1/dbf/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1InternalStrings_1a8c510fbc110525be4b4f9568da60d354" prot="private" static="no">
+        <type><ref refid="cpp/container/map" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::map</ref>&lt; <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref>, size_t &gt;</type>
+        <definition>typedef std::map&lt;std::string, size_t&gt; testing::internal::edit_distance::anonymous_namespace{gtest.cc}::InternalStrings::IdMap</definition>
+        <argsstring></argsstring>
+        <name>IdMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1098" column="20" bodyfile="lib/googletest/src/gtest.cc" bodystart="1098" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/dbf/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1InternalStrings_1a86d6b4db4bf034a8d2cc668df514d058" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/dbf/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1InternalStrings_1a8c510fbc110525be4b4f9568da60d354" kindref="member">IdMap</ref></type>
+        <definition>IdMap testing::internal::edit_distance::anonymous_namespace{gtest.cc}::InternalStrings::ids_</definition>
+        <argsstring></argsstring>
+        <name>ids_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1099" column="9" bodyfile="lib/googletest/src/gtest.cc" bodystart="1099" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/dbf/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1InternalStrings_1a19e907f1050d89f17c6eabb1a04a25bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t testing::internal::edit_distance::anonymous_namespace{gtest.cc}::InternalStrings::GetId</definition>
+        <argsstring>(const std::string &amp;str)</argsstring>
+        <name>GetId</name>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest.cc" line="1090" column="10" bodyfile="lib/googletest/src/gtest.cc" bodystart="1090" bodyend="1095"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>K</label>
+      </node>
+      <node id="9">
+        <label>T</label>
+      </node>
+      <node id="7">
+        <label>std::map&lt; K, T &gt;</label>
+        <link refid="cpp/container/map" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+keys</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::basic_string&lt; Char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="4">
+        <label>std::basic_string&lt; char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::size_t</label>
+        <link refid="cpp/types/size_t" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="2">
+        <label>std::map&lt; std::string, size_t &gt;</label>
+        <link refid="cpp/container/map" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+keys</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; std::string, size_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::InternalStrings</label>
+        <link refid="d1/dbf/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1InternalStrings"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-ids_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::string</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/src/gtest.cc" line="1088" column="1" bodyfile="lib/googletest/src/gtest.cc" bodystart="1088" bodyend="1100"/>
+    <listofallmembers>
+      <member refid="d1/dbf/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1InternalStrings_1a19e907f1050d89f17c6eabb1a04a25bc" prot="public" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::InternalStrings</scope><name>GetId</name></member>
+      <member refid="d1/dbf/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1InternalStrings_1a8c510fbc110525be4b4f9568da60d354" prot="private" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::InternalStrings</scope><name>IdMap</name></member>
+      <member refid="d1/dbf/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1InternalStrings_1a86d6b4db4bf034a8d2cc668df514d058" prot="private" virt="non-virtual"><scope>testing::internal::edit_distance::anonymous_namespace{gtest.cc}::InternalStrings</scope><name>ids_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

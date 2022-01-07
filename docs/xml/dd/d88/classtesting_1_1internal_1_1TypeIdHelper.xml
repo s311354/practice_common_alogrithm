@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/d88/classtesting_1_1internal_1_1TypeIdHelper" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::TypeIdHelper</compoundname>
+    <includes refid="d5/da1/gtest-internal_8h" local="no">gtest-internal.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="dd/d88/classtesting_1_1internal_1_1TypeIdHelper_1a870ada1c63895a920259b24a83260232" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dummy_</definition>
+        <argsstring></argsstring>
+        <name>dummy_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="437" column="15" bodyfile="lib/googletest/include/gtest/internal/gtest-internal.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>TypeIdHelper&lt; T &gt;</label>
+        <link refid="dd/d88/classtesting_1_1internal_1_1TypeIdHelper"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="432" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-internal.h" bodystart="432" bodyend="438"/>
+    <listofallmembers>
+      <member refid="dd/d88/classtesting_1_1internal_1_1TypeIdHelper_1a870ada1c63895a920259b24a83260232" prot="public" virt="non-virtual"><scope>testing::internal::TypeIdHelper</scope><name>dummy_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

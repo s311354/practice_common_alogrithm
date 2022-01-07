@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/d78/classSubSystemOne" kind="class" language="C++" prot="public">
+    <compoundname>SubSystemOne</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d78/classSubSystemOne_1af6c249545e514d436a1fc09177db1ec7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SubSystemOne::MethodOne</definition>
+        <argsstring>()</argsstring>
+        <name>MethodOne</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/facade_pattern/main.cc" line="6" column="10" bodyfile="design_pattern/facade_pattern/main.cc" bodystart="6" bodyend="9"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <referencedby refid="da/d1f/classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="59" endline="65">Facade::MethodA</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>SubSystemOne</label>
+        <link refid="d1/d78/classSubSystemOne"/>
+      </node>
+    </collaborationgraph>
+    <location file="design_pattern/facade_pattern/main.cc" line="3" column="1" bodyfile="design_pattern/facade_pattern/main.cc" bodystart="4" bodyend="10"/>
+    <listofallmembers>
+      <member refid="d1/d78/classSubSystemOne_1af6c249545e514d436a1fc09177db1ec7" prot="public" virt="non-virtual"><scope>SubSystemOne</scope><name>MethodOne</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

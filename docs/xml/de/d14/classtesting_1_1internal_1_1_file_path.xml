@@ -1,0 +1,595 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/d14/classtesting_1_1internal_1_1_file_path" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::FilePath</compoundname>
+    <includes refid="dc/d79/gtest-filepath_8h" local="no">gtest-filepath.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string pathname_</definition>
+        <argsstring></argsstring>
+        <name>pathname_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="200" column="15" bodyfile="lib/googletest/include/gtest/internal/gtest-filepath.h" bodystart="200" bodyend="-1"/>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a957e950af2e23bbd4e8b647214595218" compoundref="dc/d20/gtest-filepath_8cc" startline="308" endline="319">FilePath::CreateDirectoriesRecursively</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1ad1ae719853841409aa22d67755058b72" compoundref="dc/d20/gtest-filepath_8cc" startline="325" endline="341">FilePath::CreateFolder</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a396c68beeeccc066f4c04dced1a11433" compoundref="dc/d20/gtest-filepath_8cc" startline="209" endline="219">FilePath::FileOrDirectoryExists</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a3a0a77b979cea003921d8324ef96bde1" compoundref="dc/d20/gtest-filepath_8cc" startline="265" endline="276">FilePath::IsAbsolutePath</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa14e121a7a4f6e743c9e10b3a0818eea" compoundref="dc/d20/gtest-filepath_8cc" startline="300" endline="303">FilePath::IsDirectory</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a50e9326bd46f8e8385be04fcdd77e599" compoundref="dc/d20/gtest-filepath_8cc" startline="253" endline="262">FilePath::IsRootDirectory</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1af279e0f0ff720ee54d6733674dfda50a" compoundref="dc/d20/gtest-filepath_8cc" startline="356" endline="384">FilePath::Normalize</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a0e757422eb25fd5c7b70a8185ee04c69" compoundref="dc/d20/gtest-filepath_8cc" startline="124" endline="131">FilePath::RemoveExtension</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4314fe3c55007fe669e6f9b1313207b4" compoundref="dc/d20/gtest-filepath_8cc" startline="346" endline="350">FilePath::RemoveTrailingPathSeparator</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a42b263db98b0796b43578baca9ba991d" compoundref="dc/d79/gtest-filepath_8h" startline="73" endline="75">FilePath::Set</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a14989d8fe448c5f947832aea3dae615a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* c_str</definition>
+        <argsstring>() const</argsstring>
+        <name>c_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="78" column="14" bodyfile="lib/googletest/include/gtest/internal/gtest-filepath.h" bodystart="78" bodyend="78"/>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1ad1ae719853841409aa22d67755058b72" compoundref="dc/d20/gtest-filepath_8cc" startline="325" endline="341">FilePath::CreateFolder</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4a118f1c72313787fe28aa8e2103812a" compoundref="dc/d20/gtest-filepath_8cc" startline="223" endline="249">FilePath::DirectoryExists</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a49f9182daf48b8dbe6d48ffa2e2b1517" compoundref="dc/d20/gtest-filepath_8cc" startline="136" endline="147">FilePath::FindLastPathSeparator</referencedby>
+        <referencedby refid="d7/d47/classtesting_1_1_unit_test_1a8623e561822f52b2150dd55b69b28f7a" compoundref="df/d5b/gtest_8cc" startline="4265" endline="4267">UnitTest::original_working_dir</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1af170c740d93389979d9fcfa1058812c5" compoundref="dc/d20/gtest-filepath_8cc" startline="166" endline="175">FilePath::RemoveFileName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a957e950af2e23bbd4e8b647214595218" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CreateDirectoriesRecursively</definition>
+        <argsstring>() const</argsstring>
+        <name>CreateDirectoriesRecursively</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="144" column="8" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="308" bodyend="319"/>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a957e950af2e23bbd4e8b647214595218" compoundref="dc/d20/gtest-filepath_8cc" startline="308" endline="319">FilePath::CreateDirectoriesRecursively</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1ad1ae719853841409aa22d67755058b72" compoundref="dc/d20/gtest-filepath_8cc" startline="325" endline="341">FilePath::CreateFolder</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa14e121a7a4f6e743c9e10b3a0818eea" compoundref="dc/d20/gtest-filepath_8cc" startline="300" endline="303">FilePath::IsDirectory</references>
+        <references refid="cpp/string/basic_string/size_1">string::length</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" compoundref="dc/d79/gtest-filepath_8h" startline="200">FilePath::pathname_</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1af170c740d93389979d9fcfa1058812c5" compoundref="dc/d20/gtest-filepath_8cc" startline="166" endline="175">FilePath::RemoveFileName</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4314fe3c55007fe669e6f9b1313207b4" compoundref="dc/d20/gtest-filepath_8cc" startline="346" endline="350">FilePath::RemoveTrailingPathSeparator</references>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a957e950af2e23bbd4e8b647214595218" compoundref="dc/d20/gtest-filepath_8cc" startline="308" endline="319">FilePath::CreateDirectoriesRecursively</referencedby>
+        <referencedby refid="d3/dc6/classtesting_1_1internal_1_1_xml_unit_test_result_printer_1aa21b349a51378e47877ee6d153c37116" compoundref="df/d5b/gtest_8cc" startline="3432" endline="3462">XmlUnitTestResultPrinter::OnTestIterationEnd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1ad1ae719853841409aa22d67755058b72" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CreateFolder</definition>
+        <argsstring>() const</argsstring>
+        <name>CreateFolder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="150" column="8" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="325" bodyend="341"/>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a14989d8fe448c5f947832aea3dae615a" compoundref="dc/d79/gtest-filepath_8h" startline="78" endline="78">FilePath::c_str</references>
+        <references refid="cpp/string/basic_string/c_str_1">string::c_str</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4a118f1c72313787fe28aa8e2103812a" compoundref="dc/d20/gtest-filepath_8cc" startline="223" endline="249">FilePath::DirectoryExists</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" compoundref="dc/d79/gtest-filepath_8h" startline="200">FilePath::pathname_</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4314fe3c55007fe669e6f9b1313207b4" compoundref="dc/d20/gtest-filepath_8cc" startline="346" endline="350">FilePath::RemoveTrailingPathSeparator</references>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a957e950af2e23bbd4e8b647214595218" compoundref="dc/d20/gtest-filepath_8cc" startline="308" endline="319">FilePath::CreateDirectoriesRecursively</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a4a118f1c72313787fe28aa8e2103812a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DirectoryExists</definition>
+        <argsstring>() const</argsstring>
+        <name>DirectoryExists</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="158" column="8" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="223" bodyend="249"/>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a14989d8fe448c5f947832aea3dae615a" compoundref="dc/d79/gtest-filepath_8h" startline="78" endline="78">FilePath::c_str</references>
+        <references refid="d0/d81/namespacetesting_1_1internal_1_1posix_1af0d04ed5baeed28353fa38742748a421" compoundref="d3/dc9/gtest-port_8h" startline="2348" endline="2348">testing::internal::posix::IsDir</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a50e9326bd46f8e8385be04fcdd77e599" compoundref="dc/d20/gtest-filepath_8cc" startline="253" endline="262">FilePath::IsRootDirectory</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4314fe3c55007fe669e6f9b1313207b4" compoundref="dc/d20/gtest-filepath_8cc" startline="346" endline="350">FilePath::RemoveTrailingPathSeparator</references>
+        <references refid="d0/d81/namespacetesting_1_1internal_1_1posix_1a2b87b7ff647a128614daf50667eb9304" compoundref="d3/dc9/gtest-port_8h" startline="2342" endline="2342">testing::internal::posix::Stat</references>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1ad1ae719853841409aa22d67755058b72" compoundref="dc/d20/gtest-filepath_8cc" startline="325" endline="341">FilePath::CreateFolder</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a396c68beeeccc066f4c04dced1a11433" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FileOrDirectoryExists</definition>
+        <argsstring>() const</argsstring>
+        <name>FileOrDirectoryExists</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="154" column="8" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="209" bodyend="219"/>
+        <references refid="cpp/string/basic_string/c_str_1">string::c_str</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" compoundref="dc/d79/gtest-filepath_8h" startline="200">FilePath::pathname_</references>
+        <references refid="d0/d81/namespacetesting_1_1internal_1_1posix_1a2b87b7ff647a128614daf50667eb9304" compoundref="d3/dc9/gtest-port_8h" startline="2342" endline="2342">testing::internal::posix::Stat</references>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a01f72e14ad442c88e941571cb65228f4" compoundref="dc/d20/gtest-filepath_8cc" startline="286" endline="295">FilePath::GenerateUniqueFileName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1aa5df70ab39fdaff6e3fce46e8d35b608" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FilePath</definition>
+        <argsstring>()</argsstring>
+        <name>FilePath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="61" column="3" bodyfile="lib/googletest/include/gtest/internal/gtest-filepath.h" bodystart="61" bodyend="61"/>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1ae8c11e9d5d51f4266c6507aeb34ba55b" compoundref="dc/d20/gtest-filepath_8cc" startline="199" endline="205">FilePath::ConcatPaths</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a8f7fb543b08e0e79edaaa2829c1cb808" compoundref="dc/d20/gtest-filepath_8cc" startline="99" endline="118">FilePath::GetCurrentDir</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a56b8e4a3bdcf00693fb761b47689dd92" compoundref="dc/d20/gtest-filepath_8cc" startline="183" endline="195">FilePath::MakeFileName</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a9fe846b92cc3a819b1bca34059999369" compoundref="dc/d20/gtest-filepath_8cc" startline="155" endline="158">FilePath::RemoveDirectoryName</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a0e757422eb25fd5c7b70a8185ee04c69" compoundref="dc/d20/gtest-filepath_8cc" startline="124" endline="131">FilePath::RemoveExtension</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1af170c740d93389979d9fcfa1058812c5" compoundref="dc/d20/gtest-filepath_8cc" startline="166" endline="175">FilePath::RemoveFileName</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4314fe3c55007fe669e6f9b1313207b4" compoundref="dc/d20/gtest-filepath_8cc" startline="346" endline="350">FilePath::RemoveTrailingPathSeparator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a7221ea73ecd74af3aca8c7e36910ca54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FilePath</definition>
+        <argsstring>(const FilePath &amp;rhs)</argsstring>
+        <name>FilePath</name>
+        <param>
+          <type>const <ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="62" column="3" bodyfile="lib/googletest/include/gtest/internal/gtest-filepath.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a6385e248c57ed010175c5f9232d230e6" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FilePath</definition>
+        <argsstring>(const std::string &amp;pathname)</argsstring>
+        <name>FilePath</name>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>pathname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="64" column="12" bodyfile="lib/googletest/include/gtest/internal/gtest-filepath.h" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a3a0a77b979cea003921d8324ef96bde1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsAbsolutePath</definition>
+        <argsstring>() const</argsstring>
+        <name>IsAbsolutePath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="170" column="8" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="265" bodyend="276"/>
+        <references refid="cpp/string/basic_string/c_str_1">string::c_str</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a6b8d22cee9edbbfe56077420a6fa1cb1" compoundref="dc/d20/gtest-filepath_8cc" startline="90" endline="96">testing::internal::IsPathSeparator</references>
+        <references refid="cpp/string/basic_string/size_1">string::length</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" compoundref="dc/d79/gtest-filepath_8h" startline="200">FilePath::pathname_</references>
+        <referencedby refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a8cd6d2ad634d8f29bd2345d5b2ec5673" compoundref="df/d5b/gtest_8cc" startline="426" endline="455">UnitTestOptions::GetAbsolutePathToOutputFile</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a50e9326bd46f8e8385be04fcdd77e599" compoundref="dc/d20/gtest-filepath_8cc" startline="253" endline="262">FilePath::IsRootDirectory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1aa14e121a7a4f6e743c9e10b3a0818eea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsDirectory</definition>
+        <argsstring>() const</argsstring>
+        <name>IsDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="163" column="8" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="300" bodyend="303"/>
+        <references refid="cpp/string/basic_string/c_str_1">string::c_str</references>
+        <references refid="cpp/string/basic_string/empty_1">string::empty</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a6b8d22cee9edbbfe56077420a6fa1cb1" compoundref="dc/d20/gtest-filepath_8cc" startline="90" endline="96">testing::internal::IsPathSeparator</references>
+        <references refid="cpp/string/basic_string/size_1">string::length</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" compoundref="dc/d79/gtest-filepath_8h" startline="200">FilePath::pathname_</references>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a957e950af2e23bbd4e8b647214595218" compoundref="dc/d20/gtest-filepath_8cc" startline="308" endline="319">FilePath::CreateDirectoriesRecursively</referencedby>
+        <referencedby refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a8cd6d2ad634d8f29bd2345d5b2ec5673" compoundref="df/d5b/gtest_8cc" startline="426" endline="455">UnitTestOptions::GetAbsolutePathToOutputFile</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4314fe3c55007fe669e6f9b1313207b4" compoundref="dc/d20/gtest-filepath_8cc" startline="346" endline="350">FilePath::RemoveTrailingPathSeparator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a8e12342fc420701fbffd97025421575a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>IsEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="111" column="8" bodyfile="lib/googletest/include/gtest/internal/gtest-filepath.h" bodystart="111" bodyend="111"/>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1ae8c11e9d5d51f4266c6507aeb34ba55b" compoundref="dc/d20/gtest-filepath_8cc" startline="199" endline="205">FilePath::ConcatPaths</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a50e9326bd46f8e8385be04fcdd77e599" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsRootDirectory</definition>
+        <argsstring>() const</argsstring>
+        <name>IsRootDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="167" column="8" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="253" bodyend="262"/>
+        <references refid="cpp/string/basic_string/c_str_1">string::c_str</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a3a0a77b979cea003921d8324ef96bde1" compoundref="dc/d20/gtest-filepath_8cc" startline="265" endline="276">FilePath::IsAbsolutePath</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a6b8d22cee9edbbfe56077420a6fa1cb1" compoundref="dc/d20/gtest-filepath_8cc" startline="90" endline="96">testing::internal::IsPathSeparator</references>
+        <references refid="cpp/string/basic_string/size_1">string::length</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" compoundref="dc/d79/gtest-filepath_8h" startline="200">FilePath::pathname_</references>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4a118f1c72313787fe28aa8e2103812a" compoundref="dc/d20/gtest-filepath_8cc" startline="223" endline="249">FilePath::DirectoryExists</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a56ce97a342d8d71d4abedca3f5666ab1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref> &amp;</type>
+        <definition>FilePath&amp; operator=</definition>
+        <argsstring>(const FilePath &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="68" column="12" bodyfile="lib/googletest/include/gtest/internal/gtest-filepath.h" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a9fe846b92cc3a819b1bca34059999369" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref></type>
+        <definition>FilePath RemoveDirectoryName</definition>
+        <argsstring>() const</argsstring>
+        <name>RemoveDirectoryName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="124" column="12" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="155" bodyend="158"/>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa5df70ab39fdaff6e3fce46e8d35b608" compoundref="dc/d79/gtest-filepath_8h" startline="61" endline="61">FilePath::FilePath</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a49f9182daf48b8dbe6d48ffa2e2b1517" compoundref="dc/d20/gtest-filepath_8cc" startline="136" endline="147">FilePath::FindLastPathSeparator</references>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a4fc348184f2bc16ec2270cffb38de5dc" compoundref="df/d5b/gtest_8cc" startline="399" endline="409">testing::internal::GetCurrentExecutableName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a0e757422eb25fd5c7b70a8185ee04c69" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref></type>
+        <definition>FilePath RemoveExtension</definition>
+        <argsstring>(const char *extension) const</argsstring>
+        <name>RemoveExtension</name>
+        <param>
+          <type>const char *</type>
+          <declname>extension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="138" column="12" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="124" bodyend="131"/>
+        <references refid="d0/dde/classtesting_1_1internal_1_1_string_1adb81d60e125e3c75f4b009ce087aed58" compoundref="df/d5b/gtest_8cc" startline="1949" endline="1956">String::EndsWithCaseInsensitive</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa5df70ab39fdaff6e3fce46e8d35b608" compoundref="dc/d79/gtest-filepath_8h" startline="61" endline="61">FilePath::FilePath</references>
+        <references refid="cpp/string/basic_string/size_1">string::length</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" compoundref="dc/d79/gtest-filepath_8h" startline="200">FilePath::pathname_</references>
+        <references refid="cpp/string/basic_string/substr_1">string::substr</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1af170c740d93389979d9fcfa1058812c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref></type>
+        <definition>FilePath RemoveFileName</definition>
+        <argsstring>() const</argsstring>
+        <name>RemoveFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="132" column="12" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="166" bodyend="175"/>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a14989d8fe448c5f947832aea3dae615a" compoundref="dc/d79/gtest-filepath_8h" startline="78" endline="78">FilePath::c_str</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa5df70ab39fdaff6e3fce46e8d35b608" compoundref="dc/d79/gtest-filepath_8h" startline="61" endline="61">FilePath::FilePath</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a49f9182daf48b8dbe6d48ffa2e2b1517" compoundref="dc/d20/gtest-filepath_8cc" startline="136" endline="147">FilePath::FindLastPathSeparator</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a6ffb7bac99e2a7612631aad364fa49ad" compoundref="dc/d20/gtest-filepath_8cc" startline="86">testing::internal::kCurrentDirectoryString</references>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a957e950af2e23bbd4e8b647214595218" compoundref="dc/d20/gtest-filepath_8cc" startline="308" endline="319">FilePath::CreateDirectoriesRecursively</referencedby>
+        <referencedby refid="d3/dc6/classtesting_1_1internal_1_1_xml_unit_test_result_printer_1aa21b349a51378e47877ee6d153c37116" compoundref="df/d5b/gtest_8cc" startline="3432" endline="3462">XmlUnitTestResultPrinter::OnTestIterationEnd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a4314fe3c55007fe669e6f9b1313207b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref></type>
+        <definition>FilePath RemoveTrailingPathSeparator</definition>
+        <argsstring>() const</argsstring>
+        <name>RemoveTrailingPathSeparator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="116" column="12" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="346" bodyend="350"/>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa5df70ab39fdaff6e3fce46e8d35b608" compoundref="dc/d79/gtest-filepath_8h" startline="61" endline="61">FilePath::FilePath</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa14e121a7a4f6e743c9e10b3a0818eea" compoundref="dc/d20/gtest-filepath_8cc" startline="300" endline="303">FilePath::IsDirectory</references>
+        <references refid="cpp/string/basic_string/size_1">string::length</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" compoundref="dc/d79/gtest-filepath_8h" startline="200">FilePath::pathname_</references>
+        <references refid="cpp/string/basic_string/substr_1">string::substr</references>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1ae8c11e9d5d51f4266c6507aeb34ba55b" compoundref="dc/d20/gtest-filepath_8cc" startline="199" endline="205">FilePath::ConcatPaths</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a957e950af2e23bbd4e8b647214595218" compoundref="dc/d20/gtest-filepath_8cc" startline="308" endline="319">FilePath::CreateDirectoriesRecursively</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1ad1ae719853841409aa22d67755058b72" compoundref="dc/d20/gtest-filepath_8cc" startline="325" endline="341">FilePath::CreateFolder</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4a118f1c72313787fe28aa8e2103812a" compoundref="dc/d20/gtest-filepath_8cc" startline="223" endline="249">FilePath::DirectoryExists</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a42b263db98b0796b43578baca9ba991d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Set</definition>
+        <argsstring>(const FilePath &amp;rhs)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>const <ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="73" column="8" bodyfile="lib/googletest/include/gtest/internal/gtest-filepath.h" bodystart="73" bodyend="75"/>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" compoundref="dc/d79/gtest-filepath_8h" startline="200">FilePath::pathname_</references>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a01f72e14ad442c88e941571cb65228f4" compoundref="dc/d20/gtest-filepath_8cc" startline="286" endline="295">FilePath::GenerateUniqueFileName</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a4fc348184f2bc16ec2270cffb38de5dc" compoundref="df/d5b/gtest_8cc" startline="399" endline="409">testing::internal::GetCurrentExecutableName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a7314f49a51859d46439cfeddb9ea06ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+        <definition>const std::string&amp; string</definition>
+        <argsstring>() const</argsstring>
+        <name>string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="77" column="21" bodyfile="lib/googletest/include/gtest/internal/gtest-filepath.h" bodystart="77" bodyend="77"/>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1ae8c11e9d5d51f4266c6507aeb34ba55b" compoundref="dc/d20/gtest-filepath_8cc" startline="199" endline="205">FilePath::ConcatPaths</referencedby>
+        <referencedby refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a8cd6d2ad634d8f29bd2345d5b2ec5673" compoundref="df/d5b/gtest_8cc" startline="426" endline="455">UnitTestOptions::GetAbsolutePathToOutputFile</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a56b8e4a3bdcf00693fb761b47689dd92" compoundref="dc/d20/gtest-filepath_8cc" startline="183" endline="195">FilePath::MakeFileName</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1ae8c11e9d5d51f4266c6507aeb34ba55b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref></type>
+        <definition>FilePath ConcatPaths</definition>
+        <argsstring>(const FilePath &amp;directory, const FilePath &amp;relative_path)</argsstring>
+        <name>ConcatPaths</name>
+        <param>
+          <type>const <ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>directory</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>relative_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="95" column="19" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="199" bodyend="205"/>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa5df70ab39fdaff6e3fce46e8d35b608" compoundref="dc/d79/gtest-filepath_8h" startline="61" endline="61">FilePath::FilePath</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a8e12342fc420701fbffd97025421575a" compoundref="dc/d79/gtest-filepath_8h" startline="111" endline="111">FilePath::IsEmpty</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a75d57ad7e8a7b67ff04ff8855f90acc7" compoundref="dc/d20/gtest-filepath_8cc" startline="85">testing::internal::kPathSeparator</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4314fe3c55007fe669e6f9b1313207b4" compoundref="dc/d20/gtest-filepath_8cc" startline="346" endline="350">FilePath::RemoveTrailingPathSeparator</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a7314f49a51859d46439cfeddb9ea06ec" compoundref="dc/d79/gtest-filepath_8h" startline="77" endline="77">FilePath::string</references>
+        <referencedby refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a8cd6d2ad634d8f29bd2345d5b2ec5673" compoundref="df/d5b/gtest_8cc" startline="426" endline="455">UnitTestOptions::GetAbsolutePathToOutputFile</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a56b8e4a3bdcf00693fb761b47689dd92" compoundref="dc/d20/gtest-filepath_8cc" startline="183" endline="195">FilePath::MakeFileName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a01f72e14ad442c88e941571cb65228f4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref></type>
+        <definition>FilePath GenerateUniqueFileName</definition>
+        <argsstring>(const FilePath &amp;directory, const FilePath &amp;base_name, const char *extension)</argsstring>
+        <name>GenerateUniqueFileName</name>
+        <param>
+          <type>const <ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>directory</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>base_name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>extension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="106" column="19" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="286" bodyend="295"/>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a396c68beeeccc066f4c04dced1a11433" compoundref="dc/d20/gtest-filepath_8cc" startline="209" endline="219">FilePath::FileOrDirectoryExists</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a56b8e4a3bdcf00693fb761b47689dd92" compoundref="dc/d20/gtest-filepath_8cc" startline="183" endline="195">FilePath::MakeFileName</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a42b263db98b0796b43578baca9ba991d" compoundref="dc/d79/gtest-filepath_8h" startline="73" endline="75">FilePath::Set</references>
+        <referencedby refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a8cd6d2ad634d8f29bd2345d5b2ec5673" compoundref="df/d5b/gtest_8cc" startline="426" endline="455">UnitTestOptions::GetAbsolutePathToOutputFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a8f7fb543b08e0e79edaaa2829c1cb808" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref></type>
+        <definition>FilePath GetCurrentDir</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="81" column="19" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="99" bodyend="118"/>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa5df70ab39fdaff6e3fce46e8d35b608" compoundref="dc/d79/gtest-filepath_8h" startline="61" endline="61">FilePath::FilePath</references>
+        <references refid="dc/d20/gtest-filepath_8cc_1ad9d445747785a9271a57cf1d392b89ad" compoundref="dc/d20/gtest-filepath_8cc" startline="58">GTEST_PATH_MAX_</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a6ffb7bac99e2a7612631aad364fa49ad" compoundref="dc/d20/gtest-filepath_8cc" startline="86">testing::internal::kCurrentDirectoryString</references>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1a0f73735489a968e6f6d57f791a246615" compoundref="d0/da1/gtest-internal-inl_8h" startline="645" endline="665">UnitTestImpl::AddTestInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a56b8e4a3bdcf00693fb761b47689dd92" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref></type>
+        <definition>FilePath MakeFileName</definition>
+        <argsstring>(const FilePath &amp;directory, const FilePath &amp;base_name, int number, const char *extension)</argsstring>
+        <name>MakeFileName</name>
+        <param>
+          <type>const <ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>directory</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref> &amp;</type>
+          <declname>base_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>extension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="87" column="19" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="183" bodyend="195"/>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1ae8c11e9d5d51f4266c6507aeb34ba55b" compoundref="dc/d20/gtest-filepath_8cc" startline="199" endline="205">FilePath::ConcatPaths</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa5df70ab39fdaff6e3fce46e8d35b608" compoundref="dc/d79/gtest-filepath_8h" startline="61" endline="61">FilePath::FilePath</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1aad4beed95d0846e6ffc5da0978ef3bb9" compoundref="d6/da4/gtest-message_8h" startline="243" endline="245">testing::internal::StreamableToString</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a7314f49a51859d46439cfeddb9ea06ec" compoundref="dc/d79/gtest-filepath_8h" startline="77" endline="77">FilePath::string</references>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a01f72e14ad442c88e941571cb65228f4" compoundref="dc/d20/gtest-filepath_8cc" startline="286" endline="295">FilePath::GenerateUniqueFileName</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1a49f9182daf48b8dbe6d48ffa2e2b1517" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * FindLastPathSeparator</definition>
+        <argsstring>() const</argsstring>
+        <name>FindLastPathSeparator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="198" column="14" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="136" bodyend="147"/>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a14989d8fe448c5f947832aea3dae615a" compoundref="dc/d79/gtest-filepath_8h" startline="78" endline="78">FilePath::c_str</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a75d57ad7e8a7b67ff04ff8855f90acc7" compoundref="dc/d20/gtest-filepath_8cc" startline="85">testing::internal::kPathSeparator</references>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a9fe846b92cc3a819b1bca34059999369" compoundref="dc/d20/gtest-filepath_8cc" startline="155" endline="158">FilePath::RemoveDirectoryName</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1af170c740d93389979d9fcfa1058812c5" compoundref="dc/d20/gtest-filepath_8cc" startline="166" endline="175">FilePath::RemoveFileName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d14/classtesting_1_1internal_1_1_file_path_1af279e0f0ff720ee54d6733674dfda50a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Normalize</definition>
+        <argsstring>()</argsstring>
+        <name>Normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="193" column="8" bodyfile="lib/googletest/src/gtest-filepath.cc" bodystart="356" bodyend="384"/>
+        <references refid="cpp/string/basic_string/c_str_1">string::c_str</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a6b8d22cee9edbbfe56077420a6fa1cb1" compoundref="dc/d20/gtest-filepath_8cc" startline="90" endline="96">testing::internal::IsPathSeparator</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a75d57ad7e8a7b67ff04ff8855f90acc7" compoundref="dc/d20/gtest-filepath_8cc" startline="85">testing::internal::kPathSeparator</references>
+        <references refid="cpp/string/basic_string/size_1">string::length</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" compoundref="dc/d79/gtest-filepath_8h" startline="200">FilePath::pathname_</references>
+        <references refid="d0/d81/namespacetesting_1_1internal_1_1posix_1af51e37c9331049b1e3d250a7c8bc3c26" compoundref="d3/dc9/gtest-port_8h" startline="2356">testing::internal::posix::src</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>basic_string&lt; Char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="2">
+        <label>string</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FilePath</label>
+        <link refid="de/d14/classtesting_1_1internal_1_1_file_path"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-pathname_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>basic_string&lt; char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-filepath.h" line="59" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-filepath.h" bodystart="59" bodyend="201"/>
+    <listofallmembers>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a14989d8fe448c5f947832aea3dae615a" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>c_str</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1ae8c11e9d5d51f4266c6507aeb34ba55b" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>ConcatPaths</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a957e950af2e23bbd4e8b647214595218" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>CreateDirectoriesRecursively</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1ad1ae719853841409aa22d67755058b72" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>CreateFolder</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4a118f1c72313787fe28aa8e2103812a" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>DirectoryExists</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a396c68beeeccc066f4c04dced1a11433" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>FileOrDirectoryExists</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa5df70ab39fdaff6e3fce46e8d35b608" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>FilePath</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a7221ea73ecd74af3aca8c7e36910ca54" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>FilePath</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a6385e248c57ed010175c5f9232d230e6" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>FilePath</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a49f9182daf48b8dbe6d48ffa2e2b1517" prot="private" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>FindLastPathSeparator</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a01f72e14ad442c88e941571cb65228f4" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>GenerateUniqueFileName</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a8f7fb543b08e0e79edaaa2829c1cb808" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>GetCurrentDir</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a3a0a77b979cea003921d8324ef96bde1" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>IsAbsolutePath</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa14e121a7a4f6e743c9e10b3a0818eea" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>IsDirectory</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a8e12342fc420701fbffd97025421575a" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>IsEmpty</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a50e9326bd46f8e8385be04fcdd77e599" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>IsRootDirectory</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a56b8e4a3bdcf00693fb761b47689dd92" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>MakeFileName</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1af279e0f0ff720ee54d6733674dfda50a" prot="private" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>Normalize</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a56ce97a342d8d71d4abedca3f5666ab1" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>operator=</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" prot="private" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>pathname_</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a9fe846b92cc3a819b1bca34059999369" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>RemoveDirectoryName</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a0e757422eb25fd5c7b70a8185ee04c69" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>RemoveExtension</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1af170c740d93389979d9fcfa1058812c5" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>RemoveFileName</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4314fe3c55007fe669e6f9b1313207b4" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>RemoveTrailingPathSeparator</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a42b263db98b0796b43578baca9ba991d" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>Set</name></member>
+      <member refid="de/d14/classtesting_1_1internal_1_1_file_path_1a7314f49a51859d46439cfeddb9ea06ec" prot="public" virt="non-virtual"><scope>testing::internal::FilePath</scope><name>string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

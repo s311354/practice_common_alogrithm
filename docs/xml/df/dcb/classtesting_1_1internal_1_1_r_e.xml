@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/dcb/classtesting_1_1internal_1_1_r_e" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::RE</compoundname>
+    <includes refid="d3/dc9/gtest-port_8h" local="no">gtest-port.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="df/dcb/classtesting_1_1internal_1_1_r_e_1a22941592dd4f6d88a4c8564e5aff436d" prot="private" static="no" mutable="no">
+        <type>regex_t</type>
+        <definition>regex_t full_regex_</definition>
+        <argsstring></argsstring>
+        <name>full_regex_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1216" column="11" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/dcb/classtesting_1_1internal_1_1_r_e_1ae7854d62fc7885f59e963a27fceafaef" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool is_valid_</definition>
+        <argsstring></argsstring>
+        <name>is_valid_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1212" column="8" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/dcb/classtesting_1_1internal_1_1_r_e_1ac4bb10254cdba49a504ccf1541667d4d" prot="private" static="no" mutable="no">
+        <type>regex_t</type>
+        <definition>regex_t partial_regex_</definition>
+        <argsstring></argsstring>
+        <name>partial_regex_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1217" column="11" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/dcb/classtesting_1_1internal_1_1_r_e_1aa23cf24453328c6fc39024bcf7d14b82" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* pattern_</definition>
+        <argsstring></argsstring>
+        <name>pattern_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1211" column="14" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1211" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/dcb/classtesting_1_1internal_1_1_r_e_1aafc734cffa7704cebb96c09739e5212b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* pattern</definition>
+        <argsstring>() const</argsstring>
+        <name>pattern</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1175" column="14" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1175" bodyend="1175"/>
+        <referencedby refid="df/dcb/classtesting_1_1internal_1_1_r_e_1a595721ca271f97f926b0024ee36f4305" compoundref="d3/dc9/gtest-port_8h" startline="1160" endline="1160">RE::RE</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/dcb/classtesting_1_1internal_1_1_r_e_1a404b822f17c61852e6ee051d640bc91a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RE</definition>
+        <argsstring>(const ::std::string &amp;regex)</argsstring>
+        <name>RE</name>
+        <param>
+          <type>const ::<ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>regex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1163" column="3" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1163" bodyend="1163"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dcb/classtesting_1_1internal_1_1_r_e_1acafbef7f6d73940eaaea218096401882" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RE</definition>
+        <argsstring>(const char *regex)</argsstring>
+        <name>RE</name>
+        <param>
+          <type>const char *</type>
+          <declname>regex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1171" column="3" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1171" bodyend="1171"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dcb/classtesting_1_1internal_1_1_r_e_1a595721ca271f97f926b0024ee36f4305" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RE</definition>
+        <argsstring>(const RE &amp;other)</argsstring>
+        <name>RE</name>
+        <param>
+          <type>const <ref refid="df/dcb/classtesting_1_1internal_1_1_r_e" kindref="compound">RE</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1160" column="3" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1160" bodyend="1160"/>
+        <references refid="df/dcb/classtesting_1_1internal_1_1_r_e_1aafc734cffa7704cebb96c09739e5212b" compoundref="d3/dc9/gtest-port_8h" startline="1175" endline="1175">RE::pattern</references>
+      </memberdef>
+      <memberdef kind="function" id="df/dcb/classtesting_1_1internal_1_1_r_e_1a5ecc9d1b82500bffed737dfbcd0b0c60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~RE</definition>
+        <argsstring>()</argsstring>
+        <name>~RE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1172" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="df/dcb/classtesting_1_1internal_1_1_r_e_1a229557f6103061f358082e73d56cf006" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool FullMatch</definition>
+        <argsstring>(const ::std::string &amp;str, const RE &amp;re)</argsstring>
+        <name>FullMatch</name>
+        <param>
+          <type>const ::<ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/dcb/classtesting_1_1internal_1_1_r_e" kindref="compound">RE</ref> &amp;</type>
+          <declname>re</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1184" column="15" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1184" bodyend="1186"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dcb/classtesting_1_1internal_1_1_r_e_1ae79a9c89b39e92f15dd526fb05a52e36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool FullMatch</definition>
+        <argsstring>(const char *str, const RE &amp;re)</argsstring>
+        <name>FullMatch</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/dcb/classtesting_1_1internal_1_1_r_e" kindref="compound">RE</ref> &amp;</type>
+          <declname>re</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1202" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dcb/classtesting_1_1internal_1_1_r_e_1aeb7290a6ea2eb9be0cb34db07470fb10" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool PartialMatch</definition>
+        <argsstring>(const ::std::string &amp;str, const RE &amp;re)</argsstring>
+        <name>PartialMatch</name>
+        <param>
+          <type>const ::<ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/dcb/classtesting_1_1internal_1_1_r_e" kindref="compound">RE</ref> &amp;</type>
+          <declname>re</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1187" column="15" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1187" bodyend="1189"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dcb/classtesting_1_1internal_1_1_r_e_1aaa6613a8f30daea1d3c9fd47bcd1ad10" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool PartialMatch</definition>
+        <argsstring>(const char *str, const RE &amp;re)</argsstring>
+        <name>PartialMatch</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/dcb/classtesting_1_1internal_1_1_r_e" kindref="compound">RE</ref> &amp;</type>
+          <declname>re</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1203" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="df/dcb/classtesting_1_1internal_1_1_r_e_1a6a63598ef98cd9a2caffddbf687211e0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GTEST_DISALLOW_ASSIGN_</definition>
+        <argsstring>(RE)</argsstring>
+        <name>GTEST_DISALLOW_ASSIGN_</name>
+        <param>
+          <type><ref refid="df/dcb/classtesting_1_1internal_1_1_r_e" kindref="compound">RE</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1225" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="df/dcb/classtesting_1_1internal_1_1_r_e_1a094803f8eca41baaeefce22926e16b81" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Init</definition>
+        <argsstring>(const char *regex)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>const char *</type>
+          <declname>regex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1206" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RE</label>
+        <link refid="df/dcb/classtesting_1_1internal_1_1_r_e"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1156" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1156" bodyend="1226"/>
+    <listofallmembers>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1a22941592dd4f6d88a4c8564e5aff436d" prot="private" virt="non-virtual"><scope>testing::internal::RE</scope><name>full_regex_</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1a229557f6103061f358082e73d56cf006" prot="public" virt="non-virtual"><scope>testing::internal::RE</scope><name>FullMatch</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1ae79a9c89b39e92f15dd526fb05a52e36" prot="public" virt="non-virtual"><scope>testing::internal::RE</scope><name>FullMatch</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1a6a63598ef98cd9a2caffddbf687211e0" prot="private" virt="non-virtual"><scope>testing::internal::RE</scope><name>GTEST_DISALLOW_ASSIGN_</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1a094803f8eca41baaeefce22926e16b81" prot="private" virt="non-virtual"><scope>testing::internal::RE</scope><name>Init</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1ae7854d62fc7885f59e963a27fceafaef" prot="private" virt="non-virtual"><scope>testing::internal::RE</scope><name>is_valid_</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1ac4bb10254cdba49a504ccf1541667d4d" prot="private" virt="non-virtual"><scope>testing::internal::RE</scope><name>partial_regex_</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1aeb7290a6ea2eb9be0cb34db07470fb10" prot="public" virt="non-virtual"><scope>testing::internal::RE</scope><name>PartialMatch</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1aaa6613a8f30daea1d3c9fd47bcd1ad10" prot="public" virt="non-virtual"><scope>testing::internal::RE</scope><name>PartialMatch</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1aafc734cffa7704cebb96c09739e5212b" prot="public" virt="non-virtual"><scope>testing::internal::RE</scope><name>pattern</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1aa23cf24453328c6fc39024bcf7d14b82" prot="private" virt="non-virtual"><scope>testing::internal::RE</scope><name>pattern_</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1a595721ca271f97f926b0024ee36f4305" prot="public" virt="non-virtual"><scope>testing::internal::RE</scope><name>RE</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1a404b822f17c61852e6ee051d640bc91a" prot="public" virt="non-virtual"><scope>testing::internal::RE</scope><name>RE</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1acafbef7f6d73940eaaea218096401882" prot="public" virt="non-virtual"><scope>testing::internal::RE</scope><name>RE</name></member>
+      <member refid="df/dcb/classtesting_1_1internal_1_1_r_e_1a5ecc9d1b82500bffed737dfbcd0b0c60" prot="public" virt="non-virtual"><scope>testing::internal::RE</scope><name>~RE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

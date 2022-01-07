@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_7404b51560fdc8387419f7e4ed984d41" kind="dir">
+    <compoundname>linked_list/src</compoundname>
+    <innerdir refid="dir_5bb98a2649eccb8f8224cdb73af51b4a">linked_list/src/CMakeFiles</innerdir>
+    <innerfile refid="d0/dea/linked__list_8cc">linked_list.cc</innerfile>
+    <innerfile refid="d1/d4a/linked__list_8h">linked_list.h</innerfile>
+    <innerfile refid="dc/d20/list__element_8cc">list_element.cc</innerfile>
+    <innerfile refid="d6/d01/list__element_8h">list_element.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="linked_list/src/"/>
+  </compounddef>
+</doxygen>

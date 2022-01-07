@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/d5f/structtesting_1_1internal_1_1CompileAssertTypesEqual" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::CompileAssertTypesEqual</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T1</type>
+      </param>
+      <param>
+        <type>typename T2</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>testing::internal::CompileAssertTypesEqual&lt; T1, T2 &gt;</label>
+        <link refid="d1/d5f/structtesting_1_1internal_1_1CompileAssertTypesEqual"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="772" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-internal.h" bodystart="772" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

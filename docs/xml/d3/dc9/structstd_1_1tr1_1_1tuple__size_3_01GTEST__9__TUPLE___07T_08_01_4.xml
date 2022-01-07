@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/dc9/structstd_1_1tr1_1_1tuple__size_3_01GTEST__9__TUPLE___07T_08_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>std::tr1::tuple_size&lt; GTEST_9_TUPLE_(T) &gt;</compoundname>
+    <includes refid="d1/d63/gtest-tuple_8h" local="no">gtest-tuple.h</includes>
+    <templateparamlist>
+      <param>
+        <type><ref refid="d1/d63/gtest-tuple_8h_1abddffb3c94eb04c852731e04af7bd338" kindref="member">GTEST_9_TYPENAMES_</ref>(T)</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d3/dc9/structstd_1_1tr1_1_1tuple__size_3_01GTEST__9__TUPLE___07T_08_01_4_1a679d27cc04d873a03221ea2a89b8c6d8" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= 9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-tuple.h" line="787" column="20" bodyfile="lib/googletest/include/gtest/internal/gtest-tuple.h" bodystart="787" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>tuple_size&lt; GTEST_9_TUPLE_(T) &gt;</label>
+        <link refid="d3/dc9/structstd_1_1tr1_1_1tuple__size_3_01GTEST__9__TUPLE___07T_08_01_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-tuple.h" line="786" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-tuple.h" bodystart="786" bodyend="788"/>
+    <listofallmembers>
+      <member refid="d3/dc9/structstd_1_1tr1_1_1tuple__size_3_01GTEST__9__TUPLE___07T_08_01_4_1a679d27cc04d873a03221ea2a89b8c6d8" prot="public" virt="non-virtual"><scope>std::tr1::tuple_size&lt; GTEST_9_TUPLE_(T) &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

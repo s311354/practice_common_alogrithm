@@ -4,7 +4,7 @@
     <compoundname>graphs</compoundname>
     <innerdir refid="dir_4a696a02c85362e8d2b75a584448e91b">graphs/CMakeFiles</innerdir>
     <innerdir refid="dir_b95233994fa43ca1a16882292fdf76f2">graphs/src</innerdir>
-    <innerfile refid="graphs_2main_8cc">main.cc</innerfile>
+    <innerfile refid="db/df7/graphs_2main_8cc">main.cc</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

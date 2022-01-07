@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/d71/classcommon_1_1_list_element" kind="class" language="C++" prot="public">
+    <compoundname>common::ListElement</compoundname>
+    <includes refid="d6/d01/list__element_8h" local="no">list_element.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/d71/classcommon_1_1_list_element_1aa3ff051a47d9e18487e7b819852521c5" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/list_element.h" line="14" column="7" bodyfile="linked_list/src/list_element.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="dd/d71/classcommon_1_1_list_element_1ace1c7e71f98501b3bac17eeb8110d8d1" compoundref="d6/d01/list__element_8h" startline="22" endline="22">ListElement&lt; T &gt;::GetData</referencedby>
+        <referencedby refid="dd/d71/classcommon_1_1_list_element_1a5d5a7bc099770f469d473c4b1560dbec" compoundref="d6/d01/list__element_8h" startline="25" endline="25">ListElement&lt; T &gt;::SetData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d71/classcommon_1_1_list_element_1abe7b8db1ac5e7f6242fc1f6ee734b5cd" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/d71/classcommon_1_1_list_element" kindref="compound">ListElement</ref>&lt; T &gt; *</type>
+        <definition>ListElement&lt;T&gt;* next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/list_element.h" line="13" column="17" bodyfile="linked_list/src/list_element.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="dd/d71/classcommon_1_1_list_element_1a7b6af5a368ca2b7fceb56b7c4a5d07af" compoundref="d6/d01/list__element_8h" startline="23" endline="23">ListElement&lt; T &gt;::GetNext</referencedby>
+        <referencedby refid="dd/d71/classcommon_1_1_list_element_1a0e2f21176165b93e0a6b45716ea2c65a" compoundref="d6/d01/list__element_8h" startline="26" endline="26">ListElement&lt; T &gt;::SetNext</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d71/classcommon_1_1_list_element_1ace1c7e71f98501b3bac17eeb8110d8d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; GetData</definition>
+        <argsstring>() const</argsstring>
+        <name>GetData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/list_element.h" line="22" column="12" bodyfile="linked_list/src/list_element.h" bodystart="22" bodyend="22"/>
+        <references refid="dd/d71/classcommon_1_1_list_element_1aa3ff051a47d9e18487e7b819852521c5" compoundref="d6/d01/list__element_8h" startline="14">ListElement&lt; T &gt;::data</references>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" compoundref="d0/dea/linked__list_8cc" startline="77" endline="89">LinkedList&lt; T &gt;::PopFront</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d71/classcommon_1_1_list_element_1a7b6af5a368ca2b7fceb56b7c4a5d07af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dd/d71/classcommon_1_1_list_element" kindref="compound">ListElement</ref>&lt; T &gt; *</type>
+        <definition>ListElement&lt;T&gt;* GetNext</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/list_element.h" line="23" column="17" bodyfile="linked_list/src/list_element.h" bodystart="23" bodyend="23"/>
+        <references refid="dd/d71/classcommon_1_1_list_element_1abe7b8db1ac5e7f6242fc1f6ee734b5cd" compoundref="d6/d01/list__element_8h" startline="13">ListElement&lt; T &gt;::next</references>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a6b6681f762c6f6f8bc92ebd9c8d5dc66" compoundref="d0/dea/linked__list_8cc" startline="95" endline="110">LinkedList&lt; T &gt;::PushBack</referencedby>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1ab2cd0a10d50aeffd524b75b36fb2be05" compoundref="d1/d4a/linked__list_8h" startline="22" endline="31">LinkedList&lt; T &gt;::~LinkedList</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d71/classcommon_1_1_list_element_1abd746be0f64af7e4699accbd15464608" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListElement</definition>
+        <argsstring>(const ListElement &amp;)</argsstring>
+        <name>ListElement</name>
+        <param>
+          <type>const <ref refid="dd/d71/classcommon_1_1_list_element" kindref="compound">ListElement</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/list_element.h" line="18" column="5" bodyfile="linked_list/src/list_element.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d71/classcommon_1_1_list_element_1ae774867df3203da5fdb670d9ac3115b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ListElement</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>ListElement</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/list_element.h" line="17" column="5" bodyfile="linked_list/src/list_element.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d71/classcommon_1_1_list_element_1afc36b7cb6194794b8d2b4d10f2d05048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dd/d71/classcommon_1_1_list_element" kindref="compound">ListElement</ref> &amp;</type>
+        <definition>ListElement&amp; operator=</definition>
+        <argsstring>(const ListElement &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="dd/d71/classcommon_1_1_list_element" kindref="compound">ListElement</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/list_element.h" line="19" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d71/classcommon_1_1_list_element_1a5d5a7bc099770f469d473c4b1560dbec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetData</definition>
+        <argsstring>(const T &amp;datain)</argsstring>
+        <name>SetData</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>datain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/list_element.h" line="25" column="10" bodyfile="linked_list/src/list_element.h" bodystart="25" bodyend="25"/>
+        <references refid="dd/d71/classcommon_1_1_list_element_1aa3ff051a47d9e18487e7b819852521c5" compoundref="d6/d01/list__element_8h" startline="14">ListElement&lt; T &gt;::data</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d71/classcommon_1_1_list_element_1a0e2f21176165b93e0a6b45716ea2c65a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetNext</definition>
+        <argsstring>(ListElement&lt; T &gt; *elem)</argsstring>
+        <name>SetNext</name>
+        <param>
+          <type><ref refid="dd/d71/classcommon_1_1_list_element" kindref="compound">ListElement</ref>&lt; T &gt; *</type>
+          <declname>elem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/list_element.h" line="26" column="10" bodyfile="linked_list/src/list_element.h" bodystart="26" bodyend="26"/>
+        <references refid="dd/d71/classcommon_1_1_list_element_1abe7b8db1ac5e7f6242fc1f6ee734b5cd" compoundref="d6/d01/list__element_8h" startline="13">ListElement&lt; T &gt;::next</references>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a6b6681f762c6f6f8bc92ebd9c8d5dc66" compoundref="d0/dea/linked__list_8cc" startline="95" endline="110">LinkedList&lt; T &gt;::PushBack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d71/classcommon_1_1_list_element_1aa3dd9f723784004c69e7efd542c48bab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~ListElement</definition>
+        <argsstring>()</argsstring>
+        <name>~ListElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/list_element.h" line="20" column="13" bodyfile="linked_list/src/list_element.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ListElement&lt; T &gt;</label>
+        <link refid="dd/d71/classcommon_1_1_list_element"/>
+      </node>
+    </collaborationgraph>
+    <location file="linked_list/src/list_element.h" line="10" column="1" bodyfile="linked_list/src/list_element.h" bodystart="11" bodyend="27"/>
+    <listofallmembers>
+      <member refid="dd/d71/classcommon_1_1_list_element_1aa3ff051a47d9e18487e7b819852521c5" prot="private" virt="non-virtual"><scope>common::ListElement</scope><name>data</name></member>
+      <member refid="dd/d71/classcommon_1_1_list_element_1ace1c7e71f98501b3bac17eeb8110d8d1" prot="public" virt="non-virtual"><scope>common::ListElement</scope><name>GetData</name></member>
+      <member refid="dd/d71/classcommon_1_1_list_element_1a7b6af5a368ca2b7fceb56b7c4a5d07af" prot="public" virt="non-virtual"><scope>common::ListElement</scope><name>GetNext</name></member>
+      <member refid="dd/d71/classcommon_1_1_list_element_1ae774867df3203da5fdb670d9ac3115b8" prot="public" virt="non-virtual"><scope>common::ListElement</scope><name>ListElement</name></member>
+      <member refid="dd/d71/classcommon_1_1_list_element_1abd746be0f64af7e4699accbd15464608" prot="public" virt="non-virtual"><scope>common::ListElement</scope><name>ListElement</name></member>
+      <member refid="dd/d71/classcommon_1_1_list_element_1abe7b8db1ac5e7f6242fc1f6ee734b5cd" prot="private" virt="non-virtual"><scope>common::ListElement</scope><name>next</name></member>
+      <member refid="dd/d71/classcommon_1_1_list_element_1afc36b7cb6194794b8d2b4d10f2d05048" prot="public" virt="non-virtual"><scope>common::ListElement</scope><name>operator=</name></member>
+      <member refid="dd/d71/classcommon_1_1_list_element_1a5d5a7bc099770f469d473c4b1560dbec" prot="public" virt="non-virtual"><scope>common::ListElement</scope><name>SetData</name></member>
+      <member refid="dd/d71/classcommon_1_1_list_element_1a0e2f21176165b93e0a6b45716ea2c65a" prot="public" virt="non-virtual"><scope>common::ListElement</scope><name>SetNext</name></member>
+      <member refid="dd/d71/classcommon_1_1_list_element_1aa3dd9f723784004c69e7efd542c48bab" prot="public" virt="virtual"><scope>common::ListElement</scope><name>~ListElement</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

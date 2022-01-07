@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/d59/classtesting_1_1internal_1_1GTestLog" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::GTestLog</compoundname>
+    <includes refid="d3/dc9/gtest-port_8h" local="no">gtest-port.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/d59/classtesting_1_1internal_1_1GTestLog_1a6c8b1af920457ac4f42706bbd995100b" prot="private" static="no" mutable="no">
+        <type>const <ref refid="d0/da7/namespacetesting_1_1internal_1ae0fec1ef790bf38b60329e0ca9538e9a" kindref="member">GTestLogSeverity</ref></type>
+        <definition>const GTestLogSeverity severity_</definition>
+        <argsstring></argsstring>
+        <name>severity_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1264" column="26" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1264" bodyend="-1"/>
+        <referencedby refid="da/d59/classtesting_1_1internal_1_1GTestLog_1a940c2f4f55e8acf2c5dd52a75f828186" compoundref="df/d09/gtest-port_8cc" startline="919" endline="925">GTestLog::~GTestLog</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d59/classtesting_1_1internal_1_1GTestLog_1a7f92cb631b3e86fed035acac6a11a929" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> &amp;</type>
+        <definition>::std::ostream&amp; GetStream</definition>
+        <argsstring>()</argsstring>
+        <name>GetStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1261" column="18" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1261" bodyend="1261"/>
+        <referencedby refid="da/d59/classtesting_1_1internal_1_1GTestLog_1a42659176d108d5be556dc5b2d7052cbd" compoundref="df/d09/gtest-port_8cc" startline="908" endline="916">GTestLog::GTestLog</referencedby>
+        <referencedby refid="da/d59/classtesting_1_1internal_1_1GTestLog_1a940c2f4f55e8acf2c5dd52a75f828186" compoundref="df/d09/gtest-port_8cc" startline="919" endline="925">GTestLog::~GTestLog</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="da/d59/classtesting_1_1internal_1_1GTestLog_1a42659176d108d5be556dc5b2d7052cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GTestLog</definition>
+        <argsstring>(GTestLogSeverity severity, const char *file, int line)</argsstring>
+        <name>GTestLog</name>
+        <param>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1ae0fec1ef790bf38b60329e0ca9538e9a" kindref="member">GTestLogSeverity</ref></type>
+          <declname>severity</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1256" column="3" bodyfile="lib/googletest/src/gtest-port.cc" bodystart="908" bodyend="916"/>
+        <references refid="cpp/string/basic_string/c_str_1">string::c_str</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a6264f0605b7d7d0609eae663c58662c0" compoundref="df/d09/gtest-port_8cc" startline="880" endline="891">testing::internal::FormatFileLocation</references>
+        <references refid="da/d59/classtesting_1_1internal_1_1GTestLog_1a7f92cb631b3e86fed035acac6a11a929" compoundref="d3/dc9/gtest-port_8h" startline="1261" endline="1261">GTestLog::GetStream</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1ae0fec1ef790bf38b60329e0ca9538e9aa37239856c314fb9c91b28482e3705c19" compoundref="d3/dc9/gtest-port_8h" startline="1247">testing::internal::GTEST_ERROR</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1ae0fec1ef790bf38b60329e0ca9538e9aa87c9f0794f00c08db1ba3495a8a9588a" compoundref="d3/dc9/gtest-port_8h" startline="1245">testing::internal::GTEST_INFO</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1ae0fec1ef790bf38b60329e0ca9538e9aad50b772cf4b6d84494e2bf08a484aec3" compoundref="d3/dc9/gtest-port_8h" startline="1246">testing::internal::GTEST_WARNING</references>
+      </memberdef>
+      <memberdef kind="function" id="da/d59/classtesting_1_1internal_1_1GTestLog_1a940c2f4f55e8acf2c5dd52a75f828186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~GTestLog</definition>
+        <argsstring>()</argsstring>
+        <name>~GTestLog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1259" column="3" bodyfile="lib/googletest/src/gtest-port.cc" bodystart="919" bodyend="925"/>
+        <references refid="d0/d81/namespacetesting_1_1internal_1_1posix_1a69b8278c59359dd6a6f941b4643db9fb" compoundref="d3/dc9/gtest-port_8h" startline="2410" endline="2410">testing::internal::posix::Abort</references>
+        <references refid="da/d59/classtesting_1_1internal_1_1GTestLog_1a7f92cb631b3e86fed035acac6a11a929" compoundref="d3/dc9/gtest-port_8h" startline="1261" endline="1261">GTestLog::GetStream</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1ae0fec1ef790bf38b60329e0ca9538e9aa219b7d2c43cf063af6e75080e26b3fe8" compoundref="d3/dc9/gtest-port_8h" startline="1248">testing::internal::GTEST_FATAL</references>
+        <references refid="da/d59/classtesting_1_1internal_1_1GTestLog_1a6c8b1af920457ac4f42706bbd995100b" compoundref="d3/dc9/gtest-port_8h" startline="1264">GTestLog::severity_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="da/d59/classtesting_1_1internal_1_1GTestLog_1ab634134d3562ed5846deef1a12b00425" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(GTestLog)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="da/d59/classtesting_1_1internal_1_1GTestLog" kindref="compound">GTestLog</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1266" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>GTestLog</label>
+        <link refid="da/d59/classtesting_1_1internal_1_1GTestLog"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1254" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1254" bodyend="1267"/>
+    <listofallmembers>
+      <member refid="da/d59/classtesting_1_1internal_1_1GTestLog_1a7f92cb631b3e86fed035acac6a11a929" prot="public" virt="non-virtual"><scope>testing::internal::GTestLog</scope><name>GetStream</name></member>
+      <member refid="da/d59/classtesting_1_1internal_1_1GTestLog_1ab634134d3562ed5846deef1a12b00425" prot="private" virt="non-virtual"><scope>testing::internal::GTestLog</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="da/d59/classtesting_1_1internal_1_1GTestLog_1a42659176d108d5be556dc5b2d7052cbd" prot="public" virt="non-virtual"><scope>testing::internal::GTestLog</scope><name>GTestLog</name></member>
+      <member refid="da/d59/classtesting_1_1internal_1_1GTestLog_1a6c8b1af920457ac4f42706bbd995100b" prot="private" virt="non-virtual"><scope>testing::internal::GTestLog</scope><name>severity_</name></member>
+      <member refid="da/d59/classtesting_1_1internal_1_1GTestLog_1a940c2f4f55e8acf2c5dd52a75f828186" prot="public" virt="non-virtual"><scope>testing::internal::GTestLog</scope><name>~GTestLog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
