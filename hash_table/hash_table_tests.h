@@ -1,8 +1,8 @@
+#ifndef HASH_TABLES_TESTS
+#define HASH_TABLES_TESTS
+
 #include <iostream>
 #include "./hash_table.h"
-
-#ifndef HASH_TABLES_TESTS
-#define HASH_TABLES_TESTS value
 
 void run_all_tests();
 

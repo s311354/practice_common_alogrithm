@@ -1,8 +1,8 @@
-#include "./hash_object.h"
-
-
 #ifndef HASH_TABLE_H
 #define HASH_TABLE_H
+
+#include "./hash_object.h"
+#include "./hash_object.h"
 
 namespace common {
 

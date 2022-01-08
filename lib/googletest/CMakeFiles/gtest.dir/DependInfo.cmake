@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/linked_list/tests/lib/googletest/src/gtest-all.cc" "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/linked_list/tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+  "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/queue_linked_list/tests/lib/googletest/src/gtest-all.cc" "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/queue_linked_list/tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
