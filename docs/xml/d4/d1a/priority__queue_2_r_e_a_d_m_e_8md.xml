@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/d1a/priority__queue_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>Overview<sp/>of<sp/>Priority<sp/>Queues<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>The<sp/>concept<sp/>of<sp/>priority<sp/>queue<sp/>####</highlight></codeline>
+<codeline><highlight class="normal">In<sp/>real<sp/>life,<sp/>we<sp/>often<sp/>encounter<sp/>scenarios<sp/>that<sp/>involve<sp/>queuing,<sp/>such<sp/>as<sp/>standing<sp/>in<sp/>line<sp/>at<sp/>a<sp/>gorcery<sp/>store<sp/>or<sp/>at<sp/>the<sp/>movies.<sp/>In<sp/>these<sp/>&quot;first<sp/>come,<sp/>first<sp/>served&quot;<sp/>situations,<sp/>the<sp/>first<sp/>person<sp/>to<sp/>arrive<sp/>is<sp/>the<sp/>first<sp/>person<sp/>served.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">However,<sp/>there<sp/>are<sp/>other<sp/>scenarios<sp/>where<sp/>the<sp/>first<sp/>person<sp/>to<sp/>arrive<sp/>is<sp/>not<sp/>hte<sp/>first<sp/>person<sp/>served:<sp/>when<sp/>considering<sp/>patients<sp/>in<sp/>an<sp/>emergenct<sp/>room,<sp/>or<sp/>when<sp/>boarding<sp/>an<sp/>airplane...<sp/>,<sp/>etc.<sp/>Here,<sp/>the<sp/>scenario<sp/>is<sp/>more<sp/>of<sp/>a<sp/>&quot;first<sp/>come,<sp/>most-important<sp/>served&quot;<sp/>situation.<sp/>Thus,<sp/>we<sp/>want<sp/>to<sp/>design<sp/>a<sp/>datatype<sp/>that<sp/>is<sp/>tailored<sp/>to<sp/>support<sp/>the<sp/>following<sp/>three<sp/>operations<sp/>as<sp/>efficiently<sp/>as<sp/>possible:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;ul&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;li&gt;Ass<sp/>an<sp/>item,<sp/>with<sp/>a<sp/>given<sp/>priority,<sp/>into<sp/>the<sp/>data<sp/>structure:<sp/>key&lt;/li&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;li&gt;Remove<sp/>the<sp/>most<sp/>important<sp/>item<sp/>from<sp/>the<sp/>data<sp/>structure&lt;/li&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;li&gt;Giv<sp/>the<sp/>number<sp/>of<sp/>otems<sp/>in<sp/>the<sp/>data<sp/>structure&lt;/li&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/ul&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>The<sp/>concept<sp/>of<sp/>heap<sp/>data<sp/>structure<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>heap<sp/>is<sp/>a<sp/>specialized<sp/>tree-based<sp/>data<sp/>structure<sp/>which<sp/><sp/>is<sp/>essentially<sp/>an<sp/>almost<sp/>complete<sp/>tree<sp/>that<sp/>satisfies<sp/>the<sp/>heap<sp/>property.<sp/>And<sp/>it<sp/>is<sp/>also<sp/>one<sp/>maximally<sp/>efficient<sp/>implementation<sp/>of<sp/>an<sp/>abstract<sp/>data<sp/>type<sp/>called<sp/>a<sp/>priority<sp/>queue,<sp/>and<sp/>in<sp/>fact,<sp/>priority<sp/>queues<sp/>are<sp/>often<sp/>referred<sp/>to<sp/>ad<sp/>&quot;heaps&quot;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>The<sp/>concept<sp/>of<sp/>heapify<sp/>procedure<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>heapify<sp/>procedure<sp/>can<sp/>be<sp/>thought<sp/>of<sp/>as<sp/>building<sp/>a<sp/>heap<sp/>from<sp/>the<sp/>bottom<sp/>up<sp/>by<sp/>successively<sp/>sifting<sp/>downward<sp/>to<sp/>establish<sp/>the<sp/>heap<sp/>property.<sp/>An<sp/>alternative<sp/>version<sp/>that<sp/>builds<sp/>the<sp/>heap<sp/>top-down<sp/>and<sp/>sifts<sp/>upward<sp/>may<sp/>be<sp/>simpler<sp/>to<sp/>understand.<sp/>In<sp/>this<sp/>implementation,<sp/>it<sp/>adopts<sp/>first<sp/>method<sp/>which&apos;s<sp/>time<sp/>complexity<sp/>is<sp/>O(n)<sp/>that<sp/>is<sp/>less<sp/>than<sp/>the<sp/>second<sp/>method.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Reference<sp/>####</highlight></codeline>
+<codeline><highlight class="normal">[1]<sp/>[cplusplus:<sp/>priority<sp/>queue](https://www.cplusplus.com/forum/general/146188/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[2]<sp/>[stack<sp/>overflow:<sp/>siftUp<sp/>and<sp/>siftDown<sp/>operation<sp/>in<sp/>heap<sp/>for<sp/>heapifying<sp/>an<sp/>array](https://stackoverflow.com/questions/34329942/siftup-and-siftdown-operation-in-heap-for-heapifying-an-array)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[3]<sp/>[Wiki:<sp/>Heapsort](https://en.wikipedia.org/wiki/Heapsort)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[4]<sp/>[Northeastern.edu:<sp/>Lecture<sp/>29:<sp/>Priority<sp/>Queues<sp/>and<sp/>Heapsort](https://course.ccs.neu.edu/cs2510h/lecture29.html#%28part._.Heapsort%29)</highlight></codeline>
+    </programlisting>
+    <location file="priority_queue/README.md"/>
+  </compounddef>
+</doxygen>

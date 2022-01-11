@@ -1,4 +1,5 @@
 <map id="GetData" name="GetData">
-<area shape="rect" id="node1" title=" " alt="" coords="192,13,263,39"/>
-<area shape="rect" id="node2" href="$d7/d8e/classcommon_1_1_linked_list.html#a3526dd92e36ccd73dea6abb0d671b388" title=" " alt="" coords="5,5,144,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="231,46,301,73"/>
+<area shape="rect" id="node2" href="$d7/d8e/classcommon_1_1_linked_list.html#a3526dd92e36ccd73dea6abb0d671b388" title=" " alt="" coords="25,5,163,47"/>
+<area shape="rect" id="node3" href="$d1/d81/classcommon_1_1_queue_linked_list.html#a96f5737c64edc912fe53681ccc9ea057" title=" " alt="" coords="5,71,183,112"/>
 </map>

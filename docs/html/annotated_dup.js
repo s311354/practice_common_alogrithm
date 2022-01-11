@@ -1,15 +1,11 @@
 var annotated_dup =
 [
     [ "common", "d9/d0c/namespacecommon.html", [
-      [ "BinarySearch", "dc/df2/classcommon_1_1_binary_search.html", "dc/df2/classcommon_1_1_binary_search" ],
-      [ "Graph", "de/d16/classcommon_1_1_graph.html", "de/d16/classcommon_1_1_graph" ],
-      [ "GraphDirected", "d8/dec/classcommon_1_1_graph_directed.html", "d8/dec/classcommon_1_1_graph_directed" ],
-      [ "GraphRepresentation", "d4/df5/classcommon_1_1_graph_representation.html", "d4/df5/classcommon_1_1_graph_representation" ],
-      [ "GraphRepresentationList", "db/df9/classcommon_1_1_graph_representation_list.html", "db/df9/classcommon_1_1_graph_representation_list" ],
-      [ "HashObject", "db/de7/classcommon_1_1_hash_object.html", "db/de7/classcommon_1_1_hash_object" ],
-      [ "HashTable", "d1/d2d/classcommon_1_1_hash_table.html", "d1/d2d/classcommon_1_1_hash_table" ],
-      [ "LinkedList", "d7/d8e/classcommon_1_1_linked_list.html", "d7/d8e/classcommon_1_1_linked_list" ],
-      [ "ListElement", "dd/d71/classcommon_1_1_list_element.html", "dd/d71/classcommon_1_1_list_element" ]
+      [ "PriorityQueue", "dc/de6/classcommon_1_1_priority_queue.html", "dc/de6/classcommon_1_1_priority_queue" ]
+    ] ],
+    [ "googletest", "d2/dbd/namespacegoogletest.html", [
+      [ "EmptyTest", "df/d98/classgoogletest_1_1_empty_test.html", "df/d98/classgoogletest_1_1_empty_test" ],
+      [ "EnqueueTest", "de/d95/classgoogletest_1_1_enqueue_test.html", "de/d95/classgoogletest_1_1_enqueue_test" ]
     ] ],
     [ "std", "d8/dcc/namespacestd.html", [
       [ "tr1", "d2/db7/namespacestd_1_1tr1.html", [

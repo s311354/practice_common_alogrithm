@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_70d4b3ff0298ba06b29189a4814897f5" kind="dir">
+    <compoundname>queue_linked_list/src/CMakeFiles</compoundname>
+    <innerdir refid="dir_cfcbeed39660d9211754fc718622c9c6">queue_linked_list/src/CMakeFiles/3.19.6</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="queue_linked_list/src/CMakeFiles/"/>
+  </compounddef>
+</doxygen>

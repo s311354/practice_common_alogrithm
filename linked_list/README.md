@@ -1,4 +1,6 @@
-## The concept of Templates ##
+## Overview of Linked List ##
+
+#### The concept of Templates ####
 
 A template is a C++ entity that defines class (class template) or function (function template). When a class template specialization is referenced in context that requires a complete objecttype, or when a function template specialization is referenced in context that requires a function to exist, the template is instantiated, unless the template was already explicitly specialized or explicitly instantiated.
 
@@ -14,7 +16,7 @@ template class LinkedList<std::string>;
 // linked_list.h
 template <class T> class LinkedList { ... };</span></code></pre></div>
 
-## The concept of Member access operators ##
+#### The concept of Member access operators ####
 
 <font size="3" face="Courier New">
 <table>
@@ -39,7 +41,7 @@ template <class T> class LinkedList { ... };</span></code></pre></div>
 </table>
 </font>
 
-## Reference ##
+#### Reference ####
 [1] [Member access operators](https://en.cppreference.com/w/c/language/operator_member_access)
 
 [2] [How can I avoid linker errors with my template functions?](https://isocpp.org/wiki/faq/templates#separate-template-fn-defn-from-decl)

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['valarray_4594',['valarray',['http://en.cppreference.com/w/cpp/header/valarray.html',0,'']]],
-  ['variant_4595',['variant',['http://en.cppreference.com/w/cpp/header/variant.html',0,'']]],
-  ['vector_4596',['vector',['http://en.cppreference.com/w/cpp/header/vector.html',0,'']]],
-  ['version_4597',['version',['http://en.cppreference.com/w/cpp/header/version.html',0,'']]]
+  ['unordered_5fmap_4641',['unordered_map',['http://en.cppreference.com/w/cpp/header/unordered_map.html',0,'']]],
+  ['unordered_5fset_4642',['unordered_set',['http://en.cppreference.com/w/cpp/header/unordered_set.html',0,'']]],
+  ['utility_4643',['utility',['http://en.cppreference.com/w/cpp/header/utility.html',0,'']]]
 ];

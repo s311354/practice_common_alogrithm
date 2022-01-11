@@ -4446,6 +4446,7 @@
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a58eca8e9e3e4f5bfe50033256d17bdc7" compoundref="d0/dea/linked__list_8cc" startline="46" endline="58">LinkedList&lt; T &gt;::Back</referencedby>
         <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1ade13d4605967d4ec20bb4d462eb6e624" compoundref="df/d42/graph__representation_8cc" startline="64" endline="115">GraphRepresentationList::BFS</referencedby>
         <referencedby refid="db/d91/class_electric_kettle_1a0128a33feaa0eea0e65a653e5f6cd80e" compoundref="d0/d88/design__pattern_2adapter__pattern_2main_8cc" startline="80" endline="92">ElectricKettle::boil</referencedby>
+        <referencedby refid="d1/d81/classcommon_1_1_queue_linked_list_1aa6370e8c523a8e8fe1c2e6695dd26f70" compoundref="d0/d17/queue__linked__list_8cc" startline="42" endline="60">QueueLinkedList&lt; T &gt;::Dequeue</referencedby>
         <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1a58d3be579a41554e41aa8c86cb8cf0a6" compoundref="df/d42/graph__representation_8cc" startline="123" endline="172">GraphRepresentationList::DFS</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1af1789852a6074c3c5ae8c6738d5f7160" compoundref="d0/dea/linked__list_8cc" startline="213" endline="241">LinkedList&lt; T &gt;::Erase</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a510df6a9340094440277fec608697fcd" compoundref="d0/dea/linked__list_8cc" startline="33" endline="40">LinkedList&lt; T &gt;::Front</referencedby>
@@ -4462,11 +4463,16 @@
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a8f1814ae66e117738921f5d400d85ec3" compoundref="d0/dea/linked__list_8cc" startline="116" endline="142">LinkedList&lt; T &gt;::PopBack</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" compoundref="d0/dea/linked__list_8cc" startline="77" endline="89">LinkedList&lt; T &gt;::PopFront</referencedby>
         <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1ad4be3369313a7d7d22098510b1ab0c84" compoundref="dd/d3b/hash__table_8cc" startline="155" endline="161">HashTable::PringDebug</referencedby>
+        <referencedby refid="d9/d0c/namespacecommon_1a12066b17e67522e150a0d61a74a4cb2d" compoundref="db/d3e/priority__queue_8cc" startline="232" endline="239">common::print_heap</referencedby>
         <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1a7c4557fcada1ff8b18f1d62cec1056a1" compoundref="df/d42/graph__representation_8cc" startline="221" endline="232">GraphRepresentationList::PrintDebug</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a7c4557fcada1ff8b18f1d62cec1056a1" compoundref="db/d3e/priority__queue_8cc" startline="69" endline="76">PriorityQueue::PrintDebug</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a96f5737c64edc912fe53681ccc9ea057" compoundref="d0/dea/linked__list_8cc" startline="330" endline="339">LinkedList&lt; T &gt;::PrintDebug</referencedby>
+        <referencedby refid="d1/d81/classcommon_1_1_queue_linked_list_1a96f5737c64edc912fe53681ccc9ea057" compoundref="d0/d17/queue__linked__list_8cc" startline="72" endline="84">QueueLinkedList&lt; T &gt;::PrintDebug</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1aa40f387b3fb06df3997974b66ed1d40c" compoundref="d0/dea/linked__list_8cc" startline="246" endline="270">LinkedList&lt; T &gt;::RemoveValue</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1ae1b551cc51c9d556342b27b466a7c7cb" compoundref="d0/dea/linked__list_8cc" startline="276" endline="293">LinkedList&lt; T &gt;::Reverse</referencedby>
         <referencedby refid="df/d46/hash__table_2main_8cc_1a003ce0914f19a42075de9622525208fe" compoundref="df/d46/hash__table_2main_8cc" startline="6" endline="26">stdlib_experiments</referencedby>
+        <referencedby refid="dd/dc9/queue__linked__list_2main_8cc_1a02daa2d5d74a14cacba69b339d87e3c0" compoundref="dd/dc9/queue__linked__list_2main_8cc" startline="20" endline="33">stdlib_queue_experiment</referencedby>
+        <referencedby refid="dd/dc9/queue__linked__list_2main_8cc_1a5555d25602377ba8c6b05ef270516a64" compoundref="dd/dc9/queue__linked__list_2main_8cc" startline="35" endline="48">stdlib_stack_experiment</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a41778863ac9905141650a07d08146115" compoundref="d0/dea/linked__list_8cc" startline="154" endline="172">LinkedList&lt; T &gt;::ValueAt</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a1e3c93770d25a042944efa1e83d449c1" compoundref="d0/dea/linked__list_8cc" startline="299" endline="324">LinkedList&lt; T &gt;::ValueNFromEnd</referencedby>
       </memberdef>

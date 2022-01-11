@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['value_5ftype_7195',['value_type',['../d3/d87/classtesting_1_1internal_1_1_native_array.html#a02bfdb9fd305b46f492e4d7d2ef4e0b0',1,'testing::internal::NativeArray::value_type()'],['../d0/da7/namespacetesting_1_1internal.html#a2c72bd0c215dc4f0dc7f1b98869fee3d',1,'testing::internal::IteratorTraits::value_type()'],['../d0/da7/namespacetesting_1_1internal.html#a265a253612b46abed17c61b0a5e5ce30',1,'testing::internal::IteratorTraits&lt; T * &gt;::value_type()'],['../d0/da7/namespacetesting_1_1internal.html#a265a253612b46abed17c61b0a5e5ce30',1,'testing::internal::IteratorTraits&lt; const T * &gt;::value_type()']]]
+  ['uint_7271',['UInt',['../d0/da7/namespacetesting_1_1internal.html#adfade8609e616ed641c69c10c34622fc',1,'testing::internal::TypeWithSize::UInt()'],['../d0/da7/namespacetesting_1_1internal.html#aba0996d26f7be2572973245b51852757',1,'testing::internal::TypeWithSize&lt; 4 &gt;::UInt()'],['../d0/da7/namespacetesting_1_1internal.html#a09f1489f5176f7ccd5484718e1449838',1,'testing::internal::TypeWithSize&lt; 8 &gt;::UInt()']]],
+  ['uint32_7272',['UInt32',['../d0/da7/namespacetesting_1_1internal.html#a29df88f24cbbe825f67bbf8e21bfde3f',1,'testing::internal']]],
+  ['uint64_7273',['UInt64',['../d0/da7/namespacetesting_1_1internal.html#aef734feb4e27e3f73673df974493134c',1,'testing::internal']]]
 ];

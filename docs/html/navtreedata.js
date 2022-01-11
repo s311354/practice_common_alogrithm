@@ -25,15 +25,11 @@
 var NAVTREE =
 [
   [ "Common Alogrithm", "index.html", [
-    [ "The concept of struct and class declarations", "d6/db5/md_binary_search__r_e_a_d_m_e.html", [
-      [ "Reference", "d6/db5/md_binary_search__r_e_a_d_m_e.html#autotoc_md1", null ]
-    ] ],
-    [ "The concept of Directed Graph", "d7/de5/md_graphs__r_e_a_d_m_e.html", [
-      [ "Reference", "d7/de5/md_graphs__r_e_a_d_m_e.html#autotoc_md3", null ]
-    ] ],
-    [ "The concept of Hash Tables", "df/d05/md_hash_table__r_e_a_d_m_e.html", [
-      [ "Reference", "df/d05/md_hash_table__r_e_a_d_m_e.html#autotoc_md5", null ]
-    ] ],
+    [ "Overview of Binary Search", "d6/db5/md_binary_search__r_e_a_d_m_e.html", null ],
+    [ "Overview of Graph", "d7/de5/md_graphs__r_e_a_d_m_e.html", null ],
+    [ "Overview of Hash Tables", "df/d05/md_hash_table__r_e_a_d_m_e.html", null ],
+    [ "Overview of Queue Linked List", "d1/daa/md_queue_linked_list__r_e_a_d_m_e.html", null ],
+    [ "Overview of Priority Queues", "de/d7b/md_priority_queue__r_e_a_d_m_e.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Packages", "namespaces.html", "namespaces_dup" ],
       [ "Package Functions", "namespacemembers.html", [
@@ -64,8 +60,8 @@ var NAVTREEINDEX =
 "cpp/utility/functional/not2.html",
 "d0/da7/namespacetesting_1_1internal.html#a5bfafb8c85988c397157e055965ad46c",
 "d0/dfa/classtesting_1_1_test_case.html#aee5d98a0807fdd67250534a4b491e3d0",
-"d5/dec/classtesting_1_1_assertion_result.html#a0aafa5774976d7f082bb6f1d19da61cb",
-"de/d42/classtesting_1_1anonymous__namespace_02gtest_8cc_03_1_1_test_name_is.html#ac760376da9bea59bb4df3a4ee5065008"
+"d6/db5/md_binary_search__r_e_a_d_m_e.html#autotoc_md2",
+"df/dab/classtesting_1_1_test_event_listeners.html#abae39633da9932847b41cb80efd62115"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

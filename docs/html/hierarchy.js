@@ -50,6 +50,8 @@ var hierarchy =
     [ "HashTable", "d1/d2d/classcommon_1_1_hash_table.html", null ],
     [ "LinkedList< T >", "d7/d8e/classcommon_1_1_linked_list.html", null ],
     [ "ListElement< T >", "dd/d71/classcommon_1_1_list_element.html", null ],
+    [ "PriorityQueue", "dc/de6/classcommon_1_1_priority_queue.html", null ],
+    [ "QueueLinkedList< T >", "d1/d81/classcommon_1_1_queue_linked_list.html", null ],
     [ "Context", "d5/de2/class_context.html", null ],
     [ "ElectricKettle", "db/d91/class_electric_kettle.html", null ],
     [ "EuropeanSocketInterface", "d0/dd2/class_european_socket_interface.html", [
@@ -1126,7 +1128,10 @@ var hierarchy =
     [ "UniversalTersePrinter< T[N]>", "db/dd8/classtesting_1_1internal_1_1_universal_terse_printer_3_01_t_0f_n_0e_4.html", null ],
     [ "UniversalTersePrinter< wchar_t * >", "d5/daf/classtesting_1_1internal_1_1_universal_terse_printer_3_01wchar__t_01_5_01_4.html", null ],
     [ "Message", "d2/da9/classtesting_1_1_message.html", null ],
-    [ "Test", "df/d69/classtesting_1_1_test.html", null ],
+    [ "Test", "df/d69/classtesting_1_1_test.html", [
+      [ "EmptyTest", "df/d98/classgoogletest_1_1_empty_test.html", null ],
+      [ "EnqueueTest", "de/d95/classgoogletest_1_1_enqueue_test.html", null ]
+    ] ],
     [ "TestCase", "d0/dfa/classtesting_1_1_test_case.html", null ],
     [ "TestEventListener", "d1/d46/classtesting_1_1_test_event_listener.html", [
       [ "EmptyTestEventListener", "dd/dff/classtesting_1_1_empty_test_event_listener.html", [

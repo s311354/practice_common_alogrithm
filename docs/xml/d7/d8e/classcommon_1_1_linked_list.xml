@@ -178,7 +178,7 @@
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="43" column="13" bodyfile="linked_list/src/linked_list.cc" bodystart="77" bodyend="89"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
-        <references refid="dd/d71/classcommon_1_1_list_element_1ace1c7e71f98501b3bac17eeb8110d8d1" compoundref="d6/d01/list__element_8h" startline="22" endline="22">ListElement&lt; T &gt;::GetData</references>
+        <references refid="dd/d71/classcommon_1_1_list_element_1ace1c7e71f98501b3bac17eeb8110d8d1" compoundref="d8/dd2/linked__list_2src_2list__element_8h" startline="22" endline="22">ListElement&lt; T &gt;::GetData</references>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a96f5737c64edc912fe53681ccc9ea057" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -210,8 +210,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="45" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="95" bodyend="110"/>
-        <references refid="dd/d71/classcommon_1_1_list_element_1a7b6af5a368ca2b7fceb56b7c4a5d07af" compoundref="d6/d01/list__element_8h" startline="23" endline="23">ListElement&lt; T &gt;::GetNext</references>
-        <references refid="dd/d71/classcommon_1_1_list_element_1a0e2f21176165b93e0a6b45716ea2c65a" compoundref="d6/d01/list__element_8h" startline="26" endline="26">ListElement&lt; T &gt;::SetNext</references>
+        <references refid="dd/d71/classcommon_1_1_list_element_1a7b6af5a368ca2b7fceb56b7c4a5d07af" compoundref="d8/dd2/linked__list_2src_2list__element_8h" startline="23" endline="23">ListElement&lt; T &gt;::GetNext</references>
+        <references refid="dd/d71/classcommon_1_1_list_element_1a0e2f21176165b93e0a6b45716ea2c65a" compoundref="d8/dd2/linked__list_2src_2list__element_8h" startline="26" endline="26">ListElement&lt; T &gt;::SetNext</references>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -324,7 +324,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="22" column="5" bodyfile="linked_list/src/linked_list.h" bodystart="22" bodyend="31"/>
-        <references refid="dd/d71/classcommon_1_1_list_element_1a7b6af5a368ca2b7fceb56b7c4a5d07af" compoundref="d6/d01/list__element_8h" startline="23" endline="23">ListElement&lt; T &gt;::GetNext</references>
+        <references refid="dd/d71/classcommon_1_1_list_element_1a7b6af5a368ca2b7fceb56b7c4a5d07af" compoundref="d8/dd2/linked__list_2src_2list__element_8h" startline="23" endline="23">ListElement&lt; T &gt;::GetNext</references>
         <references refid="d7/d8e/classcommon_1_1_linked_list_1a28a023e95099e5dfc719288513837f73" compoundref="d1/d4a/linked__list_8h" startline="13">LinkedList&lt; T &gt;::head</references>
       </memberdef>
       </sectiondef>

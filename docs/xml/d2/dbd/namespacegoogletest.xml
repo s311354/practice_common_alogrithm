@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/dbd/namespacegoogletest" kind="namespace" language="C++">
+    <compoundname>googletest</compoundname>
+    <innerclass refid="df/d98/classgoogletest_1_1_empty_test" prot="public">googletest::EmptyTest</innerclass>
+    <innerclass refid="de/d95/classgoogletest_1_1_enqueue_test" prot="public">googletest::EnqueueTest</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1ac17957d2b69de295d13b79e6a8f73607" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(EmptyTest, Empty)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="df/d98/classgoogletest_1_1_empty_test" kindref="compound">EmptyTest</ref></type>
+        </param>
+        <param>
+          <type>Empty</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="queue_linked_list/tests/queue_linked_list_unit_test.cc" line="23" column="1" bodyfile="queue_linked_list/tests/queue_linked_list_unit_test.cc" bodystart="23" bodyend="29"/>
+        <references refid="d1/d81/classcommon_1_1_queue_linked_list_1abcfbdba215d3b15fbb4b682969943a6e" compoundref="d0/d17/queue__linked__list_8cc" startline="66" endline="69">QueueLinkedList&lt; T &gt;::Empty</references>
+        <references refid="d8/d73/gtest_8h_1ac33e7cdfb5d44a7a0f0ab552eb5c3c6a" compoundref="d8/d73/gtest_8h" startline="1859">EXPECT_TRUE</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(EnqueueTest, Enqueue)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="de/d95/classgoogletest_1_1_enqueue_test" kindref="compound">EnqueueTest</ref></type>
+        </param>
+        <param>
+          <type>Enqueue</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="queue_linked_list/tests/queue_linked_list_unit_test.cc" line="9" column="1" bodyfile="queue_linked_list/tests/queue_linked_list_unit_test.cc" bodystart="9" bodyend="19"/>
+        <references refid="d1/d81/classcommon_1_1_queue_linked_list_1aa6370e8c523a8e8fe1c2e6695dd26f70" compoundref="d0/d17/queue__linked__list_8cc" startline="42" endline="60">QueueLinkedList&lt; T &gt;::Dequeue</references>
+        <references refid="d1/d81/classcommon_1_1_queue_linked_list_1a486cdb4401658fe6fb93b886054d9a40" compoundref="d0/d17/queue__linked__list_8cc" startline="25" endline="37">QueueLinkedList&lt; T &gt;::Enqueue</references>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="queue_linked_list/tests/queue_linked_list_unit_test.cc" line="5" column="1"/>
+  </compounddef>
+</doxygen>

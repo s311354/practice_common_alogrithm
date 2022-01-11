@@ -1,0 +1,429 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/de6/classcommon_1_1_priority_queue" kind="class" language="C++" prot="public">
+    <compoundname>common::PriorityQueue</compoundname>
+    <includes refid="d4/da1/priority__queue_8h" local="no">priority_queue.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/de6/classcommon_1_1_priority_queue_1a7e1c686a96458b97fb6aa2a7a136ea71" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int capacity_queue</definition>
+        <argsstring></argsstring>
+        <name>capacity_queue</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="17" column="9" bodyfile="priority_queue/priority_queue.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a863794a0693a29176855fbe552dbfcf6" compoundref="db/d3e/priority__queue_8cc" startline="14" endline="24">PriorityQueue::Insert</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1ae82f38bbc095631e55cc6380cd525b64" compoundref="db/d3e/priority__queue_8cc" startline="124" endline="157">PriorityQueue::SiftDown</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a13168d072978ad86ffed1908e52812c3" compoundref="db/d3e/priority__queue_8cc" startline="87" endline="102">PriorityQueue::SiftUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dc/de6/classcommon_1_1_priority_queue_1a9c10f2d9e89c80f80c04650f7e67f0c8" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/d0c/namespacecommon_1a48e1c0989caea543c0290e670c310824" kindref="member">PQElement</ref> *</type>
+        <definition>PQElement* pelement</definition>
+        <argsstring></argsstring>
+        <name>pelement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="18" column="16" bodyfile="priority_queue/priority_queue.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1ab082bfdb65339d64285cba5cb800ebe0" compoundref="db/d3e/priority__queue_8cc" startline="54" endline="67">PriorityQueue::ExtractMax</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a2c3609c008b736ccf98c210a730f2d5f" compoundref="db/d3e/priority__queue_8cc" startline="46" endline="51">PriorityQueue::GetMax</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a863794a0693a29176855fbe552dbfcf6" compoundref="db/d3e/priority__queue_8cc" startline="14" endline="24">PriorityQueue::Insert</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a7c4557fcada1ff8b18f1d62cec1056a1" compoundref="db/d3e/priority__queue_8cc" startline="69" endline="76">PriorityQueue::PrintDebug</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a8f2e1799438cf09890aaecb203d14625" compoundref="db/d3e/priority__queue_8cc" startline="5" endline="10">PriorityQueue::PriorityQueue</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1ae82f38bbc095631e55cc6380cd525b64" compoundref="db/d3e/priority__queue_8cc" startline="124" endline="157">PriorityQueue::SiftDown</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a13168d072978ad86ffed1908e52812c3" compoundref="db/d3e/priority__queue_8cc" startline="87" endline="102">PriorityQueue::SiftUp</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1aebbde0595dd6c927c8d032a45ddf1b49" compoundref="db/d3e/priority__queue_8cc" startline="104" endline="113">PriorityQueue::Swap</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1af97f1420d96fea6165720866508f06a3" compoundref="db/d3e/priority__queue_8cc" startline="12" endline="12">PriorityQueue::~PriorityQueue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="16" column="9" bodyfile="priority_queue/priority_queue.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1ab082bfdb65339d64285cba5cb800ebe0" compoundref="db/d3e/priority__queue_8cc" startline="54" endline="67">PriorityQueue::ExtractMax</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a2c3609c008b736ccf98c210a730f2d5f" compoundref="db/d3e/priority__queue_8cc" startline="46" endline="51">PriorityQueue::GetMax</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1af20bedaf7c9a39abf3f99b1122503107" compoundref="db/d3e/priority__queue_8cc" startline="36" endline="39">PriorityQueue::GetSize</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a863794a0693a29176855fbe552dbfcf6" compoundref="db/d3e/priority__queue_8cc" startline="14" endline="24">PriorityQueue::Insert</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a357657ded604ecb97b76251146f7ac75" compoundref="db/d3e/priority__queue_8cc" startline="41" endline="44">PriorityQueue::IsEmpty</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a7c4557fcada1ff8b18f1d62cec1056a1" compoundref="db/d3e/priority__queue_8cc" startline="69" endline="76">PriorityQueue::PrintDebug</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a8f2e1799438cf09890aaecb203d14625" compoundref="db/d3e/priority__queue_8cc" startline="5" endline="10">PriorityQueue::PriorityQueue</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a50af808bf213e4cb397f5f458af96cb5" compoundref="db/d3e/priority__queue_8cc" startline="26" endline="34">PriorityQueue::Remove</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1ae82f38bbc095631e55cc6380cd525b64" compoundref="db/d3e/priority__queue_8cc" startline="124" endline="157">PriorityQueue::SiftDown</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1ae82f38bbc095631e55cc6380cd525b64" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SiftDown</definition>
+        <argsstring>(int index)</argsstring>
+        <name>SiftDown</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Brief function description here. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SiftDown swaps a node that is too small with its largest child (thereby moving it down) until it is at least as large as both nodes below it.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Parameter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter description </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return parameter description </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="25" column="10" bodyfile="priority_queue/priority_queue.cc" bodystart="124" bodyend="157"/>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a7e1c686a96458b97fb6aa2a7a136ea71" compoundref="d4/da1/priority__queue_8h" startline="17">PriorityQueue::capacity_queue</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a9c10f2d9e89c80f80c04650f7e67f0c8" compoundref="d4/da1/priority__queue_8h" startline="18">PriorityQueue::pelement</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" compoundref="d4/da1/priority__queue_8h" startline="16">PriorityQueue::size</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1aebbde0595dd6c927c8d032a45ddf1b49" compoundref="db/d3e/priority__queue_8cc" startline="104" endline="113">PriorityQueue::Swap</references>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1ab082bfdb65339d64285cba5cb800ebe0" compoundref="db/d3e/priority__queue_8cc" startline="54" endline="67">PriorityQueue::ExtractMax</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a50af808bf213e4cb397f5f458af96cb5" compoundref="db/d3e/priority__queue_8cc" startline="26" endline="34">PriorityQueue::Remove</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1a13168d072978ad86ffed1908e52812c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SiftUp</definition>
+        <argsstring>(int index)</argsstring>
+        <name>SiftUp</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Brief function description here. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SiftUp swaps a node that is too large with its parent (thereby moving it up) until it is no larger than the node above it.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Parameter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter description </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return parameter description </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="21" column="10" bodyfile="priority_queue/priority_queue.cc" bodystart="87" bodyend="102"/>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a7e1c686a96458b97fb6aa2a7a136ea71" compoundref="d4/da1/priority__queue_8h" startline="17">PriorityQueue::capacity_queue</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a9c10f2d9e89c80f80c04650f7e67f0c8" compoundref="d4/da1/priority__queue_8h" startline="18">PriorityQueue::pelement</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1aebbde0595dd6c927c8d032a45ddf1b49" compoundref="db/d3e/priority__queue_8cc" startline="104" endline="113">PriorityQueue::Swap</references>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a863794a0693a29176855fbe552dbfcf6" compoundref="db/d3e/priority__queue_8cc" startline="14" endline="24">PriorityQueue::Insert</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1aebbde0595dd6c927c8d032a45ddf1b49" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Swap</definition>
+        <argsstring>(const int index1, const int index2)</argsstring>
+        <name>Swap</name>
+        <param>
+          <type>const int</type>
+          <declname>index1</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>index2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="23" column="10" bodyfile="priority_queue/priority_queue.cc" bodystart="104" bodyend="113"/>
+        <references refid="d9/d6b/structcommon_1_1_priority_queue_element_1a35af0be900467fedbb610bd6ea65ed78" compoundref="d4/da1/priority__queue_8h" startline="9">PriorityQueueElement::key</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a9c10f2d9e89c80f80c04650f7e67f0c8" compoundref="d4/da1/priority__queue_8h" startline="18">PriorityQueue::pelement</references>
+        <references refid="d9/d6b/structcommon_1_1_priority_queue_element_1a5c33da5929c9f2f9ef8d006d2350e6ec" compoundref="d4/da1/priority__queue_8h" startline="10">PriorityQueueElement::value</references>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1ab082bfdb65339d64285cba5cb800ebe0" compoundref="db/d3e/priority__queue_8cc" startline="54" endline="67">PriorityQueue::ExtractMax</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a50af808bf213e4cb397f5f458af96cb5" compoundref="db/d3e/priority__queue_8cc" startline="26" endline="34">PriorityQueue::Remove</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1ae82f38bbc095631e55cc6380cd525b64" compoundref="db/d3e/priority__queue_8cc" startline="124" endline="157">PriorityQueue::SiftDown</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a13168d072978ad86ffed1908e52812c3" compoundref="db/d3e/priority__queue_8cc" startline="87" endline="102">PriorityQueue::SiftUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1ab082bfdb65339d64285cba5cb800ebe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d0c/namespacecommon_1a48e1c0989caea543c0290e670c310824" kindref="member">PQElement</ref> *</type>
+        <definition>PQElement * ExtractMax</definition>
+        <argsstring>()</argsstring>
+        <name>ExtractMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="44" column="15" bodyfile="priority_queue/priority_queue.cc" bodystart="54" bodyend="67"/>
+        <references refid="d9/d6b/structcommon_1_1_priority_queue_element_1a35af0be900467fedbb610bd6ea65ed78" compoundref="d4/da1/priority__queue_8h" startline="9">PriorityQueueElement::key</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a9c10f2d9e89c80f80c04650f7e67f0c8" compoundref="d4/da1/priority__queue_8h" startline="18">PriorityQueue::pelement</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1ae82f38bbc095631e55cc6380cd525b64" compoundref="db/d3e/priority__queue_8cc" startline="124" endline="157">PriorityQueue::SiftDown</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" compoundref="d4/da1/priority__queue_8h" startline="16">PriorityQueue::size</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1aebbde0595dd6c927c8d032a45ddf1b49" compoundref="db/d3e/priority__queue_8cc" startline="104" endline="113">PriorityQueue::Swap</references>
+        <references refid="d9/d6b/structcommon_1_1_priority_queue_element_1a5c33da5929c9f2f9ef8d006d2350e6ec" compoundref="d4/da1/priority__queue_8h" startline="10">PriorityQueueElement::value</references>
+        <referencedby refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d3/dd5/priority__queue_2main_8cc" startline="4" endline="38">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1a2c3609c008b736ccf98c210a730f2d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d0c/namespacecommon_1a48e1c0989caea543c0290e670c310824" kindref="member">PQElement</ref> *</type>
+        <definition>PQElement * GetMax</definition>
+        <argsstring>()</argsstring>
+        <name>GetMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="42" column="15" bodyfile="priority_queue/priority_queue.cc" bodystart="46" bodyend="51"/>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a9c10f2d9e89c80f80c04650f7e67f0c8" compoundref="d4/da1/priority__queue_8h" startline="18">PriorityQueue::pelement</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" compoundref="d4/da1/priority__queue_8h" startline="16">PriorityQueue::size</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1af20bedaf7c9a39abf3f99b1122503107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="38" column="9" bodyfile="priority_queue/priority_queue.cc" bodystart="36" bodyend="39"/>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" compoundref="d4/da1/priority__queue_8h" startline="16">PriorityQueue::size</references>
+        <referencedby refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d3/dd5/priority__queue_2main_8cc" startline="4" endline="38">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1a863794a0693a29176855fbe552dbfcf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Insert</definition>
+        <argsstring>(const int key, const std::string value)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>const int</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="34" column="10" bodyfile="priority_queue/priority_queue.cc" bodystart="14" bodyend="24"/>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a7e1c686a96458b97fb6aa2a7a136ea71" compoundref="d4/da1/priority__queue_8h" startline="17">PriorityQueue::capacity_queue</references>
+        <references refid="d9/d6b/structcommon_1_1_priority_queue_element_1a35af0be900467fedbb610bd6ea65ed78" compoundref="d4/da1/priority__queue_8h" startline="9">PriorityQueueElement::key</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a9c10f2d9e89c80f80c04650f7e67f0c8" compoundref="d4/da1/priority__queue_8h" startline="18">PriorityQueue::pelement</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a13168d072978ad86ffed1908e52812c3" compoundref="db/d3e/priority__queue_8cc" startline="87" endline="102">PriorityQueue::SiftUp</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" compoundref="d4/da1/priority__queue_8h" startline="16">PriorityQueue::size</references>
+        <references refid="d9/d6b/structcommon_1_1_priority_queue_element_1a5c33da5929c9f2f9ef8d006d2350e6ec" compoundref="d4/da1/priority__queue_8h" startline="10">PriorityQueueElement::value</references>
+        <referencedby refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d3/dd5/priority__queue_2main_8cc" startline="4" endline="38">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1a357657ded604ecb97b76251146f7ac75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>IsEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="40" column="10" bodyfile="priority_queue/priority_queue.cc" bodystart="41" bodyend="44"/>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" compoundref="d4/da1/priority__queue_8h" startline="16">PriorityQueue::size</references>
+        <referencedby refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d3/dd5/priority__queue_2main_8cc" startline="4" endline="38">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1a338f78e8edc6323389b8d919b36de96e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dc/de6/classcommon_1_1_priority_queue" kindref="compound">PriorityQueue</ref> &amp;</type>
+        <definition>PriorityQueue&amp; operator=</definition>
+        <argsstring>(const PriorityQueue &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="dc/de6/classcommon_1_1_priority_queue" kindref="compound">PriorityQueue</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="30" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1a7c4557fcada1ff8b18f1d62cec1056a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PrintDebug</definition>
+        <argsstring>()</argsstring>
+        <name>PrintDebug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="46" column="10" bodyfile="priority_queue/priority_queue.cc" bodystart="69" bodyend="76"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <references refid="d9/d6b/structcommon_1_1_priority_queue_element_1a35af0be900467fedbb610bd6ea65ed78" compoundref="d4/da1/priority__queue_8h" startline="9">PriorityQueueElement::key</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a9c10f2d9e89c80f80c04650f7e67f0c8" compoundref="d4/da1/priority__queue_8h" startline="18">PriorityQueue::pelement</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" compoundref="d4/da1/priority__queue_8h" startline="16">PriorityQueue::size</references>
+        <references refid="d9/d6b/structcommon_1_1_priority_queue_element_1a5c33da5929c9f2f9ef8d006d2350e6ec" compoundref="d4/da1/priority__queue_8h" startline="10">PriorityQueueElement::value</references>
+        <referencedby refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d3/dd5/priority__queue_2main_8cc" startline="4" endline="38">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1a8f2e1799438cf09890aaecb203d14625" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PriorityQueue</definition>
+        <argsstring>(const int size)</argsstring>
+        <name>PriorityQueue</name>
+        <param>
+          <type>const int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="28" column="14" bodyfile="priority_queue/priority_queue.cc" bodystart="5" bodyend="10"/>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a9c10f2d9e89c80f80c04650f7e67f0c8" compoundref="d4/da1/priority__queue_8h" startline="18">PriorityQueue::pelement</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" compoundref="d4/da1/priority__queue_8h" startline="16">PriorityQueue::size</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1aa6d81b6af69d181bd618a21e44468e22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PriorityQueue</definition>
+        <argsstring>(const PriorityQueue &amp;)=delete</argsstring>
+        <name>PriorityQueue</name>
+        <param>
+          <type>const <ref refid="dc/de6/classcommon_1_1_priority_queue" kindref="compound">PriorityQueue</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="29" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1a50af808bf213e4cb397f5f458af96cb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Remove</definition>
+        <argsstring>(int index)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="36" column="10" bodyfile="priority_queue/priority_queue.cc" bodystart="26" bodyend="34"/>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1ae82f38bbc095631e55cc6380cd525b64" compoundref="db/d3e/priority__queue_8cc" startline="124" endline="157">PriorityQueue::SiftDown</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" compoundref="d4/da1/priority__queue_8h" startline="16">PriorityQueue::size</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1aebbde0595dd6c927c8d032a45ddf1b49" compoundref="db/d3e/priority__queue_8cc" startline="104" endline="113">PriorityQueue::Swap</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/de6/classcommon_1_1_priority_queue_1af97f1420d96fea6165720866508f06a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~PriorityQueue</definition>
+        <argsstring>()</argsstring>
+        <name>~PriorityQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="31" column="13" bodyfile="priority_queue/priority_queue.cc" bodystart="12" bodyend="12"/>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a9c10f2d9e89c80f80c04650f7e67f0c8" compoundref="d4/da1/priority__queue_8h" startline="18">PriorityQueue::pelement</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>basic_string&lt; Char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="2">
+        <label>PriorityQueueElement</label>
+        <link refid="d9/d6b/structcommon_1_1_priority_queue_element"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+value</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PriorityQueue</label>
+        <link refid="dc/de6/classcommon_1_1_priority_queue"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-pelement</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>basic_string&lt; char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="priority_queue/priority_queue.h" line="13" column="1" bodyfile="priority_queue/priority_queue.h" bodystart="14" bodyend="48"/>
+    <listofallmembers>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1a7e1c686a96458b97fb6aa2a7a136ea71" prot="private" virt="non-virtual"><scope>common::PriorityQueue</scope><name>capacity_queue</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1ab082bfdb65339d64285cba5cb800ebe0" prot="public" virt="non-virtual"><scope>common::PriorityQueue</scope><name>ExtractMax</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1a2c3609c008b736ccf98c210a730f2d5f" prot="public" virt="non-virtual"><scope>common::PriorityQueue</scope><name>GetMax</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1af20bedaf7c9a39abf3f99b1122503107" prot="public" virt="non-virtual"><scope>common::PriorityQueue</scope><name>GetSize</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1a863794a0693a29176855fbe552dbfcf6" prot="public" virt="non-virtual"><scope>common::PriorityQueue</scope><name>Insert</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1a357657ded604ecb97b76251146f7ac75" prot="public" virt="non-virtual"><scope>common::PriorityQueue</scope><name>IsEmpty</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1a338f78e8edc6323389b8d919b36de96e" prot="public" virt="non-virtual"><scope>common::PriorityQueue</scope><name>operator=</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1a9c10f2d9e89c80f80c04650f7e67f0c8" prot="private" virt="non-virtual"><scope>common::PriorityQueue</scope><name>pelement</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1a7c4557fcada1ff8b18f1d62cec1056a1" prot="public" virt="non-virtual"><scope>common::PriorityQueue</scope><name>PrintDebug</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1a8f2e1799438cf09890aaecb203d14625" prot="public" virt="non-virtual"><scope>common::PriorityQueue</scope><name>PriorityQueue</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1aa6d81b6af69d181bd618a21e44468e22" prot="public" virt="non-virtual"><scope>common::PriorityQueue</scope><name>PriorityQueue</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1a50af808bf213e4cb397f5f458af96cb5" prot="public" virt="non-virtual"><scope>common::PriorityQueue</scope><name>Remove</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1ae82f38bbc095631e55cc6380cd525b64" prot="private" virt="non-virtual"><scope>common::PriorityQueue</scope><name>SiftDown</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1a13168d072978ad86ffed1908e52812c3" prot="private" virt="non-virtual"><scope>common::PriorityQueue</scope><name>SiftUp</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" prot="private" virt="non-virtual"><scope>common::PriorityQueue</scope><name>size</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1aebbde0595dd6c927c8d032a45ddf1b49" prot="private" virt="non-virtual"><scope>common::PriorityQueue</scope><name>Swap</name></member>
+      <member refid="dc/de6/classcommon_1_1_priority_queue_1af97f1420d96fea6165720866508f06a3" prot="public" virt="virtual"><scope>common::PriorityQueue</scope><name>~PriorityQueue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

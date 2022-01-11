@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/main.cc
+iostream
+-
+./priority_queue.h
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/priority_queue.h
+
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/priority_queue.cc
+./priority_queue.h
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/priority_queue.h
+
+/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/priority_queue.h
+iostream
+-
+

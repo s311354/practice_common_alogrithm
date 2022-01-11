@@ -2,10 +2,12 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="df/d05/md_hash_table__r_e_a_d_m_e" kind="page">
     <compoundname>md_hash_table_README</compoundname>
-    <title>The concept of Hash Tables</title>
+    <title>Overview of Hash Tables</title>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<sect3 id="df/d05/md_hash_table__r_e_a_d_m_e_1autotoc_md7">
+<title>The concept of Hash Tables</title>
 <para>A hash table (hash map) is a data structure that implements an associative array abstract data type, s structure that can map keys to values. A hash table uses a hash function to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found. During lookup, the key is hashed and the resulting hash indicates where the corresponding value is stored.</para>
 <para>The corresponding result in this simple example code: <preformatted><computeroutput>$ ./hash_table                                                                    [8:09:14]
 0: California: Sacramento
@@ -29,10 +31,11 @@ Size of bucket 0: 0
 Size of bucket 1: 1
 Size of bucket 2: 1
 Size of bucket 3: 1</computeroutput></preformatted></para>
-<sect1 id="df/d05/md_hash_table__r_e_a_d_m_e_1autotoc_md5">
+</sect3>
+<sect3 id="df/d05/md_hash_table__r_e_a_d_m_e_1autotoc_md8">
 <title>Reference</title>
 <para>[1] <ulink url="https://en.wikipedia.org/wiki/Hash_table">Wiki: hash table</ulink> </para>
-</sect1>
+</sect3>
     </detaileddescription>
     <location file="hash_table/README.md"/>
   </compounddef>
