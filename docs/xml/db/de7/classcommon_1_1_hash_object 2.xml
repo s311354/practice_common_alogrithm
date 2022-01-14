@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/de7/classcommon_1_1_hash_object" kind="class" language="C++" prot="public">
+    <compoundname>common::HashObject</compoundname>
+    <includes refid="dc/d62/hash__object_8h" local="no">hash_object.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/de7/classcommon_1_1_hash_object_1a2434a1611d16a59c5df79a27f35c9135" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string key_</definition>
+        <argsstring></argsstring>
+        <name>key_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_object.h" line="10" column="17" bodyfile="hash_table/hash_object.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="db/de7/classcommon_1_1_hash_object_1a427c1ae83059ba3178e292a41bc8bd61" compoundref="dc/d62/hash__object_8h" startline="19" endline="19">HashObject::Getkey</referencedby>
+        <referencedby refid="db/de7/classcommon_1_1_hash_object_1ab24c491a01c319873729f720918b2413" compoundref="dc/d62/hash__object_8h" startline="28" endline="31">HashObject::SetAsDummy</referencedby>
+        <referencedby refid="db/de7/classcommon_1_1_hash_object_1a63d8d4c0aeb6f55b1fd4ad33a728ea09" compoundref="dc/d62/hash__object_8h" startline="22" endline="22">HashObject::SetKey</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="db/de7/classcommon_1_1_hash_object_1ad84db3d1db4de4af9935d2d361626bdb" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_object.h" line="11" column="17" bodyfile="hash_table/hash_object.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="db/de7/classcommon_1_1_hash_object_1ac147df914005ba8c736a9b017ac8abdc" compoundref="dc/d62/hash__object_8h" startline="20" endline="20">HashObject::GetValue</referencedby>
+        <referencedby refid="db/de7/classcommon_1_1_hash_object_1ab24c491a01c319873729f720918b2413" compoundref="dc/d62/hash__object_8h" startline="28" endline="31">HashObject::SetAsDummy</referencedby>
+        <referencedby refid="db/de7/classcommon_1_1_hash_object_1a35fa195e8796b1228e2d4787bebacdc1" compoundref="dc/d62/hash__object_8h" startline="23" endline="23">HashObject::SetValue</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/de7/classcommon_1_1_hash_object_1a427c1ae83059ba3178e292a41bc8bd61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+        <definition>std::string&amp; Getkey</definition>
+        <argsstring>()</argsstring>
+        <name>Getkey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_object.h" line="19" column="17" bodyfile="hash_table/hash_object.h" bodystart="19" bodyend="19"/>
+        <references refid="db/de7/classcommon_1_1_hash_object_1a2434a1611d16a59c5df79a27f35c9135" compoundref="dc/d62/hash__object_8h" startline="10">HashObject::key_</references>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1a1f9d74426ead6df411fd1162a7389521" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">HashTable::Add</referencedby>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1ad4be3369313a7d7d22098510b1ab0c84" compoundref="dd/d3b/hash__table_8cc" startline="155" endline="161">HashTable::PringDebug</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/de7/classcommon_1_1_hash_object_1ac147df914005ba8c736a9b017ac8abdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+        <definition>std::string&amp; GetValue</definition>
+        <argsstring>()</argsstring>
+        <name>GetValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_object.h" line="20" column="17" bodyfile="hash_table/hash_object.h" bodystart="20" bodyend="20"/>
+        <references refid="db/de7/classcommon_1_1_hash_object_1ad84db3d1db4de4af9935d2d361626bdb" compoundref="dc/d62/hash__object_8h" startline="11">HashObject::value_</references>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1a1f9d74426ead6df411fd1162a7389521" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">HashTable::Add</referencedby>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1a96b27a16691e44f4bea04e3f3baeb6bb" compoundref="dd/d3b/hash__table_8cc" startline="111" endline="128">HashTable::Get</referencedby>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1ad4be3369313a7d7d22098510b1ab0c84" compoundref="dd/d3b/hash__table_8cc" startline="155" endline="161">HashTable::PringDebug</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/de7/classcommon_1_1_hash_object_1a7bb02cf0e02f1f3f80a00720587f2395" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>HashObject</definition>
+        <argsstring>()</argsstring>
+        <name>HashObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_object.h" line="14" column="5" bodyfile="hash_table/hash_object.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="db/de7/classcommon_1_1_hash_object_1ace29333cf64e84ae6f7a0aac238a7a1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>HashObject</definition>
+        <argsstring>(const HashObject &amp;)</argsstring>
+        <name>HashObject</name>
+        <param>
+          <type>const <ref refid="db/de7/classcommon_1_1_hash_object" kindref="compound">HashObject</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_object.h" line="15" column="5" bodyfile="hash_table/hash_object.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="db/de7/classcommon_1_1_hash_object_1aadf769b16ee72e96f22cc67bdc851274" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/de7/classcommon_1_1_hash_object" kindref="compound">HashObject</ref> &amp;</type>
+        <definition>HashObject&amp; operator=</definition>
+        <argsstring>(const HashObject &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="db/de7/classcommon_1_1_hash_object" kindref="compound">HashObject</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_object.h" line="16" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="db/de7/classcommon_1_1_hash_object_1ab24c491a01c319873729f720918b2413" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetAsDummy</definition>
+        <argsstring>()</argsstring>
+        <name>SetAsDummy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_object.h" line="28" column="10" bodyfile="hash_table/hash_object.h" bodystart="28" bodyend="31"/>
+        <references refid="db/de7/classcommon_1_1_hash_object_1a79346f6acc1b3eb9d6e946e2263e5010" compoundref="dc/d62/hash__object_8h" startline="25" endline="25">HashObject::GetDummyKey</references>
+        <references refid="db/de7/classcommon_1_1_hash_object_1a2434a1611d16a59c5df79a27f35c9135" compoundref="dc/d62/hash__object_8h" startline="10">HashObject::key_</references>
+        <references refid="db/de7/classcommon_1_1_hash_object_1ad84db3d1db4de4af9935d2d361626bdb" compoundref="dc/d62/hash__object_8h" startline="11">HashObject::value_</references>
+      </memberdef>
+      <memberdef kind="function" id="db/de7/classcommon_1_1_hash_object_1a63d8d4c0aeb6f55b1fd4ad33a728ea09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetKey</definition>
+        <argsstring>(const std::string key)</argsstring>
+        <name>SetKey</name>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_object.h" line="22" column="10" bodyfile="hash_table/hash_object.h" bodystart="22" bodyend="22"/>
+        <references refid="db/de7/classcommon_1_1_hash_object_1a2434a1611d16a59c5df79a27f35c9135" compoundref="dc/d62/hash__object_8h" startline="10">HashObject::key_</references>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1a1f9d74426ead6df411fd1162a7389521" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">HashTable::Add</referencedby>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1a9345189fd2bc1cc9ae3150bc43bac708" compoundref="dd/d3b/hash__table_8cc" startline="13" endline="21">HashTable::HashTable</referencedby>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1af2f608b0daa2454164659ffbba4c71db" compoundref="dd/d3b/hash__table_8cc" startline="136" endline="153">HashTable::Remove</referencedby>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1ae207a73fbaebdeb47d9a21e2c9bad021" compoundref="d4/d9c/hash__table__tests_8cc" startline="10" endline="20">test_add_exists</referencedby>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1a52c40e38fb822ad8803972493055abaf" compoundref="d4/d9c/hash__table__tests_8cc" startline="60" endline="70">test_get</referencedby>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1a30e225ab10fafd5b2befe84cb59ed57e" compoundref="d4/d9c/hash__table__tests_8cc" startline="22" endline="58">test_probing</referencedby>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1a1da79732717337e8731f76c7a155c24a" compoundref="d4/d9c/hash__table__tests_8cc" startline="72" endline="88">test_remove</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/de7/classcommon_1_1_hash_object_1a35fa195e8796b1228e2d4787bebacdc1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetValue</definition>
+        <argsstring>(const std::string value)</argsstring>
+        <name>SetValue</name>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_object.h" line="23" column="10" bodyfile="hash_table/hash_object.h" bodystart="23" bodyend="23"/>
+        <references refid="db/de7/classcommon_1_1_hash_object_1ad84db3d1db4de4af9935d2d361626bdb" compoundref="dc/d62/hash__object_8h" startline="11">HashObject::value_</references>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1a1f9d74426ead6df411fd1162a7389521" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">HashTable::Add</referencedby>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1af2f608b0daa2454164659ffbba4c71db" compoundref="dd/d3b/hash__table_8cc" startline="136" endline="153">HashTable::Remove</referencedby>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1ae207a73fbaebdeb47d9a21e2c9bad021" compoundref="d4/d9c/hash__table__tests_8cc" startline="10" endline="20">test_add_exists</referencedby>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1a52c40e38fb822ad8803972493055abaf" compoundref="d4/d9c/hash__table__tests_8cc" startline="60" endline="70">test_get</referencedby>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1a30e225ab10fafd5b2befe84cb59ed57e" compoundref="d4/d9c/hash__table__tests_8cc" startline="22" endline="58">test_probing</referencedby>
+        <referencedby refid="d4/d9c/hash__table__tests_8cc_1a1da79732717337e8731f76c7a155c24a" compoundref="d4/d9c/hash__table__tests_8cc" startline="72" endline="88">test_remove</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/de7/classcommon_1_1_hash_object_1a501e9dea4486cf5378952d5b3f56a8a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~HashObject</definition>
+        <argsstring>()</argsstring>
+        <name>~HashObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_object.h" line="17" column="13" bodyfile="hash_table/hash_object.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="db/de7/classcommon_1_1_hash_object_1a79346f6acc1b3eb9d6e946e2263e5010" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>static const std::string GetDummyKey</definition>
+        <argsstring>()</argsstring>
+        <name>GetDummyKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_object.h" line="25" column="30" bodyfile="hash_table/hash_object.h" bodystart="25" bodyend="25"/>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1a1f9d74426ead6df411fd1162a7389521" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">HashTable::Add</referencedby>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1af2f608b0daa2454164659ffbba4c71db" compoundref="dd/d3b/hash__table_8cc" startline="136" endline="153">HashTable::Remove</referencedby>
+        <referencedby refid="db/de7/classcommon_1_1_hash_object_1ab24c491a01c319873729f720918b2413" compoundref="dc/d62/hash__object_8h" startline="28" endline="31">HashObject::SetAsDummy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/de7/classcommon_1_1_hash_object_1a77e01d7761577b1cf1a6fa02e5f1f4fd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>static const std::string GetNullKey</definition>
+        <argsstring>()</argsstring>
+        <name>GetNullKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hash_table/hash_object.h" line="26" column="30" bodyfile="hash_table/hash_object.h" bodystart="26" bodyend="26"/>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1a1f9d74426ead6df411fd1162a7389521" compoundref="dd/d3b/hash__table_8cc" startline="31" endline="59">HashTable::Add</referencedby>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1ab037afa87b74f0a1c15865150725c442" compoundref="dd/d3b/hash__table_8cc" startline="84" endline="103">HashTable::Exists</referencedby>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1a96b27a16691e44f4bea04e3f3baeb6bb" compoundref="dd/d3b/hash__table_8cc" startline="111" endline="128">HashTable::Get</referencedby>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1a9345189fd2bc1cc9ae3150bc43bac708" compoundref="dd/d3b/hash__table_8cc" startline="13" endline="21">HashTable::HashTable</referencedby>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1af2f608b0daa2454164659ffbba4c71db" compoundref="dd/d3b/hash__table_8cc" startline="136" endline="153">HashTable::Remove</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>basic_string&lt; Char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="2">
+        <label>string</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>HashObject</label>
+        <link refid="db/de7/classcommon_1_1_hash_object"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-key_</edgelabel>
+          <edgelabel>-value_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>basic_string&lt; char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="hash_table/hash_object.h" line="7" column="1" bodyfile="hash_table/hash_object.h" bodystart="8" bodyend="33"/>
+    <listofallmembers>
+      <member refid="db/de7/classcommon_1_1_hash_object_1a79346f6acc1b3eb9d6e946e2263e5010" prot="public" virt="non-virtual"><scope>common::HashObject</scope><name>GetDummyKey</name></member>
+      <member refid="db/de7/classcommon_1_1_hash_object_1a427c1ae83059ba3178e292a41bc8bd61" prot="public" virt="non-virtual"><scope>common::HashObject</scope><name>Getkey</name></member>
+      <member refid="db/de7/classcommon_1_1_hash_object_1a77e01d7761577b1cf1a6fa02e5f1f4fd" prot="public" virt="non-virtual"><scope>common::HashObject</scope><name>GetNullKey</name></member>
+      <member refid="db/de7/classcommon_1_1_hash_object_1ac147df914005ba8c736a9b017ac8abdc" prot="public" virt="non-virtual"><scope>common::HashObject</scope><name>GetValue</name></member>
+      <member refid="db/de7/classcommon_1_1_hash_object_1a7bb02cf0e02f1f3f80a00720587f2395" prot="public" virt="non-virtual"><scope>common::HashObject</scope><name>HashObject</name></member>
+      <member refid="db/de7/classcommon_1_1_hash_object_1ace29333cf64e84ae6f7a0aac238a7a1d" prot="public" virt="non-virtual"><scope>common::HashObject</scope><name>HashObject</name></member>
+      <member refid="db/de7/classcommon_1_1_hash_object_1a2434a1611d16a59c5df79a27f35c9135" prot="private" virt="non-virtual"><scope>common::HashObject</scope><name>key_</name></member>
+      <member refid="db/de7/classcommon_1_1_hash_object_1aadf769b16ee72e96f22cc67bdc851274" prot="public" virt="non-virtual"><scope>common::HashObject</scope><name>operator=</name></member>
+      <member refid="db/de7/classcommon_1_1_hash_object_1ab24c491a01c319873729f720918b2413" prot="public" virt="non-virtual"><scope>common::HashObject</scope><name>SetAsDummy</name></member>
+      <member refid="db/de7/classcommon_1_1_hash_object_1a63d8d4c0aeb6f55b1fd4ad33a728ea09" prot="public" virt="non-virtual"><scope>common::HashObject</scope><name>SetKey</name></member>
+      <member refid="db/de7/classcommon_1_1_hash_object_1a35fa195e8796b1228e2d4787bebacdc1" prot="public" virt="non-virtual"><scope>common::HashObject</scope><name>SetValue</name></member>
+      <member refid="db/de7/classcommon_1_1_hash_object_1ad84db3d1db4de4af9935d2d361626bdb" prot="private" virt="non-virtual"><scope>common::HashObject</scope><name>value_</name></member>
+      <member refid="db/de7/classcommon_1_1_hash_object_1a501e9dea4486cf5378952d5b3f56a8a4" prot="public" virt="virtual"><scope>common::HashObject</scope><name>~HashObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

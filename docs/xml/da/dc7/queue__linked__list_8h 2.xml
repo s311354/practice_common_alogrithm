@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/dc7/queue__linked__list_8h" kind="file" language="C++">
+    <compoundname>queue_linked_list.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="d7/df5/queue__linked__list_2src_2list__element_8h" local="yes">./list_element.h</includes>
+    <includedby refid="d0/d17/queue__linked__list_8cc" local="yes">queue_linked_list/src/queue_linked_list.cc</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>./list_element.h</label>
+        <link refid="d7/df5/queue__linked__list_2src_2list__element_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>queue_linked_list/src/queue_linked_list.h</label>
+        <link refid="da/dc7/queue__linked__list_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>queue_linked_list/src/queue_linked_list.cc</label>
+        <link refid="d0/d17/queue__linked__list_8cc"/>
+      </node>
+      <node id="1">
+        <label>queue_linked_list/src/queue_linked_list.h</label>
+        <link refid="da/dc7/queue__linked__list_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d1/d81/classcommon_1_1_queue_linked_list" prot="public">common::QueueLinkedList</innerclass>
+    <innernamespace refid="d9/d0c/namespacecommon">common</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>QUEUE_LINKED_LIST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QUEUE_LINKED_LIST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/iostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">iostream</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/df5/queue__linked__list_2src_2list__element_8h" kindref="compound">./list_element.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d9/d0c/namespacecommon" kindref="compound">common</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="10" refid="d1/d81/classcommon_1_1_queue_linked_list" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d1/d81/classcommon_1_1_queue_linked_list" kindref="compound">QueueLinkedList</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="d1/d81/classcommon_1_1_queue_linked_list_1a28a023e95099e5dfc719288513837f73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d71/classcommon_1_1_list_element" kindref="compound">ListElement&lt;T&gt;</ref>*<sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list_1a28a023e95099e5dfc719288513837f73" kindref="member">head</ref>;</highlight></codeline>
+<codeline lineno="14" refid="d1/d81/classcommon_1_1_queue_linked_list_1af85ae3f5c00246d1489ae543c893077b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d71/classcommon_1_1_list_element" kindref="compound">ListElement&lt;T&gt;</ref>*<sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list_1af85ae3f5c00246d1489ae543c893077b" kindref="member">tail</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="d1/d81/classcommon_1_1_queue_linked_list_1a40df1d161f967f22c556a42e4dae736c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list_1a40df1d161f967f22c556a42e4dae736c" kindref="member">QueueLinkedList</ref>()<sp/>:<sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list_1a28a023e95099e5dfc719288513837f73" kindref="member">head</ref>(nullptr),<sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list_1af85ae3f5c00246d1489ae543c893077b" kindref="member">tail</ref>(nullptr)<sp/>{}<sp/>;</highlight></codeline>
+<codeline lineno="18" refid="d1/d81/classcommon_1_1_queue_linked_list_1a6ed531761fa07625a01bd5e8833d6427" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list_1a6ed531761fa07625a01bd5e8833d6427" kindref="member">QueueLinkedList</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list" kindref="compound">QueueLinkedList</ref><sp/>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19" refid="d1/d81/classcommon_1_1_queue_linked_list_1a7852893ce888c869972c240cd063a64b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list" kindref="compound">QueueLinkedList</ref><sp/>&amp;<ref refid="d1/d81/classcommon_1_1_queue_linked_list_1a7852893ce888c869972c240cd063a64b" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list" kindref="compound">QueueLinkedList</ref><sp/>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list_1ad4cf1c71502832f483a701d7f34ce208" kindref="member">~QueueLinkedList</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>value<sp/>to<sp/>queue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list_1a486cdb4401658fe6fb93b886054d9a40" kindref="member">Enqueue</ref>(T<sp/>value);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Remove<sp/>least<sp/>recently<sp/>added<sp/>item<sp/>from<sp/>queue,<sp/>returning<sp/>its<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list_1aa6370e8c523a8e8fe1c2e6695dd26f70" kindref="member">Dequeue</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>ture<sp/>if<sp/>queue<sp/>is<sp/>empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list_1abcfbdba215d3b15fbb4b682969943a6e" kindref="member">Empty</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Outputs<sp/>the<sp/>items<sp/>in<sp/>the<sp/>queue,<sp/>least<sp/>recently<sp/>added<sp/>first</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d81/classcommon_1_1_queue_linked_list_1a96f5737c64edc912fe53681ccc9ea057" kindref="member">PrintDebug</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>common<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>QUEUE_LINKED_LIST_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="queue_linked_list/src/queue_linked_list.h"/>
+  </compounddef>
+</doxygen>

@@ -5,12 +5,12 @@
     <includes local="no">string.h</includes>
     <includes local="no">string</includes>
     <includes refid="d3/dc9/gtest-port_8h" local="yes">gtest/internal/gtest-port.h</includes>
-    <includedby refid="dc/d20/gtest-filepath_8cc" local="yes">lib/googletest/src/gtest-filepath.cc</includedby>
     <includedby refid="de/d50/gtest-death-test_8cc" local="yes">lib/googletest/src/gtest-death-test.cc</includedby>
+    <includedby refid="dc/d20/gtest-filepath_8cc" local="yes">lib/googletest/src/gtest-filepath.cc</includedby>
     <includedby refid="df/d09/gtest-port_8cc" local="yes">lib/googletest/src/gtest-port.cc</includedby>
     <includedby refid="d1/d01/gtest-test-part_8h" local="yes">lib/googletest/include/gtest/gtest-test-part.h</includedby>
-    <includedby refid="dc/d79/gtest-filepath_8h" local="yes">lib/googletest/include/gtest/internal/gtest-filepath.h</includedby>
     <includedby refid="d8/d73/gtest_8h" local="yes">lib/googletest/include/gtest/gtest.h</includedby>
+    <includedby refid="dc/d79/gtest-filepath_8h" local="yes">lib/googletest/include/gtest/internal/gtest-filepath.h</includedby>
     <includedby refid="d5/da1/gtest-internal_8h" local="yes">lib/googletest/include/gtest/internal/gtest-internal.h</includedby>
     <incdepgraph>
       <node id="10">
@@ -141,57 +141,59 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="19">
+      <node id="20">
         <label>lib/googletest/include/gtest/internal/gtest-param-util.h</label>
         <link refid="dc/df2/gtest-param-util_8h"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
       </node>
       <node id="8">
         <label>lib/googletest/include/gtest/gtest.h</label>
         <link refid="d8/d73/gtest_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="9">
+      <node id="10">
         <label>lib/googletest/src/gtest-internal-inl.h</label>
         <link refid="d0/da1/gtest-internal-inl_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="15">
         <label>lib/googletest/include/gtest/internal/gtest-filepath.h</label>
         <link refid="dc/d79/gtest-filepath_8h"/>
-        <childnode refid="2" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
-      <node id="20">
-        <label>lib/googletest/include/gtest/internal/gtest-param-util-generated.h</label>
-        <link refid="dc/db7/gtest-param-util-generated_8h"/>
         <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="2">
+      <node id="21">
+        <label>lib/googletest/include/gtest/internal/gtest-param-util-generated.h</label>
+        <link refid="dc/db7/gtest-param-util-generated_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
         <label>lib/googletest/src/gtest-filepath.cc</label>
         <link refid="dc/d20/gtest-filepath_8cc"/>
         <childnode refid="3" relation="include">
@@ -208,40 +210,40 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
       </node>
-      <node id="15">
+      <node id="16">
         <label>lib/googletest/include/gtest/internal/gtest-internal.h</label>
         <link refid="d5/da1/gtest-internal_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="23">
         <label>lib/googletest/include/gtest/gtest-death-test.h</label>
         <link refid="d4/d59/gtest-death-test_8h"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>lib/googletest/src/gtest-printers.cc</label>
         <link refid="db/d74/gtest-printers_8cc"/>
         <childnode refid="3" relation="include">
@@ -251,23 +253,23 @@
         <label>lib/googletest/src/gtest-all.cc</label>
         <link refid="d1/d8c/gtest-all_8cc"/>
       </node>
-      <node id="4">
+      <node id="2">
         <label>lib/googletest/src/gtest-death-test.cc</label>
         <link refid="de/d50/gtest-death-test_8cc"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="12">
+      <node id="13">
         <label>lib/googletest/src/gtest_main.cc</label>
         <link refid="d3/d3a/gtest__main_8cc"/>
       </node>
-      <node id="10">
+      <node id="11">
         <label>lib/googletest/src/gtest.cc</label>
         <link refid="df/d5b/gtest_8cc"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>lib/googletest/src/gtest-typed-test.cc</label>
         <link refid="d9/d5a/gtest-typed-test_8cc"/>
         <childnode refid="3" relation="include">
@@ -285,21 +287,25 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>lib/googletest/include/gtest/internal/gtest-death-test-internal.h</label>
         <link refid="d0/d1a/gtest-death-test-internal_8h"/>
-        <childnode refid="22" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>lib/googletest/include/gtest/gtest-spi.h</label>
         <link refid="dc/dbe/gtest-spi_8h"/>
-        <childnode refid="9" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
+      </node>
+      <node id="9">
+        <label>queue_linked_list/tests/queue_linked_list_unit_test.cc</label>
+        <link refid="d9/df4/queue__linked__list__unit__test_8cc"/>
       </node>
       <node id="6">
         <label>lib/googletest/include/gtest/gtest-test-part.h</label>
@@ -309,30 +315,30 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="17">
         <label>lib/googletest/include/gtest/gtest-param-test.h</label>
         <link refid="d0/d31/gtest-param-test_8h"/>
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>lib/googletest/include/gtest/gtest-printers.h</label>
         <link refid="d0/d6d/gtest-printers_8h"/>
-        <childnode refid="18" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
-    <innerclass refid="d2/df8/classtesting_1_1internal_1_1String" prot="public">testing::internal::String</innerclass>
+    <innerclass refid="d0/dde/classtesting_1_1internal_1_1_string" prot="public">testing::internal::String</innerclass>
     <innernamespace refid="d0/d75/namespacetesting">testing</innernamespace>
     <innernamespace refid="d0/da7/namespacetesting_1_1internal">testing::internal</innernamespace>
       <sectiondef kind="func">
-      <memberdef kind="function" id="d0/da7/namespacetesting_1_1internal_1ab56e151d23ee7e14dbf03ac7aa1d182b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d0/da7/namespacetesting_1_1internal_1a9743f1da2e8f7a4a8178ec9595a56112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
-        <definition>GTEST_API_ std::string testing::internal::StringStreamToString</definition>
+        <definition>GTEST_API_ std::string StringStreamToString</definition>
         <argsstring>(::std::stringstream *ss)</argsstring>
         <name>StringStreamToString</name>
         <param>
@@ -346,13 +352,13 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="1982" column="13" bodyfile="lib/googletest/src/gtest.cc" bodystart="1982" bodyend="1998" declfile="lib/googletest/include/gtest/internal/gtest-string.h" declline="162" declcolumn="24"/>
-        <references refid="cpp/string/basic_string/reserve_1">std::string::reserve</references>
-        <references refid="cpp/io/basic_stringstream/str_1">std::stringstream::str</references>
+        <references refid="cpp/string/basic_string/reserve_1">string::reserve</references>
+        <references refid="cpp/io/basic_stringstream/str_1">stringstream::str</references>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a98ce463e5dbe0c6120fa817e1f8f2944" compoundref="d8/d73/gtest_8h" startline="1631" endline="1654">testing::internal::CmpHelperFloatingPointEQ</referencedby>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a17b52b6b1f81f6dcad5cc4d12e5173a6" compoundref="df/d5b/gtest_8cc" startline="1384" endline="1415">testing::internal::FloatingPointLE</referencedby>
-        <referencedby refid="d3/d98/classtesting_1_1Message_1a2cdc4df62bdcc9df37651a1cf527704e" compoundref="df/d5b/gtest_8cc" startline="981" endline="983">testing::Message::GetString</referencedby>
-        <referencedby refid="d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a2ae986dd2f4f2aed31cc6f3bc8c56898" compoundref="df/d5b/gtest_8cc" startline="3432" endline="3462">testing::internal::XmlUnitTestResultPrinter::OnTestIterationEnd</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a05b8c86ff38243f34d8f839a0eadefb1" compoundref="df/d5b/gtest_8cc" startline="1823" endline="1844">testing::internal::WideStringToUtf8</referencedby>
+        <referencedby refid="d2/da9/classtesting_1_1_message_1a764f99b38cb3cd18ab87c5261321e063" compoundref="df/d5b/gtest_8cc" startline="981" endline="983">Message::GetString</referencedby>
+        <referencedby refid="d3/dc6/classtesting_1_1internal_1_1_xml_unit_test_result_printer_1aa21b349a51378e47877ee6d153c37116" compoundref="df/d5b/gtest_8cc" startline="3432" endline="3462">XmlUnitTestResultPrinter::OnTestIterationEnd</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a34ba5cda1864f3228954b3a5c8f6b07d" compoundref="df/d5b/gtest_8cc" startline="1823" endline="1844">testing::internal::WideStringToUtf8</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -417,7 +423,7 @@
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="cpp/io/manip/left" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">internal</ref><sp/>{</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>String<sp/>-<sp/>an<sp/>abstract<sp/>class<sp/>holding<sp/>static<sp/>string<sp/>utilities.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="58" refid="d2/df8/classtesting_1_1internal_1_1String" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="d2/df8/classtesting_1_1internal_1_1String" kindref="compound">String</ref><sp/>{</highlight></codeline>
+<codeline lineno="58" refid="d0/dde/classtesting_1_1internal_1_1_string" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="d0/dde/classtesting_1_1internal_1_1_string" kindref="compound">String</ref><sp/>{</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Static<sp/>utility<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
@@ -428,7 +434,7 @@
 <codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>different<sp/>from<sp/>strdup()<sp/>in<sp/>string.h,<sp/>which<sp/>allocates</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>memory<sp/>using<sp/>malloc().</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69" refid="d2/df8/classtesting_1_1internal_1_1String_1a8bce6b1281ae3d2f9061b920aa78aca0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="d2/df8/classtesting_1_1internal_1_1String_1a8bce6b1281ae3d2f9061b920aa78aca0" kindref="member">CloneCString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>c_str);</highlight></codeline>
+<codeline lineno="69" refid="d0/dde/classtesting_1_1internal_1_1_string_1aa20b7448d8ff8e8bc66d397abd5f95c7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="d0/dde/classtesting_1_1internal_1_1_string_1aa20b7448d8ff8e8bc66d397abd5f95c7" kindref="member">CloneCString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>c_str);</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>GTEST_OS_WINDOWS_MOBILE</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Windows<sp/>CE<sp/>does<sp/>not<sp/>have<sp/>the<sp/>&apos;ANSI&apos;<sp/>versions<sp/>of<sp/>Win32<sp/>APIs.<sp/>To<sp/>be</highlight><highlight class="normal"></highlight></codeline>
@@ -516,12 +522,12 @@
 <codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>FormatByte(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
 <codeline lineno="155"><highlight class="normal"></highlight></codeline>
 <codeline lineno="156"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="157" refid="d2/df8/classtesting_1_1internal_1_1String_1a7c370de44fce74608d0b7e3dd29de035" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d2/df8/classtesting_1_1internal_1_1String_1a7c370de44fce74608d0b7e3dd29de035" kindref="member">String</ref>();<sp/><sp/></highlight><highlight class="comment">//<sp/>Not<sp/>meant<sp/>to<sp/>be<sp/>instantiated.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="d0/dde/classtesting_1_1internal_1_1_string_1a8db865e64c3c3f65ec6a0b6fd8c09a94" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d0/dde/classtesting_1_1internal_1_1_string_1a8db865e64c3c3f65ec6a0b6fd8c09a94" kindref="member">String</ref>();<sp/><sp/></highlight><highlight class="comment">//<sp/>Not<sp/>meant<sp/>to<sp/>be<sp/>instantiated.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="158"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>class<sp/>String</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="159"><highlight class="normal"></highlight></codeline>
 <codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Gets<sp/>the<sp/>content<sp/>of<sp/>the<sp/>stringstream&apos;s<sp/>buffer<sp/>as<sp/>an<sp/>std::string.<sp/><sp/>Each<sp/>&apos;\0&apos;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//<sp/>character<sp/>in<sp/>the<sp/>buffer<sp/>is<sp/>replaced<sp/>with<sp/>&quot;\\0&quot;.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/><ref refid="d0/da7/namespacetesting_1_1internal_1ab56e151d23ee7e14dbf03ac7aa1d182b" kindref="member">StringStreamToString</ref>(::<ref refid="cpp/io/basic_stringstream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::stringstream</ref>*<sp/>stream);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/><ref refid="d0/da7/namespacetesting_1_1internal_1a9743f1da2e8f7a4a8178ec9595a56112" kindref="member">StringStreamToString</ref>(::<ref refid="cpp/io/basic_stringstream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::stringstream</ref>*<sp/>stream);</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"></highlight></codeline>
 <codeline lineno="164"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>internal</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="165"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>testing</highlight><highlight class="normal"></highlight></codeline>

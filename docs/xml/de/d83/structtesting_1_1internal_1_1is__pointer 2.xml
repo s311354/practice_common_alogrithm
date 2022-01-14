@@ -10,9 +10,9 @@
       </param>
     </templateparamlist>
       <sectiondef kind="public-type">
-      <memberdef kind="typedef" id="d3/d75/structtesting_1_1internal_1_1bool__constant_1aba6d09ecf7eecea6c93480f0d627a167" prot="public" static="no">
+      <memberdef kind="typedef" id="d3/d75/structtesting_1_1internal_1_1bool__constant_1a78018012842840cbf67b94799d759ef7" prot="public" static="no">
         <type><ref refid="d3/d75/structtesting_1_1internal_1_1bool__constant" kindref="compound">bool_constant</ref>&lt; bool_value &gt;</type>
-        <definition>typedef bool_constant&lt;bool_value&gt; testing::internal::bool_constant&lt; bool_value &gt;::type</definition>
+        <definition>typedef bool_constant&lt;bool_value&gt; type</definition>
         <argsstring></argsstring>
         <name>type</name>
         <briefdescription>
@@ -25,9 +25,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
-      <memberdef kind="variable" id="d3/d75/structtesting_1_1internal_1_1bool__constant_1a499fba6576296b04d99690a486424b32" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="d3/d75/structtesting_1_1internal_1_1bool__constant_1a11ddd051208250c32dc4985abcafa86d" prot="public" static="yes" mutable="no">
         <type>const bool</type>
-        <definition>const bool testing::internal::bool_constant&lt; bool_value &gt;::value</definition>
+        <definition>const bool value</definition>
         <argsstring></argsstring>
         <name>value</name>
         <initializer>= bool_value</initializer>
@@ -45,33 +45,33 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>false_type</label>
-        <link refid="d3/d75/structtesting_1_1internal_1_1bool__constant"/>
-      </node>
       <node id="1">
-        <label>testing::internal::is_pointer&lt; T &gt;</label>
+        <label>is_pointer&lt; T &gt;</label>
         <link refid="de/d83/structtesting_1_1internal_1_1is__pointer"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="2">
+        <label>false_type</label>
+        <link refid="d3/d75/structtesting_1_1internal_1_1bool__constant"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
-        <label>false_type</label>
-        <link refid="d3/d75/structtesting_1_1internal_1_1bool__constant"/>
-      </node>
       <node id="1">
-        <label>testing::internal::is_pointer&lt; T &gt;</label>
+        <label>is_pointer&lt; T &gt;</label>
         <link refid="de/d83/structtesting_1_1internal_1_1is__pointer"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="2">
+        <label>false_type</label>
+        <link refid="d3/d75/structtesting_1_1internal_1_1bool__constant"/>
       </node>
     </collaborationgraph>
     <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2213" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2213" bodyend="2213"/>
     <listofallmembers>
-      <member refid="d3/d75/structtesting_1_1internal_1_1bool__constant_1aba6d09ecf7eecea6c93480f0d627a167" prot="public" virt="non-virtual"><scope>testing::internal::is_pointer</scope><name>type</name></member>
-      <member refid="d3/d75/structtesting_1_1internal_1_1bool__constant_1a499fba6576296b04d99690a486424b32" prot="public" virt="non-virtual"><scope>testing::internal::is_pointer</scope><name>value</name></member>
+      <member refid="d3/d75/structtesting_1_1internal_1_1bool__constant_1a78018012842840cbf67b94799d759ef7" prot="public" virt="non-virtual"><scope>testing::internal::is_pointer</scope><name>type</name></member>
+      <member refid="d3/d75/structtesting_1_1internal_1_1bool__constant_1a11ddd051208250c32dc4985abcafa86d" prot="public" virt="non-virtual"><scope>testing::internal::is_pointer</scope><name>value</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

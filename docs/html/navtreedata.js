@@ -25,11 +25,9 @@
 var NAVTREE =
 [
   [ "Common Alogrithm", "index.html", [
-    [ "Overview of Binary Search", "d6/db5/md_binary_search__r_e_a_d_m_e.html", null ],
-    [ "Overview of Graph", "d7/de5/md_graphs__r_e_a_d_m_e.html", null ],
-    [ "Overview of Hash Tables", "df/d05/md_hash_table__r_e_a_d_m_e.html", null ],
-    [ "Overview of Queue Linked List", "d1/daa/md_queue_linked_list__r_e_a_d_m_e.html", null ],
     [ "Overview of Priority Queues", "de/d7b/md_priority_queue__r_e_a_d_m_e.html", null ],
+    [ "Overview of Binary Search", "d6/db5/md_binary_search__r_e_a_d_m_e.html", null ],
+    [ "Overview of Hash Tables", "df/d05/md_hash_table__r_e_a_d_m_e.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Packages", "namespaces.html", "namespaces_dup" ],
       [ "Package Functions", "namespacemembers.html", [
@@ -58,10 +56,10 @@ var NAVTREEINDEX =
 "cpp/numeric/math/exp2.html",
 "cpp/string/byte/strtof.html",
 "cpp/utility/functional/not2.html",
-"d0/da7/namespacetesting_1_1internal.html#a5bfafb8c85988c397157e055965ad46c",
-"d0/dfa/classtesting_1_1_test_case.html#aee5d98a0807fdd67250534a4b491e3d0",
-"d6/db5/md_binary_search__r_e_a_d_m_e.html#autotoc_md2",
-"df/dab/classtesting_1_1_test_event_listeners.html#abae39633da9932847b41cb80efd62115"
+"d0/da7/namespacetesting_1_1internal.html#a521e624413f88ad92ebfc23ea89c3f1b",
+"d0/dfa/classtesting_1_1_test_case.html#ab6f3c269fc46c9c1c0f81b3431240138",
+"d4/df5/classcommon_1_1_graph_representation.html#a591dc5c622608cd7852dcde51181d0a9",
+"dd/da9/class_use_case1.html#ade7253500755cdd870a579c7c4b023ed"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

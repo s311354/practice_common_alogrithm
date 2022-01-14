@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d6b/structcommon_1_1_priority_queue_element" kind="struct" language="C++" prot="public">
+    <compoundname>common::PriorityQueueElement</compoundname>
+    <includes refid="d4/da1/priority__queue_8h" local="no">priority_queue.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d9/d6b/structcommon_1_1_priority_queue_element_1a35af0be900467fedbb610bd6ea65ed78" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="9" column="9" bodyfile="priority_queue/priority_queue.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1ab082bfdb65339d64285cba5cb800ebe0" compoundref="db/d3e/priority__queue_8cc" startline="54" endline="67">PriorityQueue::ExtractMax</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a863794a0693a29176855fbe552dbfcf6" compoundref="db/d3e/priority__queue_8cc" startline="14" endline="24">PriorityQueue::Insert</referencedby>
+        <referencedby refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d3/dd5/priority__queue_2main_8cc" startline="4" endline="38">main</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a7c4557fcada1ff8b18f1d62cec1056a1" compoundref="db/d3e/priority__queue_8cc" startline="69" endline="76">PriorityQueue::PrintDebug</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1aebbde0595dd6c927c8d032a45ddf1b49" compoundref="db/d3e/priority__queue_8cc" startline="104" endline="113">PriorityQueue::Swap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d6b/structcommon_1_1_priority_queue_element_1a5c33da5929c9f2f9ef8d006d2350e6ec" prot="public" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="10" column="17" bodyfile="priority_queue/priority_queue.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1ab082bfdb65339d64285cba5cb800ebe0" compoundref="db/d3e/priority__queue_8cc" startline="54" endline="67">PriorityQueue::ExtractMax</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a863794a0693a29176855fbe552dbfcf6" compoundref="db/d3e/priority__queue_8cc" startline="14" endline="24">PriorityQueue::Insert</referencedby>
+        <referencedby refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d3/dd5/priority__queue_2main_8cc" startline="4" endline="38">main</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a7c4557fcada1ff8b18f1d62cec1056a1" compoundref="db/d3e/priority__queue_8cc" startline="69" endline="76">PriorityQueue::PrintDebug</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1aebbde0595dd6c927c8d032a45ddf1b49" compoundref="db/d3e/priority__queue_8cc" startline="104" endline="113">PriorityQueue::Swap</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>basic_string&lt; Char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="1">
+        <label>PriorityQueueElement</label>
+        <link refid="d9/d6b/structcommon_1_1_priority_queue_element"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+value</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>basic_string&lt; char &gt;</label>
+        <link refid="cpp/string/basic_string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="priority_queue/priority_queue.h" line="8" column="1" bodyfile="priority_queue/priority_queue.h" bodystart="8" bodyend="11"/>
+    <listofallmembers>
+      <member refid="d9/d6b/structcommon_1_1_priority_queue_element_1a35af0be900467fedbb610bd6ea65ed78" prot="public" virt="non-virtual"><scope>common::PriorityQueueElement</scope><name>key</name></member>
+      <member refid="d9/d6b/structcommon_1_1_priority_queue_element_1a5c33da5929c9f2f9ef8d006d2350e6ec" prot="public" virt="non-virtual"><scope>common::PriorityQueueElement</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

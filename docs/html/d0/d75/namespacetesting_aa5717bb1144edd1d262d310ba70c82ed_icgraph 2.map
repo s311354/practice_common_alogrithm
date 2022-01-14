@@ -1,13 +1,7 @@
-<map id="testing::PrintToString" name="testing::PrintToString">
-<area shape="rect" id="node1" title=" " alt="" coords="824,111,968,138"/>
-<area shape="rect" id="node2" href="$d0/da7/namespacetesting_1_1internal.html#a898b1e47a9d978e99318b224f69a54e4" title=" " alt="" coords="605,5,776,47"/>
-<area shape="rect" id="node3" href="$d0/da7/namespacetesting_1_1internal.html#a2863c85877728b2c223cf6ade4a530c1" title=" " alt="" coords="623,71,758,112"/>
-<area shape="rect" id="node4" href="$d0/da7/namespacetesting_1_1internal.html#a6e700804399b6694d8d6157e3a141b17" title=" " alt="" coords="623,136,758,177"/>
-<area shape="rect" id="node5" href="$d6/db1/classtesting_1_1internal_1_1FormatForComparison.html#a2aeb688fc55b57abd3021d82eccad896" title=" " alt="" coords="615,202,767,258"/>
-<area shape="rect" id="node6" href="$d5/ddb/classtesting_1_1internal_1_1FormatForComparison_3_01ToPrint_0fN_0e_00_01OtherOperand_01_4.html#a76c526461c8fa7df75f7b32ab889b9e0" title=" " alt="" coords="371,151,553,221"/>
-<area shape="rect" id="node7" href="$d0/da7/namespacetesting_1_1internal.html#a91ab078f10adc669f09b7f604975c518" title=" " alt="" coords="367,246,557,302"/>
-<area shape="rect" id="node8" href="$d0/da7/namespacetesting_1_1internal.html#a1edf90480571c0659a39d13e3777d9ce" title=" " alt="" coords="186,188,305,229"/>
-<area shape="rect" id="node9" href="$d0/da7/namespacetesting_1_1internal.html#a1def8ec9393360a1b34a20528703e7f7" title=" " alt="" coords="172,253,319,295"/>
-<area shape="rect" id="node11" href="$d0/da7/namespacetesting_1_1internal.html#a894ffccd936d78fd555f490020c27f0a" title=" " alt="" coords="173,319,317,360"/>
-<area shape="rect" id="node10" href="$d0/da7/namespacetesting_1_1internal.html#a4638c74d9b32e971f9b321af6fafc2f1" title=" " alt="" coords="5,253,124,295"/>
+<map id="PrintToString" name="PrintToString">
+<area shape="rect" id="node1" title=" " alt="" coords="263,115,360,142"/>
+<area shape="rect" id="node2" href="$d0/da7/namespacetesting_1_1internal.html#a72d1706a1f8e03ef759f9c80712b0072" title=" " alt="" coords="43,5,177,47"/>
+<area shape="rect" id="node3" href="$d0/da7/namespacetesting_1_1internal.html#a675759a40d2867bc51981f7594f6beca" title=" " alt="" coords="43,71,177,112"/>
+<area shape="rect" id="node4" href="$d9/d47/classtesting_1_1internal_1_1_format_for_comparison.html#a71c59ddcde066d9d31b76924801f7c89" title=" " alt="" coords="34,137,186,193"/>
+<area shape="rect" id="node5" href="$d0/da7/namespacetesting_1_1internal.html#aace9bb29e075d3cc3c4e689de03f0e71" title=" " alt="" coords="5,217,215,259"/>
 </map>

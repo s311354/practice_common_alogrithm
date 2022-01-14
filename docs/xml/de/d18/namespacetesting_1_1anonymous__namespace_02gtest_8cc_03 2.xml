@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="de/d18/namespacetesting_1_1anonymous__namespace_02gtest_8cc_03" kind="namespace" language="C++">
     <compoundname>testing::anonymous_namespace{gtest.cc}</compoundname>
-    <innerclass refid="d4/dac/classtesting_1_1anonymous__namespace_02gtest_8cc_03_1_1TestNameIs" prot="public">testing::anonymous_namespace{gtest.cc}::TestNameIs</innerclass>
+    <innerclass refid="de/d42/classtesting_1_1anonymous__namespace_02gtest_8cc_03_1_1_test_name_is" prot="public">testing::anonymous_namespace{gtest.cc}::TestNameIs</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="de/d18/namespacetesting_1_1anonymous__namespace_02gtest_8cc_03_1a0e1cb1e2b03a87a9c893322e4caab670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -10,7 +10,7 @@
             <type>typename StringType</type>
           </param>
         </templateparamlist>
-        <type><ref refid="dd/d5f/classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
+        <type><ref refid="d5/dec/classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
         <definition>AssertionResult testing::anonymous_namespace{gtest.cc}::IsSubstringImpl</definition>
         <argsstring>(bool expected_to_be_substring, const char *needle_expr, const char *haystack_expr, const StringType &amp;needle, const StringType &amp;haystack)</argsstring>
         <name>IsSubstringImpl</name>
@@ -41,11 +41,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="1583" column="17" bodyfile="lib/googletest/src/gtest.cc" bodystart="1583" bodyend="1598"/>
-        <references refid="d0/d75/namespacetesting_1a8d91083190a5914bfe8c5666e2dbca9b" compoundref="df/d5b/gtest_8cc" startline="1015" endline="1017">testing::AssertionFailure</references>
-        <references refid="d0/d75/namespacetesting_1a74a3d26c1286bd4d7c189c5dff2483ab" compoundref="df/d5b/gtest_8cc" startline="1010" endline="1012">testing::AssertionSuccess</references>
+        <references refid="d0/d75/namespacetesting_1a8a25612ce946e4ffc6c9b911e7ff6a09" compoundref="df/d5b/gtest_8cc" startline="1015" endline="1017">testing::AssertionFailure</references>
+        <references refid="d0/d75/namespacetesting_1a537d27ab3cdcde6857e3cc95878f8f4a" compoundref="df/d5b/gtest_8cc" startline="1010" endline="1012">testing::AssertionSuccess</references>
         <references refid="de/d18/namespacetesting_1_1anonymous__namespace_02gtest_8cc_03_1a529b2b4b07a1d3085fc3ee11f65e6b0c" compoundref="df/d5b/gtest_8cc" startline="1573" endline="1576">IsSubstringPred</references>
-        <referencedby refid="d0/d75/namespacetesting_1ab553b649b06ef2339cbd90f8dfa119f0" compoundref="df/d5b/gtest_8cc" startline="1618" endline="1622">testing::IsNotSubstring</referencedby>
-        <referencedby refid="d0/d75/namespacetesting_1a5c90a86562b2470213c07742e0eeb0fe" compoundref="df/d5b/gtest_8cc" startline="1606" endline="1610">testing::IsSubstring</referencedby>
+        <referencedby refid="d0/d75/namespacetesting_1a4c722362b584ab9565021fd68f2d0003" compoundref="df/d5b/gtest_8cc" startline="1618" endline="1622">testing::IsNotSubstring</referencedby>
+        <referencedby refid="d0/d75/namespacetesting_1af769ba85b7dc1c49d49594f195b442cf" compoundref="df/d5b/gtest_8cc" startline="1606" endline="1610">testing::IsSubstring</referencedby>
       </memberdef>
       <memberdef kind="function" id="de/d18/namespacetesting_1_1anonymous__namespace_02gtest_8cc_03_1aa8f2626915e70ad4d628f8fb247e0b6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>

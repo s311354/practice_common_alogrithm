@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['priority_5fqueue_2ecc_4612',['priority_queue.cc',['../db/d3e/priority__queue_8cc.html',1,'']]],
-  ['priority_5fqueue_2eh_4613',['priority_queue.h',['../d4/da1/priority__queue_8h.html',1,'']]]
+  ['optional_4653',['optional',['http://en.cppreference.com/w/cpp/header/optional.html',0,'']]],
+  ['ostream_4654',['ostream',['http://en.cppreference.com/w/cpp/header/ostream.html',0,'']]]
 ];

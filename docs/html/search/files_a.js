@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['main_2ecc_4603',['main.cc',['../d0/dd3/binary__search_2main_8cc.html',1,'(Global Namespace)'],['../db/df7/graphs_2main_8cc.html',1,'(Global Namespace)'],['../df/d46/hash__table_2main_8cc.html',1,'(Global Namespace)'],['../dd/dc9/queue__linked__list_2main_8cc.html',1,'(Global Namespace)'],['../d3/dd5/priority__queue_2main_8cc.html',1,'(Global Namespace)'],['../d6/d51/design__pattern_2facade__pattern_2main_8cc.html',1,'(Global Namespace)'],['../d0/d88/design__pattern_2adapter__pattern_2main_8cc.html',1,'(Global Namespace)'],['../d4/d51/design__pattern_2strategy__pattern_2main_8cc.html',1,'(Global Namespace)'],['../de/d6c/design__pattern_2bridge__pattern_2main_8cc.html',1,'(Global Namespace)'],['../db/d9c/design__pattern_2singleton__pattern_2main_8cc.html',1,'(Global Namespace)']]],
-  ['map_4604',['map',['http://en.cppreference.com/w/cpp/header/map.html',0,'']]],
-  ['memory_4605',['memory',['http://en.cppreference.com/w/cpp/header/memory.html',0,'']]],
-  ['memory_5fresource_4606',['memory_resource',['http://en.cppreference.com/w/cpp/header/memory_resource.html',0,'']]],
-  ['mutex_4607',['mutex',['http://en.cppreference.com/w/cpp/header/mutex.html',0,'']]]
+  ['limits_4639',['limits',['http://en.cppreference.com/w/cpp/header/limits.html',0,'']]],
+  ['linked_5flist_2ecc_4640',['linked_list.cc',['../d0/dea/linked__list_8cc.html',1,'']]],
+  ['linked_5flist_2eh_4641',['linked_list.h',['../d1/d4a/linked__list_8h.html',1,'']]],
+  ['list_4642',['list',['http://en.cppreference.com/w/cpp/header/list.html',0,'']]],
+  ['list_5felement_2ecc_4643',['list_element.cc',['../d9/d07/queue__linked__list_2src_2list__element_8cc.html',1,'(Global Namespace)'],['../dc/d51/linked__list_2src_2list__element_8cc.html',1,'(Global Namespace)']]],
+  ['list_5felement_2eh_4644',['list_element.h',['../d7/df5/queue__linked__list_2src_2list__element_8h.html',1,'(Global Namespace)'],['../d8/dd2/linked__list_2src_2list__element_8h.html',1,'(Global Namespace)']]],
+  ['locale_4645',['locale',['http://en.cppreference.com/w/cpp/header/locale.html',0,'']]]
 ];

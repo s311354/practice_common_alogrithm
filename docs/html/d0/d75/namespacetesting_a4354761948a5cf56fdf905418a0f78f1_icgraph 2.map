@@ -1,8 +1,4 @@
-<map id="testing::FormatWordList" name="testing::FormatWordList">
-<area shape="rect" id="node1" title=" " alt="" coords="899,50,1060,77"/>
-<area shape="rect" id="node2" href="$d0/d75/namespacetesting.html#a4c9bd414747bf0563bfdb32a2307dcdf" title=" " alt="" coords="627,50,851,77"/>
-<area shape="rect" id="node3" href="$d6/d6e/classtesting_1_1TestResult.html#a818c06cd2bfc00d6c81b0cebca044cb1" title=" " alt="" coords="428,43,579,84"/>
-<area shape="rect" id="node4" href="$d6/d6e/classtesting_1_1TestResult.html#ac253b0fd7ea70f457e9517e415eac32d" title=" " alt="" coords="248,43,380,84"/>
-<area shape="rect" id="node5" href="$d0/de3/classtesting_1_1internal_1_1UnitTestImpl.html#a15e4af4df167d2504decbc8fcc108a6f" title=" " alt="" coords="5,5,200,47"/>
-<area shape="rect" id="node6" href="$db/d32/classtesting_1_1internal_1_1TestResultAccessor.html#abcc4b32d1b201eeef92f0ec0ae161cf9" title=" " alt="" coords="29,71,177,127"/>
+<map id="FormatWordList" name="FormatWordList">
+<area shape="rect" id="node1" title=" " alt="" coords="231,5,345,32"/>
+<area shape="rect" id="node2" href="$d0/d75/namespacetesting.html#a4c9bd414747bf0563bfdb32a2307dcdf" title=" " alt="" coords="5,5,183,32"/>
 </map>

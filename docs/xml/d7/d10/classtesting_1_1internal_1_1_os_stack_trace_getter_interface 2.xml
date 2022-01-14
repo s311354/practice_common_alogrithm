@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>testing::internal::OsStackTraceGetterInterface</compoundname>
+    <derivedcompoundref refid="d6/db4/classtesting_1_1internal_1_1_os_stack_trace_getter" prot="public" virt="non-virtual">OsStackTraceGetter</derivedcompoundref>
+    <includes refid="d0/da1/gtest-internal-inl_8h" local="no">gtest-internal-inl.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface_1adf15738d11421bb96e42bd0baa4ab1cd" prot="public" static="yes" mutable="no">
+        <type>const char *const</type>
+        <definition>const char *const kElidedFramesMarker</definition>
+        <argsstring></argsstring>
+        <name>kElidedFramesMarker</name>
+        <initializer>=
+    &quot;... &quot; <ref refid="d3/dc9/gtest-port_8h_1a13d98c217176bd8722c395b9225fc19d" kindref="member">GTEST_NAME_</ref> &quot; internal frames ...&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="438" column="27" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface_1a30712acd78d6c794c2ca1a7ad12f6792" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="d0/da7/namespacetesting_1_1internal_1a3641bb11325903fefdc4d22ab0b92fd6" kindref="member">string</ref></type>
+        <definition>virtual string CurrentStackTrace</definition>
+        <argsstring>(int max_depth, int skip_count)=0</argsstring>
+        <name>CurrentStackTrace</name>
+        <reimplementedby refid="d6/db4/classtesting_1_1internal_1_1_os_stack_trace_getter_1a3db1eb30008425796fc369aea9c6d240">CurrentStackTrace</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>max_depth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>skip_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="429" column="18"/>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1a243591ed1070d5a856b4243810d85f94" compoundref="df/d5b/gtest_8cc" startline="796" endline="803">UnitTestImpl::CurrentOsStackTraceExceptTop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface_1a96112db17481a175fa27543fb7236980" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OsStackTraceGetterInterface</definition>
+        <argsstring>()</argsstring>
+        <name>OsStackTraceGetterInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="420" column="3" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="420" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface_1a62a522fb4e6a18ae9a8799d1cd0b8bc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void UponLeavingGTest</definition>
+        <argsstring>()=0</argsstring>
+        <name>UponLeavingGTest</name>
+        <reimplementedby refid="d6/db4/classtesting_1_1internal_1_1_os_stack_trace_getter_1aa97e532da98f524272b1256f018c0f07">UponLeavingGTest</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="434" column="16"/>
+        <referencedby refid="df/d69/classtesting_1_1_test_1aa3eca255b6be227d7d901cc2a72017a5" compoundref="df/d5b/gtest_8cc" startline="2465" endline="2484">Test::Run</referencedby>
+        <referencedby refid="d1/d79/classtesting_1_1_test_info_1aa3eca255b6be227d7d901cc2a72017a5" compoundref="df/d5b/gtest_8cc" startline="2630" endline="2672">TestInfo::Run</referencedby>
+        <referencedby refid="d0/dfa/classtesting_1_1_test_case_1aa3eca255b6be227d7d901cc2a72017a5" compoundref="df/d5b/gtest_8cc" startline="2759" endline="2784">TestCase::Run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface_1a60683dbb0a51a92f07d1defc702ef21b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~OsStackTraceGetterInterface</definition>
+        <argsstring>()</argsstring>
+        <name>~OsStackTraceGetterInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="421" column="11" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="421" bodyend="421"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface_1a0f2da50a5ea46456bc4926051f24f041" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GTEST_DISALLOW_COPY_AND_ASSIGN_</definition>
+        <argsstring>(OsStackTraceGetterInterface)</argsstring>
+        <name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name>
+        <param>
+          <type><ref refid="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface" kindref="compound">OsStackTraceGetterInterface</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="441" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>OsStackTraceGetterInterface</label>
+        <link refid="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface"/>
+      </node>
+      <node id="2">
+        <label>OsStackTraceGetter</label>
+        <link refid="d6/db4/classtesting_1_1internal_1_1_os_stack_trace_getter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>OsStackTraceGetterInterface</label>
+        <link refid="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/src/gtest-internal-inl.h" line="418" column="1" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="418" bodyend="442"/>
+    <listofallmembers>
+      <member refid="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface_1a30712acd78d6c794c2ca1a7ad12f6792" prot="public" virt="pure-virtual"><scope>testing::internal::OsStackTraceGetterInterface</scope><name>CurrentStackTrace</name></member>
+      <member refid="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface_1a0f2da50a5ea46456bc4926051f24f041" prot="private" virt="non-virtual"><scope>testing::internal::OsStackTraceGetterInterface</scope><name>GTEST_DISALLOW_COPY_AND_ASSIGN_</name></member>
+      <member refid="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface_1adf15738d11421bb96e42bd0baa4ab1cd" prot="public" virt="non-virtual"><scope>testing::internal::OsStackTraceGetterInterface</scope><name>kElidedFramesMarker</name></member>
+      <member refid="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface_1a96112db17481a175fa27543fb7236980" prot="public" virt="non-virtual"><scope>testing::internal::OsStackTraceGetterInterface</scope><name>OsStackTraceGetterInterface</name></member>
+      <member refid="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface_1a62a522fb4e6a18ae9a8799d1cd0b8bc6" prot="public" virt="pure-virtual"><scope>testing::internal::OsStackTraceGetterInterface</scope><name>UponLeavingGTest</name></member>
+      <member refid="d7/d10/classtesting_1_1internal_1_1_os_stack_trace_getter_interface_1a60683dbb0a51a92f07d1defc702ef21b" prot="public" virt="virtual"><scope>testing::internal::OsStackTraceGetterInterface</scope><name>~OsStackTraceGetterInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

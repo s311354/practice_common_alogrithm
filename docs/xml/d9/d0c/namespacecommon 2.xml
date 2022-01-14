@@ -2,14 +2,141 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="d9/d0c/namespacecommon" kind="namespace" language="C++">
     <compoundname>common</compoundname>
-    <innerclass refid="d3/d2e/classcommon_1_1BinarySearch" prot="public">common::BinarySearch</innerclass>
-    <innerclass refid="d2/dbd/structcommon_1_1BSTNode" prot="public">common::BSTNode</innerclass>
-    <innerclass refid="dc/d7f/classcommon_1_1LinkedList" prot="public">common::LinkedList</innerclass>
-    <innerclass refid="d2/dc6/classcommon_1_1ListElement" prot="public">common::ListElement</innerclass>
+    <innerclass refid="de/d16/classcommon_1_1_graph" prot="public">common::Graph</innerclass>
+    <innerclass refid="d8/dec/classcommon_1_1_graph_directed" prot="public">common::GraphDirected</innerclass>
+    <innerclass refid="d4/df5/classcommon_1_1_graph_representation" prot="public">common::GraphRepresentation</innerclass>
+    <innerclass refid="db/df9/classcommon_1_1_graph_representation_list" prot="public">common::GraphRepresentationList</innerclass>
+    <innerclass refid="db/de7/classcommon_1_1_hash_object" prot="public">common::HashObject</innerclass>
+    <innerclass refid="d1/d2d/classcommon_1_1_hash_table" prot="public">common::HashTable</innerclass>
+    <innerclass refid="dc/de6/classcommon_1_1_priority_queue" prot="public">common::PriorityQueue</innerclass>
+    <innerclass refid="d9/d6b/structcommon_1_1_priority_queue_element" prot="public">common::PriorityQueueElement</innerclass>
+    <innerclass refid="d1/d81/classcommon_1_1_queue_linked_list" prot="public">common::QueueLinkedList</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d9/d0c/namespacecommon_1a48e1c0989caea543c0290e670c310824" prot="public" static="no">
+        <type>struct <ref refid="d9/d6b/structcommon_1_1_priority_queue_element" kindref="compound">common::PriorityQueueElement</ref></type>
+        <definition>typedef struct common::PriorityQueueElement PQElement</definition>
+        <argsstring></argsstring>
+        <name>PQElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="11" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d9/d0c/namespacecommon_1aa79baf91f02bf8cfdee41a1b3ef5d1cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void heap_sort</definition>
+        <argsstring>(int *numbers, int count)</argsstring>
+        <name>heap_sort</name>
+        <param>
+          <type>int *</type>
+          <declname>numbers</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Brief function description here. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Heap sort maintains the unsorted region in a heap data structure to more quickly find the largest element in each step. It is implementated by quicksort alogrithm</para>
+<para><simplesect kind="return"><para>Return parameter description </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.cc" line="219" column="6" bodyfile="priority_queue/priority_queue.cc" bodystart="219" bodyend="229" declfile="priority_queue/priority_queue.h" declline="52" declcolumn="6"/>
+        <references refid="d9/d0c/namespacecommon_1a0e11a1d1ae5891eb08d6db9a0b4df126" compoundref="db/d3e/priority__queue_8cc" startline="178" endline="211">precolate_down</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d0c/namespacecommon_1a56a19f3ab94e28a975aa2a2ce38fc791" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void heapify</definition>
+        <argsstring>(int *numbers, int count)</argsstring>
+        <name>heapify</name>
+        <param>
+          <type>int *</type>
+          <declname>numbers</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Brief function description here. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The heapify procedure can thought of as building a heap from the bottom up by successively sifting downward to establish the heap property.</para>
+<para><simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.cc" line="165" column="6" bodyfile="priority_queue/priority_queue.cc" bodystart="165" bodyend="176" declfile="priority_queue/priority_queue.h" declline="50" declcolumn="6"/>
+        <references refid="d9/d0c/namespacecommon_1a0e11a1d1ae5891eb08d6db9a0b4df126" compoundref="db/d3e/priority__queue_8cc" startline="178" endline="211">precolate_down</references>
+        <referencedby refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d3/dd5/priority__queue_2main_8cc" startline="4" endline="38">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/d0c/namespacecommon_1a0e11a1d1ae5891eb08d6db9a0b4df126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void precolate_down</definition>
+        <argsstring>(int *numbers, int count, int index)</argsstring>
+        <name>precolate_down</name>
+        <param>
+          <type>int *</type>
+          <declname>numbers</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.cc" line="178" column="6" bodyfile="priority_queue/priority_queue.cc" bodystart="178" bodyend="211" declfile="priority_queue/priority_queue.h" declline="51" declcolumn="6"/>
+        <referencedby refid="d9/d0c/namespacecommon_1aa79baf91f02bf8cfdee41a1b3ef5d1cf" compoundref="db/d3e/priority__queue_8cc" startline="219" endline="229">heap_sort</referencedby>
+        <referencedby refid="d9/d0c/namespacecommon_1a56a19f3ab94e28a975aa2a2ce38fc791" compoundref="db/d3e/priority__queue_8cc" startline="165" endline="176">heapify</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/d0c/namespacecommon_1a12066b17e67522e150a0d61a74a4cb2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_heap</definition>
+        <argsstring>(int *numbers, int count)</argsstring>
+        <name>print_heap</name>
+        <param>
+          <type>int *</type>
+          <declname>numbers</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.cc" line="232" column="6" bodyfile="priority_queue/priority_queue.cc" bodystart="232" bodyend="239" declfile="priority_queue/priority_queue.h" declline="53" declcolumn="6"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <referencedby refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d3/dd5/priority__queue_2main_8cc" startline="4" endline="38">main</referencedby>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="graphs/src/graph.cc" line="3" column="1"/>
+    <location file="binary_search/binary_search.cc" line="3" column="1"/>
   </compounddef>
 </doxygen>

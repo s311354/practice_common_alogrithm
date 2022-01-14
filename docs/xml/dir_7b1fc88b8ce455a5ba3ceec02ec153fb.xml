@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_7b1fc88b8ce455a5ba3ceec02ec153fb" kind="dir">
+    <compoundname>array</compoundname>
+    <innerdir refid="dir_a6a85c0c8ab3452876cc402e39cd621b">array/CMakeFiles</innerdir>
+    <innerfile refid="d2/d37/jvector_8cc">jvector.cc</innerfile>
+    <innerfile refid="d3/db0/jvector_8h">jvector.h</innerfile>
+    <innerfile refid="db/d2e/jvector__test_8cc">jvector_test.cc</innerfile>
+    <innerfile refid="dc/dac/jvector__test_8h">jvector_test.h</innerfile>
+    <innerfile refid="d4/dcf/array_2main_8cc">main.cc</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="array/"/>
+  </compounddef>
+</doxygen>

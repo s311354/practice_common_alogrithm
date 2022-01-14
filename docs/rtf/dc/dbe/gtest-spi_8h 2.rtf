@@ -110,8 +110,8 @@
 lib/googletest/include/gtest/gtest-spi.h File Reference\par \pard\plain 
 {\tc\tcl2 \v lib/googletest/include/gtest/gtest-spi.h(d4ab02d08ceed19dab4276c86042b1520529304b)}
 {\xe \v lib/googletest/include/gtest/gtest-spi.h(d4ab02d08ceed19dab4276c86042b1520529304b)}
-{\bkmkstart AAAAAAAALZ}
-{\bkmkend AAAAAAAALZ}
+{\bkmkstart AAAAAAAAXJ}
+{\bkmkend AAAAAAAAXJ}
 {
 \pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "gtest/gtest.h"}\par
 }
@@ -135,9 +135,11 @@ Classes\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-class {\b testing::internal::SingleFailureChecker}\par
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXK" }{}}{\fldrslt {\cs37\ul\cf2 SingleFailureChecker}}}
+\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-class {\b testing::ScopedFakeTestPartResultReporter}\par
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXL" }{}}{\fldrslt {\cs37\ul\cf2 ScopedFakeTestPartResultReporter}}}
+\par
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Namespaces\par
@@ -145,9 +147,11 @@ Namespaces\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
- {\b testing}\par
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAUN" }{}}{\fldrslt {\cs37\ul\cf2 testing}}}
+\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
- {\b testing::internal}\par
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAUU" }{}}{\fldrslt {\cs37\ul\cf2 testing::internal}}}
+\par
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Macros\par
@@ -155,13 +159,17 @@ Macros\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-#define {\b EXPECT_FATAL_FAILURE}(statement,  substr)\par
+#define {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXM" }{}}{\fldrslt {\cs37\ul\cf2 EXPECT_FATAL_FAILURE}}}
+(statement,  substr)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-#define {\b EXPECT_FATAL_FAILURE_ON_ALL_THREADS}(statement,  substr)\par
+#define {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXN" }{}}{\fldrslt {\cs37\ul\cf2 EXPECT_FATAL_FAILURE_ON_ALL_THREADS}}}
+(statement,  substr)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-#define {\b EXPECT_NONFATAL_FAILURE}(statement,  substr)\par
+#define {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXO" }{}}{\fldrslt {\cs37\ul\cf2 EXPECT_NONFATAL_FAILURE}}}
+(statement,  substr)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-#define {\b EXPECT_NONFATAL_FAILURE_ON_ALL_THREADS}(statement,  substr)\par
+#define {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXP" }{}}{\fldrslt {\cs37\ul\cf2 EXPECT_NONFATAL_FAILURE_ON_ALL_THREADS}}}
+(statement,  substr)\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -173,8 +181,8 @@ Macro Definition Documentation\par
 {\b 
 #define EXPECT_FATAL_FAILURE( statement,  substr)}}
 \par
-{\bkmkstart AAAAAAAAMA}
-{\bkmkend AAAAAAAAMA}
+{\bkmkstart AAAAAAAAXM}
+{\bkmkend AAAAAAAAXM}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\b Value:}{
@@ -183,17 +191,25 @@ Macro Definition Documentation\par
      public:\\\par
       static {\cf18 void} Execute() \{ statement; \}\\\par
     \};\\\par
-    ::testing::TestPartResultArray gtest_failures;\\\par
-    ::testing::internal::SingleFailureChecker gtest_checker(\\\par
-        &gtest_failures, ::testing::TestPartResult::kFatalFailure, (substr));\\\par
+    {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXQ" }{}}{\fldrslt {\cs37\ul\cf2 ::testing::TestPartResultArray}}}
+ gtest_failures;\\\par
+    {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXK" }{}}{\fldrslt {\cs37\ul\cf2 ::testing::internal::SingleFailureChecker}}}
+ gtest_checker(\\\par
+        &gtest_failures, ::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXR" }{}}{\fldrslt {\cs37\ul\cf2 testing::TestPartResult::kFatalFailure}}}
+, (substr));\\\par
     \{\\\par
-      ::testing::ScopedFakeTestPartResultReporter gtest_reporter(\\\par
-          ::testing::ScopedFakeTestPartResultReporter:: \\\par
+      {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXL" }{}}{\fldrslt {\cs37\ul\cf2 ::testing::ScopedFakeTestPartResultReporter}}}
+ gtest_reporter(\\\par
+          ::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXL" }{}}{\fldrslt {\cs37\ul\cf2 testing::ScopedFakeTestPartResultReporter}}}
+:: \\\par
           INTERCEPT_ONLY_CURRENT_THREAD, &gtest_failures);\\\par
       GTestExpectFatalFailureHelper::Execute();\\\par
     \}\\\par
-  \} {\cf19 while} (::testing::internal::AlwaysFalse())\par
+  \} {\cf19 while} (::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXS" }{}}{\fldrslt {\cs37\ul\cf2 testing::internal::AlwaysFalse}}}
+())\par
 }
+{
+Definition at line 138 of file gtest-spi.h.}\par
 }
 {\xe \v EXPECT_FATAL_FAILURE_ON_ALL_THREADS\:gtest-spi.h}
 {\xe \v gtest-spi.h\:EXPECT_FATAL_FAILURE_ON_ALL_THREADS}
@@ -201,8 +217,8 @@ Macro Definition Documentation\par
 {\b 
 #define EXPECT_FATAL_FAILURE_ON_ALL_THREADS( statement,  substr)}}
 \par
-{\bkmkstart AAAAAAAAMB}
-{\bkmkend AAAAAAAAMB}
+{\bkmkstart AAAAAAAAXN}
+{\bkmkend AAAAAAAAXN}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\b Value:}{
@@ -211,17 +227,25 @@ Macro Definition Documentation\par
      public:\\\par
       static {\cf18 void} Execute() \{ statement; \}\\\par
     \};\\\par
-    ::testing::TestPartResultArray gtest_failures;\\\par
-    ::testing::internal::SingleFailureChecker gtest_checker(\\\par
-        &gtest_failures, ::testing::TestPartResult::kFatalFailure, (substr));\\\par
+    {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXQ" }{}}{\fldrslt {\cs37\ul\cf2 ::testing::TestPartResultArray}}}
+ gtest_failures;\\\par
+    {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXK" }{}}{\fldrslt {\cs37\ul\cf2 ::testing::internal::SingleFailureChecker}}}
+ gtest_checker(\\\par
+        &gtest_failures, ::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXR" }{}}{\fldrslt {\cs37\ul\cf2 testing::TestPartResult::kFatalFailure}}}
+, (substr));\\\par
     \{\\\par
-      ::testing::ScopedFakeTestPartResultReporter gtest_reporter(\\\par
-          ::testing::ScopedFakeTestPartResultReporter:: \\\par
+      {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXL" }{}}{\fldrslt {\cs37\ul\cf2 ::testing::ScopedFakeTestPartResultReporter}}}
+ gtest_reporter(\\\par
+          ::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXL" }{}}{\fldrslt {\cs37\ul\cf2 testing::ScopedFakeTestPartResultReporter}}}
+:: \\\par
           INTERCEPT_ALL_THREADS, &gtest_failures);\\\par
       GTestExpectFatalFailureHelper::Execute();\\\par
     \}\\\par
-  \} {\cf19 while} (::testing::internal::AlwaysFalse())\par
+  \} {\cf19 while} (::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXS" }{}}{\fldrslt {\cs37\ul\cf2 testing::internal::AlwaysFalse}}}
+())\par
 }
+{
+Definition at line 155 of file gtest-spi.h.}\par
 }
 {\xe \v EXPECT_NONFATAL_FAILURE\:gtest-spi.h}
 {\xe \v gtest-spi.h\:EXPECT_NONFATAL_FAILURE}
@@ -229,24 +253,33 @@ Macro Definition Documentation\par
 {\b 
 #define EXPECT_NONFATAL_FAILURE( statement,  substr)}}
 \par
-{\bkmkstart AAAAAAAAMC}
-{\bkmkend AAAAAAAAMC}
+{\bkmkstart AAAAAAAAXO}
+{\bkmkend AAAAAAAAXO}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\b Value:}{
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   {\cf19 do} \{\\\par
-    ::testing::TestPartResultArray gtest_failures;\\\par
-    ::testing::internal::SingleFailureChecker gtest_checker(\\\par
-        &gtest_failures, ::testing::TestPartResult::kNonFatalFailure, \\\par
+    {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXQ" }{}}{\fldrslt {\cs37\ul\cf2 ::testing::TestPartResultArray}}}
+ gtest_failures;\\\par
+    {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXK" }{}}{\fldrslt {\cs37\ul\cf2 ::testing::internal::SingleFailureChecker}}}
+ gtest_checker(\\\par
+        &gtest_failures, ::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXT" }{}}{\fldrslt {\cs37\ul\cf2 testing::TestPartResult::kNonFatalFailure}}}
+, \\\par
         (substr));\\\par
     \{\\\par
-      ::testing::ScopedFakeTestPartResultReporter gtest_reporter(\\\par
-          ::testing::ScopedFakeTestPartResultReporter:: \\\par
+      {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXL" }{}}{\fldrslt {\cs37\ul\cf2 ::testing::ScopedFakeTestPartResultReporter}}}
+ gtest_reporter(\\\par
+          ::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXL" }{}}{\fldrslt {\cs37\ul\cf2 testing::ScopedFakeTestPartResultReporter}}}
+:: \\\par
           INTERCEPT_ONLY_CURRENT_THREAD, &gtest_failures);\\\par
-      if (::testing::internal::AlwaysTrue()) \{ statement; \}\\\par
+      if (::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXU" }{}}{\fldrslt {\cs37\ul\cf2 testing::internal::AlwaysTrue}}}
+()) \{ statement; \}\\\par
     \}\\\par
-  \} {\cf19 while} (::testing::internal::AlwaysFalse())\par
+  \} {\cf19 while} (::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXS" }{}}{\fldrslt {\cs37\ul\cf2 testing::internal::AlwaysFalse}}}
+())\par
 }
+{
+Definition at line 204 of file gtest-spi.h.}\par
 }
 {\xe \v EXPECT_NONFATAL_FAILURE_ON_ALL_THREADS\:gtest-spi.h}
 {\xe \v gtest-spi.h\:EXPECT_NONFATAL_FAILURE_ON_ALL_THREADS}
@@ -254,23 +287,32 @@ Macro Definition Documentation\par
 {\b 
 #define EXPECT_NONFATAL_FAILURE_ON_ALL_THREADS( statement,  substr)}}
 \par
-{\bkmkstart AAAAAAAAMD}
-{\bkmkend AAAAAAAAMD}
+{\bkmkstart AAAAAAAAXP}
+{\bkmkend AAAAAAAAXP}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\b Value:}{
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   {\cf19 do} \{\\\par
-    ::testing::TestPartResultArray gtest_failures;\\\par
-    ::testing::internal::SingleFailureChecker gtest_checker(\\\par
-        &gtest_failures, ::testing::TestPartResult::kNonFatalFailure, \\\par
+    {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXQ" }{}}{\fldrslt {\cs37\ul\cf2 ::testing::TestPartResultArray}}}
+ gtest_failures;\\\par
+    {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXK" }{}}{\fldrslt {\cs37\ul\cf2 ::testing::internal::SingleFailureChecker}}}
+ gtest_checker(\\\par
+        &gtest_failures, ::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXT" }{}}{\fldrslt {\cs37\ul\cf2 testing::TestPartResult::kNonFatalFailure}}}
+, \\\par
         (substr));\\\par
     \{\\\par
-      ::testing::ScopedFakeTestPartResultReporter gtest_reporter(\\\par
-          ::testing::ScopedFakeTestPartResultReporter::INTERCEPT_ALL_THREADS, \\\par
+      {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXL" }{}}{\fldrslt {\cs37\ul\cf2 ::testing::ScopedFakeTestPartResultReporter}}}
+ gtest_reporter(\\\par
+          ::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXV" }{}}{\fldrslt {\cs37\ul\cf2 testing::ScopedFakeTestPartResultReporter::INTERCEPT_ALL_THREADS}}}
+, \\\par
           &gtest_failures);\\\par
-      if (::testing::internal::AlwaysTrue()) \{ statement; \}\\\par
+      if (::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXU" }{}}{\fldrslt {\cs37\ul\cf2 testing::internal::AlwaysTrue}}}
+()) \{ statement; \}\\\par
     \}\\\par
-  \} {\cf19 while} (::testing::internal::AlwaysFalse())\par
+  \} {\cf19 while} (::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXS" }{}}{\fldrslt {\cs37\ul\cf2 testing::internal::AlwaysFalse}}}
+())\par
 }
+{
+Definition at line 218 of file gtest-spi.h.}\par
 }
 }

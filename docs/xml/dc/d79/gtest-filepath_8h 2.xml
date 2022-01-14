@@ -140,40 +140,42 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="18">
+      <node id="19">
         <label>lib/googletest/include/gtest/internal/gtest-param-util.h</label>
         <link refid="dc/df2/gtest-param-util_8h"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
       </node>
       <node id="7">
         <label>lib/googletest/include/gtest/gtest.h</label>
         <link refid="d8/d73/gtest_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>lib/googletest/src/gtest-internal-inl.h</label>
         <link refid="d0/da1/gtest-internal-inl_8h"/>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -184,7 +186,7 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="20">
         <label>lib/googletest/include/gtest/internal/gtest-param-util-generated.h</label>
         <link refid="dc/db7/gtest-param-util-generated_8h"/>
         <childnode refid="6" relation="include">
@@ -203,26 +205,26 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>lib/googletest/include/gtest/gtest-death-test.h</label>
         <link refid="d4/d59/gtest-death-test_8h"/>
-        <childnode refid="9" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>lib/googletest/src/gtest-printers.cc</label>
         <link refid="db/d74/gtest-printers_8cc"/>
         <childnode refid="3" relation="include">
@@ -232,29 +234,29 @@
         <label>lib/googletest/src/gtest-all.cc</label>
         <link refid="d1/d8c/gtest-all_8cc"/>
       </node>
-      <node id="9">
+      <node id="10">
         <label>lib/googletest/src/gtest-death-test.cc</label>
         <link refid="de/d50/gtest-death-test_8cc"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="14">
         <label>lib/googletest/src/gtest_main.cc</label>
         <link refid="d3/d3a/gtest__main_8cc"/>
       </node>
-      <node id="11">
+      <node id="12">
         <label>lib/googletest/src/gtest.cc</label>
         <link refid="df/d5b/gtest_8cc"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="12">
+      <node id="13">
         <label>lib/googletest/src/gtest-typed-test.cc</label>
         <link refid="d9/d5a/gtest-typed-test_8cc"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="10">
+      <node id="11">
         <label>lib/googletest/src/gtest-test-part.cc</label>
         <link refid="d3/dc2/gtest-test-part_8cc"/>
         <childnode refid="3" relation="include">
@@ -266,26 +268,30 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>lib/googletest/include/gtest/internal/gtest-death-test-internal.h</label>
         <link refid="d0/d1a/gtest-death-test-internal_8h"/>
-        <childnode refid="21" relation="include">
-        </childnode>
-      </node>
-      <node id="14">
-        <label>lib/googletest/include/gtest/gtest-spi.h</label>
-        <link refid="dc/dbe/gtest-spi_8h"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
       <node id="15">
+        <label>lib/googletest/include/gtest/gtest-spi.h</label>
+        <link refid="dc/dbe/gtest-spi_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>queue_linked_list/tests/queue_linked_list_unit_test.cc</label>
+        <link refid="d9/df4/queue__linked__list__unit__test_8cc"/>
+      </node>
+      <node id="16">
         <label>lib/googletest/include/gtest/gtest-test-part.h</label>
         <link refid="d1/d01/gtest-test-part_8h"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
@@ -296,18 +302,18 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="17">
         <label>lib/googletest/include/gtest/gtest-printers.h</label>
         <link refid="d0/d6d/gtest-printers_8h"/>
-        <childnode refid="17" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
-    <innerclass refid="de/dea/classtesting_1_1internal_1_1FilePath" prot="public">testing::internal::FilePath</innerclass>
+    <innerclass refid="de/d14/classtesting_1_1internal_1_1_file_path" prot="public">testing::internal::FilePath</innerclass>
     <innernamespace refid="d0/d75/namespacetesting">testing</innernamespace>
     <innernamespace refid="d0/da7/namespacetesting_1_1internal">testing::internal</innernamespace>
     <briefdescription>
@@ -373,44 +379,44 @@
 <codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Names<sp/>are<sp/>NOT<sp/>checked<sp/>for<sp/>syntax<sp/>correctness<sp/>--<sp/>no<sp/>checking<sp/>for<sp/>illegal</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>characters,<sp/>malformed<sp/>paths,<sp/>etc.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59" refid="de/dea/classtesting_1_1internal_1_1FilePath" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref><sp/>{</highlight></codeline>
+<codeline lineno="59" refid="de/d14/classtesting_1_1internal_1_1_file_path" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref><sp/>{</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="61" refid="de/dea/classtesting_1_1internal_1_1FilePath_1a3504a51accbca78a52fe586133ea5499" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath_1a3504a51accbca78a52fe586133ea5499" kindref="member">FilePath</ref>()<sp/>:<sp/>pathname_(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{<sp/>}</highlight></codeline>
-<codeline lineno="62" refid="de/dea/classtesting_1_1internal_1_1FilePath_1ae9efd0fee56c6e3e2d659b464250b112" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath_1ae9efd0fee56c6e3e2d659b464250b112" kindref="member">FilePath</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref>&amp;<sp/>rhs)<sp/>:<sp/>pathname_(rhs.pathname_)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="61" refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa5df70ab39fdaff6e3fce46e8d35b608" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa5df70ab39fdaff6e3fce46e8d35b608" kindref="member">FilePath</ref>()<sp/>:<sp/>pathname_(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="62" refid="de/d14/classtesting_1_1internal_1_1_file_path_1a7221ea73ecd74af3aca8c7e36910ca54" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path_1a7221ea73ecd74af3aca8c7e36910ca54" kindref="member">FilePath</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref>&amp;<sp/>rhs)<sp/>:<sp/>pathname_(rhs.pathname_)<sp/>{<sp/>}</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64" refid="de/dea/classtesting_1_1internal_1_1FilePath_1a9fc072b140aa0652a7022fb809fe3abe" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath_1a9fc072b140aa0652a7022fb809fe3abe" kindref="member">FilePath</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref>&amp;<sp/>pathname)<sp/>:<sp/>pathname_(pathname)<sp/>{</highlight></codeline>
+<codeline lineno="64" refid="de/d14/classtesting_1_1internal_1_1_file_path_1a6385e248c57ed010175c5f9232d230e6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path_1a6385e248c57ed010175c5f9232d230e6" kindref="member">FilePath</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref>&amp;<sp/>pathname)<sp/>:<sp/>pathname_(pathname)<sp/>{</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>Normalize();</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68" refid="de/dea/classtesting_1_1internal_1_1FilePath_1a8d9c1bafb90f10bcd5611a54d8f326ef" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref>&amp;<sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath_1a8d9c1bafb90f10bcd5611a54d8f326ef" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="68" refid="de/d14/classtesting_1_1internal_1_1_file_path_1a56ce97a342d8d71d4abedca3f5666ab1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref>&amp;<sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path_1a56ce97a342d8d71d4abedca3f5666ab1" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>Set(rhs);</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73" refid="de/dea/classtesting_1_1internal_1_1FilePath_1a15a42de7518e89254e0640dd9317d5f7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath_1a15a42de7518e89254e0640dd9317d5f7" kindref="member">Set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>pathname_<sp/>=<sp/>rhs.<ref refid="de/dea/classtesting_1_1internal_1_1FilePath_1a12ce28a0015f85604e0372230fa18d6e" kindref="member">pathname_</ref>;</highlight></codeline>
+<codeline lineno="73" refid="de/d14/classtesting_1_1internal_1_1_file_path_1a42b263db98b0796b43578baca9ba991d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path_1a42b263db98b0796b43578baca9ba991d" kindref="member">Set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref>&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>pathname_<sp/>=<sp/>rhs.<ref refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" kindref="member">pathname_</ref>;</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77" refid="de/dea/classtesting_1_1internal_1_1FilePath_1ab1d58734f2e179264eb6353fea57361d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref>&amp;<sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath_1ab1d58734f2e179264eb6353fea57361d" kindref="member">string</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pathname_;<sp/>}</highlight></codeline>
-<codeline lineno="78" refid="de/dea/classtesting_1_1internal_1_1FilePath_1a43e9ff978b0d7c43c401d976d4621aa3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath_1a43e9ff978b0d7c43c401d976d4621aa3" kindref="member">c_str</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pathname_.c_str();<sp/>}</highlight></codeline>
+<codeline lineno="77" refid="de/d14/classtesting_1_1internal_1_1_file_path_1a7314f49a51859d46439cfeddb9ea06ec" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref>&amp;<sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path_1a7314f49a51859d46439cfeddb9ea06ec" kindref="member">string</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pathname_;<sp/>}</highlight></codeline>
+<codeline lineno="78" refid="de/d14/classtesting_1_1internal_1_1_file_path_1a14989d8fe448c5f947832aea3dae615a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path_1a14989d8fe448c5f947832aea3dae615a" kindref="member">c_str</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pathname_.c_str();<sp/>}</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>the<sp/>current<sp/>working<sp/>directory,<sp/>or<sp/>&quot;&quot;<sp/>if<sp/>unsuccessful.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref><sp/>GetCurrentDir();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref><sp/>GetCurrentDir();</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Given<sp/>directory<sp/>=<sp/>&quot;dir&quot;,<sp/>base_name<sp/>=<sp/>&quot;test&quot;,<sp/>number<sp/>=<sp/>0,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>extension<sp/>=<sp/>&quot;xml&quot;,<sp/>returns<sp/>&quot;dir/test.xml&quot;.<sp/>If<sp/>number<sp/>is<sp/>greater</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>than<sp/>zero<sp/>(e.g.,<sp/>12),<sp/>returns<sp/>&quot;dir/test_12.xml&quot;.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>Windows<sp/>platform,<sp/>uses<sp/>\<sp/>as<sp/>the<sp/>separator<sp/>rather<sp/>than<sp/>/.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref><sp/>MakeFileName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref>&amp;<sp/>directory,</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref>&amp;<sp/>base_name,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref><sp/>MakeFileName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref>&amp;<sp/>directory,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref>&amp;<sp/>base_name,</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number,</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>extension);</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Given<sp/>directory<sp/>=<sp/>&quot;dir&quot;,<sp/>relative_path<sp/>=<sp/>&quot;test.xml&quot;,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>returns<sp/>&quot;dir/test.xml&quot;.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>Windows,<sp/>uses<sp/>\<sp/>as<sp/>the<sp/>separator<sp/>rather<sp/>than<sp/>/.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref><sp/>ConcatPaths(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref>&amp;<sp/>directory,</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref>&amp;<sp/>relative_path);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref><sp/>ConcatPaths(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref>&amp;<sp/>directory,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref>&amp;<sp/>relative_path);</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>a<sp/>pathname<sp/>for<sp/>a<sp/>file<sp/>that<sp/>does<sp/>not<sp/>currently<sp/>exist.<sp/>The<sp/>pathname</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>will<sp/>be<sp/>directory/base_name.extension<sp/>or</highlight><highlight class="normal"></highlight></codeline>
@@ -420,17 +426,17 @@
 <codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Examples:<sp/>&apos;dir/foo_test.xml&apos;<sp/>or<sp/>&apos;dir/foo_test_1.xml&apos;.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>There<sp/>could<sp/>be<sp/>a<sp/>race<sp/>condition<sp/>if<sp/>two<sp/>or<sp/>more<sp/>processes<sp/>are<sp/>calling<sp/>this</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>function<sp/>at<sp/>the<sp/>same<sp/>time<sp/>--<sp/>they<sp/>could<sp/>both<sp/>pick<sp/>the<sp/>same<sp/>filename.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref><sp/>GenerateUniqueFileName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref>&amp;<sp/>directory,</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref>&amp;<sp/>base_name,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref><sp/>GenerateUniqueFileName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref>&amp;<sp/>directory,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref>&amp;<sp/>base_name,</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>extension);</highlight></codeline>
 <codeline lineno="109"><highlight class="normal"></highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>true<sp/>iff<sp/>the<sp/>path<sp/>is<sp/>&quot;&quot;.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="111" refid="de/dea/classtesting_1_1internal_1_1FilePath_1a2c165c5510e8705ade547849a9234a6e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath_1a2c165c5510e8705ade547849a9234a6e" kindref="member">IsEmpty</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pathname_.empty();<sp/>}</highlight></codeline>
+<codeline lineno="111" refid="de/d14/classtesting_1_1internal_1_1_file_path_1a8e12342fc420701fbffd97025421575a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path_1a8e12342fc420701fbffd97025421575a" kindref="member">IsEmpty</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pathname_.empty();<sp/>}</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>input<sp/>name<sp/>has<sp/>a<sp/>trailing<sp/>separator<sp/>character,<sp/>removes<sp/>it<sp/>and<sp/>returns</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>name,<sp/>otherwise<sp/>return<sp/>the<sp/>name<sp/>string<sp/>unmodified.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>Windows<sp/>platform,<sp/>uses<sp/>\<sp/>as<sp/>the<sp/>separator,<sp/>other<sp/>platforms<sp/>use<sp/>/.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref><sp/>RemoveTrailingPathSeparator()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref><sp/>RemoveTrailingPathSeparator()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>FilePath<sp/>with<sp/>the<sp/>directory<sp/>part<sp/>removed.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Example:<sp/>FilePath(&quot;path/to/file&quot;).RemoveDirectoryName()<sp/>returns</highlight><highlight class="normal"></highlight></codeline>
@@ -438,7 +444,7 @@
 <codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>FilePath<sp/>unmodified.<sp/>If<sp/>there<sp/>is<sp/>no<sp/>file<sp/>part<sp/>(&quot;just_a_dir/&quot;)<sp/>it</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>returns<sp/>an<sp/>empty<sp/>FilePath<sp/>(&quot;&quot;).</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>Windows<sp/>platform,<sp/>&apos;\&apos;<sp/>is<sp/>the<sp/>path<sp/>separator,<sp/>otherwise<sp/>it<sp/>is<sp/>&apos;/&apos;.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref><sp/>RemoveDirectoryName()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref><sp/>RemoveDirectoryName()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>RemoveFileName<sp/>returns<sp/>the<sp/>directory<sp/>path<sp/>with<sp/>the<sp/>filename<sp/>removed.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Example:<sp/>FilePath(&quot;path/to/file&quot;).RemoveFileName()<sp/>returns<sp/>&quot;path/to/&quot;.</highlight><highlight class="normal"></highlight></codeline>
@@ -446,13 +452,13 @@
 <codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>FilePath(&quot;./&quot;)<sp/>or,<sp/>on<sp/>Windows,<sp/>FilePath(&quot;.\\&quot;).<sp/>If<sp/>the<sp/>filepath<sp/>does</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>not<sp/>have<sp/>a<sp/>file,<sp/>like<sp/>&quot;just/a/dir/&quot;,<sp/>it<sp/>returns<sp/>the<sp/>FilePath<sp/>unmodified.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>Windows<sp/>platform,<sp/>&apos;\&apos;<sp/>is<sp/>the<sp/>path<sp/>separator,<sp/>otherwise<sp/>it<sp/>is<sp/>&apos;/&apos;.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref><sp/>RemoveFileName()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref><sp/>RemoveFileName()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"></highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>FilePath<sp/>with<sp/>the<sp/>case-insensitive<sp/>extension<sp/>removed.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Example:<sp/>FilePath(&quot;dir/file.exe&quot;).RemoveExtension(&quot;EXE&quot;)<sp/>returns</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>FilePath(&quot;dir/file&quot;).<sp/>If<sp/>a<sp/>case-insensitive<sp/>extension<sp/>is<sp/>not</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>found,<sp/>returns<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>original<sp/>FilePath.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath" kindref="compound">FilePath</ref><sp/>RemoveExtension(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>extension)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path" kindref="compound">FilePath</ref><sp/>RemoveExtension(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>extension)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"></highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Creates<sp/>directories<sp/>so<sp/>that<sp/>path<sp/>exists.<sp/>Returns<sp/>true<sp/>if<sp/>successful<sp/>or<sp/>if</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>directories<sp/>already<sp/>exist;<sp/>returns<sp/>false<sp/>if<sp/>unable<sp/>to<sp/>create</highlight><highlight class="normal"></highlight></codeline>
@@ -514,7 +520,7 @@
 <codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>separators.<sp/>Returns<sp/>NULL<sp/>if<sp/>no<sp/>path<sp/>separator<sp/>was<sp/>found.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>FindLastPathSeparator()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight></codeline>
-<codeline lineno="200" refid="de/dea/classtesting_1_1internal_1_1FilePath_1a12ce28a0015f85604e0372230fa18d6e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/><ref refid="de/dea/classtesting_1_1internal_1_1FilePath_1a12ce28a0015f85604e0372230fa18d6e" kindref="member">pathname_</ref>;</highlight></codeline>
+<codeline lineno="200" refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/><ref refid="de/d14/classtesting_1_1internal_1_1_file_path_1a35bc23ec835f789e1bfee30fc470d9b4" kindref="member">pathname_</ref>;</highlight></codeline>
 <codeline lineno="201"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>class<sp/>FilePath</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="202"><highlight class="normal"></highlight></codeline>
 <codeline lineno="203"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>internal</highlight><highlight class="normal"></highlight></codeline>

@@ -1,20 +1,15 @@
-<map id="testing::internal::ColoredPrintf" name="testing::internal::ColoredPrintf">
-<area shape="rect" id="node1" title=" " alt="" coords="931,431,1049,473"/>
-<area shape="rect" id="node2" href="$d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter.html#a846a5e82b421e04fcdd2b1b2b64b162f" title=" " alt="" coords="679,5,871,61"/>
-<area shape="rect" id="node3" href="$d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter.html#afea9dc849c92fdbc1d8505f4c74ffc1a" title=" " alt="" coords="668,85,883,141"/>
-<area shape="rect" id="node4" href="$d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter.html#a7a62fe58fa6f6aace813eb62b31e5a51" title=" " alt="" coords="684,165,867,221"/>
-<area shape="rect" id="node5" href="$d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter.html#adcb68c729565d4bcdf8418a52902c3de" title=" " alt="" coords="684,245,867,301"/>
-<area shape="rect" id="node6" href="$d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter.html#a06749ff2b32a16c127374ecd015f13e0" title=" " alt="" coords="684,325,867,381"/>
-<area shape="rect" id="node7" href="$d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter.html#ac29b30216023baddda04ef5889f484ff" title=" " alt="" coords="425,440,608,496"/>
-<area shape="rect" id="node8" href="$d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter.html#abdba10a8c97e272ab4cee97cb652c957" title=" " alt="" coords="425,537,608,593"/>
-<area shape="rect" id="node9" href="$d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter.html#a5078ee71cfa97e37ae7a9366149195c5" title=" " alt="" coords="684,719,867,775"/>
-<area shape="rect" id="node10" href="$d0/da7/namespacetesting_1_1internal.html#a7d8c446a29c7e22d7d4dde8f530bb57e" title=" " alt="" coords="710,799,841,841"/>
-<area shape="rect" id="node14" href="$d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter.html#aca5a9dc08998948e293b307d931b3f86" title=" " alt="" coords="684,456,867,512"/>
-<area shape="rect" id="node15" href="$d0/da7/namespacetesting_1_1internal.html#a0fe41657b1d1ab7ec4e37ec07403ee6c" title=" " alt="" coords="716,587,835,629"/>
-<area shape="rect" id="node18" href="$d0/da7/namespacetesting_1_1internal.html#a19b35b39782d41e6ef76e1910a3a502e" title=" " alt="" coords="669,653,881,694"/>
-<area shape="rect" id="node11" href="$d0/da7/namespacetesting_1_1internal.html#ae4c46ce8c3d016848fff52cc5133f2ac" title=" " alt="" coords="413,799,620,841"/>
-<area shape="rect" id="node12" href="$d0/da7/namespacetesting_1_1internal.html#a472880afbcc592a41e3d623e2dec8412" title=" " alt="" coords="184,799,365,841"/>
-<area shape="rect" id="node13" href="$d0/da7/namespacetesting_1_1internal.html#ac3c6fa93391768aa91c6238b31aaeeb5" title=" " alt="" coords="5,799,136,841"/>
-<area shape="rect" id="node16" href="$d0/de3/classtesting_1_1internal_1_1UnitTestImpl.html#a1fb6be9971f4768c4136a05aa9e7e375" title=" " alt="" coords="429,635,604,677"/>
-<area shape="rect" id="node17" href="$d5/d21/classtesting_1_1UnitTest.html#a2febc800536b44500565f4c423f359d3" title=" " alt="" coords="199,643,350,669"/>
+<map id="ColoredPrintf" name="ColoredPrintf">
+<area shape="rect" id="node1" title=" " alt="" coords="499,439,597,465"/>
+<area shape="rect" id="node2" href="$d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a47648ecaae8cb68691d2104531d0ece0" title=" " alt="" coords="247,5,439,61"/>
+<area shape="rect" id="node3" href="$d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a7f429e4591b590d3429263c7c5ab0ceb" title=" " alt="" coords="236,85,451,141"/>
+<area shape="rect" id="node4" href="$d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#adecad7fba2c2b8083a93a152046f06dd" title=" " alt="" coords="252,165,435,221"/>
+<area shape="rect" id="node5" href="$d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#ac6bcd29fa938fde58ea70012e7ea420a" title=" " alt="" coords="252,245,435,301"/>
+<area shape="rect" id="node6" href="$d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a41824a58ecc1d0bf99a2b691cd865701" title=" " alt="" coords="252,325,435,381"/>
+<area shape="rect" id="node7" href="$d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#aa21b349a51378e47877ee6d153c37116" title=" " alt="" coords="5,424,188,480"/>
+<area shape="rect" id="node8" href="$d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#aab7032bcb450f58f2ce48c00ad6401e8" title=" " alt="" coords="5,677,188,733"/>
+<area shape="rect" id="node9" href="$d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#abc248085e6dcbfc41789bd620e5bdbae" title=" " alt="" coords="252,536,435,592"/>
+<area shape="rect" id="node10" href="$d0/da7/namespacetesting_1_1internal.html#a7d8c446a29c7e22d7d4dde8f530bb57e" title=" " alt="" coords="278,616,409,643"/>
+<area shape="rect" id="node11" href="$d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a7af737d93a96c26c3af9501b4cc78d93" title=" " alt="" coords="252,456,435,512"/>
+<area shape="rect" id="node12" href="$d0/da7/namespacetesting_1_1internal.html#a57e2697262a419061fc4cd3377a9271e" title=" " alt="" coords="295,667,391,693"/>
+<area shape="rect" id="node13" href="$d0/da7/namespacetesting_1_1internal.html#a656c8ec8f2ee82fa90b9ba61b6145538" title=" " alt="" coords="260,769,427,810"/>
 </map>

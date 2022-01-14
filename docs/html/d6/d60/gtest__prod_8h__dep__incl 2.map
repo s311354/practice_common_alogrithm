@@ -1,13 +1,4 @@
 <map id="lib/googletest/include/gtest/gtest_prod.h" name="lib/googletest/include/gtest/gtest_prod.h">
-<area shape="rect" id="node1" title=" " alt="" coords="409,5,553,47"/>
-<area shape="rect" id="node2" href="$d8/d73/gtest_8h.html" title=" " alt="" coords="409,95,553,136"/>
-<area shape="rect" id="node3" href="$d1/d8c/gtest-all_8cc.html" title=" " alt="" coords="262,452,383,493"/>
-<area shape="rect" id="node4" href="$d0/da1/gtest-internal-inl_8h.html" title=" " alt="" coords="255,273,385,315"/>
-<area shape="rect" id="node8" href="$df/d5b/gtest_8cc.html" title=" " alt="" coords="482,363,603,404"/>
-<area shape="rect" id="node9" href="$d9/d5a/gtest-typed-test_8cc.html" title=" " alt="" coords="574,273,709,315"/>
-<area shape="rect" id="node10" href="$d3/d3a/gtest__main_8cc.html" title=" " alt="" coords="625,184,746,225"/>
-<area shape="rect" id="node11" href="$dc/dbe/gtest-spi_8h.html" title=" " alt="" coords="355,184,499,225"/>
-<area shape="rect" id="node5" href="$de/d50/gtest-death-test_8cc.html" title=" " alt="" coords="27,363,162,404"/>
-<area shape="rect" id="node6" href="$df/d09/gtest-port_8cc.html" title=" " alt="" coords="337,363,458,404"/>
-<area shape="rect" id="node7" href="$d3/dc2/gtest-test-part_8cc.html" title=" " alt="" coords="187,363,312,404"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,149,47"/>
+<area shape="rect" id="node2" href="$d8/d73/gtest_8h.html" title=" " alt="" coords="5,95,149,136"/>
 </map>

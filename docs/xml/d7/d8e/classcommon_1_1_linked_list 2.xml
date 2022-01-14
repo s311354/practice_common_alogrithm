@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/d8e/classcommon_1_1_linked_list" kind="class" language="C++" prot="public">
+    <compoundname>common::LinkedList</compoundname>
+    <includes refid="d1/d4a/linked__list_8h" local="no">linked_list.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d8e/classcommon_1_1_linked_list_1a28a023e95099e5dfc719288513837f73" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/d71/classcommon_1_1_list_element" kindref="compound">ListElement</ref>&lt; T &gt; *</type>
+        <definition>ListElement&lt;T&gt;* head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="13" column="17" bodyfile="linked_list/src/linked_list.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1ab2cd0a10d50aeffd524b75b36fb2be05" compoundref="d1/d4a/linked__list_8h" startline="22" endline="31">LinkedList&lt; T &gt;::~LinkedList</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a58eca8e9e3e4f5bfe50033256d17bdc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const T</type>
+        <definition>const T Back</definition>
+        <argsstring>()</argsstring>
+        <name>Back</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="39" column="13" bodyfile="linked_list/src/linked_list.cc" bodystart="46" bodyend="58"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1abcfbdba215d3b15fbb4b682969943a6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Empty</definition>
+        <argsstring>() const</argsstring>
+        <name>Empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="49" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1af1789852a6074c3c5ae8c6738d5f7160" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Erase</definition>
+        <argsstring>(int index)</argsstring>
+        <name>Erase</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="56" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="213" bodyend="241"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a510df6a9340094440277fec608697fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const T</type>
+        <definition>const T Front</definition>
+        <argsstring>()</argsstring>
+        <name>Front</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="37" column="13" bodyfile="linked_list/src/linked_list.cc" bodystart="33" bodyend="40"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a60af5df9c2152ed214bf6c2ae4b27bb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Insert</definition>
+        <argsstring>(int index, T value)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="54" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="178" bodyend="207"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1ac5d84c6fdafb5582dca61b2bbb7800f0" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LinkedList</definition>
+        <argsstring>()</argsstring>
+        <name>LinkedList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="17" column="14" bodyfile="linked_list/src/linked_list.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1ad213e5a309255e7efc5608d9faa7fdbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LinkedList</definition>
+        <argsstring>(const LinkedList &amp;)</argsstring>
+        <name>LinkedList</name>
+        <param>
+          <type>const <ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">LinkedList</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="19" column="5" bodyfile="linked_list/src/linked_list.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a331a7f8d9e3f37f104de575b2615ed14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">LinkedList</ref> &amp;</type>
+        <definition>LinkedList&amp; operator=</definition>
+        <argsstring>(const LinkedList &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">LinkedList</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="20" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a8f1814ae66e117738921f5d400d85ec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const T</type>
+        <definition>const T PopBack</definition>
+        <argsstring>()</argsstring>
+        <name>PopBack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="47" column="13" bodyfile="linked_list/src/linked_list.cc" bodystart="116" bodyend="142"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const T</type>
+        <definition>const T PopFront</definition>
+        <argsstring>()</argsstring>
+        <name>PopFront</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="43" column="13" bodyfile="linked_list/src/linked_list.cc" bodystart="77" bodyend="89"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <references refid="dd/d71/classcommon_1_1_list_element_1ace1c7e71f98501b3bac17eeb8110d8d1" compoundref="d8/dd2/linked__list_2src_2list__element_8h" startline="22" endline="22">ListElement&lt; T &gt;::GetData</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a96f5737c64edc912fe53681ccc9ea057" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PrintDebug</definition>
+        <argsstring>() const</argsstring>
+        <name>PrintDebug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="65" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="330" bodyend="339"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a6b6681f762c6f6f8bc92ebd9c8d5dc66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PushBack</definition>
+        <argsstring>(T value)</argsstring>
+        <name>PushBack</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="45" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="95" bodyend="110"/>
+        <references refid="dd/d71/classcommon_1_1_list_element_1a7b6af5a368ca2b7fceb56b7c4a5d07af" compoundref="d8/dd2/linked__list_2src_2list__element_8h" startline="23" endline="23">ListElement&lt; T &gt;::GetNext</references>
+        <references refid="dd/d71/classcommon_1_1_list_element_1a0e2f21176165b93e0a6b45716ea2c65a" compoundref="d8/dd2/linked__list_2src_2list__element_8h" startline="26" endline="26">ListElement&lt; T &gt;::SetNext</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PushFront</definition>
+        <argsstring>(T value)</argsstring>
+        <name>PushFront</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="41" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="65" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1aa40f387b3fb06df3997974b66ed1d40c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RemoveValue</definition>
+        <argsstring>(T value)</argsstring>
+        <name>RemoveValue</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="58" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="246" bodyend="270"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1ae1b551cc51c9d556342b27b466a7c7cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Reverse</definition>
+        <argsstring>()</argsstring>
+        <name>Reverse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="60" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="276" bodyend="293"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Size</definition>
+        <argsstring>()</argsstring>
+        <name>Size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="35" column="9" bodyfile="linked_list/src/linked_list.cc" bodystart="15" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a41778863ac9905141650a07d08146115" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; ValueAt</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>ValueAt</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="51" column="13" bodyfile="linked_list/src/linked_list.cc" bodystart="154" bodyend="172"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a1e3c93770d25a042944efa1e83d449c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const T</type>
+        <definition>const T ValueNFromEnd</definition>
+        <argsstring>(int n)</argsstring>
+        <name>ValueNFromEnd</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="62" column="13" bodyfile="linked_list/src/linked_list.cc" bodystart="299" bodyend="324"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <references refid="d0/d81/namespacetesting_1_1internal_1_1posix_1a555cf768a531e2ff2acacfbf76d28a77" compoundref="d3/dc9/gtest-port_8h" startline="2356">testing::internal::posix::n</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1ab2cd0a10d50aeffd524b75b36fb2be05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~LinkedList</definition>
+        <argsstring>()</argsstring>
+        <name>~LinkedList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/src/linked_list.h" line="22" column="5" bodyfile="linked_list/src/linked_list.h" bodystart="22" bodyend="31"/>
+        <references refid="dd/d71/classcommon_1_1_list_element_1a7b6af5a368ca2b7fceb56b7c4a5d07af" compoundref="d8/dd2/linked__list_2src_2list__element_8h" startline="23" endline="23">ListElement&lt; T &gt;::GetNext</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a28a023e95099e5dfc719288513837f73" compoundref="d1/d4a/linked__list_8h" startline="13">LinkedList&lt; T &gt;::head</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>LinkedList&lt; T &gt;</label>
+        <link refid="d7/d8e/classcommon_1_1_linked_list"/>
+      </node>
+    </collaborationgraph>
+    <location file="linked_list/src/linked_list.h" line="10" column="1" bodyfile="linked_list/src/linked_list.h" bodystart="11" bodyend="66"/>
+    <listofallmembers>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1a58eca8e9e3e4f5bfe50033256d17bdc7" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>Back</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1abcfbdba215d3b15fbb4b682969943a6e" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>Empty</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1af1789852a6074c3c5ae8c6738d5f7160" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>Erase</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1a510df6a9340094440277fec608697fcd" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>Front</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1a28a023e95099e5dfc719288513837f73" prot="private" virt="non-virtual"><scope>common::LinkedList</scope><name>head</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1a60af5df9c2152ed214bf6c2ae4b27bb3" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>Insert</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1ac5d84c6fdafb5582dca61b2bbb7800f0" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>LinkedList</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1ad213e5a309255e7efc5608d9faa7fdbc" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>LinkedList</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1a331a7f8d9e3f37f104de575b2615ed14" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>operator=</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1a8f1814ae66e117738921f5d400d85ec3" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>PopBack</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>PopFront</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1a96f5737c64edc912fe53681ccc9ea057" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>PrintDebug</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1a6b6681f762c6f6f8bc92ebd9c8d5dc66" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>PushBack</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>PushFront</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1aa40f387b3fb06df3997974b66ed1d40c" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>RemoveValue</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1ae1b551cc51c9d556342b27b466a7c7cb" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>Reverse</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>Size</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1a41778863ac9905141650a07d08146115" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>ValueAt</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1a1e3c93770d25a042944efa1e83d449c1" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>ValueNFromEnd</name></member>
+      <member refid="d7/d8e/classcommon_1_1_linked_list_1ab2cd0a10d50aeffd524b75b36fb2be05" prot="public" virt="non-virtual"><scope>common::LinkedList</scope><name>~LinkedList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

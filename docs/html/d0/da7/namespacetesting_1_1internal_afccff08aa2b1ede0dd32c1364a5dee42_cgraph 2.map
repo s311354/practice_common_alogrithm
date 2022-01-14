@@ -1,12 +1,6 @@
-<map id="testing::internal::ParseGoogleTestFlag" name="testing::internal::ParseGoogleTestFlag">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,152,112"/>
-<area shape="rect" id="node2" href="$d0/da7/namespacetesting_1_1internal.html#ada3b98e7cfe93f4ba2053c470d9e3e51" title=" " alt="" coords="200,5,319,47"/>
-<area shape="rect" id="node6" href="$d0/da7/namespacetesting_1_1internal.html#ae3449e173767750b613114ceac6d916a" title=" " alt="" coords="200,136,319,177"/>
-<area shape="rect" id="node10" href="$d0/da7/namespacetesting_1_1internal.html#aa4ce312efaaf7a97aac2303173afe021" title=" " alt="" coords="200,71,319,112"/>
-<area shape="rect" id="node3" href="$d0/da7/namespacetesting_1_1internal.html#a8bfd56af5e4a89bfb76f7e1723e41b03" title=" " alt="" coords="367,71,485,112"/>
-<area shape="rect" id="node4" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/c_str.html#" title=" " alt="" coords="567,110,685,137"/>
-<area shape="rect" id="node5" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/string/basic_string/size.html#" title=" " alt="" coords="565,59,687,86"/>
-<area shape="rect" id="node7" href="$d0/da7/namespacetesting_1_1internal.html#ac06fc81336a3d80755f4020d34321766" title=" " alt="" coords="367,136,485,177"/>
-<area shape="rect" id="node8" href="$d3/d98/classtesting_1_1Message.html#a2cdc4df62bdcc9df37651a1cf527704e" title=" " alt="" coords="533,161,719,187"/>
-<area shape="rect" id="node9" href="$d0/da7/namespacetesting_1_1internal.html#ab56e151d23ee7e14dbf03ac7aa1d182b" title=" " alt="" coords="767,153,913,195"/>
+<map id="ParseGoogleTestFlag" name="ParseGoogleTestFlag">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,152,83"/>
+<area shape="rect" id="node2" href="$d0/da7/namespacetesting_1_1internal.html#ada3b98e7cfe93f4ba2053c470d9e3e51" title=" " alt="" coords="204,5,311,32"/>
+<area shape="rect" id="node3" href="$d0/da7/namespacetesting_1_1internal.html#a082f2d6b59adc025b035b2c51b0fc47e" title=" " alt="" coords="202,56,313,83"/>
+<area shape="rect" id="node4" href="$d0/da7/namespacetesting_1_1internal.html#aa4ce312efaaf7a97aac2303173afe021" title=" " alt="" coords="200,107,315,133"/>
 </map>

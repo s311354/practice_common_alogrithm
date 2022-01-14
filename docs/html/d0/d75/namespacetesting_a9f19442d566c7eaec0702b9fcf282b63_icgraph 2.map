@@ -1,8 +1,4 @@
-<map id="testing::TestPartFatallyFailed" name="testing::TestPartFatallyFailed">
-<area shape="rect" id="node1" title=" " alt="" coords="1052,23,1209,65"/>
-<area shape="rect" id="node2" href="$d6/d6e/classtesting_1_1TestResult.html#a30e00d4076ae07fb5ad7b623d9dc1fe4" title=" " alt="" coords="872,23,1004,65"/>
-<area shape="rect" id="node3" href="$db/d9f/classtesting_1_1Test.html#aa8d0725cfb519f82eaf4fd2d2f46d97d" title=" " alt="" coords="629,31,824,57"/>
-<area shape="rect" id="node4" href="$df/d65/classtesting_1_1TestInfo.html#ade784915e9be3a01e3a6ef509b77d6c9" title=" " alt="" coords="433,5,581,32"/>
-<area shape="rect" id="node6" href="$d0/de3/classtesting_1_1internal_1_1UnitTestImpl.html#a1fb6be9971f4768c4136a05aa9e7e375" title=" " alt="" coords="5,23,180,65"/>
-<area shape="rect" id="node5" href="$d0/d9a/classtesting_1_1TestCase.html#a6f5b3724cd5a8e446cd48a6150d08cde" title=" " alt="" coords="228,5,385,32"/>
+<map id="TestPartFatallyFailed" name="TestPartFatallyFailed">
+<area shape="rect" id="node1" title=" " alt="" coords="185,13,331,39"/>
+<area shape="rect" id="node2" href="$d1/d69/classtesting_1_1_test_result.html#a4831d649ecdd7cbd910d236b73122524" title=" " alt="" coords="5,5,137,47"/>
 </map>

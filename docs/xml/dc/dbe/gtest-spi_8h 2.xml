@@ -405,13 +405,13 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="5">
         <label>lib/googletest/src/gtest-test-part.cc</label>
         <link refid="d3/dc2/gtest-test-part_8cc"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>lib/googletest/src/gtest-port.cc</label>
         <link refid="df/d09/gtest-port_8cc"/>
         <childnode refid="4" relation="include">
@@ -422,14 +422,14 @@
         <link refid="dc/dbe/gtest-spi_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
-    <innerclass refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker" prot="public">testing::internal::SingleFailureChecker</innerclass>
-    <innerclass refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" prot="public">testing::ScopedFakeTestPartResultReporter</innerclass>
+    <innerclass refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker" prot="public">testing::internal::SingleFailureChecker</innerclass>
+    <innerclass refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter" prot="public">testing::ScopedFakeTestPartResultReporter</innerclass>
     <innernamespace refid="d0/d75/namespacetesting">testing</innernamespace>
     <innernamespace refid="d0/da7/namespacetesting_1_1internal">testing::internal</innernamespace>
       <sectiondef kind="define">
@@ -442,11 +442,11 @@
      public:\
       static void Execute() { statement; }\
     };\
-    ::<ref refid="dc/dce/classtesting_1_1TestPartResultArray" kindref="compound">testing::TestPartResultArray</ref> gtest_failures;\
-    ::<ref refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker" kindref="compound">testing::internal::SingleFailureChecker</ref> gtest_checker(\
-        &amp;gtest_failures, ::<ref refid="d9/d98/classtesting_1_1TestPartResult_1a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1" kindref="member">testing::TestPartResult::kFatalFailure</ref>, (substr));\
+    ::<ref refid="d4/d5d/classtesting_1_1_test_part_result_array" kindref="compound">testing::TestPartResultArray</ref> gtest_failures;\
+    ::<ref refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker" kindref="compound">testing::internal::SingleFailureChecker</ref> gtest_checker(\
+        &amp;gtest_failures, ::<ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7afff22986360310b0356db600c8c2187d" kindref="member">testing::TestPartResult::kFatalFailure</ref>, (substr));\
     {\
-      ::<ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" kindref="compound">testing::ScopedFakeTestPartResultReporter</ref> gtest_reporter(\
+      ::<ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter" kindref="compound">testing::ScopedFakeTestPartResultReporter</ref> gtest_reporter(\
           ::testing::ScopedFakeTestPartResultReporter:: \
           INTERCEPT_ONLY_CURRENT_THREAD, &amp;gtest_failures);\
       GTestExpectFatalFailureHelper::Execute();\
@@ -469,11 +469,11 @@
      public:\
       static void Execute() { statement; }\
     };\
-    ::<ref refid="dc/dce/classtesting_1_1TestPartResultArray" kindref="compound">testing::TestPartResultArray</ref> gtest_failures;\
-    ::<ref refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker" kindref="compound">testing::internal::SingleFailureChecker</ref> gtest_checker(\
-        &amp;gtest_failures, ::<ref refid="d9/d98/classtesting_1_1TestPartResult_1a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1" kindref="member">testing::TestPartResult::kFatalFailure</ref>, (substr));\
+    ::<ref refid="d4/d5d/classtesting_1_1_test_part_result_array" kindref="compound">testing::TestPartResultArray</ref> gtest_failures;\
+    ::<ref refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker" kindref="compound">testing::internal::SingleFailureChecker</ref> gtest_checker(\
+        &amp;gtest_failures, ::<ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7afff22986360310b0356db600c8c2187d" kindref="member">testing::TestPartResult::kFatalFailure</ref>, (substr));\
     {\
-      ::<ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" kindref="compound">testing::ScopedFakeTestPartResultReporter</ref> gtest_reporter(\
+      ::<ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter" kindref="compound">testing::ScopedFakeTestPartResultReporter</ref> gtest_reporter(\
           ::testing::ScopedFakeTestPartResultReporter:: \
           INTERCEPT_ALL_THREADS, &amp;gtest_failures);\
       GTestExpectFatalFailureHelper::Execute();\
@@ -492,15 +492,15 @@
         <param><defname>statement</defname></param>
         <param><defname>substr</defname></param>
         <initializer>  do {\
-    ::<ref refid="dc/dce/classtesting_1_1TestPartResultArray" kindref="compound">testing::TestPartResultArray</ref> gtest_failures;\
-    ::<ref refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker" kindref="compound">testing::internal::SingleFailureChecker</ref> gtest_checker(\
-        &amp;gtest_failures, ::<ref refid="d9/d98/classtesting_1_1TestPartResult_1a65ae656b33fdfdfffaf34858778a52d5a00a755614f8ec3f78b2e951f8c91cd92" kindref="member">testing::TestPartResult::kNonFatalFailure</ref>, \
+    ::<ref refid="d4/d5d/classtesting_1_1_test_part_result_array" kindref="compound">testing::TestPartResultArray</ref> gtest_failures;\
+    ::<ref refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker" kindref="compound">testing::internal::SingleFailureChecker</ref> gtest_checker(\
+        &amp;gtest_failures, ::<ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7ae354b0d94856044d54b2066ebb74635c" kindref="member">testing::TestPartResult::kNonFatalFailure</ref>, \
         (substr));\
     {\
-      ::<ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" kindref="compound">testing::ScopedFakeTestPartResultReporter</ref> gtest_reporter(\
+      ::<ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter" kindref="compound">testing::ScopedFakeTestPartResultReporter</ref> gtest_reporter(\
           ::testing::ScopedFakeTestPartResultReporter:: \
           INTERCEPT_ONLY_CURRENT_THREAD, &amp;gtest_failures);\
-      if (::<ref refid="d0/da7/namespacetesting_1_1internal_1a4d46f09c3bfe68700b7f728d2cc3782f" kindref="member">testing::internal::AlwaysTrue</ref>()) { statement; }\
+      if (::<ref refid="d0/da7/namespacetesting_1_1internal_1af72a7a7eee6997f4ed9e18d9620a7b87" kindref="member">testing::internal::AlwaysTrue</ref>()) { statement; }\
     }\
   } while (::<ref refid="d0/da7/namespacetesting_1_1internal_1a4b24c851ab13569b1b15b3d259b60d2e" kindref="member">testing::internal::AlwaysFalse</ref>())</initializer>
         <briefdescription>
@@ -516,15 +516,15 @@
         <param><defname>statement</defname></param>
         <param><defname>substr</defname></param>
         <initializer>  do {\
-    ::<ref refid="dc/dce/classtesting_1_1TestPartResultArray" kindref="compound">testing::TestPartResultArray</ref> gtest_failures;\
-    ::<ref refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker" kindref="compound">testing::internal::SingleFailureChecker</ref> gtest_checker(\
-        &amp;gtest_failures, ::<ref refid="d9/d98/classtesting_1_1TestPartResult_1a65ae656b33fdfdfffaf34858778a52d5a00a755614f8ec3f78b2e951f8c91cd92" kindref="member">testing::TestPartResult::kNonFatalFailure</ref>, \
+    ::<ref refid="d4/d5d/classtesting_1_1_test_part_result_array" kindref="compound">testing::TestPartResultArray</ref> gtest_failures;\
+    ::<ref refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker" kindref="compound">testing::internal::SingleFailureChecker</ref> gtest_checker(\
+        &amp;gtest_failures, ::<ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7ae354b0d94856044d54b2066ebb74635c" kindref="member">testing::TestPartResult::kNonFatalFailure</ref>, \
         (substr));\
     {\
-      ::<ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" kindref="compound">testing::ScopedFakeTestPartResultReporter</ref> gtest_reporter(\
-          ::<ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5a187f4164aad7fbb9414b263c68a693cd" kindref="member">testing::ScopedFakeTestPartResultReporter::INTERCEPT_ALL_THREADS</ref>, \
+      ::<ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter" kindref="compound">testing::ScopedFakeTestPartResultReporter</ref> gtest_reporter(\
+          ::<ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1a1d75549697022f869ab9d184916077d2a5398a4b510d73fe50e61864f5e805c65" kindref="member">testing::ScopedFakeTestPartResultReporter::INTERCEPT_ALL_THREADS</ref>, \
           &amp;gtest_failures);\
-      if (::<ref refid="d0/da7/namespacetesting_1_1internal_1a4d46f09c3bfe68700b7f728d2cc3782f" kindref="member">testing::internal::AlwaysTrue</ref>()) { statement; }\
+      if (::<ref refid="d0/da7/namespacetesting_1_1internal_1af72a7a7eee6997f4ed9e18d9620a7b87" kindref="member">testing::internal::AlwaysTrue</ref>()) { statement; }\
     }\
   } while (::<ref refid="d0/da7/namespacetesting_1_1internal_1a4b24c851ab13569b1b15b3d259b60d2e" kindref="member">testing::internal::AlwaysFalse</ref>())</initializer>
         <briefdescription>
@@ -591,42 +591,42 @@
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/>generated<sp/>in<sp/>the<sp/>same<sp/>thread<sp/>that<sp/>created<sp/>this<sp/>object<sp/>or<sp/>it<sp/>can<sp/>intercept</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>all<sp/>generated<sp/>failures.<sp/>The<sp/>scope<sp/>of<sp/>this<sp/>mock<sp/>object<sp/>can<sp/>be<sp/>controlled<sp/>with</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>second<sp/>argument<sp/>to<sp/>the<sp/>two<sp/>arguments<sp/>constructor.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51" refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" kindref="compound">ScopedFakeTestPartResultReporter</ref></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d70/classtesting_1_1TestPartResultReporterInterface" kindref="compound">TestPartResultReporterInterface</ref><sp/>{</highlight></codeline>
+<codeline lineno="51" refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter" kindref="compound">ScopedFakeTestPartResultReporter</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="da/d6e/classtesting_1_1_test_part_result_reporter_interface" kindref="compound">TestPartResultReporterInterface</ref><sp/>{</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>two<sp/>possible<sp/>mocking<sp/>modes<sp/>of<sp/>this<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="55" refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5" kindref="member">InterceptMode</ref><sp/>{</highlight></codeline>
-<codeline lineno="56" refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5aed6c5f87d33207768db503526e6a1e8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5aed6c5f87d33207768db503526e6a1e8a" kindref="member">INTERCEPT_ONLY_CURRENT_THREAD</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>Intercepts<sp/>only<sp/>thread<sp/>local<sp/>failures.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1a1d75549697022f869ab9d184916077d2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1a1d75549697022f869ab9d184916077d2" kindref="member">InterceptMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="56" refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1a1d75549697022f869ab9d184916077d2ac08ddd6144897355185b0750e2128966" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1a1d75549697022f869ab9d184916077d2ac08ddd6144897355185b0750e2128966" kindref="member">INTERCEPT_ONLY_CURRENT_THREAD</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>Intercepts<sp/>only<sp/>thread<sp/>local<sp/>failures.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>INTERCEPT_ALL_THREADS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Intercepts<sp/>all<sp/>failures.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="58" refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5a187f4164aad7fbb9414b263c68a693cd" refkind="member"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="58" refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1a1d75549697022f869ab9d184916077d2a5398a4b510d73fe50e61864f5e805c65" refkind="member"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>c&apos;tor<sp/>sets<sp/>this<sp/>object<sp/>as<sp/>the<sp/>test<sp/>part<sp/>result<sp/>reporter<sp/>used</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>by<sp/>Google<sp/>Test.<sp/><sp/>The<sp/>&apos;result&apos;<sp/>parameter<sp/>specifies<sp/>where<sp/>to<sp/>report<sp/>the</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>results.<sp/>This<sp/>reporter<sp/>will<sp/>only<sp/>catch<sp/>failures<sp/>generated<sp/>in<sp/>the<sp/>current</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>thread.<sp/>DEPRECATED</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" kindref="compound">ScopedFakeTestPartResultReporter</ref>(<ref refid="dc/dce/classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref>*<sp/>result);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter" kindref="compound">ScopedFakeTestPartResultReporter</ref>(<ref refid="d4/d5d/classtesting_1_1_test_part_result_array" kindref="compound">TestPartResultArray</ref>*<sp/>result);</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Same<sp/>as<sp/>above,<sp/>but<sp/>you<sp/>can<sp/>choose<sp/>the<sp/>interception<sp/>scope<sp/>of<sp/>this<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" kindref="compound">ScopedFakeTestPartResultReporter</ref>(InterceptMode<sp/>intercept_mode,</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dce/classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref>*<sp/>result);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter" kindref="compound">ScopedFakeTestPartResultReporter</ref>(InterceptMode<sp/>intercept_mode,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array" kindref="compound">TestPartResultArray</ref>*<sp/>result);</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>d&apos;tor<sp/>restores<sp/>the<sp/>previous<sp/>test<sp/>part<sp/>result<sp/>reporter.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" kindref="compound">ScopedFakeTestPartResultReporter</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter" kindref="compound">ScopedFakeTestPartResultReporter</ref>();</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Appends<sp/>the<sp/>TestPartResult<sp/>object<sp/>to<sp/>the<sp/>TestPartResultArray</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>received<sp/>in<sp/>the<sp/>constructor.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>method<sp/>is<sp/>from<sp/>the<sp/>TestPartResultReporterInterface</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>interface.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ReportTestPartResult(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/d98/classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref>&amp;<sp/>result);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ReportTestPartResult(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref>&amp;<sp/>result);</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init();</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82" refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1ae62ed825619c11ac21fdd06480e0d982" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a82f6209b3cf5c4b15ec8bd8041dbc2d5" kindref="member">InterceptMode</ref><sp/><ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1ae62ed825619c11ac21fdd06480e0d982" kindref="member">intercept_mode_</ref>;</highlight></codeline>
-<codeline lineno="83" refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a4183b091842a83dd8ce4927746c43092" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="df/d70/classtesting_1_1TestPartResultReporterInterface" kindref="compound">TestPartResultReporterInterface</ref>*<sp/><ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a4183b091842a83dd8ce4927746c43092" kindref="member">old_reporter_</ref>;</highlight></codeline>
-<codeline lineno="84" refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a729a26c94e4082ee0dc3312395a3f480" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="dc/dce/classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1a729a26c94e4082ee0dc3312395a3f480" kindref="member">result_</ref>;</highlight></codeline>
+<codeline lineno="82" refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1ac41a6872b1cb8a2d43546199dd59ae6e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1a1d75549697022f869ab9d184916077d2" kindref="member">InterceptMode</ref><sp/><ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1ac41a6872b1cb8a2d43546199dd59ae6e" kindref="member">intercept_mode_</ref>;</highlight></codeline>
+<codeline lineno="83" refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1a770408cbb038fabbbeab39b72e80403e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="da/d6e/classtesting_1_1_test_part_result_reporter_interface" kindref="compound">TestPartResultReporterInterface</ref>*<sp/><ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1a770408cbb038fabbbeab39b72e80403e" kindref="member">old_reporter_</ref>;</highlight></codeline>
+<codeline lineno="84" refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1a3b5b59dfb566b902e20fa042ba17dad0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array" kindref="compound">TestPartResultArray</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1a3b5b59dfb566b902e20fa042ba17dad0" kindref="member">result_</ref>;</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86" refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1ad7d21ddf4a50ff918571e8a08e73fd59" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter_1ad7d21ddf4a50ff918571e8a08e73fd59" kindref="member">GTEST_DISALLOW_COPY_AND_ASSIGN_</ref>(<ref refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" kindref="compound">ScopedFakeTestPartResultReporter</ref>);</highlight></codeline>
+<codeline lineno="86" refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1a534cd7ad0e39e08d2aa8426d3f167e8a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter_1a534cd7ad0e39e08d2aa8426d3f167e8a" kindref="member">GTEST_DISALLOW_COPY_AND_ASSIGN_</ref>(<ref refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter" kindref="compound">ScopedFakeTestPartResultReporter</ref>);</highlight></codeline>
 <codeline lineno="87"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">internal<sp/>{</highlight></codeline>
@@ -636,19 +636,19 @@
 <codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TestPartResultArray<sp/>contains<sp/>exactly<sp/>one<sp/>failure<sp/>that<sp/>has<sp/>the<sp/>given</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//<sp/>type<sp/>and<sp/>contains<sp/>the<sp/>given<sp/>substring.<sp/><sp/>If<sp/>that&apos;s<sp/>not<sp/>the<sp/>case,<sp/>a</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/>non-fatal<sp/>failure<sp/>will<sp/>be<sp/>generated.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96" refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker" kindref="compound">SingleFailureChecker</ref><sp/>{</highlight></codeline>
+<codeline lineno="96" refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/><ref refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker" kindref="compound">SingleFailureChecker</ref><sp/>{</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>constructor<sp/>remembers<sp/>the<sp/>arguments.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><ref refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker" kindref="compound">SingleFailureChecker</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/dce/classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref>*<sp/>results,</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d98/classtesting_1_1TestPartResult_1a65ae656b33fdfdfffaf34858778a52d5" kindref="member">TestPartResult::Type</ref><sp/>type,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><ref refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker" kindref="compound">SingleFailureChecker</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array" kindref="compound">TestPartResultArray</ref>*<sp/>results,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">TestPartResult::Type</ref><sp/>type,</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>substr);</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/>~<ref refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker" kindref="compound">SingleFailureChecker</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>~<ref refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker" kindref="compound">SingleFailureChecker</ref>();</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="104" refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker_1af6216677e2186e9481088daf57c17d21" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/dce/classtesting_1_1TestPartResultArray" kindref="compound">TestPartResultArray</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker_1af6216677e2186e9481088daf57c17d21" kindref="member">results_</ref>;</highlight></codeline>
-<codeline lineno="105" refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker_1a8fc33138c357b2a6ede3698eb57548a7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/d98/classtesting_1_1TestPartResult_1a65ae656b33fdfdfffaf34858778a52d5" kindref="member">TestPartResult::Type</ref><sp/><ref refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker_1a8fc33138c357b2a6ede3698eb57548a7" kindref="member">type_</ref>;</highlight></codeline>
-<codeline lineno="106" refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker_1a2003215f5f3147726e0b3bb4c8954d71" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker_1a2003215f5f3147726e0b3bb4c8954d71" kindref="member">substr_</ref>;</highlight></codeline>
+<codeline lineno="104" refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker_1ab15c799eb695a09b713ef21e869abfe0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d4/d5d/classtesting_1_1_test_part_result_array" kindref="compound">TestPartResultArray</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker_1ab15c799eb695a09b713ef21e869abfe0" kindref="member">results_</ref>;</highlight></codeline>
+<codeline lineno="105" refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker_1a3155cc24deee3978aed78a25da6180da" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">TestPartResult::Type</ref><sp/><ref refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker_1a3155cc24deee3978aed78a25da6180da" kindref="member">type_</ref>;</highlight></codeline>
+<codeline lineno="106" refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker_1a6d511a37e5638d646986452a9b195d23" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker_1a6d511a37e5638d646986452a9b195d23" kindref="member">substr_</ref>;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="108" refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker_1a381cef530568cc08d07dfa2a5dcfc233" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker_1a381cef530568cc08d07dfa2a5dcfc233" kindref="member">GTEST_DISALLOW_COPY_AND_ASSIGN_</ref>(<ref refid="d8/d07/classtesting_1_1internal_1_1SingleFailureChecker" kindref="compound">SingleFailureChecker</ref>);</highlight></codeline>
+<codeline lineno="108" refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker_1aab6e5589ca8c8608dcb253e89212fc7e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker_1aab6e5589ca8c8608dcb253e89212fc7e" kindref="member">GTEST_DISALLOW_COPY_AND_ASSIGN_</ref>(<ref refid="d8/d9a/classtesting_1_1internal_1_1_single_failure_checker" kindref="compound">SingleFailureChecker</ref>);</highlight></codeline>
 <codeline lineno="109"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>internal</highlight><highlight class="normal"></highlight></codeline>

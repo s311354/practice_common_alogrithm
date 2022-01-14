@@ -19,7 +19,7 @@
     </detaileddescription>
     <collaborationgraph>
       <node id="1">
-        <label>std::tr1::tuple_element&lt; k, Tuple &gt;</label>
+        <label>tuple_element&lt; k, Tuple &gt;</label>
         <link refid="d4/d4b/structstd_1_1tr1_1_1tuple__element"/>
       </node>
     </collaborationgraph>

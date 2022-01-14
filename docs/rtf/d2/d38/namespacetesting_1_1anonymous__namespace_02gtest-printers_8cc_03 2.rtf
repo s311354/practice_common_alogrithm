@@ -110,17 +110,22 @@
 testing::anonymous_namespace\{gtest-printers.cc\} Namespace Reference\par \pard\plain 
 {\tc\tcl2 \v testing::anonymous_namespace\{gtest-printers.cc\}}
 {\xe \v testing::anonymous_namespace\{gtest-printers.cc\}}
-{\bkmkstart AAAAAAABTT}
-{\bkmkend AAAAAAABTT}
+{\bkmkstart AAAAAAABSO}
+{\bkmkend AAAAAAABSO}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Functions\par
 \pard\plain 
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\b GTEST_ATTRIBUTE_NO_SANITIZE_MEMORY_} {\b GTEST_ATTRIBUTE_NO_SANITIZE_ADDRESS_} {\b GTEST_ATTRIBUTE_NO_SANITIZE_THREAD_} void {\b PrintByteSegmentInObjectTo} (const unsigned char *obj_bytes, size_t start, size_t count, ostream *os)\par
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABEW" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_ATTRIBUTE_NO_SANITIZE_MEMORY_}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABEV" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_ATTRIBUTE_NO_SANITIZE_ADDRESS_}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABEX" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_ATTRIBUTE_NO_SANITIZE_THREAD_}}}
+ void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABSX" }{}}{\fldrslt {\cs37\ul\cf2 PrintByteSegmentInObjectTo}}}
+ (const unsigned char *obj_bytes, size_t start, size_t count, ostream *os)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\b PrintBytesInObjectToImpl} (const unsigned char *obj_bytes, size_t count, ostream *os)\par
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABSZ" }{}}{\fldrslt {\cs37\ul\cf2 PrintBytesInObjectToImpl}}}
+ (const unsigned char *obj_bytes, size_t count, ostream *os)\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -130,12 +135,18 @@ Function Documentation\par
 {\xe \v testing::anonymous_namespace\{gtest-printers.cc\}\:PrintByteSegmentInObjectTo}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-{\b GTEST_ATTRIBUTE_NO_SANITIZE_MEMORY_} {\b GTEST_ATTRIBUTE_NO_SANITIZE_ADDRESS_} {\b GTEST_ATTRIBUTE_NO_SANITIZE_THREAD_} void testing::anonymous_namespace\{gtest-printers.cc\}::PrintByteSegmentInObjectTo (const unsigned char *  {\i obj_bytes}, size_t  {\i start}, size_t  {\i count}, ostream *  {\i os})}}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABEW" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_ATTRIBUTE_NO_SANITIZE_MEMORY_}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABEV" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_ATTRIBUTE_NO_SANITIZE_ADDRESS_}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABEX" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_ATTRIBUTE_NO_SANITIZE_THREAD_}}}
+ void testing::anonymous_namespace\{gtest-printers.cc\}::PrintByteSegmentInObjectTo (const unsigned char *  {\i obj_bytes}, size_t  {\i start}, size_t  {\i count}, ostream *  {\i os})}}
 \par
-{\bkmkstart AAAAAAABTU}
-{\bkmkend AAAAAAABTU}
+{\bkmkstart AAAAAAABSX}
+{\bkmkend AAAAAAABSX}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 63 of file gtest-printers.cc.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 64                                                            \{\par
 65   {\cf18 char} text[5] = {\cf22 ""};\par
@@ -149,7 +160,8 @@ Function Documentation\par
 73       {\cf19 else}\par
 74         *os << {\cf23 '-'};\par
 75     \}\par
-76     GTEST_SNPRINTF_(text, {\cf17 sizeof}(text), {\cf22 "%02X"}, obj_bytes[j]);\par
+76     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABHA" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_SNPRINTF_}}}
+(text, {\cf17 sizeof}(text), {\cf22 "%02X"}, obj_bytes[j]);\par
 77     *os << text;\par
 78   \}\par
 79 \}\par
@@ -171,10 +183,13 @@ Here is the caller graph for this function:{
 {\b 
 void testing::anonymous_namespace\{gtest-printers.cc\}::PrintBytesInObjectToImpl (const unsigned char *  {\i obj_bytes}, size_t  {\i count}, ostream *  {\i os})}}
 \par
-{\bkmkstart AAAAAAABTV}
-{\bkmkend AAAAAAABTV}
+{\bkmkstart AAAAAAABSZ}
+{\bkmkend AAAAAAABSZ}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 82 of file gtest-printers.cc.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 83                                            \{\par
 84   {\cf20 // Tells the user how big the object is.}\par
@@ -187,13 +202,16 @@ void testing::anonymous_namespace\{gtest-printers.cc\}::PrintBytesInObjectToImpl
 91   {\cf20 // bytes.}\par
 92   {\cf20 // TODO(wan): let the user control the threshold using a flag.}\par
 93   {\cf19 if} (count < kThreshold) \{\par
-94     PrintByteSegmentInObjectTo(obj_bytes, 0, count, os);\par
+94     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABSX" }{}}{\fldrslt {\cs37\ul\cf2 PrintByteSegmentInObjectTo}}}
+(obj_bytes, 0, count, os);\par
 95   \} {\cf19 else} \{\par
-96     PrintByteSegmentInObjectTo(obj_bytes, 0, kChunkSize, os);\par
+96     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABSX" }{}}{\fldrslt {\cs37\ul\cf2 PrintByteSegmentInObjectTo}}}
+(obj_bytes, 0, kChunkSize, os);\par
 97     *os << {\cf22 " ... "};\par
 98     {\cf20 // Rounds up to 2-byte boundary.}\par
 99     {\cf17 const} {\cf18 size_t} resume_pos = (count - kChunkSize + 1)/2*2;\par
-100     PrintByteSegmentInObjectTo(obj_bytes, resume_pos, count - resume_pos, os);\par
+100     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABSX" }{}}{\fldrslt {\cs37\ul\cf2 PrintByteSegmentInObjectTo}}}
+(obj_bytes, resume_pos, count - resume_pos, os);\par
 101   \}\par
 102   *os << {\cf22 ">"};\par
 103 \}\par

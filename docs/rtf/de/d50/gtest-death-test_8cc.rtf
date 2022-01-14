@@ -110,8 +110,8 @@
 lib/googletest/src/gtest-death-test.cc File Reference\par \pard\plain 
 {\tc\tcl2 \v lib/googletest/src/gtest-death-test.cc(d4ab02d08ceed19dab4276c86042b1520529304b)}
 {\xe \v lib/googletest/src/gtest-death-test.cc(d4ab02d08ceed19dab4276c86042b1520529304b)}
-{\bkmkstart AAAAAAABNL}
-{\bkmkend AAAAAAABNL}
+{\bkmkstart AAAAAAAAXL}
+{\bkmkend AAAAAAAAXL}
 {
 \pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "gtest/gtest-death-test.h"}\par
 {\f2 #include "gtest/internal/gtest-port.h"}\par
@@ -140,10 +140,10 @@ Namespaces\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASC" }{}}{\fldrslt {\cs37\ul\cf2 testing}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACB" }{}}{\fldrslt {\cs37\ul\cf2 testing}}}
 \par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
- {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASJ" }{}}{\fldrslt {\cs37\ul\cf2 testing::internal}}}
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 testing::internal}}}
 \par
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -152,7 +152,7 @@ Macros\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-#define {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABNM" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_IMPLEMENTATION_}}}
+#define {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXM" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_IMPLEMENTATION_}}}
 \~ 1\par
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -161,13 +161,13 @@ Functions\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABNN" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_DEFINE_bool_}}}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXN" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_DEFINE_bool_}}}
  (death_test_use_fork, internal::BoolFromGTestEnv("death_test_use_fork", false), "Instructs to use fork()/_exit() instead of clone() in death tests. " "Ignored and always uses fork() on POSIX systems where clone() is not " "implemented. Useful when running under valgrind or similar tools if " "those do not support clone(). Valgrind 3.3.1 will just fail if " "it sees an unsupported combination of clone() flags. " "It is not recommended to use this flag w/o valgrind though it will " "work in 99% of the cases. Once valgrind is fixed, this flag will " "most likely be removed.")\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABNO" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_DEFINE_string_}}}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXO" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_DEFINE_string_}}}
  (death_test_style, internal::StringFromGTestEnv("death_test_style", kDefaultDeathTestStyle), "Indicates how to run a death test in a forked child process: " "\\"threadsafe\\" (child process re-executes the test binary " "from the beginning, running only the specific death test) or " "\\"fast\\" (child process runs the death test immediately " "after forking).")\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABNP" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_DEFINE_string_}}}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXP" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_DEFINE_string_}}}
  (internal_run_death_test, "", "Indicates the file, line number, temporal index of " "the single death test to run, and a file descriptor to " "which a success code may be sent, all separated by " "the '|' characters.  This flag is specified if and only if the current " "process is a sub-process launched for running a thread-safe " "death test.  FOR INTERNAL USE ONLY.")\par
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -176,7 +176,7 @@ Constants\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-static const char {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABNQ" }{}}{\fldrslt {\cs37\ul\cf2 kDefaultDeathTestStyle}}}
+static const char {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAXQ" }{}}{\fldrslt {\cs37\ul\cf2 kDefaultDeathTestStyle}}}
  [] = "fast"\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
@@ -189,8 +189,8 @@ Macro Definition Documentation\par
 {\b 
 #define GTEST_IMPLEMENTATION_\~ 1}}
 \par
-{\bkmkstart AAAAAAABNM}
-{\bkmkend AAAAAAABNM}
+{\bkmkstart AAAAAAAAXM}
+{\bkmkend AAAAAAAAXM}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par

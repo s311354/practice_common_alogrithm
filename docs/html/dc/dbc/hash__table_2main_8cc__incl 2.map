@@ -1,9 +1,6 @@
 <map id="hash_table/main.cc" name="hash_table/main.cc">
-<area shape="rect" id="node1" title=" " alt="" coords="101,5,236,32"/>
-<area shape="rect" id="node2" href="$d4/ddb/hash__table_8h.html" title=" " alt="" coords="9,155,113,181"/>
-<area shape="rect" id="node5" href="$d4/d6e/hash__table__tests_8h.html" title=" " alt="" coords="99,80,239,107"/>
-<area shape="rect" id="node7" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/header/unordered_map.html" title=" " alt="" coords="263,80,373,107"/>
-<area shape="rect" id="node3" href="$dc/d62/hash__object_8h.html" title=" " alt="" coords="5,229,116,256"/>
-<area shape="rect" id="node4" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/header/string.html" title=" " alt="" coords="33,304,88,331"/>
-<area shape="rect" id="node6" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/header/iostream.html" title=" " alt="" coords="137,155,209,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="45,5,179,32"/>
+<area shape="rect" id="node2" href="$d4/ddb/hash__table_8h.html" title=" " alt="" coords="5,155,109,181"/>
+<area shape="rect" id="node3" href="$d4/d6e/hash__table__tests_8h.html" title=" " alt="" coords="42,80,182,107"/>
+<area shape="rect" id="node4" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/header/unordered_map.html" title=" " alt="" coords="206,80,317,107"/>
 </map>

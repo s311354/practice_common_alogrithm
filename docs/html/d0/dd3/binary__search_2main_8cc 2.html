@@ -14,8 +14,8 @@
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<link rel="search" href="../../search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Common Alogrithm"/>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -45,8 +45,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search','.html'
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('../../',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
+  initMenu('../../',true,true,'search.php','Search');
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() {
+    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
+  });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
@@ -67,20 +70,6 @@ $(document).ready(function(){initNavTree('d0/dd3/binary__search_2main_8cc.html',
 /* @license-end */
 </script>
 <div id="doc-content">
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -89,8 +78,8 @@ $(document).ready(function(){initNavTree('d0/dd3/binary__search_2main_8cc.html',
 </div><!--header-->
 <div class="contents">
 <h3 class="version">(08cab062958cef0a4d03d0b6bdeb1c9220781d28)</h3><div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../">binary_search.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../">binary_search.cc</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d1e/binary__search_8h_source.html">binary_search.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d7c/binary__search_8cc_source.html">binary_search.cc</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for main.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -98,16 +87,14 @@ $(document).ready(function(){initNavTree('d0/dd3/binary__search_2main_8cc.html',
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d0/de6/binary__search_2main_8cc__incl.png" border="0" usemap="#abinary__search_2main_8cc" alt=""/></div>
 <map name="abinary__search_2main_8cc" id="abinary__search_2main_8cc">
-<area shape="rect" title=" " alt="" coords="10,5,163,32"/>
-<area shape="rect" title=" " alt="" coords="5,229,69,256"/>
-<area shape="rect" href="../../d8/d1e/binary__search_8h.html" title=" " alt="" coords="73,155,188,181"/>
-<area shape="rect" href="../../dd/d7c/binary__search_8cc.html" title=" " alt="" coords="125,80,246,107"/>
-<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/header/iostream.html" title=" " alt="" coords="93,229,165,256"/>
-<area shape="rect" target="_blank" href="http://en.cppreference.com/w/cpp/header/queue.html" title=" " alt="" coords="190,229,247,256"/>
+<area shape="rect" title=" " alt="" coords="5,5,159,32"/>
+<area shape="rect" title=" " alt="" coords="46,229,110,256"/>
+<area shape="rect" href="../../d8/d1e/binary__search_8h.html" title=" " alt="" coords="69,155,183,181"/>
+<area shape="rect" href="../../dd/d7c/binary__search_8cc.html" title=" " alt="" coords="120,80,241,107"/>
 </map>
 </div>
 </div>
-<p><a href="">Go to the source code of this file.</a></p>
+<p><a href="../../d0/dd3/binary__search_2main_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -140,10 +127,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd3/binary__search_2main_8cc_source.html#l00006">6</a> of file <a class="el" href="../../d0/dd3/binary__search_2main_8cc_source.html">main.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">using namespace </span><a class="code" href="../../d9/d0c/namespacecommon.html">common</a>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="../../d9/d0c/namespacecommon.html#d2/dbd/structcommon_1_1BSTNode">BSTNode</a>* root = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">auto</span> binarysearch = <span class="keyword">new</span> <a class="code" href="../../d3/d2e/classcommon_1_1BinarySearch.html">BinarySearch</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="../../d9/d0c/namespacecommon.html#d5/d36/structcommon_1_1_b_s_t_node">BSTNode</a>* root = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">auto</span> binarysearch = <span class="keyword">new</span> <a class="code" href="../../dc/df2/classcommon_1_1_binary_search.html">BinarySearch</a>();</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> idex;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">for</span> (idex = 0; idex &lt; 10; ++idex) {</div>
@@ -182,13 +171,13 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">delete</span> binarysearch;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="ttc" id="aclasscommon_1_1BinarySearch_html"><div class="ttname"><a href="../../d3/d2e/classcommon_1_1BinarySearch.html">common::BinarySearch</a></div><div class="ttdef"><b>Definition:</b> binary_search.h:18</div></div>
+<div class="ttc" id="aclasscommon_1_1_binary_search_html"><div class="ttname"><a href="../../dc/df2/classcommon_1_1_binary_search.html">common::BinarySearch</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d1e/binary__search_8h_source.html#l00017">binary_search.h:18</a></div></div>
 <div class="ttc" id="adata_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/iterator/data.html">std::data</a></div><div class="ttdeci">T data(T... args)</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 <div class="ttc" id="amin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/min.html">std::min</a></div><div class="ttdeci">T min(T... args)</div></div>
-<div class="ttc" id="anamespacecommon_html"><div class="ttname"><a href="../../d9/d0c/namespacecommon.html">common</a></div><div class="ttdef"><b>Definition:</b> graph.cc:3</div></div>
-<div class="ttc" id="anamespacecommon_html_d2/dbd/structcommon_1_1BSTNode"><div class="ttname"><a href="../../d9/d0c/namespacecommon.html#d2/dbd/structcommon_1_1BSTNode">common::BSTNode</a></div><div class="ttdef"><b>Definition:</b> binary_search.h:10</div></div>
+<div class="ttc" id="anamespacecommon_html"><div class="ttname"><a href="../../d9/d0c/namespacecommon.html">common</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d7c/binary__search_8cc_source.html#l00003">binary_search.cc:3</a></div></div>
+<div class="ttc" id="anamespacecommon_html_d5/d36/structcommon_1_1_b_s_t_node"><div class="ttname"><a href="../../d9/d0c/namespacecommon.html#d5/d36/structcommon_1_1_b_s_t_node">common::BSTNode</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d1e/binary__search_8h_source.html#l00010">binary_search.h:10</a></div></div>
 <div class="ttc" id="anamespacestd_html_cpp/io/cout"><div class="ttname"><a href="http://en.cppreference.com/w/d8/dcc/namespacestd.html#cpp/io/cout">std::cout</a></div></div>
 <div class="ttc" id="arand_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a></div><div class="ttdeci">T rand(T... args)</div></div>
 </div><!-- fragment -->

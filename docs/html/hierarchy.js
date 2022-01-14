@@ -48,6 +48,8 @@ var hierarchy =
     ] ],
     [ "HashObject", "db/de7/classcommon_1_1_hash_object.html", null ],
     [ "HashTable", "d1/d2d/classcommon_1_1_hash_table.html", null ],
+    [ "Jvector", "da/dd7/classcommon_1_1_jvector.html", null ],
+    [ "JvectorTest", "da/d08/classcommon_1_1_jvector_test.html", null ],
     [ "LinkedList< T >", "d7/d8e/classcommon_1_1_linked_list.html", null ],
     [ "ListElement< T >", "dd/d71/classcommon_1_1_list_element.html", null ],
     [ "PriorityQueue", "dc/de6/classcommon_1_1_priority_queue.html", null ],
@@ -62,6 +64,7 @@ var hierarchy =
       [ "ConcreteImplementation1", "da/d36/class_concrete_implementation1.html", null ],
       [ "ConcreteImplementation2", "dc/d24/class_concrete_implementation2.html", null ]
     ] ],
+    [ "Solutions", "d0/d8a/classleetcode_1_1_solutions.html", null ],
     [ "list< std::pair< char, const char * > >", "http://en.cppreference.com/w/cpp/container/list.html", null ],
     [ "map< std::string, size_t >", "http://en.cppreference.com/w/cpp/container/map.html", null ],
     [ "pair< char, const char * >", "http://en.cppreference.com/w/cpp/utility/pair.html", null ],
@@ -1128,10 +1131,7 @@ var hierarchy =
     [ "UniversalTersePrinter< T[N]>", "db/dd8/classtesting_1_1internal_1_1_universal_terse_printer_3_01_t_0f_n_0e_4.html", null ],
     [ "UniversalTersePrinter< wchar_t * >", "d5/daf/classtesting_1_1internal_1_1_universal_terse_printer_3_01wchar__t_01_5_01_4.html", null ],
     [ "Message", "d2/da9/classtesting_1_1_message.html", null ],
-    [ "Test", "df/d69/classtesting_1_1_test.html", [
-      [ "EmptyTest", "df/d98/classgoogletest_1_1_empty_test.html", null ],
-      [ "EnqueueTest", "de/d95/classgoogletest_1_1_enqueue_test.html", null ]
-    ] ],
+    [ "Test", "df/d69/classtesting_1_1_test.html", null ],
     [ "TestCase", "d0/dfa/classtesting_1_1_test_case.html", null ],
     [ "TestEventListener", "d1/d46/classtesting_1_1_test_event_listener.html", [
       [ "EmptyTestEventListener", "dd/dff/classtesting_1_1_empty_test_event_listener.html", [
@@ -1157,6 +1157,7 @@ var hierarchy =
     [ "ThreadLocal< testing::TestPartResultReporterInterface * >", "dd/d13/classtesting_1_1internal_1_1_thread_local.html", null ],
     [ "TypeWithSize< sizeof(RawType)>", "d0/da7/namespacetesting_1_1internal.html#d0/da7/namespacetesting_1_1internal", null ],
     [ "unique_ptr< common::GraphRepresentation >", "http://en.cppreference.com/w/cpp/memory/unique_ptr.html", null ],
+    [ "unique_ptr< int[]>", "http://en.cppreference.com/w/cpp/memory/unique_ptr.html", null ],
     [ "USASocketInterface", "dc/d56/class_u_s_a_socket_interface.html", [
       [ "Adapter", "d3/d7f/class_adapter.html", null ]
     ] ],

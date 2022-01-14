@@ -2,28 +2,28 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="da/df7/namespacetesting_1_1internal2" kind="namespace" language="C++">
     <compoundname>testing::internal2</compoundname>
-    <innerclass refid="d7/de8/classtesting_1_1internal2_1_1TypeWithoutFormatter" prot="public">testing::internal2::TypeWithoutFormatter</innerclass>
-    <innerclass refid="d3/d05/classtesting_1_1internal2_1_1TypeWithoutFormatter_3_01T_00_01kConvertibleToInteger_01_4" prot="public">testing::internal2::TypeWithoutFormatter&lt; T, kConvertibleToInteger &gt;</innerclass>
-    <innerclass refid="db/d4b/classtesting_1_1internal2_1_1TypeWithoutFormatter_3_01T_00_01kProtobuf_01_4" prot="public">testing::internal2::TypeWithoutFormatter&lt; T, kProtobuf &gt;</innerclass>
+    <innerclass refid="df/d5e/classtesting_1_1internal2_1_1_type_without_formatter" prot="public">testing::internal2::TypeWithoutFormatter</innerclass>
+    <innerclass refid="db/d44/classtesting_1_1internal2_1_1_type_without_formatter_3_01_t_00_01k_convertible_to_integer_01_4" prot="public">testing::internal2::TypeWithoutFormatter&lt; T, kConvertibleToInteger &gt;</innerclass>
+    <innerclass refid="d9/d6c/classtesting_1_1internal2_1_1_type_without_formatter_3_01_t_00_01k_protobuf_01_4" prot="public">testing::internal2::TypeWithoutFormatter&lt; T, kProtobuf &gt;</innerclass>
       <sectiondef kind="enum">
-      <memberdef kind="enum" id="da/df7/namespacetesting_1_1internal2_1aeb8161b0b3ee503347b0662d7028fd57" prot="public" static="no" strong="no">
+      <memberdef kind="enum" id="da/df7/namespacetesting_1_1internal2_1ab4dd8308e08805aedfe646096be0e4e7" prot="public" static="no" strong="no">
         <type></type>
         <name>TypeKind</name>
-        <enumvalue id="da/df7/namespacetesting_1_1internal2_1aeb8161b0b3ee503347b0662d7028fd57a14aaf98a2547ecf43eef0868d54b1383" prot="public">
+        <enumvalue id="da/df7/namespacetesting_1_1internal2_1ab4dd8308e08805aedfe646096be0e4e7a8c0085df0ce57d228bef0478bcdcf0b0" prot="public">
           <name>kProtobuf</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="da/df7/namespacetesting_1_1internal2_1aeb8161b0b3ee503347b0662d7028fd57a9bdcf3f1548f498b2b7f097306ea0224" prot="public">
+        <enumvalue id="da/df7/namespacetesting_1_1internal2_1ab4dd8308e08805aedfe646096be0e4e7a3b1300c6e02d5d0c6b91a781363a5108" prot="public">
           <name>kConvertibleToInteger</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="da/df7/namespacetesting_1_1internal2_1aeb8161b0b3ee503347b0662d7028fd57abe8aaea44751d6ebd0cdf5bd94451db1" prot="public">
+        <enumvalue id="da/df7/namespacetesting_1_1internal2_1ab4dd8308e08805aedfe646096be0e4e7aaaa3810fba03f8b77af2e3e900ea9175" prot="public">
           <name>kOtherType</name>
           <briefdescription>
           </briefdescription>
@@ -40,9 +40,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="da/df7/namespacetesting_1_1internal2_1a140c8efd51e63a3def98445bff107518" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="da/df7/namespacetesting_1_1internal2_1a11cfb2a8b08f10a62ea02a1ea23044d0" prot="public" static="no" mutable="no">
         <type>const size_t</type>
-        <definition>const size_t testing::internal2::kProtobufOneLinerMaxLength</definition>
+        <definition>const size_t kProtobufOneLinerMaxLength</definition>
         <argsstring></argsstring>
         <name>kProtobufOneLinerMaxLength</name>
         <initializer>= 50</initializer>
@@ -53,7 +53,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/gtest-printers.h" line="148" column="14" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="148" bodyend="-1"/>
-        <referencedby refid="db/d4b/classtesting_1_1internal2_1_1TypeWithoutFormatter_3_01T_00_01kProtobuf_01_4_1ac96fb775dc776f02da9a671ea0e04599" compoundref="d0/d6d/gtest-printers_8h" startline="153" endline="159">testing::internal2::TypeWithoutFormatter&lt; T, kProtobuf &gt;::PrintValue</referencedby>
+        <referencedby refid="d9/d6c/classtesting_1_1internal2_1_1_type_without_formatter_3_01_t_00_01k_protobuf_01_4_1ab2db3a3b620936ce148e9d961bb505bd" compoundref="d0/d6d/gtest-printers_8h" startline="153" endline="159">TypeWithoutFormatter&lt; T, kProtobuf &gt;::PrintValue</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -139,7 +139,7 @@
         </inbodydescription>
         <location file="lib/googletest/src/gtest-printers.cc" line="114" column="6" bodyfile="lib/googletest/src/gtest-printers.cc" bodystart="114" bodyend="117"/>
         <references refid="d2/d38/namespacetesting_1_1anonymous__namespace_02gtest-printers_8cc_03_1a7c3551691f3b4ab868eb5b8ceba41bde" compoundref="db/d74/gtest-printers_8cc" startline="82" endline="103">testing::anonymous_namespace{gtest-printers.cc}::PrintBytesInObjectToImpl</references>
-        <referencedby refid="d7/de8/classtesting_1_1internal2_1_1TypeWithoutFormatter_1a6651f6f7be2c0f899729eeb6038f76d3" compoundref="d0/d6d/gtest-printers_8h" startline="139" endline="142">testing::internal2::TypeWithoutFormatter&lt; T, kTypeKind &gt;::PrintValue</referencedby>
+        <referencedby refid="df/d5e/classtesting_1_1internal2_1_1_type_without_formatter_1ab2db3a3b620936ce148e9d961bb505bd" compoundref="d0/d6d/gtest-printers_8h" startline="139" endline="142">TypeWithoutFormatter&lt; T, kTypeKind &gt;::PrintValue</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>

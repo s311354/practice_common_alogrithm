@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d23/classtesting_1_1internal_1_1_implicitly_convertible" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::ImplicitlyConvertible</compoundname>
+    <includes refid="d5/da1/gtest-internal_8h" local="no">gtest-internal.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename From</type>
+      </param>
+      <param>
+        <type>typename To</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="db/d23/classtesting_1_1internal_1_1_implicitly_convertible_1a9044039e84654d2d043aa732bf8609b6" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char(&amp;</type>
+        <definition>static char(&amp; Helper</definition>
+        <argsstring>(...))[2]</argsstring>
+        <name>Helper</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="876" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d23/classtesting_1_1internal_1_1_implicitly_convertible_1aa7f6464439603a4d73da0e75bc280e2f" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>static char Helper</definition>
+        <argsstring>(To)</argsstring>
+        <name>Helper</name>
+        <param>
+          <type>To</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="875" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d23/classtesting_1_1internal_1_1_implicitly_convertible_1a41e59f70517ea8e5b880f27f37907f00" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d4/dde/structtesting_1_1internal_1_1_add_reference" kindref="compound">AddReference</ref>&lt; From &gt;::type</type>
+        <definition>static AddReference&lt;From&gt;::type MakeFrom</definition>
+        <argsstring>()</argsstring>
+        <name>MakeFrom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="863" column="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImplicitlyConvertible&lt; From, To &gt;</label>
+        <link refid="db/d23/classtesting_1_1internal_1_1_implicitly_convertible"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="855" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-internal.h" bodystart="855" bodyend="895"/>
+    <listofallmembers>
+      <member refid="db/d23/classtesting_1_1internal_1_1_implicitly_convertible_1aa7f6464439603a4d73da0e75bc280e2f" prot="private" virt="non-virtual"><scope>testing::internal::ImplicitlyConvertible</scope><name>Helper</name></member>
+      <member refid="db/d23/classtesting_1_1internal_1_1_implicitly_convertible_1a9044039e84654d2d043aa732bf8609b6" prot="private" virt="non-virtual"><scope>testing::internal::ImplicitlyConvertible</scope><name>Helper</name></member>
+      <member refid="db/d23/classtesting_1_1internal_1_1_implicitly_convertible_1a41e59f70517ea8e5b880f27f37907f00" prot="private" virt="non-virtual"><scope>testing::internal::ImplicitlyConvertible</scope><name>MakeFrom</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

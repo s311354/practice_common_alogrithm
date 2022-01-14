@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/df0/classtesting_1_1internal_1_1_unit_test_options" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::UnitTestOptions</compoundname>
+    <includes refid="d0/da1/gtest-internal-inl_8h" local="no">gtest-internal-inl.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1ae2c97834ce45d56f46d39df7cc310109" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FilterMatchesTest</definition>
+        <argsstring>(const std::string &amp;test_case_name, const std::string &amp;test_name)</argsstring>
+        <name>FilterMatchesTest</name>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>test_case_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>test_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="396" column="15" bodyfile="lib/googletest/src/gtest.cc" bodystart="502" bodyend="528"/>
+        <references refid="cpp/string/basic_string/c_str_1">string::c_str</references>
+        <references refid="cpp/string/basic_string/empty_1">string::empty</references>
+        <references refid="d3/dc9/gtest-port_8h_1a828f4e34a1c4b510da50ec1563e3562a" compoundref="d3/dc9/gtest-port_8h" startline="2504">GTEST_FLAG</references>
+        <references refid="d0/d75/namespacetesting_1a1e85b0754dce94c87f067d7b0379c171" compoundref="df/d5b/gtest_8cc" startline="168">testing::kUniversalFilter</references>
+        <references refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a51c4969c39bbb6a3f0d596e7f47f3530" compoundref="df/d5b/gtest_8cc" startline="479" endline="498">UnitTestOptions::MatchesFilter</references>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1af8cfcffb71cba69a55105ddac96786aa" compoundref="df/d5b/gtest_8cc" startline="4789" endline="4840">UnitTestImpl::FilterTests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a8cd6d2ad634d8f29bd2345d5b2ec5673" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string GetAbsolutePathToOutputFile</definition>
+        <argsstring>()</argsstring>
+        <name>GetAbsolutePathToOutputFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="383" column="22" bodyfile="lib/googletest/src/gtest.cc" bodystart="426" bodyend="455"/>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1ae8c11e9d5d51f4266c6507aeb34ba55b" compoundref="dc/d20/gtest-filepath_8cc" startline="199" endline="205">FilePath::ConcatPaths</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a01f72e14ad442c88e941571cb65228f4" compoundref="dc/d20/gtest-filepath_8cc" startline="286" endline="295">FilePath::GenerateUniqueFileName</references>
+        <references refid="d0/da7/namespacetesting_1_1internal_1a4fc348184f2bc16ec2270cffb38de5dc" compoundref="df/d5b/gtest_8cc" startline="399" endline="409">testing::internal::GetCurrentExecutableName</references>
+        <references refid="d7/d47/classtesting_1_1_unit_test_1ad200090b11104aca39f25043701886cf" compoundref="df/d5b/gtest_8cc" startline="3972" endline="3991">UnitTest::GetInstance</references>
+        <references refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a4283d9e9321fb7a93d733899bece00af" compoundref="df/d5b/gtest_8cc" startline="414" endline="422">UnitTestOptions::GetOutputFormat</references>
+        <references refid="d3/dc9/gtest-port_8h_1a828f4e34a1c4b510da50ec1563e3562a" compoundref="d3/dc9/gtest-port_8h" startline="2504">GTEST_FLAG</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a3a0a77b979cea003921d8324ef96bde1" compoundref="dc/d20/gtest-filepath_8cc" startline="265" endline="276">FilePath::IsAbsolutePath</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1aa14e121a7a4f6e743c9e10b3a0818eea" compoundref="dc/d20/gtest-filepath_8cc" startline="300" endline="303">FilePath::IsDirectory</references>
+        <references refid="d0/d75/namespacetesting_1ac5dc0c0255997f89dc268e114ff6f59e" compoundref="df/d5b/gtest_8cc" startline="171">testing::kDefaultOutputFile</references>
+        <references refid="de/d14/classtesting_1_1internal_1_1_file_path_1a7314f49a51859d46439cfeddb9ea06ec" compoundref="dc/d79/gtest-filepath_8h" startline="77" endline="77">FilePath::string</references>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1acc7d69fbca3370bbdd13ee2b63576030" compoundref="df/d5b/gtest_8cc" startline="4400" endline="4410">UnitTestImpl::ConfigureXmlOutput</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a4283d9e9321fb7a93d733899bece00af" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string GetOutputFormat</definition>
+        <argsstring>()</argsstring>
+        <name>GetOutputFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="378" column="22" bodyfile="lib/googletest/src/gtest.cc" bodystart="414" bodyend="422"/>
+        <references refid="d3/dc9/gtest-port_8h_1a828f4e34a1c4b510da50ec1563e3562a" compoundref="d3/dc9/gtest-port_8h" startline="2504">GTEST_FLAG</references>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1acc7d69fbca3370bbdd13ee2b63576030" compoundref="df/d5b/gtest_8cc" startline="4400" endline="4410">UnitTestImpl::ConfigureXmlOutput</referencedby>
+        <referencedby refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a8cd6d2ad634d8f29bd2345d5b2ec5673" compoundref="df/d5b/gtest_8cc" startline="426" endline="455">UnitTestOptions::GetAbsolutePathToOutputFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a51c4969c39bbb6a3f0d596e7f47f3530" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MatchesFilter</definition>
+        <argsstring>(const std::string &amp;name, const char *filter)</argsstring>
+        <name>MatchesFilter</name>
+        <param>
+          <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="410" column="15" bodyfile="lib/googletest/src/gtest.cc" bodystart="479" bodyend="498"/>
+        <references refid="cpp/string/basic_string/c_str_1">string::c_str</references>
+        <references refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a6ee16a491a18920bed2d8e1c5a6be381" compoundref="df/d5b/gtest_8cc" startline="462" endline="477">UnitTestOptions::PatternMatchesString</references>
+        <referencedby refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1ae2c97834ce45d56f46d39df7cc310109" compoundref="df/d5b/gtest_8cc" startline="502" endline="528">UnitTestOptions::FilterMatchesTest</referencedby>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1af8cfcffb71cba69a55105ddac96786aa" compoundref="df/d5b/gtest_8cc" startline="4789" endline="4840">UnitTestImpl::FilterTests</referencedby>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1a6438a25b62877163bec864df1369909b" compoundref="df/d5b/gtest_8cc" startline="4502" endline="4535">UnitTestImpl::GetTestCase</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a6ee16a491a18920bed2d8e1c5a6be381" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PatternMatchesString</definition>
+        <argsstring>(const char *pattern, const char *str)</argsstring>
+        <name>PatternMatchesString</name>
+        <param>
+          <type>const char *</type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/src/gtest-internal-inl.h" line="392" column="15" bodyfile="lib/googletest/src/gtest.cc" bodystart="462" bodyend="477"/>
+        <referencedby refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a51c4969c39bbb6a3f0d596e7f47f3530" compoundref="df/d5b/gtest_8cc" startline="479" endline="498">UnitTestOptions::MatchesFilter</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>UnitTestOptions</label>
+        <link refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/src/gtest-internal-inl.h" line="373" column="1" bodyfile="lib/googletest/src/gtest-internal-inl.h" bodystart="373" bodyend="411"/>
+    <listofallmembers>
+      <member refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1ae2c97834ce45d56f46d39df7cc310109" prot="public" virt="non-virtual"><scope>testing::internal::UnitTestOptions</scope><name>FilterMatchesTest</name></member>
+      <member refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a8cd6d2ad634d8f29bd2345d5b2ec5673" prot="public" virt="non-virtual"><scope>testing::internal::UnitTestOptions</scope><name>GetAbsolutePathToOutputFile</name></member>
+      <member refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a4283d9e9321fb7a93d733899bece00af" prot="public" virt="non-virtual"><scope>testing::internal::UnitTestOptions</scope><name>GetOutputFormat</name></member>
+      <member refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a51c4969c39bbb6a3f0d596e7f47f3530" prot="public" virt="non-virtual"><scope>testing::internal::UnitTestOptions</scope><name>MatchesFilter</name></member>
+      <member refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a6ee16a491a18920bed2d8e1c5a6be381" prot="public" virt="non-virtual"><scope>testing::internal::UnitTestOptions</scope><name>PatternMatchesString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

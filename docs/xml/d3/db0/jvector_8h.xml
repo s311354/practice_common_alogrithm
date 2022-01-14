@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/db0/jvector_8h" kind="file" language="C++">
+    <compoundname>jvector.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includedby refid="d2/d37/jvector_8cc" local="yes">array/jvector.cc</includedby>
+    <includedby refid="db/d2e/jvector__test_8cc" local="yes">array/jvector_test.cc</includedby>
+    <includedby refid="d4/dcf/array_2main_8cc" local="yes">array/main.cc</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>array/jvector.h</label>
+        <link refid="d3/db0/jvector_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>array/main.cc</label>
+        <link refid="d4/dcf/array_2main_8cc"/>
+      </node>
+      <node id="2">
+        <label>array/jvector.cc</label>
+        <link refid="d2/d37/jvector_8cc"/>
+      </node>
+      <node id="1">
+        <label>array/jvector.h</label>
+        <link refid="d3/db0/jvector_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>array/jvector_test.cc</label>
+        <link refid="db/d2e/jvector__test_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="da/dd7/classcommon_1_1_jvector" prot="public">common::Jvector</innerclass>
+    <innernamespace refid="d9/d0c/namespacecommon">common</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d9/d0c/namespacecommon_1ab6b4ade990bf396f29ab1a5bcd5644bf" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int kGrowthFactor</definition>
+        <argsstring></argsstring>
+        <name>kGrowthFactor</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="array/jvector.h" line="8" column="18" bodyfile="array/jvector.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="da/dd7/classcommon_1_1_jvector_1a059768408a950945ea0e5c96a504c5be" compoundref="d2/d37/jvector_8cc" startline="20" endline="28">Jvector::DeterminesCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d0c/namespacecommon_1a8eefe5390a8b73a907da97a171b5121d" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int kMincapacity</definition>
+        <argsstring></argsstring>
+        <name>kMincapacity</name>
+        <initializer>= 16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="array/jvector.h" line="7" column="18" bodyfile="array/jvector.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="da/dd7/classcommon_1_1_jvector_1a7437cb99dcaff0e891c5799162285e38" compoundref="d2/d37/jvector_8cc" startline="57" endline="75">Jvector::DecreasesSize</referencedby>
+        <referencedby refid="da/dd7/classcommon_1_1_jvector_1a059768408a950945ea0e5c96a504c5be" compoundref="d2/d37/jvector_8cc" startline="20" endline="28">Jvector::DeterminesCapacity</referencedby>
+        <referencedby refid="da/d08/classcommon_1_1_jvector_test_1abb4b504d0c9dcce044bbaa2a88496f0b" compoundref="db/d2e/jvector__test_8cc" startline="36" endline="63">JvectorTest::TestCapacity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d0c/namespacecommon_1ae563a1501179faf6f55e2651a2a7a564" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int kShrinkFactor</definition>
+        <argsstring></argsstring>
+        <name>kShrinkFactor</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="array/jvector.h" line="9" column="18" bodyfile="array/jvector.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="da/dd7/classcommon_1_1_jvector_1ab5fbc5fe79da89510dee2ca2814a7366" compoundref="d2/d37/jvector_8cc" startline="30" endline="40">Jvector::ResizeForSize</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/iostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">iostream</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>JVECTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JVECTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d9/d0c/namespacecommon" kindref="compound">common</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d9/d0c/namespacecommon_1a8eefe5390a8b73a907da97a171b5121d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d9/d0c/namespacecommon_1a8eefe5390a8b73a907da97a171b5121d" kindref="member">kMincapacity</ref><sp/>=<sp/>16;</highlight></codeline>
+<codeline lineno="8" refid="d9/d0c/namespacecommon_1ab6b4ade990bf396f29ab1a5bcd5644bf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d9/d0c/namespacecommon_1ab6b4ade990bf396f29ab1a5bcd5644bf" kindref="member">kGrowthFactor</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="9" refid="d9/d0c/namespacecommon_1ae563a1501179faf6f55e2651a2a7a564" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d9/d0c/namespacecommon_1ae563a1501179faf6f55e2651a2a7a564" kindref="member">kShrinkFactor</ref><sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="da/dd7/classcommon_1_1_jvector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="da/dd7/classcommon_1_1_jvector" kindref="compound">Jvector</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>actual<sp/>capacity<sp/>that<sp/>can<sp/>be<sp/>accommodated<sp/>before<sp/>a<sp/>resize<sp/>is<sp/>required.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="da/dd7/classcommon_1_1_jvector_1adbe66a087ac3fd4a5b0566f64ca2d12b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1adbe66a087ac3fd4a5b0566f64ca2d12b" kindref="member">capacity</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>number<sp/>of<sp/>items<sp/>currently<sp/>stored</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="da/dd7/classcommon_1_1_jvector_1a439227feff9d7f55384e8780cfc2eb82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a439227feff9d7f55384e8780cfc2eb82" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>storage<sp/>array<sp/>where<sp/>ints<sp/>are<sp/>stored</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>The<sp/>uses<sp/>of<sp/>smart<sp/>pointer<sp/>unique_ptr<sp/>include<sp/>providing<sp/>exception<sp/>safety<sp/>for<sp/>dynamically<sp/>allocated<sp/>memory,<sp/>passing<sp/>ownership<sp/>of<sp/>dynamically<sp/>allocated<sp/>memory<sp/>to<sp/>a<sp/>function,<sp/>and<sp/>returning<sp/>dynamically<sp/>allocated<sp/>memory<sp/>from<sp/>a<sp/>function.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="da/dd7/classcommon_1_1_jvector_1ab9cda298cf59aa119939dd09f822bcbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/memory/unique_ptr" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::unique_ptr&lt;int []&gt;</ref><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1ab9cda298cf59aa119939dd09f822bcbc" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Determines<sp/>the<sp/>array<sp/>size<sp/>(in<sp/>terms<sp/>of<sp/>power<sp/>of<sp/>growth<sp/>factor)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a059768408a950945ea0e5c96a504c5be" kindref="member">DeterminesCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1adbe66a087ac3fd4a5b0566f64ca2d12b" kindref="member">capacity</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>to<sp/>see<sp/>if<sp/>resizing<sp/>is<sp/>required<sp/>for<sp/>the<sp/>given<sp/>capacity<sp/>and<sp/>grows<sp/>or<sp/>shrinks<sp/>the<sp/>vector<sp/>as<sp/>needed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1ab5fbc5fe79da89510dee2ca2814a7366" kindref="member">ResizeForSize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>candidate_size);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Increases<sp/>the<sp/>capacity<sp/>of<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a3a8c06fafc2729664d79cdc72e62b405" kindref="member">IncreaseSize</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Decreases<sp/>the<sp/>capacity<sp/>of<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a7437cb99dcaff0e891c5799162285e38" kindref="member">DecreasesSize</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a85c6c7d06588eeccecab4bdd62b7d4f8" kindref="member">Jvector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1adbe66a087ac3fd4a5b0566f64ca2d12b" kindref="member">capacity</ref>);</highlight></codeline>
+<codeline lineno="32" refid="da/dd7/classcommon_1_1_jvector_1a7df08ebfb38ffca17dcc948f743d8206" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a7df08ebfb38ffca17dcc948f743d8206" kindref="member">Jvector</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector" kindref="compound">Jvector</ref><sp/>&amp;other)<sp/>{};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>class<sp/>that<sp/>declares<sp/>or<sp/>inherits<sp/>a<sp/>virtual<sp/>function<sp/>is<sp/>called<sp/>a<sp/>polymorphic<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="da/dd7/classcommon_1_1_jvector_1a77be633e4ac834c7240a294822f53673" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a77be633e4ac834c7240a294822f53673" kindref="member">~Jvector</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>the<sp/>number<sp/>of<sp/>items<sp/>stored<sp/>in<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1aa4907b035ab197f57102411e48b2cfc0" kindref="member">GetSize</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a8e12342fc420701fbffd97025421575a" kindref="member">IsEmpty</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>capacity<sp/>of<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a3f9b117bd46cee3b37212d0658d003cd" kindref="member">GetCapacity</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prints<sp/>out<sp/>public<sp/>information<sp/>about<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1af75118b68097238fa7915baf6886a969" kindref="member">DebugString</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Appends<sp/>the<sp/>given<sp/>value<sp/>to<sp/>the<sp/>end<sp/>of<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a8c7b9f80bcaba7e9a15835dab6aeb603" kindref="member">Push</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>last<sp/>item<sp/>in<sp/>the<sp/>vector,<sp/>and<sp/>remove<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1af976b930683eb041ea24921bc4dee650" kindref="member">Pop</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>value<sp/>stored<sp/>at<sp/>the<sp/>given<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a83f32cddf3b8e0cccd95969db939085c" kindref="member">GetValueAt</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Inserts<sp/>the<sp/>given<sp/>value<sp/>at<sp/>the<sp/>given<sp/>index,<sp/>shifting<sp/>current<sp/>and<sp/>trailing<sp/>items<sp/>to<sp/>the<sp/>right</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1adaedfb8ea4ff433a743fbc6783b22de9" kindref="member">Insert</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Deletes<sp/>item<sp/>at<sp/>index,<sp/>shifting<sp/>all<sp/>trailing<sp/>elements<sp/>left</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a4c967945484bb7749edd92b82e274142" kindref="member">Deletes</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prepends<sp/>the<sp/>given<sp/>value<sp/>to<sp/>the<sp/>vector,<sp/>shifting<sp/>trailing<sp/>items<sp/>to<sp/>the<sp/>right</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a15e81cd43bed6e8ce66c161a52463cbb" kindref="member">Prepends</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Remove<sp/>all<sp/>instances<sp/>of<sp/>value<sp/>from<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a7fb1d061597e42fca445c4edc9e907c3" kindref="member">Remove</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Looks<sp/>for<sp/>value<sp/>and<sp/>returns<sp/>first<sp/>index<sp/>with<sp/>that<sp/>value,<sp/>-1<sp/>if<sp/>not<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/dd7/classcommon_1_1_jvector_1a52ff6a893f85589f287bfed40d9c22d6" kindref="member">Find</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>common<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>JVECTOR_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="array/jvector.h"/>
+  </compounddef>
+</doxygen>

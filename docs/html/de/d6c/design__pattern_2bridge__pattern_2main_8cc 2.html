@@ -14,8 +14,8 @@
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<link rel="search" href="../../search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Common Alogrithm"/>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -45,8 +45,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search','.html'
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('../../',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
+  initMenu('../../',true,true,'search.php','Search');
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() {
+    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
+  });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
@@ -67,20 +70,6 @@ $(document).ready(function(){initNavTree('de/d6c/design__pattern_2bridge__patter
 /* @license-end */
 </script>
 <div id="doc-content">
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -104,23 +93,23 @@ $(document).ready(function(){initNavTree('de/d6c/design__pattern_2bridge__patter
 </map>
 </div>
 </div>
-<p><a href="">Go to the source code of this file.</a></p>
+<p><a href="../../de/d6c/design__pattern_2bridge__pattern_2main_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d13/classAbstractInterface.html">AbstractInterface</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da6/class_abstract_interface.html">AbstractInterface</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc1/classBridge.html">Bridge</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc0/class_bridge.html">Bridge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d20/classConcreteImplementation1.html">ConcreteImplementation1</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d36/class_concrete_implementation1.html">ConcreteImplementation1</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc1/classConcreteImplementation2.html">ConcreteImplementation2</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d24/class_concrete_implementation2.html">ConcreteImplementation2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d29/classImplementationInterface.html">ImplementationInterface</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de9/class_implementation_interface.html">ImplementationInterface</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d59/classUseCase1.html">UseCase1</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/da9/class_use_case1.html">UseCase1</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de7/classUseCase2.html">UseCase2</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1d/class_use_case2.html">UseCase2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -154,38 +143,40 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d6c/design__pattern_2bridge__pattern_2main_8cc_source.html#l00100">100</a> of file <a class="el" href="../../de/d6c/design__pattern_2bridge__pattern_2main_8cc_source.html">main.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="../../d5/d13/classAbstractInterface.html">AbstractInterface</a> *useCase = 0;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="../../d3/d29/classImplementationInterface.html">ImplementationInterface</a> *osConcreteImplementation1 = <span class="keyword">new</span> <a class="code" href="../../d1/d20/classConcreteImplementation1.html">ConcreteImplementation1</a>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../d3/d29/classImplementationInterface.html">ImplementationInterface</a> *osConcreteImplementation2 = <span class="keyword">new</span> <a class="code" href="../../d9/dc1/classConcreteImplementation2.html">ConcreteImplementation2</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="../../d7/da6/class_abstract_interface.html">AbstractInterface</a> *useCase = 0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="../../d0/de9/class_implementation_interface.html">ImplementationInterface</a> *osConcreteImplementation1 = <span class="keyword">new</span> <a class="code" href="../../da/d36/class_concrete_implementation1.html">ConcreteImplementation1</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../d0/de9/class_implementation_interface.html">ImplementationInterface</a> *osConcreteImplementation2 = <span class="keyword">new</span> <a class="code" href="../../dc/d24/class_concrete_implementation2.html">ConcreteImplementation2</a>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">/* First case */</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    useCase = <span class="keyword">new</span> <a class="code" href="../../d3/d59/classUseCase1.html">UseCase1</a>(osConcreteImplementation1);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    useCase-&gt;<a class="code" href="../../d5/d13/classAbstractInterface.html#a6e01c2b1fa906d3469a6fe123fcf1f7f">someFunctionality</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    useCase = <span class="keyword">new</span> <a class="code" href="../../dd/da9/class_use_case1.html">UseCase1</a>(osConcreteImplementation1);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    useCase-&gt;<a class="code" href="../../d7/da6/class_abstract_interface.html#aa659d40ff29cac697e2fc1349b1458f6">someFunctionality</a>();</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    useCase = <span class="keyword">new</span> <a class="code" href="../../d3/d59/classUseCase1.html">UseCase1</a>(osConcreteImplementation2);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    useCase-&gt;<a class="code" href="../../d5/d13/classAbstractInterface.html#a6e01c2b1fa906d3469a6fe123fcf1f7f">someFunctionality</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    useCase = <span class="keyword">new</span> <a class="code" href="../../dd/da9/class_use_case1.html">UseCase1</a>(osConcreteImplementation2);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    useCase-&gt;<a class="code" href="../../d7/da6/class_abstract_interface.html#aa659d40ff29cac697e2fc1349b1458f6">someFunctionality</a>();</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">/* Second case */</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    useCase = <span class="keyword">new</span> <a class="code" href="../../d0/de7/classUseCase2.html">UseCase2</a>(osConcreteImplementation1);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    useCase-&gt;<a class="code" href="../../d5/d13/classAbstractInterface.html#a6e01c2b1fa906d3469a6fe123fcf1f7f">someFunctionality</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    useCase = <span class="keyword">new</span> <a class="code" href="../../d7/d1d/class_use_case2.html">UseCase2</a>(osConcreteImplementation1);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    useCase-&gt;<a class="code" href="../../d7/da6/class_abstract_interface.html#aa659d40ff29cac697e2fc1349b1458f6">someFunctionality</a>();</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    useCase = <span class="keyword">new</span> <a class="code" href="../../d0/de7/classUseCase2.html">UseCase2</a>(osConcreteImplementation2);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    useCase-&gt;<a class="code" href="../../d5/d13/classAbstractInterface.html#a6e01c2b1fa906d3469a6fe123fcf1f7f">someFunctionality</a>();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    useCase = <span class="keyword">new</span> <a class="code" href="../../d7/d1d/class_use_case2.html">UseCase2</a>(osConcreteImplementation2);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    useCase-&gt;<a class="code" href="../../d7/da6/class_abstract_interface.html#aa659d40ff29cac697e2fc1349b1458f6">someFunctionality</a>();</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
-<div class="ttc" id="aclassAbstractInterface_html"><div class="ttname"><a href="../../d5/d13/classAbstractInterface.html">AbstractInterface</a></div><div class="ttdef"><b>Definition:</b> main.cc:24</div></div>
-<div class="ttc" id="aclassAbstractInterface_html_a6e01c2b1fa906d3469a6fe123fcf1f7f"><div class="ttname"><a href="../../d5/d13/classAbstractInterface.html#a6e01c2b1fa906d3469a6fe123fcf1f7f">AbstractInterface::someFunctionality</a></div><div class="ttdeci">virtual void someFunctionality()=0</div></div>
-<div class="ttc" id="aclassConcreteImplementation1_html"><div class="ttname"><a href="../../d1/d20/classConcreteImplementation1.html">ConcreteImplementation1</a></div><div class="ttdef"><b>Definition:</b> main.cc:82</div></div>
-<div class="ttc" id="aclassConcreteImplementation2_html"><div class="ttname"><a href="../../d9/dc1/classConcreteImplementation2.html">ConcreteImplementation2</a></div><div class="ttdef"><b>Definition:</b> main.cc:91</div></div>
-<div class="ttc" id="aclassImplementationInterface_html"><div class="ttname"><a href="../../d3/d29/classImplementationInterface.html">ImplementationInterface</a></div><div class="ttdef"><b>Definition:</b> main.cc:31</div></div>
-<div class="ttc" id="aclassUseCase1_html"><div class="ttname"><a href="../../d3/d59/classUseCase1.html">UseCase1</a></div><div class="ttdef"><b>Definition:</b> main.cc:52</div></div>
-<div class="ttc" id="aclassUseCase2_html"><div class="ttname"><a href="../../d0/de7/classUseCase2.html">UseCase2</a></div><div class="ttdef"><b>Definition:</b> main.cc:66</div></div>
+<div class="ttc" id="aclass_abstract_interface_html"><div class="ttname"><a href="../../d7/da6/class_abstract_interface.html">AbstractInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/design__pattern_2bridge__pattern_2main_8cc_source.html#l00023">main.cc:24</a></div></div>
+<div class="ttc" id="aclass_abstract_interface_html_aa659d40ff29cac697e2fc1349b1458f6"><div class="ttname"><a href="../../d7/da6/class_abstract_interface.html#aa659d40ff29cac697e2fc1349b1458f6">AbstractInterface::someFunctionality</a></div><div class="ttdeci">virtual void someFunctionality()=0</div></div>
+<div class="ttc" id="aclass_concrete_implementation1_html"><div class="ttname"><a href="../../da/d36/class_concrete_implementation1.html">ConcreteImplementation1</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/design__pattern_2bridge__pattern_2main_8cc_source.html#l00081">main.cc:82</a></div></div>
+<div class="ttc" id="aclass_concrete_implementation2_html"><div class="ttname"><a href="../../dc/d24/class_concrete_implementation2.html">ConcreteImplementation2</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/design__pattern_2bridge__pattern_2main_8cc_source.html#l00090">main.cc:91</a></div></div>
+<div class="ttc" id="aclass_implementation_interface_html"><div class="ttname"><a href="../../d0/de9/class_implementation_interface.html">ImplementationInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/design__pattern_2bridge__pattern_2main_8cc_source.html#l00030">main.cc:31</a></div></div>
+<div class="ttc" id="aclass_use_case1_html"><div class="ttname"><a href="../../dd/da9/class_use_case1.html">UseCase1</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/design__pattern_2bridge__pattern_2main_8cc_source.html#l00051">main.cc:52</a></div></div>
+<div class="ttc" id="aclass_use_case2_html"><div class="ttname"><a href="../../d7/d1d/class_use_case2.html">UseCase2</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/design__pattern_2bridge__pattern_2main_8cc_source.html#l00065">main.cc:66</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d13/classAbstractInterface.html#a6e01c2b1fa906d3469a6fe123fcf1f7f">AbstractInterface::someFunctionality()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/da6/class_abstract_interface.html#aa659d40ff29cac697e2fc1349b1458f6">AbstractInterface::someFunctionality()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -194,7 +185,7 @@ Functions</h2></td></tr>
 <div class="center"><img src="../../de/d6c/design__pattern_2bridge__pattern_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph.png" border="0" usemap="#ade/d6c/design__pattern_2bridge__pattern_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph" alt=""/></div>
 <map name="ade/d6c/design__pattern_2bridge__pattern_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph" id="ade/d6c/design__pattern_2bridge__pattern_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph">
 <area shape="rect" title=" " alt="" coords="5,13,56,39"/>
-<area shape="rect" href="../../d5/d13/classAbstractInterface.html#a6e01c2b1fa906d3469a6fe123fcf1f7f" title=" " alt="" coords="104,5,235,47"/>
+<area shape="rect" href="../../d7/da6/class_abstract_interface.html#aa659d40ff29cac697e2fc1349b1458f6" title=" " alt="" coords="104,5,235,47"/>
 </map>
 </div>
 

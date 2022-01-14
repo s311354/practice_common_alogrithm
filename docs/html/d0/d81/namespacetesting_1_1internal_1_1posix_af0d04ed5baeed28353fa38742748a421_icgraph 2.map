@@ -1,7 +1,4 @@
-<map id="testing::internal::posix::IsDir" name="testing::internal::posix::IsDir">
-<area shape="rect" id="node1" title=" " alt="" coords="869,37,988,78"/>
-<area shape="rect" id="node2" href="$de/dea/classtesting_1_1internal_1_1FilePath.html#a74ba8435e822d77f79f137c38de9bfeb" title=" " alt="" coords="653,37,821,78"/>
-<area shape="rect" id="node3" href="$de/dea/classtesting_1_1internal_1_1FilePath.html#ae3a455e7c9fc967c2443b703e958f8bd" title=" " alt="" coords="452,37,605,78"/>
-<area shape="rect" id="node4" href="$de/dea/classtesting_1_1internal_1_1FilePath.html#a26790e530dd738f7fc8202c1ce718406" title=" " alt="" coords="224,29,404,85"/>
-<area shape="rect" id="node5" href="$d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter.html#a2ae986dd2f4f2aed31cc6f3bc8c56898" title=" " alt="" coords="5,29,176,85"/>
+<map id="IsDir" name="IsDir">
+<area shape="rect" id="node1" title=" " alt="" coords="221,13,272,39"/>
+<area shape="rect" id="node2" href="$de/d14/classtesting_1_1internal_1_1_file_path.html#a4a118f1c72313787fe28aa8e2103812a" title=" " alt="" coords="5,5,173,47"/>
 </map>

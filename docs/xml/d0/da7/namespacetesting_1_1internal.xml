@@ -3706,6 +3706,8 @@
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="1317" column="9" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="1317" bodyend="1319"/>
         <referencedby refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1a5b69c8f2b38f31e87dabf300d7e46903" compoundref="df/d5b/gtest_8cc" startline="1028" endline="1083">testing::internal::edit_distance::CalculateOptimalEdits</referencedby>
+        <referencedby refid="da/dd7/classcommon_1_1_jvector_1a7437cb99dcaff0e891c5799162285e38" compoundref="d2/d37/jvector_8cc" startline="57" endline="75">Jvector::DecreasesSize</referencedby>
+        <referencedby refid="da/dd7/classcommon_1_1_jvector_1a3a8c06fafc2729664d79cdc72e62b405" compoundref="d2/d37/jvector_8cc" startline="42" endline="55">Jvector::IncreaseSize</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/da7/namespacetesting_1_1internal_1a6910869259f8f31825b471e9190fa09a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>

@@ -86,12 +86,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="hash_table/main.cc" line="6" column="6" bodyfile="hash_table/main.cc" bodystart="6" bodyend="26"/>
-        <references refid="cpp/container/unordered_map/begin_1">std::unordered_map&lt; K, T &gt;::begin</references>
-        <references refid="cpp/container/unordered_map/bucket_count_1">std::unordered_map&lt; K, T &gt;::bucket_count</references>
-        <references refid="cpp/container/unordered_map/bucket_size_1">std::unordered_map&lt; K, T &gt;::bucket_size</references>
-        <references refid="cpp/container/unordered_map/end_1">std::unordered_map&lt; K, T &gt;::end</references>
+        <references refid="cpp/container/unordered_map/begin_1">unordered_map&lt; K, T &gt;::begin</references>
+        <references refid="cpp/container/unordered_map/bucket_count_1">unordered_map&lt; K, T &gt;::bucket_count</references>
+        <references refid="cpp/container/unordered_map/bucket_size_1">unordered_map&lt; K, T &gt;::bucket_size</references>
+        <references refid="cpp/container/unordered_map/end_1">unordered_map&lt; K, T &gt;::end</references>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
-        <references refid="cpp/container/unordered_map/find_1">std::unordered_map&lt; K, T &gt;::find</references>
+        <references refid="cpp/container/unordered_map/find_1">unordered_map&lt; K, T &gt;::find</references>
         <referencedby refid="df/d46/hash__table_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="df/d46/hash__table_2main_8cc" startline="28" endline="34">main</referencedby>
       </memberdef>
       </sectiondef>
@@ -127,7 +127,7 @@
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="26"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28" refid="df/d46/hash__table_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="db/df7/graphs_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
+<codeline lineno="28" refid="df/d46/hash__table_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/dd3/binary__search_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
 <codeline lineno="29"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d9c/hash__table__tests_8cc_1adf5fa5d1a8867dba73315c105f40b449" kindref="member">run_all_tests</ref>();</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>

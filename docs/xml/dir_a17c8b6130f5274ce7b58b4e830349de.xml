@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_a17c8b6130f5274ce7b58b4e830349de" kind="dir">
+    <compoundname>leetcode_practice</compoundname>
+    <innerdir refid="dir_3b4336166f2037fca69634eaa648190d">leetcode_practice/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="leetcode_practice/"/>
+  </compounddef>
+</doxygen>

@@ -2,30 +2,30 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="d0/d75/namespacetesting" kind="namespace" language="C++">
     <compoundname>testing</compoundname>
-    <innerclass refid="dd/d5f/classtesting_1_1AssertionResult" prot="public">testing::AssertionResult</innerclass>
-    <innerclass refid="d6/d86/classtesting_1_1EmptyTestEventListener" prot="package">testing::EmptyTestEventListener</innerclass>
-    <innerclass refid="dc/d71/classtesting_1_1Environment" prot="package">testing::Environment</innerclass>
-    <innerclass refid="d3/d98/classtesting_1_1Message" prot="public">testing::Message</innerclass>
-    <innerclass refid="df/d0c/classtesting_1_1ScopedFakeTestPartResultReporter" prot="public">testing::ScopedFakeTestPartResultReporter</innerclass>
-    <innerclass refid="db/d9f/classtesting_1_1Test" prot="public">testing::Test</innerclass>
-    <innerclass refid="d0/d9a/classtesting_1_1TestCase" prot="package">testing::TestCase</innerclass>
-    <innerclass refid="d0/d51/classtesting_1_1TestEventListener" prot="package">testing::TestEventListener</innerclass>
-    <innerclass refid="db/d70/classtesting_1_1TestEventListeners" prot="package">testing::TestEventListeners</innerclass>
-    <innerclass refid="df/d65/classtesting_1_1TestInfo" prot="package">testing::TestInfo</innerclass>
-    <innerclass refid="d9/d98/classtesting_1_1TestPartResult" prot="public">testing::TestPartResult</innerclass>
-    <innerclass refid="dc/dce/classtesting_1_1TestPartResultArray" prot="public">testing::TestPartResultArray</innerclass>
-    <innerclass refid="df/d70/classtesting_1_1TestPartResultReporterInterface" prot="public">testing::TestPartResultReporterInterface</innerclass>
-    <innerclass refid="dd/dde/classtesting_1_1TestProperty" prot="package">testing::TestProperty</innerclass>
-    <innerclass refid="d6/d6e/classtesting_1_1TestResult" prot="package">testing::TestResult</innerclass>
-    <innerclass refid="d5/d21/classtesting_1_1UnitTest" prot="package">testing::UnitTest</innerclass>
+    <innerclass refid="d5/dec/classtesting_1_1_assertion_result" prot="public">testing::AssertionResult</innerclass>
+    <innerclass refid="dd/dff/classtesting_1_1_empty_test_event_listener" prot="package">testing::EmptyTestEventListener</innerclass>
+    <innerclass refid="d6/d91/classtesting_1_1_environment" prot="package">testing::Environment</innerclass>
+    <innerclass refid="d2/da9/classtesting_1_1_message" prot="public">testing::Message</innerclass>
+    <innerclass refid="d2/db7/classtesting_1_1_scoped_fake_test_part_result_reporter" prot="public">testing::ScopedFakeTestPartResultReporter</innerclass>
+    <innerclass refid="df/d69/classtesting_1_1_test" prot="public">testing::Test</innerclass>
+    <innerclass refid="d0/dfa/classtesting_1_1_test_case" prot="package">testing::TestCase</innerclass>
+    <innerclass refid="d1/d46/classtesting_1_1_test_event_listener" prot="package">testing::TestEventListener</innerclass>
+    <innerclass refid="df/dab/classtesting_1_1_test_event_listeners" prot="package">testing::TestEventListeners</innerclass>
+    <innerclass refid="d1/d79/classtesting_1_1_test_info" prot="package">testing::TestInfo</innerclass>
+    <innerclass refid="d0/d4b/classtesting_1_1_test_part_result" prot="public">testing::TestPartResult</innerclass>
+    <innerclass refid="d4/d5d/classtesting_1_1_test_part_result_array" prot="public">testing::TestPartResultArray</innerclass>
+    <innerclass refid="da/d6e/classtesting_1_1_test_part_result_reporter_interface" prot="public">testing::TestPartResultReporterInterface</innerclass>
+    <innerclass refid="d0/d27/classtesting_1_1_test_property" prot="package">testing::TestProperty</innerclass>
+    <innerclass refid="d1/d69/classtesting_1_1_test_result" prot="package">testing::TestResult</innerclass>
+    <innerclass refid="d7/d47/classtesting_1_1_unit_test" prot="package">testing::UnitTest</innerclass>
     <innernamespace refid="d2/d38/namespacetesting_1_1anonymous__namespace_02gtest-printers_8cc_03">testing::anonymous_namespace{gtest-printers.cc}</innernamespace>
     <innernamespace refid="de/d18/namespacetesting_1_1anonymous__namespace_02gtest_8cc_03">testing::anonymous_namespace{gtest.cc}</innernamespace>
     <innernamespace refid="d0/da7/namespacetesting_1_1internal">testing::internal</innernamespace>
     <innernamespace refid="da/df7/namespacetesting_1_1internal2">testing::internal2</innernamespace>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="d0/d75/namespacetesting_1aee868c7728386fadae30a11de067ca4e" prot="package" static="no" mutable="no">
+      <memberdef kind="variable" id="d0/d75/namespacetesting_1ab6f3c269fc46c9c1c0f81b3431240138" prot="package" static="no" mutable="no">
         <type></type>
-        <definition>testing::__pad0__</definition>
+        <definition>__pad0__</definition>
         <argsstring></argsstring>
         <name>__pad0__</name>
         <briefdescription>
@@ -36,9 +36,9 @@
         </inbodydescription>
         <location file="lib/googletest/include/gtest/gtest.h" line="480" column="1" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="480" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="d0/d75/namespacetesting_1a23c33f4bfcc3c2e5e620eff31a98892d" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="d0/d75/namespacetesting_1a815040dbde1aafa2b5c0628f7b97b3c0" prot="public" static="yes" mutable="no">
         <type>const char</type>
-        <definition>const char testing::kDeathTestCaseFilter[]</definition>
+        <definition>const char kDeathTestCaseFilter[]</definition>
         <argsstring>[]</argsstring>
         <name>kDeathTestCaseFilter</name>
         <initializer>= &quot;*DeathTest:*DeathTest/*&quot;</initializer>
@@ -49,11 +49,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="165" column="19" bodyfile="lib/googletest/src/gtest.cc" bodystart="165" bodyend="-1"/>
-        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1ac5684d824a59e963cb3274c79d0b6df3" compoundref="df/d5b/gtest_8cc" startline="4502" endline="4535">testing::internal::UnitTestImpl::GetTestCase</referencedby>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1a6438a25b62877163bec864df1369909b" compoundref="df/d5b/gtest_8cc" startline="4502" endline="4535">UnitTestImpl::GetTestCase</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="d0/d75/namespacetesting_1a317291240e750e2142a23cbd52bc5aec" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="d0/d75/namespacetesting_1ae0e90ff7c445117e179c0eb91d9960cf" prot="public" static="yes" mutable="no">
         <type>const char</type>
-        <definition>const char testing::kDefaultDeathTestStyle[]</definition>
+        <definition>const char kDefaultDeathTestStyle[]</definition>
         <argsstring>[]</argsstring>
         <name>kDefaultDeathTestStyle</name>
         <initializer>= &quot;fast&quot;</initializer>
@@ -65,9 +65,9 @@
         </inbodydescription>
         <location file="lib/googletest/src/gtest-death-test.cc" line="84" column="19" bodyfile="lib/googletest/src/gtest-death-test.cc" bodystart="84" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="d0/d75/namespacetesting_1aa5a002b5bb3784c830b1c99aa2688f27" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="d0/d75/namespacetesting_1ac5dc0c0255997f89dc268e114ff6f59e" prot="public" static="yes" mutable="no">
         <type>const char</type>
-        <definition>const char testing::kDefaultOutputFile[]</definition>
+        <definition>const char kDefaultOutputFile[]</definition>
         <argsstring>[]</argsstring>
         <name>kDefaultOutputFile</name>
         <initializer>= &quot;test_detail.xml&quot;</initializer>
@@ -78,11 +78,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="171" column="19" bodyfile="lib/googletest/src/gtest.cc" bodystart="171" bodyend="-1"/>
-        <referencedby refid="d3/d9a/classtesting_1_1internal_1_1UnitTestOptions_1a993fb30ad66104158c8c0ac508daca3f" compoundref="df/d5b/gtest_8cc" startline="426" endline="455">testing::internal::UnitTestOptions::GetAbsolutePathToOutputFile</referencedby>
+        <referencedby refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1a8cd6d2ad634d8f29bd2345d5b2ec5673" compoundref="df/d5b/gtest_8cc" startline="426" endline="455">UnitTestOptions::GetAbsolutePathToOutputFile</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="d0/d75/namespacetesting_1a0a2a3239fb038e7ce83195d89941872d" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="d0/d75/namespacetesting_1a1b6299d8c2a3b3dc522db40e1858527b" prot="public" static="yes" mutable="no">
         <type>const char</type>
-        <definition>const char testing::kDisableTestFilter[]</definition>
+        <definition>const char kDisableTestFilter[]</definition>
         <argsstring>[]</argsstring>
         <name>kDisableTestFilter</name>
         <initializer>= &quot;DISABLED_*:*/DISABLED_*&quot;</initializer>
@@ -93,11 +93,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="160" column="19" bodyfile="lib/googletest/src/gtest.cc" bodystart="160" bodyend="-1"/>
-        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1abd47e447f0c2557ed528db0350671bed" compoundref="df/d5b/gtest_8cc" startline="4789" endline="4840">testing::internal::UnitTestImpl::FilterTests</referencedby>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1af8cfcffb71cba69a55105ddac96786aa" compoundref="df/d5b/gtest_8cc" startline="4789" endline="4840">UnitTestImpl::FilterTests</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="d0/d75/namespacetesting_1ae605f2ccac04616bb7812ca72e517082" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="d0/d75/namespacetesting_1af923b7f5ce597d321ccd3f7e62afb270" prot="public" static="no" mutable="no">
         <type>const int</type>
-        <definition>const int testing::kMaxStackTraceDepth</definition>
+        <definition>const int kMaxStackTraceDepth</definition>
         <argsstring></argsstring>
         <name>kMaxStackTraceDepth</name>
         <initializer>= 100</initializer>
@@ -109,9 +109,9 @@
         </inbodydescription>
         <location file="lib/googletest/include/gtest/gtest.h" line="147" column="11" bodyfile="lib/googletest/include/gtest/gtest.h" bodystart="147" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="d0/d75/namespacetesting_1ae9689f28cd859736f734623b26c93d88" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="d0/d75/namespacetesting_1a19e6745e1137a363b563e09db9035c74" prot="public" static="yes" mutable="no">
         <type>const char *const</type>
-        <definition>const char* const testing::kReservedTestCaseAttributes[]</definition>
+        <definition>const char* const kReservedTestCaseAttributes[]</definition>
         <argsstring>[]</argsstring>
         <name>kReservedTestCaseAttributes</name>
         <initializer>= {
@@ -131,9 +131,9 @@
         <location file="lib/googletest/src/gtest.cc" line="2098" column="25" bodyfile="lib/googletest/src/gtest.cc" bodystart="2098" bodyend="-1"/>
         <referencedby refid="d0/d75/namespacetesting_1acb3fdfadf475a3c2f5e22a3dae73532a" compoundref="df/d5b/gtest_8cc" startline="2112" endline="2125">GetReservedAttributesForElement</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="d0/d75/namespacetesting_1af44b2969928d37e9081145760f21e79a" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="d0/d75/namespacetesting_1ae92e65fc9642c6992b46eba713317aa8" prot="public" static="yes" mutable="no">
         <type>const char *const</type>
-        <definition>const char* const testing::kReservedTestSuiteAttributes[]</definition>
+        <definition>const char* const kReservedTestSuiteAttributes[]</definition>
         <argsstring>[]</argsstring>
         <name>kReservedTestSuiteAttributes</name>
         <initializer>= {
@@ -153,9 +153,9 @@
         <location file="lib/googletest/src/gtest.cc" line="2088" column="25" bodyfile="lib/googletest/src/gtest.cc" bodystart="2088" bodyend="-1"/>
         <referencedby refid="d0/d75/namespacetesting_1acb3fdfadf475a3c2f5e22a3dae73532a" compoundref="df/d5b/gtest_8cc" startline="2112" endline="2125">GetReservedAttributesForElement</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="d0/d75/namespacetesting_1afa194c15a2ac0e03029019b0f4029968" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="d0/d75/namespacetesting_1ab637e267cd7ea48bd2f428cd47701d30" prot="public" static="yes" mutable="no">
         <type>const char *const</type>
-        <definition>const char* const testing::kReservedTestSuitesAttributes[]</definition>
+        <definition>const char* const kReservedTestSuitesAttributes[]</definition>
         <argsstring>[]</argsstring>
         <name>kReservedTestSuitesAttributes</name>
         <initializer>= {
@@ -177,9 +177,9 @@
         <location file="lib/googletest/src/gtest.cc" line="2075" column="25" bodyfile="lib/googletest/src/gtest.cc" bodystart="2075" bodyend="-1"/>
         <referencedby refid="d0/d75/namespacetesting_1acb3fdfadf475a3c2f5e22a3dae73532a" compoundref="df/d5b/gtest_8cc" startline="2112" endline="2125">GetReservedAttributesForElement</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="d0/d75/namespacetesting_1a5f76dfdb8cb2664da54e320ecaba3643" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="d0/d75/namespacetesting_1aab047cced200c1809bef2340dabe904f" prot="public" static="yes" mutable="no">
         <type>const char</type>
-        <definition>const char testing::kTestShardIndex[]</definition>
+        <definition>const char kTestShardIndex[]</definition>
         <argsstring>[]</argsstring>
         <name>kTestShardIndex</name>
         <initializer>= &quot;GTEST_SHARD_INDEX&quot;</initializer>
@@ -190,14 +190,14 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="174" column="19" bodyfile="lib/googletest/src/gtest.cc" bodystart="174" bodyend="-1"/>
-        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1abd47e447f0c2557ed528db0350671bed" compoundref="df/d5b/gtest_8cc" startline="4789" endline="4840">testing::internal::UnitTestImpl::FilterTests</referencedby>
-        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1abdba10a8c97e272ab4cee97cb652c957" compoundref="df/d5b/gtest_8cc" startline="3056" endline="3089">testing::internal::PrettyUnitTestResultPrinter::OnTestIterationStart</referencedby>
-        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a1fb6be9971f4768c4136a05aa9e7e375" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">testing::internal::UnitTestImpl::RunAllTests</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a0fe41657b1d1ab7ec4e37ec07403ee6c" compoundref="df/d5b/gtest_8cc" startline="4715" endline="4755">testing::internal::ShouldShard</referencedby>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1af8cfcffb71cba69a55105ddac96786aa" compoundref="df/d5b/gtest_8cc" startline="4789" endline="4840">UnitTestImpl::FilterTests</referencedby>
+        <referencedby refid="d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer_1aab7032bcb450f58f2ce48c00ad6401e8" compoundref="df/d5b/gtest_8cc" startline="3056" endline="3089">PrettyUnitTestResultPrinter::OnTestIterationStart</referencedby>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1a4d5d6a2e8fa3b918a284252602a98279" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">UnitTestImpl::RunAllTests</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a57e2697262a419061fc4cd3377a9271e" compoundref="df/d5b/gtest_8cc" startline="4715" endline="4755">testing::internal::ShouldShard</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="d0/d75/namespacetesting_1a57d3eeb1e968b4f1efc4787b2d39fbfa" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="d0/d75/namespacetesting_1a7f337be0b85c12d2ed9bcaedbba7af99" prot="public" static="yes" mutable="no">
         <type>const char</type>
-        <definition>const char testing::kTestShardStatusFile[]</definition>
+        <definition>const char kTestShardStatusFile[]</definition>
         <argsstring>[]</argsstring>
         <name>kTestShardStatusFile</name>
         <initializer>= &quot;GTEST_SHARD_STATUS_FILE&quot;</initializer>
@@ -208,11 +208,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="178" column="19" bodyfile="lib/googletest/src/gtest.cc" bodystart="178" bodyend="-1"/>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a19b35b39782d41e6ef76e1910a3a502e" compoundref="df/d5b/gtest_8cc" startline="4693" endline="4707">testing::internal::WriteToShardStatusFileIfNeeded</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a656c8ec8f2ee82fa90b9ba61b6145538" compoundref="df/d5b/gtest_8cc" startline="4693" endline="4707">testing::internal::WriteToShardStatusFileIfNeeded</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="d0/d75/namespacetesting_1a7542311baba200ebabd4065717606f6e" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="d0/d75/namespacetesting_1a19fe5fab1b6f6ecbfc6357a56f17aa03" prot="public" static="yes" mutable="no">
         <type>const char</type>
-        <definition>const char testing::kTestTotalShards[]</definition>
+        <definition>const char kTestTotalShards[]</definition>
         <argsstring>[]</argsstring>
         <name>kTestTotalShards</name>
         <initializer>= &quot;GTEST_TOTAL_SHARDS&quot;</initializer>
@@ -223,14 +223,14 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="176" column="19" bodyfile="lib/googletest/src/gtest.cc" bodystart="176" bodyend="-1"/>
-        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1abd47e447f0c2557ed528db0350671bed" compoundref="df/d5b/gtest_8cc" startline="4789" endline="4840">testing::internal::UnitTestImpl::FilterTests</referencedby>
-        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1abdba10a8c97e272ab4cee97cb652c957" compoundref="df/d5b/gtest_8cc" startline="3056" endline="3089">testing::internal::PrettyUnitTestResultPrinter::OnTestIterationStart</referencedby>
-        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a1fb6be9971f4768c4136a05aa9e7e375" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">testing::internal::UnitTestImpl::RunAllTests</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a0fe41657b1d1ab7ec4e37ec07403ee6c" compoundref="df/d5b/gtest_8cc" startline="4715" endline="4755">testing::internal::ShouldShard</referencedby>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1af8cfcffb71cba69a55105ddac96786aa" compoundref="df/d5b/gtest_8cc" startline="4789" endline="4840">UnitTestImpl::FilterTests</referencedby>
+        <referencedby refid="d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer_1aab7032bcb450f58f2ce48c00ad6401e8" compoundref="df/d5b/gtest_8cc" startline="3056" endline="3089">PrettyUnitTestResultPrinter::OnTestIterationStart</referencedby>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1a4d5d6a2e8fa3b918a284252602a98279" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">UnitTestImpl::RunAllTests</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a57e2697262a419061fc4cd3377a9271e" compoundref="df/d5b/gtest_8cc" startline="4715" endline="4755">testing::internal::ShouldShard</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="d0/d75/namespacetesting_1a236f8612e4b148d8d989a311a30a4557" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="d0/d75/namespacetesting_1a1e85b0754dce94c87f067d7b0379c171" prot="public" static="yes" mutable="no">
         <type>const char</type>
-        <definition>const char testing::kUniversalFilter[]</definition>
+        <definition>const char kUniversalFilter[]</definition>
         <argsstring>[]</argsstring>
         <name>kUniversalFilter</name>
         <initializer>= &quot;*&quot;</initializer>
@@ -241,19 +241,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="168" column="19" bodyfile="lib/googletest/src/gtest.cc" bodystart="168" bodyend="-1"/>
-        <referencedby refid="d3/d9a/classtesting_1_1internal_1_1UnitTestOptions_1a9975b59cece94874b303421697e3bca6" compoundref="df/d5b/gtest_8cc" startline="502" endline="528">testing::internal::UnitTestOptions::FilterMatchesTest</referencedby>
+        <referencedby refid="d9/df0/classtesting_1_1internal_1_1_unit_test_options_1ae2c97834ce45d56f46d39df7cc310109" compoundref="df/d5b/gtest_8cc" startline="502" endline="528">UnitTestOptions::FilterMatchesTest</referencedby>
         <referencedby refid="d0/d75/namespacetesting_1a56fbc164c7dc53596c23e519d8f1ca3c" compoundref="df/d5b/gtest_8cc" startline="192" endline="200">GetDefaultFilter</referencedby>
-        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1abdba10a8c97e272ab4cee97cb652c957" compoundref="df/d5b/gtest_8cc" startline="3056" endline="3089">testing::internal::PrettyUnitTestResultPrinter::OnTestIterationStart</referencedby>
+        <referencedby refid="d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer_1aab7032bcb450f58f2ce48c00ad6401e8" compoundref="df/d5b/gtest_8cc" startline="3056" endline="3089">PrettyUnitTestResultPrinter::OnTestIterationStart</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="d0/d75/namespacetesting_1a460d7b998622e332392c1e00be3a60d5" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="dc/d71/classtesting_1_1Environment" kindref="compound">Environment</ref> *</type>
+        <type><ref refid="d6/d91/classtesting_1_1_environment" kindref="compound">Environment</ref> *</type>
         <definition>Environment* testing::AddGlobalTestEnvironment</definition>
         <argsstring>(Environment *env)</argsstring>
         <name>AddGlobalTestEnvironment</name>
         <param>
-          <type><ref refid="dc/d71/classtesting_1_1Environment" kindref="compound">Environment</ref> *</type>
+          <type><ref refid="d6/d91/classtesting_1_1_environment" kindref="compound">Environment</ref> *</type>
           <declname>env</declname>
         </param>
         <briefdescription>
@@ -290,9 +290,9 @@
         <location file="lib/googletest/src/gtest.cc" line="2108" column="13" bodyfile="lib/googletest/src/gtest.cc" bodystart="2108" bodyend="2110"/>
         <referencedby refid="d0/d75/namespacetesting_1acb3fdfadf475a3c2f5e22a3dae73532a" compoundref="df/d5b/gtest_8cc" startline="2112" endline="2125">GetReservedAttributesForElement</referencedby>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1a8d91083190a5914bfe8c5666e2dbca9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dd/d5f/classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
-        <definition>GTEST_API_ AssertionResult testing::AssertionFailure</definition>
+      <memberdef kind="function" id="d0/d75/namespacetesting_1a8a25612ce946e4ffc6c9b911e7ff6a09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dec/classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>GTEST_API_ AssertionResult AssertionFailure</definition>
         <argsstring>()</argsstring>
         <name>AssertionFailure</name>
         <briefdescription>
@@ -302,28 +302,27 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="1015" column="17" bodyfile="lib/googletest/src/gtest.cc" bodystart="1015" bodyend="1017" declfile="lib/googletest/include/gtest/gtest.h" declline="342" declcolumn="28"/>
-        <referencedby refid="d0/d75/namespacetesting_1a37b4cce49a6850c1f06772de1940c28d" compoundref="df/d5b/gtest_8cc" startline="1021" endline="1023">AssertionFailure</referencedby>
+        <referencedby refid="d0/d75/namespacetesting_1a72c97910499dac9ec752ad77dccdda3c" compoundref="df/d5b/gtest_8cc" startline="1021" endline="1023">AssertionFailure</referencedby>
         <referencedby refid="db/d6e/gtest__pred__impl_8h_1a41d32b74fac585ac04cc9ba037c9fed4" compoundref="db/d6e/gtest__pred__impl_8h" startline="87" endline="96">AssertPred1Helper</referencedby>
         <referencedby refid="db/d6e/gtest__pred__impl_8h_1aa21b5175030ef2d76837bde68459effe" compoundref="db/d6e/gtest__pred__impl_8h" startline="129" endline="142">AssertPred2Helper</referencedby>
         <referencedby refid="db/d6e/gtest__pred__impl_8h_1ae48a4ec033f85849b47bcbd2aa94baab" compoundref="db/d6e/gtest__pred__impl_8h" startline="178" endline="195">AssertPred3Helper</referencedby>
         <referencedby refid="db/d6e/gtest__pred__impl_8h_1a22f4e27e6b18091281c45d4395c98517" compoundref="db/d6e/gtest__pred__impl_8h" startline="234" endline="255">AssertPred4Helper</referencedby>
         <referencedby refid="db/d6e/gtest__pred__impl_8h_1a1012d0b317e600d13b1a74712f0d8a48" compoundref="db/d6e/gtest__pred__impl_8h" startline="297" endline="322">AssertPred5Helper</referencedby>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a894ffccd936d78fd555f490020c27f0a" compoundref="d8/d73/gtest_8h" startline="1486" endline="1493">testing::internal::CmpHelperOpFailure</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a5f74b933606b0a742cd5a8ad2d7087e0" compoundref="df/d5b/gtest_8cc" startline="1533" endline="1545">testing::internal::CmpHelperSTRCASENE</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a6b485231a046ff760844a0321c04870b" compoundref="df/d5b/gtest_8cc" startline="1519" endline="1530">testing::internal::CmpHelperSTRNE</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1aea60207c4cedc8946a70ada62e38da8f" compoundref="df/d5b/gtest_8cc" startline="1362" endline="1379">testing::internal::DoubleNearPredFormat</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a290e3967783ec2de56981c8b1cec37de" compoundref="df/d5b/gtest_8cc" startline="1312" endline="1343">testing::internal::EqFailure</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a675759a40d2867bc51981f7594f6beca" compoundref="df/d5b/gtest_8cc" startline="1885" endline="1897">testing::internal::CmpHelperSTRNE</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a5059777ec92cd98da4c4159dee8201c2" compoundref="df/d5b/gtest_8cc" startline="1362" endline="1379">testing::internal::DoubleNearPredFormat</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a120b81c390ec6bf851e21ffb141871e5" compoundref="df/d5b/gtest_8cc" startline="1312" endline="1343">testing::internal::EqFailure</referencedby>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a17b52b6b1f81f6dcad5cc4d12e5173a6" compoundref="df/d5b/gtest_8cc" startline="1384" endline="1415">testing::internal::FloatingPointLE</referencedby>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a14ff02e6d151f45e998657674e9af88a" compoundref="df/d5b/gtest_8cc" startline="631" endline="665">testing::internal::HasOneFailure</referencedby>
         <referencedby refid="de/d18/namespacetesting_1_1anonymous__namespace_02gtest_8cc_03_1a0e1cb1e2b03a87a9c893322e4caab670" compoundref="df/d5b/gtest_8cc" startline="1583" endline="1598">testing::anonymous_namespace{gtest.cc}::IsSubstringImpl</referencedby>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1a37b4cce49a6850c1f06772de1940c28d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dd/d5f/classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
-        <definition>GTEST_API_ AssertionResult testing::AssertionFailure</definition>
+      <memberdef kind="function" id="d0/d75/namespacetesting_1a72c97910499dac9ec752ad77dccdda3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dec/classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>GTEST_API_ AssertionResult AssertionFailure</definition>
         <argsstring>(const Message &amp;message)</argsstring>
         <name>AssertionFailure</name>
         <param>
-          <type>const <ref refid="d3/d98/classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+          <type>const <ref refid="d2/da9/classtesting_1_1_message" kindref="compound">Message</ref> &amp;</type>
           <declname>message</declname>
         </param>
         <briefdescription>
@@ -333,11 +332,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="1021" column="17" bodyfile="lib/googletest/src/gtest.cc" bodystart="1021" bodyend="1023" declfile="lib/googletest/include/gtest/gtest.h" declline="346" declcolumn="28"/>
-        <references refid="d0/d75/namespacetesting_1a8d91083190a5914bfe8c5666e2dbca9b" compoundref="df/d5b/gtest_8cc" startline="1015" endline="1017">AssertionFailure</references>
+        <references refid="d0/d75/namespacetesting_1a8a25612ce946e4ffc6c9b911e7ff6a09" compoundref="df/d5b/gtest_8cc" startline="1015" endline="1017">AssertionFailure</references>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1a74a3d26c1286bd4d7c189c5dff2483ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dd/d5f/classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
-        <definition>GTEST_API_ AssertionResult testing::AssertionSuccess</definition>
+      <memberdef kind="function" id="d0/d75/namespacetesting_1a537d27ab3cdcde6857e3cc95878f8f4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dec/classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>GTEST_API_ AssertionResult AssertionSuccess</definition>
         <argsstring>()</argsstring>
         <name>AssertionSuccess</name>
         <briefdescription>
@@ -354,18 +353,17 @@
         <referencedby refid="db/d6e/gtest__pred__impl_8h_1a1012d0b317e600d13b1a74712f0d8a48" compoundref="db/d6e/gtest__pred__impl_8h" startline="297" endline="322">AssertPred5Helper</referencedby>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a4638c74d9b32e971f9b321af6fafc2f1" compoundref="d8/d73/gtest_8h" startline="1387" endline="1398">testing::internal::CmpHelperEQ</referencedby>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a98ce463e5dbe0c6120fa817e1f8f2944" compoundref="d8/d73/gtest_8h" startline="1631" endline="1654">testing::internal::CmpHelperFloatingPointEQ</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a898b1e47a9d978e99318b224f69a54e4" compoundref="df/d5b/gtest_8cc" startline="1503" endline="1516">testing::internal::CmpHelperSTRCASEEQ</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a5f74b933606b0a742cd5a8ad2d7087e0" compoundref="df/d5b/gtest_8cc" startline="1533" endline="1545">testing::internal::CmpHelperSTRCASENE</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a2863c85877728b2c223cf6ade4a530c1" compoundref="df/d5b/gtest_8cc" startline="1487" endline="1500">testing::internal::CmpHelperSTREQ</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a6b485231a046ff760844a0321c04870b" compoundref="df/d5b/gtest_8cc" startline="1519" endline="1530">testing::internal::CmpHelperSTRNE</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1aea60207c4cedc8946a70ada62e38da8f" compoundref="df/d5b/gtest_8cc" startline="1362" endline="1379">testing::internal::DoubleNearPredFormat</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a72d1706a1f8e03ef759f9c80712b0072" compoundref="df/d5b/gtest_8cc" startline="1869" endline="1882">testing::internal::CmpHelperSTREQ</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a675759a40d2867bc51981f7594f6beca" compoundref="df/d5b/gtest_8cc" startline="1885" endline="1897">testing::internal::CmpHelperSTRNE</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a5059777ec92cd98da4c4159dee8201c2" compoundref="df/d5b/gtest_8cc" startline="1362" endline="1379">testing::internal::DoubleNearPredFormat</referencedby>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a17b52b6b1f81f6dcad5cc4d12e5173a6" compoundref="df/d5b/gtest_8cc" startline="1384" endline="1415">testing::internal::FloatingPointLE</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1aace9bb29e075d3cc3c4e689de03f0e71">testing::internal::GTEST_IMPL_CMP_HELPER_</referencedby>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a14ff02e6d151f45e998657674e9af88a" compoundref="df/d5b/gtest_8cc" startline="631" endline="665">testing::internal::HasOneFailure</referencedby>
         <referencedby refid="de/d18/namespacetesting_1_1anonymous__namespace_02gtest_8cc_03_1a0e1cb1e2b03a87a9c893322e4caab670" compoundref="df/d5b/gtest_8cc" startline="1583" endline="1598">testing::anonymous_namespace{gtest.cc}::IsSubstringImpl</referencedby>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1a84c020b981d0eb4eabfb0feda155aaaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dd/d5f/classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
-        <definition>GTEST_API_ AssertionResult testing::DoubleLE</definition>
+      <memberdef kind="function" id="d0/d75/namespacetesting_1afc633c2faafd31f51fe686389a5a2de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dec/classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>GTEST_API_ AssertionResult DoubleLE</definition>
         <argsstring>(const char *expr1, const char *expr2, double val1, double val2)</argsstring>
         <name>DoubleLE</name>
         <param>
@@ -392,9 +390,9 @@
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="1428" column="17" bodyfile="lib/googletest/src/gtest.cc" bodystart="1428" bodyend="1431" declfile="lib/googletest/include/gtest/gtest.h" declline="2060" declcolumn="28"/>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1a69106491c2e7f50e50da0ce5e8ae4374" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dd/d5f/classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
-        <definition>GTEST_API_ AssertionResult testing::FloatLE</definition>
+      <memberdef kind="function" id="d0/d75/namespacetesting_1aef005b3a2875c4878ba5891db34f7734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dec/classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>GTEST_API_ AssertionResult FloatLE</definition>
         <argsstring>(const char *expr1, const char *expr2, float val1, float val2)</argsstring>
         <name>FloatLE</name>
         <param>
@@ -448,8 +446,8 @@
         <references refid="d0/da7/namespacetesting_1_1internal_1aad4beed95d0846e6ffc5da0978ef3bb9" compoundref="d6/da4/gtest-message_8h" startline="243" endline="245">testing::internal::StreamableToString</references>
         <referencedby refid="d0/d75/namespacetesting_1ab8cabb45f3d8c52d336372c1b62d75c5" compoundref="df/d5b/gtest_8cc" startline="2822" endline="2824">FormatTestCaseCount</referencedby>
         <referencedby refid="d0/d75/namespacetesting_1a7420a0eb48a02ba210e265afb75febdf" compoundref="df/d5b/gtest_8cc" startline="2817" endline="2819">FormatTestCount</referencedby>
-        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1a7a62fe58fa6f6aace813eb62b31e5a51" compoundref="df/d5b/gtest_8cc" startline="3149" endline="3159">testing::internal::PrettyUnitTestResultPrinter::OnTestCaseEnd</referencedby>
-        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1adcb68c729565d4bcdf8418a52902c3de" compoundref="df/d5b/gtest_8cc" startline="3098" endline="3109">testing::internal::PrettyUnitTestResultPrinter::OnTestCaseStart</referencedby>
+        <referencedby refid="d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer_1adecad7fba2c2b8083a93a152046f06dd" compoundref="df/d5b/gtest_8cc" startline="3149" endline="3159">PrettyUnitTestResultPrinter::OnTestCaseEnd</referencedby>
+        <referencedby refid="d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer_1ac6bcd29fa938fde58ea70012e7ea420a" compoundref="df/d5b/gtest_8cc" startline="3098" endline="3109">PrettyUnitTestResultPrinter::OnTestCaseStart</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d75/namespacetesting_1ab8cabb45f3d8c52d336372c1b62d75c5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
@@ -468,8 +466,8 @@
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="2822" column="20" bodyfile="lib/googletest/src/gtest.cc" bodystart="2822" bodyend="2824"/>
         <references refid="d0/d75/namespacetesting_1a33e070c3e994cb75f9017fa2a044d536" compoundref="df/d5b/gtest_8cc" startline="2809" endline="2814">FormatCountableNoun</references>
-        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1ac29b30216023baddda04ef5889f484ff" compoundref="df/d5b/gtest_8cc" startline="3193" endline="3229">testing::internal::PrettyUnitTestResultPrinter::OnTestIterationEnd</referencedby>
-        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1abdba10a8c97e272ab4cee97cb652c957" compoundref="df/d5b/gtest_8cc" startline="3056" endline="3089">testing::internal::PrettyUnitTestResultPrinter::OnTestIterationStart</referencedby>
+        <referencedby refid="d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer_1aa21b349a51378e47877ee6d153c37116" compoundref="df/d5b/gtest_8cc" startline="3193" endline="3229">PrettyUnitTestResultPrinter::OnTestIterationEnd</referencedby>
+        <referencedby refid="d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer_1aab7032bcb450f58f2ce48c00ad6401e8" compoundref="df/d5b/gtest_8cc" startline="3056" endline="3089">PrettyUnitTestResultPrinter::OnTestIterationStart</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d75/namespacetesting_1a7420a0eb48a02ba210e265afb75febdf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
@@ -488,8 +486,8 @@
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="2817" column="20" bodyfile="lib/googletest/src/gtest.cc" bodystart="2817" bodyend="2819"/>
         <references refid="d0/d75/namespacetesting_1a33e070c3e994cb75f9017fa2a044d536" compoundref="df/d5b/gtest_8cc" startline="2809" endline="2814">FormatCountableNoun</references>
-        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1ac29b30216023baddda04ef5889f484ff" compoundref="df/d5b/gtest_8cc" startline="3193" endline="3229">testing::internal::PrettyUnitTestResultPrinter::OnTestIterationEnd</referencedby>
-        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1abdba10a8c97e272ab4cee97cb652c957" compoundref="df/d5b/gtest_8cc" startline="3056" endline="3089">testing::internal::PrettyUnitTestResultPrinter::OnTestIterationStart</referencedby>
+        <referencedby refid="d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer_1aa21b349a51378e47877ee6d153c37116" compoundref="df/d5b/gtest_8cc" startline="3193" endline="3229">PrettyUnitTestResultPrinter::OnTestIterationEnd</referencedby>
+        <referencedby refid="d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer_1aab7032bcb450f58f2ce48c00ad6401e8" compoundref="df/d5b/gtest_8cc" startline="3056" endline="3089">PrettyUnitTestResultPrinter::OnTestIterationStart</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d75/namespacetesting_1a4354761948a5cf56fdf905418a0f78f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
@@ -507,8 +505,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="2127" column="20" bodyfile="lib/googletest/src/gtest.cc" bodystart="2127" bodyend="2139"/>
-        <references refid="d3/d98/classtesting_1_1Message_1a2cdc4df62bdcc9df37651a1cf527704e" compoundref="df/d5b/gtest_8cc" startline="981" endline="983">testing::Message::GetString</references>
-        <references refid="cpp/container/vector/size_1">std::vector&lt; T &gt;::size</references>
+        <references refid="d2/da9/classtesting_1_1_message_1a764f99b38cb3cd18ab87c5261321e063" compoundref="df/d5b/gtest_8cc" startline="981" endline="983">Message::GetString</references>
+        <references refid="cpp/container/vector/size_1">vector&lt; T &gt;::size</references>
         <referencedby refid="d0/d75/namespacetesting_1a4c9bd414747bf0563bfdb32a2307dcdf" compoundref="df/d5b/gtest_8cc" startline="2141" endline="2151">ValidateTestPropertyName</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d75/namespacetesting_1a56fbc164c7dc53596c23e519d8f1ca3c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -523,7 +521,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="192" column="19" bodyfile="lib/googletest/src/gtest.cc" bodystart="192" bodyend="200"/>
-        <references refid="d0/d75/namespacetesting_1a236f8612e4b148d8d989a311a30a4557" compoundref="df/d5b/gtest_8cc" startline="168">kUniversalFilter</references>
+        <references refid="d0/d75/namespacetesting_1a1e85b0754dce94c87f067d7b0379c171" compoundref="df/d5b/gtest_8cc" startline="168">kUniversalFilter</references>
       </memberdef>
       <memberdef kind="function" id="d0/d75/namespacetesting_1acb3fdfadf475a3c2f5e22a3dae73532a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &gt;</type>
@@ -543,11 +541,11 @@
         <location file="lib/googletest/src/gtest.cc" line="2112" column="20" bodyfile="lib/googletest/src/gtest.cc" bodystart="2112" bodyend="2125"/>
         <references refid="d0/d75/namespacetesting_1a956d4c522454fa6dfd75b5bbbefe8f9e" compoundref="df/d5b/gtest_8cc" startline="2108" endline="2110">ArrayAsVector</references>
         <references refid="d3/dc9/gtest-port_8h_1ab54343f0a36dc4cb0ce8a478dd7847b8" compoundref="d3/dc9/gtest-port_8h" startline="1295">GTEST_CHECK_</references>
-        <references refid="d0/d75/namespacetesting_1ae9689f28cd859736f734623b26c93d88" compoundref="df/d5b/gtest_8cc" startline="2098">kReservedTestCaseAttributes</references>
-        <references refid="d0/d75/namespacetesting_1af44b2969928d37e9081145760f21e79a" compoundref="df/d5b/gtest_8cc" startline="2088">kReservedTestSuiteAttributes</references>
-        <references refid="d0/d75/namespacetesting_1afa194c15a2ac0e03029019b0f4029968" compoundref="df/d5b/gtest_8cc" startline="2075">kReservedTestSuitesAttributes</references>
-        <referencedby refid="d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa8ca7066de948d26d171597430c75839" compoundref="df/d5b/gtest_8cc" startline="3607" endline="3621">testing::internal::XmlUnitTestResultPrinter::OutputXmlAttribute</referencedby>
-        <referencedby refid="d6/d6e/classtesting_1_1TestResult_1a818c06cd2bfc00d6c81b0cebca044cb1" compoundref="df/d5b/gtest_8cc" startline="2155" endline="2159">testing::TestResult::ValidateTestProperty</referencedby>
+        <references refid="d0/d75/namespacetesting_1a19e6745e1137a363b563e09db9035c74" compoundref="df/d5b/gtest_8cc" startline="2098">kReservedTestCaseAttributes</references>
+        <references refid="d0/d75/namespacetesting_1ae92e65fc9642c6992b46eba713317aa8" compoundref="df/d5b/gtest_8cc" startline="2088">kReservedTestSuiteAttributes</references>
+        <references refid="d0/d75/namespacetesting_1ab637e267cd7ea48bd2f428cd47701d30" compoundref="df/d5b/gtest_8cc" startline="2075">kReservedTestSuitesAttributes</references>
+        <referencedby refid="d3/dc6/classtesting_1_1internal_1_1_xml_unit_test_result_printer_1a4d8342f10ee86c7a4d66a8dc38b778c5" compoundref="df/d5b/gtest_8cc" startline="3607" endline="3621">XmlUnitTestResultPrinter::OutputXmlAttribute</referencedby>
+        <referencedby refid="d1/d69/classtesting_1_1_test_result_1a2443df28261cf11c12cb7f53e968261e" compoundref="df/d5b/gtest_8cc" startline="2155" endline="2159">TestResult::ValidateTestProperty</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d75/namespacetesting_1a4c08ba9fcb0581c61e25968e520efa48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -830,7 +828,7 @@
           <type>also_run_disabled_tests</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a1055088bb9b867e1b7b8f096f519d7c5" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;also_run_disabled_tests&quot;, false)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1af17bf74326e1076c47455ef2618c1a1a" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;also_run_disabled_tests&quot;, false)</type>
         </param>
         <param>
           <type>&quot;Run disabled tests</type>
@@ -856,7 +854,7 @@
           <type>break_on_failure</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a1055088bb9b867e1b7b8f096f519d7c5" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;break_on_failure&quot;, false)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1af17bf74326e1076c47455ef2618c1a1a" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;break_on_failure&quot;, false)</type>
         </param>
         <param>
           <type>&quot;True iff a failed assertion should be a debugger break-point.&quot;</type>
@@ -878,7 +876,7 @@
           <type>catch_exceptions</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a1055088bb9b867e1b7b8f096f519d7c5" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;catch_exceptions&quot;, true)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1af17bf74326e1076c47455ef2618c1a1a" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;catch_exceptions&quot;, true)</type>
         </param>
         <param>
           <type>&quot;True iff &quot; GTEST_NAME_ &quot; should catch exceptions and treat them as test failures.&quot;</type>
@@ -900,7 +898,7 @@
           <type>death_test_use_fork</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a1055088bb9b867e1b7b8f096f519d7c5" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;death_test_use_fork&quot;, false)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1af17bf74326e1076c47455ef2618c1a1a" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;death_test_use_fork&quot;, false)</type>
         </param>
         <param>
           <type>&quot;Instructs to use fork()/_exit() instead of clone() in death tests. &quot; &quot;Ignored and always uses fork() on POSIX systems where clone() is not &quot; &quot;implemented. Useful when running under valgrind or similar tools if &quot; &quot;those do not support clone(). Valgrind 3.3.1 will just fail if &quot; &quot;it sees an unsupported combination of clone() flags. &quot; &quot;It is not recommended to use this flag w/o valgrind though it will &quot; &quot;work in 99% of the cases. Once valgrind is</type>
@@ -948,7 +946,7 @@
           <type>print_time</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a1055088bb9b867e1b7b8f096f519d7c5" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;print_time&quot;, true)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1af17bf74326e1076c47455ef2618c1a1a" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;print_time&quot;, true)</type>
         </param>
         <param>
           <type>&quot;True iff &quot; GTEST_NAME_ &quot; should display elapsed time in text output.&quot;</type>
@@ -992,7 +990,7 @@
           <type>shuffle</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a1055088bb9b867e1b7b8f096f519d7c5" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;shuffle&quot;, false)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1af17bf74326e1076c47455ef2618c1a1a" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;shuffle&quot;, false)</type>
         </param>
         <param>
           <type>&quot;True iff &quot; GTEST_NAME_ &quot; should randomize tests&apos; order on every run.&quot;</type>
@@ -1014,7 +1012,7 @@
           <type>throw_on_failure</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a1055088bb9b867e1b7b8f096f519d7c5" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;throw_on_failure&quot;, false)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1af17bf74326e1076c47455ef2618c1a1a" kindref="member">internal::BoolFromGTestEnv</ref>(&quot;throw_on_failure&quot;, false)</type>
         </param>
         <param>
           <type>&quot;When this flag is</type>
@@ -1040,7 +1038,7 @@
           <type>random_seed</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a2196f070b2d28bceb45c7ad3b565b9ba" kindref="member">internal::Int32FromGTestEnv</ref>(&quot;random_seed&quot;, 0)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1ae2d19821e0bf27e57b2eafe843401e69" kindref="member">internal::Int32FromGTestEnv</ref>(&quot;random_seed&quot;, 0)</type>
         </param>
         <param>
           <type>&quot;Random number seed to use when shuffling test orders. Must be in range &quot; &quot;</type>
@@ -1066,7 +1064,7 @@
           <type>repeat</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a2196f070b2d28bceb45c7ad3b565b9ba" kindref="member">internal::Int32FromGTestEnv</ref>(&quot;repeat&quot;, 1)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1ae2d19821e0bf27e57b2eafe843401e69" kindref="member">internal::Int32FromGTestEnv</ref>(&quot;repeat&quot;, 1)</type>
         </param>
         <param>
           <type>&quot;How many times to repeat each test. Specify a negative number &quot; &quot;for repeating forever. Useful for shaking out flaky tests.&quot;</type>
@@ -1088,7 +1086,7 @@
           <type>stack_trace_depth</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a2196f070b2d28bceb45c7ad3b565b9ba" kindref="member">internal::Int32FromGTestEnv</ref>(&quot;stack_trace_depth&quot;, kMaxStackTraceDepth)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1ae2d19821e0bf27e57b2eafe843401e69" kindref="member">internal::Int32FromGTestEnv</ref>(&quot;stack_trace_depth&quot;, kMaxStackTraceDepth)</type>
         </param>
         <param>
           <type>&quot;The maximum number of stack frames to print when an &quot; &quot;assertion fails. The valid range is 0 through</type>
@@ -1114,7 +1112,7 @@
           <type>color</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1ab38c435530c97f10fd7a8008a76331f2" kindref="member">internal::StringFromGTestEnv</ref>(&quot;color&quot;, &quot;auto&quot;)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a521e624413f88ad92ebfc23ea89c3f1b" kindref="member">internal::StringFromGTestEnv</ref>(&quot;color&quot;, &quot;auto&quot;)</type>
         </param>
         <param>
           <type>&quot;Whether to use colors in the output. Valid values:</type>
@@ -1143,7 +1141,7 @@
           <type>death_test_style</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1ab38c435530c97f10fd7a8008a76331f2" kindref="member">internal::StringFromGTestEnv</ref>(&quot;death_test_style&quot;, kDefaultDeathTestStyle)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a521e624413f88ad92ebfc23ea89c3f1b" kindref="member">internal::StringFromGTestEnv</ref>(&quot;death_test_style&quot;, kDefaultDeathTestStyle)</type>
         </param>
         <param>
           <type>&quot;Indicates how to run a death test in a forked child process: &quot; &quot;\&quot;threadsafe\&quot; (child process re-executes the test binary &quot; &quot;from the beginning, running only the specific death test) or &quot; &quot;\&quot;fast\&quot; (child process runs the death test immediately &quot; &quot;after forking).&quot;</type>
@@ -1165,7 +1163,7 @@
           <type>filter</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1ab38c435530c97f10fd7a8008a76331f2" kindref="member">internal::StringFromGTestEnv</ref>(&quot;filter&quot;, GetDefaultFilter())</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a521e624413f88ad92ebfc23ea89c3f1b" kindref="member">internal::StringFromGTestEnv</ref>(&quot;filter&quot;, GetDefaultFilter())</type>
         </param>
         <param>
           <type>&quot;A colon-separated list of glob (not regex) patterns &quot; &quot;for filtering the tests to</type>
@@ -1191,7 +1189,7 @@
           <type>output</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1ab38c435530c97f10fd7a8008a76331f2" kindref="member">internal::StringFromGTestEnv</ref>(&quot;output&quot;, &quot;&quot;)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a521e624413f88ad92ebfc23ea89c3f1b" kindref="member">internal::StringFromGTestEnv</ref>(&quot;output&quot;, &quot;&quot;)</type>
         </param>
         <param>
           <type>&quot;A format </type>
@@ -1236,7 +1234,7 @@
           <type>stream_result_to</type>
         </param>
         <param>
-          <type><ref refid="d0/da7/namespacetesting_1_1internal_1ab38c435530c97f10fd7a8008a76331f2" kindref="member">internal::StringFromGTestEnv</ref>(&quot;stream_result_to&quot;, &quot;&quot;)</type>
+          <type><ref refid="d0/da7/namespacetesting_1_1internal_1a521e624413f88ad92ebfc23ea89c3f1b" kindref="member">internal::StringFromGTestEnv</ref>(&quot;stream_result_to&quot;, &quot;&quot;)</type>
         </param>
         <param>
           <type>&quot;This flag specifies the host name and the port number on which to stream &quot; &quot;test results. Example: \&quot;localhost:555\&quot;. The flag is effective only on &quot; &quot;Linux.&quot;</type>
@@ -1249,9 +1247,9 @@
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="285" column="1" declfile="lib/googletest/src/gtest.cc" declline="285" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1aee3f6f99df893f576f705f66c0559482" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d0/d75/namespacetesting_1aefed8296a2dd394336ae59e0737ba4c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>GTEST_API_ void testing::InitGoogleTest</definition>
+        <definition>GTEST_API_ void InitGoogleTest</definition>
         <argsstring>(int *argc, char **argv)</argsstring>
         <name>InitGoogleTest</name>
         <param>
@@ -1272,9 +1270,9 @@
         <references refid="d0/da7/namespacetesting_1_1internal_1ac3c6fa93391768aa91c6238b31aaeeb5" compoundref="df/d5b/gtest_8cc" startline="5344" endline="5357">testing::internal::InitGoogleTestImpl</references>
         <referencedby refid="d3/d3a/gtest__main_8cc_1a7f83bdc516d2cb86e20235d94ddf055a" compoundref="d3/d3a/gtest__main_8cc" startline="34" endline="38">main</referencedby>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1a6e9d83553f1d10818d698d45689d8adb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d0/d75/namespacetesting_1a1e9668bd7ea1c9158eca20c9864866f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>GTEST_API_ void testing::InitGoogleTest</definition>
+        <definition>GTEST_API_ void InitGoogleTest</definition>
         <argsstring>(int *argc, wchar_t **argv)</argsstring>
         <name>InitGoogleTest</name>
         <param>
@@ -1294,9 +1292,9 @@
         <location file="lib/googletest/src/gtest.cc" line="5380" column="6" bodyfile="lib/googletest/src/gtest.cc" bodystart="5380" bodyend="5386" declfile="lib/googletest/include/gtest/gtest.h" declline="1367" declcolumn="17"/>
         <references refid="d0/da7/namespacetesting_1_1internal_1ac3c6fa93391768aa91c6238b31aaeeb5" compoundref="df/d5b/gtest_8cc" startline="5344" endline="5357">testing::internal::InitGoogleTestImpl</references>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1a645d822e47dc64b9923e78c880807f12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dd/d5f/classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
-        <definition>GTEST_API_ AssertionResult testing::IsNotSubstring</definition>
+      <memberdef kind="function" id="d0/d75/namespacetesting_1a44cfeea3cff1ac9e2082efd5ab7b9f06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dec/classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>GTEST_API_ AssertionResult IsNotSubstring</definition>
         <argsstring>(const char *needle_expr, const char *haystack_expr, const ::std::string &amp;needle, const ::std::string &amp;haystack)</argsstring>
         <name>IsNotSubstring</name>
         <param>
@@ -1324,9 +1322,9 @@
         <location file="lib/googletest/src/gtest.cc" line="1636" column="17" bodyfile="lib/googletest/src/gtest.cc" bodystart="1636" bodyend="1640" declfile="lib/googletest/include/gtest/gtest.h" declline="1608" declcolumn="28"/>
         <references refid="de/d18/namespacetesting_1_1anonymous__namespace_02gtest_8cc_03_1a0e1cb1e2b03a87a9c893322e4caab670" compoundref="df/d5b/gtest_8cc" startline="1583" endline="1598">testing::anonymous_namespace{gtest.cc}::IsSubstringImpl</references>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1ab553b649b06ef2339cbd90f8dfa119f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dd/d5f/classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
-        <definition>GTEST_API_ AssertionResult testing::IsNotSubstring</definition>
+      <memberdef kind="function" id="d0/d75/namespacetesting_1a4c722362b584ab9565021fd68f2d0003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dec/classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>GTEST_API_ AssertionResult IsNotSubstring</definition>
         <argsstring>(const char *needle_expr, const char *haystack_expr, const char *needle, const char *haystack)</argsstring>
         <name>IsNotSubstring</name>
         <param>
@@ -1354,9 +1352,9 @@
         <location file="lib/googletest/src/gtest.cc" line="1618" column="17" bodyfile="lib/googletest/src/gtest.cc" bodystart="1618" bodyend="1622" declfile="lib/googletest/include/gtest/gtest.h" declline="1599" declcolumn="28"/>
         <references refid="de/d18/namespacetesting_1_1anonymous__namespace_02gtest_8cc_03_1a0e1cb1e2b03a87a9c893322e4caab670" compoundref="df/d5b/gtest_8cc" startline="1583" endline="1598">testing::anonymous_namespace{gtest.cc}::IsSubstringImpl</references>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1a28868925c50d541c8568a540b6457e54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dd/d5f/classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
-        <definition>GTEST_API_ AssertionResult testing::IsNotSubstring</definition>
+      <memberdef kind="function" id="d0/d75/namespacetesting_1a5aa234189c2ad81a9536db01de639003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dec/classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>GTEST_API_ AssertionResult IsNotSubstring</definition>
         <argsstring>(const char *needle_expr, const char *haystack_expr, const wchar_t *needle, const wchar_t *haystack)</argsstring>
         <name>IsNotSubstring</name>
         <param>
@@ -1384,9 +1382,9 @@
         <location file="lib/googletest/src/gtest.cc" line="1624" column="17" bodyfile="lib/googletest/src/gtest.cc" bodystart="1624" bodyend="1628" declfile="lib/googletest/include/gtest/gtest.h" declline="1602" declcolumn="28"/>
         <references refid="de/d18/namespacetesting_1_1anonymous__namespace_02gtest_8cc_03_1a0e1cb1e2b03a87a9c893322e4caab670" compoundref="df/d5b/gtest_8cc" startline="1583" endline="1598">testing::anonymous_namespace{gtest.cc}::IsSubstringImpl</references>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1a32718fab95b2833ab5ffc9cfc9f5c8b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dd/d5f/classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
-        <definition>GTEST_API_ AssertionResult testing::IsSubstring</definition>
+      <memberdef kind="function" id="d0/d75/namespacetesting_1a3963e5134ee631c3e0da79c4f168ae3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dec/classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>GTEST_API_ AssertionResult IsSubstring</definition>
         <argsstring>(const char *needle_expr, const char *haystack_expr, const ::std::string &amp;needle, const ::std::string &amp;haystack)</argsstring>
         <name>IsSubstring</name>
         <param>
@@ -1414,9 +1412,9 @@
         <location file="lib/googletest/src/gtest.cc" line="1630" column="17" bodyfile="lib/googletest/src/gtest.cc" bodystart="1630" bodyend="1634" declfile="lib/googletest/include/gtest/gtest.h" declline="1605" declcolumn="28"/>
         <references refid="de/d18/namespacetesting_1_1anonymous__namespace_02gtest_8cc_03_1a0e1cb1e2b03a87a9c893322e4caab670" compoundref="df/d5b/gtest_8cc" startline="1583" endline="1598">testing::anonymous_namespace{gtest.cc}::IsSubstringImpl</references>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1a5c90a86562b2470213c07742e0eeb0fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dd/d5f/classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
-        <definition>GTEST_API_ AssertionResult testing::IsSubstring</definition>
+      <memberdef kind="function" id="d0/d75/namespacetesting_1af769ba85b7dc1c49d49594f195b442cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dec/classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>GTEST_API_ AssertionResult IsSubstring</definition>
         <argsstring>(const char *needle_expr, const char *haystack_expr, const char *needle, const char *haystack)</argsstring>
         <name>IsSubstring</name>
         <param>
@@ -1444,9 +1442,9 @@
         <location file="lib/googletest/src/gtest.cc" line="1606" column="17" bodyfile="lib/googletest/src/gtest.cc" bodystart="1606" bodyend="1610" declfile="lib/googletest/include/gtest/gtest.h" declline="1593" declcolumn="28"/>
         <references refid="de/d18/namespacetesting_1_1anonymous__namespace_02gtest_8cc_03_1a0e1cb1e2b03a87a9c893322e4caab670" compoundref="df/d5b/gtest_8cc" startline="1583" endline="1598">testing::anonymous_namespace{gtest.cc}::IsSubstringImpl</references>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1a08ce65847491b27a38cbac3ac15e3035" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="dd/d5f/classtesting_1_1AssertionResult" kindref="compound">AssertionResult</ref></type>
-        <definition>GTEST_API_ AssertionResult testing::IsSubstring</definition>
+      <memberdef kind="function" id="d0/d75/namespacetesting_1a8e18e316d8175f0f5928fca6afe122e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dec/classtesting_1_1_assertion_result" kindref="compound">AssertionResult</ref></type>
+        <definition>GTEST_API_ AssertionResult IsSubstring</definition>
         <argsstring>(const char *needle_expr, const char *haystack_expr, const wchar_t *needle, const wchar_t *haystack)</argsstring>
         <name>IsSubstring</name>
         <param>
@@ -1484,7 +1482,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="d3/d98/classtesting_1_1Message" kindref="compound">Message</ref> &amp;</type>
+          <type>const <ref refid="d2/da9/classtesting_1_1_message" kindref="compound">Message</ref> &amp;</type>
           <declname>sb</declname>
         </param>
         <briefdescription>
@@ -1494,11 +1492,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/gtest-message.h" line="232" column="8" bodyfile="lib/googletest/include/gtest/gtest-message.h" bodystart="232" bodyend="234"/>
-        <references refid="d3/d98/classtesting_1_1Message_1a2cdc4df62bdcc9df37651a1cf527704e" compoundref="df/d5b/gtest_8cc" startline="981" endline="983">testing::Message::GetString</references>
+        <references refid="d2/da9/classtesting_1_1_message_1a764f99b38cb3cd18ab87c5261321e063" compoundref="df/d5b/gtest_8cc" startline="981" endline="983">Message::GetString</references>
       </memberdef>
-      <memberdef kind="function" id="d0/d75/namespacetesting_1a7c88897836b9f492190fb2b9dfa3a327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d0/d75/namespacetesting_1ae8b6df347210c0ebfe5ec995d03c7aed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> &amp;</type>
-        <definition>std::ostream &amp; testing::operator&lt;&lt;</definition>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
         <argsstring>(std::ostream &amp;os, const TestPartResult &amp;result)</argsstring>
         <name>operator&lt;&lt;</name>
         <param>
@@ -1506,7 +1504,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="d9/d98/classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref> &amp;</type>
+          <type>const <ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -1517,12 +1515,12 @@
         </inbodydescription>
         <location file="lib/googletest/src/gtest-test-part.cc" line="58" column="1" bodyfile="lib/googletest/src/gtest-test-part.cc" bodystart="58" bodyend="65" declfile="lib/googletest/include/gtest/gtest-test-part.h" declline="120" declcolumn="1"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
-        <references refid="d9/d98/classtesting_1_1TestPartResult_1a0be40512f50a0086c4d3dc43938978aa" compoundref="d1/d01/gtest-test-part_8h" startline="76" endline="78">testing::TestPartResult::file_name</references>
-        <references refid="d9/d98/classtesting_1_1TestPartResult_1a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1" compoundref="d1/d01/gtest-test-part_8h" startline="54">testing::TestPartResult::kFatalFailure</references>
-        <references refid="d9/d98/classtesting_1_1TestPartResult_1a65ae656b33fdfdfffaf34858778a52d5a8fa3d06b2baad8bf7c1f17dea314983e" compoundref="d1/d01/gtest-test-part_8h" startline="52">testing::TestPartResult::kSuccess</references>
-        <references refid="d9/d98/classtesting_1_1TestPartResult_1ad4c5da5f13245ac18cf256d0d9f3eda9" compoundref="d1/d01/gtest-test-part_8h" startline="82" endline="82">testing::TestPartResult::line_number</references>
-        <references refid="d9/d98/classtesting_1_1TestPartResult_1a5019dc9d753aba5949777270de255d49" compoundref="d1/d01/gtest-test-part_8h" startline="88" endline="88">testing::TestPartResult::message</references>
-        <references refid="d9/d98/classtesting_1_1TestPartResult_1aab92b225e8a472e78bd3889ca6df0d2a" compoundref="d1/d01/gtest-test-part_8h" startline="72" endline="72">testing::TestPartResult::type</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1ad5e655e4f5a697870e836f380a16797c" compoundref="d1/d01/gtest-test-part_8h" startline="76" endline="78">TestPartResult::file_name</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7afff22986360310b0356db600c8c2187d" compoundref="d1/d01/gtest-test-part_8h" startline="54">TestPartResult::kFatalFailure</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7af0536797208144380691e2b376ffc1d1" compoundref="d1/d01/gtest-test-part_8h" startline="52">TestPartResult::kSuccess</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1a10a4f56de3322c42846ad149b1227d86" compoundref="d1/d01/gtest-test-part_8h" startline="82" endline="82">TestPartResult::line_number</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1aea6220e002a8039b97dc6fbd9ff79f46" compoundref="d1/d01/gtest-test-part_8h" startline="88" endline="88">TestPartResult::message</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1adf4a6727c689e0038cf2cdd158d5ed2c" compoundref="d1/d01/gtest-test-part_8h" startline="72" endline="72">TestPartResult::type</references>
       </memberdef>
       <memberdef kind="function" id="d0/d75/namespacetesting_1aa5717bb1144edd1d262d310ba70c82ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -1545,12 +1543,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/gtest-printers.h" line="980" column="15" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="980" bodyend="984" declfile="lib/googletest/include/gtest/internal/gtest-internal.h" declline="94" declcolumn="15"/>
-        <references refid="d3/dae/classtesting_1_1internal_1_1UniversalTersePrinter_1a042249cdb42fdb77588c9ad54ea7ed54" compoundref="d0/d6d/gtest-printers_8h" startline="783" endline="785">testing::internal::UniversalTersePrinter&lt; T &gt;::Print</references>
-        <references refid="cpp/io/basic_stringstream/str_1">std::stringstream::str</references>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a898b1e47a9d978e99318b224f69a54e4" compoundref="df/d5b/gtest_8cc" startline="1503" endline="1516">testing::internal::CmpHelperSTRCASEEQ</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a2863c85877728b2c223cf6ade4a530c1" compoundref="df/d5b/gtest_8cc" startline="1487" endline="1500">testing::internal::CmpHelperSTREQ</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a6e700804399b6694d8d6157e3a141b17" compoundref="df/d5b/gtest_8cc" startline="1885" endline="1897">testing::internal::CmpHelperSTRNE</referencedby>
-        <referencedby refid="d6/db1/classtesting_1_1internal_1_1FormatForComparison_1a2aeb688fc55b57abd3021d82eccad896" compoundref="d0/d6d/gtest-printers_8h" startline="275" endline="277">testing::internal::FormatForComparison&lt; ToPrint, OtherOperand &gt;::Format</referencedby>
+        <references refid="d6/d8f/classtesting_1_1internal_1_1_universal_terse_printer_1ac137bd6f09f642f1cd84e6da21383ff0" compoundref="d0/d6d/gtest-printers_8h" startline="783" endline="785">UniversalTersePrinter&lt; T &gt;::Print</references>
+        <references refid="cpp/io/basic_stringstream/str_1">stringstream::str</references>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a72d1706a1f8e03ef759f9c80712b0072" compoundref="df/d5b/gtest_8cc" startline="1869" endline="1882">testing::internal::CmpHelperSTREQ</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a675759a40d2867bc51981f7594f6beca" compoundref="df/d5b/gtest_8cc" startline="1885" endline="1897">testing::internal::CmpHelperSTRNE</referencedby>
+        <referencedby refid="d9/d47/classtesting_1_1internal_1_1_format_for_comparison_1a71c59ddcde066d9d31b76924801f7c89" compoundref="d0/d6d/gtest-printers_8h" startline="275" endline="277">FormatForComparison&lt; ToPrint, OtherOperand &gt;::Format</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1aace9bb29e075d3cc3c4e689de03f0e71">testing::internal::GTEST_IMPL_CMP_HELPER_</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d75/namespacetesting_1a661e70fc6afeb5c085eed3716aa45059" prot="package" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -1579,7 +1577,7 @@
         <argsstring>(const TestPartResult &amp;result)</argsstring>
         <name>TestPartFatallyFailed</name>
         <param>
-          <type>const <ref refid="d9/d98/classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref> &amp;</type>
+          <type>const <ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -1589,8 +1587,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="2179" column="13" bodyfile="lib/googletest/src/gtest.cc" bodystart="2179" bodyend="2181"/>
-        <references refid="d9/d98/classtesting_1_1TestPartResult_1a77db157eff9531c3c00c2420502f9a89" compoundref="d1/d01/gtest-test-part_8h" startline="100" endline="100">testing::TestPartResult::fatally_failed</references>
-        <referencedby refid="d6/d6e/classtesting_1_1TestResult_1a30e00d4076ae07fb5ad7b623d9dc1fe4" compoundref="df/d5b/gtest_8cc" startline="2184" endline="2186">testing::TestResult::HasFatalFailure</referencedby>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1ab380b978032e5896435ef73d1a4bef6d" compoundref="d1/d01/gtest-test-part_8h" startline="100" endline="100">TestPartResult::fatally_failed</references>
+        <referencedby refid="d1/d69/classtesting_1_1_test_result_1a4831d649ecdd7cbd910d236b73122524" compoundref="df/d5b/gtest_8cc" startline="2184" endline="2186">TestResult::HasFatalFailure</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d75/namespacetesting_1af256d104ca665115eb291f762bb659e3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1598,7 +1596,7 @@
         <argsstring>(const TestPartResult &amp;result)</argsstring>
         <name>TestPartNonfatallyFailed</name>
         <param>
-          <type>const <ref refid="d9/d98/classtesting_1_1TestPartResult" kindref="compound">TestPartResult</ref> &amp;</type>
+          <type>const <ref refid="d0/d4b/classtesting_1_1_test_part_result" kindref="compound">TestPartResult</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -1608,8 +1606,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="2189" column="13" bodyfile="lib/googletest/src/gtest.cc" bodystart="2189" bodyend="2191"/>
-        <references refid="d9/d98/classtesting_1_1TestPartResult_1a6197c7f6672acc1cfdf580eb1f2183ac" compoundref="d1/d01/gtest-test-part_8h" startline="97" endline="97">testing::TestPartResult::nonfatally_failed</references>
-        <referencedby refid="d6/d6e/classtesting_1_1TestResult_1a510564fa67b485ed4589a259f2a032d6" compoundref="df/d5b/gtest_8cc" startline="2194" endline="2196">testing::TestResult::HasNonfatalFailure</referencedby>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1a8c3112659a6430e10b97546d18d6b5c5" compoundref="d1/d01/gtest-test-part_8h" startline="97" endline="97">TestPartResult::nonfatally_failed</references>
+        <referencedby refid="d1/d69/classtesting_1_1_test_result_1ad0c4dfe3e8f81f7cd6e7e6ccdd1cb687" compoundref="df/d5b/gtest_8cc" startline="2194" endline="2196">TestResult::HasNonfatalFailure</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d75/namespacetesting_1a4e9fdeef31f7e49afccfde0532f76864" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1617,7 +1615,7 @@
         <argsstring>(TestPartResult::Type type)</argsstring>
         <name>TestPartResultTypeToString</name>
         <param>
-          <type><ref refid="d9/d98/classtesting_1_1TestPartResult_1a65ae656b33fdfdfffaf34858778a52d5" kindref="member">TestPartResult::Type</ref></type>
+          <type><ref refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">TestPartResult::Type</ref></type>
           <declname>type</declname>
         </param>
         <briefdescription>
@@ -1627,9 +1625,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="2830" column="20" bodyfile="lib/googletest/src/gtest.cc" bodystart="2830" bodyend="2845"/>
-        <references refid="d9/d98/classtesting_1_1TestPartResult_1a65ae656b33fdfdfffaf34858778a52d5ae1bf0b610b697a43fee97628cdab4ea1" compoundref="d1/d01/gtest-test-part_8h" startline="54">testing::TestPartResult::kFatalFailure</references>
-        <references refid="d9/d98/classtesting_1_1TestPartResult_1a65ae656b33fdfdfffaf34858778a52d5a00a755614f8ec3f78b2e951f8c91cd92" compoundref="d1/d01/gtest-test-part_8h" startline="53">testing::TestPartResult::kNonFatalFailure</references>
-        <references refid="d9/d98/classtesting_1_1TestPartResult_1a65ae656b33fdfdfffaf34858778a52d5a8fa3d06b2baad8bf7c1f17dea314983e" compoundref="d1/d01/gtest-test-part_8h" startline="52">testing::TestPartResult::kSuccess</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7afff22986360310b0356db600c8c2187d" compoundref="d1/d01/gtest-test-part_8h" startline="54">TestPartResult::kFatalFailure</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7ae354b0d94856044d54b2066ebb74635c" compoundref="d1/d01/gtest-test-part_8h" startline="53">TestPartResult::kNonFatalFailure</references>
+        <references refid="d0/d4b/classtesting_1_1_test_part_result_1a1d1cfd8ffb84e947f82999c682b666a7af0536797208144380691e2b376ffc1d1" compoundref="d1/d01/gtest-test-part_8h" startline="52">TestPartResult::kSuccess</references>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1ada13cbf91139f0809a5a31ea2594c1ad" compoundref="df/d5b/gtest_8cc" startline="2850" endline="2857">testing::internal::PrintTestPartResultToString</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d75/namespacetesting_1a4c9bd414747bf0563bfdb32a2307dcdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -1653,12 +1651,12 @@
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="2141" column="6" bodyfile="lib/googletest/src/gtest.cc" bodystart="2141" bodyend="2151"/>
         <references refid="d8/d73/gtest_8h_1adc16b5b0a740c39084ea5c9e960e3063" compoundref="d8/d73/gtest_8h" startline="1808">ADD_FAILURE</references>
-        <references refid="cpp/container/vector/begin_1">std::vector&lt; T &gt;::begin</references>
-        <references refid="cpp/container/vector/end_1">std::vector&lt; T &gt;::end</references>
+        <references refid="cpp/container/vector/begin_1">vector&lt; T &gt;::begin</references>
+        <references refid="cpp/container/vector/end_1">vector&lt; T &gt;::end</references>
         <references refid="cpp/algorithm/find_1">std::find</references>
         <references refid="d0/d75/namespacetesting_1a4354761948a5cf56fdf905418a0f78f1" compoundref="df/d5b/gtest_8cc" startline="2127" endline="2139">FormatWordList</references>
         <references refid="d3/dc9/gtest-port_8h_1a13d98c217176bd8722c395b9225fc19d" compoundref="d3/dc9/gtest-port_8h" startline="289">GTEST_NAME_</references>
-        <referencedby refid="d6/d6e/classtesting_1_1TestResult_1a818c06cd2bfc00d6c81b0cebca044cb1" compoundref="df/d5b/gtest_8cc" startline="2155" endline="2159">testing::TestResult::ValidateTestProperty</referencedby>
+        <referencedby refid="d1/d69/classtesting_1_1_test_result_1a2443df28261cf11c12cb7f53e968261e" compoundref="df/d5b/gtest_8cc" startline="2155" endline="2159">TestResult::ValidateTestProperty</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>

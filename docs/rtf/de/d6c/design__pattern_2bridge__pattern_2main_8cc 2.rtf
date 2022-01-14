@@ -110,8 +110,8 @@
 design_pattern/bridge_pattern/main.cc File Reference\par \pard\plain 
 {\tc\tcl2 \v design_pattern/bridge_pattern/main.cc(d4ab02d08ceed19dab4276c86042b1520529304b)}
 {\xe \v design_pattern/bridge_pattern/main.cc(d4ab02d08ceed19dab4276c86042b1520529304b)}
-{\bkmkstart AAAAAAAAKM}
-{\bkmkend AAAAAAAAKM}
+{\bkmkstart AAAAAAAASO}
+{\bkmkend AAAAAAAASO}
 {
 \pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
 {\f2 #include <string>}\par
@@ -129,19 +129,26 @@ Classes\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-class {\b AbstractInterface}\par
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASP" }{}}{\fldrslt {\cs37\ul\cf2 AbstractInterface}}}
+\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-class {\b Bridge}\par
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASQ" }{}}{\fldrslt {\cs37\ul\cf2 Bridge}}}
+\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-class {\b ConcreteImplementation1}\par
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASR" }{}}{\fldrslt {\cs37\ul\cf2 ConcreteImplementation1}}}
+\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-class {\b ConcreteImplementation2}\par
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASS" }{}}{\fldrslt {\cs37\ul\cf2 ConcreteImplementation2}}}
+\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-class {\b ImplementationInterface}\par
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAST" }{}}{\fldrslt {\cs37\ul\cf2 ImplementationInterface}}}
+\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-class {\b UseCase1}\par
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASU" }{}}{\fldrslt {\cs37\ul\cf2 UseCase1}}}
+\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-class {\b UseCase2}\par
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASV" }{}}{\fldrslt {\cs37\ul\cf2 UseCase2}}}
+\par
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Functions\par
@@ -149,7 +156,8 @@ Functions\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-int {\b main} (int argc, char *argv[])\par
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASW" }{}}{\fldrslt {\cs37\ul\cf2 main}}}
+ (int argc, char *argv[])\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -161,30 +169,46 @@ Function Documentation\par
 {\b 
 int main (int  {\i argc}, char *  {\i argv}[])}}
 \par
-{\bkmkstart AAAAAAAAKN}
-{\bkmkend AAAAAAAAKN}
+{\bkmkstart AAAAAAAASW}
+{\bkmkend AAAAAAAASW}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 100 of file main.cc.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 101 \{\par
-102     AbstractInterface *useCase = 0;\par
-103     ImplementationInterface *osConcreteImplementation1 = {\cf17 new} ConcreteImplementation1;\par
-104     ImplementationInterface *osConcreteImplementation2 = {\cf17 new} ConcreteImplementation2;\par
+102     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASP" }{}}{\fldrslt {\cs37\ul\cf2 AbstractInterface}}}
+ *useCase = 0;\par
+103     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAST" }{}}{\fldrslt {\cs37\ul\cf2 ImplementationInterface}}}
+ *osConcreteImplementation1 = {\cf17 new} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASR" }{}}{\fldrslt {\cs37\ul\cf2 ConcreteImplementation1}}}
+;\par
+104     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAST" }{}}{\fldrslt {\cs37\ul\cf2 ImplementationInterface}}}
+ *osConcreteImplementation2 = {\cf17 new} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASS" }{}}{\fldrslt {\cs37\ul\cf2 ConcreteImplementation2}}}
+;\par
 105 \par
 106 \par
 107     {\cf20 /* First case */}\par
-108     useCase = {\cf17 new} UseCase1(osConcreteImplementation1);\par
-109     useCase->someFunctionality();\par
+108     useCase = {\cf17 new} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASU" }{}}{\fldrslt {\cs37\ul\cf2 UseCase1}}}
+(osConcreteImplementation1);\par
+109     useCase->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASX" }{}}{\fldrslt {\cs37\ul\cf2 someFunctionality}}}
+();\par
 110 \par
-111     useCase = {\cf17 new} UseCase1(osConcreteImplementation2);\par
-112     useCase->someFunctionality();\par
+111     useCase = {\cf17 new} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASU" }{}}{\fldrslt {\cs37\ul\cf2 UseCase1}}}
+(osConcreteImplementation2);\par
+112     useCase->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASX" }{}}{\fldrslt {\cs37\ul\cf2 someFunctionality}}}
+();\par
 113 \par
 114     {\cf20 /* Second case */}\par
-115     useCase = {\cf17 new} UseCase2(osConcreteImplementation1);\par
-116     useCase->someFunctionality();\par
+115     useCase = {\cf17 new} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASV" }{}}{\fldrslt {\cs37\ul\cf2 UseCase2}}}
+(osConcreteImplementation1);\par
+116     useCase->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASX" }{}}{\fldrslt {\cs37\ul\cf2 someFunctionality}}}
+();\par
 117 \par
-118     useCase = {\cf17 new} UseCase2(osConcreteImplementation2);\par
-119     useCase->someFunctionality();\par
+118     useCase = {\cf17 new} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASV" }{}}{\fldrslt {\cs37\ul\cf2 UseCase2}}}
+(osConcreteImplementation2);\par
+119     useCase->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAASX" }{}}{\fldrslt {\cs37\ul\cf2 someFunctionality}}}
+();\par
 120 \par
 121 \par
 122     {\cf19 return} 0;\par

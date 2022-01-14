@@ -14,8 +14,8 @@
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<link rel="search" href="../../search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Common Alogrithm"/>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -45,8 +45,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search','.html'
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('../../',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
+  initMenu('../../',true,true,'search.php','Search');
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() {
+    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
+  });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
@@ -67,20 +70,6 @@ $(document).ready(function(){initNavTree('d8/d1e/binary__search_8h.html','../../
 /* @license-end */
 </script>
 <div id="doc-content">
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -118,14 +107,14 @@ $(document).ready(function(){initNavTree('d8/d1e/binary__search_8h.html','../../
 </map>
 </div>
 </div>
-<p><a href="">Go to the source code of this file.</a></p>
+<p><a href="../../d8/d1e/binary__search_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2e/classcommon_1_1BinarySearch.html">common::BinarySearch</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df2/classcommon_1_1_binary_search.html">BinarySearch</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d2/dbd/structcommon_1_1BSTNode"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0c/namespacecommon.html#d2/dbd/structcommon_1_1BSTNode">common::BSTNode</a></td></tr>
-<tr class="separator:d2/dbd/structcommon_1_1BSTNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d5/d36/structcommon_1_1_b_s_t_node"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0c/namespacecommon.html#d5/d36/structcommon_1_1_b_s_t_node">BSTNode</a></td></tr>
+<tr class="separator:d5/d36/structcommon_1_1_b_s_t_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -133,8 +122,8 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Class Documentation</h2>
-<a name="d2/dbd/structcommon_1_1BSTNode" id="d2/dbd/structcommon_1_1BSTNode"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#d2/dbd/structcommon_1_1BSTNode">&#9670;&nbsp;</a></span>common::BSTNode</h2>
+<a name="d5/d36/structcommon_1_1_b_s_t_node" id="d5/d36/structcommon_1_1_b_s_t_node"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d5/d36/structcommon_1_1_b_s_t_node">&#9670;&nbsp;</a></span>common::BSTNode</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,32 +133,34 @@ Namespaces</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"></div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for common::BSTNode:</div>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d8/d1e/binary__search_8h_source.html#l00010">10</a> of file <a class="el" href="../../d8/d1e/binary__search_8h_source.html">binary_search.h</a>.</p>
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for BSTNode:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="../../df/dd7/structcommon_1_1BSTNode__coll__graph.png" border="0" usemap="#acommon_1_1BSTNode_coll__map" alt="Collaboration graph"/></div>
-<map name="acommon_1_1BSTNode_coll__map" id="acommon_1_1BSTNode_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,143,83"/>
+<div class="center"><img src="../../d3/d6c/structcommon_1_1_b_s_t_node__coll__graph.png" border="0" usemap="#a_b_s_t_node_coll__map" alt="Collaboration graph"/></div>
+<map name="a_b_s_t_node_coll__map" id="a_b_s_t_node_coll__map">
+<area shape="rect" title=" " alt="" coords="5,5,84,83"/>
 </map>
 </div>
 <table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="abd25d73eeda629c89624edc808dbb8d2"></a>int</td>
+<a id="a9eab91667db4d35c7231dcddf7b89a76"></a>int</td>
 <td class="fieldname">
 data</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a404c84b494cb19afc8101c08741ab978"></a><a class="el" href="../../d9/d0c/namespacecommon.html#d2/dbd/structcommon_1_1BSTNode">BSTNode</a> *</td>
+<a id="a2238204dbbc8dabdda64f3f235f71224"></a><a class="el" href="../../d9/d0c/namespacecommon.html#d5/d36/structcommon_1_1_b_s_t_node">BSTNode</a> *</td>
 <td class="fieldname">
 left</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a6c53b106cde01d23e7f92b7366976b96"></a><a class="el" href="../../d9/d0c/namespacecommon.html#d2/dbd/structcommon_1_1BSTNode">BSTNode</a> *</td>
+<a id="a4a656f5c32861942beaf30262c31baa1"></a><a class="el" href="../../d9/d0c/namespacecommon.html#d5/d36/structcommon_1_1_b_s_t_node">BSTNode</a> *</td>
 <td class="fieldname">
 right</td>
 <td class="fielddoc">

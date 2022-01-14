@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/d8a/classleetcode_1_1_solutions" kind="class" language="C++" prot="public">
+    <compoundname>leetcode::Solutions</compoundname>
+    <includes refid="d2/d98/solutions_8h" local="no">solutions.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d8a/classleetcode_1_1_solutions_1a1e18a492caa00dc950ccdb815ca6083b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int minDeletions</definition>
+        <argsstring>(std::string s)</argsstring>
+        <name>minDeletions</name>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>leetcode 1647 Minimum Deletions to Make Character Frequencies Unique </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A string s is called good if there are no two different characters in s that have the same frequency. Given a string s, return the minimum number of characters you need to delete to make s good. The frequency of a character in a string is the number of times it appears in the string. For example, in the string &quot;aab&quot;, the frequency of &apos;a&apos; is 2, while the freqnency of &apos;b&apos; is 1. <simplesect kind="return"><para>the minmum number of characters you need tp delete to make s good </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/src/solutions.h" line="17" column="9" bodyfile="leetcode_practice/src/solutions.cc" bodystart="15" bodyend="48"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <references refid="cpp/container/map/rbegin_1">map&lt; K, T &gt;::rbegin</references>
+        <references refid="cpp/container/map/rend_1">map&lt; K, T &gt;::rend</references>
+        <referencedby refid="de/d3e/leetcode__practice_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="de/d3e/leetcode__practice_2main_8cc" startline="4" endline="19">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d8a/classleetcode_1_1_solutions_1a2ba0d78c77ecfe9fc178be8676b4f0f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Solutions</definition>
+        <argsstring>()</argsstring>
+        <name>Solutions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/src/solutions.h" line="13" column="5" bodyfile="leetcode_practice/src/solutions.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d8a/classleetcode_1_1_solutions_1ab4cecc9ceb630676fb369aaa8b2453d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~Solutions</definition>
+        <argsstring>()</argsstring>
+        <name>~Solutions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/src/solutions.h" line="14" column="13" bodyfile="leetcode_practice/src/solutions.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Solutions</label>
+        <link refid="d0/d8a/classleetcode_1_1_solutions"/>
+      </node>
+    </collaborationgraph>
+    <location file="leetcode_practice/src/solutions.h" line="7" column="1" bodyfile="leetcode_practice/src/solutions.h" bodystart="8" bodyend="20"/>
+    <listofallmembers>
+      <member refid="d0/d8a/classleetcode_1_1_solutions_1a1e18a492caa00dc950ccdb815ca6083b" prot="public" virt="non-virtual"><scope>leetcode::Solutions</scope><name>minDeletions</name></member>
+      <member refid="d0/d8a/classleetcode_1_1_solutions_1a2ba0d78c77ecfe9fc178be8676b4f0f2" prot="public" virt="non-virtual"><scope>leetcode::Solutions</scope><name>Solutions</name></member>
+      <member refid="d0/d8a/classleetcode_1_1_solutions_1ab4cecc9ceb630676fb369aaa8b2453d5" prot="public" virt="virtual"><scope>leetcode::Solutions</scope><name>~Solutions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

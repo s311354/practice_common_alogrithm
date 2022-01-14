@@ -4,31 +4,31 @@
     <compoundname>testing::internal::edit_distance</compoundname>
     <innernamespace refid="dd/dca/namespacetesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03">testing::internal::edit_distance::anonymous_namespace{gtest.cc}</innernamespace>
       <sectiondef kind="enum">
-      <memberdef kind="enum" id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08" prot="public" static="no" strong="no">
+      <memberdef kind="enum" id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feb" prot="public" static="no" strong="no">
         <type></type>
         <name>EditType</name>
-        <enumvalue id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08a7bdb9c74613a94f21b7489e0b5640a63" prot="public">
+        <enumvalue id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feba01e3df29bad591c9c7e256a5090662b8" prot="public">
           <name>kMatch</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08a63400b073f5b311a87d568b5ae27ffe8" prot="public">
+        <enumvalue id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feba8d20f6cca2d49a8732f535cfe28812c8" prot="public">
           <name>kAdd</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08a814768ef6cd0264a0a10b1e701a63e78" prot="public">
+        <enumvalue id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feba7b8140e312f42dd2073bae2374136137" prot="public">
           <name>kRemove</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08afdbf30ecf9f32f60c646a34a358615f2" prot="public">
+        <enumvalue id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feba9219852c065abae302e91604e5d3594d" prot="public">
           <name>kReplace</name>
           <briefdescription>
           </briefdescription>
@@ -45,9 +45,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1a455a044d22764a657122b69b0238840a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08" kindref="member">EditType</ref> &gt;</type>
-        <definition>GTEST_API_ std::vector&lt; EditType &gt; testing::internal::edit_distance::CalculateOptimalEdits</definition>
+      <memberdef kind="function" id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1a5b69c8f2b38f31e87dabf300d7e46903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feb" kindref="member">EditType</ref> &gt;</type>
+        <definition>GTEST_API_ std::vector&lt; EditType &gt; CalculateOptimalEdits</definition>
         <argsstring>(const std::vector&lt; size_t &gt; &amp;left, const std::vector&lt; size_t &gt; &amp;right)</argsstring>
         <name>CalculateOptimalEdits</name>
         <param>
@@ -65,22 +65,22 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="1028" column="13" bodyfile="lib/googletest/src/gtest.cc" bodystart="1028" bodyend="1083" declfile="lib/googletest/include/gtest/internal/gtest-internal.h" declline="181" declcolumn="24"/>
-        <references refid="cpp/container/vector/begin_1">std::vector&lt; T &gt;::begin</references>
-        <references refid="cpp/container/vector/end_1">std::vector&lt; T &gt;::end</references>
-        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08a63400b073f5b311a87d568b5ae27ffe8" compoundref="d5/da1/gtest-internal_8h" startline="180">kAdd</references>
-        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08a7bdb9c74613a94f21b7489e0b5640a63" compoundref="d5/da1/gtest-internal_8h" startline="180">kMatch</references>
-        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08a814768ef6cd0264a0a10b1e701a63e78" compoundref="d5/da1/gtest-internal_8h" startline="180">kRemove</references>
-        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08afdbf30ecf9f32f60c646a34a358615f2" compoundref="d5/da1/gtest-internal_8h" startline="180">kReplace</references>
+        <references refid="cpp/container/vector/begin_1">vector&lt; T &gt;::begin</references>
+        <references refid="cpp/container/vector/end_1">vector&lt; T &gt;::end</references>
+        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feba8d20f6cca2d49a8732f535cfe28812c8" compoundref="d5/da1/gtest-internal_8h" startline="180">kAdd</references>
+        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feba01e3df29bad591c9c7e256a5090662b8" compoundref="d5/da1/gtest-internal_8h" startline="180">kMatch</references>
+        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feba7b8140e312f42dd2073bae2374136137" compoundref="d5/da1/gtest-internal_8h" startline="180">kRemove</references>
+        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feba9219852c065abae302e91604e5d3594d" compoundref="d5/da1/gtest-internal_8h" startline="180">kReplace</references>
         <references refid="d0/da7/namespacetesting_1_1internal_1a0f6d06bf8c3093b9c22bb08723db201e" compoundref="d3/dc9/gtest-port_8h" startline="1317" endline="1319">testing::internal::move</references>
-        <references refid="cpp/container/vector/push_back_1">std::vector&lt; T &gt;::push_back</references>
+        <references refid="cpp/container/vector/push_back_1">vector&lt; T &gt;::push_back</references>
         <references refid="cpp/algorithm/reverse_1">std::reverse</references>
-        <references refid="cpp/container/vector/size_1">std::vector&lt; T &gt;::size</references>
-        <referencedby refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ade198faa03ccb623b42e55575ffab182" compoundref="df/d5b/gtest_8cc" startline="1104" endline="1118">CalculateOptimalEdits</referencedby>
-        <referencedby refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1aec6a04ff6b3487a6744d116dbc2dc3e7" compoundref="df/d5b/gtest_8cc" startline="1203" endline="1263">CreateUnifiedDiff</referencedby>
+        <references refid="cpp/container/vector/size_1">vector&lt; T &gt;::size</references>
+        <referencedby refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1a96065c74c4a4787a51ad9e58f13a4068" compoundref="df/d5b/gtest_8cc" startline="1104" endline="1118">CalculateOptimalEdits</referencedby>
+        <referencedby refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1aef01558937d42283a238a7b55baddd11" compoundref="df/d5b/gtest_8cc" startline="1203" endline="1263">CreateUnifiedDiff</referencedby>
       </memberdef>
-      <memberdef kind="function" id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ade198faa03ccb623b42e55575ffab182" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08" kindref="member">EditType</ref> &gt;</type>
-        <definition>GTEST_API_ std::vector&lt; EditType &gt; testing::internal::edit_distance::CalculateOptimalEdits</definition>
+      <memberdef kind="function" id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1a96065c74c4a4787a51ad9e58f13a4068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feb" kindref="member">EditType</ref> &gt;</type>
+        <definition>GTEST_API_ std::vector&lt; EditType &gt; CalculateOptimalEdits</definition>
         <argsstring>(const std::vector&lt; std::string &gt; &amp;left, const std::vector&lt; std::string &gt; &amp;right)</argsstring>
         <name>CalculateOptimalEdits</name>
         <param>
@@ -98,12 +98,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="1104" column="13" bodyfile="lib/googletest/src/gtest.cc" bodystart="1104" bodyend="1118" declfile="lib/googletest/include/gtest/internal/gtest-internal.h" declline="185" declcolumn="24"/>
-        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1a455a044d22764a657122b69b0238840a" compoundref="df/d5b/gtest_8cc" startline="1028" endline="1083">CalculateOptimalEdits</references>
-        <references refid="cpp/container/vector/push_back_1">std::vector&lt; T &gt;::push_back</references>
+        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1a5b69c8f2b38f31e87dabf300d7e46903" compoundref="df/d5b/gtest_8cc" startline="1028" endline="1083">CalculateOptimalEdits</references>
+        <references refid="cpp/container/vector/push_back_1">vector&lt; T &gt;::push_back</references>
       </memberdef>
-      <memberdef kind="function" id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1aec6a04ff6b3487a6744d116dbc2dc3e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="de/dce/namespacetesting_1_1internal_1_1edit__distance_1aef01558937d42283a238a7b55baddd11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
-        <definition>GTEST_API_ std::string testing::internal::edit_distance::CreateUnifiedDiff</definition>
+        <definition>GTEST_API_ std::string CreateUnifiedDiff</definition>
         <argsstring>(const std::vector&lt; std::string &gt; &amp;left, const std::vector&lt; std::string &gt; &amp;right, size_t context)</argsstring>
         <name>CreateUnifiedDiff</name>
         <param>
@@ -125,17 +125,17 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="1203" column="13" bodyfile="lib/googletest/src/gtest.cc" bodystart="1203" bodyend="1263" declfile="lib/googletest/include/gtest/internal/gtest-internal.h" declline="190" declcolumn="24"/>
-        <references refid="cpp/container/vector/begin_1">std::vector&lt; T &gt;::begin</references>
-        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1a455a044d22764a657122b69b0238840a" compoundref="df/d5b/gtest_8cc" startline="1028" endline="1083">CalculateOptimalEdits</references>
-        <references refid="cpp/container/vector/end_1">std::vector&lt; T &gt;::end</references>
-        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08a63400b073f5b311a87d568b5ae27ffe8" compoundref="d5/da1/gtest-internal_8h" startline="180">kAdd</references>
-        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08a7bdb9c74613a94f21b7489e0b5640a63" compoundref="d5/da1/gtest-internal_8h" startline="180">kMatch</references>
-        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08a814768ef6cd0264a0a10b1e701a63e78" compoundref="d5/da1/gtest-internal_8h" startline="180">kRemove</references>
-        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad46aa6da12aec1a3f166310478b53a08afdbf30ecf9f32f60c646a34a358615f2" compoundref="d5/da1/gtest-internal_8h" startline="180">kReplace</references>
+        <references refid="cpp/container/vector/begin_1">vector&lt; T &gt;::begin</references>
+        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1a5b69c8f2b38f31e87dabf300d7e46903" compoundref="df/d5b/gtest_8cc" startline="1028" endline="1083">CalculateOptimalEdits</references>
+        <references refid="cpp/container/vector/end_1">vector&lt; T &gt;::end</references>
+        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feba8d20f6cca2d49a8732f535cfe28812c8" compoundref="d5/da1/gtest-internal_8h" startline="180">kAdd</references>
+        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feba01e3df29bad591c9c7e256a5090662b8" compoundref="d5/da1/gtest-internal_8h" startline="180">kMatch</references>
+        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feba7b8140e312f42dd2073bae2374136137" compoundref="d5/da1/gtest-internal_8h" startline="180">kRemove</references>
+        <references refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1ad67c869ce85bd645cacb0ba89b993feba9219852c065abae302e91604e5d3594d" compoundref="d5/da1/gtest-internal_8h" startline="180">kReplace</references>
         <references refid="cpp/algorithm/min_1">std::min</references>
-        <references refid="cpp/container/vector/size_1">std::vector&lt; T &gt;::size</references>
-        <references refid="cpp/io/basic_stringstream/str_1">std::stringstream::str</references>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a290e3967783ec2de56981c8b1cec37de" compoundref="df/d5b/gtest_8cc" startline="1312" endline="1343">testing::internal::EqFailure</referencedby>
+        <references refid="cpp/container/vector/size_1">vector&lt; T &gt;::size</references>
+        <references refid="cpp/io/basic_stringstream/str_1">stringstream::str</references>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a120b81c390ec6bf851e21ffb141871e5" compoundref="df/d5b/gtest_8cc" startline="1312" endline="1343">testing::internal::EqFailure</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>

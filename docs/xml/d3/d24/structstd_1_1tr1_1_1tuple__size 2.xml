@@ -13,7 +13,7 @@
     </detaileddescription>
     <collaborationgraph>
       <node id="1">
-        <label>std::tr1::tuple_size&lt; Tuple &gt;</label>
+        <label>tuple_size&lt; Tuple &gt;</label>
         <link refid="d3/d24/structstd_1_1tr1_1_1tuple__size"/>
       </node>
     </collaborationgraph>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/de9/class_implementation_interface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>ImplementationInterface</compoundname>
+    <derivedcompoundref refid="da/d36/class_concrete_implementation1" prot="public" virt="non-virtual">ConcreteImplementation1</derivedcompoundref>
+    <derivedcompoundref refid="dc/d24/class_concrete_implementation2" prot="public" virt="non-virtual">ConcreteImplementation2</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/de9/class_implementation_interface_1af8c356ee8ab29157f8b00cc286e3f490" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void anotherFunctionality</definition>
+        <argsstring>()=0</argsstring>
+        <name>anotherFunctionality</name>
+        <reimplementedby refid="da/d36/class_concrete_implementation1_1aba226fc7521b37b67e57dc4138b1ac54">anotherFunctionality</reimplementedby>
+        <reimplementedby refid="dc/d24/class_concrete_implementation2_1aba226fc7521b37b67e57dc4138b1ac54">anotherFunctionality</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/bridge_pattern/main.cc" line="33" column="22"/>
+        <referencedby refid="dd/da9/class_use_case1_1ade7253500755cdd870a579c7c4b023ed" compoundref="de/d6c/design__pattern_2bridge__pattern_2main_8cc" startline="58" endline="62">UseCase1::someFunctionality</referencedby>
+        <referencedby refid="d7/d1d/class_use_case2_1ade7253500755cdd870a579c7c4b023ed" compoundref="de/d6c/design__pattern_2bridge__pattern_2main_8cc" startline="72" endline="76">UseCase2::someFunctionality</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ImplementationInterface</label>
+        <link refid="d0/de9/class_implementation_interface"/>
+      </node>
+      <node id="2">
+        <label>ConcreteImplementation1</label>
+        <link refid="da/d36/class_concrete_implementation1"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ConcreteImplementation2</label>
+        <link refid="dc/d24/class_concrete_implementation2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImplementationInterface</label>
+        <link refid="d0/de9/class_implementation_interface"/>
+      </node>
+    </collaborationgraph>
+    <location file="design_pattern/bridge_pattern/main.cc" line="30" column="1" bodyfile="design_pattern/bridge_pattern/main.cc" bodystart="31" bodyend="34"/>
+    <listofallmembers>
+      <member refid="d0/de9/class_implementation_interface_1af8c356ee8ab29157f8b00cc286e3f490" prot="public" virt="pure-virtual"><scope>ImplementationInterface</scope><name>anotherFunctionality</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

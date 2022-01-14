@@ -4446,13 +4446,19 @@
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a58eca8e9e3e4f5bfe50033256d17bdc7" compoundref="d0/dea/linked__list_8cc" startline="46" endline="58">LinkedList&lt; T &gt;::Back</referencedby>
         <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1ade13d4605967d4ec20bb4d462eb6e624" compoundref="df/d42/graph__representation_8cc" startline="64" endline="115">GraphRepresentationList::BFS</referencedby>
         <referencedby refid="db/d91/class_electric_kettle_1a0128a33feaa0eea0e65a653e5f6cd80e" compoundref="d0/d88/design__pattern_2adapter__pattern_2main_8cc" startline="80" endline="92">ElectricKettle::boil</referencedby>
+        <referencedby refid="da/dd7/classcommon_1_1_jvector_1af75118b68097238fa7915baf6886a969" compoundref="d2/d37/jvector_8cc" startline="81" endline="89">Jvector::DebugString</referencedby>
+        <referencedby refid="da/dd7/classcommon_1_1_jvector_1a4c967945484bb7749edd92b82e274142" compoundref="d2/d37/jvector_8cc" startline="140" endline="154">Jvector::Deletes</referencedby>
         <referencedby refid="d1/d81/classcommon_1_1_queue_linked_list_1aa6370e8c523a8e8fe1c2e6695dd26f70" compoundref="d0/d17/queue__linked__list_8cc" startline="42" endline="60">QueueLinkedList&lt; T &gt;::Dequeue</referencedby>
         <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1a58d3be579a41554e41aa8c86cb8cf0a6" compoundref="df/d42/graph__representation_8cc" startline="123" endline="172">GraphRepresentationList::DFS</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1af1789852a6074c3c5ae8c6738d5f7160" compoundref="d0/dea/linked__list_8cc" startline="213" endline="241">LinkedList&lt; T &gt;::Erase</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a510df6a9340094440277fec608697fcd" compoundref="d0/dea/linked__list_8cc" startline="33" endline="40">LinkedList&lt; T &gt;::Front</referencedby>
         <referencedby refid="d4/df5/classcommon_1_1_graph_representation_1ab5318abef6747ff8cc2e126abfc048be" compoundref="df/d42/graph__representation_8cc" startline="15" endline="22">GraphRepresentation::GetRepresentation</referencedby>
+        <referencedby refid="da/dd7/classcommon_1_1_jvector_1a83f32cddf3b8e0cccd95969db939085c" compoundref="d2/d37/jvector_8cc" startline="112" endline="119">Jvector::GetValueAt</referencedby>
+        <referencedby refid="da/dd7/classcommon_1_1_jvector_1adaedfb8ea4ff433a743fbc6783b22de9" compoundref="d2/d37/jvector_8cc" startline="121" endline="138">Jvector::Insert</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a60af5df9c2152ed214bf6c2ae4b27bb3" compoundref="d0/dea/linked__list_8cc" startline="178" endline="207">LinkedList&lt; T &gt;::Insert</referencedby>
-        <referencedby refid="d0/dd3/binary__search_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d0/dd3/binary__search_2main_8cc" startline="6" endline="48">main</referencedby>
+        <referencedby refid="d0/d8a/classleetcode_1_1_solutions_1a84c40d3d4d89d92e2192f7b7985e1e4c" compoundref="d9/d25/solutions_8cc" startline="36" endline="48">Solutions::isValidString</referencedby>
+        <referencedby refid="da/dd7/classcommon_1_1_jvector_1a85c6c7d06588eeccecab4bdd62b7d4f8" compoundref="d2/d37/jvector_8cc" startline="7" endline="18">Jvector::Jvector</referencedby>
+        <referencedby refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d3/dd5/priority__queue_2main_8cc" startline="4" endline="38">main</referencedby>
         <referencedby refid="da/d95/class_facade_1a43cc0a1078e99042ba8a37b11a44feb6" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="59" endline="65">Facade::MethodA</referencedby>
         <referencedby refid="da/d95/class_facade_1a1bf43d0f6e3ef96a5e673a2e20466beb" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="66" endline="71">Facade::MethodB</referencedby>
         <referencedby refid="d3/dd0/class_sub_system_four_1a250a119a22d89cab58ac3df56da0a543" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="39" endline="42">SubSystemFour::MethodFour</referencedby>
@@ -4460,6 +4466,7 @@
         <referencedby refid="d4/d06/class_sub_system_three_1ae36a75feb368455bfe67f5a86522fbdf" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="28" endline="31">SubSystemThree::MethodThree</referencedby>
         <referencedby refid="d3/de3/class_sub_system_two_1a084d1867c7a7db6493f141889f541e86" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="17" endline="20">SubSystemTwo::MethodTwo</referencedby>
         <referencedby refid="d0/d75/namespacetesting_1ae8b6df347210c0ebfe5ec995d03c7aed" compoundref="d3/dc2/gtest-test-part_8cc" startline="58" endline="65">testing::operator&lt;&lt;</referencedby>
+        <referencedby refid="da/dd7/classcommon_1_1_jvector_1af976b930683eb041ea24921bc4dee650" compoundref="d2/d37/jvector_8cc" startline="98" endline="110">Jvector::Pop</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a8f1814ae66e117738921f5d400d85ec3" compoundref="d0/dea/linked__list_8cc" startline="116" endline="142">LinkedList&lt; T &gt;::PopBack</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" compoundref="d0/dea/linked__list_8cc" startline="77" endline="89">LinkedList&lt; T &gt;::PopFront</referencedby>
         <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1ad4be3369313a7d7d22098510b1ab0c84" compoundref="dd/d3b/hash__table_8cc" startline="155" endline="161">HashTable::PringDebug</referencedby>
@@ -4471,8 +4478,6 @@
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1aa40f387b3fb06df3997974b66ed1d40c" compoundref="d0/dea/linked__list_8cc" startline="246" endline="270">LinkedList&lt; T &gt;::RemoveValue</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1ae1b551cc51c9d556342b27b466a7c7cb" compoundref="d0/dea/linked__list_8cc" startline="276" endline="293">LinkedList&lt; T &gt;::Reverse</referencedby>
         <referencedby refid="df/d46/hash__table_2main_8cc_1a003ce0914f19a42075de9622525208fe" compoundref="df/d46/hash__table_2main_8cc" startline="6" endline="26">stdlib_experiments</referencedby>
-        <referencedby refid="dd/dc9/queue__linked__list_2main_8cc_1a02daa2d5d74a14cacba69b339d87e3c0" compoundref="dd/dc9/queue__linked__list_2main_8cc" startline="20" endline="33">stdlib_queue_experiment</referencedby>
-        <referencedby refid="dd/dc9/queue__linked__list_2main_8cc_1a5555d25602377ba8c6b05ef270516a64" compoundref="dd/dc9/queue__linked__list_2main_8cc" startline="35" endline="48">stdlib_stack_experiment</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a41778863ac9905141650a07d08146115" compoundref="d0/dea/linked__list_8cc" startline="154" endline="172">LinkedList&lt; T &gt;::ValueAt</referencedby>
         <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a1e3c93770d25a042944efa1e83d449c1" compoundref="d0/dea/linked__list_8cc" startline="299" endline="324">LinkedList&lt; T &gt;::ValueNFromEnd</referencedby>
       </memberdef>
@@ -8470,6 +8475,7 @@
         </inbodydescription>
         <location file="" line="1" column="1"/>
         <referencedby refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1aef01558937d42283a238a7b55baddd11" compoundref="df/d5b/gtest_8cc" startline="1203" endline="1263">testing::internal::edit_distance::CreateUnifiedDiff</referencedby>
+        <referencedby refid="d0/d8a/classleetcode_1_1_solutions_1a5c9cb0761fff007d731583fcd56f63fe" compoundref="d9/d25/solutions_8cc" startline="98" endline="140">Solutions::minSwaps</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/algorithm/min_element_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -11640,6 +11646,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
+        <referencedby refid="d0/d8a/classleetcode_1_1_solutions_1a5c9cb0761fff007d731583fcd56f63fe" compoundref="d9/d25/solutions_8cc" startline="98" endline="140">Solutions::minSwaps</referencedby>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a0e1d3dc36138a591769412d4c7779861" compoundref="d0/da1/gtest-internal-inl_8h" startline="312" endline="329">testing::internal::ShuffleRange</referencedby>
         <referencedby refid="d5/dec/classtesting_1_1_assertion_result_1a0aafa5774976d7f082bb6f1d19da61cb" compoundref="df/d5b/gtest_8cc" startline="995" endline="999">AssertionResult::swap</referencedby>
       </memberdef>

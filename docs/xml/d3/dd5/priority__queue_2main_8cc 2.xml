@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/dd5/priority__queue_2main_8cc" kind="file" language="C++">
+    <compoundname>main.cc</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="d4/da1/priority__queue_8h" local="yes">./priority_queue.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>priority_queue/main.cc</label>
+        <link refid="d3/dd5/priority__queue_2main_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>./priority_queue.h</label>
+        <link refid="d4/da1/priority__queue_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/main.cc" line="4" column="5" bodyfile="priority_queue/main.cc" bodystart="4" bodyend="38"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1ab082bfdb65339d64285cba5cb800ebe0" compoundref="db/d3e/priority__queue_8cc" startline="54" endline="67">PriorityQueue::ExtractMax</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1af20bedaf7c9a39abf3f99b1122503107" compoundref="db/d3e/priority__queue_8cc" startline="36" endline="39">PriorityQueue::GetSize</references>
+        <references refid="d9/d0c/namespacecommon_1a56a19f3ab94e28a975aa2a2ce38fc791" compoundref="db/d3e/priority__queue_8cc" startline="165" endline="176">common::heapify</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a863794a0693a29176855fbe552dbfcf6" compoundref="db/d3e/priority__queue_8cc" startline="14" endline="24">PriorityQueue::Insert</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a357657ded604ecb97b76251146f7ac75" compoundref="db/d3e/priority__queue_8cc" startline="41" endline="44">PriorityQueue::IsEmpty</references>
+        <references refid="d9/d6b/structcommon_1_1_priority_queue_element_1a35af0be900467fedbb610bd6ea65ed78" compoundref="d4/da1/priority__queue_8h" startline="9">PriorityQueueElement::key</references>
+        <references refid="d9/d0c/namespacecommon_1a12066b17e67522e150a0d61a74a4cb2d" compoundref="db/d3e/priority__queue_8cc" startline="232" endline="239">common::print_heap</references>
+        <references refid="dc/de6/classcommon_1_1_priority_queue_1a7c4557fcada1ff8b18f1d62cec1056a1" compoundref="db/d3e/priority__queue_8cc" startline="69" endline="76">PriorityQueue::PrintDebug</references>
+        <references refid="d9/d6b/structcommon_1_1_priority_queue_element_1a5c33da5929c9f2f9ef8d006d2350e6ec" compoundref="d4/da1/priority__queue_8h" startline="10">PriorityQueueElement::value</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/iostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">iostream</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/da1/priority__queue_8h" kindref="compound">./priority_queue.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/dd3/binary__search_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue" kindref="compound">common::PriorityQueue</ref><sp/>priorityqueue(10);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>assert<sp/>(priorityqueue.<ref refid="dc/de6/classcommon_1_1_priority_queue_1a357657ded604ecb97b76251146f7ac75" kindref="member">IsEmpty</ref>());</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>assert<sp/>(priorityqueue.<ref refid="dc/de6/classcommon_1_1_priority_queue_1af20bedaf7c9a39abf3f99b1122503107" kindref="member">GetSize</ref>()<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>priorityqueue.<ref refid="dc/de6/classcommon_1_1_priority_queue_1a863794a0693a29176855fbe552dbfcf6" kindref="member">Insert</ref>(10,</highlight><highlight class="stringliteral">&quot;Hello&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>priorityqueue.<ref refid="dc/de6/classcommon_1_1_priority_queue_1a863794a0693a29176855fbe552dbfcf6" kindref="member">Insert</ref>(300,</highlight><highlight class="stringliteral">&quot;c++&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>priorityqueue.<ref refid="dc/de6/classcommon_1_1_priority_queue_1a863794a0693a29176855fbe552dbfcf6" kindref="member">Insert</ref>(444,</highlight><highlight class="stringliteral">&quot;Taiwan&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d6b/structcommon_1_1_priority_queue_element" kindref="compound">common::PQElement</ref>*<sp/>maxqueue<sp/>=<sp/>priorityqueue.<ref refid="dc/de6/classcommon_1_1_priority_queue_1ab082bfdb65339d64285cba5cb800ebe0" kindref="member">ExtractMax</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;First<sp/>priority:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>maxqueue-&gt;<ref refid="d9/d6b/structcommon_1_1_priority_queue_element_1a35af0be900467fedbb610bd6ea65ed78" kindref="member">key</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>:<sp/>value:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>maxqueue-&gt;<ref refid="d9/d6b/structcommon_1_1_priority_queue_element_1a5c33da5929c9f2f9ef8d006d2350e6ec" kindref="member">value</ref><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/><sp/></highlight><highlight class="stringliteral">&quot;======================&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>priorityqueue.<ref refid="dc/de6/classcommon_1_1_priority_queue_1a7c4557fcada1ff8b18f1d62cec1056a1" kindref="member">PrintDebug</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/><sp/></highlight><highlight class="stringliteral">&quot;======================&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>to_sort[10]<sp/>=<sp/>{613,<sp/>55,<sp/>8721,<sp/>472,<sp/>94,<sp/>72,<sp/>74,<sp/>8,<sp/>61,<sp/>356};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d0c/namespacecommon_1a56a19f3ab94e28a975aa2a2ce38fc791" kindref="member">common::heapify</ref>(to_sort,<sp/>10);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d0c/namespacecommon_1a12066b17e67522e150a0d61a74a4cb2d" kindref="member">common::print_heap</ref>(to_sort,<sp/>10);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="priority_queue/main.cc"/>
+  </compounddef>
+</doxygen>

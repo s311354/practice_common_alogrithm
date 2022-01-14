@@ -15,11 +15,11 @@
         <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
       </node>
     </incdepgraph>
-    <innerclass refid="da/d1f/classFacade" prot="public">Facade</innerclass>
-    <innerclass refid="dd/dd2/classSubSystemFour" prot="public">SubSystemFour</innerclass>
-    <innerclass refid="d1/d78/classSubSystemOne" prot="public">SubSystemOne</innerclass>
-    <innerclass refid="da/d15/classSubSystemThree" prot="public">SubSystemThree</innerclass>
-    <innerclass refid="d0/d5f/classSubSystemTwo" prot="public">SubSystemTwo</innerclass>
+    <innerclass refid="da/d95/class_facade" prot="public">Facade</innerclass>
+    <innerclass refid="d3/dd0/class_sub_system_four" prot="public">SubSystemFour</innerclass>
+    <innerclass refid="d6/d01/class_sub_system_one" prot="public">SubSystemOne</innerclass>
+    <innerclass refid="d4/d06/class_sub_system_three" prot="public">SubSystemThree</innerclass>
+    <innerclass refid="d3/de3/class_sub_system_two" prot="public">SubSystemTwo</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="d6/d51/design__pattern_2facade__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -42,8 +42,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="design_pattern/facade_pattern/main.cc" line="74" column="5" bodyfile="design_pattern/facade_pattern/main.cc" bodystart="74" bodyend="83"/>
-        <references refid="da/d1f/classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="59" endline="65">Facade::MethodA</references>
-        <references refid="da/d1f/classFacade_1ad8f2f8bd2ea2d9305488e2a9a42539d7" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="66" endline="71">Facade::MethodB</references>
+        <references refid="da/d95/class_facade_1a43cc0a1078e99042ba8a37b11a44feb6" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="59" endline="65">Facade::MethodA</references>
+        <references refid="da/d95/class_facade_1a1bf43d0f6e3ef96a5e673a2e20466beb" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="66" endline="71">Facade::MethodB</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -53,10 +53,10 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/iostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">iostream</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3" refid="d1/d78/classSubSystemOne" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d1/d78/classSubSystemOne" kindref="compound">SubSystemOne</ref></highlight></codeline>
+<codeline lineno="3" refid="d6/d01/class_sub_system_one" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d6/d01/class_sub_system_one" kindref="compound">SubSystemOne</ref></highlight></codeline>
 <codeline lineno="4"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="6" refid="d1/d78/classSubSystemOne_1af6c249545e514d436a1fc09177db1ec7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d78/classSubSystemOne_1af6c249545e514d436a1fc09177db1ec7" kindref="member">MethodOne</ref>()</highlight></codeline>
+<codeline lineno="6" refid="d6/d01/class_sub_system_one_1af58c25e4da5a82274339027d5036fb12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d01/class_sub_system_one_1af58c25e4da5a82274339027d5036fb12" kindref="member">MethodOne</ref>()</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>SubSystemOne<sp/>Method&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -64,10 +64,10 @@
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Subsystem<sp/>ClassB&quot;<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="d0/d5f/classSubSystemTwo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/d5f/classSubSystemTwo" kindref="compound">SubSystemTwo</ref></highlight></codeline>
+<codeline lineno="14" refid="d3/de3/class_sub_system_two" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/de3/class_sub_system_two" kindref="compound">SubSystemTwo</ref></highlight></codeline>
 <codeline lineno="15"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="17" refid="d0/d5f/classSubSystemTwo_1a0ba476a0294293b6d829c6eacd98d5c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d5f/classSubSystemTwo_1a0ba476a0294293b6d829c6eacd98d5c7" kindref="member">MethodTwo</ref>()</highlight></codeline>
+<codeline lineno="17" refid="d3/de3/class_sub_system_two_1a084d1867c7a7db6493f141889f541e86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/de3/class_sub_system_two_1a084d1867c7a7db6493f141889f541e86" kindref="member">MethodTwo</ref>()</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>SubSystemTwo<sp/>Method&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -75,10 +75,10 @@
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Subsystem<sp/>ClassC&quot;<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25" refid="da/d15/classSubSystemThree" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="da/d15/classSubSystemThree" kindref="compound">SubSystemThree</ref></highlight></codeline>
+<codeline lineno="25" refid="d4/d06/class_sub_system_three" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d4/d06/class_sub_system_three" kindref="compound">SubSystemThree</ref></highlight></codeline>
 <codeline lineno="26"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="28" refid="da/d15/classSubSystemThree_1ab1b9cbaee75b472b0e89b2f6114409f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d15/classSubSystemThree_1ab1b9cbaee75b472b0e89b2f6114409f8" kindref="member">MethodThree</ref>()</highlight></codeline>
+<codeline lineno="28" refid="d4/d06/class_sub_system_three_1ae36a75feb368455bfe67f5a86522fbdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d06/class_sub_system_three_1ae36a75feb368455bfe67f5a86522fbdf" kindref="member">MethodThree</ref>()</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>SubSystemThree<sp/>Method&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -86,10 +86,10 @@
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Subsystem<sp/>ClassD&quot;<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36" refid="dd/dd2/classSubSystemFour" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dd/dd2/classSubSystemFour" kindref="compound">SubSystemFour</ref></highlight></codeline>
+<codeline lineno="36" refid="d3/dd0/class_sub_system_four" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dd0/class_sub_system_four" kindref="compound">SubSystemFour</ref></highlight></codeline>
 <codeline lineno="37"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="39" refid="dd/dd2/classSubSystemFour_1ad6a8cc00691d9ce183cd300abebf36a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/dd2/classSubSystemFour_1ad6a8cc00691d9ce183cd300abebf36a3" kindref="member">MethodFour</ref>()</highlight></codeline>
+<codeline lineno="39" refid="d3/dd0/class_sub_system_four_1a250a119a22d89cab58ac3df56da0a543" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/dd0/class_sub_system_four_1a250a119a22d89cab58ac3df56da0a543" kindref="member">MethodFour</ref>()</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>SubSystemFour<sp/>Method&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -97,40 +97,40 @@
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;Facade&quot;<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47" refid="da/d1f/classFacade" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="da/d1f/classFacade" kindref="compound">Facade</ref></highlight></codeline>
+<codeline lineno="47" refid="da/d95/class_facade" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="da/d95/class_facade" kindref="compound">Facade</ref></highlight></codeline>
 <codeline lineno="48"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="49" refid="da/d1f/classFacade_1aa567c9b51abe53266ba967cfc76886a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d78/classSubSystemOne" kindref="compound">SubSystemOne</ref><sp/><ref refid="da/d1f/classFacade_1aa567c9b51abe53266ba967cfc76886a4" kindref="member">one</ref>;</highlight></codeline>
-<codeline lineno="50" refid="da/d1f/classFacade_1af9d6b10f7ee6f4c590284ae2babfb489" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d5f/classSubSystemTwo" kindref="compound">SubSystemTwo</ref><sp/><ref refid="da/d1f/classFacade_1af9d6b10f7ee6f4c590284ae2babfb489" kindref="member">two</ref>;</highlight></codeline>
-<codeline lineno="51" refid="da/d1f/classFacade_1a07f1cf53d8adcc286a917d1e84a3bc29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d15/classSubSystemThree" kindref="compound">SubSystemThree</ref><sp/><ref refid="da/d1f/classFacade_1a07f1cf53d8adcc286a917d1e84a3bc29" kindref="member">three</ref>;</highlight></codeline>
-<codeline lineno="52" refid="da/d1f/classFacade_1a127f5325cbb7f08b3a3ca2c264bca9cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/dd2/classSubSystemFour" kindref="compound">SubSystemFour</ref><sp/><ref refid="da/d1f/classFacade_1a127f5325cbb7f08b3a3ca2c264bca9cb" kindref="member">four</ref>;</highlight></codeline>
+<codeline lineno="49" refid="da/d95/class_facade_1a801a005489aab7ac1c2915b49d840b45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d01/class_sub_system_one" kindref="compound">SubSystemOne</ref><sp/><ref refid="da/d95/class_facade_1a801a005489aab7ac1c2915b49d840b45" kindref="member">one</ref>;</highlight></codeline>
+<codeline lineno="50" refid="da/d95/class_facade_1afc7069c6fe2c0283ec01234372060ef4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/de3/class_sub_system_two" kindref="compound">SubSystemTwo</ref><sp/><ref refid="da/d95/class_facade_1afc7069c6fe2c0283ec01234372060ef4" kindref="member">two</ref>;</highlight></codeline>
+<codeline lineno="51" refid="da/d95/class_facade_1a6f28ffef5151324696074bae44fe25f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d06/class_sub_system_three" kindref="compound">SubSystemThree</ref><sp/><ref refid="da/d95/class_facade_1a6f28ffef5151324696074bae44fe25f5" kindref="member">three</ref>;</highlight></codeline>
+<codeline lineno="52" refid="da/d95/class_facade_1acb6004344396ea3adc2725cd43a0f3b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/dd0/class_sub_system_four" kindref="compound">SubSystemFour</ref><sp/><ref refid="da/d95/class_facade_1acb6004344396ea3adc2725cd43a0f3b7" kindref="member">four</ref>;</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="55" refid="da/d1f/classFacade_1a8e0f43c604499d9d603236929b3ac488" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d1f/classFacade_1a8e0f43c604499d9d603236929b3ac488" kindref="member">Facade</ref>()</highlight></codeline>
+<codeline lineno="55" refid="da/d95/class_facade_1a397e28cf991fc3828c3b28ed532bc1b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d95/class_facade_1a397e28cf991fc3828c3b28ed532bc1b6" kindref="member">Facade</ref>()</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59" refid="da/d1f/classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d1f/classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" kindref="member">MethodA</ref>()</highlight></codeline>
+<codeline lineno="59" refid="da/d95/class_facade_1a43cc0a1078e99042ba8a37b11a44feb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d95/class_facade_1a43cc0a1078e99042ba8a37b11a44feb6" kindref="member">MethodA</ref>()</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nMethodA()<sp/>----<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d1f/classFacade_1aa567c9b51abe53266ba967cfc76886a4" kindref="member">one</ref>.<ref refid="d1/d78/classSubSystemOne_1af6c249545e514d436a1fc09177db1ec7" kindref="member">MethodOne</ref>();</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d1f/classFacade_1af9d6b10f7ee6f4c590284ae2babfb489" kindref="member">two</ref>.<ref refid="d0/d5f/classSubSystemTwo_1a0ba476a0294293b6d829c6eacd98d5c7" kindref="member">MethodTwo</ref>();</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d1f/classFacade_1a127f5325cbb7f08b3a3ca2c264bca9cb" kindref="member">four</ref>.<ref refid="dd/dd2/classSubSystemFour_1ad6a8cc00691d9ce183cd300abebf36a3" kindref="member">MethodFour</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d95/class_facade_1a801a005489aab7ac1c2915b49d840b45" kindref="member">one</ref>.<ref refid="d6/d01/class_sub_system_one_1af58c25e4da5a82274339027d5036fb12" kindref="member">MethodOne</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d95/class_facade_1afc7069c6fe2c0283ec01234372060ef4" kindref="member">two</ref>.<ref refid="d3/de3/class_sub_system_two_1a084d1867c7a7db6493f141889f541e86" kindref="member">MethodTwo</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d95/class_facade_1acb6004344396ea3adc2725cd43a0f3b7" kindref="member">four</ref>.<ref refid="d3/dd0/class_sub_system_four_1a250a119a22d89cab58ac3df56da0a543" kindref="member">MethodFour</ref>();</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="66" refid="da/d1f/classFacade_1ad8f2f8bd2ea2d9305488e2a9a42539d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d1f/classFacade_1ad8f2f8bd2ea2d9305488e2a9a42539d7" kindref="member">MethodB</ref>()</highlight></codeline>
+<codeline lineno="66" refid="da/d95/class_facade_1a1bf43d0f6e3ef96a5e673a2e20466beb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d95/class_facade_1a1bf43d0f6e3ef96a5e673a2e20466beb" kindref="member">MethodB</ref>()</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nMethodB()<sp/>----<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d1f/classFacade_1af9d6b10f7ee6f4c590284ae2babfb489" kindref="member">two</ref>.<ref refid="d0/d5f/classSubSystemTwo_1a0ba476a0294293b6d829c6eacd98d5c7" kindref="member">MethodTwo</ref>();</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d1f/classFacade_1a07f1cf53d8adcc286a917d1e84a3bc29" kindref="member">three</ref>.<ref refid="da/d15/classSubSystemThree_1ab1b9cbaee75b472b0e89b2f6114409f8" kindref="member">MethodThree</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d95/class_facade_1afc7069c6fe2c0283ec01234372060ef4" kindref="member">two</ref>.<ref refid="d3/de3/class_sub_system_two_1a084d1867c7a7db6493f141889f541e86" kindref="member">MethodTwo</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d95/class_facade_1a6f28ffef5151324696074bae44fe25f5" kindref="member">three</ref>.<ref refid="d4/d06/class_sub_system_three_1ae36a75feb368455bfe67f5a86522fbdf" kindref="member">MethodThree</ref>();</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="72"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74" refid="d6/d51/design__pattern_2facade__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="db/df7/graphs_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
+<codeline lineno="74" refid="d6/d51/design__pattern_2facade__pattern_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/dd3/binary__search_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
 <codeline lineno="75"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d1f/classFacade" kindref="compound">Facade</ref><sp/>*facade<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="da/d1f/classFacade" kindref="compound">Facade</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d95/class_facade" kindref="compound">Facade</ref><sp/>*facade<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="da/d95/class_facade" kindref="compound">Facade</ref>();</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>facade-&gt;<ref refid="da/d1f/classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" kindref="member">MethodA</ref>();</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>facade-&gt;<ref refid="da/d1f/classFacade_1ad8f2f8bd2ea2d9305488e2a9a42539d7" kindref="member">MethodB</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>facade-&gt;<ref refid="da/d95/class_facade_1a43cc0a1078e99042ba8a37b11a44feb6" kindref="member">MethodA</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>facade-&gt;<ref refid="da/d95/class_facade_1a1bf43d0f6e3ef96a5e673a2e20466beb" kindref="member">MethodB</ref>();</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline lineno="83"><highlight class="normal">}</highlight></codeline>

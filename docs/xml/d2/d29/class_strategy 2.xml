@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/d29/class_strategy" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Strategy</compoundname>
+    <derivedcompoundref refid="d5/d45/class_concrete_strategy_a" prot="public" virt="non-virtual">ConcreteStrategyA</derivedcompoundref>
+    <derivedcompoundref refid="d4/d27/class_concrete_strategy_b" prot="public" virt="non-virtual">ConcreteStrategyB</derivedcompoundref>
+    <derivedcompoundref refid="d6/d10/class_concrete_strategy_c" prot="public" virt="non-virtual">ConcreteStrategyC</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d29/class_strategy_1a926db536f3ac2c8314612cab0f994d7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void algorithmInterface</definition>
+        <argsstring>()=0</argsstring>
+        <name>algorithmInterface</name>
+        <reimplementedby refid="d5/d45/class_concrete_strategy_a_1a9a36cb17a49458de180daba5e931bd94">algorithmInterface</reimplementedby>
+        <reimplementedby refid="d4/d27/class_concrete_strategy_b_1a9a36cb17a49458de180daba5e931bd94">algorithmInterface</reimplementedby>
+        <reimplementedby refid="d6/d10/class_concrete_strategy_c_1a9a36cb17a49458de180daba5e931bd94">algorithmInterface</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/strategy_pattern/main.cc" line="15" column="18"/>
+        <referencedby refid="d5/de2/class_context_1a98a0453967340ac5d6d55b60e67d7ead" compoundref="d4/d51/design__pattern_2strategy__pattern_2main_8cc" startline="76" endline="79">Context::contextInterface</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d2/d29/class_strategy_1a9f872c8938229f9716d966438cc26dfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~Strategy</definition>
+        <argsstring>()</argsstring>
+        <name>~Strategy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="design_pattern/strategy_pattern/main.cc" line="12" column="13" bodyfile="design_pattern/strategy_pattern/main.cc" bodystart="12" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ConcreteStrategyA</label>
+        <link refid="d5/d45/class_concrete_strategy_a"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ConcreteStrategyB</label>
+        <link refid="d4/d27/class_concrete_strategy_b"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ConcreteStrategyC</label>
+        <link refid="d6/d10/class_concrete_strategy_c"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Strategy</label>
+        <link refid="d2/d29/class_strategy"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Strategy</label>
+        <link refid="d2/d29/class_strategy"/>
+      </node>
+    </collaborationgraph>
+    <location file="design_pattern/strategy_pattern/main.cc" line="9" column="1" bodyfile="design_pattern/strategy_pattern/main.cc" bodystart="10" bodyend="16"/>
+    <listofallmembers>
+      <member refid="d2/d29/class_strategy_1a926db536f3ac2c8314612cab0f994d7d" prot="public" virt="pure-virtual"><scope>Strategy</scope><name>algorithmInterface</name></member>
+      <member refid="d2/d29/class_strategy_1a9f872c8938229f9716d966438cc26dfc" prot="public" virt="virtual"><scope>Strategy</scope><name>~Strategy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

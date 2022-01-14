@@ -2,8 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dd/dca/namespacetesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03" kind="namespace" language="C++">
     <compoundname>testing::internal::edit_distance::anonymous_namespace{gtest.cc}</compoundname>
-    <innerclass refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk" prot="public">testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</innerclass>
-    <innerclass refid="d1/dbf/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1InternalStrings" prot="public">testing::internal::edit_distance::anonymous_namespace{gtest.cc}::InternalStrings</innerclass>
+    <innerclass refid="d1/d9e/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1_hunk" prot="public">testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk</innerclass>
+    <innerclass refid="d3/d40/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1_internal_strings" prot="public">testing::internal::edit_distance::anonymous_namespace{gtest.cc}::InternalStrings</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

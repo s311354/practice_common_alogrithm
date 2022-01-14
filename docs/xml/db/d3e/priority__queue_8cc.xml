@@ -136,7 +136,7 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/da1/priority__queue_8h" kindref="compound">./priority_queue.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d9/d0c/namespacecommon" kindref="compound">common</ref><sp/>{</highlight></codeline>
+<codeline lineno="3" refid="d9/d0c/namespacecommon" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d9/d0c/namespacecommon" kindref="compound">common</ref><sp/>{</highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5" refid="dc/de6/classcommon_1_1_priority_queue_1a8f2e1799438cf09890aaecb203d14625" refkind="member"><highlight class="normal"><ref refid="dc/de6/classcommon_1_1_priority_queue_1a8f2e1799438cf09890aaecb203d14625" kindref="member">PriorityQueue::PriorityQueue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size):<sp/>capacity_queue(size)<sp/></highlight></codeline>
 <codeline lineno="6"><highlight class="normal">{</highlight></codeline>

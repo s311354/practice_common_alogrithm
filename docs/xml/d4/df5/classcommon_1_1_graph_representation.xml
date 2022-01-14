@@ -44,7 +44,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="graphs/src/graph_representation.h" line="24" column="25" bodyfile="graphs/src/graph_representation.h" bodystart="21" bodyend="-1"/>
-        <referencedby refid="db/df7/graphs_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="db/df7/graphs_2main_8cc" startline="6" endline="32">main</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d4/df5/classcommon_1_1_graph_representation_1a041278080872dbd0c5a10b08d37757ca" prot="public" static="yes" mutable="no">
         <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref></type>

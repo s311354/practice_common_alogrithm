@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="de/daf/namespacetesting_1_1internal_1_1anonymous__namespace_02gtest_8cc_03" kind="namespace" language="C++">
     <compoundname>testing::internal::anonymous_namespace{gtest.cc}</compoundname>
-    <innerclass refid="d4/d6a/classtesting_1_1internal_1_1anonymous__namespace_02gtest_8cc_03_1_1ClassUniqueToAlwaysTrue" prot="public">testing::internal::anonymous_namespace{gtest.cc}::ClassUniqueToAlwaysTrue</innerclass>
+    <innerclass refid="d1/da8/classtesting_1_1internal_1_1anonymous__namespace_02gtest_8cc_03_1_1_class_unique_to_always_true" prot="public">testing::internal::anonymous_namespace{gtest.cc}::ClassUniqueToAlwaysTrue</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="de/daf/namespacetesting_1_1internal_1_1anonymous__namespace_02gtest_8cc_03_1a87e3d38ad422ce7018c6fcd4d1f3a938" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref> &gt;</type>
@@ -20,10 +20,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest.cc" line="1272" column="13" bodyfile="lib/googletest/src/gtest.cc" bodystart="1272" bodyend="1293"/>
-        <references refid="cpp/container/vector/push_back_1">std::vector&lt; T &gt;::push_back</references>
-        <references refid="cpp/string/basic_string/size_1">std::string::size</references>
-        <references refid="cpp/string/basic_string/substr_1">std::string::substr</references>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a290e3967783ec2de56981c8b1cec37de" compoundref="df/d5b/gtest_8cc" startline="1312" endline="1343">testing::internal::EqFailure</referencedby>
+        <references refid="cpp/container/vector/push_back_1">vector&lt; T &gt;::push_back</references>
+        <references refid="cpp/string/basic_string/size_1">string::size</references>
+        <references refid="cpp/string/basic_string/substr_1">string::substr</references>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a120b81c390ec6bf851e21ffb141871e5" compoundref="df/d5b/gtest_8cc" startline="1312" endline="1343">testing::internal::EqFailure</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>

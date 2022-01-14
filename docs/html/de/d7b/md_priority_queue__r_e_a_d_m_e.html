@@ -86,25 +86,25 @@ $(document).ready(function(){initNavTree('de/d7b/md_priority_queue__r_e_a_d_m_e.
 <div class="title">Overview of Priority Queues </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h3><a class="anchor" id="autotoc_md14"></a>
+<div class="textblock"><h3><a class="anchor" id="autotoc_md1"></a>
 The concept of priority queue</h3>
 <p>In real life, we often encounter scenarios that involve queuing, such as standing in line at a gorcery store or at the movies. In these "first come, first served" situations, the first person to arrive is the first person served.</p>
 <p>However, there are other scenarios where the first person to arrive is not hte first person served: when considering patients in an emergenct room, or when boarding an airplane... , etc. Here, the scenario is more of a "first come, most-important served" situation. Thus, we want to design a datatype that is tailored to support the following three operations as efficiently as possible:</p>
 <ul>
 <li>
-Ass an item, with a given priority, into the data structure: key </li>
+Add an item, with a given priority, into the data structure: key </li>
 <li>
 Remove the most important item from the data structure </li>
 <li>
 Giv the number of otems in the data structure </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md15"></a>
+<h3><a class="anchor" id="autotoc_md2"></a>
 The concept of heap data structure</h3>
 <p>The heap is a specialized tree-based data structure which is essentially an almost complete tree that satisfies the heap property. And it is also one maximally efficient implementation of an abstract data type called a priority queue, and in fact, priority queues are often referred to ad "heaps".</p>
-<h3><a class="anchor" id="autotoc_md16"></a>
+<h3><a class="anchor" id="autotoc_md3"></a>
 The concept of heapify procedure</h3>
 <p>The heapify procedure can be thought of as building a heap from the bottom up by successively sifting downward to establish the heap property. An alternative version that builds the heap top-down and sifts upward may be simpler to understand. In this implementation, it adopts first method which's time complexity is O(n) that is less than the second method.</p>
-<h3><a class="anchor" id="autotoc_md17"></a>
+<h3><a class="anchor" id="autotoc_md4"></a>
 Reference</h3>
 <p>[1] <a href="https://www.cplusplus.com/forum/general/146188/">cplusplus: priority queue</a></p>
 <p>[2] <a href="https://stackoverflow.com/questions/34329942/siftup-and-siftdown-operation-in-heap-for-heapifying-an-array">stack overflow: siftUp and siftDown operation in heap for heapifying an array</a></p>

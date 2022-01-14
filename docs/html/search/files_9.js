@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['limits_4596',['limits',['http://en.cppreference.com/w/cpp/header/limits.html',0,'']]],
-  ['linked_5flist_2ecc_4597',['linked_list.cc',['../d0/dea/linked__list_8cc.html',1,'']]],
-  ['linked_5flist_2eh_4598',['linked_list.h',['../d1/d4a/linked__list_8h.html',1,'']]],
-  ['list_4599',['list',['http://en.cppreference.com/w/cpp/header/list.html',0,'']]],
-  ['list_5felement_2ecc_4600',['list_element.cc',['../dc/d51/linked__list_2src_2list__element_8cc.html',1,'(Global Namespace)'],['../d9/d07/queue__linked__list_2src_2list__element_8cc.html',1,'(Global Namespace)']]],
-  ['list_5felement_2eh_4601',['list_element.h',['../d8/dd2/linked__list_2src_2list__element_8h.html',1,'(Global Namespace)'],['../d7/df5/queue__linked__list_2src_2list__element_8h.html',1,'(Global Namespace)']]],
-  ['locale_4602',['locale',['http://en.cppreference.com/w/cpp/header/locale.html',0,'']]]
+  ['jvector_2ecc_4635',['jvector.cc',['../d2/d37/jvector_8cc.html',1,'']]],
+  ['jvector_2eh_4636',['jvector.h',['../d3/db0/jvector_8h.html',1,'']]],
+  ['jvector_5ftest_2ecc_4637',['jvector_test.cc',['../db/d2e/jvector__test_8cc.html',1,'']]],
+  ['jvector_5ftest_2eh_4638',['jvector_test.h',['../dc/dac/jvector__test_8h.html',1,'']]]
 ];

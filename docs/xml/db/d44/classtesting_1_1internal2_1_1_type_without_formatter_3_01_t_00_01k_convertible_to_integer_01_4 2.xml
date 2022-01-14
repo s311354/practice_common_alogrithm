@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d44/classtesting_1_1internal2_1_1_type_without_formatter_3_01_t_00_01k_convertible_to_integer_01_4" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal2::TypeWithoutFormatter&lt; T, kConvertibleToInteger &gt;</compoundname>
+    <includes refid="d0/d6d/gtest-printers_8h" local="no">gtest-printers.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="db/d44/classtesting_1_1internal2_1_1_type_without_formatter_3_01_t_00_01k_convertible_to_integer_01_4_1ab2db3a3b620936ce148e9d961bb505bd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PrintValue</definition>
+        <argsstring>(const T &amp;value, ::std::ostream *os)</argsstring>
+        <name>PrintValue</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>::<ref refid="cpp/io/basic_ostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::ostream</ref> *</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-printers.h" line="172" column="15" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="172" bodyend="175"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>TypeWithoutFormatter&lt; T, kConvertibleToInteger &gt;</label>
+        <link refid="db/d44/classtesting_1_1internal2_1_1_type_without_formatter_3_01_t_00_01k_convertible_to_integer_01_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/gtest-printers.h" line="163" column="1" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="163" bodyend="176"/>
+    <listofallmembers>
+      <member refid="db/d44/classtesting_1_1internal2_1_1_type_without_formatter_3_01_t_00_01k_convertible_to_integer_01_4_1ab2db3a3b620936ce148e9d961bb505bd" prot="public" virt="non-virtual"><scope>testing::internal2::TypeWithoutFormatter&lt; T, kConvertibleToInteger &gt;</scope><name>PrintValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

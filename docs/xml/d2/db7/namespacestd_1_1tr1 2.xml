@@ -5,9 +5,9 @@
     <innerclass refid="d4/d4b/structstd_1_1tr1_1_1tuple__element" prot="public">std::tr1::tuple_element</innerclass>
     <innernamespace refid="d7/d34/namespacestd_1_1tr1_1_1gtest__internal">std::tr1::gtest_internal</innernamespace>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1a9c0fa65b105f8e2f58ba59ecf75fd000" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1ab152cf06b4c643e8d98d23bcd3dd25d9" prot="public" static="no" mutable="no">
         <type>const T1 &amp;</type>
-        <definition>const T1 &amp; std::tr1::f1</definition>
+        <definition>const T1 &amp; f1</definition>
         <argsstring></argsstring>
         <name>f1</name>
         <initializer>{
@@ -20,13 +20,13 @@
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-tuple.h" line="683" column="40" bodyfile="lib/googletest/include/gtest/internal/gtest-tuple.h" bodystart="683" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1a87dd9e009868361317f587126dba63d4" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1a9bdbceef8c74900020f28a84d61acd67" prot="public" static="no" mutable="no">
         <type>const T1 const T2 &amp;</type>
-        <definition>const T1 const T2 &amp; std::tr1::f2</definition>
+        <definition>const T1 const T2 &amp; f2</definition>
         <argsstring></argsstring>
         <name>f2</name>
         <initializer>{
-  return <ref refid="d2/db7/namespacestd_1_1tr1_1a368170c49cc7d7f130c0564bbad01205" kindref="member">GTEST_3_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1a9c0fa65b105f8e2f58ba59ecf75fd000" kindref="member">f1</ref>, f2)</initializer>
+  return <ref refid="d2/db7/namespacestd_1_1tr1_1a368170c49cc7d7f130c0564bbad01205" kindref="member">GTEST_3_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1ab152cf06b4c643e8d98d23bcd3dd25d9" kindref="member">f1</ref>, f2)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,13 +35,13 @@
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-tuple.h" line="688" column="52" bodyfile="lib/googletest/include/gtest/internal/gtest-tuple.h" bodystart="688" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1a0f7c3b47d27d42d82d1a333ea420ce4e" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1af160cdd158616571c0848d1b5cb7633f" prot="public" static="no" mutable="no">
         <type>const T1 const T2 const T3 &amp;</type>
-        <definition>const T1 const T2 const T3 &amp; std::tr1::f3</definition>
+        <definition>const T1 const T2 const T3 &amp; f3</definition>
         <argsstring></argsstring>
         <name>f3</name>
         <initializer>{
-  return <ref refid="d2/db7/namespacestd_1_1tr1_1a661b17d2b7137863f06a016762f5c888" kindref="member">GTEST_4_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1a9c0fa65b105f8e2f58ba59ecf75fd000" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a87dd9e009868361317f587126dba63d4" kindref="member">f2</ref>, f3)</initializer>
+  return <ref refid="d2/db7/namespacestd_1_1tr1_1a661b17d2b7137863f06a016762f5c888" kindref="member">GTEST_4_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1ab152cf06b4c643e8d98d23bcd3dd25d9" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a9bdbceef8c74900020f28a84d61acd67" kindref="member">f2</ref>, f3)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -50,13 +50,13 @@
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-tuple.h" line="694" column="14" bodyfile="lib/googletest/include/gtest/internal/gtest-tuple.h" bodystart="694" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1adc796e02b7385d526aff708189564f67" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1a08d17caa0df712a6beafb440f802690f" prot="public" static="no" mutable="no">
         <type>const T1 const T2 const T3 const T4 &amp;</type>
-        <definition>const T1 const T2 const T3 const T4 &amp; std::tr1::f4</definition>
+        <definition>const T1 const T2 const T3 const T4 &amp; f4</definition>
         <argsstring></argsstring>
         <name>f4</name>
         <initializer>{
-  return <ref refid="d2/db7/namespacestd_1_1tr1_1a51b070e2eb5e6bb83a290f35c19667dd" kindref="member">GTEST_5_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1a9c0fa65b105f8e2f58ba59ecf75fd000" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a87dd9e009868361317f587126dba63d4" kindref="member">f2</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a0f7c3b47d27d42d82d1a333ea420ce4e" kindref="member">f3</ref>, f4)</initializer>
+  return <ref refid="d2/db7/namespacestd_1_1tr1_1a51b070e2eb5e6bb83a290f35c19667dd" kindref="member">GTEST_5_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1ab152cf06b4c643e8d98d23bcd3dd25d9" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a9bdbceef8c74900020f28a84d61acd67" kindref="member">f2</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1af160cdd158616571c0848d1b5cb7633f" kindref="member">f3</ref>, f4)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -65,13 +65,13 @@
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-tuple.h" line="700" column="26" bodyfile="lib/googletest/include/gtest/internal/gtest-tuple.h" bodystart="700" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1a9c1eb66b2b2fa321942af95405232a0d" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1a275f51138b2714c198b49450278226a0" prot="public" static="no" mutable="no">
         <type>const T1 const T2 const T3 const T4 const T5 &amp;</type>
-        <definition>const T1 const T2 const T3 const T4 const T5 &amp; std::tr1::f5</definition>
+        <definition>const T1 const T2 const T3 const T4 const T5 &amp; f5</definition>
         <argsstring></argsstring>
         <name>f5</name>
         <initializer>{
-  return <ref refid="d2/db7/namespacestd_1_1tr1_1a485b05fdbbcfcf7ad5e4234e17702268" kindref="member">GTEST_6_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1a9c0fa65b105f8e2f58ba59ecf75fd000" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a87dd9e009868361317f587126dba63d4" kindref="member">f2</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a0f7c3b47d27d42d82d1a333ea420ce4e" kindref="member">f3</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1adc796e02b7385d526aff708189564f67" kindref="member">f4</ref>, f5)</initializer>
+  return <ref refid="d2/db7/namespacestd_1_1tr1_1a485b05fdbbcfcf7ad5e4234e17702268" kindref="member">GTEST_6_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1ab152cf06b4c643e8d98d23bcd3dd25d9" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a9bdbceef8c74900020f28a84d61acd67" kindref="member">f2</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1af160cdd158616571c0848d1b5cb7633f" kindref="member">f3</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a08d17caa0df712a6beafb440f802690f" kindref="member">f4</ref>, f5)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -80,13 +80,13 @@
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-tuple.h" line="706" column="38" bodyfile="lib/googletest/include/gtest/internal/gtest-tuple.h" bodystart="706" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1a6b62f32e1e3e21bceb94eb46c4cbfd56" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1a0fb78f28362f1ae1beba31d76858cb74" prot="public" static="no" mutable="no">
         <type>const T1 const T2 const T3 const T4 const T5 const T6 &amp;</type>
-        <definition>const T1 const T2 const T3 const T4 const T5 const T6 &amp; std::tr1::f6</definition>
+        <definition>const T1 const T2 const T3 const T4 const T5 const T6 &amp; f6</definition>
         <argsstring></argsstring>
         <name>f6</name>
         <initializer>{
-  return <ref refid="d2/db7/namespacestd_1_1tr1_1ab451b390a95ee0555d7a43b67ea348aa" kindref="member">GTEST_7_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1a9c0fa65b105f8e2f58ba59ecf75fd000" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a87dd9e009868361317f587126dba63d4" kindref="member">f2</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a0f7c3b47d27d42d82d1a333ea420ce4e" kindref="member">f3</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1adc796e02b7385d526aff708189564f67" kindref="member">f4</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a9c1eb66b2b2fa321942af95405232a0d" kindref="member">f5</ref>, f6)</initializer>
+  return <ref refid="d2/db7/namespacestd_1_1tr1_1ab451b390a95ee0555d7a43b67ea348aa" kindref="member">GTEST_7_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1ab152cf06b4c643e8d98d23bcd3dd25d9" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a9bdbceef8c74900020f28a84d61acd67" kindref="member">f2</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1af160cdd158616571c0848d1b5cb7633f" kindref="member">f3</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a08d17caa0df712a6beafb440f802690f" kindref="member">f4</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a275f51138b2714c198b49450278226a0" kindref="member">f5</ref>, f6)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -95,13 +95,13 @@
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-tuple.h" line="712" column="50" bodyfile="lib/googletest/include/gtest/internal/gtest-tuple.h" bodystart="712" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1a2185f3a1c07f2df072c39cb91ffa89a4" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1af862ae3990ea1e33c48991c2232d04bc" prot="public" static="no" mutable="no">
         <type>const T1 const T2 const T3 const T4 const T5 const T6 const T7 &amp;</type>
-        <definition>const T1 const T2 const T3 const T4 const T5 const T6 const T7 &amp; std::tr1::f7</definition>
+        <definition>const T1 const T2 const T3 const T4 const T5 const T6 const T7 &amp; f7</definition>
         <argsstring></argsstring>
         <name>f7</name>
         <initializer>{
-  return <ref refid="d2/db7/namespacestd_1_1tr1_1ab2b1c72e9db7436909d9ac011645f29d" kindref="member">GTEST_8_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1a9c0fa65b105f8e2f58ba59ecf75fd000" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a87dd9e009868361317f587126dba63d4" kindref="member">f2</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a0f7c3b47d27d42d82d1a333ea420ce4e" kindref="member">f3</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1adc796e02b7385d526aff708189564f67" kindref="member">f4</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a9c1eb66b2b2fa321942af95405232a0d" kindref="member">f5</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a6b62f32e1e3e21bceb94eb46c4cbfd56" kindref="member">f6</ref>, f7)</initializer>
+  return <ref refid="d2/db7/namespacestd_1_1tr1_1ab2b1c72e9db7436909d9ac011645f29d" kindref="member">GTEST_8_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1ab152cf06b4c643e8d98d23bcd3dd25d9" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a9bdbceef8c74900020f28a84d61acd67" kindref="member">f2</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1af160cdd158616571c0848d1b5cb7633f" kindref="member">f3</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a08d17caa0df712a6beafb440f802690f" kindref="member">f4</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a275f51138b2714c198b49450278226a0" kindref="member">f5</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a0fb78f28362f1ae1beba31d76858cb74" kindref="member">f6</ref>, f7)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -110,13 +110,13 @@
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-tuple.h" line="718" column="62" bodyfile="lib/googletest/include/gtest/internal/gtest-tuple.h" bodystart="718" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1ab998afa41cea8d6d26d7e4288b0bf974" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1af9fc1d44c4a133574eb26a1a19c162f6" prot="public" static="no" mutable="no">
         <type>const T1 const T2 const T3 const T4 const T5 const T6 const T7 const T8 &amp;</type>
-        <definition>const T1 const T2 const T3 const T4 const T5 const T6 const T7 const T8 &amp; std::tr1::f8</definition>
+        <definition>const T1 const T2 const T3 const T4 const T5 const T6 const T7 const T8 &amp; f8</definition>
         <argsstring></argsstring>
         <name>f8</name>
         <initializer>{
-  return <ref refid="d2/db7/namespacestd_1_1tr1_1ab4f2c7d5458171bec6c4330fc5c7aba6" kindref="member">GTEST_9_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1a9c0fa65b105f8e2f58ba59ecf75fd000" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a87dd9e009868361317f587126dba63d4" kindref="member">f2</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a0f7c3b47d27d42d82d1a333ea420ce4e" kindref="member">f3</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1adc796e02b7385d526aff708189564f67" kindref="member">f4</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a9c1eb66b2b2fa321942af95405232a0d" kindref="member">f5</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a6b62f32e1e3e21bceb94eb46c4cbfd56" kindref="member">f6</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a2185f3a1c07f2df072c39cb91ffa89a4" kindref="member">f7</ref>, f8)</initializer>
+  return <ref refid="d2/db7/namespacestd_1_1tr1_1ab4f2c7d5458171bec6c4330fc5c7aba6" kindref="member">GTEST_9_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1ab152cf06b4c643e8d98d23bcd3dd25d9" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a9bdbceef8c74900020f28a84d61acd67" kindref="member">f2</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1af160cdd158616571c0848d1b5cb7633f" kindref="member">f3</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a08d17caa0df712a6beafb440f802690f" kindref="member">f4</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a275f51138b2714c198b49450278226a0" kindref="member">f5</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a0fb78f28362f1ae1beba31d76858cb74" kindref="member">f6</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1af862ae3990ea1e33c48991c2232d04bc" kindref="member">f7</ref>, f8)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -125,13 +125,13 @@
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-tuple.h" line="725" column="14" bodyfile="lib/googletest/include/gtest/internal/gtest-tuple.h" bodystart="725" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1a216d2c7cdfaaf415caba2f88e2c34413" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="d2/db7/namespacestd_1_1tr1_1a13efcf42c7a98186c8d7da6ebb27864b" prot="public" static="no" mutable="no">
         <type>const T1 const T2 const T3 const T4 const T5 const T6 const T7 const T8 const T9 &amp;</type>
-        <definition>const T1 const T2 const T3 const T4 const T5 const T6 const T7 const T8 const T9&amp; std::tr1::f9</definition>
+        <definition>const T1 const T2 const T3 const T4 const T5 const T6 const T7 const T8 const T9&amp; f9</definition>
         <argsstring></argsstring>
         <name>f9</name>
         <initializer>{
-  return <ref refid="d2/db7/namespacestd_1_1tr1_1aa636d3269bf1f368a7bc09ff158bc482" kindref="member">GTEST_10_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1a9c0fa65b105f8e2f58ba59ecf75fd000" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a87dd9e009868361317f587126dba63d4" kindref="member">f2</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a0f7c3b47d27d42d82d1a333ea420ce4e" kindref="member">f3</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1adc796e02b7385d526aff708189564f67" kindref="member">f4</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a9c1eb66b2b2fa321942af95405232a0d" kindref="member">f5</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a6b62f32e1e3e21bceb94eb46c4cbfd56" kindref="member">f6</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a2185f3a1c07f2df072c39cb91ffa89a4" kindref="member">f7</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1ab998afa41cea8d6d26d7e4288b0bf974" kindref="member">f8</ref>, f9)</initializer>
+  return <ref refid="d2/db7/namespacestd_1_1tr1_1aa636d3269bf1f368a7bc09ff158bc482" kindref="member">GTEST_10_TUPLE_</ref>(T)(f0, <ref refid="d2/db7/namespacestd_1_1tr1_1ab152cf06b4c643e8d98d23bcd3dd25d9" kindref="member">f1</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a9bdbceef8c74900020f28a84d61acd67" kindref="member">f2</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1af160cdd158616571c0848d1b5cb7633f" kindref="member">f3</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a08d17caa0df712a6beafb440f802690f" kindref="member">f4</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a275f51138b2714c198b49450278226a0" kindref="member">f5</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1a0fb78f28362f1ae1beba31d76858cb74" kindref="member">f6</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1af862ae3990ea1e33c48991c2232d04bc" kindref="member">f7</ref>, <ref refid="d2/db7/namespacestd_1_1tr1_1af9fc1d44c4a133574eb26a1a19c162f6" kindref="member">f8</ref>, f9)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

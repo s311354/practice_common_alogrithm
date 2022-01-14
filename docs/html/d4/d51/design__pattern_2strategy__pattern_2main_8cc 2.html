@@ -14,8 +14,8 @@
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<link rel="search" href="../../search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Common Alogrithm"/>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -45,8 +45,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search','.html'
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('../../',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
+  initMenu('../../',true,true,'search.php','Search');
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() {
+    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
+  });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
@@ -67,20 +70,6 @@ $(document).ready(function(){initNavTree('d4/d51/design__pattern_2strategy__patt
 /* @license-end */
 </script>
 <div id="doc-content">
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -104,19 +93,19 @@ $(document).ready(function(){initNavTree('d4/d51/design__pattern_2strategy__patt
 </map>
 </div>
 </div>
-<p><a href="">Go to the source code of this file.</a></p>
+<p><a href="../../d4/d51/design__pattern_2strategy__pattern_2main_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/classConcreteStrategyA.html">ConcreteStrategyA</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d45/class_concrete_strategy_a.html">ConcreteStrategyA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9b/classConcreteStrategyB.html">ConcreteStrategyB</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d27/class_concrete_strategy_b.html">ConcreteStrategyB</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dff/classConcreteStrategyC.html">ConcreteStrategyC</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d10/class_concrete_strategy_c.html">ConcreteStrategyC</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d00/classContext.html">Context</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de2/class_context.html">Context</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df2/classStrategy.html">Strategy</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/class_strategy.html">Strategy</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -150,25 +139,27 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d51/design__pattern_2strategy__pattern_2main_8cc_source.html#l00086">86</a> of file <a class="el" href="../../d4/d51/design__pattern_2strategy__pattern_2main_8cc_source.html">main.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// Client requirement</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="../../d2/d00/classContext.html">Context</a> context( <span class="keyword">new</span> <a class="code" href="../../d1/dde/classConcreteStrategyA.html">ConcreteStrategyA</a>() );</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="../../d5/de2/class_context.html">Context</a> context( <span class="keyword">new</span> <a class="code" href="../../d5/d45/class_concrete_strategy_a.html">ConcreteStrategyA</a>() );</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    context.contextInterface();</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../d2/d00/classContext.html">Context</a> context1( <span class="keyword">new</span> <a class="code" href="../../d7/d9b/classConcreteStrategyB.html">ConcreteStrategyB</a>() );</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../d5/de2/class_context.html">Context</a> context1( <span class="keyword">new</span> <a class="code" href="../../d4/d27/class_concrete_strategy_b.html">ConcreteStrategyB</a>() );</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    context1.contextInterface();</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="../../d2/d00/classContext.html">Context</a> context2( <span class="keyword">new</span> <a class="code" href="../../df/dff/classConcreteStrategyC.html">ConcreteStrategyC</a>() );</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="../../d5/de2/class_context.html">Context</a> context2( <span class="keyword">new</span> <a class="code" href="../../d6/d10/class_concrete_strategy_c.html">ConcreteStrategyC</a>() );</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    context2.contextInterface();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
-<div class="ttc" id="aclassConcreteStrategyA_html"><div class="ttname"><a href="../../d1/dde/classConcreteStrategyA.html">ConcreteStrategyA</a></div><div class="ttdef"><b>Definition:</b> main.cc:23</div></div>
-<div class="ttc" id="aclassConcreteStrategyB_html"><div class="ttname"><a href="../../d7/d9b/classConcreteStrategyB.html">ConcreteStrategyB</a></div><div class="ttdef"><b>Definition:</b> main.cc:36</div></div>
-<div class="ttc" id="aclassConcreteStrategyC_html"><div class="ttname"><a href="../../df/dff/classConcreteStrategyC.html">ConcreteStrategyC</a></div><div class="ttdef"><b>Definition:</b> main.cc:50</div></div>
-<div class="ttc" id="aclassContext_html"><div class="ttname"><a href="../../d2/d00/classContext.html">Context</a></div><div class="ttdef"><b>Definition:</b> main.cc:67</div></div>
+<div class="ttc" id="aclass_concrete_strategy_a_html"><div class="ttname"><a href="../../d5/d45/class_concrete_strategy_a.html">ConcreteStrategyA</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/design__pattern_2strategy__pattern_2main_8cc_source.html#l00022">main.cc:23</a></div></div>
+<div class="ttc" id="aclass_concrete_strategy_b_html"><div class="ttname"><a href="../../d4/d27/class_concrete_strategy_b.html">ConcreteStrategyB</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/design__pattern_2strategy__pattern_2main_8cc_source.html#l00035">main.cc:36</a></div></div>
+<div class="ttc" id="aclass_concrete_strategy_c_html"><div class="ttname"><a href="../../d6/d10/class_concrete_strategy_c.html">ConcreteStrategyC</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/design__pattern_2strategy__pattern_2main_8cc_source.html#l00049">main.cc:50</a></div></div>
+<div class="ttc" id="aclass_context_html"><div class="ttname"><a href="../../d5/de2/class_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/design__pattern_2strategy__pattern_2main_8cc_source.html#l00066">main.cc:67</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../#l00076">Context::contextInterface()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d51/design__pattern_2strategy__pattern_2main_8cc_source.html#l00076">Context::contextInterface()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -177,8 +168,7 @@ Functions</h2></td></tr>
 <div class="center"><img src="../../d4/d51/design__pattern_2strategy__pattern_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph.png" border="0" usemap="#ad4/d51/design__pattern_2strategy__pattern_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph" alt=""/></div>
 <map name="ad4/d51/design__pattern_2strategy__pattern_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph" id="ad4/d51/design__pattern_2strategy__pattern_2main_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,56,32"/>
-<area shape="rect" href="../../d2/d00/classContext.html#af3882694631333a50f562e409d895bf6" title=" " alt="" coords="104,5,275,32"/>
-<area shape="rect" href="../../d2/df2/classStrategy.html#a8c773b3212e91135c0d6365113ddfee2" title=" " alt="" coords="323,5,505,32"/>
+<area shape="rect" href="../../d5/de2/class_context.html#a98a0453967340ac5d6d55b60e67d7ead" title=" " alt="" coords="104,5,275,32"/>
 </map>
 </div>
 

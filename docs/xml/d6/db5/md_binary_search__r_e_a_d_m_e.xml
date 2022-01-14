@@ -6,12 +6,12 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<sect3 id="d6/db5/md_binary_search__r_e_a_d_m_e_1autotoc_md1">
+<sect3 id="d6/db5/md_binary_search__r_e_a_d_m_e_1autotoc_md6">
 <title>The concept of struct and class declarations</title>
 <para>For C program, a struct is a type consisting of a sequence of members whose storage is allocated in an ordered sequence. (as opposed to union, which is a type consisting of a sequence of members whose storage overlaps) Within a struct object, addresses of its elements increase in order in which the members were defined.</para>
 <para>For C++ program, classes and structs are user-defined types, defined by class-specifier.</para>
 </sect3>
-<sect3 id="d6/db5/md_binary_search__r_e_a_d_m_e_1autotoc_md2">
+<sect3 id="d6/db5/md_binary_search__r_e_a_d_m_e_1autotoc_md7">
 <title>Reference</title>
 <para>[1] <ulink url="https://en.cppreference.com/w/c/language/struct">cppreference: Struct declaration</ulink></para>
 <para>[2] <ulink url="https://en.cppreference.com/w/cpp/language/class">cppreference: Class declaration</ulink></para>

@@ -1,6 +1,29 @@
 var namespacecommon =
 [
-    [ "BinarySearch", "d3/d2e/classcommon_1_1BinarySearch.html", "d3/d2e/classcommon_1_1BinarySearch" ],
-    [ "LinkedList", "dc/d7f/classcommon_1_1LinkedList.html", "dc/d7f/classcommon_1_1LinkedList" ],
-    [ "ListElement", "d2/dc6/classcommon_1_1ListElement.html", "d2/dc6/classcommon_1_1ListElement" ]
+    [ "The concept of struct and class declarations", "d6/db5/md_binary_search__r_e_a_d_m_e.html#autotoc_md1", null ],
+    [ "Reference", "d6/db5/md_binary_search__r_e_a_d_m_e.html#autotoc_md2", null ],
+    [ "The concept of priority queue", "de/d7b/md_priority_queue__r_e_a_d_m_e.html#autotoc_md4", null ],
+    [ "The concept of heap data structure", "de/d7b/md_priority_queue__r_e_a_d_m_e.html#autotoc_md5", null ],
+    [ "The concept of heapify procedure", "de/d7b/md_priority_queue__r_e_a_d_m_e.html#autotoc_md6", null ],
+    [ "Reference", "de/d7b/md_priority_queue__r_e_a_d_m_e.html#autotoc_md7", null ],
+    [ "The concept of Directed Graph", "d7/de5/md_graphs__r_e_a_d_m_e.html#autotoc_md9", null ],
+    [ "Reference", "d7/de5/md_graphs__r_e_a_d_m_e.html#autotoc_md10", null ],
+    [ "The concept of Hash Tables", "df/d05/md_hash_table__r_e_a_d_m_e.html#autotoc_md12", null ],
+    [ "Reference", "df/d05/md_hash_table__r_e_a_d_m_e.html#autotoc_md13", null ],
+    [ "Queue", "d1/daa/md_queue_linked_list__r_e_a_d_m_e.html#autotoc_md15", null ],
+    [ "Stack", "d1/daa/md_queue_linked_list__r_e_a_d_m_e.html#autotoc_md16", null ],
+    [ "Reference", "d1/daa/md_queue_linked_list__r_e_a_d_m_e.html#autotoc_md17", null ],
+    [ "Graph", "de/d16/classcommon_1_1_graph.html", "de/d16/classcommon_1_1_graph" ],
+    [ "GraphDirected", "d8/dec/classcommon_1_1_graph_directed.html", "d8/dec/classcommon_1_1_graph_directed" ],
+    [ "GraphRepresentation", "d4/df5/classcommon_1_1_graph_representation.html", "d4/df5/classcommon_1_1_graph_representation" ],
+    [ "GraphRepresentationList", "db/df9/classcommon_1_1_graph_representation_list.html", "db/df9/classcommon_1_1_graph_representation_list" ],
+    [ "HashObject", "db/de7/classcommon_1_1_hash_object.html", "db/de7/classcommon_1_1_hash_object" ],
+    [ "HashTable", "d1/d2d/classcommon_1_1_hash_table.html", "d1/d2d/classcommon_1_1_hash_table" ],
+    [ "PriorityQueue", "dc/de6/classcommon_1_1_priority_queue.html", "dc/de6/classcommon_1_1_priority_queue" ],
+    [ "QueueLinkedList", "d1/d81/classcommon_1_1_queue_linked_list.html", "d1/d81/classcommon_1_1_queue_linked_list" ],
+    [ "PQElement", "d9/d0c/namespacecommon.html#a48e1c0989caea543c0290e670c310824", null ],
+    [ "heap_sort", "d9/d0c/namespacecommon.html#aa79baf91f02bf8cfdee41a1b3ef5d1cf", null ],
+    [ "heapify", "d9/d0c/namespacecommon.html#a56a19f3ab94e28a975aa2a2ce38fc791", null ],
+    [ "precolate_down", "d9/d0c/namespacecommon.html#a0e11a1d1ae5891eb08d6db9a0b4df126", null ],
+    [ "print_heap", "d9/d0c/namespacecommon.html#a12066b17e67522e150a0d61a74a4cb2d", null ]
 ];

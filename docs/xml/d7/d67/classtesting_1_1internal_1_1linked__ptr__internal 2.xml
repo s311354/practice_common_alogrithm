@@ -4,9 +4,9 @@
     <compoundname>testing::internal::linked_ptr_internal</compoundname>
     <includes refid="d0/d03/gtest-linked__ptr_8h" local="no">gtest-linked_ptr.h</includes>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" prot="private" static="no" mutable="yes">
+      <memberdef kind="variable" id="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a5d82916613b647a123d1f56ba20988d0" prot="private" static="no" mutable="yes">
         <type><ref refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal" kindref="compound">linked_ptr_internal</ref> const  *</type>
-        <definition>linked_ptr_internal const* testing::internal::linked_ptr_internal::next_</definition>
+        <definition>linked_ptr_internal const* next_</definition>
         <argsstring></argsstring>
         <name>next_</name>
         <briefdescription>
@@ -16,15 +16,15 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-linked_ptr.h" line="142" column="37" bodyfile="lib/googletest/include/gtest/internal/gtest-linked_ptr.h" bodystart="142" bodyend="-1"/>
-        <referencedby refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a8699e539d9702d363ef0351012d1b3ca" compoundref="d0/d03/gtest-linked__ptr_8h" startline="125" endline="139">depart</referencedby>
-        <referencedby refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1acd5a341459f7e81b10b4112d8c764e2a" compoundref="d0/d03/gtest-linked__ptr_8h" startline="108" endline="121">join</referencedby>
-        <referencedby refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a742af1f65df2d5e2b7198a1b74264a83" compoundref="d0/d03/gtest-linked__ptr_8h" startline="92" endline="94">join_new</referencedby>
+        <referencedby refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a7c24850fd36aa1807a73d931ecc48cbd" compoundref="d0/d03/gtest-linked__ptr_8h" startline="125" endline="139">linked_ptr_internal::depart</referencedby>
+        <referencedby refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1aebe5ff3e9afab2819bc9225d9e216655" compoundref="d0/d03/gtest-linked__ptr_8h" startline="108" endline="121">linked_ptr_internal::join</referencedby>
+        <referencedby refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a079f6335d19865e8f3c8ceb1dba2bb4d" compoundref="d0/d03/gtest-linked__ptr_8h" startline="92" endline="94">linked_ptr_internal::join_new</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a8699e539d9702d363ef0351012d1b3ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a7c24850fd36aa1807a73d931ecc48cbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
-        <definition>bool testing::internal::linked_ptr_internal::depart</definition>
+        <definition>bool depart</definition>
         <argsstring>() GTEST_LOCK_EXCLUDED_(g_linked_ptr_mutex)</argsstring>
         <name>depart</name>
         <briefdescription>
@@ -34,12 +34,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-linked_ptr.h" line="125" column="8" bodyfile="lib/googletest/include/gtest/internal/gtest-linked_ptr.h" bodystart="125" bodyend="139"/>
-        <references refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" compoundref="d0/d03/gtest-linked__ptr_8h" startline="142">next_</references>
-        <referencedby refid="d9/df4/classtesting_1_1internal_1_1linked__ptr_1a0852ab20839140f29b2ad074339fccc7" compoundref="d0/d03/gtest-linked__ptr_8h" startline="204" endline="206">testing::internal::linked_ptr&lt; T &gt;::depart</referencedby>
+        <references refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a5d82916613b647a123d1f56ba20988d0" compoundref="d0/d03/gtest-linked__ptr_8h" startline="142">linked_ptr_internal::next_</references>
+        <referencedby refid="d9/df4/classtesting_1_1internal_1_1linked__ptr_1a433500d816e6adc0d12d7a8dbe899dbd" compoundref="d0/d03/gtest-linked__ptr_8h" startline="204" endline="206">linked_ptr&lt; T &gt;::depart</referencedby>
       </memberdef>
-      <memberdef kind="function" id="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1acd5a341459f7e81b10b4112d8c764e2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1aebe5ff3e9afab2819bc9225d9e216655" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void testing::internal::linked_ptr_internal::join</definition>
+        <definition>void join</definition>
         <argsstring>(linked_ptr_internal const *ptr) GTEST_LOCK_EXCLUDED_(g_linked_ptr_mutex)</argsstring>
         <name>join</name>
         <param>
@@ -53,12 +53,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-linked_ptr.h" line="108" column="8" bodyfile="lib/googletest/include/gtest/internal/gtest-linked_ptr.h" bodystart="108" bodyend="121"/>
-        <references refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" compoundref="d0/d03/gtest-linked__ptr_8h" startline="142">next_</references>
-        <referencedby refid="d9/df4/classtesting_1_1internal_1_1linked__ptr_1aea2859970b65708fc4f7c8c4cbc7928a" compoundref="d0/d03/gtest-linked__ptr_8h" startline="213" endline="219">testing::internal::linked_ptr&lt; T &gt;::copy</referencedby>
+        <references refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a5d82916613b647a123d1f56ba20988d0" compoundref="d0/d03/gtest-linked__ptr_8h" startline="142">linked_ptr_internal::next_</references>
+        <referencedby refid="d9/df4/classtesting_1_1internal_1_1linked__ptr_1a571281b9bfd78f126b42577a7d968f2b" compoundref="d0/d03/gtest-linked__ptr_8h" startline="213" endline="219">linked_ptr&lt; T &gt;::copy</referencedby>
       </memberdef>
-      <memberdef kind="function" id="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a742af1f65df2d5e2b7198a1b74264a83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a079f6335d19865e8f3c8ceb1dba2bb4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void testing::internal::linked_ptr_internal::join_new</definition>
+        <definition>void join_new</definition>
         <argsstring>()</argsstring>
         <name>join_new</name>
         <briefdescription>
@@ -68,9 +68,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-linked_ptr.h" line="92" column="8" bodyfile="lib/googletest/include/gtest/internal/gtest-linked_ptr.h" bodystart="92" bodyend="94"/>
-        <references refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" compoundref="d0/d03/gtest-linked__ptr_8h" startline="142">next_</references>
-        <referencedby refid="d9/df4/classtesting_1_1internal_1_1linked__ptr_1a0b4623795339fd29bf9303f926ae2824" compoundref="d0/d03/gtest-linked__ptr_8h" startline="208" endline="211">testing::internal::linked_ptr&lt; T &gt;::capture</referencedby>
-        <referencedby refid="d9/df4/classtesting_1_1internal_1_1linked__ptr_1aea2859970b65708fc4f7c8c4cbc7928a" compoundref="d0/d03/gtest-linked__ptr_8h" startline="213" endline="219">testing::internal::linked_ptr&lt; T &gt;::copy</referencedby>
+        <references refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a5d82916613b647a123d1f56ba20988d0" compoundref="d0/d03/gtest-linked__ptr_8h" startline="142">linked_ptr_internal::next_</references>
+        <referencedby refid="d9/df4/classtesting_1_1internal_1_1linked__ptr_1a7fba6b43f9613d4244c02925f0695bca" compoundref="d0/d03/gtest-linked__ptr_8h" startline="208" endline="211">linked_ptr&lt; T &gt;::capture</referencedby>
+        <referencedby refid="d9/df4/classtesting_1_1internal_1_1linked__ptr_1a571281b9bfd78f126b42577a7d968f2b" compoundref="d0/d03/gtest-linked__ptr_8h" startline="213" endline="219">linked_ptr&lt; T &gt;::copy</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -79,7 +79,7 @@
     </detaileddescription>
     <collaborationgraph>
       <node id="1">
-        <label>testing::internal::linked_ptr_internal</label>
+        <label>linked_ptr_internal</label>
         <link refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal"/>
         <childnode refid="1" relation="usage">
           <edgelabel>-next_</edgelabel>
@@ -88,10 +88,10 @@
     </collaborationgraph>
     <location file="lib/googletest/include/gtest/internal/gtest-linked_ptr.h" line="89" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-linked_ptr.h" bodystart="89" bodyend="143"/>
     <listofallmembers>
-      <member refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a8699e539d9702d363ef0351012d1b3ca" prot="public" virt="non-virtual"><scope>testing::internal::linked_ptr_internal</scope><name>depart</name></member>
-      <member refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1acd5a341459f7e81b10b4112d8c764e2a" prot="public" virt="non-virtual"><scope>testing::internal::linked_ptr_internal</scope><name>join</name></member>
-      <member refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a742af1f65df2d5e2b7198a1b74264a83" prot="public" virt="non-virtual"><scope>testing::internal::linked_ptr_internal</scope><name>join_new</name></member>
-      <member refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1ae4397a65a4d76a24547fcf2cd17131d8" prot="private" virt="non-virtual"><scope>testing::internal::linked_ptr_internal</scope><name>next_</name></member>
+      <member refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a7c24850fd36aa1807a73d931ecc48cbd" prot="public" virt="non-virtual"><scope>testing::internal::linked_ptr_internal</scope><name>depart</name></member>
+      <member refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1aebe5ff3e9afab2819bc9225d9e216655" prot="public" virt="non-virtual"><scope>testing::internal::linked_ptr_internal</scope><name>join</name></member>
+      <member refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a079f6335d19865e8f3c8ceb1dba2bb4d" prot="public" virt="non-virtual"><scope>testing::internal::linked_ptr_internal</scope><name>join_new</name></member>
+      <member refid="d7/d67/classtesting_1_1internal_1_1linked__ptr__internal_1a5d82916613b647a123d1f56ba20988d0" prot="private" virt="non-virtual"><scope>testing::internal::linked_ptr_internal</scope><name>next_</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

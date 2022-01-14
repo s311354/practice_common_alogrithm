@@ -1,8 +1,5 @@
-<map id="testing::internal::GTestIsInitialized" name="testing::internal::GTestIsInitialized">
-<area shape="rect" id="node1" title=" " alt="" coords="528,39,651,80"/>
-<area shape="rect" id="node2" href="$d0/da7/namespacetesting_1_1internal.html#ac3c6fa93391768aa91c6238b31aaeeb5" title=" " alt="" coords="327,5,458,47"/>
-<area shape="rect" id="node5" href="$d0/de3/classtesting_1_1internal_1_1UnitTestImpl.html#a1fb6be9971f4768c4136a05aa9e7e375" title=" " alt="" coords="305,71,480,112"/>
-<area shape="rect" id="node3" href="$d0/d75/namespacetesting.html#aee3f6f99df893f576f705f66c0559482" title=" " alt="" coords="104,13,257,39"/>
-<area shape="rect" id="node4" href="$d3/d3a/gtest__main_8cc.html#a7f83bdc516d2cb86e20235d94ddf055a" title=" " alt="" coords="5,13,56,39"/>
-<area shape="rect" id="node6" href="$d5/d21/classtesting_1_1UnitTest.html#a2febc800536b44500565f4c423f359d3" title=" " alt="" coords="105,78,256,105"/>
+<map id="GTestIsInitialized" name="GTestIsInitialized">
+<area shape="rect" id="node1" title=" " alt="" coords="228,35,351,61"/>
+<area shape="rect" id="node2" href="$d0/da7/namespacetesting_1_1internal.html#ac3c6fa93391768aa91c6238b31aaeeb5" title=" " alt="" coords="27,5,158,32"/>
+<area shape="rect" id="node3" href="$d7/dda/classtesting_1_1internal_1_1_unit_test_impl.html#a4d5d6a2e8fa3b918a284252602a98279" title=" " alt="" coords="5,57,180,98"/>
 </map>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_2cce0b27566afda81e97d18efa313454" kind="dir">
+    <compoundname>leetcode_practice/src/CMakeFiles/3.19.6</compoundname>
+    <innerdir refid="dir_916241f398ae1489a43b4c5e6b58635f">leetcode_practice/src/CMakeFiles/3.19.6/CompilerIdC</innerdir>
+    <innerdir refid="dir_44d40048cecd4eb93e5829605a1c088b">leetcode_practice/src/CMakeFiles/3.19.6/CompilerIdCXX</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="leetcode_practice/src/CMakeFiles/3.19.6/"/>
+  </compounddef>
+</doxygen>

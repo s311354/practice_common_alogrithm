@@ -110,15 +110,16 @@
 testing::internal::posix Namespace Reference\par \pard\plain 
 {\tc\tcl2 \v testing::internal::posix}
 {\xe \v testing::internal::posix}
-{\bkmkstart AAAAAAACGD}
-{\bkmkend AAAAAAACGD}
+{\bkmkstart AAAAAAABES}
+{\bkmkend AAAAAAABES}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Typedefs\par
 \pard\plain 
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-typedef struct stat {\b StatStruct}\par
+typedef struct stat {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABHJ" }{}}{\fldrslt {\cs37\ul\cf2 StatStruct}}}
+\par
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Functions\par
@@ -126,43 +127,77 @@ Functions\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\b Abort} ()\par
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABHX" }{}}{\fldrslt {\cs37\ul\cf2 ChDir}}}
+ (const char *dir)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-int {\b ChDir} (const char *dir)\par
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABHZ" }{}}{\fldrslt {\cs37\ul\cf2 Close}}}
+ (int fd)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-int {\b Close} (int fd)\par
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABIB" }{}}{\fldrslt {\cs37\ul\cf2 FClose}}}
+ (FILE *fp)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-int {\b FClose} (FILE *fp)\par
+FILE * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABIC" }{}}{\fldrslt {\cs37\ul\cf2 FDOpen}}}
+ (int fd, const char *mode)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-FILE * {\b FDOpen} (int fd, const char *mode)\par
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABID" }{}}{\fldrslt {\cs37\ul\cf2 FileNo}}}
+ (FILE *file)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-int {\b FileNo} (FILE *file)\par
+FILE * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABIF" }{}}{\fldrslt {\cs37\ul\cf2 FOpen}}}
+ (const char *path, const char *mode)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-FILE * {\b FOpen} (const char *path, const char *mode)\par
+FILE * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABII" }{}}{\fldrslt {\cs37\ul\cf2 FReopen}}}
+ (const char *path, const char *mode, FILE *stream)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-FILE * {\b FReopen} (const char *path, const char *mode, FILE *stream)\par
+const char * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABIM" }{}}{\fldrslt {\cs37\ul\cf2 GetEnv}}}
+ (const char *name)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-const char * {\b GetEnv} (const char *name)\par
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABIP" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_DISABLE_MSC_WARNINGS_POP_}}}
+ () inline void Abort()\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-int {\b IsATTY} (int fd)\par
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABIQ" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_DISABLE_MSC_WARNINGS_PUSH_}}}
+ (4996) inline const char *StrNCpy(char *dest\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-bool {\b IsDir} (const {\b StatStruct} &st)\par
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABIV" }{}}{\fldrslt {\cs37\ul\cf2 IsATTY}}}
+ (int fd)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-int {\b Read} (int fd, void *buf, unsigned int count)\par
+bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABIX" }{}}{\fldrslt {\cs37\ul\cf2 IsDir}}}
+ (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABHJ" }{}}{\fldrslt {\cs37\ul\cf2 StatStruct}}}
+ &st)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-int {\b RmDir} (const char *dir)\par
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABJH" }{}}{\fldrslt {\cs37\ul\cf2 Read}}}
+ (int fd, void *buf, unsigned int count)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-int {\b Stat} (const char *path, {\b StatStruct} *buf)\par
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABJJ" }{}}{\fldrslt {\cs37\ul\cf2 RmDir}}}
+ (const char *dir)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-int {\b StrCaseCmp} (const char *s1, const char *s2)\par
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABJK" }{}}{\fldrslt {\cs37\ul\cf2 Stat}}}
+ (const char *path, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABHJ" }{}}{\fldrslt {\cs37\ul\cf2 StatStruct}}}
+ *buf)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-char * {\b StrDup} (const char *src)\par
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABJL" }{}}{\fldrslt {\cs37\ul\cf2 StrCaseCmp}}}
+ (const char *s1, const char *s2)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-const char * {\b StrError} (int errnum)\par
+char * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABJM" }{}}{\fldrslt {\cs37\ul\cf2 StrDup}}}
+ (const char *{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABJV" }{}}{\fldrslt {\cs37\ul\cf2 src}}}
+)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-const char * {\b StrNCpy} (char *dest, const char *src, size_t n)\par
+const char * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABJN" }{}}{\fldrslt {\cs37\ul\cf2 StrError}}}
+ (int errnum)\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-int {\b Write} (int fd, const void *buf, unsigned int count)\par
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABJT" }{}}{\fldrslt {\cs37\ul\cf2 Write}}}
+ (int fd, const void *buf, unsigned int count)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constants\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char size_t {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 n}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABJV" }{}}{\fldrslt {\cs37\ul\cf2 src}}}
+\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -172,48 +207,34 @@ Typedef Documentation\par
 {\xe \v testing::internal::posix\:StatStruct}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-typedef struct stat {\b testing::internal::posix::StatStruct}}}
+typedef struct stat {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABHJ" }{}}{\fldrslt {\cs37\ul\cf2 StatStruct}}}
+}}
 \par
-{\bkmkstart AAAAAAACGE}
-{\bkmkend AAAAAAACGE}
+{\bkmkstart AAAAAAABHJ}
+{\bkmkend AAAAAAABHJ}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2230 of file gtest-port.h.}\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Function Documentation\par
 \pard\plain 
-{\xe \v Abort\:testing::internal::posix}
-{\xe \v testing::internal::posix\:Abort}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-void testing::internal::posix::Abort ()}}
-\par
-{\bkmkstart AAAAAAACGF}
-{\bkmkend AAAAAAACGF}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2410 \{ abort(); \}\par
-}
-{
-\ql
-Referenced by testing::TestResult::GetTestPartResult(), testing::TestPartResultArray::GetTestPartResult(), testing::TestResult::GetTestProperty(), and testing::internal::GTestLog::~GTestLog().}\par
-Here is the caller graph for this function:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d81/namespacetesting_1_1internal_1_1posix_a69b8278c59359dd6a6f941b4643db9fb_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-}
 {\xe \v ChDir\:testing::internal::posix}
 {\xe \v testing::internal::posix\:ChDir}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
 int testing::internal::posix::ChDir (const char *  {\i dir})}}
 \par
-{\bkmkstart AAAAAAACGG}
-{\bkmkend AAAAAAACGG}
+{\bkmkstart AAAAAAABHX}
+{\bkmkend AAAAAAABHX}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2365 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2365 \{ {\cf19 return} chdir(dir); \}\par
 }
@@ -224,10 +245,13 @@ int testing::internal::posix::ChDir (const char *  {\i dir})}}
 {\b 
 int testing::internal::posix::Close (int  {\i fd})}}
 \par
-{\bkmkstart AAAAAAACGH}
-{\bkmkend AAAAAAACGH}
+{\bkmkstart AAAAAAABHZ}
+{\bkmkend AAAAAAABHZ}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2384 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2384 \{ {\cf19 return} close(fd); \}\par
 }
@@ -238,12 +262,22 @@ int testing::internal::posix::Close (int  {\i fd})}}
 {\b 
 int testing::internal::posix::FClose (FILE *  {\i fp})}}
 \par
-{\bkmkstart AAAAAAACGI}
-{\bkmkend AAAAAAACGI}
+{\bkmkstart AAAAAAABIB}
+{\bkmkend AAAAAAABIB}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2376 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2376 \{ {\cf19 return} fclose(fp); \}\par
+}
+{
+\ql
+Referenced by testing::internal::GTEST_DISABLE_MSC_WARNINGS_PUSH_().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d81/namespacetesting_1_1internal_1_1posix_af4beeaaa8d62916d5e3b644a1ddfbd6b_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
 }
 }
 {\xe \v FDOpen\:testing::internal::posix}
@@ -252,10 +286,13 @@ int testing::internal::posix::FClose (FILE *  {\i fp})}}
 {\b 
 FILE* testing::internal::posix::FDOpen (int  {\i fd}, const char *  {\i mode})}}
 \par
-{\bkmkstart AAAAAAACGJ}
-{\bkmkend AAAAAAACGJ}
+{\bkmkstart AAAAAAABIC}
+{\bkmkend AAAAAAABIC}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2374 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2374 \{ {\cf19 return} fdopen(fd, mode); \}\par
 }
@@ -266,10 +303,13 @@ FILE* testing::internal::posix::FDOpen (int  {\i fd}, const char *  {\i mode})}}
 {\b 
 int testing::internal::posix::FileNo (FILE *  {\i file})}}
 \par
-{\bkmkstart AAAAAAACGK}
-{\bkmkend AAAAAAACGK}
+{\bkmkstart AAAAAAABID}
+{\bkmkend AAAAAAABID}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2340 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2340 \{ {\cf19 return} fileno(file); \}\par
 }
@@ -287,10 +327,13 @@ Here is the caller graph for this function:{
 {\b 
 FILE* testing::internal::posix::FOpen (const char *  {\i path}, const char *  {\i mode})}}
 \par
-{\bkmkstart AAAAAAACGL}
-{\bkmkend AAAAAAACGL}
+{\bkmkstart AAAAAAABIF}
+{\bkmkend AAAAAAABIF}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2367 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2367                                                        \{\par
 2368   {\cf19 return} fopen(path, mode);\par
@@ -298,7 +341,7 @@ FILE* testing::internal::posix::FOpen (const char *  {\i path}, const char *  {\
 }
 {
 \ql
-Referenced by testing::internal::XmlUnitTestResultPrinter::OnTestIterationEnd(), testing::internal::ScopedPrematureExitFile::ScopedPrematureExitFile(), and testing::internal::WriteToShardStatusFileIfNeeded().}\par
+Referenced by testing::internal::GTEST_DISABLE_MSC_WARNINGS_PUSH_(), XmlUnitTestResultPrinter::OnTestIterationEnd(), ScopedPrematureExitFile::ScopedPrematureExitFile(), and testing::internal::WriteToShardStatusFileIfNeeded().}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d81/namespacetesting_1_1internal_1_1posix_a4042201dcc4932641d484e7ddf94de7d_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -310,10 +353,13 @@ Here is the caller graph for this function:{
 {\b 
 FILE* testing::internal::posix::FReopen (const char *  {\i path}, const char *  {\i mode}, FILE *  {\i stream})}}
 \par
-{\bkmkstart AAAAAAACGM}
-{\bkmkend AAAAAAACGM}
+{\bkmkstart AAAAAAABII}
+{\bkmkend AAAAAAABII}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2371 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2371                                                                        \{\par
 2372   {\cf19 return} freopen(path, mode, stream);\par
@@ -326,10 +372,13 @@ FILE* testing::internal::posix::FReopen (const char *  {\i path}, const char *  
 {\b 
 const char* testing::internal::posix::GetEnv (const char *  {\i name})}}
 \par
-{\bkmkstart AAAAAAACGN}
-{\bkmkend AAAAAAACGN}
+{\bkmkstart AAAAAAABIM}
+{\bkmkend AAAAAAABIM}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2387 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2387                                             \{\par
 2388 {\cf21 #if GTEST_OS_WINDOWS_MOBILE || GTEST_OS_WINDOWS_PHONE | GTEST_OS_WINDOWS_RT}\par
@@ -348,11 +397,39 @@ const char* testing::internal::posix::GetEnv (const char *  {\i name})}}
 }
 {
 \ql
-Referenced by testing::internal::BoolFromGTestEnv(), testing::internal::Int32FromEnvOrDie(), testing::internal::Int32FromGTestEnv(), testing::internal::PrettyUnitTestResultPrinter::OnTestIterationStart(), testing::UnitTest::Run(), testing::internal::ShouldUseColor(), testing::internal::StringFromGTestEnv(), testing::internal::TempDir(), and testing::internal::WriteToShardStatusFileIfNeeded().}\par
+Referenced by testing::internal::BoolFromGTestEnv(), testing::internal::Int32FromEnvOrDie(), testing::internal::Int32FromGTestEnv(), PrettyUnitTestResultPrinter::OnTestIterationStart(), UnitTest::Run(), testing::internal::ShouldUseColor(), testing::internal::StringFromGTestEnv(), and testing::internal::WriteToShardStatusFileIfNeeded().}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d81/namespacetesting_1_1internal_1_1posix_a1d5e3da5a27eed25986859fa83cafe95_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
 }
+}
+{\xe \v GTEST_DISABLE_MSC_WARNINGS_POP_\:testing::internal::posix}
+{\xe \v testing::internal::posix\:GTEST_DISABLE_MSC_WARNINGS_POP_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+testing::internal::posix::GTEST_DISABLE_MSC_WARNINGS_POP_ ()}}
+\par
+{\bkmkstart AAAAAAABIP}
+{\bkmkend AAAAAAABIP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2402 of file gtest-port.h.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2410                     \{ abort(); \}\par
+}
+}
+{\xe \v GTEST_DISABLE_MSC_WARNINGS_PUSH_\:testing::internal::posix}
+{\xe \v testing::internal::posix\:GTEST_DISABLE_MSC_WARNINGS_PUSH_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+testing::internal::posix::GTEST_DISABLE_MSC_WARNINGS_PUSH_ (4996 ) const}}
+\par
+{\bkmkstart AAAAAAABIQ}
+{\bkmkend AAAAAAABIQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 }
 {\xe \v IsATTY\:testing::internal::posix}
 {\xe \v testing::internal::posix\:IsATTY}
@@ -360,10 +437,13 @@ Here is the caller graph for this function:{
 {\b 
 int testing::internal::posix::IsATTY (int  {\i fd})}}
 \par
-{\bkmkstart AAAAAAACGO}
-{\bkmkend AAAAAAACGO}
+{\bkmkstart AAAAAAABIV}
+{\bkmkend AAAAAAABIV}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2341 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2341 \{ {\cf19 return} isatty(fd); \}\par
 }
@@ -379,18 +459,22 @@ Here is the caller graph for this function:{
 {\xe \v testing::internal::posix\:IsDir}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-bool testing::internal::posix::IsDir (const {\b StatStruct} &  {\i st})}}
+bool testing::internal::posix::IsDir (const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABHJ" }{}}{\fldrslt {\cs37\ul\cf2 StatStruct}}}
+ &  {\i st})}}
 \par
-{\bkmkstart AAAAAAACGP}
-{\bkmkend AAAAAAACGP}
+{\bkmkstart AAAAAAABIX}
+{\bkmkend AAAAAAABIX}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2348 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2348 \{ {\cf19 return} S_ISDIR(st.st_mode); \}\par
 }
 {
 \ql
-Referenced by testing::internal::FilePath::DirectoryExists().}\par
+Referenced by FilePath::DirectoryExists().}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d81/namespacetesting_1_1internal_1_1posix_af0d04ed5baeed28353fa38742748a421_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -402,10 +486,13 @@ Here is the caller graph for this function:{
 {\b 
 int testing::internal::posix::Read (int  {\i fd}, void *  {\i buf}, unsigned int  {\i count})}}
 \par
-{\bkmkstart AAAAAAACGQ}
-{\bkmkend AAAAAAACGQ}
+{\bkmkstart AAAAAAABJH}
+{\bkmkend AAAAAAABJH}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2378 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2378                                                        \{\par
 2379   {\cf19 return} {\cf17 static_cast<}{\cf18 int}{\cf17 >}(read(fd, buf, count));\par
@@ -418,10 +505,13 @@ int testing::internal::posix::Read (int  {\i fd}, void *  {\i buf}, unsigned int
 {\b 
 int testing::internal::posix::RmDir (const char *  {\i dir})}}
 \par
-{\bkmkstart AAAAAAACGR}
-{\bkmkend AAAAAAACGR}
+{\bkmkstart AAAAAAABJJ}
+{\bkmkend AAAAAAABJJ}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2347 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2347 \{ {\cf19 return} rmdir(dir); \}\par
 }
@@ -430,18 +520,22 @@ int testing::internal::posix::RmDir (const char *  {\i dir})}}
 {\xe \v testing::internal::posix\:Stat}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-int testing::internal::posix::Stat (const char *  {\i path}, {\b StatStruct} *  {\i buf})}}
+int testing::internal::posix::Stat (const char *  {\i path}, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABHJ" }{}}{\fldrslt {\cs37\ul\cf2 StatStruct}}}
+ *  {\i buf})}}
 \par
-{\bkmkstart AAAAAAACGS}
-{\bkmkend AAAAAAACGS}
+{\bkmkstart AAAAAAABJK}
+{\bkmkend AAAAAAABJK}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2342 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2342 \{ {\cf19 return} stat(path, buf); \}\par
 }
 {
 \ql
-Referenced by testing::internal::FilePath::DirectoryExists(), and testing::internal::FilePath::FileOrDirectoryExists().}\par
+Referenced by FilePath::DirectoryExists(), and FilePath::FileOrDirectoryExists().}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d81/namespacetesting_1_1internal_1_1posix_a2b87b7ff647a128614daf50667eb9304_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -453,10 +547,13 @@ Here is the caller graph for this function:{
 {\b 
 int testing::internal::posix::StrCaseCmp (const char *  {\i s1}, const char *  {\i s2})}}
 \par
-{\bkmkstart AAAAAAACGT}
-{\bkmkend AAAAAAACGT}
+{\bkmkstart AAAAAAABJL}
+{\bkmkend AAAAAAABJL}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2343 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2343                                                       \{\par
 2344   {\cf19 return} strcasecmp(s1, s2);\par
@@ -464,7 +561,7 @@ int testing::internal::posix::StrCaseCmp (const char *  {\i s1}, const char *  {
 }
 {
 \ql
-Referenced by testing::internal::String::CaseInsensitiveCStringEquals().}\par
+Referenced by String::CaseInsensitiveCStringEquals().}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d0/d81/namespacetesting_1_1internal_1_1posix_a1ef2385a7f8e4c706054da35967e76bd_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -476,13 +573,20 @@ Here is the caller graph for this function:{
 {\b 
 char* testing::internal::posix::StrDup (const char *  {\i src})}}
 \par
-{\bkmkstart AAAAAAACGU}
-{\bkmkend AAAAAAACGU}
+{\bkmkstart AAAAAAABJM}
+{\bkmkend AAAAAAABJM}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2346 \{ {\cf19 return} strdup(src); \}\par
+Definition at line 2346 of file gtest-port.h.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2346 \{ {\cf19 return} strdup({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABJV" }{}}{\fldrslt {\cs37\ul\cf2 src}}}
+); \}\par
 }
+{
+\ql
+References src.}\par
 }
 {\xe \v StrError\:testing::internal::posix}
 {\xe \v testing::internal::posix\:StrError}
@@ -490,28 +594,15 @@ char* testing::internal::posix::StrDup (const char *  {\i src})}}
 {\b 
 const char* testing::internal::posix::StrError (int  {\i errnum})}}
 \par
-{\bkmkstart AAAAAAACGV}
-{\bkmkend AAAAAAACGV}
+{\bkmkstart AAAAAAABJN}
+{\bkmkend AAAAAAABJN}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2385 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2385 \{ {\cf19 return} strerror(errnum); \}\par
-}
-}
-{\xe \v StrNCpy\:testing::internal::posix}
-{\xe \v testing::internal::posix\:StrNCpy}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-const char* testing::internal::posix::StrNCpy (char *  {\i dest}, const char *  {\i src}, size_t  {\i n})}}
-\par
-{\bkmkstart AAAAAAACGW}
-{\bkmkend AAAAAAACGW}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2356                                                                   \{\par
-2357   {\cf19 return} strncpy(dest, src, n);\par
-2358 \}\par
 }
 }
 {\xe \v Write\:testing::internal::posix}
@@ -520,14 +611,60 @@ const char* testing::internal::posix::StrNCpy (char *  {\i dest}, const char *  
 {\b 
 int testing::internal::posix::Write (int  {\i fd}, const void *  {\i buf}, unsigned int  {\i count})}}
 \par
-{\bkmkstart AAAAAAACGX}
-{\bkmkend AAAAAAACGX}
+{\bkmkstart AAAAAAABJT}
+{\bkmkend AAAAAAABJT}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2381 of file gtest-port.h.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2381                                                               \{\par
 2382   {\cf19 return} {\cf17 static_cast<}{\cf18 int}{\cf17 >}(write(fd, buf, count));\par
 2383 \}\par
 }
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constant Documentation\par
+\pard\plain 
+{\xe \v n\:testing::internal::posix}
+{\xe \v testing::internal::posix\:n}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char size_t n}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\b Initial value:}{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \{\par
+  {\cf19 return} strncpy(dest, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABJV" }{}}{\fldrslt {\cs37\ul\cf2 src}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 n}}}
+)\par
+}
+{
+Definition at line 2356 of file gtest-port.h.}\par
+{
+\ql
+Referenced by GraphRepresentationList::BFS(), testing::internal::ChopLowBits(), GraphRepresentationList::ContainsCycle(), GraphRepresentationList::DFS(), and LinkedList< T >::ValueNFromEnd().}\par
+}
+{\xe \v src\:testing::internal::posix}
+{\xe \v testing::internal::posix\:src}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char* src}}
+\par
+{\bkmkstart AAAAAAABJV}
+{\bkmkend AAAAAAABJV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2356 of file gtest-port.h.}\par
+{
+\ql
+Referenced by FilePath::Normalize(), and StrDup().}\par
 }
 }

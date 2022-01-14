@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/da1/priority__queue_8h" kind="file" language="C++">
+    <compoundname>priority_queue.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includedby refid="db/d3e/priority__queue_8cc" local="yes">priority_queue/priority_queue.cc</includedby>
+    <includedby refid="d3/dd5/priority__queue_2main_8cc" local="yes">priority_queue/main.cc</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>priority_queue/priority_queue.h</label>
+        <link refid="d4/da1/priority__queue_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>priority_queue/main.cc</label>
+        <link refid="d3/dd5/priority__queue_2main_8cc"/>
+      </node>
+      <node id="1">
+        <label>priority_queue/priority_queue.h</label>
+        <link refid="d4/da1/priority__queue_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>priority_queue/priority_queue.cc</label>
+        <link refid="db/d3e/priority__queue_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="dc/de6/classcommon_1_1_priority_queue" prot="public">common::PriorityQueue</innerclass>
+    <innerclass refid="d9/d6b/structcommon_1_1_priority_queue_element" prot="public">common::PriorityQueueElement</innerclass>
+    <innernamespace refid="d9/d0c/namespacecommon">common</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d9/d0c/namespacecommon_1a48e1c0989caea543c0290e670c310824" prot="public" static="no">
+        <type>struct <ref refid="d9/d6b/structcommon_1_1_priority_queue_element" kindref="compound">common::PriorityQueueElement</ref></type>
+        <definition>typedef struct common::PriorityQueueElement PQElement</definition>
+        <argsstring></argsstring>
+        <name>PQElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.h" line="11" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d9/d0c/namespacecommon_1aa79baf91f02bf8cfdee41a1b3ef5d1cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void heap_sort</definition>
+        <argsstring>(int *numbers, int count)</argsstring>
+        <name>heap_sort</name>
+        <param>
+          <type>int *</type>
+          <declname>numbers</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Brief function description here. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Heap sort maintains the unsorted region in a heap data structure to more quickly find the largest element in each step. It is implementated by quicksort alogrithm</para>
+<para><simplesect kind="return"><para>Return parameter description </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.cc" line="219" column="6" bodyfile="priority_queue/priority_queue.cc" bodystart="219" bodyend="229" declfile="priority_queue/priority_queue.h" declline="52" declcolumn="6"/>
+        <references refid="d9/d0c/namespacecommon_1a0e11a1d1ae5891eb08d6db9a0b4df126" compoundref="db/d3e/priority__queue_8cc" startline="178" endline="211">common::precolate_down</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d0c/namespacecommon_1a56a19f3ab94e28a975aa2a2ce38fc791" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void heapify</definition>
+        <argsstring>(int *numbers, int count)</argsstring>
+        <name>heapify</name>
+        <param>
+          <type>int *</type>
+          <declname>numbers</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Brief function description here. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The heapify procedure can thought of as building a heap from the bottom up by successively sifting downward to establish the heap property.</para>
+<para><simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.cc" line="165" column="6" bodyfile="priority_queue/priority_queue.cc" bodystart="165" bodyend="176" declfile="priority_queue/priority_queue.h" declline="50" declcolumn="6"/>
+        <references refid="d9/d0c/namespacecommon_1a0e11a1d1ae5891eb08d6db9a0b4df126" compoundref="db/d3e/priority__queue_8cc" startline="178" endline="211">common::precolate_down</references>
+        <referencedby refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d3/dd5/priority__queue_2main_8cc" startline="4" endline="38">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/d0c/namespacecommon_1a0e11a1d1ae5891eb08d6db9a0b4df126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void precolate_down</definition>
+        <argsstring>(int *numbers, int count, int index)</argsstring>
+        <name>precolate_down</name>
+        <param>
+          <type>int *</type>
+          <declname>numbers</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.cc" line="178" column="6" bodyfile="priority_queue/priority_queue.cc" bodystart="178" bodyend="211" declfile="priority_queue/priority_queue.h" declline="51" declcolumn="6"/>
+        <referencedby refid="d9/d0c/namespacecommon_1aa79baf91f02bf8cfdee41a1b3ef5d1cf" compoundref="db/d3e/priority__queue_8cc" startline="219" endline="229">common::heap_sort</referencedby>
+        <referencedby refid="d9/d0c/namespacecommon_1a56a19f3ab94e28a975aa2a2ce38fc791" compoundref="db/d3e/priority__queue_8cc" startline="165" endline="176">common::heapify</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/d0c/namespacecommon_1a12066b17e67522e150a0d61a74a4cb2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_heap</definition>
+        <argsstring>(int *numbers, int count)</argsstring>
+        <name>print_heap</name>
+        <param>
+          <type>int *</type>
+          <declname>numbers</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="priority_queue/priority_queue.cc" line="232" column="6" bodyfile="priority_queue/priority_queue.cc" bodystart="232" bodyend="239" declfile="priority_queue/priority_queue.h" declline="53" declcolumn="6"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <referencedby refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d3/dd5/priority__queue_2main_8cc" startline="4" endline="38">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/iostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">iostream</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PRIORITY_QUEUE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRIORITY_QUEUE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d9/d0c/namespacecommon" kindref="compound">common</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d9/d6b/structcommon_1_1_priority_queue_element" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d9/d6b/structcommon_1_1_priority_queue_element" kindref="compound">PriorityQueueElement</ref><sp/>{</highlight></codeline>
+<codeline lineno="9" refid="d9/d6b/structcommon_1_1_priority_queue_element_1a35af0be900467fedbb610bd6ea65ed78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d9/d6b/structcommon_1_1_priority_queue_element_1a35af0be900467fedbb610bd6ea65ed78" kindref="member">key</ref>;</highlight></codeline>
+<codeline lineno="10" refid="d9/d6b/structcommon_1_1_priority_queue_element_1a5c33da5929c9f2f9ef8d006d2350e6ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/><ref refid="d9/d6b/structcommon_1_1_priority_queue_element_1a5c33da5929c9f2f9ef8d006d2350e6ec" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="11" refid="d9/d0c/namespacecommon_1a48e1c0989caea543c0290e670c310824" refkind="member"><highlight class="normal">}<sp/><ref refid="d9/d0c/namespacecommon_1a48e1c0989caea543c0290e670c310824" kindref="member">PQElement</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="dc/de6/classcommon_1_1_priority_queue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dc/de6/classcommon_1_1_priority_queue" kindref="compound">PriorityQueue</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" kindref="member">size</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17" refid="dc/de6/classcommon_1_1_priority_queue_1a7e1c686a96458b97fb6aa2a7a136ea71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1a7e1c686a96458b97fb6aa2a7a136ea71" kindref="member">capacity_queue</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18" refid="dc/de6/classcommon_1_1_priority_queue_1a9c10f2d9e89c80f80c04650f7e67f0c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d6b/structcommon_1_1_priority_queue_element" kindref="compound">PQElement</ref><sp/>*<sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1a9c10f2d9e89c80f80c04650f7e67f0c8" kindref="member">pelement</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Propagates<sp/>elements<sp/>up<sp/>the<sp/>tree<sp/>until<sp/>the<sp/>parent<sp/>node&apos;s<sp/>heap<sp/>property<sp/>is<sp/>satisfied</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1a13168d072978ad86ffed1908e52812c3" kindref="member">SiftUp</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Swap<sp/>2<sp/>queue<sp/>elements<sp/>with<sp/>given<sp/>indices</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1aebbde0595dd6c927c8d032a45ddf1b49" kindref="member">Swap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index2);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Propagates<sp/>the<sp/>given<sp/>node<sp/>index<sp/>down<sp/>the<sp/>tree<sp/>until<sp/>the<sp/>subtree&apos;s<sp/>heap<sp/>property<sp/>is<sp/>satisfied</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1ae82f38bbc095631e55cc6380cd525b64" kindref="member">SiftDown</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1a8f2e1799438cf09890aaecb203d14625" kindref="member">PriorityQueue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1a439227feff9d7f55384e8780cfc2eb82" kindref="member">size</ref>);</highlight></codeline>
+<codeline lineno="29" refid="dc/de6/classcommon_1_1_priority_queue_1aa6d81b6af69d181bd618a21e44468e22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1aa6d81b6af69d181bd618a21e44468e22" kindref="member">PriorityQueue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue" kindref="compound">PriorityQueue</ref><sp/>&amp;)=<sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30" refid="dc/de6/classcommon_1_1_priority_queue_1a338f78e8edc6323389b8d919b36de96e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue" kindref="compound">PriorityQueue</ref>&amp;<ref refid="dc/de6/classcommon_1_1_priority_queue_1a338f78e8edc6323389b8d919b36de96e" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue" kindref="compound">PriorityQueue</ref><sp/>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1af97f1420d96fea6165720866508f06a3" kindref="member">~PriorityQueue</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Adds<sp/>the<sp/>given<sp/>key<sp/>and<sp/>value<sp/>to<sp/>the<sp/>queue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1a863794a0693a29176855fbe552dbfcf6" kindref="member">Insert</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>value);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Remove<sp/>the<sp/>node<sp/>with<sp/>the<sp/>given<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1a50af808bf213e4cb397f5f458af96cb5" kindref="member">Remove</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>the<sp/>number<sp/>of<sp/>items<sp/>stored<sp/>in<sp/>the<sp/>queue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1af20bedaf7c9a39abf3f99b1122503107" kindref="member">GetSize</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>ture<sp/>if<sp/>queue<sp/>is<sp/>empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1a357657ded604ecb97b76251146f7ac75" kindref="member">IsEmpty</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>the<sp/>maximum<sp/>key<sp/>and<sp/>value<sp/>associated<sp/>with<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d6b/structcommon_1_1_priority_queue_element" kindref="compound">PQElement</ref><sp/>*<ref refid="dc/de6/classcommon_1_1_priority_queue_1a2c3609c008b736ccf98c210a730f2d5f" kindref="member">GetMax</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>the<sp/>maximum<sp/>key<sp/>and<sp/>value<sp/>associated<sp/>with<sp/>it,<sp/>removing<sp/>it<sp/>from<sp/>the<sp/>queue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d6b/structcommon_1_1_priority_queue_element" kindref="compound">PQElement</ref><sp/>*<ref refid="dc/de6/classcommon_1_1_priority_queue_1ab082bfdb65339d64285cba5cb800ebe0" kindref="member">ExtractMax</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Output<sp/>the<sp/>contents<sp/>of<sp/>the<sp/>queue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/de6/classcommon_1_1_priority_queue_1a7c4557fcada1ff8b18f1d62cec1056a1" kindref="member">PrintDebug</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d0c/namespacecommon_1a56a19f3ab94e28a975aa2a2ce38fc791" kindref="member">heapify</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*numbers,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d0c/namespacecommon_1a0e11a1d1ae5891eb08d6db9a0b4df126" kindref="member">precolate_down</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*numbers,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d0c/namespacecommon_1aa79baf91f02bf8cfdee41a1b3ef5d1cf" kindref="member">heap_sort</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*numbers,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d0c/namespacecommon_1a12066b17e67522e150a0d61a74a4cb2d" kindref="member">print_heap</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*numbersi,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>common<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PRIORITY_QUEUE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="priority_queue/priority_queue.h"/>
+  </compounddef>
+</doxygen>

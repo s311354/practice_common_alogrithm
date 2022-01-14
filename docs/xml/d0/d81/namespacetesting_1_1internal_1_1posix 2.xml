@@ -3,9 +3,9 @@
   <compounddef id="d0/d81/namespacetesting_1_1internal_1_1posix" kind="namespace" language="C++">
     <compoundname>testing::internal::posix</compoundname>
       <sectiondef kind="typedef">
-      <memberdef kind="typedef" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a8eb9f08d3af29941c2d2a964cfff3ecb" prot="public" static="no">
+      <memberdef kind="typedef" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a28f577553e4511ddefedf8c62dda12cd" prot="public" static="no">
         <type>struct stat</type>
-        <definition>typedef struct stat testing::internal::posix::StatStruct</definition>
+        <definition>typedef struct stat StatStruct</definition>
         <argsstring></argsstring>
         <name>StatStruct</name>
         <briefdescription>
@@ -17,24 +17,44 @@
         <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2230" column="13" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2338" bodyend="-1"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="func">
-      <memberdef kind="function" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a69b8278c59359dd6a6f941b4643db9fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void testing::internal::posix::Abort</definition>
-        <argsstring>()</argsstring>
-        <name>Abort</name>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a555cf768a531e2ff2acacfbf76d28a77" prot="public" static="no" mutable="no">
+        <type>const char size_t</type>
+        <definition>const char size_t n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <initializer>{
+  return strncpy(dest, <ref refid="d0/d81/namespacetesting_1_1internal_1_1posix_1af51e37c9331049b1e3d250a7c8bc3c26" kindref="member">src</ref>, n)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2410" column="13" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2410" bodyend="2410"/>
-        <referencedby refid="d6/d6e/classtesting_1_1TestResult_1a765c1e734ac08115757b343d57226bba" compoundref="df/d5b/gtest_8cc" startline="2029" endline="2033">testing::TestResult::GetTestPartResult</referencedby>
-        <referencedby refid="dc/dce/classtesting_1_1TestPartResultArray_1aa44d02a01c87f47393b07951bab6e025" compoundref="d3/dc2/gtest-test-part_8cc" startline="73" endline="80">testing::TestPartResultArray::GetTestPartResult</referencedby>
-        <referencedby refid="d6/d6e/classtesting_1_1TestResult_1a6c2f478dbce36b57d18bedded46d70af" compoundref="df/d5b/gtest_8cc" startline="2038" endline="2042">testing::TestResult::GetTestProperty</referencedby>
-        <referencedby refid="da/d59/classtesting_1_1internal_1_1GTestLog_1a978a099703bbaa0f380216e8d7ee03d3" compoundref="df/d09/gtest-port_8cc" startline="919" endline="925">testing::internal::GTestLog::~GTestLog</referencedby>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2356" column="33" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2356" bodyend="-1"/>
+        <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1ade13d4605967d4ec20bb4d462eb6e624" compoundref="df/d42/graph__representation_8cc" startline="64" endline="115">GraphRepresentationList::BFS</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a2c54b453387aa8a18f2f3e09f10b5a7d" compoundref="df/d5b/gtest_8cc" startline="1747" endline="1751">testing::internal::ChopLowBits</referencedby>
+        <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1a094ec99ad1b124c0dd56e43760247b6f" compoundref="df/d42/graph__representation_8cc" startline="174" endline="219">GraphRepresentationList::ContainsCycle</referencedby>
+        <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1a58d3be579a41554e41aa8c86cb8cf0a6" compoundref="df/d42/graph__representation_8cc" startline="123" endline="172">GraphRepresentationList::DFS</referencedby>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a1e3c93770d25a042944efa1e83d449c1" compoundref="d0/dea/linked__list_8cc" startline="299" endline="324">LinkedList&lt; T &gt;::ValueNFromEnd</referencedby>
       </memberdef>
+      <memberdef kind="variable" id="d0/d81/namespacetesting_1_1internal_1_1posix_1af51e37c9331049b1e3d250a7c8bc3c26" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* src</definition>
+        <argsstring></argsstring>
+        <name>src</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2356" column="22" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2356" bodyend="-1"/>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1af279e0f0ff720ee54d6733674dfda50a" compoundref="dc/d20/gtest-filepath_8cc" startline="356" endline="384">FilePath::Normalize</referencedby>
+        <referencedby refid="d0/d81/namespacetesting_1_1internal_1_1posix_1a8e352884793a65ae8be144676f1a9136" compoundref="d3/dc9/gtest-port_8h" startline="2346" endline="2346">StrDup</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
       <memberdef kind="function" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a1ddc8a4fc6bb21da372307485591a212" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
         <definition>int testing::internal::posix::ChDir</definition>
@@ -85,6 +105,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2376" column="12" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2376" bodyend="2376"/>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a76a726de98cf61e65af03fd6f10a9bc0" compoundref="df/d09/gtest-port_8cc" startline="928" endline="1074">testing::internal::GTEST_DISABLE_MSC_WARNINGS_PUSH_</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d81/namespacetesting_1_1internal_1_1posix_1af7c268eba32d5a718b36b6b3801302e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>FILE *</type>
@@ -145,9 +166,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2367" column="13" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2367" bodyend="2369"/>
-        <referencedby refid="d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1a2ae986dd2f4f2aed31cc6f3bc8c56898" compoundref="df/d5b/gtest_8cc" startline="3432" endline="3462">testing::internal::XmlUnitTestResultPrinter::OnTestIterationEnd</referencedby>
-        <referencedby refid="d5/d9d/classtesting_1_1internal_1_1ScopedPrematureExitFile_1ae520883b8a6984a864ce675acedff4a2" compoundref="df/d5b/gtest_8cc" startline="3861" endline="3872">testing::internal::ScopedPrematureExitFile::ScopedPrematureExitFile</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a19b35b39782d41e6ef76e1910a3a502e" compoundref="df/d5b/gtest_8cc" startline="4693" endline="4707">testing::internal::WriteToShardStatusFileIfNeeded</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a76a726de98cf61e65af03fd6f10a9bc0" compoundref="df/d09/gtest-port_8cc" startline="928" endline="1074">testing::internal::GTEST_DISABLE_MSC_WARNINGS_PUSH_</referencedby>
+        <referencedby refid="d3/dc6/classtesting_1_1internal_1_1_xml_unit_test_result_printer_1aa21b349a51378e47877ee6d153c37116" compoundref="df/d5b/gtest_8cc" startline="3432" endline="3462">XmlUnitTestResultPrinter::OnTestIterationEnd</referencedby>
+        <referencedby refid="da/d7b/classtesting_1_1internal_1_1_scoped_premature_exit_file_1af1dfc7a420889546ab10e4430c75885a" compoundref="df/d5b/gtest_8cc" startline="3861" endline="3872">ScopedPrematureExitFile::ScopedPrematureExitFile</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a656c8ec8f2ee82fa90b9ba61b6145538" compoundref="df/d5b/gtest_8cc" startline="4693" endline="4707">testing::internal::WriteToShardStatusFileIfNeeded</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a9ef6d089cdae03f9d9e0e6d379c40703" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>FILE *</type>
@@ -190,15 +212,43 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2387" column="19" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2387" bodyend="2400"/>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a1055088bb9b867e1b7b8f096f519d7c5" compoundref="df/d09/gtest-port_8cc" startline="1191" endline="1199">testing::internal::BoolFromGTestEnv</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1aaa576613655c2f380278c255c3ec5fef" compoundref="df/d5b/gtest_8cc" startline="4760" endline="4772">testing::internal::Int32FromEnvOrDie</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a2196f070b2d28bceb45c7ad3b565b9ba" compoundref="df/d09/gtest-port_8cc" startline="1204" endline="1225">testing::internal::Int32FromGTestEnv</referencedby>
-        <referencedby refid="d6/d49/classtesting_1_1internal_1_1PrettyUnitTestResultPrinter_1abdba10a8c97e272ab4cee97cb652c957" compoundref="df/d5b/gtest_8cc" startline="3056" endline="3089">testing::internal::PrettyUnitTestResultPrinter::OnTestIterationStart</referencedby>
-        <referencedby refid="d5/d21/classtesting_1_1UnitTest_1a2febc800536b44500565f4c423f359d3" compoundref="df/d5b/gtest_8cc" startline="4185" endline="4261">testing::UnitTest::Run</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1ac1db1b4603967a6c4404f31cbbac31a6" compoundref="df/d5b/gtest_8cc" startline="2916" endline="2950">testing::internal::ShouldUseColor</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1ab38c435530c97f10fd7a8008a76331f2" compoundref="df/d09/gtest-port_8cc" startline="1229" endline="1256">testing::internal::StringFromGTestEnv</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a9183d29a7f57e2906d03b644e6a12a4a" compoundref="df/d09/gtest-port_8cc" startline="1058" endline="1074">testing::internal::TempDir</referencedby>
-        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a19b35b39782d41e6ef76e1910a3a502e" compoundref="df/d5b/gtest_8cc" startline="4693" endline="4707">testing::internal::WriteToShardStatusFileIfNeeded</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1af17bf74326e1076c47455ef2618c1a1a" compoundref="df/d09/gtest-port_8cc" startline="1191" endline="1199">testing::internal::BoolFromGTestEnv</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1afec7cf2eb159fa969f88d192ee507d23" compoundref="df/d5b/gtest_8cc" startline="4760" endline="4772">testing::internal::Int32FromEnvOrDie</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1ae2d19821e0bf27e57b2eafe843401e69" compoundref="df/d09/gtest-port_8cc" startline="1204" endline="1225">testing::internal::Int32FromGTestEnv</referencedby>
+        <referencedby refid="d7/d8b/classtesting_1_1internal_1_1_pretty_unit_test_result_printer_1aab7032bcb450f58f2ce48c00ad6401e8" compoundref="df/d5b/gtest_8cc" startline="3056" endline="3089">PrettyUnitTestResultPrinter::OnTestIterationStart</referencedby>
+        <referencedby refid="d7/d47/classtesting_1_1_unit_test_1a22f3e90081aaad35b4eccfa93a28042c" compoundref="df/d5b/gtest_8cc" startline="4185" endline="4261">UnitTest::Run</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1ab0f928e61ab8ec92e75ddfcae9324c1e" compoundref="df/d5b/gtest_8cc" startline="2916" endline="2950">testing::internal::ShouldUseColor</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a521e624413f88ad92ebfc23ea89c3f1b" compoundref="df/d09/gtest-port_8cc" startline="1229" endline="1256">testing::internal::StringFromGTestEnv</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a656c8ec8f2ee82fa90b9ba61b6145538" compoundref="df/d5b/gtest_8cc" startline="4693" endline="4707">testing::internal::WriteToShardStatusFileIfNeeded</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a4725f72cdb019ff08a8d971e51ad99ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::posix::GTEST_DISABLE_MSC_WARNINGS_POP_</definition>
+        <argsstring>() inline void Abort()</argsstring>
+        <name>GTEST_DISABLE_MSC_WARNINGS_POP_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2402" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2402" bodyend="2410"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a6dda2ba41c92f0065ef518c91bb4457e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>testing::internal::posix::GTEST_DISABLE_MSC_WARNINGS_PUSH_</definition>
+        <argsstring>(4996) inline const char *StrNCpy(char *dest</argsstring>
+        <name>GTEST_DISABLE_MSC_WARNINGS_PUSH_</name>
+        <param>
+          <type>4996</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2354" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a16ebe936b3a8ea462a94191635aedc27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -224,7 +274,7 @@
         <argsstring>(const StatStruct &amp;st)</argsstring>
         <name>IsDir</name>
         <param>
-          <type>const <ref refid="d0/d81/namespacetesting_1_1internal_1_1posix_1a8eb9f08d3af29941c2d2a964cfff3ecb" kindref="member">StatStruct</ref> &amp;</type>
+          <type>const <ref refid="d0/d81/namespacetesting_1_1internal_1_1posix_1a28f577553e4511ddefedf8c62dda12cd" kindref="member">StatStruct</ref> &amp;</type>
           <declname>st</declname>
         </param>
         <briefdescription>
@@ -234,7 +284,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2348" column="13" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2348" bodyend="2348"/>
-        <referencedby refid="de/dea/classtesting_1_1internal_1_1FilePath_1a74ba8435e822d77f79f137c38de9bfeb" compoundref="dc/d20/gtest-filepath_8cc" startline="223" endline="249">testing::internal::FilePath::DirectoryExists</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4a118f1c72313787fe28aa8e2103812a" compoundref="dc/d20/gtest-filepath_8cc" startline="223" endline="249">FilePath::DirectoryExists</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a3c6ab13e581a56f1b02f3eb7536c97fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -288,7 +338,7 @@
           <declname>path</declname>
         </param>
         <param>
-          <type><ref refid="d0/d81/namespacetesting_1_1internal_1_1posix_1a8eb9f08d3af29941c2d2a964cfff3ecb" kindref="member">StatStruct</ref> *</type>
+          <type><ref refid="d0/d81/namespacetesting_1_1internal_1_1posix_1a28f577553e4511ddefedf8c62dda12cd" kindref="member">StatStruct</ref> *</type>
           <declname>buf</declname>
         </param>
         <briefdescription>
@@ -298,8 +348,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2342" column="12" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2342" bodyend="2342"/>
-        <referencedby refid="de/dea/classtesting_1_1internal_1_1FilePath_1a74ba8435e822d77f79f137c38de9bfeb" compoundref="dc/d20/gtest-filepath_8cc" startline="223" endline="249">testing::internal::FilePath::DirectoryExists</referencedby>
-        <referencedby refid="de/dea/classtesting_1_1internal_1_1FilePath_1a105bd8fc3adff8fcb4a593532842fb68" compoundref="dc/d20/gtest-filepath_8cc" startline="209" endline="219">testing::internal::FilePath::FileOrDirectoryExists</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a4a118f1c72313787fe28aa8e2103812a" compoundref="dc/d20/gtest-filepath_8cc" startline="223" endline="249">FilePath::DirectoryExists</referencedby>
+        <referencedby refid="de/d14/classtesting_1_1internal_1_1_file_path_1a396c68beeeccc066f4c04dced1a11433" compoundref="dc/d20/gtest-filepath_8cc" startline="209" endline="219">FilePath::FileOrDirectoryExists</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a1ef2385a7f8e4c706054da35967e76bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -321,7 +371,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2343" column="12" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2343" bodyend="2345"/>
-        <referencedby refid="d2/df8/classtesting_1_1internal_1_1String_1a116ca435d63306927ba19f90a3596787" compoundref="df/d5b/gtest_8cc" startline="1905" endline="1911">testing::internal::String::CaseInsensitiveCStringEquals</referencedby>
+        <referencedby refid="d0/dde/classtesting_1_1internal_1_1_string_1a74c3f7f7cf90cc53c995dde20883d922" compoundref="df/d5b/gtest_8cc" startline="1905" endline="1911">String::CaseInsensitiveCStringEquals</referencedby>
       </memberdef>
       <memberdef kind="function" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a8e352884793a65ae8be144676f1a9136" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>char *</type>
@@ -339,6 +389,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2346" column="13" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2346" bodyend="2346"/>
+        <references refid="d0/d81/namespacetesting_1_1internal_1_1posix_1af51e37c9331049b1e3d250a7c8bc3c26" compoundref="d3/dc9/gtest-port_8h" startline="2356">src</references>
       </memberdef>
       <memberdef kind="function" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a4b77b14af6f4d18f83d303b98e9349c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const char *</type>
@@ -356,31 +407,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2385" column="19" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2385" bodyend="2385"/>
-      </memberdef>
-      <memberdef kind="function" id="d0/d81/namespacetesting_1_1internal_1_1posix_1a36fca815713332e5c6dc92c98b6b2574" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>const char *</type>
-        <definition>const char* testing::internal::posix::StrNCpy</definition>
-        <argsstring>(char *dest, const char *src, size_t n)</argsstring>
-        <name>StrNCpy</name>
-        <param>
-          <type>char *</type>
-          <declname>dest</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>src</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>n</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="lib/googletest/include/gtest/internal/gtest-port.h" line="2356" column="19" bodyfile="lib/googletest/include/gtest/internal/gtest-port.h" bodystart="2356" bodyend="2358"/>
       </memberdef>
       <memberdef kind="function" id="d0/d81/namespacetesting_1_1internal_1_1posix_1af4acf9f78d55f815a18b43786511abef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>

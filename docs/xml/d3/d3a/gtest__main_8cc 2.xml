@@ -397,7 +397,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="lib/googletest/src/gtest_main.cc" line="34" column="16" bodyfile="lib/googletest/src/gtest_main.cc" bodystart="34" bodyend="38"/>
-        <references refid="d0/d75/namespacetesting_1aee3f6f99df893f576f705f66c0559482" compoundref="df/d5b/gtest_8cc" startline="5370" endline="5376">testing::InitGoogleTest</references>
+        <references refid="d0/d75/namespacetesting_1aefed8296a2dd394336ae59e0737ba4c1" compoundref="df/d5b/gtest_8cc" startline="5370" endline="5376">testing::InitGoogleTest</references>
         <references refid="d8/d73/gtest_8h_1a853a3792807489591d3d4a2f2ff9359f" compoundref="d8/d73/gtest_8h" startline="2232" endline="2234">RUN_ALL_TESTS</references>
       </memberdef>
       </sectiondef>
@@ -441,7 +441,7 @@
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34" refid="d3/d3a/gtest__main_8cc_1a7f83bdc516d2cb86e20235d94ddf055a" refkind="member"><highlight class="normal"><ref refid="d3/dc9/gtest-port_8h_1aa73be6f0ba4a7456180a94904ce17790" kindref="member">GTEST_API_</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d3/d3a/gtest__main_8cc_1a7f83bdc516d2cb86e20235d94ddf055a" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv)<sp/>{</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Running<sp/>main()<sp/>from<sp/>gtest_main.cc\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><ref refid="d0/d75/namespacetesting_1aee3f6f99df893f576f705f66c0559482" kindref="member">testing::InitGoogleTest</ref>(&amp;argc,<sp/>argv);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><ref refid="d0/d75/namespacetesting_1aefed8296a2dd394336ae59e0737ba4c1" kindref="member">testing::InitGoogleTest</ref>(&amp;argc,<sp/>argv);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/d73/gtest_8h_1a853a3792807489591d3d4a2f2ff9359f" kindref="member">RUN_ALL_TESTS</ref>();</highlight></codeline>
 <codeline lineno="38"><highlight class="normal">}</highlight></codeline>
     </programlisting>

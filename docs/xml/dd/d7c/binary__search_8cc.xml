@@ -53,7 +53,7 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d1e/binary__search_8h" kindref="compound">binary_search.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3" refid="d9/d0c/namespacecommon" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d9/d0c/namespacecommon" kindref="compound">common</ref><sp/>{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d9/d0c/namespacecommon" kindref="compound">common</ref><sp/>{</highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5" refid="dc/df2/classcommon_1_1_binary_search_1a6503f14a85365c1f079c5d12df5ed745" refkind="member"><highlight class="normal"><ref refid="d5/d36/structcommon_1_1_b_s_t_node" kindref="compound">BSTNode</ref>*<sp/><ref refid="dc/df2/classcommon_1_1_binary_search_1a6503f14a85365c1f079c5d12df5ed745" kindref="member">BinarySearch::GetNewNode</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value)<sp/>{</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d36/structcommon_1_1_b_s_t_node" kindref="compound">BSTNode</ref>*<sp/>node<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d5/d36/structcommon_1_1_b_s_t_node" kindref="compound">BSTNode</ref>;</highlight></codeline>

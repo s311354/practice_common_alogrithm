@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d47/classtesting_1_1internal_1_1_format_for_comparison" kind="class" language="C++" prot="public">
+    <compoundname>testing::internal::FormatForComparison</compoundname>
+    <includes refid="d0/d6d/gtest-printers_8h" local="no">gtest-printers.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ToPrint</type>
+      </param>
+      <param>
+        <type>typename OtherOperand</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d9/d47/classtesting_1_1internal_1_1_format_for_comparison_1a71c59ddcde066d9d31b76924801f7c89" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>::<ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>::std::string Format</definition>
+        <argsstring>(const ToPrint &amp;value)</argsstring>
+        <name>Format</name>
+        <param>
+          <type>const ToPrint &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/gtest-printers.h" line="275" column="24" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="275" bodyend="277"/>
+        <references refid="d0/d75/namespacetesting_1aa5717bb1144edd1d262d310ba70c82ed" compoundref="d0/d6d/gtest-printers_8h" startline="980" endline="984">testing::PrintToString</references>
+        <referencedby refid="d5/d67/classtesting_1_1internal_1_1_format_for_comparison_3_01_to_print_0f_n_0e_00_01_other_operand_01_4_1ac7a4cf24c4e587c4c02597527939cffb" compoundref="d0/d6d/gtest-printers_8h" startline="284" endline="286">FormatForComparison&lt; ToPrint[N], OtherOperand &gt;::Format</referencedby>
+        <referencedby refid="d0/da7/namespacetesting_1_1internal_1a91ab078f10adc669f09b7f604975c518" compoundref="d0/d6d/gtest-printers_8h" startline="349" endline="352">testing::internal::FormatForComparisonFailureMessage</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>FormatForComparison&lt; ToPrint, OtherOperand &gt;</label>
+        <link refid="d9/d47/classtesting_1_1internal_1_1_format_for_comparison"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/gtest-printers.h" line="273" column="1" bodyfile="lib/googletest/include/gtest/gtest-printers.h" bodystart="273" bodyend="278"/>
+    <listofallmembers>
+      <member refid="d9/d47/classtesting_1_1internal_1_1_format_for_comparison_1a71c59ddcde066d9d31b76924801f7c89" prot="public" virt="non-virtual"><scope>testing::internal::FormatForComparison</scope><name>Format</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

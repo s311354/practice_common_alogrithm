@@ -1,12 +1,5 @@
-<map id="testing::GetReservedAttributesForElement" name="testing::GetReservedAttributesForElement">
-<area shape="rect" id="node1" title=" " alt="" coords="904,134,1107,175"/>
-<area shape="rect" id="node2" href="$d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter.html#aa8ca7066de948d26d171597430c75839" title=" " alt="" coords="685,80,856,136"/>
-<area shape="rect" id="node6" href="$d6/d6e/classtesting_1_1TestResult.html#a818c06cd2bfc00d6c81b0cebca044cb1" title=" " alt="" coords="695,170,846,211"/>
-<area shape="rect" id="node3" href="$d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter.html#af642843faed4cd28c77d688f6f2820d7" title=" " alt="" coords="467,5,637,61"/>
-<area shape="rect" id="node4" href="$d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter.html#a7f7accabeac896d4271f36d24ca02dba" title=" " alt="" coords="236,56,407,112"/>
-<area shape="rect" id="node5" href="$d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter.html#a3be1c8766241d0f34cdf59b45a52f73b" title=" " alt="" coords="5,81,176,137"/>
-<area shape="rect" id="node7" href="$d6/d6e/classtesting_1_1TestResult.html#ac253b0fd7ea70f457e9517e415eac32d" title=" " alt="" coords="486,187,618,229"/>
-<area shape="rect" id="node8" href="$d0/de3/classtesting_1_1internal_1_1UnitTestImpl.html#a15e4af4df167d2504decbc8fcc108a6f" title=" " alt="" coords="224,187,419,229"/>
-<area shape="rect" id="node10" href="$db/d32/classtesting_1_1internal_1_1TestResultAccessor.html#abcc4b32d1b201eeef92f0ec0ae161cf9" title=" " alt="" coords="247,253,395,309"/>
-<area shape="rect" id="node9" href="$d5/d21/classtesting_1_1UnitTest.html#a2c96a4a02c34095e07c6999e7686367f" title=" " alt="" coords="27,187,154,229"/>
+<map id="GetReservedAttributesForElement" name="GetReservedAttributesForElement">
+<area shape="rect" id="node1" title=" " alt="" coords="224,50,399,91"/>
+<area shape="rect" id="node2" href="$d3/dc6/classtesting_1_1internal_1_1_xml_unit_test_result_printer.html#a4d8342f10ee86c7a4d66a8dc38b778c5" title=" " alt="" coords="5,5,176,61"/>
+<area shape="rect" id="node3" href="$d1/d69/classtesting_1_1_test_result.html#a2443df28261cf11c12cb7f53e968261e" title=" " alt="" coords="15,86,166,127"/>
 </map>

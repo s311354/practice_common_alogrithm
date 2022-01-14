@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d8/df8/structtesting_1_1internal_1_1_remove_const_3_01const_01_t_0f_n_0e_4" kind="struct" language="C++" prot="public">
+    <compoundname>testing::internal::RemoveConst&lt; const T[N]&gt;</compoundname>
+    <includes refid="d5/da1/gtest-internal_8h" local="no">gtest-internal.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>size_t</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d8/df8/structtesting_1_1internal_1_1_remove_const_3_01const_01_t_0f_n_0e_4_1abca147e4d0abbcfdb90a895286db2b95" prot="public" static="no">
+        <type><ref refid="d1/d31/structtesting_1_1internal_1_1_remove_const" kindref="compound">RemoveConst</ref>&lt; T &gt;::type</type>
+        <definition>typedef RemoveConst&lt;T&gt;::type type[N]</definition>
+        <argsstring>[N]</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="804" column="39" bodyfile="lib/googletest/include/gtest/internal/gtest-internal.h" bodystart="804" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RemoveConst&lt; const T[N]&gt;</label>
+        <link refid="d8/df8/structtesting_1_1internal_1_1_remove_const_3_01const_01_t_0f_n_0e_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/googletest/include/gtest/internal/gtest-internal.h" line="803" column="1" bodyfile="lib/googletest/include/gtest/internal/gtest-internal.h" bodystart="803" bodyend="805"/>
+    <listofallmembers>
+      <member refid="d8/df8/structtesting_1_1internal_1_1_remove_const_3_01const_01_t_0f_n_0e_4_1abca147e4d0abbcfdb90a895286db2b95" prot="public" virt="non-virtual"><scope>testing::internal::RemoveConst&lt; const T[N]&gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

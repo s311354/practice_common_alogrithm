@@ -645,7 +645,7 @@
       <sectiondef kind="var">
       <memberdef kind="variable" id="cpp/types/alignment_of_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::alignment_of_v</definition>
+        <definition>T alignment_of_v</definition>
         <argsstring></argsstring>
         <name>alignment_of_v</name>
         <briefdescription>
@@ -658,7 +658,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/conjunction_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::conjunction_v</definition>
+        <definition>T conjunction_v</definition>
         <argsstring></argsstring>
         <name>conjunction_v</name>
         <briefdescription>
@@ -671,7 +671,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/disjunction_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::disjunction_v</definition>
+        <definition>T disjunction_v</definition>
         <argsstring></argsstring>
         <name>disjunction_v</name>
         <briefdescription>
@@ -684,7 +684,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/extent_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::extent_v</definition>
+        <definition>T extent_v</definition>
         <argsstring></argsstring>
         <name>extent_v</name>
         <briefdescription>
@@ -697,7 +697,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/has_unique_object_representations_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::has_unique_object_representations_v</definition>
+        <definition>T has_unique_object_representations_v</definition>
         <argsstring></argsstring>
         <name>has_unique_object_representations_v</name>
         <briefdescription>
@@ -710,7 +710,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/has_virtual_destructor_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::has_virtual_destructor_v</definition>
+        <definition>T has_virtual_destructor_v</definition>
         <argsstring></argsstring>
         <name>has_virtual_destructor_v</name>
         <briefdescription>
@@ -723,7 +723,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/utility/in_place_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::in_place</definition>
+        <definition>T in_place</definition>
         <argsstring></argsstring>
         <name>in_place</name>
         <briefdescription>
@@ -736,7 +736,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/utility/in_place_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::in_place_index</definition>
+        <definition>T in_place_index</definition>
         <argsstring></argsstring>
         <name>in_place_index</name>
         <briefdescription>
@@ -749,7 +749,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/utility/in_place_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::in_place_type</definition>
+        <definition>T in_place_type</definition>
         <argsstring></argsstring>
         <name>in_place_type</name>
         <briefdescription>
@@ -762,7 +762,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_abstract_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_abstract_v</definition>
+        <definition>T is_abstract_v</definition>
         <argsstring></argsstring>
         <name>is_abstract_v</name>
         <briefdescription>
@@ -775,7 +775,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_aggregate_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_aggregate_v</definition>
+        <definition>T is_aggregate_v</definition>
         <argsstring></argsstring>
         <name>is_aggregate_v</name>
         <briefdescription>
@@ -788,7 +788,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_arithmetic_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_arithmetic_v</definition>
+        <definition>T is_arithmetic_v</definition>
         <argsstring></argsstring>
         <name>is_arithmetic_v</name>
         <briefdescription>
@@ -801,7 +801,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_array_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_array_v</definition>
+        <definition>T is_array_v</definition>
         <argsstring></argsstring>
         <name>is_array_v</name>
         <briefdescription>
@@ -814,7 +814,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_assignable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_assignable_v</definition>
+        <definition>T is_assignable_v</definition>
         <argsstring></argsstring>
         <name>is_assignable_v</name>
         <briefdescription>
@@ -827,7 +827,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_base_of_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_base_of_v</definition>
+        <definition>T is_base_of_v</definition>
         <argsstring></argsstring>
         <name>is_base_of_v</name>
         <briefdescription>
@@ -840,7 +840,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/utility/functional/is_bind_expression_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_bind_expression_v</definition>
+        <definition>T is_bind_expression_v</definition>
         <argsstring></argsstring>
         <name>is_bind_expression_v</name>
         <briefdescription>
@@ -853,7 +853,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_bounded_array_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_bounded_array_v</definition>
+        <definition>T is_bounded_array_v</definition>
         <argsstring></argsstring>
         <name>is_bounded_array_v</name>
         <briefdescription>
@@ -866,7 +866,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_class_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_class_v</definition>
+        <definition>T is_class_v</definition>
         <argsstring></argsstring>
         <name>is_class_v</name>
         <briefdescription>
@@ -879,7 +879,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_compound_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_compound_v</definition>
+        <definition>T is_compound_v</definition>
         <argsstring></argsstring>
         <name>is_compound_v</name>
         <briefdescription>
@@ -892,7 +892,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_const_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_const_v</definition>
+        <definition>T is_const_v</definition>
         <argsstring></argsstring>
         <name>is_const_v</name>
         <briefdescription>
@@ -905,7 +905,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_constructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_constructible_v</definition>
+        <definition>T is_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_constructible_v</name>
         <briefdescription>
@@ -918,7 +918,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_convertible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_convertible_v</definition>
+        <definition>T is_convertible_v</definition>
         <argsstring></argsstring>
         <name>is_convertible_v</name>
         <briefdescription>
@@ -931,7 +931,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_copy_assignable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_copy_assignable_v</definition>
+        <definition>T is_copy_assignable_v</definition>
         <argsstring></argsstring>
         <name>is_copy_assignable_v</name>
         <briefdescription>
@@ -944,7 +944,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_copy_constructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_copy_constructible_v</definition>
+        <definition>T is_copy_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_copy_constructible_v</name>
         <briefdescription>
@@ -957,7 +957,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_default_constructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_default_constructible_v</definition>
+        <definition>T is_default_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_default_constructible_v</name>
         <briefdescription>
@@ -970,7 +970,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_destructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_destructible_v</definition>
+        <definition>T is_destructible_v</definition>
         <argsstring></argsstring>
         <name>is_destructible_v</name>
         <briefdescription>
@@ -983,7 +983,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_empty_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_empty_v</definition>
+        <definition>T is_empty_v</definition>
         <argsstring></argsstring>
         <name>is_empty_v</name>
         <briefdescription>
@@ -996,7 +996,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_enum_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_enum_v</definition>
+        <definition>T is_enum_v</definition>
         <argsstring></argsstring>
         <name>is_enum_v</name>
         <briefdescription>
@@ -1009,7 +1009,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/error/error_condition/is_error_condition_enum_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_error_condition_enum_v</definition>
+        <definition>T is_error_condition_enum_v</definition>
         <argsstring></argsstring>
         <name>is_error_condition_enum_v</name>
         <briefdescription>
@@ -1022,7 +1022,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/algorithm/is_execution_policy_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_execution_policy_v</definition>
+        <definition>T is_execution_policy_v</definition>
         <argsstring></argsstring>
         <name>is_execution_policy_v</name>
         <briefdescription>
@@ -1035,7 +1035,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_final_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_final_v</definition>
+        <definition>T is_final_v</definition>
         <argsstring></argsstring>
         <name>is_final_v</name>
         <briefdescription>
@@ -1048,7 +1048,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_floating_point_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_floating_point_v</definition>
+        <definition>T is_floating_point_v</definition>
         <argsstring></argsstring>
         <name>is_floating_point_v</name>
         <briefdescription>
@@ -1061,7 +1061,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_function_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_function_v</definition>
+        <definition>T is_function_v</definition>
         <argsstring></argsstring>
         <name>is_function_v</name>
         <briefdescription>
@@ -1074,7 +1074,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_fundamental_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_fundamental_v</definition>
+        <definition>T is_fundamental_v</definition>
         <argsstring></argsstring>
         <name>is_fundamental_v</name>
         <briefdescription>
@@ -1087,7 +1087,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_integral_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_integral_v</definition>
+        <definition>T is_integral_v</definition>
         <argsstring></argsstring>
         <name>is_integral_v</name>
         <briefdescription>
@@ -1100,7 +1100,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_invocable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_invocable_r_v</definition>
+        <definition>T is_invocable_r_v</definition>
         <argsstring></argsstring>
         <name>is_invocable_r_v</name>
         <briefdescription>
@@ -1113,7 +1113,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_invocable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_invocable_v</definition>
+        <definition>T is_invocable_v</definition>
         <argsstring></argsstring>
         <name>is_invocable_v</name>
         <briefdescription>
@@ -1126,7 +1126,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_literal_type_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_literal_type_v</definition>
+        <definition>T is_literal_type_v</definition>
         <argsstring></argsstring>
         <name>is_literal_type_v</name>
         <briefdescription>
@@ -1139,7 +1139,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_lvalue_reference_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_lvalue_reference_v</definition>
+        <definition>T is_lvalue_reference_v</definition>
         <argsstring></argsstring>
         <name>is_lvalue_reference_v</name>
         <briefdescription>
@@ -1152,7 +1152,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_member_function_pointer_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_member_function_pointer_v</definition>
+        <definition>T is_member_function_pointer_v</definition>
         <argsstring></argsstring>
         <name>is_member_function_pointer_v</name>
         <briefdescription>
@@ -1165,7 +1165,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_member_object_pointer_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_member_object_pointer_v</definition>
+        <definition>T is_member_object_pointer_v</definition>
         <argsstring></argsstring>
         <name>is_member_object_pointer_v</name>
         <briefdescription>
@@ -1178,7 +1178,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_member_pointer_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_member_pointer_v</definition>
+        <definition>T is_member_pointer_v</definition>
         <argsstring></argsstring>
         <name>is_member_pointer_v</name>
         <briefdescription>
@@ -1191,7 +1191,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_move_assignable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_move_assignable_v</definition>
+        <definition>T is_move_assignable_v</definition>
         <argsstring></argsstring>
         <name>is_move_assignable_v</name>
         <briefdescription>
@@ -1204,7 +1204,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_move_constructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_move_constructible_v</definition>
+        <definition>T is_move_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_move_constructible_v</name>
         <briefdescription>
@@ -1217,7 +1217,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_assignable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_nothrow_assignable_v</definition>
+        <definition>T is_nothrow_assignable_v</definition>
         <argsstring></argsstring>
         <name>is_nothrow_assignable_v</name>
         <briefdescription>
@@ -1230,7 +1230,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_constructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_nothrow_constructible_v</definition>
+        <definition>T is_nothrow_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_nothrow_constructible_v</name>
         <briefdescription>
@@ -1243,7 +1243,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_convertible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_nothrow_convertible_v</definition>
+        <definition>T is_nothrow_convertible_v</definition>
         <argsstring></argsstring>
         <name>is_nothrow_convertible_v</name>
         <briefdescription>
@@ -1256,7 +1256,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_copy_assignable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_nothrow_copy_assignable_v</definition>
+        <definition>T is_nothrow_copy_assignable_v</definition>
         <argsstring></argsstring>
         <name>is_nothrow_copy_assignable_v</name>
         <briefdescription>
@@ -1269,7 +1269,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_copy_constructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_nothrow_copy_constructible_v</definition>
+        <definition>T is_nothrow_copy_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_nothrow_copy_constructible_v</name>
         <briefdescription>
@@ -1282,7 +1282,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_default_constructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_nothrow_default_constructible_v</definition>
+        <definition>T is_nothrow_default_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_nothrow_default_constructible_v</name>
         <briefdescription>
@@ -1295,7 +1295,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_destructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_nothrow_destructible_v</definition>
+        <definition>T is_nothrow_destructible_v</definition>
         <argsstring></argsstring>
         <name>is_nothrow_destructible_v</name>
         <briefdescription>
@@ -1308,7 +1308,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_invocable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_nothrow_invocable_r_v</definition>
+        <definition>T is_nothrow_invocable_r_v</definition>
         <argsstring></argsstring>
         <name>is_nothrow_invocable_r_v</name>
         <briefdescription>
@@ -1321,7 +1321,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_invocable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_nothrow_invocable_v</definition>
+        <definition>T is_nothrow_invocable_v</definition>
         <argsstring></argsstring>
         <name>is_nothrow_invocable_v</name>
         <briefdescription>
@@ -1334,7 +1334,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_move_assignable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_nothrow_move_assignable_v</definition>
+        <definition>T is_nothrow_move_assignable_v</definition>
         <argsstring></argsstring>
         <name>is_nothrow_move_assignable_v</name>
         <briefdescription>
@@ -1347,7 +1347,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_move_constructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_nothrow_move_constructible_v</definition>
+        <definition>T is_nothrow_move_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_nothrow_move_constructible_v</name>
         <briefdescription>
@@ -1360,7 +1360,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_swappable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_nothrow_swappable_v</definition>
+        <definition>T is_nothrow_swappable_v</definition>
         <argsstring></argsstring>
         <name>is_nothrow_swappable_v</name>
         <briefdescription>
@@ -1373,7 +1373,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_swappable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_nothrow_swappable_with_v</definition>
+        <definition>T is_nothrow_swappable_with_v</definition>
         <argsstring></argsstring>
         <name>is_nothrow_swappable_with_v</name>
         <briefdescription>
@@ -1386,7 +1386,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_null_pointer_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_null_pointer_v</definition>
+        <definition>T is_null_pointer_v</definition>
         <argsstring></argsstring>
         <name>is_null_pointer_v</name>
         <briefdescription>
@@ -1399,7 +1399,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_object_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_object_v</definition>
+        <definition>T is_object_v</definition>
         <argsstring></argsstring>
         <name>is_object_v</name>
         <briefdescription>
@@ -1412,7 +1412,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/utility/functional/is_placeholder_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_placeholder_v</definition>
+        <definition>T is_placeholder_v</definition>
         <argsstring></argsstring>
         <name>is_placeholder_v</name>
         <briefdescription>
@@ -1425,7 +1425,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_pod_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_pod_v</definition>
+        <definition>T is_pod_v</definition>
         <argsstring></argsstring>
         <name>is_pod_v</name>
         <briefdescription>
@@ -1438,7 +1438,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_pointer_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_pointer_v</definition>
+        <definition>T is_pointer_v</definition>
         <argsstring></argsstring>
         <name>is_pointer_v</name>
         <briefdescription>
@@ -1451,7 +1451,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_polymorphic_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_polymorphic_v</definition>
+        <definition>T is_polymorphic_v</definition>
         <argsstring></argsstring>
         <name>is_polymorphic_v</name>
         <briefdescription>
@@ -1464,7 +1464,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_reference_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_reference_v</definition>
+        <definition>T is_reference_v</definition>
         <argsstring></argsstring>
         <name>is_reference_v</name>
         <briefdescription>
@@ -1477,7 +1477,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_rvalue_reference_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_rvalue_reference_v</definition>
+        <definition>T is_rvalue_reference_v</definition>
         <argsstring></argsstring>
         <name>is_rvalue_reference_v</name>
         <briefdescription>
@@ -1490,7 +1490,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_same_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_same_v</definition>
+        <definition>T is_same_v</definition>
         <argsstring></argsstring>
         <name>is_same_v</name>
         <briefdescription>
@@ -1503,7 +1503,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_scalar_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_scalar_v</definition>
+        <definition>T is_scalar_v</definition>
         <argsstring></argsstring>
         <name>is_scalar_v</name>
         <briefdescription>
@@ -1516,7 +1516,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_signed_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_signed_v</definition>
+        <definition>T is_signed_v</definition>
         <argsstring></argsstring>
         <name>is_signed_v</name>
         <briefdescription>
@@ -1529,7 +1529,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_standard_layout_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_standard_layout_v</definition>
+        <definition>T is_standard_layout_v</definition>
         <argsstring></argsstring>
         <name>is_standard_layout_v</name>
         <briefdescription>
@@ -1542,7 +1542,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_swappable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_swappable_v</definition>
+        <definition>T is_swappable_v</definition>
         <argsstring></argsstring>
         <name>is_swappable_v</name>
         <briefdescription>
@@ -1555,7 +1555,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_swappable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_swappable_with_v</definition>
+        <definition>T is_swappable_with_v</definition>
         <argsstring></argsstring>
         <name>is_swappable_with_v</name>
         <briefdescription>
@@ -1568,7 +1568,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_trivial_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_trivial_v</definition>
+        <definition>T is_trivial_v</definition>
         <argsstring></argsstring>
         <name>is_trivial_v</name>
         <briefdescription>
@@ -1581,7 +1581,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_assignable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_trivially_assignable_v</definition>
+        <definition>T is_trivially_assignable_v</definition>
         <argsstring></argsstring>
         <name>is_trivially_assignable_v</name>
         <briefdescription>
@@ -1594,7 +1594,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_constructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_trivially_constructible_v</definition>
+        <definition>T is_trivially_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_trivially_constructible_v</name>
         <briefdescription>
@@ -1607,7 +1607,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_copy_assignable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_trivially_copy_assignable_v</definition>
+        <definition>T is_trivially_copy_assignable_v</definition>
         <argsstring></argsstring>
         <name>is_trivially_copy_assignable_v</name>
         <briefdescription>
@@ -1620,7 +1620,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_copy_constructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_trivially_copy_constructible_v</definition>
+        <definition>T is_trivially_copy_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_trivially_copy_constructible_v</name>
         <briefdescription>
@@ -1633,7 +1633,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_trivially_copyable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_trivially_copyable_v</definition>
+        <definition>T is_trivially_copyable_v</definition>
         <argsstring></argsstring>
         <name>is_trivially_copyable_v</name>
         <briefdescription>
@@ -1646,7 +1646,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_default_constructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_trivially_default_constructible_v</definition>
+        <definition>T is_trivially_default_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_trivially_default_constructible_v</name>
         <briefdescription>
@@ -1659,7 +1659,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_destructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_trivially_destructible_v</definition>
+        <definition>T is_trivially_destructible_v</definition>
         <argsstring></argsstring>
         <name>is_trivially_destructible_v</name>
         <briefdescription>
@@ -1672,7 +1672,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_move_assignable_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_trivially_move_assignable_v</definition>
+        <definition>T is_trivially_move_assignable_v</definition>
         <argsstring></argsstring>
         <name>is_trivially_move_assignable_v</name>
         <briefdescription>
@@ -1685,7 +1685,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_move_constructible_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_trivially_move_constructible_v</definition>
+        <definition>T is_trivially_move_constructible_v</definition>
         <argsstring></argsstring>
         <name>is_trivially_move_constructible_v</name>
         <briefdescription>
@@ -1698,7 +1698,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_unbounded_array_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_unbounded_array_v</definition>
+        <definition>T is_unbounded_array_v</definition>
         <argsstring></argsstring>
         <name>is_unbounded_array_v</name>
         <briefdescription>
@@ -1711,7 +1711,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_union_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_union_v</definition>
+        <definition>T is_union_v</definition>
         <argsstring></argsstring>
         <name>is_union_v</name>
         <briefdescription>
@@ -1724,7 +1724,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_unsigned_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_unsigned_v</definition>
+        <definition>T is_unsigned_v</definition>
         <argsstring></argsstring>
         <name>is_unsigned_v</name>
         <briefdescription>
@@ -1737,7 +1737,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_void_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_void_v</definition>
+        <definition>T is_void_v</definition>
         <argsstring></argsstring>
         <name>is_void_v</name>
         <briefdescription>
@@ -1750,7 +1750,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/is_volatile_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::is_volatile_v</definition>
+        <definition>T is_volatile_v</definition>
         <argsstring></argsstring>
         <name>is_volatile_v</name>
         <briefdescription>
@@ -1763,7 +1763,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/negation_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::negation_v</definition>
+        <definition>T negation_v</definition>
         <argsstring></argsstring>
         <name>negation_v</name>
         <briefdescription>
@@ -1776,7 +1776,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/types/rank_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::rank_v</definition>
+        <definition>T rank_v</definition>
         <argsstring></argsstring>
         <name>rank_v</name>
         <briefdescription>
@@ -1789,7 +1789,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/numeric/ratio/ratio_equal_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::ratio_equal_v</definition>
+        <definition>T ratio_equal_v</definition>
         <argsstring></argsstring>
         <name>ratio_equal_v</name>
         <briefdescription>
@@ -1802,7 +1802,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/numeric/ratio/ratio_greater_equal_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::ratio_greater_equal_v</definition>
+        <definition>T ratio_greater_equal_v</definition>
         <argsstring></argsstring>
         <name>ratio_greater_equal_v</name>
         <briefdescription>
@@ -1815,7 +1815,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/numeric/ratio/ratio_greater_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::ratio_greater_v</definition>
+        <definition>T ratio_greater_v</definition>
         <argsstring></argsstring>
         <name>ratio_greater_v</name>
         <briefdescription>
@@ -1828,7 +1828,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/numeric/ratio/ratio_less_equal_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::ratio_less_equal_v</definition>
+        <definition>T ratio_less_equal_v</definition>
         <argsstring></argsstring>
         <name>ratio_less_equal_v</name>
         <briefdescription>
@@ -1841,7 +1841,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/numeric/ratio/ratio_less_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::ratio_less_v</definition>
+        <definition>T ratio_less_v</definition>
         <argsstring></argsstring>
         <name>ratio_less_v</name>
         <briefdescription>
@@ -1854,7 +1854,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/numeric/ratio/ratio_not_equal_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::ratio_not_equal_v</definition>
+        <definition>T ratio_not_equal_v</definition>
         <argsstring></argsstring>
         <name>ratio_not_equal_v</name>
         <briefdescription>
@@ -1867,7 +1867,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/utility/tuple/tuple_size_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::tuple_size_v</definition>
+        <definition>T tuple_size_v</definition>
         <argsstring></argsstring>
         <name>tuple_size_v</name>
         <briefdescription>
@@ -1880,7 +1880,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/memory/uses_allocator_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::uses_allocator_v</definition>
+        <definition>T uses_allocator_v</definition>
         <argsstring></argsstring>
         <name>uses_allocator_v</name>
         <briefdescription>
@@ -1893,7 +1893,7 @@
       </memberdef>
       <memberdef kind="variable" id="cpp/utility/variant/variant_size_1" prot="public" static="no" mutable="no">
         <type>T</type>
-        <definition>T std::variant_size_v</definition>
+        <definition>T variant_size_v</definition>
         <argsstring></argsstring>
         <name>variant_size_v</name>
         <briefdescription>
@@ -4438,37 +4438,44 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
-        <referencedby refid="d1/dde/classConcreteStrategyA_1a33327cefdd32b66809ff952d5ba1ac39" compoundref="d4/d51/design__pattern_2strategy__pattern_2main_8cc" startline="29" endline="32">ConcreteStrategyA::algorithmInterface</referencedby>
-        <referencedby refid="d7/d9b/classConcreteStrategyB_1ae2d87bea9f205785ac0605a734d4af77" compoundref="d4/d51/design__pattern_2strategy__pattern_2main_8cc" startline="42" endline="45">ConcreteStrategyB::algorithmInterface</referencedby>
-        <referencedby refid="df/dff/classConcreteStrategyC_1a9f11e7725a0520503718f38458e0ed70" compoundref="d4/d51/design__pattern_2strategy__pattern_2main_8cc" startline="56" endline="59">ConcreteStrategyC::algorithmInterface</referencedby>
-        <referencedby refid="d1/d20/classConcreteImplementation1_1afb0fb26e22e72c7cd932e80f61b870e5" compoundref="de/d6c/design__pattern_2bridge__pattern_2main_8cc" startline="84" endline="87">ConcreteImplementation1::anotherFunctionality</referencedby>
-        <referencedby refid="d9/dc1/classConcreteImplementation2_1a81898b1f1fa1065049f71b40376787aa" compoundref="de/d6c/design__pattern_2bridge__pattern_2main_8cc" startline="93" endline="96">ConcreteImplementation2::anotherFunctionality</referencedby>
-        <referencedby refid="dc/d7f/classcommon_1_1LinkedList_1a2bf29a613ad98509efe89adaa4188091" compoundref="d0/dea/linked__list_8cc" startline="46" endline="58">common::LinkedList&lt; T &gt;::Back</referencedby>
-        <referencedby refid="df/d9b/classcommon_1_1GraphRepresentationList_1ac257e19758cafea0b9b633675939b799" compoundref="df/d42/graph__representation_8cc" startline="64" endline="115">common::GraphRepresentationList::BFS</referencedby>
-        <referencedby refid="d1/d34/classElectricKettle_1ad8feab75d97710980dd601bc7ae49ac0" compoundref="d0/d88/design__pattern_2adapter__pattern_2main_8cc" startline="80" endline="92">ElectricKettle::boil</referencedby>
-        <referencedby refid="df/d9b/classcommon_1_1GraphRepresentationList_1a0900a0619e3423cfaf1ddcf9a7750b7a" compoundref="df/d42/graph__representation_8cc" startline="123" endline="172">common::GraphRepresentationList::DFS</referencedby>
-        <referencedby refid="dc/d7f/classcommon_1_1LinkedList_1a46d41d8625420f99ba0d603a109a11ba" compoundref="d0/dea/linked__list_8cc" startline="213" endline="241">common::LinkedList&lt; T &gt;::Erase</referencedby>
-        <referencedby refid="dc/d7f/classcommon_1_1LinkedList_1ab1570f6e4d62e8bc5876cbb3d7a8efc2" compoundref="d0/dea/linked__list_8cc" startline="33" endline="40">common::LinkedList&lt; T &gt;::Front</referencedby>
-        <referencedby refid="dc/d62/classcommon_1_1GraphRepresentation_1a44b6f9ec47a5da7661eba4d60f2435fd" compoundref="df/d42/graph__representation_8cc" startline="15" endline="22">common::GraphRepresentation::GetRepresentation</referencedby>
-        <referencedby refid="dc/d7f/classcommon_1_1LinkedList_1aaf55cc105e5d9c15f000337be2548a1a" compoundref="d0/dea/linked__list_8cc" startline="178" endline="207">common::LinkedList&lt; T &gt;::Insert</referencedby>
-        <referencedby refid="db/df7/graphs_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="db/df7/graphs_2main_8cc" startline="6" endline="32">main</referencedby>
-        <referencedby refid="da/d1f/classFacade_1a2716ddf43e94663ce93a7df00f6fd1af" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="59" endline="65">Facade::MethodA</referencedby>
-        <referencedby refid="da/d1f/classFacade_1ad8f2f8bd2ea2d9305488e2a9a42539d7" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="66" endline="71">Facade::MethodB</referencedby>
-        <referencedby refid="dd/dd2/classSubSystemFour_1ad6a8cc00691d9ce183cd300abebf36a3" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="39" endline="42">SubSystemFour::MethodFour</referencedby>
-        <referencedby refid="d1/d78/classSubSystemOne_1af6c249545e514d436a1fc09177db1ec7" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="6" endline="9">SubSystemOne::MethodOne</referencedby>
-        <referencedby refid="da/d15/classSubSystemThree_1ab1b9cbaee75b472b0e89b2f6114409f8" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="28" endline="31">SubSystemThree::MethodThree</referencedby>
-        <referencedby refid="d0/d5f/classSubSystemTwo_1a0ba476a0294293b6d829c6eacd98d5c7" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="17" endline="20">SubSystemTwo::MethodTwo</referencedby>
-        <referencedby refid="d0/d75/namespacetesting_1a7c88897836b9f492190fb2b9dfa3a327" compoundref="d3/dc2/gtest-test-part_8cc" startline="58" endline="65">testing::operator&lt;&lt;</referencedby>
-        <referencedby refid="dc/d7f/classcommon_1_1LinkedList_1a4ca79340bf05f5952b733e0718098b06" compoundref="d0/dea/linked__list_8cc" startline="116" endline="142">common::LinkedList&lt; T &gt;::PopBack</referencedby>
-        <referencedby refid="dc/d7f/classcommon_1_1LinkedList_1a56ef853678eb8f981c811c31b40fceef" compoundref="d0/dea/linked__list_8cc" startline="77" endline="89">common::LinkedList&lt; T &gt;::PopFront</referencedby>
-        <referencedby refid="de/d4c/classcommon_1_1HashTable_1af31fdd02d0dfcbf2b18018775c953454" compoundref="dd/d3b/hash__table_8cc" startline="155" endline="161">common::HashTable::PringDebug</referencedby>
-        <referencedby refid="df/d9b/classcommon_1_1GraphRepresentationList_1a2dfec81233f4aa057c42b5a7cadc66bd" compoundref="df/d42/graph__representation_8cc" startline="221" endline="232">common::GraphRepresentationList::PrintDebug</referencedby>
-        <referencedby refid="dc/d7f/classcommon_1_1LinkedList_1aca375f52bd44cdea3ef06c45b2642eb1" compoundref="d0/dea/linked__list_8cc" startline="330" endline="339">common::LinkedList&lt; T &gt;::PrintDebug</referencedby>
-        <referencedby refid="dc/d7f/classcommon_1_1LinkedList_1a714ea77fddcff81aed534afb3f75947d" compoundref="d0/dea/linked__list_8cc" startline="246" endline="270">common::LinkedList&lt; T &gt;::RemoveValue</referencedby>
-        <referencedby refid="dc/d7f/classcommon_1_1LinkedList_1a7ef8786d931ec61cea81760091a0b69d" compoundref="d0/dea/linked__list_8cc" startline="276" endline="293">common::LinkedList&lt; T &gt;::Reverse</referencedby>
+        <referencedby refid="d5/d45/class_concrete_strategy_a_1a9a36cb17a49458de180daba5e931bd94" compoundref="d4/d51/design__pattern_2strategy__pattern_2main_8cc" startline="29" endline="32">ConcreteStrategyA::algorithmInterface</referencedby>
+        <referencedby refid="d4/d27/class_concrete_strategy_b_1a9a36cb17a49458de180daba5e931bd94" compoundref="d4/d51/design__pattern_2strategy__pattern_2main_8cc" startline="42" endline="45">ConcreteStrategyB::algorithmInterface</referencedby>
+        <referencedby refid="d6/d10/class_concrete_strategy_c_1a9a36cb17a49458de180daba5e931bd94" compoundref="d4/d51/design__pattern_2strategy__pattern_2main_8cc" startline="56" endline="59">ConcreteStrategyC::algorithmInterface</referencedby>
+        <referencedby refid="da/d36/class_concrete_implementation1_1aba226fc7521b37b67e57dc4138b1ac54" compoundref="de/d6c/design__pattern_2bridge__pattern_2main_8cc" startline="84" endline="87">ConcreteImplementation1::anotherFunctionality</referencedby>
+        <referencedby refid="dc/d24/class_concrete_implementation2_1aba226fc7521b37b67e57dc4138b1ac54" compoundref="de/d6c/design__pattern_2bridge__pattern_2main_8cc" startline="93" endline="96">ConcreteImplementation2::anotherFunctionality</referencedby>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a58eca8e9e3e4f5bfe50033256d17bdc7" compoundref="d0/dea/linked__list_8cc" startline="46" endline="58">LinkedList&lt; T &gt;::Back</referencedby>
+        <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1ade13d4605967d4ec20bb4d462eb6e624" compoundref="df/d42/graph__representation_8cc" startline="64" endline="115">GraphRepresentationList::BFS</referencedby>
+        <referencedby refid="db/d91/class_electric_kettle_1a0128a33feaa0eea0e65a653e5f6cd80e" compoundref="d0/d88/design__pattern_2adapter__pattern_2main_8cc" startline="80" endline="92">ElectricKettle::boil</referencedby>
+        <referencedby refid="d1/d81/classcommon_1_1_queue_linked_list_1aa6370e8c523a8e8fe1c2e6695dd26f70" compoundref="d0/d17/queue__linked__list_8cc" startline="42" endline="60">QueueLinkedList&lt; T &gt;::Dequeue</referencedby>
+        <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1a58d3be579a41554e41aa8c86cb8cf0a6" compoundref="df/d42/graph__representation_8cc" startline="123" endline="172">GraphRepresentationList::DFS</referencedby>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1af1789852a6074c3c5ae8c6738d5f7160" compoundref="d0/dea/linked__list_8cc" startline="213" endline="241">LinkedList&lt; T &gt;::Erase</referencedby>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a510df6a9340094440277fec608697fcd" compoundref="d0/dea/linked__list_8cc" startline="33" endline="40">LinkedList&lt; T &gt;::Front</referencedby>
+        <referencedby refid="d4/df5/classcommon_1_1_graph_representation_1ab5318abef6747ff8cc2e126abfc048be" compoundref="df/d42/graph__representation_8cc" startline="15" endline="22">GraphRepresentation::GetRepresentation</referencedby>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a60af5df9c2152ed214bf6c2ae4b27bb3" compoundref="d0/dea/linked__list_8cc" startline="178" endline="207">LinkedList&lt; T &gt;::Insert</referencedby>
+        <referencedby refid="d0/dd3/binary__search_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d0/dd3/binary__search_2main_8cc" startline="6" endline="48">main</referencedby>
+        <referencedby refid="da/d95/class_facade_1a43cc0a1078e99042ba8a37b11a44feb6" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="59" endline="65">Facade::MethodA</referencedby>
+        <referencedby refid="da/d95/class_facade_1a1bf43d0f6e3ef96a5e673a2e20466beb" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="66" endline="71">Facade::MethodB</referencedby>
+        <referencedby refid="d3/dd0/class_sub_system_four_1a250a119a22d89cab58ac3df56da0a543" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="39" endline="42">SubSystemFour::MethodFour</referencedby>
+        <referencedby refid="d6/d01/class_sub_system_one_1af58c25e4da5a82274339027d5036fb12" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="6" endline="9">SubSystemOne::MethodOne</referencedby>
+        <referencedby refid="d4/d06/class_sub_system_three_1ae36a75feb368455bfe67f5a86522fbdf" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="28" endline="31">SubSystemThree::MethodThree</referencedby>
+        <referencedby refid="d3/de3/class_sub_system_two_1a084d1867c7a7db6493f141889f541e86" compoundref="d6/d51/design__pattern_2facade__pattern_2main_8cc" startline="17" endline="20">SubSystemTwo::MethodTwo</referencedby>
+        <referencedby refid="d0/d8a/classleetcode_1_1_solutions_1a1e18a492caa00dc950ccdb815ca6083b" compoundref="d9/d25/solutions_8cc" startline="15" endline="48">Solutions::minDeletions</referencedby>
+        <referencedby refid="d0/d75/namespacetesting_1ae8b6df347210c0ebfe5ec995d03c7aed" compoundref="d3/dc2/gtest-test-part_8cc" startline="58" endline="65">testing::operator&lt;&lt;</referencedby>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a8f1814ae66e117738921f5d400d85ec3" compoundref="d0/dea/linked__list_8cc" startline="116" endline="142">LinkedList&lt; T &gt;::PopBack</referencedby>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" compoundref="d0/dea/linked__list_8cc" startline="77" endline="89">LinkedList&lt; T &gt;::PopFront</referencedby>
+        <referencedby refid="d1/d2d/classcommon_1_1_hash_table_1ad4be3369313a7d7d22098510b1ab0c84" compoundref="dd/d3b/hash__table_8cc" startline="155" endline="161">HashTable::PringDebug</referencedby>
+        <referencedby refid="d9/d0c/namespacecommon_1a12066b17e67522e150a0d61a74a4cb2d" compoundref="db/d3e/priority__queue_8cc" startline="232" endline="239">common::print_heap</referencedby>
+        <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1a7c4557fcada1ff8b18f1d62cec1056a1" compoundref="df/d42/graph__representation_8cc" startline="221" endline="232">GraphRepresentationList::PrintDebug</referencedby>
+        <referencedby refid="dc/de6/classcommon_1_1_priority_queue_1a7c4557fcada1ff8b18f1d62cec1056a1" compoundref="db/d3e/priority__queue_8cc" startline="69" endline="76">PriorityQueue::PrintDebug</referencedby>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a96f5737c64edc912fe53681ccc9ea057" compoundref="d0/dea/linked__list_8cc" startline="330" endline="339">LinkedList&lt; T &gt;::PrintDebug</referencedby>
+        <referencedby refid="d1/d81/classcommon_1_1_queue_linked_list_1a96f5737c64edc912fe53681ccc9ea057" compoundref="d0/d17/queue__linked__list_8cc" startline="72" endline="84">QueueLinkedList&lt; T &gt;::PrintDebug</referencedby>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1aa40f387b3fb06df3997974b66ed1d40c" compoundref="d0/dea/linked__list_8cc" startline="246" endline="270">LinkedList&lt; T &gt;::RemoveValue</referencedby>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1ae1b551cc51c9d556342b27b466a7c7cb" compoundref="d0/dea/linked__list_8cc" startline="276" endline="293">LinkedList&lt; T &gt;::Reverse</referencedby>
         <referencedby refid="df/d46/hash__table_2main_8cc_1a003ce0914f19a42075de9622525208fe" compoundref="df/d46/hash__table_2main_8cc" startline="6" endline="26">stdlib_experiments</referencedby>
-        <referencedby refid="dc/d7f/classcommon_1_1LinkedList_1a8db9f75b4d35934ea47b6d72ec848baa" compoundref="d0/dea/linked__list_8cc" startline="154" endline="172">common::LinkedList&lt; T &gt;::ValueAt</referencedby>
-        <referencedby refid="dc/d7f/classcommon_1_1LinkedList_1a4299a415894661e11981282fb1193d3f" compoundref="d0/dea/linked__list_8cc" startline="299" endline="324">common::LinkedList&lt; T &gt;::ValueNFromEnd</referencedby>
+        <referencedby refid="dd/dc9/queue__linked__list_2main_8cc_1a02daa2d5d74a14cacba69b339d87e3c0" compoundref="dd/dc9/queue__linked__list_2main_8cc" startline="20" endline="33">stdlib_queue_experiment</referencedby>
+        <referencedby refid="dd/dc9/queue__linked__list_2main_8cc_1a5555d25602377ba8c6b05ef270516a64" compoundref="dd/dc9/queue__linked__list_2main_8cc" startline="35" endline="48">stdlib_stack_experiment</referencedby>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a41778863ac9905141650a07d08146115" compoundref="d0/dea/linked__list_8cc" startline="154" endline="172">LinkedList&lt; T &gt;::ValueAt</referencedby>
+        <referencedby refid="d7/d8e/classcommon_1_1_linked_list_1a1e3c93770d25a042944efa1e83d449c1" compoundref="d0/dea/linked__list_8cc" startline="299" endline="324">LinkedList&lt; T &gt;::ValueNFromEnd</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/io/manip/ends_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -4605,7 +4612,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
-        <referencedby refid="dc/d62/classcommon_1_1GraphRepresentation_1a44b6f9ec47a5da7661eba4d60f2435fd" compoundref="df/d42/graph__representation_8cc" startline="15" endline="22">common::GraphRepresentation::GetRepresentation</referencedby>
+        <referencedby refid="d4/df5/classcommon_1_1_graph_representation_1ab5318abef6747ff8cc2e126abfc048be" compoundref="df/d42/graph__representation_8cc" startline="15" endline="22">GraphRepresentation::GetRepresentation</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/numeric/math/exp_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -5116,9 +5123,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
-        <referencedby refid="df/d9b/classcommon_1_1GraphRepresentationList_1ac257e19758cafea0b9b633675939b799" compoundref="df/d42/graph__representation_8cc" startline="64" endline="115">common::GraphRepresentationList::BFS</referencedby>
-        <referencedby refid="df/d9b/classcommon_1_1GraphRepresentationList_1a921721803dd2db385ad0f0700e61495e" compoundref="df/d42/graph__representation_8cc" startline="174" endline="219">common::GraphRepresentationList::ContainsCycle</referencedby>
-        <referencedby refid="df/d9b/classcommon_1_1GraphRepresentationList_1a0900a0619e3423cfaf1ddcf9a7750b7a" compoundref="df/d42/graph__representation_8cc" startline="123" endline="172">common::GraphRepresentationList::DFS</referencedby>
+        <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1ade13d4605967d4ec20bb4d462eb6e624" compoundref="df/d42/graph__representation_8cc" startline="64" endline="115">GraphRepresentationList::BFS</referencedby>
+        <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1a094ec99ad1b124c0dd56e43760247b6f" compoundref="df/d42/graph__representation_8cc" startline="174" endline="219">GraphRepresentationList::ContainsCycle</referencedby>
+        <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1a58d3be579a41554e41aa8c86cb8cf0a6" compoundref="df/d42/graph__representation_8cc" startline="123" endline="172">GraphRepresentationList::DFS</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/algorithm/find_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -5136,8 +5143,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
-        <referencedby refid="df/d9b/classcommon_1_1GraphRepresentationList_1a8a40c21abe6df8459d2f9e9cffb4d28d" compoundref="df/d42/graph__representation_8cc" startline="34" endline="56">common::GraphRepresentationList::AddEdge</referencedby>
-        <referencedby refid="d6/de5/classtesting_1_1internal_1_1XmlUnitTestResultPrinter_1aa8ca7066de948d26d171597430c75839" compoundref="df/d5b/gtest_8cc" startline="3607" endline="3621">testing::internal::XmlUnitTestResultPrinter::OutputXmlAttribute</referencedby>
+        <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1af2711b2aec837d248c94c50cb7687648" compoundref="df/d42/graph__representation_8cc" startline="34" endline="56">GraphRepresentationList::AddEdge</referencedby>
+        <referencedby refid="d3/dc6/classtesting_1_1internal_1_1_xml_unit_test_result_printer_1a4d8342f10ee86c7a4d66a8dc38b778c5" compoundref="df/d5b/gtest_8cc" startline="3607" endline="3621">XmlUnitTestResultPrinter::OutputXmlAttribute</referencedby>
         <referencedby refid="d0/d75/namespacetesting_1a4c9bd414747bf0563bfdb32a2307dcdf" compoundref="df/d5b/gtest_8cc" startline="2141" endline="2151">testing::ValidateTestPropertyName</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/algorithm/find_end_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -5190,8 +5197,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
-        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1ac5684d824a59e963cb3274c79d0b6df3" compoundref="df/d5b/gtest_8cc" startline="4502" endline="4535">testing::internal::UnitTestImpl::GetTestCase</referencedby>
-        <referencedby refid="d6/d6e/classtesting_1_1TestResult_1ac253b0fd7ea70f457e9517e415eac32d" compoundref="df/d5b/gtest_8cc" startline="2057" endline="2071">testing::TestResult::RecordProperty</referencedby>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1a6438a25b62877163bec864df1369909b" compoundref="df/d5b/gtest_8cc" startline="4502" endline="4535">UnitTestImpl::GetTestCase</referencedby>
+        <referencedby refid="d1/d69/classtesting_1_1_test_result_1a33626833a874fe245b35ad6e6e1f18d4" compoundref="df/d5b/gtest_8cc" startline="2057" endline="2071">TestResult::RecordProperty</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/algorithm/find_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -5380,7 +5387,7 @@
         </inbodydescription>
         <location file="" line="1" column="1"/>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a52f5504ed65d116201ccb8f99a44fd7e" compoundref="d0/da1/gtest-internal-inl_8h" startline="296" endline="298">testing::internal::ForEach</referencedby>
-        <referencedby refid="d0/de3/classtesting_1_1internal_1_1UnitTestImpl_1a1fb6be9971f4768c4136a05aa9e7e375" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">testing::internal::UnitTestImpl::RunAllTests</referencedby>
+        <referencedby refid="d7/dda/classtesting_1_1internal_1_1_unit_test_impl_1a4d5d6a2e8fa3b918a284252602a98279" compoundref="df/d5b/gtest_8cc" startline="4551" endline="4687">UnitTestImpl::RunAllTests</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/algorithm/for_each_n_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -6197,8 +6204,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
-        <referencedby refid="d2/df8/classtesting_1_1internal_1_1String_1af702dc7cbd569589d8e3ff215a7cafa9" compoundref="df/d5b/gtest_8cc" startline="1973" endline="1978">testing::internal::String::FormatByte</referencedby>
-        <referencedby refid="d2/df8/classtesting_1_1internal_1_1String_1affe59102e49092fc0684388e9b0c5c1e" compoundref="df/d5b/gtest_8cc" startline="1966" endline="1970">testing::internal::String::FormatHexInt</referencedby>
+        <referencedby refid="d0/dde/classtesting_1_1internal_1_1_string_1a45841175db35bdac6428d81ac9f00fb4" compoundref="df/d5b/gtest_8cc" startline="1973" endline="1978">String::FormatByte</referencedby>
+        <referencedby refid="d0/dde/classtesting_1_1internal_1_1_string_1adf8a689d29be62ae924078e2bfe3447a" compoundref="df/d5b/gtest_8cc" startline="1966" endline="1970">String::FormatHexInt</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/io/manip/fixed_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -8035,7 +8042,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
-        <referencedby refid="dd/d8b/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1Hunk_1aa4203a217bfcb6f4ccff08eda70975d3" compoundref="df/d5b/gtest_8cc" startline="1135" endline="1151">testing::internal::edit_distance::anonymous_namespace{gtest.cc}::Hunk::PushLine</referencedby>
+        <referencedby refid="d1/d9e/classtesting_1_1internal_1_1edit__distance_1_1anonymous__namespace_02gtest_8cc_03_1_1_hunk_1aa9c8517b93ac94a1ba9f9a2469a70a38" compoundref="df/d5b/gtest_8cc" startline="1135" endline="1151">Hunk::PushLine</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/iterator/make_reverse_iterator_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -8138,8 +8145,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
-        <referencedby refid="df/d9b/classcommon_1_1GraphRepresentationList_1a8a40c21abe6df8459d2f9e9cffb4d28d" compoundref="df/d42/graph__representation_8cc" startline="34" endline="56">common::GraphRepresentationList::AddEdge</referencedby>
-        <referencedby refid="d3/d2e/classcommon_1_1BinarySearch_1af5da473ef8f59204d9378229ad96d74c" compoundref="dd/d7c/binary__search_8cc" startline="93" endline="97">common::BinarySearch::GetHeight</referencedby>
+        <referencedby refid="db/df9/classcommon_1_1_graph_representation_list_1af2711b2aec837d248c94c50cb7687648" compoundref="df/d42/graph__representation_8cc" startline="34" endline="56">GraphRepresentationList::AddEdge</referencedby>
+        <referencedby refid="dc/df2/classcommon_1_1_binary_search_1a830ecb4604864d9945c4d387ad075e4e" compoundref="dd/d7c/binary__search_8cc" startline="93" endline="97">BinarySearch::GetHeight</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/algorithm/max_element_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -8463,7 +8470,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
-        <referencedby refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1aec6a04ff6b3487a6744d116dbc2dc3e7" compoundref="df/d5b/gtest_8cc" startline="1203" endline="1263">testing::internal::edit_distance::CreateUnifiedDiff</referencedby>
+        <referencedby refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1aef01558937d42283a238a7b55baddd11" compoundref="df/d5b/gtest_8cc" startline="1203" endline="1263">testing::internal::edit_distance::CreateUnifiedDiff</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/algorithm/min_element_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -9892,7 +9899,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
-        <referencedby refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1a455a044d22764a657122b69b0238840a" compoundref="df/d5b/gtest_8cc" startline="1028" endline="1083">testing::internal::edit_distance::CalculateOptimalEdits</referencedby>
+        <referencedby refid="de/dce/namespacetesting_1_1internal_1_1edit__distance_1a5b69c8f2b38f31e87dabf300d7e46903" compoundref="df/d5b/gtest_8cc" startline="1028" endline="1083">testing::internal::edit_distance::CalculateOptimalEdits</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/algorithm/reverse_copy_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -10352,8 +10359,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
-        <referencedby refid="d2/df8/classtesting_1_1internal_1_1String_1af702dc7cbd569589d8e3ff215a7cafa9" compoundref="df/d5b/gtest_8cc" startline="1973" endline="1978">testing::internal::String::FormatByte</referencedby>
-        <referencedby refid="d2/df8/classtesting_1_1internal_1_1String_1af50b18d588355871e1982c4043523e0f" compoundref="df/d5b/gtest_8cc" startline="1959" endline="1963">testing::internal::String::FormatIntWidth2</referencedby>
+        <referencedby refid="d0/dde/classtesting_1_1internal_1_1_string_1a45841175db35bdac6428d81ac9f00fb4" compoundref="df/d5b/gtest_8cc" startline="1973" endline="1978">String::FormatByte</referencedby>
+        <referencedby refid="d0/dde/classtesting_1_1internal_1_1_string_1a1c674bb56e2cc7dc32d026056d131bd2" compoundref="df/d5b/gtest_8cc" startline="1959" endline="1963">String::FormatIntWidth2</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/io/manip/setiosflags_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -10407,7 +10414,7 @@
         <location file="" line="1" column="1"/>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a98ce463e5dbe0c6120fa817e1f8f2944" compoundref="d8/d73/gtest_8h" startline="1631" endline="1654">testing::internal::CmpHelperFloatingPointEQ</referencedby>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a17b52b6b1f81f6dcad5cc4d12e5173a6" compoundref="df/d5b/gtest_8cc" startline="1384" endline="1415">testing::internal::FloatingPointLE</referencedby>
-        <referencedby refid="d3/d98/classtesting_1_1Message_1af5ba7216630df9845f18feb64b1a5383" compoundref="df/d5b/gtest_8cc" startline="946" endline="950">testing::Message::Message</referencedby>
+        <referencedby refid="d2/da9/classtesting_1_1_message_1af1991e0448f9277f0939d142e4aa2c94" compoundref="df/d5b/gtest_8cc" startline="946" endline="950">Message::Message</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/io/c/setvbuf_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -10442,8 +10449,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
-        <referencedby refid="d2/df8/classtesting_1_1internal_1_1String_1af702dc7cbd569589d8e3ff215a7cafa9" compoundref="df/d5b/gtest_8cc" startline="1973" endline="1978">testing::internal::String::FormatByte</referencedby>
-        <referencedby refid="d2/df8/classtesting_1_1internal_1_1String_1af50b18d588355871e1982c4043523e0f" compoundref="df/d5b/gtest_8cc" startline="1959" endline="1963">testing::internal::String::FormatIntWidth2</referencedby>
+        <referencedby refid="d0/dde/classtesting_1_1internal_1_1_string_1a45841175db35bdac6428d81ac9f00fb4" compoundref="df/d5b/gtest_8cc" startline="1973" endline="1978">String::FormatByte</referencedby>
+        <referencedby refid="d0/dde/classtesting_1_1internal_1_1_string_1a1c674bb56e2cc7dc32d026056d131bd2" compoundref="df/d5b/gtest_8cc" startline="1959" endline="1963">String::FormatIntWidth2</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/algorithm/shift_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -11635,7 +11642,7 @@
         </inbodydescription>
         <location file="" line="1" column="1"/>
         <referencedby refid="d0/da7/namespacetesting_1_1internal_1a0e1d3dc36138a591769412d4c7779861" compoundref="d0/da1/gtest-internal-inl_8h" startline="312" endline="329">testing::internal::ShuffleRange</referencedby>
-        <referencedby refid="dd/d5f/classtesting_1_1AssertionResult_1ab5b92c1be40f9ce9d7c3e0cf7bf65c61" compoundref="df/d5b/gtest_8cc" startline="995" endline="999">testing::AssertionResult::swap</referencedby>
+        <referencedby refid="d5/dec/classtesting_1_1_assertion_result_1a0aafa5774976d7f082bb6f1d19da61cb" compoundref="df/d5b/gtest_8cc" startline="995" endline="999">AssertionResult::swap</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/algorithm/swap_ranges_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
@@ -12605,8 +12612,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="" line="1" column="1"/>
-        <referencedby refid="d2/df8/classtesting_1_1internal_1_1String_1af702dc7cbd569589d8e3ff215a7cafa9" compoundref="df/d5b/gtest_8cc" startline="1973" endline="1978">testing::internal::String::FormatByte</referencedby>
-        <referencedby refid="d2/df8/classtesting_1_1internal_1_1String_1affe59102e49092fc0684388e9b0c5c1e" compoundref="df/d5b/gtest_8cc" startline="1966" endline="1970">testing::internal::String::FormatHexInt</referencedby>
+        <referencedby refid="d0/dde/classtesting_1_1internal_1_1_string_1a45841175db35bdac6428d81ac9f00fb4" compoundref="df/d5b/gtest_8cc" startline="1973" endline="1978">String::FormatByte</referencedby>
+        <referencedby refid="d0/dde/classtesting_1_1internal_1_1_string_1adf8a689d29be62ae924078e2bfe3447a" compoundref="df/d5b/gtest_8cc" startline="1966" endline="1970">String::FormatHexInt</referencedby>
       </memberdef>
       <memberdef kind="function" id="cpp/locale/use_facet_1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>

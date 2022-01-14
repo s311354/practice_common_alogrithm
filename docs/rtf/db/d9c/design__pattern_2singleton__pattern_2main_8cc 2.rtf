@@ -110,8 +110,8 @@
 design_pattern/singleton_pattern/main.cc File Reference\par \pard\plain 
 {\tc\tcl2 \v design_pattern/singleton_pattern/main.cc(d4ab02d08ceed19dab4276c86042b1520529304b)}
 {\xe \v design_pattern/singleton_pattern/main.cc(d4ab02d08ceed19dab4276c86042b1520529304b)}
-{\bkmkstart AAAAAAAAKO}
-{\bkmkend AAAAAAAAKO}
+{\bkmkstart AAAAAAAASZ}
+{\bkmkend AAAAAAAASZ}
 {
 \pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
 }
@@ -128,7 +128,8 @@ Classes\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-class {\b Singleton}\par
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAATA" }{}}{\fldrslt {\cs37\ul\cf2 Singleton}}}
+\par
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Functions\par
@@ -136,7 +137,8 @@ Functions\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-int {\b main} ()\par
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAATB" }{}}{\fldrslt {\cs37\ul\cf2 main}}}
+ ()\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -148,15 +150,22 @@ Function Documentation\par
 {\b 
 int main ()}}
 \par
-{\bkmkstart AAAAAAAAKP}
-{\bkmkend AAAAAAAAKP}
+{\bkmkstart AAAAAAAATB}
+{\bkmkend AAAAAAAATB}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 47 of file main.cc.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 48 \{\par
 49     {\cf20 //new Singleton(); // Won't work}\par
-50     Singleton* s = Singleton::getInstance(); {\cf20 // Ok}\par
-51     Singleton* r = Singleton::getInstance();\par
+50     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAATA" }{}}{\fldrslt {\cs37\ul\cf2 Singleton}}}
+* s = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAATC" }{}}{\fldrslt {\cs37\ul\cf2 Singleton::getInstance}}}
+(); {\cf20 // Ok}\par
+51     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAATA" }{}}{\fldrslt {\cs37\ul\cf2 Singleton}}}
+* r = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAATC" }{}}{\fldrslt {\cs37\ul\cf2 Singleton::getInstance}}}
+();\par
 52 \par
 53     {\cf20 /* The addresses will be the same. */}\par
 54     std::cout << s << std::endl;\par
