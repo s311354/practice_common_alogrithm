@@ -74,7 +74,7 @@ int Solutions::minDeletions(std::string s)
         int key = it->first;
         int val = it->second;
 
-//         std::cout << "key: " << key  << " value: " << val << std::endl;
+//         std::cout &lt;&lt; "key: " &lt;&lt; key  &lt;&lt; " value: " &lt;&lt; val &lt;&lt; std::endl;
         // not frequencies of elements
         if (key == 0 || val == 1) {
             continue;
@@ -180,6 +180,99 @@ std::vector<int> Solutions::twoSum(std::vector<int>& num, int target)
     }
 
     return indices_two_sum;
+}
+
+/*! \brief Shortest Distance from All Buildings
+ *
+ *  You want to build a house on an empty land which reaches all buildings in the shortest amount of distance.
+ *  You can only move up, down, left, and right. You are given a 2D grid of values 0, 1, or 2, where:
+ *  Each 0 marks an empty land which you can pass by freely.
+ *  Each 1 markd a building which you cannot pass through.
+ *  Each 2 marks an obstacle which you cannot pass through.
+ *
+ * \return the shortest distance
+ */
+int Solutions::shortestDistance( std::vector< std::vector<int> > & grid )
+{
+    int row = grid.size(), column = grid[0].size();
+
+    std::vector< std::vector<int> > distance(row, std::vector<int>(column, 0));
+    std::vector< std::vector<int> > visit(row, std::vector<int>(column, 0));
+
+    int num_building = 0, ans = INT_MAX;
+
+    // do BFS
+    for (int i = 0; i < row; ++i) {
+        for (int j = 0; j < column; ++j) {
+            // parent node (building)
+            if (grid[i].at(j) == 1) {
+                num_building ++;
+                auto tmp_grid = grid;
+                bfs(i, j, tmp_grid, distance, visit);
+            }
+        }
+    }
+
+    // find the shortest distance
+    for (int i = 0; i < row; ++i) {
+        for (int j = 0; j < column; j++) {
+            if (visit[i].at(j) == num_building)
+                ans = std::min(ans, distance[i].at(j));
+        }
+    }
+
+    return ans == INT_MAX ? -1: ans;
+}
+
+/*! \brief BFS for Shortest Distance from All Buildings
+ *
+ *  traversing 2-D grid
+ *
+ * \return None
+ */
+void Solutions::bfs(int column, int row, std::vector< std::vector<int> > &grid, std::vector< std::vector<int> > &distance, std::vector< std::vector<int> >  &visit)
+{
+    // assigns starting point into parent node
+    std::queue< std::pair<int, int> > to_visit; // BFS
+    to_visit.push( std::pair<int, int>(column, row));
+
+    int step = 0;
+
+    // traversing from source (parent node)
+//     std::cout << "Boundary " << grid.size() << " "  << grid[0].size() << std::endl;
+    while (!to_visit.empty()) {
+
+        // exploring 2D grid
+        int curDepth = to_visit.size();
+        for (int i = 0; i < curDepth; ++i) {
+
+            int xx = to_visit.front().first;
+            int yy = to_visit.front().second;
+
+            to_visit.pop();
+
+            // meet the boundary
+            if (xx == grid.size() || xx < 0 || yy == grid[0].size() || yy <0) continue;
+
+//             std::cout <<  "X " << xx << " Y " << yy << " Depth " << curDepth << std::endl;
+            if (xx == grid.size()) std::cout << "Boundary" << std::endl;
+
+            // Only empty land which you can pass by freely
+            if (step != 0 && grid[xx].at(yy) != 0) continue;
+
+            // Update Status
+            visit[xx].at(yy)++; //how many visitor have visited here
+            distance[xx].at(yy) += step;
+            grid[xx].at(yy) = -1; // visited
+
+            to_visit.push(std::pair<int, int>(xx+1, yy)); // Up
+            to_visit.push(std::pair<int, int>(xx-1, yy)); // Down
+            to_visit.push(std::pair<int, int>(xx, yy+1)); // Right
+            to_visit.push(std::pair<int, int>(xx, yy-1)); // Left
+        }
+
+        step ++;
+    }
 }
 
 } /* namespace leetcode */

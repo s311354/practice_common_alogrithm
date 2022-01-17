@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/src
+CXX_INCLUDES = 
 
-CXX_FLAGS =  -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk   -std=c++11 -Werror -std=c++11
+CXX_FLAGS =  -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk   -std=c++11 -Werror -std=c++11
 

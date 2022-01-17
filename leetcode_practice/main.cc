@@ -21,6 +21,11 @@ int main(int argc, char *argv[])
     }
     std::cout << ">" << std::endl;
 
+    // brief 
+    std::vector< std::vector<int> > grid = {{1, 0, 2, 0 ,1}, {0, 0, 0, 0, 0}, {0, 0, 1, 0, 0}};
+
+    std::cout << "Shortest Distance: " << solution.shortestDistance(grid) <<std::endl;
+
 
     return 0;
 }

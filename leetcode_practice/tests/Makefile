@@ -75,27 +75,17 @@ CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/pract
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.19.6/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.19.6/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.19.6/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.19.6/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -131,28 +121,38 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.19.6/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/Cellar/cmake/3.19.6/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.19.6/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/local/Cellar/cmake/3.19.6/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests && $(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/CMakeFiles /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/src//CMakeFiles/progress.marks
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/CMakeFiles /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -162,60 +162,97 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-src/CMakeFiles/solutions_lib.dir/rule:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/solutions_lib.dir/rule
-.PHONY : src/CMakeFiles/solutions_lib.dir/rule
+#=============================================================================
+# Target rules for targets named leetcode_unit_test
 
-# Convenience name for target.
-solutions_lib: src/CMakeFiles/solutions_lib.dir/rule
+# Build rule for target.
+leetcode_unit_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 leetcode_unit_test
+.PHONY : leetcode_unit_test
 
+# fast build rule for target.
+leetcode_unit_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_unit_test.dir/build.make CMakeFiles/leetcode_unit_test.dir/build
+.PHONY : leetcode_unit_test/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f lib/googletest/CMakeFiles/gtest_main.dir/build.make lib/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f lib/googletest/CMakeFiles/gtest.dir/build.make lib/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named solutions_lib
+
+# Build rule for target.
+solutions_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 solutions_lib
 .PHONY : solutions_lib
 
 # fast build rule for target.
 solutions_lib/fast:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/solutions_lib.dir/build.make src/CMakeFiles/solutions_lib.dir/build
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/solutions_lib.dir/build.make src/CMakeFiles/solutions_lib.dir/build
 .PHONY : solutions_lib/fast
 
-solutions.o: solutions.cc.o
+leetcode_unit_test.o: leetcode_unit_test.cc.o
 
-.PHONY : solutions.o
+.PHONY : leetcode_unit_test.o
 
 # target to build an object file
-solutions.cc.o:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/solutions_lib.dir/build.make src/CMakeFiles/solutions_lib.dir/solutions.cc.o
-.PHONY : solutions.cc.o
+leetcode_unit_test.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_unit_test.dir/build.make CMakeFiles/leetcode_unit_test.dir/leetcode_unit_test.cc.o
+.PHONY : leetcode_unit_test.cc.o
 
-solutions.i: solutions.cc.i
+leetcode_unit_test.i: leetcode_unit_test.cc.i
 
-.PHONY : solutions.i
+.PHONY : leetcode_unit_test.i
 
 # target to preprocess a source file
-solutions.cc.i:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/solutions_lib.dir/build.make src/CMakeFiles/solutions_lib.dir/solutions.cc.i
-.PHONY : solutions.cc.i
+leetcode_unit_test.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_unit_test.dir/build.make CMakeFiles/leetcode_unit_test.dir/leetcode_unit_test.cc.i
+.PHONY : leetcode_unit_test.cc.i
 
-solutions.s: solutions.cc.s
+leetcode_unit_test.s: leetcode_unit_test.cc.s
 
-.PHONY : solutions.s
+.PHONY : leetcode_unit_test.s
 
 # target to generate assembly for a file
-solutions.cc.s:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/solutions_lib.dir/build.make src/CMakeFiles/solutions_lib.dir/solutions.cc.s
-.PHONY : solutions.cc.s
+leetcode_unit_test.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_unit_test.dir/build.make CMakeFiles/leetcode_unit_test.dir/leetcode_unit_test.cc.s
+.PHONY : leetcode_unit_test.cc.s
 
 # Help Target
 help:
@@ -229,10 +266,13 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... gtest"
+	@echo "... gtest_main"
+	@echo "... leetcode_unit_test"
 	@echo "... solutions_lib"
-	@echo "... solutions.o"
-	@echo "... solutions.i"
-	@echo "... solutions.s"
+	@echo "... leetcode_unit_test.o"
+	@echo "... leetcode_unit_test.i"
+	@echo "... leetcode_unit_test.s"
 .PHONY : help
 
 
@@ -244,6 +284,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
