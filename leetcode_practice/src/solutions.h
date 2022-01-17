@@ -2,6 +2,10 @@
 #define SOLUTION_H
 #include <iostream>
 #include <ctype.h>
+
+// STL Containers
+#include <set>
+#include <unordered_set>
 #include <vector>
 #include <map>
 #include <string>
@@ -24,18 +28,25 @@ public:
 
     /* ========== Microsoft OA ============ */
 
-    // Miniumum Deletions to Make Character Frequencies Unique
+    // 1647. Miniumum Deletions to Make Character Frequencies Unique
     int minDeletions(std::string s);
 
-    // Minimum Adjacent Swaps to Make Palindrome
+    // OA 2019 Minimum Adjacent Swaps to Make Palindrome
     int minSwaps(std::string s);
 
-    // Two Sum 
+    // 1. Two Sum 
     std::vector<int> twoSum(std::vector<int>& num, int target);
 
+    // OA 2019 Min Steps to Make Piles Equal Height
+    int minStpes( std::vector<int>& nums );
+
+    // OA 2019 Largest K such that both K and -K exist in array
+    int largestK( std::vector<int>& nums);
+
     /* ========== BFS ============ */
-    // Shortest Distance from All Buildings
+    // 317. Shortest Distance from All Buildings
     int shortestDistance( std::vector< std::vector<int> > & grid );
+
 
 };
 

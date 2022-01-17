@@ -20,6 +20,34 @@ The std::stack class is a container adaptor that gives the programmer the functi
 
 The std::vector<T>'s elements are stroed contiguously, which means that elements can be accessed not only through iterators, but also using offsets to regular points to elements. This means that a pointer to an element of a vector may be passed to any function that expects a pointer to an element of an arry. (key member functions: std::vector<T>.assign(...), std::vector<T>.front(), std::vector<T>.back(), std::vector<T>.push_back(), std::vector<T>.pop_back(), std::vector<T>.at(pos), ...)
 
+#### The concept of Library Containers (STL) ####
+
+Overview of container:
+<table>
+ <tr>
+  <th>Type</th>
+  <th>Containers</th>
+ </tr>
+ <tr>
+  <td>Sequence Containers</td>
+  <td>std::array, std::vector, std::deque, std::forward_list, std::list</td>
+ </tr>
+ <tr>
+  <td>Container Adaptors</td>
+  <td>std::stack, std::queue, std::priority_queue</td>
+ </tr>
+ <tr>
+  <td>Associative Containers</td>
+  <td>std::set, std::multiset, std::map, std::multiap</td>
+ </tr>
+ <tr>
+  <td>Unorderred Associative Container</td>
+  <td>std::unordered_set, std::unordered_mulitset, std::undered_map, std::unordered_mulitmap</td>
+ </tr>
+</table>
+
+A container is a holder object that stores a collectionn of other objects (its elements). They are implemented as class templates, which allows a great flexibility in the types supported as elements.
+
 #### Reference ####
 
 [1] [cplusplus: Q/A -std=c++11 or -std=c++98](https://www.cplusplus.com/forum/unices/172313/)
@@ -30,4 +58,6 @@ The std::vector<T>'s elements are stroed contiguously, which means that elements
 
 [4] [Working Draft, Standard for Programming Language C++](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3337.pdf)
 
-[5] cppreference: [std::queue](https://en.cppreference.com/w/cpp/container/queue), [std::stack](https://en.cppreference.com/w/cpp/container/stack), [std::vector](https://en.cppreference.com/w/cpp/container/vector), [std::map](http://en.cppreference.com/w/cpp/container/map)
+[5] [Library Containers](https://www.cplusplus.com/reference/stl/)
+
+[6] cppreference: [std::queue](https://en.cppreference.com/w/cpp/container/queue), [std::stack](https://en.cppreference.com/w/cpp/container/stack), [std::vector](https://en.cppreference.com/w/cpp/container/vector), [std::map](http://en.cppreference.com/w/cpp/container/map)

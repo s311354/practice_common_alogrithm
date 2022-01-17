@@ -22,7 +22,6 @@ TEST_F(SolutionsTest, MinSwapTest)
     EXPECT_EQ(3, solutions.minSwaps(input));
 }
 
-
 TEST_F(SolutionsTest, TwoSumTest) 
 {
     /* Declare the Unit Test object */
@@ -36,7 +35,6 @@ TEST_F(SolutionsTest, TwoSumTest)
     }
 }
 
-
 TEST_F(SolutionsTest, ShortestDistanceTest) 
 {
     /* Declare the Unit Test object */
@@ -47,6 +45,26 @@ TEST_F(SolutionsTest, ShortestDistanceTest)
     EXPECT_EQ( 7, solutions.shortestDistance(grid));
 }
 
+TEST_F(SolutionsTest, minStpesTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> piles = {1, 2, 2, 3, 3, 4};
+    int minsteps = 9;
+
+    EXPECT_EQ(minsteps, solutions.minStpes(piles));
+}
+
+
+TEST_F(SolutionsTest, largestKTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> array = {-41,3,2,5,41 };
+    int expected_value = 41, result_value = solutions.largestK(array);
+
+    EXPECT_EQ(expected_value,result_value);
+}
 
 
 

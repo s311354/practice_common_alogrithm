@@ -275,4 +275,52 @@ void Solutions::bfs(int column, int row, std::vector< std::vector<int> > &grid, 
     }
 }
 
+/*! \brief Min Steps to Make Pilles Equal Height
+ *
+ *  Alex is given n piles of equal or unequal heights. In one step, Alex can remove any number of boxes from the pile which has the maximum height and try to make it equal to the one which is just lower than the maximum height of the stack. Determine the minmum number of steps required to make all of the piles equal in height.
+ *
+ * \return Min Steps
+ */
+int Solutions::minStpes( std::vector<int>& num)
+{
+    int steps = 0;
+    std::sort(num.begin(), num.end(), std::greater<int> ());
+
+    int i = 1;
+    while ( i < num.capacity()) {
+        if (num[i] != num[i-1]) {
+            steps += i;
+        }
+        i += 1;
+    }
+
+    return steps;
+}
+
+/*! \brief Largest K such that both K and -K exist in array
+ *
+ *  Detailed Write a function that, given an array A of N integers, returns the lagest integer K > 0 such that values K and -K exist in array A. If there is no such integer, the function should return 0
+ *
+ * \return lagest integer K
+ */
+int Solutions::largestK( std::vector<int> & nums)
+{
+    std::set<int> largestval;
+    int ans = 0, tmp = 0;
+
+    for (int num : nums) {
+        if (largestval.count(-num)) {
+            if (num > tmp) tmp = num;
+            if (num < tmp) tmp = -num;
+
+            ans = std::max(tmp, ans);
+        } else {
+            largestval.insert(num);
+        }
+    }
+
+    return ans;
+}
+
+
 } /* namespace leetcode */
