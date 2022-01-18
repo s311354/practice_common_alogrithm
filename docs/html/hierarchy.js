@@ -1131,7 +1131,21 @@ var hierarchy =
     [ "UniversalTersePrinter< T[N]>", "db/dd8/classtesting_1_1internal_1_1_universal_terse_printer_3_01_t_0f_n_0e_4.html", null ],
     [ "UniversalTersePrinter< wchar_t * >", "d5/daf/classtesting_1_1internal_1_1_universal_terse_printer_3_01wchar__t_01_5_01_4.html", null ],
     [ "Message", "d2/da9/classtesting_1_1_message.html", null ],
-    [ "Test", "df/d69/classtesting_1_1_test.html", null ],
+    [ "Test", "df/d69/classtesting_1_1_test.html", [
+      [ "BackTest", "dd/d6f/classgoogletest_1_1_back_test.html", null ],
+      [ "EmptyTest", "df/d98/classgoogletest_1_1_empty_test.html", null ],
+      [ "EnqueueTest", "de/d95/classgoogletest_1_1_enqueue_test.html", null ],
+      [ "EraseTest", "d0/dc5/classgoogletest_1_1_erase_test.html", null ],
+      [ "FrontTest", "db/d2c/classgoogletest_1_1_front_test.html", null ],
+      [ "PopBackTest", "d8/d0b/classgoogletest_1_1_pop_back_test.html", null ],
+      [ "PopFrontTest", "de/d4e/classgoogletest_1_1_pop_front_test.html", null ],
+      [ "RemoveValueTest", "de/d48/classgoogletest_1_1_remove_value_test.html", null ],
+      [ "ReverseTest", "d6/da2/classgoogletest_1_1_reverse_test.html", null ],
+      [ "SizeTest", "d0/d58/classgoogletest_1_1_size_test.html", null ],
+      [ "SolutionsTest", "dc/df1/classgoogletest_1_1_solutions_test.html", null ],
+      [ "ValueAtTest", "dd/dde/classgoogletest_1_1_value_at_test.html", null ],
+      [ "ValueNFromEndTest", "d9/df3/classgoogletest_1_1_value_n_from_end_test.html", null ]
+    ] ],
     [ "TestCase", "d0/dfa/classtesting_1_1_test_case.html", null ],
     [ "TestEventListener", "d1/d46/classtesting_1_1_test_event_listener.html", [
       [ "EmptyTestEventListener", "dd/dff/classtesting_1_1_empty_test_event_listener.html", [

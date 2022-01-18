@@ -90,6 +90,13 @@ int BinarySearch::GetMax(BSTNode* node) {
     return GetMax(node->right);
 }
 
+/*! \brief Maximum Depth of Binary tree
+ *
+ *  Given the root of a binary tree, return its maximum depth.
+ *  A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+ *
+ * \return maximum depth
+ */
 int BinarySearch::GetHeight(BSTNode* node) {
     if (node == nullptr) return 0;
 

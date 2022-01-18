@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/d6a/leetcode__practice_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>Overview<sp/>of<sp/>Common<sp/>Alogrithm<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>The<sp/>basic<sp/>concept<sp/>of<sp/>bewteen<sp/>c++98<sp/>and<sp/>c++11<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">C++11<sp/>is<sp/>the<sp/>second<sp/>major<sp/>version<sp/>of<sp/>C++<sp/>and<sp/>the<sp/>most<sp/>important<sp/>update<sp/>since<sp/>C++98.<sp/>A<sp/>large<sp/>number<sp/>of<sp/>changes<sp/>were<sp/>introduced<sp/>to<sp/>both<sp/>standardize<sp/>existing<sp/>practices<sp/>and<sp/>imporve<sp/>the<sp/>abstractions<sp/>available<sp/>to<sp/>the<sp/>C++<sp/>programmers.<sp/>Since<sp/>2011,<sp/>currently,<sp/>C++<sp/>updates<sp/>every<sp/>3<sp/>years<sp/>regularly.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>The<sp/>concept<sp/>of<sp/>Assertions<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>form<sp/>of<sp/>assert<sp/>that<sp/>checks<sp/>a<sp/>Bollean<sp/>condition<sp/>can<sp/>be<sp/>invaluable.<sp/>Assertions<sp/>are<sp/>also<sp/>useful<sp/>checks<sp/>on<sp/>an<sp/>algorithm&apos;s<sp/>operation.<sp/>Assertions<sp/>check<sp/>for<sp/>things<sp/>that<sp/>should<sp/>never<sp/>happen.<sp/>But.<sp/>don&apos;t<sp/>use<sp/>assertions<sp/>in<sp/>place<sp/>of<sp/>real<sp/>error<sp/>handling<sp/>because<sp/>most<sp/>assert<sp/>implementations<sp/>will<sp/>terminate<sp/>the<sp/>process<sp/>when<sp/>an<sp/>assertion<sp/>fails,<sp/>there&apos;s<sp/>no<sp/>reason<sp/>why<sp/>versions<sp/>you<sp/>write<sp/>should.<sp/>If<sp/>you<sp/>need<sp/>to<sp/>free<sp/>resources,<sp/>catch<sp/>the<sp/>assertions&apos;s<sp/>exception<sp/>or<sp/>trap<sp/>the<sp/>exit,<sp/>and<sp/>run<sp/>your<sp/>own<sp/>error<sp/>handler</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">During<sp/>testing,your<sp/>first<sp/>line<sp/>of<sp/>defense<sp/>is<sp/>checking<sp/>for<sp/>any<sp/>possible<sp/>error,<sp/>and<sp/>your<sp/>second<sp/>is<sp/>using<sp/>assertions<sp/>to<sp/>try<sp/>to<sp/>detect<sp/>those<sp/>you&apos;ve<sp/>missed.<sp/>Once<sp/>the<sp/>code<sp/>has<sp/>beem<sp/>tested<sp/>and<sp/>shipped,<sp/>assertions<sp/>are<sp/>no<sp/>longer<sp/>needed,<sp/>and<sp/>should<sp/>be<sp/>truned<sp/>off<sp/>to<sp/>make<sp/>the<sp/>code<sp/>run<sp/>faster.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>The<sp/>concept<sp/>of<sp/>queue<sp/>and<sp/>stack<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>std::queue<sp/>class<sp/>is<sp/>a<sp/>container<sp/>adaptor<sp/>that<sp/>gives<sp/>the<sp/>programmer<sp/>tha<sp/>functionality<sp/>of<sp/>a<sp/>queue-<sp/>specifically,<sp/>a<sp/>FIFO<sp/>data<sp/>structure.<sp/>The<sp/>queue<sp/>pushes<sp/>the<sp/>elements<sp/>on<sp/>the<sp/>back<sp/>of<sp/>the<sp/>underlying<sp/>container<sp/>and<sp/>pops<sp/>them<sp/>from<sp/>the<sp/>front.<sp/>(key<sp/>member<sp/>functions:<sp/>std::queue.front(),<sp/>std::queue.back(),<sp/>std::queue.push(),<sp/>std::queue.pop(),<sp/>...)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>std::stack<sp/>class<sp/>is<sp/>a<sp/>container<sp/>adaptor<sp/>that<sp/>gives<sp/>the<sp/>programmer<sp/>the<sp/>functionality<sp/>of<sp/>a<sp/>stack<sp/>-<sp/>specifically,<sp/>a<sp/>LIFO<sp/>data<sp/>structure.<sp/>The<sp/>stack<sp/>pushes<sp/>and<sp/>pops<sp/>the<sp/>element<sp/>from<sp/>the<sp/>back<sp/>of<sp/>the<sp/>underlying<sp/>container,<sp/>known<sp/>as<sp/>the<sp/>top<sp/>of<sp/>the<sp/>stack.<sp/>(key<sp/>member<sp/>functions:<sp/>std::stack.top(),<sp/>std::stack().push,<sp/>std::stack.pop(),<sp/>...)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>The<sp/>concept<sp/>of<sp/>vector<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>std::vector&lt;T&gt;&apos;s<sp/>elements<sp/>are<sp/>stroed<sp/>contiguously,<sp/>which<sp/>means<sp/>that<sp/>elements<sp/>can<sp/>be<sp/>accessed<sp/>not<sp/>only<sp/>through<sp/>iterators,<sp/>but<sp/>also<sp/>using<sp/>offsets<sp/>to<sp/>regular<sp/>points<sp/>to<sp/>elements.<sp/>This<sp/>means<sp/>that<sp/>a<sp/>pointer<sp/>to<sp/>an<sp/>element<sp/>of<sp/>a<sp/>vector<sp/>may<sp/>be<sp/>passed<sp/>to<sp/>any<sp/>function<sp/>that<sp/>expects<sp/>a<sp/>pointer<sp/>to<sp/>an<sp/>element<sp/>of<sp/>an<sp/>arry.<sp/>(key<sp/>member<sp/>functions:<sp/>std::vector&lt;T&gt;.assign(...),<sp/>std::vector&lt;T&gt;.front(),<sp/>std::vector&lt;T&gt;.back(),<sp/>std::vector&lt;T&gt;.push_back(),<sp/>std::vector&lt;T&gt;.pop_back(),<sp/>std::vector&lt;T&gt;.at(pos),<sp/>...)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>The<sp/>concept<sp/>of<sp/>Library<sp/>Containers<sp/>(STL)<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Overview<sp/>of<sp/>container:</highlight></codeline>
+<codeline><highlight class="normal">&lt;table&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;th&gt;Type&lt;/th&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;th&gt;Containers&lt;/th&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;/tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;Sequence<sp/>Containers&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;std::array,<sp/>std::vector,<sp/>std::deque,<sp/>std::forward_list,<sp/>std::list&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;/tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;Container<sp/>Adaptors&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;std::stack,<sp/>std::queue,<sp/>std::priority_queue&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;/tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;Associative<sp/>Containers&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;std::set,<sp/>std::multiset,<sp/>std::map,<sp/>std::multiap&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;/tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;Unorderred<sp/>Associative<sp/>Container&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;std::unordered_set,<sp/>std::unordered_mulitset,<sp/>std::undered_map,<sp/>std::unordered_mulitmap&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;/tr&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/table&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>container<sp/>is<sp/>a<sp/>holder<sp/>object<sp/>that<sp/>stores<sp/>a<sp/>collectionn<sp/>of<sp/>other<sp/>objects<sp/>(its<sp/>elements).<sp/>They<sp/>are<sp/>implemented<sp/>as<sp/>class<sp/>templates,<sp/>which<sp/>allows<sp/>a<sp/>great<sp/>flexibility<sp/>in<sp/>the<sp/>types<sp/>supported<sp/>as<sp/>elements.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Reference<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[1]<sp/>[cplusplus:<sp/>Q/A<sp/>-std=c++11<sp/>or<sp/>-std=c++98](https://www.cplusplus.com/forum/unices/172313/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[2]<sp/>[History<sp/>of<sp/>C++](https://en.cppreference.com/w/cpp/language/history)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[3]<sp/>[cplusplus:<sp/>C++11](https://en.cppreference.com/w/cpp/11)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[4]<sp/>[Working<sp/>Draft,<sp/>Standard<sp/>for<sp/>Programming<sp/>Language<sp/>C++](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3337.pdf)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[5]<sp/>[Library<sp/>Containers](https://www.cplusplus.com/reference/stl/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[6]<sp/>cppreference:<sp/>[std::queue](https://en.cppreference.com/w/cpp/container/queue),<sp/>[std::stack](https://en.cppreference.com/w/cpp/container/stack),<sp/>[std::vector](https://en.cppreference.com/w/cpp/container/vector),<sp/>[std::map](http://en.cppreference.com/w/cpp/container/map)</highlight></codeline>
+    </programlisting>
+    <location file="leetcode_practice/README.md"/>
+  </compounddef>
+</doxygen>

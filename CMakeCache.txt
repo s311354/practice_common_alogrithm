@@ -271,10 +271,34 @@ linkedlists_proj_BINARY_DIR:STATIC=/Users/shi-rongliu/Documents/GitHub/cplusplus
 linkedlists_proj_SOURCE_DIR:STATIC=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/linked_list
 
 //Value Computed by CMake
+priority_queue_proj_BINARY_DIR:STATIC=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue
+
+//Value Computed by CMake
+priority_queue_proj_SOURCE_DIR:STATIC=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue
+
+//Value Computed by CMake
+queue_linked_list_proj_BINARY_DIR:STATIC=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/queue_linked_list
+
+//Value Computed by CMake
+queue_linked_list_proj_SOURCE_DIR:STATIC=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/queue_linked_list
+
+//Value Computed by CMake
 singleton_pattern_BINARY_DIR:STATIC=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/design_pattern/singleton_pattern
 
 //Value Computed by CMake
 singleton_pattern_SOURCE_DIR:STATIC=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/design_pattern/singleton_pattern
+
+//Value Computed by CMake
+solutions_lib_BINARY_DIR:STATIC=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/src
+
+//Value Computed by CMake
+solutions_lib_SOURCE_DIR:STATIC=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/src
+
+//Value Computed by CMake
+solutions_proj_BINARY_DIR:STATIC=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice
+
+//Value Computed by CMake
+solutions_proj_SOURCE_DIR:STATIC=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice
 
 //Value Computed by CMake
 strategy_pattern_BINARY_DIR:STATIC=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/design_pattern/strategy_pattern
@@ -379,7 +403,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

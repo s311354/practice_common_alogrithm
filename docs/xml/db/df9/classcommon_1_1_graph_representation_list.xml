@@ -43,7 +43,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="graphs/src/graph_representation.h" line="38" column="9" bodyfile="graphs/src/graph_representation.h" bodystart="38" bodyend="-1"/>
-        <referencedby refid="d8/dec/classcommon_1_1_graph_directed_1a42ec668cdd1469a9b8276a2b4033aff4" compoundref="dd/dba/graph__directed_8cc" startline="26" endline="28">GraphDirected::GetVertexCount</referencedby>
+        <referencedby refid="d8/dec/classcommon_1_1_graph_directed_1a42ec668cdd1469a9b8276a2b4033aff4" compoundref="dd/dba/graph__directed_8cc" startline="32" endline="35">GraphDirected::GetVertexCount</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/src/graph_representation.h" line="53" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="34" bodyend="56"/>
+        <location file="graphs/src/graph_representation.h" line="53" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="38" bodyend="60"/>
         <references refid="cpp/container/vector/end_1">vector&lt; T &gt;::end</references>
         <references refid="cpp/algorithm/find_1">std::find</references>
         <references refid="cpp/algorithm/max_1">std::max</references>
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/src/graph_representation.h" line="54" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="64" bodyend="115"/>
+        <location file="graphs/src/graph_representation.h" line="54" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="68" bodyend="123"/>
         <references refid="cpp/container/vector/begin_1">vector&lt; T &gt;::begin</references>
         <references refid="cpp/container/queue/empty_1">queue&lt; T &gt;::empty</references>
         <references refid="cpp/container/vector/end_1">vector&lt; T &gt;::end</references>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/src/graph_representation.h" line="56" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="174" bodyend="219"/>
+        <location file="graphs/src/graph_representation.h" line="56" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="186" bodyend="232"/>
         <references refid="cpp/container/stack/empty_1">stack&lt; T &gt;::empty</references>
         <references refid="cpp/algorithm/fill_n_1">std::fill_n</references>
         <references refid="d0/d81/namespacetesting_1_1internal_1_1posix_1a555cf768a531e2ff2acacfbf76d28a77" compoundref="d3/dc9/gtest-port_8h" startline="2356">testing::internal::posix::n</references>
@@ -129,17 +129,17 @@
         <name>DFS</name>
         <reimplements refid="d4/df5/classcommon_1_1_graph_representation_1a593c3553d7636f1bbd89f37f667fc904">DFS</reimplements>
         <briefdescription>
-<para>Brief function description here. </para>
+<para>Depth First Search. </para>
         </briefdescription>
         <detaileddescription>
-<para>Detailed description: Depth First Search is a recursive algorithm that uses the idea of backtracking. It involves searches of all the nodes by going ahead if possible, else by backtracking. refer to <ulink url="https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/">https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/</ulink></para>
-<para><simplesect kind="return"><para>Return parameter description </para>
+<para>Depth First Search is a recursive algorithm that uses the idea of backtracking. It involves searches of all the nodes by going ahead if possible, else by backtracking. refer to <ulink url="https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/">https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/</ulink></para>
+<para><simplesect kind="return"><para>None </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/src/graph_representation.h" line="55" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="123" bodyend="172"/>
+        <location file="graphs/src/graph_representation.h" line="55" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="131" bodyend="184"/>
         <references refid="cpp/container/vector/begin_1">vector&lt; T &gt;::begin</references>
         <references refid="cpp/container/stack/empty_1">stack&lt; T &gt;::empty</references>
         <references refid="cpp/container/vector/end_1">vector&lt; T &gt;::end</references>
@@ -181,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/src/graph_representation.h" line="57" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="221" bodyend="232"/>
+        <location file="graphs/src/graph_representation.h" line="57" column="10" bodyfile="graphs/src/graph_representation.cc" bodystart="234" bodyend="246"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
       </memberdef>
       <memberdef kind="function" id="db/df9/classcommon_1_1_graph_representation_list_1a805abcb3197bfbfdd51fb1a6905f8e51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
@@ -211,7 +211,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="graphs/src/graph_representation.h" line="26" column="25" bodyfile="graphs/src/graph_representation.h" bodystart="26" bodyend="-1"/>
-        <referencedby refid="d8/dec/classcommon_1_1_graph_directed_1a9e690d73fa0370165a4152649e1ed567" compoundref="dd/dba/graph__directed_8cc" startline="6" endline="8">GraphDirected::GraphDirected</referencedby>
+        <referencedby refid="d8/dec/classcommon_1_1_graph_directed_1a9e690d73fa0370165a4152649e1ed567" compoundref="dd/dba/graph__directed_8cc" startline="6" endline="10">GraphDirected::GraphDirected</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d4/df5/classcommon_1_1_graph_representation_1aadbf01c6f1808449d85ddc4cbc260984" prot="public" static="yes" mutable="no">
         <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref></type>
@@ -238,6 +238,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="graphs/src/graph_representation.h" line="24" column="25" bodyfile="graphs/src/graph_representation.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="db/df7/graphs_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="db/df7/graphs_2main_8cc" startline="6" endline="34">main</referencedby>
       </memberdef>
       <memberdef kind="variable" id="d4/df5/classcommon_1_1_graph_representation_1a041278080872dbd0c5a10b08d37757ca" prot="public" static="yes" mutable="no">
         <type>const <ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref></type>
@@ -273,17 +274,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="graphs/src/graph_representation.h" line="36" column="23" bodyfile="graphs/src/graph_representation.cc" bodystart="15" bodyend="22"/>
+        <location file="graphs/src/graph_representation.h" line="36" column="23" bodyfile="graphs/src/graph_representation.cc" bodystart="17" bodyend="25"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
         <references refid="cpp/utility/program/exit_1">std::exit</references>
-        <referencedby refid="d8/dec/classcommon_1_1_graph_directed_1a9e690d73fa0370165a4152649e1ed567" compoundref="dd/dba/graph__directed_8cc" startline="6" endline="8">GraphDirected::GraphDirected</referencedby>
+        <referencedby refid="d8/dec/classcommon_1_1_graph_directed_1a9e690d73fa0370165a4152649e1ed567" compoundref="dd/dba/graph__directed_8cc" startline="6" endline="10">GraphDirected::GraphDirected</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Brief class description. </para>
+<para>Interface of <ref refid="de/d16/classcommon_1_1_graph" kindref="compound">Graph</ref> Representation. </para>
     </briefdescription>
     <detaileddescription>
-<para>Detailed description </para>
+<para>The strategy pattern seperates the selection of algorithm from the implementation og the algorithm. Allows for the selection to be made based upon context. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="1">

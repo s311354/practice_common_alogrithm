@@ -1,0 +1,593 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/de5/leetcode__unit__test_8cc" kind="file" language="C++">
+    <compoundname>leetcode_unit_test.cc</compoundname>
+    <includes refid="d8/d73/gtest_8h" local="yes">gtest/gtest.h</includes>
+    <includes local="yes">src/solutions.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="38">
+        <label>gtest/internal/gtest-param-util.h</label>
+        <link refid="dc/df2/gtest-param-util_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gtest/gtest.h</label>
+        <link refid="d8/d73/gtest_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>typeinfo</label>
+        <link refid="cpp/header/typeinfo" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="41">
+        <label>assert.h</label>
+      </node>
+      <node id="27">
+        <label>float.h</label>
+      </node>
+      <node id="45">
+        <label>gtest/gtest_prod.h</label>
+        <link refid="d4/db1/gtest__prod_8h"/>
+      </node>
+      <node id="20">
+        <label>gtest/internal/gtest-port-arch.h</label>
+        <link refid="d6/d76/gtest-port-arch_8h"/>
+      </node>
+      <node id="4">
+        <label>ostream</label>
+        <link refid="cpp/header/ostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="33">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="dc/d79/gtest-filepath_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stdlib.h</label>
+      </node>
+      <node id="44">
+        <label>gtest/internal/gtest-param-util-generated.h</label>
+        <link refid="dc/db7/gtest-param-util-generated_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>iomanip</label>
+        <link refid="cpp/header/iomanip" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="30">
+        <label>set</label>
+        <link refid="cpp/header/set" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="32">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="d0/d45/gtest-string_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="d5/da1/gtest-internal_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>gtest/gtest-death-test.h</label>
+        <link refid="d4/d59/gtest-death-test_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>algorithm</label>
+        <link refid="cpp/header/algorithm" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="26">
+        <label>gtest/internal/gtest-tuple.h</label>
+        <link refid="d1/d63/gtest-tuple_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stddef.h</label>
+      </node>
+      <node id="47">
+        <label>iosfwd</label>
+        <link refid="cpp/header/iosfwd" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="34">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="d9/d97/gtest-type-util_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vector</label>
+        <link refid="cpp/header/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="13">
+        <label>sys/types.h</label>
+      </node>
+      <node id="12">
+        <label>string.h</label>
+      </node>
+      <node id="7">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="d3/dc9/gtest-port_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>gtest/gtest-typed-test.h</label>
+        <link refid="de/dce/gtest-typed-test_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>gtest/internal/custom/gtest-printers.h</label>
+        <link refid="da/db0/internal_2custom_2gtest-printers_8h"/>
+      </node>
+      <node id="22">
+        <label>unistd.h</label>
+      </node>
+      <node id="3">
+        <label>limits</label>
+        <link refid="cpp/header/limits" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="19">
+        <label>utility</label>
+        <link refid="cpp/header/utility" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="36">
+        <label>gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="d0/d1a/gtest-death-test-internal_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>string</label>
+        <link refid="cpp/header/string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="31">
+        <label>gtest/gtest-message.h</label>
+        <link refid="d6/da4/gtest-message_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>strings.h</label>
+      </node>
+      <node id="39">
+        <label>iterator</label>
+        <link refid="cpp/header/iterator" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="8">
+        <label>ctype.h</label>
+      </node>
+      <node id="16">
+        <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="1">
+        <label>leetcode_practice/tests/leetcode_unit_test.cc</label>
+        <link refid="dc/de5/leetcode__unit__test_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>gtest/gtest_pred_impl.h</label>
+        <link refid="db/d6e/gtest__pred__impl_8h"/>
+      </node>
+      <node id="46">
+        <label>gtest/gtest-test-part.h</label>
+        <link refid="d1/d01/gtest-test-part_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>gtest/gtest-param-test.h</label>
+        <link refid="d0/d31/gtest-param-test_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>sstream</label>
+        <link refid="cpp/header/sstream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="40">
+        <label>gtest/internal/gtest-linked_ptr.h</label>
+        <link refid="d0/d03/gtest-linked__ptr_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>regex.h</label>
+      </node>
+      <node id="21">
+        <label>gtest/internal/custom/gtest-port.h</label>
+        <link refid="d5/d66/custom_2gtest-port_8h"/>
+      </node>
+      <node id="50">
+        <label>src/solutions.h</label>
+      </node>
+      <node id="11">
+        <label>stdio.h</label>
+      </node>
+      <node id="42">
+        <label>gtest/gtest-printers.h</label>
+        <link refid="d0/d6d/gtest-printers_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>map</label>
+        <link refid="cpp/header/map" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="dc/df1/classgoogletest_1_1_solutions_test" prot="public">googletest::SolutionsTest</innerclass>
+    <innernamespace refid="d2/dbd/namespacegoogletest">googletest</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1af51bbfa8c82b6da8b05eb1d4e79bee7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SolutionsTest, largestKTest)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>SolutionsTest</type>
+        </param>
+        <param>
+          <type>largestKTest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/tests/leetcode_unit_test.cc" line="59" column="1" bodyfile="leetcode_practice/tests/leetcode_unit_test.cc" bodystart="59" bodyend="67"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d0/d8a/classleetcode_1_1_solutions_1af2c2a45de28adde04173de6570e08ddd" compoundref="d9/d25/solutions_8cc" startline="306" endline="323">Solutions::largestK</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1aa2f7ecbed04511c5c44cef109cec4749" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SolutionsTest, minDeletionsTest)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>SolutionsTest</type>
+        </param>
+        <param>
+          <type>minDeletionsTest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/tests/leetcode_unit_test.cc" line="8" column="1" bodyfile="leetcode_practice/tests/leetcode_unit_test.cc" bodystart="8" bodyend="14"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d0/d8a/classleetcode_1_1_solutions_1a1e18a492caa00dc950ccdb815ca6083b" compoundref="d9/d25/solutions_8cc" startline="61" endline="90">Solutions::minDeletions</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a8384faf9f51d0467c0c4968b93137132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SolutionsTest, minStpesTest)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>SolutionsTest</type>
+        </param>
+        <param>
+          <type>minStpesTest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/tests/leetcode_unit_test.cc" line="48" column="1" bodyfile="leetcode_practice/tests/leetcode_unit_test.cc" bodystart="48" bodyend="56"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d0/d8a/classleetcode_1_1_solutions_1a34aa4d8f3499e3dcbe5f75dcb44a9f0b" compoundref="d9/d25/solutions_8cc" startline="284" endline="298">Solutions::minStpes</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1ae04ef1b959687032d309f745f9563b04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SolutionsTest, MinSwapTest)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>SolutionsTest</type>
+        </param>
+        <param>
+          <type>MinSwapTest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/tests/leetcode_unit_test.cc" line="16" column="1" bodyfile="leetcode_practice/tests/leetcode_unit_test.cc" bodystart="16" bodyend="23"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d0/d8a/classleetcode_1_1_solutions_1a5c9cb0761fff007d731583fcd56f63fe" compoundref="d9/d25/solutions_8cc" startline="98" endline="140">Solutions::minSwaps</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a717d796db244025735e858e452481bbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SolutionsTest, ShortestDistanceTest)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>SolutionsTest</type>
+        </param>
+        <param>
+          <type>ShortestDistanceTest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/tests/leetcode_unit_test.cc" line="38" column="1" bodyfile="leetcode_practice/tests/leetcode_unit_test.cc" bodystart="38" bodyend="46"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d0/d8a/classleetcode_1_1_solutions_1aa88842acfeaaa8ee46c406fcaa8c00a4" compoundref="d9/d25/solutions_8cc" startline="195" endline="225">Solutions::shortestDistance</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1afa96ace52016ac8015546bf44303f750" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SolutionsTest, TwoSumTest)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>SolutionsTest</type>
+        </param>
+        <param>
+          <type>TwoSumTest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/tests/leetcode_unit_test.cc" line="25" column="1" bodyfile="leetcode_practice/tests/leetcode_unit_test.cc" bodystart="25" bodyend="36"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d0/d8a/classleetcode_1_1_solutions_1adb443c6ca1aab44c236d2ce98b45c983" compoundref="d9/d25/solutions_8cc" startline="148" endline="183">Solutions::twoSum</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d73/gtest_8h" kindref="compound">gtest/gtest.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/d98/solutions_8h" kindref="compound">src/solutions.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest" kindref="compound">googletest</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="dc/df1/classgoogletest_1_1_solutions_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dc/df1/classgoogletest_1_1_solutions_test" kindref="compound">SolutionsTest</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d69/classtesting_1_1_test" kindref="compound">testing::Test</ref><sp/>{};</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d2/dbd/namespacegoogletest_1aa2f7ecbed04511c5c44cef109cec4749" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="dc/df1/classgoogletest_1_1_solutions_test" kindref="compound">SolutionsTest</ref>,<sp/>minDeletionsTest)<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions" kindref="compound">leetcode::Solutions</ref><sp/>solutions;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>input<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;aaabbccdddtt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(6,<sp/>solutions.<ref refid="d0/d8a/classleetcode_1_1_solutions_1a1e18a492caa00dc950ccdb815ca6083b" kindref="member">minDeletions</ref>(input));</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d2/dbd/namespacegoogletest_1ae04ef1b959687032d309f745f9563b04" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="dc/df1/classgoogletest_1_1_solutions_test" kindref="compound">SolutionsTest</ref>,<sp/>MinSwapTest)<sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions" kindref="compound">leetcode::Solutions</ref><sp/>solutions;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>input<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;mamad&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(3,<sp/>solutions.<ref refid="d0/d8a/classleetcode_1_1_solutions_1a5c9cb0761fff007d731583fcd56f63fe" kindref="member">minSwaps</ref>(input));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="d2/dbd/namespacegoogletest_1afa96ace52016ac8015546bf44303f750" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="dc/df1/classgoogletest_1_1_solutions_test" kindref="compound">SolutionsTest</ref>,<sp/>TwoSumTest)<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions" kindref="compound">leetcode::Solutions</ref><sp/>solutions;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref><sp/>nums<sp/>=<sp/>{2,<sp/>7,<sp/>11,<sp/>15};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>target<sp/>=<sp/>9;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref><sp/>output<sp/>=<sp/>{0,<sp/>1};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>solutions.<ref refid="d0/d8a/classleetcode_1_1_solutions_1adb443c6ca1aab44c236d2ce98b45c983" kindref="member">twoSum</ref>(nums,<sp/>target).capacity();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(output[i],<sp/>solutions.<ref refid="d0/d8a/classleetcode_1_1_solutions_1adb443c6ca1aab44c236d2ce98b45c983" kindref="member">twoSum</ref>(nums,<sp/>target)[i]);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="d2/dbd/namespacegoogletest_1a717d796db244025735e858e452481bbc" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="dc/df1/classgoogletest_1_1_solutions_test" kindref="compound">SolutionsTest</ref>,<sp/>ShortestDistanceTest)<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions" kindref="compound">leetcode::Solutions</ref><sp/>solutions;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt; std::vector&lt;int&gt;</ref><sp/>&gt;<sp/>grid<sp/>=<sp/>{{1,<sp/>0,<sp/>2,<sp/>0<sp/>,1},<sp/>{0,<sp/>0,<sp/>0,<sp/>0,<sp/>0},<sp/>{0,<sp/>0,<sp/>1,<sp/>0,<sp/>0}};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(<sp/>7,<sp/>solutions.<ref refid="d0/d8a/classleetcode_1_1_solutions_1aa88842acfeaaa8ee46c406fcaa8c00a4" kindref="member">shortestDistance</ref>(grid));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="d2/dbd/namespacegoogletest_1a8384faf9f51d0467c0c4968b93137132" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="dc/df1/classgoogletest_1_1_solutions_test" kindref="compound">SolutionsTest</ref>,<sp/>minStpesTest)<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions" kindref="compound">leetcode::Solutions</ref><sp/>solutions;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref><sp/>piles<sp/>=<sp/>{1,<sp/>2,<sp/>2,<sp/>3,<sp/>3,<sp/>4};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minsteps<sp/>=<sp/>9;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(minsteps,<sp/>solutions.<ref refid="d0/d8a/classleetcode_1_1_solutions_1a34aa4d8f3499e3dcbe5f75dcb44a9f0b" kindref="member">minStpes</ref>(piles));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="d2/dbd/namespacegoogletest_1af51bbfa8c82b6da8b05eb1d4e79bee7b" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="dc/df1/classgoogletest_1_1_solutions_test" kindref="compound">SolutionsTest</ref>,<sp/>largestKTest)<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions" kindref="compound">leetcode::Solutions</ref><sp/>solutions;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref><sp/>array<sp/>=<sp/>{-41,3,2,5,41<sp/>};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>expected_value<sp/>=<sp/>41,<sp/>result_value<sp/>=<sp/>solutions.<ref refid="d0/d8a/classleetcode_1_1_solutions_1af2c2a45de28adde04173de6570e08ddd" kindref="member">largestK</ref>(array);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(expected_value,result_value);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>googletest<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="leetcode_practice/tests/leetcode_unit_test.cc"/>
+  </compounddef>
+</doxygen>

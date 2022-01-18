@@ -1,0 +1,795 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/df4/linkedlists__unit__test_8cc" kind="file" language="C++">
+    <compoundname>linkedlists_unit_test.cc</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="d8/d73/gtest_8h" local="yes">gtest/gtest.h</includes>
+    <includes local="yes">src/linked_list.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="50">
+        <label>src/linked_list.h</label>
+      </node>
+      <node id="38">
+        <label>gtest/internal/gtest-param-util.h</label>
+        <link refid="dc/df2/gtest-param-util_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gtest/gtest.h</label>
+        <link refid="d8/d73/gtest_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>typeinfo</label>
+        <link refid="cpp/header/typeinfo" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="41">
+        <label>assert.h</label>
+      </node>
+      <node id="27">
+        <label>float.h</label>
+      </node>
+      <node id="45">
+        <label>gtest/gtest_prod.h</label>
+        <link refid="d4/db1/gtest__prod_8h"/>
+      </node>
+      <node id="20">
+        <label>gtest/internal/gtest-port-arch.h</label>
+        <link refid="d6/d76/gtest-port-arch_8h"/>
+      </node>
+      <node id="5">
+        <label>ostream</label>
+        <link refid="cpp/header/ostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="33">
+        <label>gtest/internal/gtest-filepath.h</label>
+        <link refid="dc/d79/gtest-filepath_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stdlib.h</label>
+      </node>
+      <node id="44">
+        <label>gtest/internal/gtest-param-util-generated.h</label>
+        <link refid="dc/db7/gtest-param-util-generated_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>iomanip</label>
+        <link refid="cpp/header/iomanip" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="30">
+        <label>set</label>
+        <link refid="cpp/header/set" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="32">
+        <label>gtest/internal/gtest-string.h</label>
+        <link refid="d0/d45/gtest-string_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gtest/internal/gtest-internal.h</label>
+        <link refid="d5/da1/gtest-internal_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>gtest/gtest-death-test.h</label>
+        <link refid="d4/d59/gtest-death-test_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>algorithm</label>
+        <link refid="cpp/header/algorithm" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="26">
+        <label>gtest/internal/gtest-tuple.h</label>
+        <link refid="d1/d63/gtest-tuple_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stddef.h</label>
+      </node>
+      <node id="47">
+        <label>iosfwd</label>
+        <link refid="cpp/header/iosfwd" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="34">
+        <label>gtest/internal/gtest-type-util.h</label>
+        <link refid="d9/d97/gtest-type-util_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector</label>
+        <link refid="cpp/header/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="14">
+        <label>sys/types.h</label>
+      </node>
+      <node id="13">
+        <label>string.h</label>
+      </node>
+      <node id="8">
+        <label>gtest/internal/gtest-port.h</label>
+        <link refid="d3/dc9/gtest-port_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>gtest/gtest-typed-test.h</label>
+        <link refid="de/dce/gtest-typed-test_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>gtest/internal/custom/gtest-printers.h</label>
+        <link refid="da/db0/internal_2custom_2gtest-printers_8h"/>
+      </node>
+      <node id="22">
+        <label>unistd.h</label>
+      </node>
+      <node id="4">
+        <label>limits</label>
+        <link refid="cpp/header/limits" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="19">
+        <label>utility</label>
+        <link refid="cpp/header/utility" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="36">
+        <label>gtest/internal/gtest-death-test-internal.h</label>
+        <link refid="d0/d1a/gtest-death-test-internal_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+        <link refid="cpp/header/string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="31">
+        <label>gtest/gtest-message.h</label>
+        <link refid="d6/da4/gtest-message_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>strings.h</label>
+      </node>
+      <node id="39">
+        <label>iterator</label>
+        <link refid="cpp/header/iterator" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="9">
+        <label>ctype.h</label>
+      </node>
+      <node id="17">
+        <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="49">
+        <label>gtest/gtest_pred_impl.h</label>
+        <link refid="db/d6e/gtest__pred__impl_8h"/>
+      </node>
+      <node id="46">
+        <label>gtest/gtest-test-part.h</label>
+        <link refid="d1/d01/gtest-test-part_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>linked_list/tests/linkedlists_unit_test.cc</label>
+        <link refid="d4/df4/linkedlists__unit__test_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>gtest/gtest-param-test.h</label>
+        <link refid="d0/d31/gtest-param-test_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>sstream</label>
+        <link refid="cpp/header/sstream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="40">
+        <label>gtest/internal/gtest-linked_ptr.h</label>
+        <link refid="d0/d03/gtest-linked__ptr_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>regex.h</label>
+      </node>
+      <node id="21">
+        <label>gtest/internal/custom/gtest-port.h</label>
+        <link refid="d5/d66/custom_2gtest-port_8h"/>
+      </node>
+      <node id="12">
+        <label>stdio.h</label>
+      </node>
+      <node id="42">
+        <label>gtest/gtest-printers.h</label>
+        <link refid="d0/d6d/gtest-printers_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>map</label>
+        <link refid="cpp/header/map" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="dd/d6f/classgoogletest_1_1_back_test" prot="public">googletest::BackTest</innerclass>
+    <innerclass refid="d0/dc5/classgoogletest_1_1_erase_test" prot="public">googletest::EraseTest</innerclass>
+    <innerclass refid="db/d2c/classgoogletest_1_1_front_test" prot="public">googletest::FrontTest</innerclass>
+    <innerclass refid="d8/d0b/classgoogletest_1_1_pop_back_test" prot="public">googletest::PopBackTest</innerclass>
+    <innerclass refid="de/d4e/classgoogletest_1_1_pop_front_test" prot="public">googletest::PopFrontTest</innerclass>
+    <innerclass refid="de/d48/classgoogletest_1_1_remove_value_test" prot="public">googletest::RemoveValueTest</innerclass>
+    <innerclass refid="d6/da2/classgoogletest_1_1_reverse_test" prot="public">googletest::ReverseTest</innerclass>
+    <innerclass refid="d0/d58/classgoogletest_1_1_size_test" prot="public">googletest::SizeTest</innerclass>
+    <innerclass refid="dd/dde/classgoogletest_1_1_value_at_test" prot="public">googletest::ValueAtTest</innerclass>
+    <innerclass refid="d9/df3/classgoogletest_1_1_value_n_from_end_test" prot="public">googletest::ValueNFromEndTest</innerclass>
+    <innernamespace refid="d2/dbd/namespacegoogletest">googletest</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a9b16e94dddd104afc05026a567fc3fe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(BackTest, Back)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>BackTest</type>
+        </param>
+        <param>
+          <type>Back</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="37" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="37" bodyend="44"/>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a58eca8e9e3e4f5bfe50033256d17bdc7" compoundref="d0/dea/linked__list_8cc" startline="46" endline="58">LinkedList&lt; T &gt;::Back</references>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a6b6681f762c6f6f8bc92ebd9c8d5dc66" compoundref="d0/dea/linked__list_8cc" startline="95" endline="110">LinkedList&lt; T &gt;::PushBack</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a5f1caca8cbccf9881a366055ecc169d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(EraseTest, Erase)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>EraseTest</type>
+        </param>
+        <param>
+          <type>Erase</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="86" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="86" bodyend="93"/>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1af1789852a6074c3c5ae8c6738d5f7160" compoundref="d0/dea/linked__list_8cc" startline="213" endline="241">LinkedList&lt; T &gt;::Erase</references>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" compoundref="d0/dea/linked__list_8cc" startline="15" endline="26">LinkedList&lt; T &gt;::Size</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1ab200d56e3d9ab9e8166f4a675abd6854" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(FrontTest, Front)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>FrontTest</type>
+        </param>
+        <param>
+          <type>Front</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="26" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="26" bodyend="33"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a510df6a9340094440277fec608697fcd" compoundref="d0/dea/linked__list_8cc" startline="33" endline="40">LinkedList&lt; T &gt;::Front</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1ac9545390d4ef05a5f8e2502429855845" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(PopBackTest, PopBack)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>PopBackTest</type>
+        </param>
+        <param>
+          <type>PopBack</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="60" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="60" bodyend="67"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8f1814ae66e117738921f5d400d85ec3" compoundref="d0/dea/linked__list_8cc" startline="116" endline="142">LinkedList&lt; T &gt;::PopBack</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a425719cbb89e92322b38800e2611523f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(PopFrontTest, PopFront)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>PopFrontTest</type>
+        </param>
+        <param>
+          <type>PopFront</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="48" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="48" bodyend="56"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" compoundref="d0/dea/linked__list_8cc" startline="77" endline="89">LinkedList&lt; T &gt;::PopFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a79bb22503a1ed89c935e5e600f52416c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(RemoveValueTest, RemoveValue)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>RemoveValueTest</type>
+        </param>
+        <param>
+          <type>RemoveValue</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="97" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="97" bodyend="105"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1aa40f387b3fb06df3997974b66ed1d40c" compoundref="d0/dea/linked__list_8cc" startline="246" endline="270">LinkedList&lt; T &gt;::RemoveValue</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" compoundref="d0/dea/linked__list_8cc" startline="15" endline="26">LinkedList&lt; T &gt;::Size</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1ae2e0e58be843ffe18246403fea681b33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(ReverseTest, Reverse)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>ReverseTest</type>
+        </param>
+        <param>
+          <type>Reverse</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="109" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="109" bodyend="124"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" compoundref="d0/dea/linked__list_8cc" startline="77" endline="89">LinkedList&lt; T &gt;::PopFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1ae1b551cc51c9d556342b27b466a7c7cb" compoundref="d0/dea/linked__list_8cc" startline="276" endline="293">LinkedList&lt; T &gt;::Reverse</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1ac045021aee0c0e42ddec510fff6c414b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SizeTest, Size)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>SizeTest</type>
+        </param>
+        <param>
+          <type>Size</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="15" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="15" bodyend="22"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" compoundref="d0/dea/linked__list_8cc" startline="15" endline="26">LinkedList&lt; T &gt;::Size</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1aec59412f731355652c6fd79285cb6d38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SizeTest, SizeEmpty)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>SizeTest</type>
+        </param>
+        <param>
+          <type>SizeEmpty</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="8" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="8" bodyend="13"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" compoundref="d0/dea/linked__list_8cc" startline="15" endline="26">LinkedList&lt; T &gt;::Size</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1adf387868fe45920583edcd3e22b5368a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(ValueAtTest, ValueAt)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>ValueAtTest</type>
+        </param>
+        <param>
+          <type>ValueAt</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="71" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="71" bodyend="82"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a60af5df9c2152ed214bf6c2ae4b27bb3" compoundref="d0/dea/linked__list_8cc" startline="178" endline="207">LinkedList&lt; T &gt;::Insert</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a41778863ac9905141650a07d08146115" compoundref="d0/dea/linked__list_8cc" startline="154" endline="172">LinkedList&lt; T &gt;::ValueAt</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a5e5e669929d54f4cbe091286eec952e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(ValueNFromEndTest, ValueNFromEnd)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type>ValueNFromEndTest</type>
+        </param>
+        <param>
+          <type>ValueNFromEnd</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="128" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="128" bodyend="140"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a96f5737c64edc912fe53681ccc9ea057" compoundref="d0/dea/linked__list_8cc" startline="330" endline="339">LinkedList&lt; T &gt;::PrintDebug</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a6b6681f762c6f6f8bc92ebd9c8d5dc66" compoundref="d0/dea/linked__list_8cc" startline="95" endline="110">LinkedList&lt; T &gt;::PushBack</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a1e3c93770d25a042944efa1e83d449c1" compoundref="d0/dea/linked__list_8cc" startline="299" endline="324">LinkedList&lt; T &gt;::ValueNFromEnd</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d73/gtest_8h" kindref="compound">gtest/gtest.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d4a/linked__list_8h" kindref="compound">src/linked_list.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest" kindref="compound">googletest</ref><sp/>{</highlight></codeline>
+<codeline lineno="6" refid="d0/d58/classgoogletest_1_1_size_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/d58/classgoogletest_1_1_size_test" kindref="compound">SizeTest</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d69/classtesting_1_1_test" kindref="compound">testing::Test</ref><sp/>{};</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d2/dbd/namespacegoogletest_1aec59412f731355652c6fd79285cb6d38" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="d0/d58/classgoogletest_1_1_size_test" kindref="compound">SizeTest</ref>,<sp/>SizeEmpty)<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">common::LinkedList&lt;int&gt;</ref><sp/>lists;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(0,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" kindref="member">Size</ref>());</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d2/dbd/namespacegoogletest_1ac045021aee0c0e42ddec510fff6c414b" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="d0/d58/classgoogletest_1_1_size_test" kindref="compound">SizeTest</ref>,<sp/>Size)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">common::LinkedList&lt;int&gt;</ref><sp/>lists;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(3);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(2);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(2,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" kindref="member">Size</ref>());</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="db/d2c/classgoogletest_1_1_front_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="db/d2c/classgoogletest_1_1_front_test" kindref="compound">FrontTest</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d69/classtesting_1_1_test" kindref="compound">testing::Test</ref><sp/>{};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d2/dbd/namespacegoogletest_1ab200d56e3d9ab9e8166f4a675abd6854" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="db/d2c/classgoogletest_1_1_front_test" kindref="compound">FrontTest</ref>,<sp/>Front)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">common::LinkedList&lt;int&gt;</ref><sp/>lists;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>golden_value<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(golden_value);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(golden_value,<sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a510df6a9340094440277fec608697fcd" kindref="member">Front</ref>());</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="dd/d6f/classgoogletest_1_1_back_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dd/d6f/classgoogletest_1_1_back_test" kindref="compound">BackTest</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d69/classtesting_1_1_test" kindref="compound">testing::Test</ref><sp/>{};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="d2/dbd/namespacegoogletest_1a9b16e94dddd104afc05026a567fc3fe0" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="dd/d6f/classgoogletest_1_1_back_test" kindref="compound">BackTest</ref>,<sp/>Back)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">common::LinkedList&lt;int&gt;</ref><sp/>lists;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>golden_value<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a6b6681f762c6f6f8bc92ebd9c8d5dc66" kindref="member">PushBack</ref>(golden_value);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(golden_value,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a58eca8e9e3e4f5bfe50033256d17bdc7" kindref="member">Back</ref>());</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="de/d4e/classgoogletest_1_1_pop_front_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="de/d4e/classgoogletest_1_1_pop_front_test" kindref="compound">PopFrontTest</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d69/classtesting_1_1_test" kindref="compound">testing::Test</ref><sp/>{};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="d2/dbd/namespacegoogletest_1a425719cbb89e92322b38800e2611523f" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="de/d4e/classgoogletest_1_1_pop_front_test" kindref="compound">PopFrontTest</ref>,<sp/>PopFront)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">common::LinkedList&lt;int&gt;</ref><sp/>lists;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>golden_value<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(golden_value);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(golden_value,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" kindref="member">PopFront</ref>());</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="d8/d0b/classgoogletest_1_1_pop_back_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d8/d0b/classgoogletest_1_1_pop_back_test" kindref="compound">PopBackTest</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d69/classtesting_1_1_test" kindref="compound">testing::Test</ref><sp/>{};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d2/dbd/namespacegoogletest_1ac9545390d4ef05a5f8e2502429855845" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="d8/d0b/classgoogletest_1_1_pop_back_test" kindref="compound">PopBackTest</ref>,<sp/>PopBack)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">common::LinkedList&lt;int&gt;</ref><sp/>lists;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>golden_value<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(golden_value);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(golden_value,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8f1814ae66e117738921f5d400d85ec3" kindref="member">PopBack</ref>());</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="dd/dde/classgoogletest_1_1_value_at_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dd/dde/classgoogletest_1_1_value_at_test" kindref="compound">ValueAtTest</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d69/classtesting_1_1_test" kindref="compound">testing::Test</ref><sp/>{};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="d2/dbd/namespacegoogletest_1adf387868fe45920583edcd3e22b5368a" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="dd/dde/classgoogletest_1_1_value_at_test" kindref="compound">ValueAtTest</ref>,<sp/>ValueAt)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">common::LinkedList&lt;int&gt;</ref><sp/>lists;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(100);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(200);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a60af5df9c2152ed214bf6c2ae4b27bb3" kindref="member">Insert</ref>(2,<sp/>300);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>lists.PrintDebug();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(200,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a41778863ac9905141650a07d08146115" kindref="member">ValueAt</ref>(0));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(300,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a41778863ac9905141650a07d08146115" kindref="member">ValueAt</ref>(2));</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="d0/dc5/classgoogletest_1_1_erase_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/dc5/classgoogletest_1_1_erase_test" kindref="compound">EraseTest</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d69/classtesting_1_1_test" kindref="compound">testing::Test</ref><sp/>{};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="d2/dbd/namespacegoogletest_1a5f1caca8cbccf9881a366055ecc169d7" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="d0/dc5/classgoogletest_1_1_erase_test" kindref="compound">EraseTest</ref>,<sp/>Erase)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">common::LinkedList&lt;int&gt;</ref><sp/>lists;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(10);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1af1789852a6074c3c5ae8c6738d5f7160" kindref="member">Erase</ref>(0);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(0,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" kindref="member">Size</ref>());</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="de/d48/classgoogletest_1_1_remove_value_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="de/d48/classgoogletest_1_1_remove_value_test" kindref="compound">RemoveValueTest</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d69/classtesting_1_1_test" kindref="compound">testing::Test</ref><sp/>{};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="d2/dbd/namespacegoogletest_1a79bb22503a1ed89c935e5e600f52416c" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="de/d48/classgoogletest_1_1_remove_value_test" kindref="compound">RemoveValueTest</ref>,<sp/>RemoveValue)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">common::LinkedList&lt;int&gt;</ref><sp/>lists;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(6);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1aa40f387b3fb06df3997974b66ed1d40c" kindref="member">RemoveValue</ref>(6);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(0,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" kindref="member">Size</ref>());</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="d6/da2/classgoogletest_1_1_reverse_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d6/da2/classgoogletest_1_1_reverse_test" kindref="compound">ReverseTest</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d69/classtesting_1_1_test" kindref="compound">testing::Test</ref><sp/>{};</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="d2/dbd/namespacegoogletest_1ae2e0e58be843ffe18246403fea681b33" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="d6/da2/classgoogletest_1_1_reverse_test" kindref="compound">ReverseTest</ref>,<sp/>Reverse)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">common::LinkedList&lt;int&gt;</ref><sp/>lists;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(10);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(11);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(12);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>lists.PrintDebug();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1ae1b551cc51c9d556342b27b466a7c7cb" kindref="member">Reverse</ref>();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>lists.PrintDebug();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(10,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" kindref="member">PopFront</ref>());</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(11,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" kindref="member">PopFront</ref>());</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(12,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" kindref="member">PopFront</ref>());</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="d9/df3/classgoogletest_1_1_value_n_from_end_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d9/df3/classgoogletest_1_1_value_n_from_end_test" kindref="compound">ValueNFromEndTest</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d69/classtesting_1_1_test" kindref="compound">testing::Test</ref><sp/>{};</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="d2/dbd/namespacegoogletest_1a5e5e669929d54f4cbe091286eec952e2" refkind="member"><highlight class="normal"><ref refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" kindref="member">TEST_F</ref>(<ref refid="d9/df3/classgoogletest_1_1_value_n_from_end_test" kindref="compound">ValueNFromEndTest</ref>,<sp/>ValueNFromEnd)<sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Declare<sp/>the<sp/>Unit<sp/>Test<sp/>object<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">common::LinkedList&lt;int&gt;</ref><sp/>lists;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a6b6681f762c6f6f8bc92ebd9c8d5dc66" kindref="member">PushBack</ref>(1);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a6b6681f762c6f6f8bc92ebd9c8d5dc66" kindref="member">PushBack</ref>(2);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a6b6681f762c6f6f8bc92ebd9c8d5dc66" kindref="member">PushBack</ref>(3);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a96f5737c64edc912fe53681ccc9ea057" kindref="member">PrintDebug</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(3,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a1e3c93770d25a042944efa1e83d449c1" kindref="member">ValueNFromEnd</ref>(1));</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(2,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a1e3c93770d25a042944efa1e83d449c1" kindref="member">ValueNFromEnd</ref>(2));</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" kindref="member">EXPECT_EQ</ref>(1,lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a1e3c93770d25a042944efa1e83d449c1" kindref="member">ValueNFromEnd</ref>(3));</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>unit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="linked_list/tests/linkedlists_unit_test.cc"/>
+  </compounddef>
+</doxygen>

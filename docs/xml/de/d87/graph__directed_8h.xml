@@ -3,6 +3,7 @@
   <compounddef id="de/d87/graph__directed_8h" kind="file" language="C++">
     <compoundname>graph_directed.h</compoundname>
     <includes refid="d6/df3/graph_8h" local="yes">./graph.h</includes>
+    <includedby refid="db/df7/graphs_2main_8cc" local="yes">graphs/main.cc</includedby>
     <includedby refid="dd/dba/graph__directed_8cc" local="yes">graphs/src/graph_directed.cc</includedby>
     <incdepgraph>
       <node id="2">
@@ -41,31 +42,25 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="2">
+        <label>graphs/main.cc</label>
+        <link refid="db/df7/graphs_2main_8cc"/>
+      </node>
       <node id="1">
         <label>graphs/src/graph_directed.h</label>
         <link refid="de/d87/graph__directed_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
-      <node id="2">
+      <node id="3">
         <label>graphs/src/graph_directed.cc</label>
         <link refid="dd/dba/graph__directed_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="d8/dec/classcommon_1_1_graph_directed" prot="public">common::GraphDirected</innerclass>
     <innernamespace refid="d9/d0c/namespacecommon">common</innernamespace>
-      <sectiondef kind="define">
-      <memberdef kind="define" id="de/d87/graph__directed_8h_1a211c00d5af0bd6680984943ceb1834b4" prot="public" static="no">
-        <name>GRAPH_DIRECTED_H</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="graphs/src/graph_directed.h" line="4" column="9" bodyfile="graphs/src/graph_directed.h" bodystart="4" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -74,7 +69,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/df3/graph_8h" kindref="compound">./graph.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GRAPH_DIRECTED_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4" refid="de/d87/graph__directed_8h_1a211c00d5af0bd6680984943ceb1834b4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GRAPH_DIRECTED_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GRAPH_DIRECTED_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="d8/dcc/namespacestd" kindref="compound">std</ref>;</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>

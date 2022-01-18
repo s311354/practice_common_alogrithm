@@ -78,6 +78,9 @@ all: hash_table/all
 all: array/all
 all: design_pattern/all
 all: linked_list/all
+all: priority_queue/all
+all: queue_linked_list/all
+all: leetcode_practice/all
 
 .PHONY : all
 
@@ -88,6 +91,9 @@ preinstall: hash_table/preinstall
 preinstall: array/preinstall
 preinstall: design_pattern/preinstall
 preinstall: linked_list/preinstall
+preinstall: priority_queue/preinstall
+preinstall: queue_linked_list/preinstall
+preinstall: leetcode_practice/preinstall
 
 .PHONY : preinstall
 
@@ -98,6 +104,9 @@ clean: hash_table/clean
 clean: array/clean
 clean: design_pattern/clean
 clean: linked_list/clean
+clean: priority_queue/clean
+clean: queue_linked_list/clean
+clean: leetcode_practice/clean
 
 .PHONY : clean
 
@@ -314,6 +323,44 @@ hash_table/clean: hash_table/CMakeFiles/hash_table.dir/clean
 .PHONY : hash_table/clean
 
 #=============================================================================
+# Directory level rules for directory leetcode_practice
+
+# Recursive "all" directory target.
+leetcode_practice/all: leetcode_practice/CMakeFiles/solutions.dir/all
+leetcode_practice/all: leetcode_practice/src/all
+
+.PHONY : leetcode_practice/all
+
+# Recursive "preinstall" directory target.
+leetcode_practice/preinstall: leetcode_practice/src/preinstall
+
+.PHONY : leetcode_practice/preinstall
+
+# Recursive "clean" directory target.
+leetcode_practice/clean: leetcode_practice/CMakeFiles/solutions.dir/clean
+leetcode_practice/clean: leetcode_practice/src/clean
+
+.PHONY : leetcode_practice/clean
+
+#=============================================================================
+# Directory level rules for directory leetcode_practice/src
+
+# Recursive "all" directory target.
+leetcode_practice/src/all: leetcode_practice/src/CMakeFiles/solutions_lib.dir/all
+
+.PHONY : leetcode_practice/src/all
+
+# Recursive "preinstall" directory target.
+leetcode_practice/src/preinstall:
+
+.PHONY : leetcode_practice/src/preinstall
+
+# Recursive "clean" directory target.
+leetcode_practice/src/clean: leetcode_practice/src/CMakeFiles/solutions_lib.dir/clean
+
+.PHONY : leetcode_practice/src/clean
+
+#=============================================================================
 # Directory level rules for directory linked_list
 
 # Recursive "all" directory target.
@@ -350,6 +397,42 @@ linked_list/src/preinstall:
 linked_list/src/clean: linked_list/src/CMakeFiles/linkedlists_lib.dir/clean
 
 .PHONY : linked_list/src/clean
+
+#=============================================================================
+# Directory level rules for directory priority_queue
+
+# Recursive "all" directory target.
+priority_queue/all: priority_queue/CMakeFiles/priority_queue.dir/all
+
+.PHONY : priority_queue/all
+
+# Recursive "preinstall" directory target.
+priority_queue/preinstall:
+
+.PHONY : priority_queue/preinstall
+
+# Recursive "clean" directory target.
+priority_queue/clean: priority_queue/CMakeFiles/priority_queue.dir/clean
+
+.PHONY : priority_queue/clean
+
+#=============================================================================
+# Directory level rules for directory queue_linked_list
+
+# Recursive "all" directory target.
+queue_linked_list/all: queue_linked_list/CMakeFiles/queue_linked_list.dir/all
+
+.PHONY : queue_linked_list/all
+
+# Recursive "preinstall" directory target.
+queue_linked_list/preinstall:
+
+.PHONY : queue_linked_list/preinstall
+
+# Recursive "clean" directory target.
+queue_linked_list/clean: queue_linked_list/CMakeFiles/queue_linked_list.dir/clean
+
+.PHONY : queue_linked_list/clean
 
 #=============================================================================
 # Target rules for target binary_search/CMakeFiles/binary_search.dir
@@ -574,7 +657,7 @@ design_pattern/bridge_pattern/CMakeFiles/bridge_pattern.dir/clean:
 design_pattern/strategy_pattern/CMakeFiles/strategy_pattern.dir/all:
 	$(MAKE) $(MAKESILENT) -f design_pattern/strategy_pattern/CMakeFiles/strategy_pattern.dir/build.make design_pattern/strategy_pattern/CMakeFiles/strategy_pattern.dir/depend
 	$(MAKE) $(MAKESILENT) -f design_pattern/strategy_pattern/CMakeFiles/strategy_pattern.dir/build.make design_pattern/strategy_pattern/CMakeFiles/strategy_pattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=30,31 "Built target strategy_pattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=39,40 "Built target strategy_pattern"
 .PHONY : design_pattern/strategy_pattern/CMakeFiles/strategy_pattern.dir/all
 
 # Build rule for subdir invocation for target.
@@ -601,7 +684,7 @@ design_pattern/strategy_pattern/CMakeFiles/strategy_pattern.dir/clean:
 design_pattern/singleton_pattern/CMakeFiles/singleton_pattern.dir/all:
 	$(MAKE) $(MAKESILENT) -f design_pattern/singleton_pattern/CMakeFiles/singleton_pattern.dir/build.make design_pattern/singleton_pattern/CMakeFiles/singleton_pattern.dir/depend
 	$(MAKE) $(MAKESILENT) -f design_pattern/singleton_pattern/CMakeFiles/singleton_pattern.dir/build.make design_pattern/singleton_pattern/CMakeFiles/singleton_pattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=28,29 "Built target singleton_pattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=33,34 "Built target singleton_pattern"
 .PHONY : design_pattern/singleton_pattern/CMakeFiles/singleton_pattern.dir/all
 
 # Build rule for subdir invocation for target.
@@ -674,6 +757,114 @@ linkedlists_lib: linked_list/src/CMakeFiles/linkedlists_lib.dir/rule
 linked_list/src/CMakeFiles/linkedlists_lib.dir/clean:
 	$(MAKE) $(MAKESILENT) -f linked_list/src/CMakeFiles/linkedlists_lib.dir/build.make linked_list/src/CMakeFiles/linkedlists_lib.dir/clean
 .PHONY : linked_list/src/CMakeFiles/linkedlists_lib.dir/clean
+
+#=============================================================================
+# Target rules for target priority_queue/CMakeFiles/priority_queue.dir
+
+# All Build rule for target.
+priority_queue/CMakeFiles/priority_queue.dir/all:
+	$(MAKE) $(MAKESILENT) -f priority_queue/CMakeFiles/priority_queue.dir/build.make priority_queue/CMakeFiles/priority_queue.dir/depend
+	$(MAKE) $(MAKESILENT) -f priority_queue/CMakeFiles/priority_queue.dir/build.make priority_queue/CMakeFiles/priority_queue.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=28,29,30 "Built target priority_queue"
+.PHONY : priority_queue/CMakeFiles/priority_queue.dir/all
+
+# Build rule for subdir invocation for target.
+priority_queue/CMakeFiles/priority_queue.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 priority_queue/CMakeFiles/priority_queue.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles 0
+.PHONY : priority_queue/CMakeFiles/priority_queue.dir/rule
+
+# Convenience name for target.
+priority_queue: priority_queue/CMakeFiles/priority_queue.dir/rule
+
+.PHONY : priority_queue
+
+# clean rule for target.
+priority_queue/CMakeFiles/priority_queue.dir/clean:
+	$(MAKE) $(MAKESILENT) -f priority_queue/CMakeFiles/priority_queue.dir/build.make priority_queue/CMakeFiles/priority_queue.dir/clean
+.PHONY : priority_queue/CMakeFiles/priority_queue.dir/clean
+
+#=============================================================================
+# Target rules for target queue_linked_list/CMakeFiles/queue_linked_list.dir
+
+# All Build rule for target.
+queue_linked_list/CMakeFiles/queue_linked_list.dir/all:
+	$(MAKE) $(MAKESILENT) -f queue_linked_list/CMakeFiles/queue_linked_list.dir/build.make queue_linked_list/CMakeFiles/queue_linked_list.dir/depend
+	$(MAKE) $(MAKESILENT) -f queue_linked_list/CMakeFiles/queue_linked_list.dir/build.make queue_linked_list/CMakeFiles/queue_linked_list.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=31,32 "Built target queue_linked_list"
+.PHONY : queue_linked_list/CMakeFiles/queue_linked_list.dir/all
+
+# Build rule for subdir invocation for target.
+queue_linked_list/CMakeFiles/queue_linked_list.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 queue_linked_list/CMakeFiles/queue_linked_list.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles 0
+.PHONY : queue_linked_list/CMakeFiles/queue_linked_list.dir/rule
+
+# Convenience name for target.
+queue_linked_list: queue_linked_list/CMakeFiles/queue_linked_list.dir/rule
+
+.PHONY : queue_linked_list
+
+# clean rule for target.
+queue_linked_list/CMakeFiles/queue_linked_list.dir/clean:
+	$(MAKE) $(MAKESILENT) -f queue_linked_list/CMakeFiles/queue_linked_list.dir/build.make queue_linked_list/CMakeFiles/queue_linked_list.dir/clean
+.PHONY : queue_linked_list/CMakeFiles/queue_linked_list.dir/clean
+
+#=============================================================================
+# Target rules for target leetcode_practice/CMakeFiles/solutions.dir
+
+# All Build rule for target.
+leetcode_practice/CMakeFiles/solutions.dir/all: leetcode_practice/src/CMakeFiles/solutions_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f leetcode_practice/CMakeFiles/solutions.dir/build.make leetcode_practice/CMakeFiles/solutions.dir/depend
+	$(MAKE) $(MAKESILENT) -f leetcode_practice/CMakeFiles/solutions.dir/build.make leetcode_practice/CMakeFiles/solutions.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=35,36 "Built target solutions"
+.PHONY : leetcode_practice/CMakeFiles/solutions.dir/all
+
+# Build rule for subdir invocation for target.
+leetcode_practice/CMakeFiles/solutions.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 leetcode_practice/CMakeFiles/solutions.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles 0
+.PHONY : leetcode_practice/CMakeFiles/solutions.dir/rule
+
+# Convenience name for target.
+solutions: leetcode_practice/CMakeFiles/solutions.dir/rule
+
+.PHONY : solutions
+
+# clean rule for target.
+leetcode_practice/CMakeFiles/solutions.dir/clean:
+	$(MAKE) $(MAKESILENT) -f leetcode_practice/CMakeFiles/solutions.dir/build.make leetcode_practice/CMakeFiles/solutions.dir/clean
+.PHONY : leetcode_practice/CMakeFiles/solutions.dir/clean
+
+#=============================================================================
+# Target rules for target leetcode_practice/src/CMakeFiles/solutions_lib.dir
+
+# All Build rule for target.
+leetcode_practice/src/CMakeFiles/solutions_lib.dir/all:
+	$(MAKE) $(MAKESILENT) -f leetcode_practice/src/CMakeFiles/solutions_lib.dir/build.make leetcode_practice/src/CMakeFiles/solutions_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f leetcode_practice/src/CMakeFiles/solutions_lib.dir/build.make leetcode_practice/src/CMakeFiles/solutions_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=37,38 "Built target solutions_lib"
+.PHONY : leetcode_practice/src/CMakeFiles/solutions_lib.dir/all
+
+# Build rule for subdir invocation for target.
+leetcode_practice/src/CMakeFiles/solutions_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 leetcode_practice/src/CMakeFiles/solutions_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles 0
+.PHONY : leetcode_practice/src/CMakeFiles/solutions_lib.dir/rule
+
+# Convenience name for target.
+solutions_lib: leetcode_practice/src/CMakeFiles/solutions_lib.dir/rule
+
+.PHONY : solutions_lib
+
+# clean rule for target.
+leetcode_practice/src/CMakeFiles/solutions_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f leetcode_practice/src/CMakeFiles/solutions_lib.dir/build.make leetcode_practice/src/CMakeFiles/solutions_lib.dir/clean
+.PHONY : leetcode_practice/src/CMakeFiles/solutions_lib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

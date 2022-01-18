@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/dbd/namespacegoogletest" kind="namespace" language="C++">
+    <compoundname>googletest</compoundname>
+    <innerclass refid="dd/d6f/classgoogletest_1_1_back_test" prot="public">googletest::BackTest</innerclass>
+    <innerclass refid="df/d98/classgoogletest_1_1_empty_test" prot="public">googletest::EmptyTest</innerclass>
+    <innerclass refid="de/d95/classgoogletest_1_1_enqueue_test" prot="public">googletest::EnqueueTest</innerclass>
+    <innerclass refid="d0/dc5/classgoogletest_1_1_erase_test" prot="public">googletest::EraseTest</innerclass>
+    <innerclass refid="db/d2c/classgoogletest_1_1_front_test" prot="public">googletest::FrontTest</innerclass>
+    <innerclass refid="d8/d0b/classgoogletest_1_1_pop_back_test" prot="public">googletest::PopBackTest</innerclass>
+    <innerclass refid="de/d4e/classgoogletest_1_1_pop_front_test" prot="public">googletest::PopFrontTest</innerclass>
+    <innerclass refid="de/d48/classgoogletest_1_1_remove_value_test" prot="public">googletest::RemoveValueTest</innerclass>
+    <innerclass refid="d6/da2/classgoogletest_1_1_reverse_test" prot="public">googletest::ReverseTest</innerclass>
+    <innerclass refid="d0/d58/classgoogletest_1_1_size_test" prot="public">googletest::SizeTest</innerclass>
+    <innerclass refid="dc/df1/classgoogletest_1_1_solutions_test" prot="public">googletest::SolutionsTest</innerclass>
+    <innerclass refid="dd/dde/classgoogletest_1_1_value_at_test" prot="public">googletest::ValueAtTest</innerclass>
+    <innerclass refid="d9/df3/classgoogletest_1_1_value_n_from_end_test" prot="public">googletest::ValueNFromEndTest</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a9b16e94dddd104afc05026a567fc3fe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(BackTest, Back)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="dd/d6f/classgoogletest_1_1_back_test" kindref="compound">BackTest</ref></type>
+        </param>
+        <param>
+          <type>Back</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="37" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="37" bodyend="44"/>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a58eca8e9e3e4f5bfe50033256d17bdc7" compoundref="d0/dea/linked__list_8cc" startline="46" endline="58">LinkedList&lt; T &gt;::Back</references>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a6b6681f762c6f6f8bc92ebd9c8d5dc66" compoundref="d0/dea/linked__list_8cc" startline="95" endline="110">LinkedList&lt; T &gt;::PushBack</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1ac17957d2b69de295d13b79e6a8f73607" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(EmptyTest, Empty)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="df/d98/classgoogletest_1_1_empty_test" kindref="compound">EmptyTest</ref></type>
+        </param>
+        <param>
+          <type>Empty</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="queue_linked_list/tests/queue_linked_list_unit_test.cc" line="23" column="1" bodyfile="queue_linked_list/tests/queue_linked_list_unit_test.cc" bodystart="23" bodyend="29"/>
+        <references refid="d1/d81/classcommon_1_1_queue_linked_list_1abcfbdba215d3b15fbb4b682969943a6e" compoundref="d0/d17/queue__linked__list_8cc" startline="66" endline="69">QueueLinkedList&lt; T &gt;::Empty</references>
+        <references refid="d8/d73/gtest_8h_1ac33e7cdfb5d44a7a0f0ab552eb5c3c6a" compoundref="d8/d73/gtest_8h" startline="1859">EXPECT_TRUE</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(EnqueueTest, Enqueue)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="de/d95/classgoogletest_1_1_enqueue_test" kindref="compound">EnqueueTest</ref></type>
+        </param>
+        <param>
+          <type>Enqueue</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="queue_linked_list/tests/queue_linked_list_unit_test.cc" line="9" column="1" bodyfile="queue_linked_list/tests/queue_linked_list_unit_test.cc" bodystart="9" bodyend="19"/>
+        <references refid="d1/d81/classcommon_1_1_queue_linked_list_1aa6370e8c523a8e8fe1c2e6695dd26f70" compoundref="d0/d17/queue__linked__list_8cc" startline="42" endline="60">QueueLinkedList&lt; T &gt;::Dequeue</references>
+        <references refid="d1/d81/classcommon_1_1_queue_linked_list_1a486cdb4401658fe6fb93b886054d9a40" compoundref="d0/d17/queue__linked__list_8cc" startline="25" endline="37">QueueLinkedList&lt; T &gt;::Enqueue</references>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a5f1caca8cbccf9881a366055ecc169d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(EraseTest, Erase)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="d0/dc5/classgoogletest_1_1_erase_test" kindref="compound">EraseTest</ref></type>
+        </param>
+        <param>
+          <type>Erase</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="86" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="86" bodyend="93"/>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1af1789852a6074c3c5ae8c6738d5f7160" compoundref="d0/dea/linked__list_8cc" startline="213" endline="241">LinkedList&lt; T &gt;::Erase</references>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" compoundref="d0/dea/linked__list_8cc" startline="15" endline="26">LinkedList&lt; T &gt;::Size</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1ab200d56e3d9ab9e8166f4a675abd6854" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(FrontTest, Front)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="db/d2c/classgoogletest_1_1_front_test" kindref="compound">FrontTest</ref></type>
+        </param>
+        <param>
+          <type>Front</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="26" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="26" bodyend="33"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a510df6a9340094440277fec608697fcd" compoundref="d0/dea/linked__list_8cc" startline="33" endline="40">LinkedList&lt; T &gt;::Front</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1ac9545390d4ef05a5f8e2502429855845" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(PopBackTest, PopBack)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="d8/d0b/classgoogletest_1_1_pop_back_test" kindref="compound">PopBackTest</ref></type>
+        </param>
+        <param>
+          <type>PopBack</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="60" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="60" bodyend="67"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8f1814ae66e117738921f5d400d85ec3" compoundref="d0/dea/linked__list_8cc" startline="116" endline="142">LinkedList&lt; T &gt;::PopBack</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a425719cbb89e92322b38800e2611523f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(PopFrontTest, PopFront)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="de/d4e/classgoogletest_1_1_pop_front_test" kindref="compound">PopFrontTest</ref></type>
+        </param>
+        <param>
+          <type>PopFront</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="48" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="48" bodyend="56"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" compoundref="d0/dea/linked__list_8cc" startline="77" endline="89">LinkedList&lt; T &gt;::PopFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a79bb22503a1ed89c935e5e600f52416c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(RemoveValueTest, RemoveValue)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="de/d48/classgoogletest_1_1_remove_value_test" kindref="compound">RemoveValueTest</ref></type>
+        </param>
+        <param>
+          <type>RemoveValue</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="97" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="97" bodyend="105"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1aa40f387b3fb06df3997974b66ed1d40c" compoundref="d0/dea/linked__list_8cc" startline="246" endline="270">LinkedList&lt; T &gt;::RemoveValue</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" compoundref="d0/dea/linked__list_8cc" startline="15" endline="26">LinkedList&lt; T &gt;::Size</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1ae2e0e58be843ffe18246403fea681b33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(ReverseTest, Reverse)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="d6/da2/classgoogletest_1_1_reverse_test" kindref="compound">ReverseTest</ref></type>
+        </param>
+        <param>
+          <type>Reverse</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="109" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="109" bodyend="124"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" compoundref="d0/dea/linked__list_8cc" startline="77" endline="89">LinkedList&lt; T &gt;::PopFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1ae1b551cc51c9d556342b27b466a7c7cb" compoundref="d0/dea/linked__list_8cc" startline="276" endline="293">LinkedList&lt; T &gt;::Reverse</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1ac045021aee0c0e42ddec510fff6c414b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SizeTest, Size)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="d0/d58/classgoogletest_1_1_size_test" kindref="compound">SizeTest</ref></type>
+        </param>
+        <param>
+          <type>Size</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="15" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="15" bodyend="22"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" compoundref="d0/dea/linked__list_8cc" startline="15" endline="26">LinkedList&lt; T &gt;::Size</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1aec59412f731355652c6fd79285cb6d38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SizeTest, SizeEmpty)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="d0/d58/classgoogletest_1_1_size_test" kindref="compound">SizeTest</ref></type>
+        </param>
+        <param>
+          <type>SizeEmpty</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="8" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="8" bodyend="13"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" compoundref="d0/dea/linked__list_8cc" startline="15" endline="26">LinkedList&lt; T &gt;::Size</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1af51bbfa8c82b6da8b05eb1d4e79bee7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SolutionsTest, largestKTest)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="dc/df1/classgoogletest_1_1_solutions_test" kindref="compound">SolutionsTest</ref></type>
+        </param>
+        <param>
+          <type>largestKTest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/tests/leetcode_unit_test.cc" line="59" column="1" bodyfile="leetcode_practice/tests/leetcode_unit_test.cc" bodystart="59" bodyend="67"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d0/d8a/classleetcode_1_1_solutions_1af2c2a45de28adde04173de6570e08ddd" compoundref="d9/d25/solutions_8cc" startline="306" endline="323">Solutions::largestK</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1aa2f7ecbed04511c5c44cef109cec4749" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SolutionsTest, minDeletionsTest)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="dc/df1/classgoogletest_1_1_solutions_test" kindref="compound">SolutionsTest</ref></type>
+        </param>
+        <param>
+          <type>minDeletionsTest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/tests/leetcode_unit_test.cc" line="8" column="1" bodyfile="leetcode_practice/tests/leetcode_unit_test.cc" bodystart="8" bodyend="14"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d0/d8a/classleetcode_1_1_solutions_1a1e18a492caa00dc950ccdb815ca6083b" compoundref="d9/d25/solutions_8cc" startline="61" endline="90">Solutions::minDeletions</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a8384faf9f51d0467c0c4968b93137132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SolutionsTest, minStpesTest)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="dc/df1/classgoogletest_1_1_solutions_test" kindref="compound">SolutionsTest</ref></type>
+        </param>
+        <param>
+          <type>minStpesTest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/tests/leetcode_unit_test.cc" line="48" column="1" bodyfile="leetcode_practice/tests/leetcode_unit_test.cc" bodystart="48" bodyend="56"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d0/d8a/classleetcode_1_1_solutions_1a34aa4d8f3499e3dcbe5f75dcb44a9f0b" compoundref="d9/d25/solutions_8cc" startline="284" endline="298">Solutions::minStpes</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1ae04ef1b959687032d309f745f9563b04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SolutionsTest, MinSwapTest)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="dc/df1/classgoogletest_1_1_solutions_test" kindref="compound">SolutionsTest</ref></type>
+        </param>
+        <param>
+          <type>MinSwapTest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/tests/leetcode_unit_test.cc" line="16" column="1" bodyfile="leetcode_practice/tests/leetcode_unit_test.cc" bodystart="16" bodyend="23"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d0/d8a/classleetcode_1_1_solutions_1a5c9cb0761fff007d731583fcd56f63fe" compoundref="d9/d25/solutions_8cc" startline="98" endline="140">Solutions::minSwaps</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a717d796db244025735e858e452481bbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SolutionsTest, ShortestDistanceTest)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="dc/df1/classgoogletest_1_1_solutions_test" kindref="compound">SolutionsTest</ref></type>
+        </param>
+        <param>
+          <type>ShortestDistanceTest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/tests/leetcode_unit_test.cc" line="38" column="1" bodyfile="leetcode_practice/tests/leetcode_unit_test.cc" bodystart="38" bodyend="46"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d0/d8a/classleetcode_1_1_solutions_1aa88842acfeaaa8ee46c406fcaa8c00a4" compoundref="d9/d25/solutions_8cc" startline="195" endline="225">Solutions::shortestDistance</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1afa96ace52016ac8015546bf44303f750" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(SolutionsTest, TwoSumTest)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="dc/df1/classgoogletest_1_1_solutions_test" kindref="compound">SolutionsTest</ref></type>
+        </param>
+        <param>
+          <type>TwoSumTest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="leetcode_practice/tests/leetcode_unit_test.cc" line="25" column="1" bodyfile="leetcode_practice/tests/leetcode_unit_test.cc" bodystart="25" bodyend="36"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d0/d8a/classleetcode_1_1_solutions_1adb443c6ca1aab44c236d2ce98b45c983" compoundref="d9/d25/solutions_8cc" startline="148" endline="183">Solutions::twoSum</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1adf387868fe45920583edcd3e22b5368a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(ValueAtTest, ValueAt)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="dd/dde/classgoogletest_1_1_value_at_test" kindref="compound">ValueAtTest</ref></type>
+        </param>
+        <param>
+          <type>ValueAt</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="71" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="71" bodyend="82"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a60af5df9c2152ed214bf6c2ae4b27bb3" compoundref="d0/dea/linked__list_8cc" startline="178" endline="207">LinkedList&lt; T &gt;::Insert</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a41778863ac9905141650a07d08146115" compoundref="d0/dea/linked__list_8cc" startline="154" endline="172">LinkedList&lt; T &gt;::ValueAt</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dbd/namespacegoogletest_1a5e5e669929d54f4cbe091286eec952e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>googletest::TEST_F</definition>
+        <argsstring>(ValueNFromEndTest, ValueNFromEnd)</argsstring>
+        <name>TEST_F</name>
+        <param>
+          <type><ref refid="d9/df3/classgoogletest_1_1_value_n_from_end_test" kindref="compound">ValueNFromEndTest</ref></type>
+        </param>
+        <param>
+          <type>ValueNFromEnd</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/tests/linkedlists_unit_test.cc" line="128" column="1" bodyfile="linked_list/tests/linkedlists_unit_test.cc" bodystart="128" bodyend="140"/>
+        <references refid="d8/d73/gtest_8h_1a4159019abda84f5366acdb7604ff220a" compoundref="d8/d73/gtest_8h" startline="1922">EXPECT_EQ</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a96f5737c64edc912fe53681ccc9ea057" compoundref="d0/dea/linked__list_8cc" startline="330" endline="339">LinkedList&lt; T &gt;::PrintDebug</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a6b6681f762c6f6f8bc92ebd9c8d5dc66" compoundref="d0/dea/linked__list_8cc" startline="95" endline="110">LinkedList&lt; T &gt;::PushBack</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a1e3c93770d25a042944efa1e83d449c1" compoundref="d0/dea/linked__list_8cc" startline="299" endline="324">LinkedList&lt; T &gt;::ValueNFromEnd</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="queue_linked_list/tests/queue_linked_list_unit_test.cc" line="5" column="1"/>
+  </compounddef>
+</doxygen>

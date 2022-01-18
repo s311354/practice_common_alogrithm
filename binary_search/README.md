@@ -1,10 +1,75 @@
 ## Overview of Binary Search ##
 
+#### The concept of binary search algorithm ####
+
+Binary search is a search algorithm that finds the poistion of a target value whithin a sorted array or data structure. Binary search compares the target value to the middle element of that array or data structure.
+
+
 #### The concept of struct and class declarations ####
 
 For C program, a struct is a type consisting of a sequence of members whose storage is allocated in an ordered sequence. (as opposed to union, which is a type consisting of a sequence of members whose storage overlaps) Within a struct object, addresses of its elements increase in order in which the members were defined. 
 
 For C++ program, classes and structs are user-defined types, defined by class-specifier.
+
+#### The concept of pointer and reference ####
+
+A pointer is an object that stores the address, or location in memory, of some other object. That is, it is a reference to some other value. A pointer is a type of thing, the same way an integer or string is a type of thing. In addition, a pointer exist so that you can dereference it to set or get the addressed value.
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">int x = 0;
+int* px = &x;
+*px = 42; // dereference px -> x</span></code></pre></div>
+
+Reference is another value which eliminates nearly all the problems that come with pointers. It is still possible to mess up, but not easily.
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">int x = -7;
+int & y = x;
+y = 12; // exact same thing as x = 12;</span></code></pre></div>
+
+Note that if you can resolve the name inline then you can simply have both names for the same value in your symbol lookup table. (this is an excellent optimization!). Otherwise, you'll need to generate object code that actually used a pointer to do the dirty work.
+
+#### The concept of Pass-by-value, Pass-by-reference and Pass-by-pointer ####
+
+Pass-by-value: An argument passed by value is one where a value is copied into a special location in the computer's memory (called the "stack frame"). This location is special because the function has a name for it, and you can use that name to access the (local copy of the) value. 
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">void by_value(int x)
+{
+    x+= 1; // 8
+}
+
+int main()
+{
+    int z = 7; 
+    by_value(z); // 7
+}</span></code></pre></div>
+
+Pass-by-pointer: An argument passed by pointer is where a pointer value is copied into a special location in the computer's memory (called the "stack frame"). This local pointer can be dereferenced to access(and modify) the referent value.
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">void by_pointer(int* x)
+{
+    *x += 1; // 8
+}
+
+int main()
+{
+    int z = 7;
+    by_pointer( &z ); // 8
+}</span></code></pre></div>
+
+Pass-by-reference: An argument passed by reference is where the formal argument (the name) is an alias for the actual argument (the value).
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">void by_reference(int & x)
+{
+    x += 1; // 8
+}
+
+int main()
+{
+    int z = 7;
+    by_reference(z); // 8
+}
+</span></code></pre></div>
+
+Note that some people dislike the term pass-by-pointer. They feel it is misleading and inexact, since the  actual argument to the function is a pointer value (an address) which is passed by value into function. Hence, they say this is really pass-by-value.
 
 #### Reference ####
 [1] [cppreference: Struct declaration](https://en.cppreference.com/w/c/language/struct)
@@ -12,3 +77,9 @@ For C++ program, classes and structs are user-defined types, defined by class-sp
 [2] [cppreference: Class declaration](https://en.cppreference.com/w/cpp/language/class)
 
 [3] [cppreference: Union declaration](https://en.cppreference.com/w/c/language/union)
+
+[4] [Wiki: Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+
+[5] [cplusplus: Pass-by-value vs Pass-by-reference](https://www.cplusplus.com/faq/beginners/call-by/)
+
+[6] [cplusplus: Pointer and References](https://www.cplusplus.com/faq/beginners/pointers-and-references/)

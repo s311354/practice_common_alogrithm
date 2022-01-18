@@ -7,6 +7,8 @@ int main(int argc, char *argv[])
 {
 
     using namespace common;
+
+    // Girected Graph
     auto graph_node = new GraphDirected(GraphRepresentation::kRepresentationTypeList);
 
 
@@ -25,7 +27,7 @@ int main(int argc, char *argv[])
     graph_node->PrintDebug();
 
 
-    std::cout << "Contains Cycle: " << graph_node->ContainsCycle() << std::endl;
+//     std::cout << "Contains Cycle: " << graph_node->ContainsCycle() << std::endl;
 
     delete graph_node;
     return 0;

@@ -1,0 +1,9 @@
+<map id="bfs" name="bfs">
+<area shape="rect" id="node1" title="BFS for Shortest Distance from All Buildings." alt="" coords="5,132,45,159"/>
+<area shape="rect" id="node2" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/container/queue/empty.html#" title=" " alt="" coords="93,5,220,32"/>
+<area shape="rect" id="node3" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/io/manip/endl.html#" title=" " alt="" coords="121,56,193,83"/>
+<area shape="rect" id="node4" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/container/queue/front.html#" title=" " alt="" coords="98,107,215,133"/>
+<area shape="rect" id="node5" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/container/queue/pop.html#" title=" " alt="" coords="101,157,213,184"/>
+<area shape="rect" id="node6" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/container/queue/push.html#" title=" " alt="" coords="97,208,216,235"/>
+<area shape="rect" id="node7" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/container/queue/size.html#" title=" " alt="" coords="99,259,214,285"/>
+</map>

@@ -45,6 +45,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/array/cmake_install.cmake")
   include("/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/design_pattern/cmake_install.cmake")
   include("/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/linked_list/cmake_install.cmake")
+  include("/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/cmake_install.cmake")
+  include("/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/queue_linked_list/cmake_install.cmake")
+  include("/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/cmake_install.cmake")
 
 endif()
 

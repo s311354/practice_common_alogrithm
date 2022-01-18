@@ -67,10 +67,10 @@ RM = /usr/local/Cellar/cmake/3.19.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue
+CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue
+CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/CMakeFiles /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/CMakeFiles 0
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue//CMakeFiles/progress.marks
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 priority_queue/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 priority_queue/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,30 +116,32 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 priority_queue/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 priority_queue/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named priority_queue
+# Convenience name for target.
+priority_queue/CMakeFiles/priority_queue.dir/rule:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 priority_queue/CMakeFiles/priority_queue.dir/rule
+.PHONY : priority_queue/CMakeFiles/priority_queue.dir/rule
 
-# Build rule for target.
-priority_queue: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 priority_queue
+# Convenience name for target.
+priority_queue: priority_queue/CMakeFiles/priority_queue.dir/rule
+
 .PHONY : priority_queue
 
 # fast build rule for target.
 priority_queue/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/priority_queue.dir/build.make CMakeFiles/priority_queue.dir/build
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f priority_queue/CMakeFiles/priority_queue.dir/build.make priority_queue/CMakeFiles/priority_queue.dir/build
 .PHONY : priority_queue/fast
 
 main.o: main.cc.o
@@ -148,7 +150,7 @@ main.o: main.cc.o
 
 # target to build an object file
 main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/priority_queue.dir/build.make CMakeFiles/priority_queue.dir/main.cc.o
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f priority_queue/CMakeFiles/priority_queue.dir/build.make priority_queue/CMakeFiles/priority_queue.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -157,7 +159,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/priority_queue.dir/build.make CMakeFiles/priority_queue.dir/main.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f priority_queue/CMakeFiles/priority_queue.dir/build.make priority_queue/CMakeFiles/priority_queue.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -166,7 +168,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/priority_queue.dir/build.make CMakeFiles/priority_queue.dir/main.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f priority_queue/CMakeFiles/priority_queue.dir/build.make priority_queue/CMakeFiles/priority_queue.dir/main.cc.s
 .PHONY : main.cc.s
 
 priority_queue.o: priority_queue.cc.o
@@ -175,7 +177,7 @@ priority_queue.o: priority_queue.cc.o
 
 # target to build an object file
 priority_queue.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/priority_queue.dir/build.make CMakeFiles/priority_queue.dir/priority_queue.cc.o
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f priority_queue/CMakeFiles/priority_queue.dir/build.make priority_queue/CMakeFiles/priority_queue.dir/priority_queue.cc.o
 .PHONY : priority_queue.cc.o
 
 priority_queue.i: priority_queue.cc.i
@@ -184,7 +186,7 @@ priority_queue.i: priority_queue.cc.i
 
 # target to preprocess a source file
 priority_queue.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/priority_queue.dir/build.make CMakeFiles/priority_queue.dir/priority_queue.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f priority_queue/CMakeFiles/priority_queue.dir/build.make priority_queue/CMakeFiles/priority_queue.dir/priority_queue.cc.i
 .PHONY : priority_queue.cc.i
 
 priority_queue.s: priority_queue.cc.s
@@ -193,7 +195,7 @@ priority_queue.s: priority_queue.cc.s
 
 # target to generate assembly for a file
 priority_queue.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/priority_queue.dir/build.make CMakeFiles/priority_queue.dir/priority_queue.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(MAKE) $(MAKESILENT) -f priority_queue/CMakeFiles/priority_queue.dir/build.make priority_queue/CMakeFiles/priority_queue.dir/priority_queue.cc.s
 .PHONY : priority_queue.cc.s
 
 # Help Target
@@ -222,6 +224,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

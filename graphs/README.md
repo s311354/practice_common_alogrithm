@@ -5,7 +5,7 @@ In mathematics, and more specifically in graph theory, a directed graph is the g
 
 In this simple program, I recapped and practiced how to implement the directed graph with C++. The code initially extracted from [Practice Directed Graph][directedgraph] and then reworked. The basic functions for the directed graph are a follows:
 - BFS (Breadth-first search): use queue and traverse all the connected nodes
-- DFS (Depth-first search): use stack and traverse all the connected nodes
+ DFS (Depth-first search): use stack and traverse all the connected nodes
 - Detect Cycle in a Directed Graph: check whether the graph contains a cycle or not
 - Iterate in a Directed Graph:  pointing to all of vertices in the directed graph
 

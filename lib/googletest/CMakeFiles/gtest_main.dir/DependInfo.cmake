@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/queue_linked_list/tests/lib/googletest/src/gtest_main.cc" "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/queue_linked_list/tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+  "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/lib/googletest/src/gtest_main.cc" "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -16,7 +16,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/queue_linked_list/tests/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -1,0 +1,839 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+lib/googletest/test/gtest-printers_test.cc File Reference\par \pard\plain 
+{\tc\tcl2 \v lib/googletest/test/gtest-printers_test.cc(d4ab02d08ceed19dab4276c86042b1520529304b)}
+{\xe \v lib/googletest/test/gtest-printers_test.cc(d4ab02d08ceed19dab4276c86042b1520529304b)}
+{\bkmkstart AAAAAAACYU}
+{\bkmkend AAAAAAACYU}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "gtest/gtest-printers.h"}\par
+{\f2 #include <ctype.h>}\par
+{\f2 #include <limits.h>}\par
+{\f2 #include <string.h>}\par
+{\f2 #include <algorithm>}\par
+{\f2 #include <deque>}\par
+{\f2 #include <list>}\par
+{\f2 #include <map>}\par
+{\f2 #include <set>}\par
+{\f2 #include <sstream>}\par
+{\f2 #include <string>}\par
+{\f2 #include <utility>}\par
+{\f2 #include <vector>}\par
+{\f2 #include "gtest/gtest.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for gtest-printers_test.cc:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d8/dba/gtest-printers__test_8cc__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACYV" }{}}{\fldrslt {\cs37\ul\cf2 Big}}}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACYW" }{}}{\fldrslt {\cs37\ul\cf2 foo}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABFW" }{}}{\fldrslt {\cs37\ul\cf2 testing}}}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACYX" }{}}{\fldrslt {\cs37\ul\cf2 testing::gtest_printers_test}}}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACYY" }{}}{\fldrslt {\cs37\ul\cf2 EXPECT_PRINT_TO_STRING_}}}
+(value,  expected_string)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumerations\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACYZ" }{}}{\fldrslt {\cs37\ul\cf2 AnonymousEnum}}}
+ \{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZA" }{}}{\fldrslt {\cs37\ul\cf2 kAE1}}}
+ = -1
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZB" }{}}{\fldrslt {\cs37\ul\cf2 kAE2}}}
+ = 1
+ \}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZC" }{}}{\fldrslt {\cs37\ul\cf2 EnumWithoutPrinter}}}
+ \{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZD" }{}}{\fldrslt {\cs37\ul\cf2 kEWP1}}}
+ = -2
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZE" }{}}{\fldrslt {\cs37\ul\cf2 kEWP2}}}
+ = 42
+ \}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZF" }{}}{\fldrslt {\cs37\ul\cf2 EnumWithPrintTo}}}
+ \{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZG" }{}}{\fldrslt {\cs37\ul\cf2 kEWPT1}}}
+ = 1
+ \}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZH" }{}}{\fldrslt {\cs37\ul\cf2 EnumWithStreaming}}}
+ \{ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZI" }{}}{\fldrslt {\cs37\ul\cf2 kEWS1}}}
+ = 10
+ \}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename StringType > AssertionResult {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZJ" }{}}{\fldrslt {\cs37\ul\cf2 HasPrefix}}}
+ (const StringType &str, const StringType &prefix)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZK" }{}}{\fldrslt {\cs37\ul\cf2 MyFunction}}}
+ (int)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+::{\b std::ostream} & {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZL" }{}}{\fldrslt {\cs37\ul\cf2 operator<<}}}
+ (::{\b std::ostream} &os, const PointerPrintable *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZM" }{}}{\fldrslt {\cs37\ul\cf2 operator<<}}}
+ (::{\b std::ostream} &os, const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZN" }{}}{\fldrslt {\cs37\ul\cf2 StreamableInGlobal}}}
+ &)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZO" }{}}{\fldrslt {\cs37\ul\cf2 operator<<}}}
+ (::{\b std::ostream} &os, const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZN" }{}}{\fldrslt {\cs37\ul\cf2 StreamableInGlobal}}}
+ *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > inline ::{\b std::ostream} & {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZP" }{}}{\fldrslt {\cs37\ul\cf2 operator<<}}}
+ (::{\b std::ostream} &os, const StreamableTemplateInFoo< T > &x)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename Char , typename CharTraits > {\b std::basic_ostream}< Char, CharTraits > & {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZQ" }{}}{\fldrslt {\cs37\ul\cf2 operator<<}}}
+ ({\b std::basic_ostream}< Char, CharTraits > &os, const AllowsGenericStreaming &)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename Char , typename CharTraits , typename T > {\b std::basic_ostream}< Char, CharTraits > & {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZR" }{}}{\fldrslt {\cs37\ul\cf2 operator<<}}}
+ ({\b std::basic_ostream}< Char, CharTraits > &os, const AllowsGenericStreamingAndImplicitConversionTemplate< T > &)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename Char , typename CharTraits , typename T > {\b std::basic_ostream}< Char, CharTraits > & {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZS" }{}}{\fldrslt {\cs37\ul\cf2 operator<<}}}
+ ({\b std::basic_ostream}< Char, CharTraits > &os, const AllowsGenericStreamingTemplate< T > &)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b std::ostream} & {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZT" }{}}{\fldrslt {\cs37\ul\cf2 operator<<}}}
+ ({\b std::ostream} &os, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZH" }{}}{\fldrslt {\cs37\ul\cf2 EnumWithStreaming}}}
+ e)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZU" }{}}{\fldrslt {\cs37\ul\cf2 Print}}}
+ (const T &value)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T , size_t N> string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZV" }{}}{\fldrslt {\cs37\ul\cf2 PrintArrayHelper}}}
+ (T(&a)[N])\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZW" }{}}{\fldrslt {\cs37\ul\cf2 PrintByRef}}}
+ (const T &value)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZX" }{}}{\fldrslt {\cs37\ul\cf2 PrintPointer}}}
+ (const void *p)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZY" }{}}{\fldrslt {\cs37\ul\cf2 PrintTo}}}
+ (const PrintableViaPrintTo &x, ::{\b std::ostream} *os)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZZ" }{}}{\fldrslt {\cs37\ul\cf2 PrintTo}}}
+ (const PrintableViaPrintToTemplate< T > &x, ::{\b std::ostream} *os)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAA" }{}}{\fldrslt {\cs37\ul\cf2 PrintTo}}}
+ ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZF" }{}}{\fldrslt {\cs37\ul\cf2 EnumWithPrintTo}}}
+ e, {\b std::ostream} *os)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAB" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (FormatForComparisonFailureMessageTest, FormatsNonCharArrayAsPointer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAC" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (FormatForComparisonFailureMessageTest, WorksForCharArrayVsCharArray)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAD" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (FormatForComparisonFailureMessageTest, WorksForCharArrayVsPointer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAE" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (FormatForComparisonFailureMessageTest, WorksForCharArrayVsStdString)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAF" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (FormatForComparisonFailureMessageTest, WorksForCharPointerVsPointer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAG" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (FormatForComparisonFailureMessageTest, WorksForCharPointerVsStdString)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAH" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (FormatForComparisonFailureMessageTest, WorksForNonCharPointer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAI" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (FormatForComparisonFailureMessageTest, WorksForScalar)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (FormatForComparisonFailureMessageTest, WorksForWCharArrayVsPointer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAK" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (FormatForComparisonFailureMessageTest, WorksForWCharArrayVsWCharArray)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAL" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (FormatForComparisonFailureMessageTest, WorksForWCharPointerVsPointer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAM" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintArrayTest, BigArray)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAN" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintArrayTest, CharArrayWithNoTerminatingNul)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAO" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintArrayTest, ConstArray)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAP" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintArrayTest, ConstCharArrayWithTerminatingNul)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAQ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintArrayTest, ObjectArray)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAR" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintArrayTest, OneDimensionalArray)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAS" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintArrayTest, TwoDimensionalArray)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAT" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintArrayTest, WCharArrayWithNoTerminatingNul)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAU" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintArrayTest, WConstCharArrayWithTerminatingNul)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAV" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintBuiltInTypeTest, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAW" }{}}{\fldrslt {\cs37\ul\cf2 Bool}}}
+)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAX" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintBuiltInTypeTest, FloatingPoints)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAY" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintBuiltInTypeTest, Integer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAZ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintBuiltInTypeTest, Size_t)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBA" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintBuiltInTypeTest, Wchar_t)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBB" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintCharPointerTest, ConstSignedChar)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBC" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintCharPointerTest, ConstUnsignedChar)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBD" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintCharPointerTest, SignedChar)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBE" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintCharPointerTest, UnsignedChar)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBF" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintCharTest, PlainChar)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBG" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintCharTest, SignedChar)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBH" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintCharTest, UnsignedChar)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBI" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintClassTest, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBJ" }{}}{\fldrslt {\cs37\ul\cf2 BiggestIntConvertible}}}
+)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBK" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintCStringTest, Const)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBL" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintCStringTest, EscapesProperly)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBM" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintCStringTest, NonConst)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBN" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintCStringTest, Null)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBO" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintEnumTest, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACYZ" }{}}{\fldrslt {\cs37\ul\cf2 AnonymousEnum}}}
+)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBP" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintEnumTest, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZC" }{}}{\fldrslt {\cs37\ul\cf2 EnumWithoutPrinter}}}
+)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBQ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintEnumTest, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZF" }{}}{\fldrslt {\cs37\ul\cf2 EnumWithPrintTo}}}
+)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBR" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintEnumTest, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZH" }{}}{\fldrslt {\cs37\ul\cf2 EnumWithStreaming}}}
+)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBS" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintPointerTest, MemberFunctionPointer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBT" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintPointerTest, MemberVariablePointer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBU" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintPointerTest, NonMemberFunctionPointer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBV" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintPointerToBuiltInTypeTest, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADAW" }{}}{\fldrslt {\cs37\ul\cf2 Bool}}}
+)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBW" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintPointerToBuiltInTypeTest, ConstVoid)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBX" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintPointerToBuiltInTypeTest, Void)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBY" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintPointerToPointerTest, IntPointerPointer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADBZ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintPrintableTypeTest, InUserNamespace)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCA" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintPrintableTypeTest, PointerInUserNamespace)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCB" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintPrintableTypeTest, TemplateInUserNamespace)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCC" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintReferenceTest, HandlesFunctionPointer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCD" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintReferenceTest, HandlesMemberFunctionPointer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCE" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintReferenceTest, HandlesMemberVariablePointer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCF" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintReferenceTest, PrintsAddressAndValue)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCG" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, ConstIterator)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCH" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, EmptyDeque)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCI" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, Iterator)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, List)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCK" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, LongSequence)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCL" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, Map)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCM" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, MultiMap)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCN" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, MultiSet)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCO" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, NestedContainer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCP" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, NonEmptyDeque)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCQ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, OneDimensionalNativeArray)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCR" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, Pair)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCS" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, Set)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCT" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, TwoDimensionalNativeArray)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCU" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStlContainerTest, Vector)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCV" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStreamableTypeTest, InGlobalNamespace)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCW" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStreamableTypeTest, TemplateTypeInUserNamespace)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCX" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStringTest, StringAmbiguousHex)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCY" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintStringTest, StringInStdNamespace)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADCZ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintToStringTest, EscapesForPointerToConstChar)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDA" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintToStringTest, EscapesForPointerToNonConstChar)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDB" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintToStringTest, WorksForArray)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDC" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintToStringTest, WorksForCharArray)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDD" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintToStringTest, WorksForCharArrayWithEmbeddedNul)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDE" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintToStringTest, WorksForPointerToConstChar)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDF" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintToStringTest, WorksForPointerToNonConstChar)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDG" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintToStringTest, WorksForScalar)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDH" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintTypeSizeTest, Wchar_t)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDI" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintTypeWithGenericStreamingTest, NonTemplateType)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDJ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintTypeWithGenericStreamingTest, TemplateType)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDK" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintTypeWithGenericStreamingTest, TypeImplicitlyConvertible)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDL" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintUnprintableTypeTest, InGlobalNamespace)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDM" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintUnprintableTypeTest, InUserNamespace)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDN" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintUnpritableTypeTest, BigObject)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDO" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintWideCStringTest, Const)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDP" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintWideCStringTest, EscapesProperly)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDQ" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintWideCStringTest, NonConst)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDR" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (PrintWideCStringTest, Null)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDS" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (UniversalPrintTest, WorksForCharArray)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDT" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (UniversalPrintTest, WorksForCString)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDU" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (UniversalPrintTest, WorksForNonReference)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDV" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (UniversalPrintTest, WorksForReference)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDW" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (UniversalTersePrintTest, WorksForCString)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDX" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (UniversalTersePrintTest, WorksForNonReference)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAADDY" }{}}{\fldrslt {\cs37\ul\cf2 TEST}}}
+ (UniversalTersePrintTest, WorksForReference)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v EXPECT_PRINT_TO_STRING_\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:EXPECT_PRINT_TO_STRING_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_PRINT_TO_STRING_( value,  expected_string)}}
+\par
+{\bkmkstart AAAAAAACYY}
+{\bkmkend AAAAAAACYY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\b Value:}{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABLS" }{}}{\fldrslt {\cs37\ul\cf2 EXPECT_TRUE}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABIJ" }{}}{\fldrslt {\cs37\ul\cf2 PrintToString}}}
+(value) == (expected_string))        \\\par
+      << {\cf22 " where "} #value {\cf22 " prints as "} << ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABIJ" }{}}{\fldrslt {\cs37\ul\cf2 PrintToString}}}
+(value))\par
+}
+{
+Definition at line 1444 of file gtest-printers_test.cc.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumeration Type Documentation\par
+\pard\plain 
+{\xe \v AnonymousEnum\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:AnonymousEnum}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACYZ" }{}}{\fldrslt {\cs37\ul\cf2 AnonymousEnum}}}
+}}
+\par
+{\bkmkstart AAAAAAACYZ}
+{\bkmkend AAAAAAACYZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v kAE1\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:kAE1}
+{\qr kAE1{\bkmkstart AAAAAAACZA}
+{\bkmkend AAAAAAACZA}
+\cell }{\cell }{\row }
+{\xe \v kAE2\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:kAE2}
+{\qr kAE2{\bkmkstart AAAAAAACZB}
+{\bkmkend AAAAAAACZB}
+\cell }{\cell }{\row }
+}
+\par
+{
+Definition at line 68 of file gtest-printers_test.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 68                    \{\par
+69   {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZA" }{}}{\fldrslt {\cs37\ul\cf2 kAE1}}}
+ = -1,\par
+70   {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZB" }{}}{\fldrslt {\cs37\ul\cf2 kAE2}}}
+ = 1\par
+71 \};\par
+}
+}
+{\xe \v EnumWithoutPrinter\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:EnumWithoutPrinter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZC" }{}}{\fldrslt {\cs37\ul\cf2 EnumWithoutPrinter}}}
+}}
+\par
+{\bkmkstart AAAAAAACZC}
+{\bkmkend AAAAAAACZC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v kEWP1\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:kEWP1}
+{\qr kEWP1{\bkmkstart AAAAAAACZD}
+{\bkmkend AAAAAAACZD}
+\cell }{\cell }{\row }
+{\xe \v kEWP2\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:kEWP2}
+{\qr kEWP2{\bkmkstart AAAAAAACZE}
+{\bkmkend AAAAAAACZE}
+\cell }{\cell }{\row }
+}
+\par
+{
+Definition at line 74 of file gtest-printers_test.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 74                         \{\par
+75   {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZD" }{}}{\fldrslt {\cs37\ul\cf2 kEWP1}}}
+ = -2,\par
+76   {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZE" }{}}{\fldrslt {\cs37\ul\cf2 kEWP2}}}
+ = 42\par
+77 \};\par
+}
+}
+{\xe \v EnumWithPrintTo\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:EnumWithPrintTo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZF" }{}}{\fldrslt {\cs37\ul\cf2 EnumWithPrintTo}}}
+}}
+\par
+{\bkmkstart AAAAAAACZF}
+{\bkmkend AAAAAAACZF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v kEWPT1\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:kEWPT1}
+{\qr kEWPT1{\bkmkstart AAAAAAACZG}
+{\bkmkend AAAAAAACZG}
+\cell }{\cell }{\row }
+}
+\par
+{
+Definition at line 89 of file gtest-printers_test.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 89                      \{\par
+90   {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZG" }{}}{\fldrslt {\cs37\ul\cf2 kEWPT1}}}
+ = 1\par
+91 \};\par
+}
+}
+{\xe \v EnumWithStreaming\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:EnumWithStreaming}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZH" }{}}{\fldrslt {\cs37\ul\cf2 EnumWithStreaming}}}
+}}
+\par
+{\bkmkstart AAAAAAACZH}
+{\bkmkend AAAAAAACZH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v kEWS1\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:kEWS1}
+{\qr kEWS1{\bkmkstart AAAAAAACZI}
+{\bkmkend AAAAAAACZI}
+\cell }{\cell }{\row }
+}
+\par
+{
+Definition at line 80 of file gtest-printers_test.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 80                        \{\par
+81   {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZI" }{}}{\fldrslt {\cs37\ul\cf2 kEWS1}}}
+ = 10\par
+82 \};\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v operator<<\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void operator<< (::{\b std::ostream} &  {\i os}, const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZN" }{}}{\fldrslt {\cs37\ul\cf2 StreamableInGlobal}}}
+ & )}}
+\par
+{\bkmkstart AAAAAAACZM}
+{\bkmkend AAAAAAACZM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 118 of file gtest-printers_test.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 118                                                                     \{\par
+119   os << {\cf22 "StreamableInGlobal"};\par
+120 \}\par
+}
+}
+{\xe \v operator<<\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void operator<< (::{\b std::ostream} &  {\i os}, const {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZN" }{}}{\fldrslt {\cs37\ul\cf2 StreamableInGlobal}}}
+ * )}}
+\par
+{\bkmkstart AAAAAAACZO}
+{\bkmkend AAAAAAACZO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 122 of file gtest-printers_test.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 122                                                              \{\par
+123   os << {\cf22 "StreamableInGlobal*"};\par
+124 \}\par
+}
+}
+{\xe \v operator<<\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b std::ostream}& operator<< ({\b std::ostream} &  {\i os}, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZH" }{}}{\fldrslt {\cs37\ul\cf2 EnumWithStreaming}}}
+  {\i e})}}
+\par
+{\bkmkstart AAAAAAACZT}
+{\bkmkend AAAAAAACZT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 84 of file gtest-printers_test.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 84                                                             \{\par
+85   {\cf19 return} os << (e == {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZI" }{}}{\fldrslt {\cs37\ul\cf2 kEWS1}}}
+ ? {\cf22 "kEWS1"} : {\cf22 "invalid"});\par
+86 \}\par
+}
+{
+\ql
+References kEWS1.}\par
+}
+{\xe \v PrintTo\:gtest-printers_test.cc}
+{\xe \v gtest-printers_test.cc\:PrintTo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PrintTo ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZF" }{}}{\fldrslt {\cs37\ul\cf2 EnumWithPrintTo}}}
+  {\i e}, {\b std::ostream} *  {\i os})}}
+\par
+{\bkmkstart AAAAAAADAA}
+{\bkmkend AAAAAAADAA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 93 of file gtest-printers_test.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 93                                                 \{\par
+94   *os << (e == {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACZG" }{}}{\fldrslt {\cs37\ul\cf2 kEWPT1}}}
+ ? {\cf22 "kEWPT1"} : {\cf22 "invalid"});\par
+95 \}\par
+}
+{
+\ql
+References kEWPT1.}\par
+}
+}

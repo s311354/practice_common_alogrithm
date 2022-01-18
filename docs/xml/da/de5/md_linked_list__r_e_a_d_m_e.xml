@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/de5/md_linked_list__r_e_a_d_m_e" kind="page">
+    <compoundname>md_linked_list_README</compoundname>
+    <title>Overview of Linked List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect3 id="da/de5/md_linked_list__r_e_a_d_m_e_1autotoc_md22">
+<title>The concept of Templates</title>
+<para>A template is a C++ entity that defines class (class template) or function (function template). When a class template specialization is referenced in context that requires a complete objecttype, or when a function template specialization is referenced in context that requires a function to exist, the template is instantiated, unless the template was already explicitly specialized or explicitly instantiated.</para>
+<para>It is worth mentioning that we need to avoid linker error with template classes or functions when compiling and trying to linking .cpp files. One of solution for this is to leave the definition of the template function or class in the .cpp file. <ulink url="https://isocpp.org/wiki/faq/templates#separate-template-class-defn-from-decl">Linker Error</ulink> describes more details.</para>
+<para>The simple example: <preformatted><computeroutput>// <ref refid="d0/dea/linked__list_8cc" kindref="compound">linked_list.cc</ref>
+...
+template class LinkedList&lt;int&gt;;
+template class LinkedList&lt;std::string&gt;;
+...
+
+// <ref refid="d1/d4a/linked__list_8h" kindref="compound">linked_list.h</ref>
+template &lt;class T&gt; class LinkedList { ... };</computeroutput></preformatted></para>
+</sect3>
+<sect3 id="da/de5/md_linked_list__r_e_a_d_m_e_1autotoc_md23">
+<title>The concept of Member access operators</title>
+<para>&lt;font size=&quot;3&quot; face=&quot;Courier New&quot;&gt; <table rows="3" cols="4"><row>
+<entry thead="yes"><para>Operator </para>
+</entry><entry thead="yes"><para>Operator name </para>
+</entry><entry thead="yes"><para>Example </para>
+</entry><entry thead="yes"><para>Description  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>* </para>
+</entry><entry thead="no"><para>pointer dereference </para>
+</entry><entry thead="no"><para>*a </para>
+</entry><entry thead="no"><para>deference the pointer a to access the object or function it refers to  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>&amp; </para>
+</entry><entry thead="no"><para>address of </para>
+</entry><entry thead="no"><para>&amp;a </para>
+</entry><entry thead="no"><para>create a pointer that refers to the object or function a  </para>
+</entry></row>
+</table>
+&lt;/font&gt;</para>
+</sect3>
+<sect3 id="da/de5/md_linked_list__r_e_a_d_m_e_1autotoc_md24">
+<title>Reference</title>
+<para>[1] <ulink url="https://en.cppreference.com/w/c/language/operator_member_access">Member access operators</ulink></para>
+<para>[2] <ulink url="https://isocpp.org/wiki/faq/templates#separate-template-fn-defn-from-decl">How can I avoid linker errors with my template functions?</ulink></para>
+<para>[3] <ulink url="https://en.cppreference.com/w/cpp/language/templates">cppreference: Templates</ulink></para>
+<para><ulink url="https://isocpp.org/wiki/faq/templates#separate-template-class-defn-from-decl">Linker Error</ulink> </para>
+</sect3>
+    </detaileddescription>
+    <location file="linked_list/README.md"/>
+  </compounddef>
+</doxygen>

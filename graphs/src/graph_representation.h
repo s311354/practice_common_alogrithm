@@ -40,9 +40,9 @@ public:
 };
 
 /*! \class GraphRepresentationList
- *  \brief Brief class description
+ *  \brief Interface of Graph Representation
  *
- *  Detailed description
+ *  The strategy pattern seperates the selection of algorithm from the implementation og the algorithm. Allows for the selection to be made based upon context.
  */
 class GraphRepresentationList : public GraphRepresentation
 {

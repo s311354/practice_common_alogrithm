@@ -47,6 +47,7 @@ bool Solutions::isValidString(std::string s)
     return true;
 }
 
+
 /*! \brief Minimum Deletions to Make Character Frequencies Unique
  *
  *  A string s is called good if there are no two different characters in s that have the same frequency.
@@ -321,6 +322,5 @@ int Solutions::largestK( std::vector<int> & nums)
 
     return ans;
 }
-
 
 } /* namespace leetcode */

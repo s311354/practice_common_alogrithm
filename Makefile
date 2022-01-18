@@ -285,6 +285,58 @@ linkedlists_lib/fast:
 	$(MAKE) $(MAKESILENT) -f linked_list/src/CMakeFiles/linkedlists_lib.dir/build.make linked_list/src/CMakeFiles/linkedlists_lib.dir/build
 .PHONY : linkedlists_lib/fast
 
+#=============================================================================
+# Target rules for targets named priority_queue
+
+# Build rule for target.
+priority_queue: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 priority_queue
+.PHONY : priority_queue
+
+# fast build rule for target.
+priority_queue/fast:
+	$(MAKE) $(MAKESILENT) -f priority_queue/CMakeFiles/priority_queue.dir/build.make priority_queue/CMakeFiles/priority_queue.dir/build
+.PHONY : priority_queue/fast
+
+#=============================================================================
+# Target rules for targets named queue_linked_list
+
+# Build rule for target.
+queue_linked_list: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 queue_linked_list
+.PHONY : queue_linked_list
+
+# fast build rule for target.
+queue_linked_list/fast:
+	$(MAKE) $(MAKESILENT) -f queue_linked_list/CMakeFiles/queue_linked_list.dir/build.make queue_linked_list/CMakeFiles/queue_linked_list.dir/build
+.PHONY : queue_linked_list/fast
+
+#=============================================================================
+# Target rules for targets named solutions
+
+# Build rule for target.
+solutions: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 solutions
+.PHONY : solutions
+
+# fast build rule for target.
+solutions/fast:
+	$(MAKE) $(MAKESILENT) -f leetcode_practice/CMakeFiles/solutions.dir/build.make leetcode_practice/CMakeFiles/solutions.dir/build
+.PHONY : solutions/fast
+
+#=============================================================================
+# Target rules for targets named solutions_lib
+
+# Build rule for target.
+solutions_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 solutions_lib
+.PHONY : solutions_lib
+
+# fast build rule for target.
+solutions_lib/fast:
+	$(MAKE) $(MAKESILENT) -f leetcode_practice/src/CMakeFiles/solutions_lib.dir/build.make leetcode_practice/src/CMakeFiles/solutions_lib.dir/build
+.PHONY : solutions_lib/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -303,7 +355,11 @@ help:
 	@echo "... hash_table"
 	@echo "... linkedlists_lib"
 	@echo "... linkedlists_run"
+	@echo "... priority_queue"
+	@echo "... queue_linked_list"
 	@echo "... singleton_pattern"
+	@echo "... solutions"
+	@echo "... solutions_lib"
 	@echo "... strategy_pattern"
 .PHONY : help
 

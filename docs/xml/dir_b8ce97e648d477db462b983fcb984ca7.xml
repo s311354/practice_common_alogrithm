@@ -2,7 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_b8ce97e648d477db462b983fcb984ca7" kind="dir">
     <compoundname>linked_list</compoundname>
+    <innerdir refid="dir_0ce1b173b167bd3f6d4ed712af3198f7">linked_list/CMakeFiles</innerdir>
     <innerdir refid="dir_7404b51560fdc8387419f7e4ed984d41">linked_list/src</innerdir>
+    <innerdir refid="dir_87da542d9f5b51de7370a4feadffb814">linked_list/tests</innerdir>
+    <innerfile refid="d7/dc9/linked__list_2main_8cc">main.cc</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

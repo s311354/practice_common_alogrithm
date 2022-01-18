@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/main.cc" "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/CMakeFiles/priority_queue.dir/main.cc.o"
   "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/priority_queue.cc" "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/CMakeFiles/priority_queue.dir/priority_queue.cc.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

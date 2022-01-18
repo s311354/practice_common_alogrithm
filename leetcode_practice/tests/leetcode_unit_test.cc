@@ -67,6 +67,15 @@ TEST_F(SolutionsTest, largestKTest)
 }
 
 
+TEST_F(SolutionsTest, maxLengthTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::string arr = {"un", "iq", "ue"};
+    int expected_value = 4;
+
+    EXPECT_EQ(expected_value, solutions::maxLength(arr));
+}
 
 
 

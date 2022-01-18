@@ -51,6 +51,7 @@
         <location file="queue_linked_list/src/queue_linked_list.h" line="25" column="13" bodyfile="queue_linked_list/src/queue_linked_list.cc" bodystart="42" bodyend="60"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
         <references refid="dd/d71/classcommon_1_1_list_element_1a7b6af5a368ca2b7fceb56b7c4a5d07af" compoundref="d7/df5/queue__linked__list_2src_2list__element_8h" startline="21" endline="21">ListElement&lt; T &gt;::GetNext</references>
+        <referencedby refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" compoundref="d9/df4/queue__linked__list__unit__test_8cc" startline="9" endline="19">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d81/classcommon_1_1_queue_linked_list_1abcfbdba215d3b15fbb4b682969943a6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -64,6 +65,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="queue_linked_list/src/queue_linked_list.h" line="27" column="10" bodyfile="queue_linked_list/src/queue_linked_list.cc" bodystart="66" bodyend="69"/>
+        <referencedby refid="d2/dbd/namespacegoogletest_1ac17957d2b69de295d13b79e6a8f73607" compoundref="d9/df4/queue__linked__list__unit__test_8cc" startline="23" endline="29">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d81/classcommon_1_1_queue_linked_list_1a486cdb4401658fe6fb93b886054d9a40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -81,6 +83,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="queue_linked_list/src/queue_linked_list.h" line="23" column="10" bodyfile="queue_linked_list/src/queue_linked_list.cc" bodystart="25" bodyend="37"/>
+        <referencedby refid="d2/dbd/namespacegoogletest_1a1eee113121cea3b0083e3ed4cc65d228" compoundref="d9/df4/queue__linked__list__unit__test_8cc" startline="9" endline="19">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d1/d81/classcommon_1_1_queue_linked_list_1a7852893ce888c869972c240cd063a64b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="d1/d81/classcommon_1_1_queue_linked_list" kindref="compound">QueueLinkedList</ref> &amp;</type>

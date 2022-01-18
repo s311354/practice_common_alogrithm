@@ -12,6 +12,21 @@ var annotated_dup =
       [ "ListElement", "dd/d71/classcommon_1_1_list_element.html", "dd/d71/classcommon_1_1_list_element" ],
       [ "QueueLinkedList", "d1/d81/classcommon_1_1_queue_linked_list.html", "d1/d81/classcommon_1_1_queue_linked_list" ]
     ] ],
+    [ "googletest", "d2/dbd/namespacegoogletest.html", [
+      [ "BackTest", "dd/d6f/classgoogletest_1_1_back_test.html", "dd/d6f/classgoogletest_1_1_back_test" ],
+      [ "EmptyTest", "df/d98/classgoogletest_1_1_empty_test.html", "df/d98/classgoogletest_1_1_empty_test" ],
+      [ "EnqueueTest", "de/d95/classgoogletest_1_1_enqueue_test.html", "de/d95/classgoogletest_1_1_enqueue_test" ],
+      [ "EraseTest", "d0/dc5/classgoogletest_1_1_erase_test.html", "d0/dc5/classgoogletest_1_1_erase_test" ],
+      [ "FrontTest", "db/d2c/classgoogletest_1_1_front_test.html", "db/d2c/classgoogletest_1_1_front_test" ],
+      [ "PopBackTest", "d8/d0b/classgoogletest_1_1_pop_back_test.html", "d8/d0b/classgoogletest_1_1_pop_back_test" ],
+      [ "PopFrontTest", "de/d4e/classgoogletest_1_1_pop_front_test.html", "de/d4e/classgoogletest_1_1_pop_front_test" ],
+      [ "RemoveValueTest", "de/d48/classgoogletest_1_1_remove_value_test.html", "de/d48/classgoogletest_1_1_remove_value_test" ],
+      [ "ReverseTest", "d6/da2/classgoogletest_1_1_reverse_test.html", "d6/da2/classgoogletest_1_1_reverse_test" ],
+      [ "SizeTest", "d0/d58/classgoogletest_1_1_size_test.html", "d0/d58/classgoogletest_1_1_size_test" ],
+      [ "SolutionsTest", "dc/df1/classgoogletest_1_1_solutions_test.html", "dc/df1/classgoogletest_1_1_solutions_test" ],
+      [ "ValueAtTest", "dd/dde/classgoogletest_1_1_value_at_test.html", "dd/dde/classgoogletest_1_1_value_at_test" ],
+      [ "ValueNFromEndTest", "d9/df3/classgoogletest_1_1_value_n_from_end_test.html", "d9/df3/classgoogletest_1_1_value_n_from_end_test" ]
+    ] ],
     [ "leetcode", "db/dbd/namespaceleetcode.html", [
       [ "Solutions", "d0/d8a/classleetcode_1_1_solutions.html", "d0/d8a/classleetcode_1_1_solutions" ]
     ] ],

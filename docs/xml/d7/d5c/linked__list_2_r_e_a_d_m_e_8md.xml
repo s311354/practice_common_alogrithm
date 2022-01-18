@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/d5c/linked__list_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>Overview<sp/>of<sp/>Linked<sp/>List<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>The<sp/>concept<sp/>of<sp/>Templates<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>template<sp/>is<sp/>a<sp/>C++<sp/>entity<sp/>that<sp/>defines<sp/>class<sp/>(class<sp/>template)<sp/>or<sp/>function<sp/>(function<sp/>template).<sp/>When<sp/>a<sp/>class<sp/>template<sp/>specialization<sp/>is<sp/>referenced<sp/>in<sp/>context<sp/>that<sp/>requires<sp/>a<sp/>complete<sp/>objecttype,<sp/>or<sp/>when<sp/>a<sp/>function<sp/>template<sp/>specialization<sp/>is<sp/>referenced<sp/>in<sp/>context<sp/>that<sp/>requires<sp/>a<sp/>function<sp/>to<sp/>exist,<sp/>the<sp/>template<sp/>is<sp/>instantiated,<sp/>unless<sp/>the<sp/>template<sp/>was<sp/>already<sp/>explicitly<sp/>specialized<sp/>or<sp/>explicitly<sp/>instantiated.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">It<sp/>is<sp/>worth<sp/>mentioning<sp/>that<sp/>we<sp/>need<sp/>to<sp/>avoid<sp/>linker<sp/>error<sp/>with<sp/>template<sp/>classes<sp/>or<sp/>functions<sp/>when<sp/>compiling<sp/>and<sp/>trying<sp/>to<sp/>linking<sp/>.cpp<sp/>files.<sp/>One<sp/>of<sp/>solution<sp/>for<sp/>this<sp/>is<sp/>to<sp/>leave<sp/>the<sp/>definition<sp/>of<sp/>the<sp/>template<sp/>function<sp/>or<sp/>class<sp/>in<sp/>the<sp/>.cpp<sp/>file.<sp/>[Linker<sp/>Error][linkererror]<sp/>describes<sp/>more<sp/>details.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>simple<sp/>example:</highlight></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>class=&quot;language-shell<sp/>highlighter-rouge&quot;&gt;&lt;pre<sp/>class=&quot;highlight&quot;&gt;&lt;code<sp/>class=&quot;hljs<sp/>ruby&quot;&gt;&lt;span<sp/>class=&quot;nb&quot;&gt;//<sp/>linked_list.cc</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">template<sp/>class<sp/>LinkedList&lt;int&gt;;</highlight></codeline>
+<codeline><highlight class="normal">template<sp/>class<sp/>LinkedList&lt;std::string&gt;;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>linked_list.h</highlight></codeline>
+<codeline><highlight class="normal">template<sp/>&lt;class<sp/>T&gt;<sp/>class<sp/>LinkedList<sp/>{<sp/>...<sp/>};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>The<sp/>concept<sp/>of<sp/>Member<sp/>access<sp/>operators<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;font<sp/>size=&quot;3&quot;<sp/>face=&quot;Courier<sp/>New&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;table&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;th&gt;Operator&lt;/th&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;th&gt;Operator<sp/>name&lt;/th&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;th&gt;Example&lt;/th&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;th&gt;Description&lt;/th&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;/tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;*&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;pointer<sp/>dereference&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;*a&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;deference<sp/>the<sp/>pointer<sp/>a<sp/>to<sp/>access<sp/>the<sp/>object<sp/>or<sp/>function<sp/>it<sp/>refers<sp/>to&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;/tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;tr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;&amp;&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;address<sp/>of&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;&amp;a&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;td&gt;create<sp/>a<sp/>pointer<sp/>that<sp/>refers<sp/>to<sp/>the<sp/>object<sp/>or<sp/>function<sp/>a&lt;/td&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;/tr&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/table&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/font&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Reference<sp/>####</highlight></codeline>
+<codeline><highlight class="normal">[1]<sp/>[Member<sp/>access<sp/>operators](https://en.cppreference.com/w/c/language/operator_member_access)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[2]<sp/>[How<sp/>can<sp/>I<sp/>avoid<sp/>linker<sp/>errors<sp/>with<sp/>my<sp/>template<sp/>functions?](https://isocpp.org/wiki/faq/templates#separate-template-fn-defn-from-decl)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[3]<sp/>[cppreference:<sp/>Templates](https://en.cppreference.com/w/cpp/language/templates)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[Linker<sp/>Error][linkererror]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[linkererror]:https://isocpp.org/wiki/faq/templates#separate-template-class-defn-from-decl<sp/>&quot;https://isocpp.org/wiki/faq/templates#separate-template-class-defn-from-decl&quot;</highlight></codeline>
+    </programlisting>
+    <location file="linked_list/README.md"/>
+  </compounddef>
+</doxygen>

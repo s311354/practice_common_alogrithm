@@ -43,6 +43,11 @@ public:
     // OA 2019 Largest K such that both K and -K exist in array
     int largestK( std::vector<int>& nums);
 
+
+    // 1239. Maximum length of a Concatenated String with Unique Characters 
+    int maxLength( std::vector< std::string > & arr);
+
+
     /* ========== BFS ============ */
     // 317. Shortest Distance from All Buildings
     int shortestDistance( std::vector< std::vector<int> > & grid );

@@ -1,0 +1,12 @@
+digraph "PredFormatFunction2"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="PredFormatFunction2",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PredFormatFunctor2\l::operator()",height=0.2,width=0.4,color="black",URL="$d4/daf/struct_pred_format_functor2.html#a2d91332608adabaf356fd809747e6283",tooltip=" "];
+}

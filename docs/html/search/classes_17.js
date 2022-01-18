@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xmlunittestresultprinter_4445',['XmlUnitTestResultPrinter',['../d3/dc6/classtesting_1_1internal_1_1_xml_unit_test_result_printer.html',1,'testing::internal']]]
+  ['xmlunittestresultprinter_4483',['XmlUnitTestResultPrinter',['../d3/dc6/classtesting_1_1internal_1_1_xml_unit_test_result_printer.html',1,'testing::internal']]]
 ];

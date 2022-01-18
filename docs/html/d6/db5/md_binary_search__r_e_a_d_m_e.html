@@ -87,14 +87,63 @@ $(document).ready(function(){initNavTree('d6/db5/md_binary_search__r_e_a_d_m_e.h
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h3><a class="anchor" id="autotoc_md6"></a>
+The concept of binary search algorithm</h3>
+<p>Binary search is a search algorithm that finds the poistion of a target value whithin a sorted array or data structure. Binary search compares the target value to the middle element of that array or data structure.</p>
+<h3><a class="anchor" id="autotoc_md7"></a>
 The concept of struct and class declarations</h3>
 <p>For C program, a struct is a type consisting of a sequence of members whose storage is allocated in an ordered sequence. (as opposed to union, which is a type consisting of a sequence of members whose storage overlaps) Within a struct object, addresses of its elements increase in order in which the members were defined.</p>
 <p>For C++ program, classes and structs are user-defined types, defined by class-specifier.</p>
-<h3><a class="anchor" id="autotoc_md7"></a>
+<h3><a class="anchor" id="autotoc_md8"></a>
+The concept of pointer and reference</h3>
+<p>A pointer is an object that stores the address, or location in memory, of some other object. That is, it is a reference to some other value. A pointer is a type of thing, the same way an integer or string is a type of thing. In addition, a pointer exist so that you can dereference it to set or get the addressed value.</p>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">int x = 0;
+int* px = 
+*px = 42; // dereference px -&gt; x</span></code></pre></div><p>Reference is another value which eliminates nearly all the problems that come with pointers. It is still possible to mess up, but not easily.</p>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">int x = -7;
+int &amp; y = x;
+y = 12; // exact same thing as x = 12;</span></code></pre></div><p>Note that if you can resolve the name inline then you can simply have both names for the same value in your symbol lookup table. (this is an excellent optimization!). Otherwise, you'll need to generate object code that actually used a pointer to do the dirty work.</p>
+<h3><a class="anchor" id="autotoc_md9"></a>
+The concept of Pass-by-value, Pass-by-reference and Pass-by-pointer</h3>
+<p>Pass-by-value: An argument passed by value is one where a value is copied into a special location in the computer's memory (called the "stack frame"). This location is special because the function has a name for it, and you can use that name to access the (local copy of the) value.</p>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">void by_value(int x)
+{
+    x+= 1; // 8
+}
+
+int <a class="el" href="../../d5/dbb/priority__queue_2_c_make_files_23_819_86_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>
+{
+    int z = 7; 
+    by_value(z); // 7
+}</span></code></pre></div><p>Pass-by-pointer: An argument passed by pointer is where a pointer value is copied into a special location in the computer's memory (called the "stack frame"). This local pointer can be dereferenced to access(and modify) the referent value.</p>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">void by_pointer(int* x)
+{
+    *x += 1; // 8
+}
+
+int <a class="el" href="../../d5/dbb/priority__queue_2_c_make_files_23_819_86_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>
+{
+    int z = 7;
+    by_pointer( &amp;z ); // 8
+}</span></code></pre></div><p>Pass-by-reference: An argument passed by reference is where the formal argument (the name) is an alias for the actual argument (the value).</p>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">void by_reference(int &amp; x)
+{
+    x += 1; // 8
+}
+
+int <a class="el" href="../../d5/dbb/priority__queue_2_c_make_files_23_819_86_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>
+{
+    int z = 7;
+    by_reference(z); // 8
+}
+</span></code></pre></div><p>Note that some people dislike the term pass-by-pointer. They feel it is misleading and inexact, since the actual argument to the function is a pointer value (an address) which is passed by value into function. Hence, they say this is really pass-by-value.</p>
+<h3><a class="anchor" id="autotoc_md10"></a>
 Reference</h3>
 <p>[1] <a href="https://en.cppreference.com/w/c/language/struct">cppreference: Struct declaration</a></p>
 <p>[2] <a href="https://en.cppreference.com/w/cpp/language/class">cppreference: Class declaration</a></p>
-<p>[3] <a href="https://en.cppreference.com/w/c/language/union">cppreference: Union declaration</a> </p>
+<p>[3] <a href="https://en.cppreference.com/w/c/language/union">cppreference: Union declaration</a></p>
+<p>[4] <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm">Wiki: Binary search algorithm</a></p>
+<p>[5] <a href="https://www.cplusplus.com/faq/beginners/call-by/">cplusplus: Pass-by-value vs Pass-by-reference</a></p>
+<p>[6] <a href="https://www.cplusplus.com/faq/beginners/pointers-and-references/">cplusplus: Pointer and References</a> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

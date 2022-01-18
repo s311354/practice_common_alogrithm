@@ -12,7 +12,10 @@ const string GraphRepresentation::kRepresentationTypeMatrix("matrix");
 const string GraphRepresentation::kGraphTypeDirected("directed");
 const string GraphRepresentation::kGraphTypeUndirected("undirected");
 
-unique_ptr<GraphRepresentation> GraphRepresentation::GetRepresentation(const string representation_type, const string graph_type) {
+
+//  Interface of graph representation ()
+unique_ptr<GraphRepresentation> GraphRepresentation::GetRepresentation(const string representation_type, const string graph_type)
+{
     if (representation_type == kRepresentationTypeList) {
         return unique_ptr<GraphRepresentation>(new GraphRepresentationList(graph_type));
     } else {
@@ -21,7 +24,8 @@ unique_ptr<GraphRepresentation> GraphRepresentation::GetRepresentation(const str
     }
 }
 
-GraphRepresentation::GraphRepresentation(const string graph_type) {
+GraphRepresentation::GraphRepresentation(const string graph_type) 
+{
     vertices = 0;
 
     if (graph_type == kGraphTypeDirected) {
@@ -31,12 +35,12 @@ GraphRepresentation::GraphRepresentation(const string graph_type) {
     }
 }
 
-void GraphRepresentationList::AddEdge(const int source, const int destination) {
-
+void GraphRepresentationList::AddEdge(const int source, const int destination)
+{
     /* static_cast can be used to convert from an int to a char. However, the resulting char may not have enough bits to hold the entire int vaule */
     unsigned long source_index = static_cast<unsigned long>(source);
 
-    int size_required = max(source, destination) + 1;
+    int size_required = std::max(source, destination) + 1;
 
     while (adjust_list.size() < size_required) {
         adjust_list.push_back(vector<int>());
@@ -45,9 +49,9 @@ void GraphRepresentationList::AddEdge(const int source, const int destination) {
     /* Operator[] does not do range checking. Accessing element not presenting in vector silently leads to undefined behaviors; .ar() member function does range checking and throws an expception when you are tring to access nonexisting element.*/
     auto adjacent_vertices = adjust_list.at(source_index);
 
-    std::vector<int>::iterator it = find(adjacent_vertices.begin(), adjacent_vertices.end(), destination);
+    std::vector<int>::iterator it = std::find(adjacent_vertices.begin(), adjacent_vertices.end(), destination);
 
-
+    // Don't add edge twice
     if (it == adjacent_vertices.end()) {
         adjust_list.at(source_index).push_back(destination);
     }
@@ -61,7 +65,8 @@ void GraphRepresentationList::AddEdge(const int source, const int destination) {
  *
  * \return Return parameter description
  */
-void GraphRepresentationList::BFS() {
+void GraphRepresentationList::BFS()
+{
     std::vector<int> components;
 
     const int NULL_PARENT = -1;
@@ -70,10 +75,11 @@ void GraphRepresentationList::BFS() {
     assert(parents);
 
     /* Assigns vaule to the frist n elements of sequence pointed by first */
-    fill_n(parents, vertices, NULL_PARENT);
+    std::fill_n(parents, vertices, NULL_PARENT);
 
     std::cout << "\n----------------\nBFS: " << std::endl;
 
+    // traversing from source (parent node) 
     for (unsigned long i = 0; i < adjust_list.size(); ++i) {
         if (parents[i] == NULL_PARENT) {
             components.push_back(i);
@@ -82,14 +88,16 @@ void GraphRepresentationList::BFS() {
         std::queue<int> to_visit;
         to_visit.push(i);
 
+//         std::cout << "\nparent node: " << i << std::endl;
+        // exploring the neighbour nodes
         while(!to_visit.empty()){
             int vertex = to_visit.front();
             to_visit.pop();
             std::cout << vertex << " ";
 
+            // exploring all nodes at the present depth prior to moving on to the nodes at the next depth level
             for (unsigned long n = 0; n < adjust_list[vertex].size(); ++n) {
                 int neighbor = adjust_list[vertex].at(n);
-
                 if (parents[neighbor] == NULL_PARENT) {
                     parents[neighbor] = vertex;
                     to_visit.push(neighbor);
@@ -114,13 +122,14 @@ void GraphRepresentationList::BFS() {
     delete [] parents;
 }
 
-/*! \brief Brief function description here
+/*! \brief Depth First Search
  *
- *  Detailed description: Depth First Search is a recursive algorithm that uses the idea of backtracking. It involves searches of all the nodes by going ahead if possible, else by backtracking. refer to https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/
+ *  Depth First Search is a recursive algorithm that uses the idea of backtracking. It involves searches of all the nodes by going ahead if possible, else by backtracking. refer to https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/
  *
- * \return Return parameter description
+ * \return None
  */
-void GraphRepresentationList::DFS() {
+void GraphRepresentationList::DFS()
+{
     std::vector<int> components;
 
     const int NULL_PARENT = -1;
@@ -135,16 +144,19 @@ void GraphRepresentationList::DFS() {
             components.push_back(i);
         }
 
-        std::stack<int> to_visit;
+        std::stack<int> to_visit; // LIFO
 
         to_visit.push(i);
 
+        // exploring all nodes
         while (!to_visit.empty()) {
             int vertex = to_visit.top();
             to_visit.pop();
 
             std::cout << vertex << " ";
 
+            // exploring as far as possible along each branch before backtracking
+//             std::cout << "Depth of " << vertex << ": " << adjust_list[vertex].size() << std::endl;
             for (unsigned long n = 0; n < adjust_list[vertex].size(); n++) {
                 int neighbor = adjust_list[vertex].at(n);
                 if (parents[neighbor] == NULL_PARENT) {
@@ -171,7 +183,8 @@ void GraphRepresentationList::DFS() {
     delete [] parents;
 }
 
-bool GraphRepresentationList::ContainsCycle() {
+bool GraphRepresentationList::ContainsCycle()
+{
     bool contains_cycle = false;
     const int STATUS_NEW = 0;
     const int STATUS_STARTED = 1;
@@ -218,7 +231,8 @@ bool GraphRepresentationList::ContainsCycle() {
     return contains_cycle;
 }
 
-void GraphRepresentationList::PrintDebug() {
+void GraphRepresentationList::PrintDebug()
+{
     std::cout << "Adjacency List:" << std::endl;
     std::cout << "Vertices: " << vertices << std::endl;
 

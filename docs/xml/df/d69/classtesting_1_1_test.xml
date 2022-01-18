@@ -2,6 +2,19 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="df/d69/classtesting_1_1_test" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>testing::Test</compoundname>
+    <derivedcompoundref refid="dd/d6f/classgoogletest_1_1_back_test" prot="public" virt="non-virtual">BackTest</derivedcompoundref>
+    <derivedcompoundref refid="df/d98/classgoogletest_1_1_empty_test" prot="public" virt="non-virtual">EmptyTest</derivedcompoundref>
+    <derivedcompoundref refid="de/d95/classgoogletest_1_1_enqueue_test" prot="public" virt="non-virtual">EnqueueTest</derivedcompoundref>
+    <derivedcompoundref refid="d0/dc5/classgoogletest_1_1_erase_test" prot="public" virt="non-virtual">EraseTest</derivedcompoundref>
+    <derivedcompoundref refid="db/d2c/classgoogletest_1_1_front_test" prot="public" virt="non-virtual">FrontTest</derivedcompoundref>
+    <derivedcompoundref refid="d8/d0b/classgoogletest_1_1_pop_back_test" prot="public" virt="non-virtual">PopBackTest</derivedcompoundref>
+    <derivedcompoundref refid="de/d4e/classgoogletest_1_1_pop_front_test" prot="public" virt="non-virtual">PopFrontTest</derivedcompoundref>
+    <derivedcompoundref refid="de/d48/classgoogletest_1_1_remove_value_test" prot="public" virt="non-virtual">RemoveValueTest</derivedcompoundref>
+    <derivedcompoundref refid="d6/da2/classgoogletest_1_1_reverse_test" prot="public" virt="non-virtual">ReverseTest</derivedcompoundref>
+    <derivedcompoundref refid="d0/d58/classgoogletest_1_1_size_test" prot="public" virt="non-virtual">SizeTest</derivedcompoundref>
+    <derivedcompoundref refid="dc/df1/classgoogletest_1_1_solutions_test" prot="public" virt="non-virtual">SolutionsTest</derivedcompoundref>
+    <derivedcompoundref refid="dd/dde/classgoogletest_1_1_value_at_test" prot="public" virt="non-virtual">ValueAtTest</derivedcompoundref>
+    <derivedcompoundref refid="d9/df3/classgoogletest_1_1_value_n_from_end_test" prot="public" virt="non-virtual">ValueNFromEndTest</derivedcompoundref>
     <includes refid="d8/d73/gtest_8h" local="no">gtest.h</includes>
     <innerclass refid="df/dfe/structtesting_1_1_test_1_1_setup__should__be__spelled___set_up" prot="package">testing::Test::Setup_should_be_spelled_SetUp</innerclass>
       <sectiondef kind="friend">
@@ -347,6 +360,90 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>RemoveValueTest</label>
+        <link refid="de/d48/classgoogletest_1_1_remove_value_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>SolutionsTest</label>
+        <link refid="dc/df1/classgoogletest_1_1_solutions_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ReverseTest</label>
+        <link refid="d6/da2/classgoogletest_1_1_reverse_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FrontTest</label>
+        <link refid="db/d2c/classgoogletest_1_1_front_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PopBackTest</label>
+        <link refid="d8/d0b/classgoogletest_1_1_pop_back_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>PopFrontTest</label>
+        <link refid="de/d4e/classgoogletest_1_1_pop_front_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Test</label>
+        <link refid="df/d69/classtesting_1_1_test"/>
+      </node>
+      <node id="13">
+        <label>ValueAtTest</label>
+        <link refid="dd/dde/classgoogletest_1_1_value_at_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>EnqueueTest</label>
+        <link refid="de/d95/classgoogletest_1_1_enqueue_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>EmptyTest</label>
+        <link refid="df/d98/classgoogletest_1_1_empty_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ValueNFromEndTest</label>
+        <link refid="d9/df3/classgoogletest_1_1_value_n_from_end_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BackTest</label>
+        <link refid="dd/d6f/classgoogletest_1_1_back_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>EraseTest</label>
+        <link refid="d0/dc5/classgoogletest_1_1_erase_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SizeTest</label>
+        <link refid="d0/d58/classgoogletest_1_1_size_test"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
     <collaborationgraph>
       <node id="1">
         <label>Test</label>

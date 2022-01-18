@@ -62,32 +62,32 @@ RM = /usr/local/Cellar/cmake/3.19.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice
+CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice
+CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # Include any dependencies generated for this target.
-include CMakeFiles/solutions.dir/depend.make
+include leetcode_practice/CMakeFiles/solutions.dir/depend.make
 
 # Include the progress variables for this target.
-include CMakeFiles/solutions.dir/progress.make
+include leetcode_practice/CMakeFiles/solutions.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/solutions.dir/flags.make
+include leetcode_practice/CMakeFiles/solutions.dir/flags.make
 
-CMakeFiles/solutions.dir/main.cc.o: CMakeFiles/solutions.dir/flags.make
-CMakeFiles/solutions.dir/main.cc.o: main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/solutions.dir/main.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/solutions.dir/main.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/main.cc
+leetcode_practice/CMakeFiles/solutions.dir/main.cc.o: leetcode_practice/CMakeFiles/solutions.dir/flags.make
+leetcode_practice/CMakeFiles/solutions.dir/main.cc.o: leetcode_practice/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object leetcode_practice/CMakeFiles/solutions.dir/main.cc.o"
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/solutions.dir/main.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/main.cc
 
-CMakeFiles/solutions.dir/main.cc.i: cmake_force
+leetcode_practice/CMakeFiles/solutions.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/solutions.dir/main.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/main.cc > CMakeFiles/solutions.dir/main.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/main.cc > CMakeFiles/solutions.dir/main.cc.i
 
-CMakeFiles/solutions.dir/main.cc.s: cmake_force
+leetcode_practice/CMakeFiles/solutions.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/solutions.dir/main.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/main.cc -o CMakeFiles/solutions.dir/main.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/main.cc -o CMakeFiles/solutions.dir/main.cc.s
 
 # Object files for target solutions
 solutions_OBJECTS = \
@@ -96,23 +96,23 @@ solutions_OBJECTS = \
 # External object files for target solutions
 solutions_EXTERNAL_OBJECTS =
 
-solutions: CMakeFiles/solutions.dir/main.cc.o
-solutions: CMakeFiles/solutions.dir/build.make
-solutions: src/libsolutions_lib.a
-solutions: CMakeFiles/solutions.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable solutions"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/solutions.dir/link.txt --verbose=$(VERBOSE)
+leetcode_practice/solutions: leetcode_practice/CMakeFiles/solutions.dir/main.cc.o
+leetcode_practice/solutions: leetcode_practice/CMakeFiles/solutions.dir/build.make
+leetcode_practice/solutions: leetcode_practice/src/libsolutions_lib.a
+leetcode_practice/solutions: leetcode_practice/CMakeFiles/solutions.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable solutions"
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/solutions.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/solutions.dir/build: solutions
+leetcode_practice/CMakeFiles/solutions.dir/build: leetcode_practice/solutions
 
-.PHONY : CMakeFiles/solutions.dir/build
+.PHONY : leetcode_practice/CMakeFiles/solutions.dir/build
 
-CMakeFiles/solutions.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles/solutions.dir/cmake_clean.cmake
-.PHONY : CMakeFiles/solutions.dir/clean
+leetcode_practice/CMakeFiles/solutions.dir/clean:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice && $(CMAKE_COMMAND) -P CMakeFiles/solutions.dir/cmake_clean.cmake
+.PHONY : leetcode_practice/CMakeFiles/solutions.dir/clean
 
-CMakeFiles/solutions.dir/depend:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/CMakeFiles/solutions.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/solutions.dir/depend
+leetcode_practice/CMakeFiles/solutions.dir/depend:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/CMakeFiles/solutions.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : leetcode_practice/CMakeFiles/solutions.dir/depend
 

@@ -2,7 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_a17c8b6130f5274ce7b58b4e830349de" kind="dir">
     <compoundname>leetcode_practice</compoundname>
+    <innerdir refid="dir_3b788a9f5443854b157138481ef00040">leetcode_practice/CMakeFiles</innerdir>
     <innerdir refid="dir_3b4336166f2037fca69634eaa648190d">leetcode_practice/src</innerdir>
+    <innerdir refid="dir_3cd66976ee1b7f8cc6b6db7a974a5f98">leetcode_practice/tests</innerdir>
+    <innerfile refid="de/d3e/leetcode__practice_2main_8cc">main.cc</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

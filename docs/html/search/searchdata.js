@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: ":_abcdefghijklmnopqrstuvwxyz~",
   1: "abcdefghijklmnopqrstuvwxyz",
   2: "abceiprst",
-  3: "clpst",
+  3: "cglpst",
   4: "abcdefghijlmnopqrstuv",
   5: "_abcdefghijklmnopqrstuvwxyz~",
   6: "_abcdefghiklmnopqrstuv",
@@ -11,7 +11,7 @@ var indexSectionsWithContent =
   8: "cegirt",
   9: "cghikv",
   10: ":agilstu",
-  11: "acdefghlpst",
+  11: "acdefghpst",
   12: "o"
 };
 

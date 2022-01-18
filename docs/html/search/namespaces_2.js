@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['proto2_4513',['proto2',['../de/d03/namespaceproto2.html',1,'']]]
+  ['leetcode_4551',['leetcode',['../db/dbd/namespaceleetcode.html',1,'']]]
 ];

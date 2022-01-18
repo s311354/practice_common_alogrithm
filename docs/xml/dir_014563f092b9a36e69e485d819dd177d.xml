@@ -2,7 +2,9 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_014563f092b9a36e69e485d819dd177d" kind="dir">
     <compoundname>graphs</compoundname>
+    <innerdir refid="dir_4a696a02c85362e8d2b75a584448e91b">graphs/CMakeFiles</innerdir>
     <innerdir refid="dir_b95233994fa43ca1a16882292fdf76f2">graphs/src</innerdir>
+    <innerfile refid="db/df7/graphs_2main_8cc">main.cc</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

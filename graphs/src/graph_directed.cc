@@ -3,27 +3,34 @@
 
 namespace common {
 
-GraphDirected::GraphDirected(const string representation_type) {
+GraphDirected::GraphDirected(const string representation_type)
+{
+    // Interface
     representation = GraphRepresentation::GetRepresentation(representation_type, GraphRepresentation::kGraphTypeDirected);
 }
 
-void GraphDirected::BFS() {
+void GraphDirected::BFS()
+{
    representation->BFS(); 
 }
 
-void GraphDirected::DFS() {
+void GraphDirected::DFS()
+{
     representation->DFS();
 }
 
-void GraphDirected::AddEdge(const int source, const int destination) {
+void GraphDirected::AddEdge(const int source, const int destination)
+{
     representation->AddEdge(source, destination);
 }
 
-void GraphDirected::PrintDebug() {
+void GraphDirected::PrintDebug()
+{
     representation->PrintDebug();
 }
 
-const int GraphDirected::GetVertexCount() {
+const int GraphDirected::GetVertexCount()
+{
     return representation->vertices;
 }
     

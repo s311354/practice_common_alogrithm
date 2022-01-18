@@ -1,0 +1,711 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+EmptyTest Class Reference\par \pard\plain 
+{\tc\tcl2 \v EmptyTest}
+{\xe \v EmptyTest}
+{\bkmkstart AAAAAAACEV}
+{\bkmkend AAAAAAACEV}
+Inheritance diagram for EmptyTest:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "dc/d00/classgoogletest_1_1_empty_test__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for EmptyTest:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d6/d7a/classgoogletest_1_1_empty_test__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMP" }{}}{\fldrslt {\cs37\ul\cf2 SetUp}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMQ" }{}}{\fldrslt {\cs37\ul\cf2 TearDown}}}
+ ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Package Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMR" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_DISALLOW_COPY_AND_ASSIGN_}}}
+ ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMS" }{}}{\fldrslt {\cs37\ul\cf2 Test}}}
+)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMT" }{}}{\fldrslt {\cs37\ul\cf2 Setup_should_be_spelled_SetUp}}}
+ * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMU" }{}}{\fldrslt {\cs37\ul\cf2 Setup}}}
+ ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Package Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMV" }{}}{\fldrslt {\cs37\ul\cf2 HasFailure}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMW" }{}}{\fldrslt {\cs37\ul\cf2 HasFatalFailure}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMX" }{}}{\fldrslt {\cs37\ul\cf2 HasNonfatalFailure}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMY" }{}}{\fldrslt {\cs37\ul\cf2 RecordProperty}}}
+ (const {\b std::string} &key, const {\b std::string} &value)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMZ" }{}}{\fldrslt {\cs37\ul\cf2 RecordProperty}}}
+ (const {\b std::string} &key, int value)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNA" }{}}{\fldrslt {\cs37\ul\cf2 SetUpTestCase}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNB" }{}}{\fldrslt {\cs37\ul\cf2 TearDownTestCase}}}
+ ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Package Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNC" }{}}{\fldrslt {\cs37\ul\cf2 __pad0__}}}
+:SetUpTestCaseFunc SetUpTestCaseFunc\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACND" }{}}{\fldrslt {\cs37\ul\cf2 __pad1__}}}
+:TearDownTestCaseFunc TearDownTestCaseFunc\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNE" }{}}{\fldrslt {\cs37\ul\cf2 __pad2__}}}
+:scoped_ptr< {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAANT" }{}}{\fldrslt {\cs37\ul\cf2 GTEST_FLAG_SAVER_}}}
+ > gtest_flag_saver_\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNF" }{}}{\fldrslt {\cs37\ul\cf2 DeleteSelf_}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNG" }{}}{\fldrslt {\cs37\ul\cf2 Run}}}
+ ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNH" }{}}{\fldrslt {\cs37\ul\cf2 TestBody}}}
+ ()=0\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Private Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNI" }{}}{\fldrslt {\cs37\ul\cf2 HasSameFixtureClass}}}
+ ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line 21 of file queue_linked_list_unit_test.cc.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v DeleteSelf_\:EmptyTest}
+{\xe \v EmptyTest\:DeleteSelf_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void DeleteSelf_ (){\f2 [private]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACNF}
+{\bkmkend AAAAAAACNF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 453 of file gtest.h.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 453 \{ {\cf17 delete} {\cf17 this}; \}\par
+}
+{
+\ql
+Referenced by TestInfo::Run().}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "df/d69/classtesting_1_1_test_a596a17de4388a65184028210bc5bbecb_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v GTEST_DISALLOW_COPY_AND_ASSIGN_\:EmptyTest}
+{\xe \v EmptyTest\:GTEST_DISALLOW_COPY_AND_ASSIGN_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+GTEST_DISALLOW_COPY_AND_ASSIGN_ ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKU" }{}}{\fldrslt {\cs37\ul\cf2 Test}}}
+ ){\f2 [package]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACMR}
+{\bkmkend AAAAAAACMR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v HasFailure\:EmptyTest}
+{\xe \v EmptyTest\:HasFailure}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static bool HasFailure (){\f2 [static]}, {\f2 [package]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACMV}
+{\bkmkend AAAAAAACMV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 407 of file gtest.h.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 407 \{ {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMW" }{}}{\fldrslt {\cs37\ul\cf2 HasFatalFailure}}}
+() || {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMX" }{}}{\fldrslt {\cs37\ul\cf2 HasNonfatalFailure}}}
+(); \}\par
+}
+}
+{\xe \v HasFatalFailure\:EmptyTest}
+{\xe \v EmptyTest\:HasFatalFailure}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool HasFatalFailure (){\f2 [static]}, {\f2 [package]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACMW}
+{\bkmkend AAAAAAACMW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2487 of file gtest.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2487                            \{\par
+2488   {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJE" }{}}{\fldrslt {\cs37\ul\cf2 internal::GetUnitTestImpl}}}
+()->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNJ" }{}}{\fldrslt {\cs37\ul\cf2 current_test_result}}}
+()->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNK" }{}}{\fldrslt {\cs37\ul\cf2 HasFatalFailure}}}
+();\par
+2489 \}\par
+}
+{
+\ql
+References UnitTestImpl::current_test_result(), testing::internal::GetUnitTestImpl(), and TestResult::HasFatalFailure().}\par
+{
+\ql
+Referenced by TestInfo::Run(), and UnitTestImpl::RunAllTests().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "df/d69/classtesting_1_1_test_a4f237fa994f623a704494cd821fb761f_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "df/d69/classtesting_1_1_test_a4f237fa994f623a704494cd821fb761f_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v HasNonfatalFailure\:EmptyTest}
+{\xe \v EmptyTest\:HasNonfatalFailure}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool HasNonfatalFailure (){\f2 [static]}, {\f2 [package]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACMX}
+{\bkmkend AAAAAAACMX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2492 of file gtest.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2492                               \{\par
+2493   {\cf19 return} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJE" }{}}{\fldrslt {\cs37\ul\cf2 internal::GetUnitTestImpl}}}
+()->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNJ" }{}}{\fldrslt {\cs37\ul\cf2 current_test_result}}}
+()->\par
+2494       {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMX" }{}}{\fldrslt {\cs37\ul\cf2 HasNonfatalFailure}}}
+();\par
+2495 \}\par
+}
+{
+\ql
+References UnitTestImpl::current_test_result(), and testing::internal::GetUnitTestImpl().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "df/d69/classtesting_1_1_test_a015d02d8208675a344c7fc42c14838b7_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v HasSameFixtureClass\:EmptyTest}
+{\xe \v EmptyTest\:HasSameFixtureClass}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool HasSameFixtureClass (){\f2 [static]}, {\f2 [private]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACNI}
+{\bkmkend AAAAAAACNI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2269 of file gtest.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2269                                \{\par
+2270   internal::UnitTestImpl* {\cf17 const} impl = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJE" }{}}{\fldrslt {\cs37\ul\cf2 internal::GetUnitTestImpl}}}
+();\par
+2271   {\cf17 const} TestCase* {\cf17 const} test_case = impl->current_test_case();\par
+2272 \par
+2273   {\cf20 // Info about the first test in the current test case.}\par
+2274   {\cf17 const} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNL" }{}}{\fldrslt {\cs37\ul\cf2 TestInfo}}}
+* {\cf17 const} first_test_info = test_case->test_info_list()[0];\par
+2275   {\cf17 const} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAATI" }{}}{\fldrslt {\cs37\ul\cf2 internal::TypeId}}}
+ first_fixture_id = first_test_info->fixture_class_id_;\par
+2276   {\cf17 const} {\cf18 char}* {\cf17 const} first_test_name = first_test_info->name();\par
+2277 \par
+2278   {\cf20 // Info about the current test.}\par
+2279   {\cf17 const} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNL" }{}}{\fldrslt {\cs37\ul\cf2 TestInfo}}}
+* {\cf17 const} this_test_info = impl->current_test_info();\par
+2280   {\cf17 const} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAATI" }{}}{\fldrslt {\cs37\ul\cf2 internal::TypeId}}}
+ this_fixture_id = this_test_info->fixture_class_id_;\par
+2281   {\cf17 const} {\cf18 char}* {\cf17 const} this_test_name = this_test_info->name();\par
+2282 \par
+2283   {\cf19 if} (this_fixture_id != first_fixture_id) \{\par
+2284     {\cf20 // Is the first test defined using TEST?}\par
+2285     {\cf17 const} {\cf18 bool} first_is_TEST = first_fixture_id == {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKV" }{}}{\fldrslt {\cs37\ul\cf2 internal::GetTestTypeId}}}
+();\par
+2286     {\cf20 // Is this test defined using TEST?}\par
+2287     {\cf17 const} {\cf18 bool} this_is_TEST = this_fixture_id == {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAKV" }{}}{\fldrslt {\cs37\ul\cf2 internal::GetTestTypeId}}}
+();\par
+2288 \par
+2289     {\cf19 if} (first_is_TEST || this_is_TEST) \{\par
+2290       {\cf20 // Both TEST and TEST_F appear in same test case, which is incorrect.}\par
+2291       {\cf20 // Tell the user how to fix this.}\par
+2292 \par
+2293       {\cf20 // Gets the name of the TEST and the name of the TEST_F.  Note}\par
+2294       {\cf20 // that first_is_TEST and this_is_TEST cannot both be true, as}\par
+2295       {\cf20 // the fixture IDs are different for the two tests.}\par
+2296       {\cf17 const} {\cf18 char}* {\cf17 const} TEST_name =\par
+2297           first_is_TEST ? first_test_name : this_test_name;\par
+2298       {\cf17 const} {\cf18 char}* {\cf17 const} TEST_F_name =\par
+2299           first_is_TEST ? this_test_name : first_test_name;\par
+2300 \par
+2301       {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGA" }{}}{\fldrslt {\cs37\ul\cf2 ADD_FAILURE}}}
+()\par
+2302           << {\cf22 "All tests in the same test case must use the same test fixture\\n"}\par
+2303           << {\cf22 "class, so mixing TEST_F and TEST in the same test case is\\n"}\par
+2304           << {\cf22 "illegal.  In test case "} << this_test_info->test_case_name()\par
+2305           << {\cf22 ",\\n"}\par
+2306           << {\cf22 "test "} << TEST_F_name << {\cf22 " is defined using TEST_F but\\n"}\par
+2307           << {\cf22 "test "} << TEST_name << {\cf22 " is defined using TEST.  You probably\\n"}\par
+2308           << {\cf22 "want to change the TEST to TEST_F or move it to another test\\n"}\par
+2309           << {\cf22 "case."};\par
+2310     \} {\cf19 else} \{\par
+2311       {\cf20 // Two fixture classes with the same name appear in two different}\par
+2312       {\cf20 // namespaces, which is not allowed. Tell the user how to fix this.}\par
+2313       {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGA" }{}}{\fldrslt {\cs37\ul\cf2 ADD_FAILURE}}}
+()\par
+2314           << {\cf22 "All tests in the same test case must use the same test fixture\\n"}\par
+2315           << {\cf22 "class.  However, in test case "}\par
+2316           << this_test_info->test_case_name() << {\cf22 ",\\n"}\par
+2317           << {\cf22 "you defined test "} << first_test_name\par
+2318           << {\cf22 " and test "} << this_test_name << {\cf22 "\\n"}\par
+2319           << {\cf22 "using two different test fixture classes.  This can happen if\\n"}\par
+2320           << {\cf22 "the two classes are from different namespaces or translation\\n"}\par
+2321           << {\cf22 "units and have the same name.  You should probably rename one\\n"}\par
+2322           << {\cf22 "of the classes to put the tests into different test cases."};\par
+2323     \}\par
+2324     {\cf19 return} {\cf17 false};\par
+2325   \}\par
+2326 \par
+2327   {\cf19 return} {\cf17 true};\par
+2328 \}\par
+}
+{
+\ql
+References ADD_FAILURE, UnitTestImpl::current_test_case(), UnitTestImpl::current_test_info(), testing::internal::GetTestTypeId(), testing::internal::GetUnitTestImpl(), TestInfo::name, TestInfo::test_case_name(), and TestCase::test_info_list().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "df/d69/classtesting_1_1_test_a33853de09fa3a19530ef4db93e81d4a9_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v RecordProperty\:EmptyTest}
+{\xe \v EmptyTest\:RecordProperty}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void RecordProperty (const {\b std::string} &  {\i key}, const {\b std::string} &  {\i value}){\f2 [static]}, {\f2 [package]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACMY}
+{\bkmkend AAAAAAACMY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2237 of file gtest.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2237                                                                       \{\par
+2238   {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNM" }{}}{\fldrslt {\cs37\ul\cf2 UnitTest::GetInstance}}}
+()->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNN" }{}}{\fldrslt {\cs37\ul\cf2 RecordProperty}}}
+(key, value);\par
+2239 \}\par
+}
+{
+\ql
+References UnitTest::GetInstance(), and UnitTest::RecordProperty().}\par
+{
+\ql
+Referenced by Test::RecordProperty().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "df/d69/classtesting_1_1_test_a5af7a3ecd40f1592aad222f3add22a77_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "df/d69/classtesting_1_1_test_a5af7a3ecd40f1592aad222f3add22a77_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v RecordProperty\:EmptyTest}
+{\xe \v EmptyTest\:RecordProperty}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void RecordProperty (const {\b std::string} &  {\i key}, int  {\i value}){\f2 [static]}, {\f2 [package]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACMZ}
+{\bkmkend AAAAAAACMZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2242 of file gtest.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2242                                                          \{\par
+2243   Message value_message;\par
+2244   value_message << value;\par
+2245   {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMY" }{}}{\fldrslt {\cs37\ul\cf2 RecordProperty}}}
+(key, value_message.GetString().c_str());\par
+2246 \}\par
+}
+{
+\ql
+References string::c_str(), Message::GetString(), and Test::RecordProperty().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "df/d69/classtesting_1_1_test_a77a5dc399e423865154ce5e5b10dd1c0_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v Run\:EmptyTest}
+{\xe \v EmptyTest\:Run}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Run (){\f2 [private]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACNG}
+{\bkmkend AAAAAAACNG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2465 of file gtest.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2465                \{\par
+2466   {\cf19 if} (!{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNI" }{}}{\fldrslt {\cs37\ul\cf2 HasSameFixtureClass}}}
+()) {\cf19 return};\par
+2467 \par
+2468   internal::UnitTestImpl* {\cf17 const} impl = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAJE" }{}}{\fldrslt {\cs37\ul\cf2 internal::GetUnitTestImpl}}}
+();\par
+2469   impl->os_stack_trace_getter()->UponLeavingGTest();\par
+2470   {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABDP" }{}}{\fldrslt {\cs37\ul\cf2 internal::HandleExceptionsInMethodIfSupported}}}
+({\cf17 this}, &{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMP" }{}}{\fldrslt {\cs37\ul\cf2 Test::SetUp}}}
+, {\cf22 "SetUp()"});\par
+2471   {\cf20 // We will run the test only if SetUp() was successful.}\par
+2472   {\cf19 if} (!{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMW" }{}}{\fldrslt {\cs37\ul\cf2 HasFatalFailure}}}
+()) \{\par
+2473     impl->os_stack_trace_getter()->UponLeavingGTest();\par
+2474     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABDP" }{}}{\fldrslt {\cs37\ul\cf2 internal::HandleExceptionsInMethodIfSupported}}}
+(\par
+2475         {\cf17 this}, &{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACNH" }{}}{\fldrslt {\cs37\ul\cf2 Test::TestBody}}}
+, {\cf22 "the test body"});\par
+2476   \}\par
+2477 \par
+2478   {\cf20 // However, we want to clean up as much as possible.  Hence we will}\par
+2479   {\cf20 // always call TearDown(), even if SetUp() or the test body has}\par
+2480   {\cf20 // failed.}\par
+2481   impl->os_stack_trace_getter()->UponLeavingGTest();\par
+2482   {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABDP" }{}}{\fldrslt {\cs37\ul\cf2 internal::HandleExceptionsInMethodIfSupported}}}
+(\par
+2483       {\cf17 this}, &{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMQ" }{}}{\fldrslt {\cs37\ul\cf2 Test::TearDown}}}
+, {\cf22 "TearDown()"});\par
+2484 \}\par
+}
+{
+\ql
+References testing::internal::GetUnitTestImpl(), testing::internal::HandleExceptionsInMethodIfSupported(), UnitTestImpl::os_stack_trace_getter(), and OsStackTraceGetterInterface::UponLeavingGTest().}\par
+{
+\ql
+Referenced by TestInfo::Run().}\par
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "df/d69/classtesting_1_1_test_aa3eca255b6be227d7d901cc2a72017a5_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "df/d69/classtesting_1_1_test_aa3eca255b6be227d7d901cc2a72017a5_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v SetUp\:EmptyTest}
+{\xe \v EmptyTest\:SetUp}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void SetUp (){\f2 [protected]}, {\f2 [virtual]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACMP}
+{\bkmkend AAAAAAACMP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2227 of file gtest.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2227                  \{\par
+2228 \}\par
+}
+}
+{\xe \v Setup\:EmptyTest}
+{\xe \v EmptyTest\:Setup}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACMT" }{}}{\fldrslt {\cs37\ul\cf2 Setup_should_be_spelled_SetUp}}}
+* Setup (){\f2 [package]}, {\f2 [virtual]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACMU}
+{\bkmkend AAAAAAACMU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 474 of file gtest.h.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 474 \{ {\cf19 return} NULL; \}\par
+}
+}
+{\xe \v SetUpTestCase\:EmptyTest}
+{\xe \v EmptyTest\:SetUpTestCase}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void SetUpTestCase (){\f2 [static]}, {\f2 [package]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACNA}
+{\bkmkend AAAAAAACNA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 389 of file gtest.h.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 389 \{\}\par
+}
+}
+{\xe \v TearDown\:EmptyTest}
+{\xe \v EmptyTest\:TearDown}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void TearDown (){\f2 [protected]}, {\f2 [virtual]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACMQ}
+{\bkmkend AAAAAAACMQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 2233 of file gtest.cc.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 2233                     \{\par
+2234 \}\par
+}
+}
+{\xe \v TearDownTestCase\:EmptyTest}
+{\xe \v EmptyTest\:TearDownTestCase}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void TearDownTestCase (){\f2 [static]}, {\f2 [package]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACNB}
+{\bkmkend AAAAAAACNB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 397 of file gtest.h.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 397 \{\}\par
+}
+}
+{\xe \v TestBody\:EmptyTest}
+{\xe \v EmptyTest\:TestBody}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual void TestBody (){\f2 [private]}, {\f2 [pure virtual]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACNH}
+{\bkmkend AAAAAAACNH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v __pad0__\:EmptyTest}
+{\xe \v EmptyTest\:__pad0__}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+__pad0__{\f2 [package]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACNC}
+{\bkmkend AAAAAAACNC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 377 of file gtest.h.}\par
+}
+{\xe \v __pad1__\:EmptyTest}
+{\xe \v EmptyTest\:__pad1__}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+__pad1__{\f2 [package]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACND}
+{\bkmkend AAAAAAACND}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 378 of file gtest.h.}\par
+}
+{\xe \v __pad2__\:EmptyTest}
+{\xe \v EmptyTest\:__pad2__}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+__pad2__{\f2 [package]}, {\f2 [inherited]}}}
+\par
+{\bkmkstart AAAAAAACNE}
+{\bkmkend AAAAAAACNE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 455 of file gtest.h.}\par
+}
+}

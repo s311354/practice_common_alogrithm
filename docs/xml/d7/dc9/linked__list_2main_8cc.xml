@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/dc9/linked__list_2main_8cc" kind="file" language="C++">
+    <compoundname>main.cc</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">forward_list</includes>
+    <includes local="no">vector</includes>
+    <includes refid="d1/d4a/linked__list_8h" local="yes">src/linked_list.h</includes>
+    <includes refid="d0/dea/linked__list_8cc" local="yes">src/linked_list.cc</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+      <node id="8">
+        <label>src/linked_list.cc</label>
+        <link refid="d0/dea/linked__list_8cc"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>./list_element.h</label>
+        <link refid="d8/dd2/linked__list_2src_2list__element_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/linked_list.h</label>
+        <link refid="d1/d4a/linked__list_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector</label>
+        <link refid="cpp/header/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="3">
+        <label>forward_list</label>
+        <link refid="cpp/header/forward_list" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="1">
+        <label>linked_list/main.cc</label>
+        <link refid="d7/dc9/linked__list_2main_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+        <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d7/dc9/linked__list_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/main.cc" line="9" column="5" bodyfile="linked_list/main.cc" bodystart="9" bodyend="29"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" compoundref="d0/dea/linked__list_8cc" startline="65" endline="71">LinkedList&lt; T &gt;::PushFront</references>
+        <references refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" compoundref="d0/dea/linked__list_8cc" startline="15" endline="26">LinkedList&lt; T &gt;::Size</references>
+        <references refid="d7/dc9/linked__list_2main_8cc_1acb437a18f3b320a999d7f04c2cb47f70" compoundref="d7/dc9/linked__list_2main_8cc" startline="31" endline="54">stdlib_forward_list_experiment</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc9/linked__list_2main_8cc_1acb437a18f3b320a999d7f04c2cb47f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stdlib_forward_list_experiment</definition>
+        <argsstring>()</argsstring>
+        <name>stdlib_forward_list_experiment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="linked_list/main.cc" line="31" column="6" bodyfile="linked_list/main.cc" bodystart="31" bodyend="54" declfile="linked_list/main.cc" declline="7" declcolumn="6"/>
+        <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <referencedby refid="d7/dc9/linked__list_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d7/dc9/linked__list_2main_8cc" startline="9" endline="29">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/iostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">iostream</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/forward_list" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">forward_list</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">vector</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d4a/linked__list_8h" kindref="compound">src/linked_list.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/dea/linked__list_8cc" kindref="compound">src/linked_list.cc</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/dc9/linked__list_2main_8cc_1acb437a18f3b320a999d7f04c2cb47f70" kindref="member">stdlib_forward_list_experiment</ref>();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d7/dc9/linked__list_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d3/dd5/priority__queue_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">common::LinkedList&lt;int&gt;</ref><sp/>lists;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(4);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(9);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Size<sp/>of<sp/>int<sp/>list<sp/>is:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>lists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" kindref="member">Size</ref>()<sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><ref refid="d7/d8e/classcommon_1_1_linked_list" kindref="compound">common::LinkedList&lt;std::string&gt;</ref><sp/>stringlists;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/>stringlists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(</highlight><highlight class="stringliteral">&quot;string<sp/>1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/>stringlists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(</highlight><highlight class="stringliteral">&quot;another&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/>stringlists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" kindref="member">PushFront</ref>(</highlight><highlight class="stringliteral">&quot;and<sp/>another&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Size<sp/>of<sp/>string<sp/>list<sp/>is:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>stringlists.<ref refid="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" kindref="member">Size</ref>()<sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/dc9/linked__list_2main_8cc_1acb437a18f3b320a999d7f04c2cb47f70" kindref="member">stdlib_forward_list_experiment</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d7/dc9/linked__list_2main_8cc_1acb437a18f3b320a999d7f04c2cb47f70" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/dc9/linked__list_2main_8cc_1acb437a18f3b320a999d7f04c2cb47f70" kindref="member">stdlib_forward_list_experiment</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Standard<sp/>Library&apos;s<sp/>forward_list<sp/>(single-linked<sp/>list)<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/container/forward_list" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::forward_list&lt;int&gt;</ref><sp/>lists<sp/>{100,<sp/>200,<sp/>300};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Items:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;item<sp/>:<sp/>lists)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/>item<sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Get<sp/>Items<sp/>by<sp/>using<sp/>Iterator&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>lists.begin();<sp/><sp/>it<sp/>!=<sp/>lists.end()<sp/>;<sp/>++<sp/>it)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/>*it<sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>lists.begin();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>it<sp/>=<sp/>lists.erase_after(it);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Get<sp/>Items<sp/>by<sp/>using<sp/>Iterator<sp/>After<sp/>erase_after&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>lists.begin();<sp/><sp/>it<sp/>!=<sp/>lists.end()<sp/>;<sp/>++<sp/>it)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="cpp/io/cout" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/>*it<sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="linked_list/main.cc"/>
+  </compounddef>
+</doxygen>

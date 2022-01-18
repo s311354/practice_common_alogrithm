@@ -100,7 +100,6 @@ var menudata={children:[
 {text:"g",url:"globals_g.html#index_g"},
 {text:"h",url:"globals_h.html#index_h"},
 {text:"i",url:"globals_i.html#index_i"},
-{text:"l",url:"globals_l.html#index_l"},
 {text:"m",url:"globals_m.html#index_m"},
 {text:"o",url:"globals_o.html#index_o"},
 {text:"p",url:"globals_p.html#index_p"},
@@ -125,7 +124,6 @@ var menudata={children:[
 {text:"f",url:"globals_defs_f.html#index_f"},
 {text:"g",url:"globals_defs_g.html#index_g"},
 {text:"h",url:"globals_defs_h.html#index_h"},
-{text:"l",url:"globals_defs_l.html#index_l"},
 {text:"p",url:"globals_defs_p.html#index_p"},
 {text:"s",url:"globals_defs_s.html#index_s"},
 {text:"t",url:"globals_defs_t.html#index_t"}]}]}]}]}

@@ -4,7 +4,7 @@
 A hash table (hash map) is a data structure that implements an associative array abstract data type, s structure that can map keys to values. A hash table uses a hash function to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found. During lookup, the key is hashed and the resulting hash indicates where the corresponding value is stored.
 
 The corresponding result in this simple example code:
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">$ ./hash_table                                                                    [8:09:14]
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">$ ./hash_table
 0: California: Sacramento
 1: Texas: Austin
 2: <NULL>: 

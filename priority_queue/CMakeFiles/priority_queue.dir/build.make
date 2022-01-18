@@ -62,45 +62,45 @@ RM = /usr/local/Cellar/cmake/3.19.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue
+CMAKE_SOURCE_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue
+CMAKE_BINARY_DIR = /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm
 
 # Include any dependencies generated for this target.
-include CMakeFiles/priority_queue.dir/depend.make
+include priority_queue/CMakeFiles/priority_queue.dir/depend.make
 
 # Include the progress variables for this target.
-include CMakeFiles/priority_queue.dir/progress.make
+include priority_queue/CMakeFiles/priority_queue.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/priority_queue.dir/flags.make
+include priority_queue/CMakeFiles/priority_queue.dir/flags.make
 
-CMakeFiles/priority_queue.dir/main.cc.o: CMakeFiles/priority_queue.dir/flags.make
-CMakeFiles/priority_queue.dir/main.cc.o: main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/priority_queue.dir/main.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/priority_queue.dir/main.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/main.cc
+priority_queue/CMakeFiles/priority_queue.dir/main.cc.o: priority_queue/CMakeFiles/priority_queue.dir/flags.make
+priority_queue/CMakeFiles/priority_queue.dir/main.cc.o: priority_queue/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object priority_queue/CMakeFiles/priority_queue.dir/main.cc.o"
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/priority_queue.dir/main.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/main.cc
 
-CMakeFiles/priority_queue.dir/main.cc.i: cmake_force
+priority_queue/CMakeFiles/priority_queue.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/priority_queue.dir/main.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/main.cc > CMakeFiles/priority_queue.dir/main.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/main.cc > CMakeFiles/priority_queue.dir/main.cc.i
 
-CMakeFiles/priority_queue.dir/main.cc.s: cmake_force
+priority_queue/CMakeFiles/priority_queue.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/priority_queue.dir/main.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/main.cc -o CMakeFiles/priority_queue.dir/main.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/main.cc -o CMakeFiles/priority_queue.dir/main.cc.s
 
-CMakeFiles/priority_queue.dir/priority_queue.cc.o: CMakeFiles/priority_queue.dir/flags.make
-CMakeFiles/priority_queue.dir/priority_queue.cc.o: priority_queue.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/priority_queue.dir/priority_queue.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/priority_queue.dir/priority_queue.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/priority_queue.cc
+priority_queue/CMakeFiles/priority_queue.dir/priority_queue.cc.o: priority_queue/CMakeFiles/priority_queue.dir/flags.make
+priority_queue/CMakeFiles/priority_queue.dir/priority_queue.cc.o: priority_queue/priority_queue.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object priority_queue/CMakeFiles/priority_queue.dir/priority_queue.cc.o"
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/priority_queue.dir/priority_queue.cc.o -c /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/priority_queue.cc
 
-CMakeFiles/priority_queue.dir/priority_queue.cc.i: cmake_force
+priority_queue/CMakeFiles/priority_queue.dir/priority_queue.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/priority_queue.dir/priority_queue.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/priority_queue.cc > CMakeFiles/priority_queue.dir/priority_queue.cc.i
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/priority_queue.cc > CMakeFiles/priority_queue.dir/priority_queue.cc.i
 
-CMakeFiles/priority_queue.dir/priority_queue.cc.s: cmake_force
+priority_queue/CMakeFiles/priority_queue.dir/priority_queue.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/priority_queue.dir/priority_queue.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/priority_queue.cc -o CMakeFiles/priority_queue.dir/priority_queue.cc.s
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/priority_queue.cc -o CMakeFiles/priority_queue.dir/priority_queue.cc.s
 
 # Object files for target priority_queue
 priority_queue_OBJECTS = \
@@ -110,23 +110,23 @@ priority_queue_OBJECTS = \
 # External object files for target priority_queue
 priority_queue_EXTERNAL_OBJECTS =
 
-priority_queue: CMakeFiles/priority_queue.dir/main.cc.o
-priority_queue: CMakeFiles/priority_queue.dir/priority_queue.cc.o
-priority_queue: CMakeFiles/priority_queue.dir/build.make
-priority_queue: CMakeFiles/priority_queue.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable priority_queue"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/priority_queue.dir/link.txt --verbose=$(VERBOSE)
+priority_queue/priority_queue: priority_queue/CMakeFiles/priority_queue.dir/main.cc.o
+priority_queue/priority_queue: priority_queue/CMakeFiles/priority_queue.dir/priority_queue.cc.o
+priority_queue/priority_queue: priority_queue/CMakeFiles/priority_queue.dir/build.make
+priority_queue/priority_queue: priority_queue/CMakeFiles/priority_queue.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable priority_queue"
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/priority_queue.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/priority_queue.dir/build: priority_queue
+priority_queue/CMakeFiles/priority_queue.dir/build: priority_queue/priority_queue
 
-.PHONY : CMakeFiles/priority_queue.dir/build
+.PHONY : priority_queue/CMakeFiles/priority_queue.dir/build
 
-CMakeFiles/priority_queue.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles/priority_queue.dir/cmake_clean.cmake
-.PHONY : CMakeFiles/priority_queue.dir/clean
+priority_queue/CMakeFiles/priority_queue.dir/clean:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue && $(CMAKE_COMMAND) -P CMakeFiles/priority_queue.dir/cmake_clean.cmake
+.PHONY : priority_queue/CMakeFiles/priority_queue.dir/clean
 
-CMakeFiles/priority_queue.dir/depend:
-	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/CMakeFiles/priority_queue.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/priority_queue.dir/depend
+priority_queue/CMakeFiles/priority_queue.dir/depend:
+	cd /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/priority_queue/CMakeFiles/priority_queue.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : priority_queue/CMakeFiles/priority_queue.dir/depend
 

@@ -6,7 +6,7 @@ In real life, we often encounter scenarios that involve queuing, such as standin
 However, there are other scenarios where the first person to arrive is not hte first person served: when considering patients in an emergenct room, or when boarding an airplane... , etc. Here, the scenario is more of a "first come, most-important served" situation. Thus, we want to design a datatype that is tailored to support the following three operations as efficiently as possible:
 
 <ul>
- <li>Ass an item, with a given priority, into the data structure: key</li>
+ <li>Add an item, with a given priority, into the data structure: key</li>
  <li>Remove the most important item from the data structure</li>
  <li>Giv the number of otems in the data structure</li>
 </ul>

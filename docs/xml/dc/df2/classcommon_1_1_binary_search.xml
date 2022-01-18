@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="binary_search/binary_search.h" line="51" column="10" bodyfile="binary_search/binary_search.cc" bodystart="99" bodyend="106"/>
+        <location file="binary_search/binary_search.h" line="51" column="10" bodyfile="binary_search/binary_search.cc" bodystart="106" bodyend="113"/>
         <references refid="d5/d36/structcommon_1_1_b_s_t_node_1a2238204dbbc8dabdda64f3f235f71224" compoundref="d8/d1e/binary__search_8h" startline="12">BSTNode::left</references>
         <references refid="d5/d36/structcommon_1_1_b_s_t_node_1a4a656f5c32861942beaf30262c31baa1" compoundref="d8/d1e/binary__search_8h" startline="13">BSTNode::right</references>
       </memberdef>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="binary_search/binary_search.h" line="49" column="13" bodyfile="binary_search/binary_search.cc" bodystart="108" bodyend="136"/>
+        <location file="binary_search/binary_search.h" line="49" column="13" bodyfile="binary_search/binary_search.cc" bodystart="115" bodyend="143"/>
         <references refid="d5/d36/structcommon_1_1_b_s_t_node_1a9eab91667db4d35c7231dcddf7b89a76" compoundref="d8/d1e/binary__search_8h" startline="11">BSTNode::data</references>
         <references refid="dc/df2/classcommon_1_1_binary_search_1a7efb4ad9a581ea73b1f8f113c880ef03" compoundref="dd/d7c/binary__search_8cc" startline="57" endline="64">BinarySearch::GetMinNode</references>
         <references refid="d5/d36/structcommon_1_1_b_s_t_node_1a2238204dbbc8dabdda64f3f235f71224" compoundref="d8/d1e/binary__search_8h" startline="12">BSTNode::left</references>
@@ -88,12 +88,17 @@
           <declname>node</declname>
         </param>
         <briefdescription>
+<para>Maximum Depth of Binary tree. </para>
         </briefdescription>
         <detaileddescription>
+<para>Given the root of a binary tree, return its maximum depth. A binary tree&apos;s maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.</para>
+<para><simplesect kind="return"><para>maximum depth </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="binary_search/binary_search.h" line="47" column="9" bodyfile="binary_search/binary_search.cc" bodystart="93" bodyend="97"/>
+        <location file="binary_search/binary_search.h" line="47" column="9" bodyfile="binary_search/binary_search.cc" bodystart="100" bodyend="104"/>
         <references refid="d5/d36/structcommon_1_1_b_s_t_node_1a2238204dbbc8dabdda64f3f235f71224" compoundref="d8/d1e/binary__search_8h" startline="12">BSTNode::left</references>
         <references refid="cpp/algorithm/max_1">std::max</references>
         <references refid="d5/d36/structcommon_1_1_b_s_t_node_1a4a656f5c32861942beaf30262c31baa1" compoundref="d8/d1e/binary__search_8h" startline="13">BSTNode::right</references>
@@ -171,7 +176,7 @@
         </inbodydescription>
         <location file="binary_search/binary_search.h" line="39" column="13" bodyfile="binary_search/binary_search.cc" bodystart="57" bodyend="64"/>
         <references refid="d5/d36/structcommon_1_1_b_s_t_node_1a2238204dbbc8dabdda64f3f235f71224" compoundref="d8/d1e/binary__search_8h" startline="12">BSTNode::left</references>
-        <referencedby refid="dc/df2/classcommon_1_1_binary_search_1ac6a38c0d2012009cd2d753b7dad3ec8a" compoundref="dd/d7c/binary__search_8cc" startline="108" endline="136">BinarySearch::DeleteValue</referencedby>
+        <referencedby refid="dc/df2/classcommon_1_1_binary_search_1ac6a38c0d2012009cd2d753b7dad3ec8a" compoundref="dd/d7c/binary__search_8cc" startline="115" endline="143">BinarySearch::DeleteValue</referencedby>
       </memberdef>
       <memberdef kind="function" id="dc/df2/classcommon_1_1_binary_search_1a6503f14a85365c1f079c5d12df5ed745" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="d5/d36/structcommon_1_1_b_s_t_node" kindref="compound">BSTNode</ref> *</type>
@@ -281,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="binary_search/binary_search.h" line="55" column="10" bodyfile="binary_search/binary_search.cc" bodystart="138" bodyend="154"/>
+        <location file="binary_search/binary_search.h" line="55" column="10" bodyfile="binary_search/binary_search.cc" bodystart="145" bodyend="161"/>
         <references refid="d5/d36/structcommon_1_1_b_s_t_node_1a9eab91667db4d35c7231dcddf7b89a76" compoundref="d8/d1e/binary__search_8h" startline="11">BSTNode::data</references>
         <references refid="cpp/container/queue/empty_1">queue&lt; T &gt;::empty</references>
         <references refid="cpp/container/queue/front_1">queue&lt; T &gt;::front</references>
@@ -305,7 +310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="binary_search/binary_search.h" line="53" column="10" bodyfile="binary_search/binary_search.cc" bodystart="156" bodyend="164"/>
+        <location file="binary_search/binary_search.h" line="53" column="10" bodyfile="binary_search/binary_search.cc" bodystart="163" bodyend="171"/>
         <references refid="d5/d36/structcommon_1_1_b_s_t_node_1a9eab91667db4d35c7231dcddf7b89a76" compoundref="d8/d1e/binary__search_8h" startline="11">BSTNode::data</references>
         <references refid="d5/d36/structcommon_1_1_b_s_t_node_1a2238204dbbc8dabdda64f3f235f71224" compoundref="d8/d1e/binary__search_8h" startline="12">BSTNode::left</references>
         <references refid="d5/d36/structcommon_1_1_b_s_t_node_1a4a656f5c32861942beaf30262c31baa1" compoundref="d8/d1e/binary__search_8h" startline="13">BSTNode::right</references>

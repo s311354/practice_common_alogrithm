@@ -1,5 +1,5 @@
 <map id="DFS" name="DFS">
-<area shape="rect" id="node1" title="Brief function description here." alt="" coords="5,233,55,260"/>
+<area shape="rect" id="node1" title="Depth First Search." alt="" coords="5,233,55,260"/>
 <area shape="rect" id="node2" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/container/vector/begin.html#" title=" " alt="" coords="119,5,241,32"/>
 <area shape="rect" id="node3" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/container/stack/empty.html#" title=" " alt="" coords="118,56,242,83"/>
 <area shape="rect" id="node4" href="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml$cpp/container/vector/end.html#" title=" " alt="" coords="123,107,237,133"/>

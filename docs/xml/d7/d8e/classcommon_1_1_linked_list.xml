@@ -38,6 +38,7 @@
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="39" column="13" bodyfile="linked_list/src/linked_list.cc" bodystart="46" bodyend="58"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <referencedby refid="d2/dbd/namespacegoogletest_1a9b16e94dddd104afc05026a567fc3fe0" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="37" endline="44">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1abcfbdba215d3b15fbb4b682969943a6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -69,6 +70,7 @@
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="56" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="213" bodyend="241"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <referencedby refid="d2/dbd/namespacegoogletest_1a5f1caca8cbccf9881a366055ecc169d7" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="86" endline="93">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a510df6a9340094440277fec608697fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const T</type>
@@ -83,6 +85,7 @@
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="37" column="13" bodyfile="linked_list/src/linked_list.cc" bodystart="33" bodyend="40"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <referencedby refid="d2/dbd/namespacegoogletest_1ab200d56e3d9ab9e8166f4a675abd6854" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="26" endline="33">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a60af5df9c2152ed214bf6c2ae4b27bb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -105,6 +108,7 @@
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="54" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="178" bodyend="207"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <referencedby refid="d2/dbd/namespacegoogletest_1adf387868fe45920583edcd3e22b5368a" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="71" endline="82">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1ac5d84c6fdafb5582dca61b2bbb7800f0" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -164,6 +168,7 @@
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="47" column="13" bodyfile="linked_list/src/linked_list.cc" bodystart="116" bodyend="142"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <referencedby refid="d2/dbd/namespacegoogletest_1ac9545390d4ef05a5f8e2502429855845" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="60" endline="67">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a3526dd92e36ccd73dea6abb0d671b388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const T</type>
@@ -179,6 +184,7 @@
         <location file="linked_list/src/linked_list.h" line="43" column="13" bodyfile="linked_list/src/linked_list.cc" bodystart="77" bodyend="89"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
         <references refid="dd/d71/classcommon_1_1_list_element_1ace1c7e71f98501b3bac17eeb8110d8d1" compoundref="d7/df5/queue__linked__list_2src_2list__element_8h" startline="20" endline="20">ListElement&lt; T &gt;::GetData</references>
+        <referencedby refid="d2/dbd/namespacegoogletest_1a425719cbb89e92322b38800e2611523f" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="48" endline="56">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a96f5737c64edc912fe53681ccc9ea057" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -193,6 +199,7 @@
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="65" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="330" bodyend="339"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <referencedby refid="d2/dbd/namespacegoogletest_1a5e5e669929d54f4cbe091286eec952e2" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="128" endline="140">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a6b6681f762c6f6f8bc92ebd9c8d5dc66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -212,6 +219,7 @@
         <location file="linked_list/src/linked_list.h" line="45" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="95" bodyend="110"/>
         <references refid="dd/d71/classcommon_1_1_list_element_1a7b6af5a368ca2b7fceb56b7c4a5d07af" compoundref="d7/df5/queue__linked__list_2src_2list__element_8h" startline="21" endline="21">ListElement&lt; T &gt;::GetNext</references>
         <references refid="dd/d71/classcommon_1_1_list_element_1a0e2f21176165b93e0a6b45716ea2c65a" compoundref="d7/df5/queue__linked__list_2src_2list__element_8h" startline="23" endline="23">ListElement&lt; T &gt;::SetNext</references>
+        <referencedby refid="d2/dbd/namespacegoogletest_1a9b16e94dddd104afc05026a567fc3fe0" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="37" endline="44">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a8e4eea67eb1510528096d200cad8983a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -229,6 +237,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="41" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="65" bodyend="71"/>
+        <referencedby refid="d7/dc9/linked__list_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d7/dc9/linked__list_2main_8cc" startline="9" endline="29">main</referencedby>
+        <referencedby refid="d2/dbd/namespacegoogletest_1ac045021aee0c0e42ddec510fff6c414b" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="15" endline="22">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1aa40f387b3fb06df3997974b66ed1d40c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -247,6 +257,7 @@
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="58" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="246" bodyend="270"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <referencedby refid="d2/dbd/namespacegoogletest_1a79bb22503a1ed89c935e5e600f52416c" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="97" endline="105">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1ae1b551cc51c9d556342b27b466a7c7cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -261,6 +272,7 @@
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="60" column="10" bodyfile="linked_list/src/linked_list.cc" bodystart="276" bodyend="293"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <referencedby refid="d2/dbd/namespacegoogletest_1ae2e0e58be843ffe18246403fea681b33" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="109" endline="124">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1af40990b9bd3d70d30e8ce7cdda1ad56f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -274,6 +286,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="35" column="9" bodyfile="linked_list/src/linked_list.cc" bodystart="15" bodyend="26"/>
+        <referencedby refid="d7/dc9/linked__list_2main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="d7/dc9/linked__list_2main_8cc" startline="9" endline="29">main</referencedby>
+        <referencedby refid="d2/dbd/namespacegoogletest_1aec59412f731355652c6fd79285cb6d38" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="8" endline="13">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a41778863ac9905141650a07d08146115" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const T &amp;</type>
@@ -292,6 +306,7 @@
         </inbodydescription>
         <location file="linked_list/src/linked_list.h" line="51" column="13" bodyfile="linked_list/src/linked_list.cc" bodystart="154" bodyend="172"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
+        <referencedby refid="d2/dbd/namespacegoogletest_1adf387868fe45920583edcd3e22b5368a" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="71" endline="82">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1a1e3c93770d25a042944efa1e83d449c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const T</type>
@@ -311,6 +326,7 @@
         <location file="linked_list/src/linked_list.h" line="62" column="13" bodyfile="linked_list/src/linked_list.cc" bodystart="299" bodyend="324"/>
         <references refid="cpp/io/manip/endl_1">std::endl</references>
         <references refid="d0/d81/namespacetesting_1_1internal_1_1posix_1a555cf768a531e2ff2acacfbf76d28a77" compoundref="d3/dc9/gtest-port_8h" startline="2356">testing::internal::posix::n</references>
+        <referencedby refid="d2/dbd/namespacegoogletest_1a5e5e669929d54f4cbe091286eec952e2" compoundref="d4/df4/linkedlists__unit__test_8cc" startline="128" endline="140">googletest::TEST_F</referencedby>
       </memberdef>
       <memberdef kind="function" id="d7/d8e/classcommon_1_1_linked_list_1ab2cd0a10d50aeffd524b75b36fb2be05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>

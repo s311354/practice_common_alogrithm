@@ -22,8 +22,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "graphs/CMakeLists.txt"
   "graphs/src/CMakeLists.txt"
   "hash_table/CMakeLists.txt"
+  "leetcode_practice/CMakeLists.txt"
+  "leetcode_practice/src/CMakeLists.txt"
   "linked_list/CMakeLists.txt"
   "linked_list/src/CMakeLists.txt"
+  "priority_queue/CMakeLists.txt"
+  "queue_linked_list/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.19.6/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.19.6/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/Cellar/cmake/3.19.6/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -69,6 +73,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "design_pattern/singleton_pattern/CMakeFiles/CMakeDirectoryInformation.cmake"
   "linked_list/CMakeFiles/CMakeDirectoryInformation.cmake"
   "linked_list/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "priority_queue/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "queue_linked_list/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "leetcode_practice/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "leetcode_practice/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -85,4 +93,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "design_pattern/singleton_pattern/CMakeFiles/singleton_pattern.dir/DependInfo.cmake"
   "linked_list/CMakeFiles/linkedlists_run.dir/DependInfo.cmake"
   "linked_list/src/CMakeFiles/linkedlists_lib.dir/DependInfo.cmake"
+  "priority_queue/CMakeFiles/priority_queue.dir/DependInfo.cmake"
+  "queue_linked_list/CMakeFiles/queue_linked_list.dir/DependInfo.cmake"
+  "leetcode_practice/CMakeFiles/solutions.dir/DependInfo.cmake"
+  "leetcode_practice/src/CMakeFiles/solutions_lib.dir/DependInfo.cmake"
   )

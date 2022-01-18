@@ -4,9 +4,13 @@
     <compoundname>solutions.h</compoundname>
     <includes local="no">iostream</includes>
     <includes local="no">ctype.h</includes>
+    <includes local="no">set</includes>
+    <includes local="no">unordered_set</includes>
     <includes local="no">vector</includes>
     <includes local="no">map</includes>
     <includes local="no">string</includes>
+    <includes local="no">queue</includes>
+    <includedby refid="de/d3e/leetcode__practice_2main_8cc" local="yes">leetcode_practice/main.cc</includedby>
     <includedby refid="d9/d25/solutions_8cc" local="yes">leetcode_practice/src/solutions.cc</includedby>
     <incdepgraph>
       <node id="1">
@@ -22,12 +26,30 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>unordered_set</label>
+        <link refid="cpp/header/unordered_set" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
       </node>
       <node id="4">
+        <label>set</label>
+        <link refid="cpp/header/set" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="6">
         <label>vector</label>
         <link refid="cpp/header/vector" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
       </node>
-      <node id="6">
+      <node id="9">
+        <label>queue</label>
+        <link refid="cpp/header/queue" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="8">
         <label>string</label>
         <link refid="cpp/header/string" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
       </node>
@@ -38,7 +60,7 @@
         <label>iostream</label>
         <link refid="cpp/header/iostream" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
       </node>
-      <node id="5">
+      <node id="7">
         <label>map</label>
         <link refid="cpp/header/map" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml"/>
       </node>
@@ -49,8 +71,14 @@
         <link refid="d2/d98/solutions_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
       <node id="2">
+        <label>leetcode_practice/main.cc</label>
+        <link refid="de/d3e/leetcode__practice_2main_8cc"/>
+      </node>
+      <node id="3">
         <label>leetcode_practice/src/solutions.cc</label>
         <link refid="d9/d25/solutions_8cc"/>
       </node>
@@ -66,39 +94,57 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SOLUTION_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/iostream" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">iostream</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctype.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">vector</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/map" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">map</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="db/dbd/namespaceleetcode" kindref="compound">leetcode</ref><sp/>{</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="11" refid="d0/d8a/classleetcode_1_1_solutions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/d8a/classleetcode_1_1_solutions" kindref="compound">Solutions</ref></highlight></codeline>
-<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1adee95af37c768acd91ca8d5ff10e8128" kindref="member">isPalindrome</ref>(<ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>s);</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1a109efe39d5f565e82643209fe7afbd18" kindref="member">isValidChar</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1a84c40d3d4d89d92e2192f7b7985e1e4c" kindref="member">isValidString</ref>(<ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>s);</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="20" refid="d0/d8a/classleetcode_1_1_solutions_1a2ba0d78c77ecfe9fc178be8676b4f0f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1a2ba0d78c77ecfe9fc178be8676b4f0f2" kindref="member">Solutions</ref>(){};</highlight></codeline>
-<codeline lineno="21" refid="d0/d8a/classleetcode_1_1_solutions_1ab4cecc9ceb630676fb369aaa8b2453d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1ab4cecc9ceb630676fb369aaa8b2453d5" kindref="member">~Solutions</ref>(){};</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>STL<sp/>Containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/set" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">set</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/unordered_set" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">unordered_set</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">vector</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/map" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">map</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">string</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cpp/header/queue" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">queue</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="db/dbd/namespaceleetcode" kindref="compound">leetcode</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d0/d8a/classleetcode_1_1_solutions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/d8a/classleetcode_1_1_solutions" kindref="compound">Solutions</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1adee95af37c768acd91ca8d5ff10e8128" kindref="member">isPalindrome</ref>(<ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>s);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1a109efe39d5f565e82643209fe7afbd18" kindref="member">isValidChar</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1a84c40d3d4d89d92e2192f7b7985e1e4c" kindref="member">isValidString</ref>(<ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>s);</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Miniumum<sp/>Deletions<sp/>to<sp/>Make<sp/>Character<sp/>Frequencies<sp/>Unique</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1a1e18a492caa00dc950ccdb815ca6083b" kindref="member">minDeletions</ref>(<ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>s);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Minimum<sp/>Adjacent<sp/>Swaps<sp/>to<sp/>Make<sp/>Palindrome</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1a5c9cb0761fff007d731583fcd56f63fe" kindref="member">minSwaps</ref>(<ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>s);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1a57c942f92e57cbe2674c6073c72c9677" kindref="member">bfs</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>column,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt;<sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref>&gt;<sp/>&amp;<sp/>grid,<sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt;<sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref>&gt;&amp;<sp/>dist,<sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt;<sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref>&gt;&amp;<sp/>reached);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="d0/d8a/classleetcode_1_1_solutions_1a2ba0d78c77ecfe9fc178be8676b4f0f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1a2ba0d78c77ecfe9fc178be8676b4f0f2" kindref="member">Solutions</ref>(){};</highlight></codeline>
+<codeline lineno="27" refid="d0/d8a/classleetcode_1_1_solutions_1ab4cecc9ceb630676fb369aaa8b2453d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1ab4cecc9ceb630676fb369aaa8b2453d5" kindref="member">~Solutions</ref>(){};</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Two<sp/>Sum<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1adb443c6ca1aab44c236d2ce98b45c983" kindref="member">twoSum</ref>(<ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref>&amp;<sp/>num,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>target);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>leetcode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>==========<sp/>Microsoft<sp/>OA<sp/>============<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1647.<sp/>Miniumum<sp/>Deletions<sp/>to<sp/>Make<sp/>Character<sp/>Frequencies<sp/>Unique</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1a1e18a492caa00dc950ccdb815ca6083b" kindref="member">minDeletions</ref>(<ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>s);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>OA<sp/>2019<sp/>Minimum<sp/>Adjacent<sp/>Swaps<sp/>to<sp/>Make<sp/>Palindrome</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1a5c9cb0761fff007d731583fcd56f63fe" kindref="member">minSwaps</ref>(<ref refid="cpp/string/basic_string" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::string</ref><sp/>s);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SOLUTION_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>Two<sp/>Sum<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1adb443c6ca1aab44c236d2ce98b45c983" kindref="member">twoSum</ref>(<ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref>&amp;<sp/>num,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>target);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>OA<sp/>2019<sp/>Min<sp/>Steps<sp/>to<sp/>Make<sp/>Piles<sp/>Equal<sp/>Height</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1a34aa4d8f3499e3dcbe5f75dcb44a9f0b" kindref="member">minStpes</ref>(<sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref>&amp;<sp/>nums<sp/>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>OA<sp/>2019<sp/>Largest<sp/>K<sp/>such<sp/>that<sp/>both<sp/>K<sp/>and<sp/>-K<sp/>exist<sp/>in<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1af2c2a45de28adde04173de6570e08ddd" kindref="member">largestK</ref>(<sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref>&amp;<sp/>nums);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>==========<sp/>BFS<sp/>============<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>317.<sp/>Shortest<sp/>Distance<sp/>from<sp/>All<sp/>Buildings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/d8a/classleetcode_1_1_solutions_1aa88842acfeaaa8ee46c406fcaa8c00a4" kindref="member">shortestDistance</ref>(<sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt;<sp/><ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref><sp/>&gt;<sp/>&amp;<sp/>grid<sp/>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>leetcode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SOLUTION_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="leetcode_practice/src/solutions.h"/>
   </compounddef>

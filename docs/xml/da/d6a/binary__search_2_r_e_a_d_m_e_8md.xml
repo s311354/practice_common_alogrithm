@@ -9,11 +9,76 @@
     <programlisting>
 <codeline><highlight class="normal">##<sp/>Overview<sp/>of<sp/>Binary<sp/>Search<sp/>##</highlight></codeline>
 <codeline></codeline>
+<codeline><highlight class="normal">####<sp/>The<sp/>concept<sp/>of<sp/>binary<sp/>search<sp/>algorithm<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Binary<sp/>search<sp/>is<sp/>a<sp/>search<sp/>algorithm<sp/>that<sp/>finds<sp/>the<sp/>poistion<sp/>of<sp/>a<sp/>target<sp/>value<sp/>whithin<sp/>a<sp/>sorted<sp/>array<sp/>or<sp/>data<sp/>structure.<sp/>Binary<sp/>search<sp/>compares<sp/>the<sp/>target<sp/>value<sp/>to<sp/>the<sp/>middle<sp/>element<sp/>of<sp/>that<sp/>array<sp/>or<sp/>data<sp/>structure.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">####<sp/>The<sp/>concept<sp/>of<sp/>struct<sp/>and<sp/>class<sp/>declarations<sp/>####</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">For<sp/>C<sp/>program,<sp/>a<sp/>struct<sp/>is<sp/>a<sp/>type<sp/>consisting<sp/>of<sp/>a<sp/>sequence<sp/>of<sp/>members<sp/>whose<sp/>storage<sp/>is<sp/>allocated<sp/>in<sp/>an<sp/>ordered<sp/>sequence.<sp/>(as<sp/>opposed<sp/>to<sp/>union,<sp/>which<sp/>is<sp/>a<sp/>type<sp/>consisting<sp/>of<sp/>a<sp/>sequence<sp/>of<sp/>members<sp/>whose<sp/>storage<sp/>overlaps)<sp/>Within<sp/>a<sp/>struct<sp/>object,<sp/>addresses<sp/>of<sp/>its<sp/>elements<sp/>increase<sp/>in<sp/>order<sp/>in<sp/>which<sp/>the<sp/>members<sp/>were<sp/>defined.<sp/></highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">For<sp/>C++<sp/>program,<sp/>classes<sp/>and<sp/>structs<sp/>are<sp/>user-defined<sp/>types,<sp/>defined<sp/>by<sp/>class-specifier.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>The<sp/>concept<sp/>of<sp/>pointer<sp/>and<sp/>reference<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>pointer<sp/>is<sp/>an<sp/>object<sp/>that<sp/>stores<sp/>the<sp/>address,<sp/>or<sp/>location<sp/>in<sp/>memory,<sp/>of<sp/>some<sp/>other<sp/>object.<sp/>That<sp/>is,<sp/>it<sp/>is<sp/>a<sp/>reference<sp/>to<sp/>some<sp/>other<sp/>value.<sp/>A<sp/>pointer<sp/>is<sp/>a<sp/>type<sp/>of<sp/>thing,<sp/>the<sp/>same<sp/>way<sp/>an<sp/>integer<sp/>or<sp/>string<sp/>is<sp/>a<sp/>type<sp/>of<sp/>thing.<sp/>In<sp/>addition,<sp/>a<sp/>pointer<sp/>exist<sp/>so<sp/>that<sp/>you<sp/>can<sp/>dereference<sp/>it<sp/>to<sp/>set<sp/>or<sp/>get<sp/>the<sp/>addressed<sp/>value.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>class=&quot;language-shell<sp/>highlighter-rouge&quot;&gt;&lt;pre<sp/>class=&quot;highlight&quot;&gt;&lt;code<sp/>class=&quot;hljs<sp/>ruby&quot;&gt;&lt;span<sp/>class=&quot;nb&quot;&gt;int<sp/>x<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">int*<sp/>px<sp/>=<sp/>&amp;x;</highlight></codeline>
+<codeline><highlight class="normal">*px<sp/>=<sp/>42;<sp/>//<sp/>dereference<sp/>px<sp/>-&gt;<sp/>x&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Reference<sp/>is<sp/>another<sp/>value<sp/>which<sp/>eliminates<sp/>nearly<sp/>all<sp/>the<sp/>problems<sp/>that<sp/>come<sp/>with<sp/>pointers.<sp/>It<sp/>is<sp/>still<sp/>possible<sp/>to<sp/>mess<sp/>up,<sp/>but<sp/>not<sp/>easily.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>class=&quot;language-shell<sp/>highlighter-rouge&quot;&gt;&lt;pre<sp/>class=&quot;highlight&quot;&gt;&lt;code<sp/>class=&quot;hljs<sp/>ruby&quot;&gt;&lt;span<sp/>class=&quot;nb&quot;&gt;int<sp/>x<sp/>=<sp/>-7;</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>&amp;<sp/>y<sp/>=<sp/>x;</highlight></codeline>
+<codeline><highlight class="normal">y<sp/>=<sp/>12;<sp/>//<sp/>exact<sp/>same<sp/>thing<sp/>as<sp/>x<sp/>=<sp/>12;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Note<sp/>that<sp/>if<sp/>you<sp/>can<sp/>resolve<sp/>the<sp/>name<sp/>inline<sp/>then<sp/>you<sp/>can<sp/>simply<sp/>have<sp/>both<sp/>names<sp/>for<sp/>the<sp/>same<sp/>value<sp/>in<sp/>your<sp/>symbol<sp/>lookup<sp/>table.<sp/>(this<sp/>is<sp/>an<sp/>excellent<sp/>optimization!).<sp/>Otherwise,<sp/>you&apos;ll<sp/>need<sp/>to<sp/>generate<sp/>object<sp/>code<sp/>that<sp/>actually<sp/>used<sp/>a<sp/>pointer<sp/>to<sp/>do<sp/>the<sp/>dirty<sp/>work.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>The<sp/>concept<sp/>of<sp/>Pass-by-value,<sp/>Pass-by-reference<sp/>and<sp/>Pass-by-pointer<sp/>####</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Pass-by-value:<sp/>An<sp/>argument<sp/>passed<sp/>by<sp/>value<sp/>is<sp/>one<sp/>where<sp/>a<sp/>value<sp/>is<sp/>copied<sp/>into<sp/>a<sp/>special<sp/>location<sp/>in<sp/>the<sp/>computer&apos;s<sp/>memory<sp/>(called<sp/>the<sp/>&quot;stack<sp/>frame&quot;).<sp/>This<sp/>location<sp/>is<sp/>special<sp/>because<sp/>the<sp/>function<sp/>has<sp/>a<sp/>name<sp/>for<sp/>it,<sp/>and<sp/>you<sp/>can<sp/>use<sp/>that<sp/>name<sp/>to<sp/>access<sp/>the<sp/>(local<sp/>copy<sp/>of<sp/>the)<sp/>value.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>class=&quot;language-shell<sp/>highlighter-rouge&quot;&gt;&lt;pre<sp/>class=&quot;highlight&quot;&gt;&lt;code<sp/>class=&quot;hljs<sp/>ruby&quot;&gt;&lt;span<sp/>class=&quot;nb&quot;&gt;void<sp/>by_value(int<sp/>x)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>x+=<sp/>1;<sp/>//<sp/>8</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>z<sp/>=<sp/>7;<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>by_value(z);<sp/>//<sp/>7</highlight></codeline>
+<codeline><highlight class="normal">}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Pass-by-pointer:<sp/>An<sp/>argument<sp/>passed<sp/>by<sp/>pointer<sp/>is<sp/>where<sp/>a<sp/>pointer<sp/>value<sp/>is<sp/>copied<sp/>into<sp/>a<sp/>special<sp/>location<sp/>in<sp/>the<sp/>computer&apos;s<sp/>memory<sp/>(called<sp/>the<sp/>&quot;stack<sp/>frame&quot;).<sp/>This<sp/>local<sp/>pointer<sp/>can<sp/>be<sp/>dereferenced<sp/>to<sp/>access(and<sp/>modify)<sp/>the<sp/>referent<sp/>value.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>class=&quot;language-shell<sp/>highlighter-rouge&quot;&gt;&lt;pre<sp/>class=&quot;highlight&quot;&gt;&lt;code<sp/>class=&quot;hljs<sp/>ruby&quot;&gt;&lt;span<sp/>class=&quot;nb&quot;&gt;void<sp/>by_pointer(int*<sp/>x)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*x<sp/>+=<sp/>1;<sp/>//<sp/>8</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>z<sp/>=<sp/>7;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>by_pointer(<sp/>&amp;z<sp/>);<sp/>//<sp/>8</highlight></codeline>
+<codeline><highlight class="normal">}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Pass-by-reference:<sp/>An<sp/>argument<sp/>passed<sp/>by<sp/>reference<sp/>is<sp/>where<sp/>the<sp/>formal<sp/>argument<sp/>(the<sp/>name)<sp/>is<sp/>an<sp/>alias<sp/>for<sp/>the<sp/>actual<sp/>argument<sp/>(the<sp/>value).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>class=&quot;language-shell<sp/>highlighter-rouge&quot;&gt;&lt;pre<sp/>class=&quot;highlight&quot;&gt;&lt;code<sp/>class=&quot;hljs<sp/>ruby&quot;&gt;&lt;span<sp/>class=&quot;nb&quot;&gt;void<sp/>by_reference(int<sp/>&amp;<sp/>x)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>+=<sp/>1;<sp/>//<sp/>8</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>z<sp/>=<sp/>7;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>by_reference(z);<sp/>//<sp/>8</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Note<sp/>that<sp/>some<sp/>people<sp/>dislike<sp/>the<sp/>term<sp/>pass-by-pointer.<sp/>They<sp/>feel<sp/>it<sp/>is<sp/>misleading<sp/>and<sp/>inexact,<sp/>since<sp/>the<sp/><sp/>actual<sp/>argument<sp/>to<sp/>the<sp/>function<sp/>is<sp/>a<sp/>pointer<sp/>value<sp/>(an<sp/>address)<sp/>which<sp/>is<sp/>passed<sp/>by<sp/>value<sp/>into<sp/>function.<sp/>Hence,<sp/>they<sp/>say<sp/>this<sp/>is<sp/>really<sp/>pass-by-value.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">####<sp/>Reference<sp/>####</highlight></codeline>
 <codeline><highlight class="normal">[1]<sp/>[cppreference:<sp/>Struct<sp/>declaration](https://en.cppreference.com/w/c/language/struct)</highlight></codeline>
@@ -21,6 +86,12 @@
 <codeline><highlight class="normal">[2]<sp/>[cppreference:<sp/>Class<sp/>declaration](https://en.cppreference.com/w/cpp/language/class)</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">[3]<sp/>[cppreference:<sp/>Union<sp/>declaration](https://en.cppreference.com/w/c/language/union)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[4]<sp/>[Wiki:<sp/>Binary<sp/>search<sp/>algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[5]<sp/>[cplusplus:<sp/>Pass-by-value<sp/>vs<sp/>Pass-by-reference](https://www.cplusplus.com/faq/beginners/call-by/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[6]<sp/>[cplusplus:<sp/>Pointer<sp/>and<sp/>References](https://www.cplusplus.com/faq/beginners/pointers-and-references/)</highlight></codeline>
     </programlisting>
     <location file="binary_search/README.md"/>
   </compounddef>

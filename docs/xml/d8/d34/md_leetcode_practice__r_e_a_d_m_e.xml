@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d8/d34/md_leetcode_practice__r_e_a_d_m_e" kind="page">
+    <compoundname>md_leetcode_practice_README</compoundname>
+    <title>Overview of Common Alogrithm</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect3 id="d8/d34/md_leetcode_practice__r_e_a_d_m_e_1autotoc_md26">
+<title>The basic concept of bewteen c++98 and c++11</title>
+<para>C++11 is the second major version of C++ and the most important update since C++98. A large number of changes were introduced to both standardize existing practices and imporve the abstractions available to the C++ programmers. Since 2011, currently, C++ updates every 3 years regularly.</para>
+</sect3>
+<sect3 id="d8/d34/md_leetcode_practice__r_e_a_d_m_e_1autotoc_md27">
+<title>The concept of Assertions</title>
+<para>The form of assert that checks a Bollean condition can be invaluable. Assertions are also useful checks on an algorithm&apos;s operation. Assertions check for things that should never happen. But. don&apos;t use assertions in place of real error handling because most assert implementations will terminate the process when an assertion fails, there&apos;s no reason why versions you write should. If you need to free resources, catch the assertions&apos;s exception or trap the exit, and run your own error handler</para>
+<para>During testing,your first line of defense is checking for any possible error, and your second is using assertions to try to detect those you&apos;ve missed. Once the code has beem tested and shipped, assertions are no longer needed, and should be truned off to make the code run faster.</para>
+</sect3>
+<sect3 id="d8/d34/md_leetcode_practice__r_e_a_d_m_e_1autotoc_md28">
+<title>The concept of queue and stack</title>
+<para>The <ref refid="cpp/container/queue" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::queue</ref> class is a container adaptor that gives the programmer tha functionality of a queue- specifically, a FIFO data structure. The queue pushes the elements on the back of the underlying container and pops them from the front. (key member functions: <ref refid="cpp/container/queue/front" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::queue.front()</ref>, <ref refid="cpp/container/queue/back" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::queue.back()</ref>, <ref refid="cpp/container/queue/push" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::queue.push()</ref>, <ref refid="cpp/container/queue/pop" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::queue.pop()</ref>, ...)</para>
+<para>The <ref refid="cpp/container/stack" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::stack</ref> class is a container adaptor that gives the programmer the functionality of a stack - specifically, a LIFO data structure. The stack pushes and pops the element from the back of the underlying container, known as the top of the stack. (key member functions: <ref refid="cpp/container/stack/top" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::stack.top()</ref>, <ref refid="cpp/container/stack" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::stack()</ref>.push, <ref refid="cpp/container/stack/pop" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::stack.pop()</ref>, ...)</para>
+</sect3>
+<sect3 id="d8/d34/md_leetcode_practice__r_e_a_d_m_e_1autotoc_md29">
+<title>The concept of vector</title>
+<para>The std::vector&lt;T&gt;&apos;s elements are stroed contiguously, which means that elements can be accessed not only through iterators, but also using offsets to regular points to elements. This means that a pointer to an element of a vector may be passed to any function that expects a pointer to an element of an arry. (key member functions: std::vector&lt;T&gt;.assign(...), <ref refid="cpp/container/vector/front" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;T&gt;.front()</ref>, <ref refid="cpp/container/vector/back" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;T&gt;.back()</ref>, <ref refid="cpp/container/vector/push_back" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;T&gt;.push_back()</ref>, <ref refid="cpp/container/vector/pop_back" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector&lt;T&gt;.pop_back()</ref>, std::vector&lt;T&gt;.at(pos), ...)</para>
+</sect3>
+<sect3 id="d8/d34/md_leetcode_practice__r_e_a_d_m_e_1autotoc_md30">
+<title>The concept of Library Containers (STL)</title>
+<para>Overview of container: <table rows="5" cols="2"><row>
+<entry thead="yes"><para>Type </para>
+</entry><entry thead="yes"><para>Containers  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Sequence Containers </para>
+</entry><entry thead="no"><para><ref refid="cpp/container/array" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::array</ref>, <ref refid="cpp/container/vector" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::vector</ref>, <ref refid="cpp/container/deque" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::deque</ref>, <ref refid="cpp/container/forward_list" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::forward_list</ref>, <ref refid="cpp/container/list" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::list</ref>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Container Adaptors </para>
+</entry><entry thead="no"><para><ref refid="cpp/container/stack" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::stack</ref>, <ref refid="cpp/container/queue" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::queue</ref>, <ref refid="cpp/container/priority_queue" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::priority_queue</ref>  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Associative Containers </para>
+</entry><entry thead="no"><para><ref refid="cpp/container/set" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::set</ref>, <ref refid="cpp/container/multiset" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::multiset</ref>, <ref refid="cpp/container/map" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::map</ref>, std::multiap  </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Unorderred Associative Container </para>
+</entry><entry thead="no"><para><ref refid="cpp/container/unordered_set" kindref="compound" external="/Users/shi-rongliu/html_book_20190607/cppreference-doxygen-web.tag.xml">std::unordered_set</ref>, std::unordered_mulitset, std::undered_map, std::unordered_mulitmap  </para>
+</entry></row>
+</table>
+</para>
+<para>A container is a holder object that stores a collectionn of other objects (its elements). They are implemented as class templates, which allows a great flexibility in the types supported as elements.</para>
+</sect3>
+<sect3 id="d8/d34/md_leetcode_practice__r_e_a_d_m_e_1autotoc_md31">
+<title>Reference</title>
+<para>[1] <ulink url="https://www.cplusplus.com/forum/unices/172313/">cplusplus: Q/A -std=c++11 or -std=c++98</ulink></para>
+<para>[2] <ulink url="https://en.cppreference.com/w/cpp/language/history">History of C++</ulink></para>
+<para>[3] <ulink url="https://en.cppreference.com/w/cpp/11">cplusplus: C++11</ulink></para>
+<para>[4] <ulink url="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3337.pdf">Working Draft, Standard for Programming Language C++</ulink></para>
+<para>[5] <ulink url="https://www.cplusplus.com/reference/stl/">Library Containers</ulink></para>
+<para>[6] cppreference: <ulink url="https://en.cppreference.com/w/cpp/container/queue">std::queue</ulink>, <ulink url="https://en.cppreference.com/w/cpp/container/stack">std::stack</ulink>, <ulink url="https://en.cppreference.com/w/cpp/container/vector">std::vector</ulink>, <ulink url="http://en.cppreference.com/w/cpp/container/map">std::map</ulink> </para>
+</sect3>
+    </detaileddescription>
+    <location file="leetcode_practice/README.md"/>
+  </compounddef>
+</doxygen>

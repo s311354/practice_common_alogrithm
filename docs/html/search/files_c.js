@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['new_4651',['new',['http://en.cppreference.com/w/cpp/header/new.html',0,'']]],
-  ['numeric_4652',['numeric',['http://en.cppreference.com/w/cpp/header/numeric.html',0,'']]]
+  ['new_4692',['new',['http://en.cppreference.com/w/cpp/header/new.html',0,'']]],
+  ['numeric_4693',['numeric',['http://en.cppreference.com/w/cpp/header/numeric.html',0,'']]]
 ];

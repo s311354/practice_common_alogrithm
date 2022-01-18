@@ -110,8 +110,8 @@
 ElectricKettle Class Reference\par \pard\plain 
 {\tc\tcl2 \v ElectricKettle}
 {\xe \v ElectricKettle}
-{\bkmkstart AAAAAAABTN}
-{\bkmkend AAAAAAABTN}
+{\bkmkstart AAAAAAACCW}
+{\bkmkend AAAAAAACCW}
 Collaboration diagram for ElectricKettle:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "d3/d28/class_electric_kettle__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -123,11 +123,11 @@ Public Member Functions\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABTV" }{}}{\fldrslt {\cs37\ul\cf2 boil}}}
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDE" }{}}{\fldrslt {\cs37\ul\cf2 boil}}}
  ()\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABTU" }{}}{\fldrslt {\cs37\ul\cf2 plugIn}}}
- ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABTQ" }{}}{\fldrslt {\cs37\ul\cf2 USASocketInterface}}}
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACDD" }{}}{\fldrslt {\cs37\ul\cf2 plugIn}}}
+ ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACCZ" }{}}{\fldrslt {\cs37\ul\cf2 USASocketInterface}}}
  *supply)\par
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -136,8 +136,8 @@ Private Attributes\par
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABTQ" }{}}{\fldrslt {\cs37\ul\cf2 USASocketInterface}}}
- * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABWQ" }{}}{\fldrslt {\cs37\ul\cf2 power}}}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACCZ" }{}}{\fldrslt {\cs37\ul\cf2 USASocketInterface}}}
+ * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACGZ" }{}}{\fldrslt {\cs37\ul\cf2 power}}}
 \par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
@@ -158,8 +158,8 @@ Member Function Documentation\par
 {\b 
 void boil ()}}
 \par
-{\bkmkstart AAAAAAABTV}
-{\bkmkend AAAAAAABTV}
+{\bkmkstart AAAAAAACDE}
+{\bkmkend AAAAAAACDE}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -167,18 +167,18 @@ void boil ()}}
 Definition at line 80 of file main.cc.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 81         \{\par
-82             {\cf19 if} ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABWQ" }{}}{\fldrslt {\cs37\ul\cf2 power}}}
-->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABVZ" }{}}{\fldrslt {\cs37\ul\cf2 voltage}}}
+82             {\cf19 if} ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACGZ" }{}}{\fldrslt {\cs37\ul\cf2 power}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACGI" }{}}{\fldrslt {\cs37\ul\cf2 voltage}}}
 () > 110)\par
 83             \{\par
 84                 std::cout << {\cf22 "Kettle is on fire!"} << std::endl;\par
 85                 {\cf19 return};\par
 86             \}\par
 87 \par
-88             {\cf19 if} ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABWQ" }{}}{\fldrslt {\cs37\ul\cf2 power}}}
-->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABVV" }{}}{\fldrslt {\cs37\ul\cf2 live}}}
-() == 1 && {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABWQ" }{}}{\fldrslt {\cs37\ul\cf2 power}}}
-->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABVX" }{}}{\fldrslt {\cs37\ul\cf2 neutral}}}
+88             {\cf19 if} ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACGZ" }{}}{\fldrslt {\cs37\ul\cf2 power}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACGE" }{}}{\fldrslt {\cs37\ul\cf2 live}}}
+() == 1 && {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACGZ" }{}}{\fldrslt {\cs37\ul\cf2 power}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACGG" }{}}{\fldrslt {\cs37\ul\cf2 neutral}}}
 () == -1)\par
 89             \{\par
 90                 std::cout << {\cf22 "Coffee time!"} << std::endl;\par
@@ -204,11 +204,11 @@ Here is the caller graph for this function:{
 {\xe \v ElectricKettle\:plugIn}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-void plugIn ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABTQ" }{}}{\fldrslt {\cs37\ul\cf2 USASocketInterface}}}
+void plugIn ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACCZ" }{}}{\fldrslt {\cs37\ul\cf2 USASocketInterface}}}
  *  {\i supply})}}
 \par
-{\bkmkstart AAAAAAABTU}
-{\bkmkend AAAAAAABTU}
+{\bkmkstart AAAAAAACDD}
+{\bkmkend AAAAAAACDD}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -216,7 +216,7 @@ void plugIn ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABTQ" }{}}{\fldrslt {\c
 Definition at line 75 of file main.cc.}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 76         \{\par
-77             {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABWQ" }{}}{\fldrslt {\cs37\ul\cf2 power}}}
+77             {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACGZ" }{}}{\fldrslt {\cs37\ul\cf2 power}}}
  = supply;\par
 78         \}\par
 }
@@ -239,11 +239,11 @@ Member Data Documentation\par
 {\xe \v ElectricKettle\:power}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAABTQ" }{}}{\fldrslt {\cs37\ul\cf2 USASocketInterface}}}
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAACCZ" }{}}{\fldrslt {\cs37\ul\cf2 USASocketInterface}}}
 * power{\f2 [private]}}}
 \par
-{\bkmkstart AAAAAAABWQ}
-{\bkmkend AAAAAAABWQ}
+{\bkmkstart AAAAAAACGZ}
+{\bkmkend AAAAAAACGZ}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
