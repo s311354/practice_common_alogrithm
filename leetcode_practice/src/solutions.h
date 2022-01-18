@@ -19,6 +19,8 @@ private:
     bool isPalindrome(std::string s);
     bool isValidChar(char c);
     bool isValidString(std::string s);
+    bool isUniqieString(std::string s);
+    void checkLen( std::vector<std::string> & arr, std::string str, int index, int& count);
 
     void bfs(int column, int row, std::vector< std::vector<int>> & grid, std::vector< std::vector<int>>& dist, std::vector< std::vector<int>>& reached);
 
@@ -46,7 +48,6 @@ public:
 
     // 1239. Maximum length of a Concatenated String with Unique Characters 
     int maxLength( std::vector< std::string > & arr);
-
 
     /* ========== BFS ============ */
     // 317. Shortest Distance from All Buildings

@@ -47,6 +47,24 @@ bool Solutions::isValidString(std::string s)
     return true;
 }
 
+/*! \brief Brief function description here
+ *
+ *  Detailed description
+ *
+ * \return Return parameter description
+ */
+bool Solutions::isUniqieString(std::string s)
+{
+    std::set<char> unique;
+
+    for (auto elem : s) {
+        if (unique.count(elem)) return false;
+
+        unique.insert(elem);
+    }
+
+    return true;
+}
 
 /*! \brief Minimum Deletions to Make Character Frequencies Unique
  *
@@ -321,6 +339,36 @@ int Solutions::largestK( std::vector<int> & nums)
     }
 
     return ans;
+}
+
+/*! \brief Maximum Length of a Concatenated String with Unique
+ *
+ *  You are given an array of strings arr. A string s is formed by the concatenation of a subsequence of arr that has unique characters.
+ *
+ * \return the maximum possible length of s
+ */
+int Solutions::maxLength( std::vector< std::string> & arr)
+{
+    static int len = 0;
+
+    if (arr.size() < 0) return 0;
+
+    if (arr.size() == 1) return arr[0].size();
+
+    checkLen( arr, "", 0, len);
+
+    return len;
+}
+
+void Solutions::checkLen( std::vector<std::string> & arr, std::string str, int index, int& count )
+{
+    if (isUniqieString(str))
+        count = str.size() > count ? str.size(): count;
+
+    // recursive
+    for (int i = index; i < arr.size(); ++i) {
+        checkLen(arr, str+arr[i], i+1, count);
+    }
 }
 
 } /* namespace leetcode */
