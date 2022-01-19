@@ -371,4 +371,59 @@ void Solutions::checkLen( std::vector<std::string> & arr, std::string str, int i
     }
 }
 
+
+/*! \brief Find N Unique Integers Sum up to Zero
+ *
+ *  Given an integer n, return any array containing n unique integers such that they add up to 0
+ *
+ * \return Array containing n unique integers such that they add up to 0
+ */
+std::vector<int> Solutions::sumZero(int n)
+{
+    std::vector<int> v;
+
+    for (int i = 1; i <= n/2; ++i) {
+        v.push_back(i);
+        v.push_back(-i);
+    }
+
+    if (n%2 != 0) v.push_back(0);
+
+    return v;
+}
+
+
+
+
+/*! \brief Next Permutation
+ *
+ *  Implement next permutation, which rearrange numbers into the lexicographically next greater permutation of numbers
+ *
+ *  If such an arrangement is impossible, it must rearrange it to the lowest possible order (i.e., sorted in ascending order).
+ *
+ *  The replacement must be in place and use only constant extra memory
+ *
+ *  - 
+ * \return None
+ */
+void Solutions::nextPermutation( std::vector<int>& nums)
+{
+    int i = nums.size() - 2;
+
+    while (i >= 0 && nums[i+1] <= nums [i]) {
+        i--;
+    }
+
+    if (i >= 0) {
+        int j = nums.size() - 1;
+            while (nums[j] <= nums[i]) {
+                j--;
+            }
+            std::swap(nums[i], nums[j]);
+    }
+
+    std::reverse(nums.begin()+i+1, nums.end());
+}
+
+
 } /* namespace leetcode */

@@ -78,5 +78,33 @@ TEST_F(SolutionsTest, maxLengthTest)
 }
 
 
+TEST_F(SolutionsTest, sumZero) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> expected_value = {1,-1,2,-2,0};
+
+    for (int i = 0; i < expected_value.capacity(); ++i) {
+        EXPECT_EQ(expected_value[i], solutions.sumZero(5)[i]);
+    }
+}
+
+TEST_F(SolutionsTest, nextPermutationTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector<int> v = {1, 3, 5, 4, 2};
+    std::vector<int> expected_value = {1, 3, 5, 4, 2};
+
+    solutions.nextPermutation(v);
+    std::next_permutation(expected_value.begin(), expected_value.end());
+
+    for (int i = 0; i < expected_value.size(); ++i) {
+        EXPECT_EQ(expected_value[i], v[i]); 
+    }
+
+}
+
 
 } /* namespace googletest */
