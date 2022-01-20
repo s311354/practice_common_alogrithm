@@ -10,8 +10,21 @@
 #include <map>
 #include <string>
 #include <queue>
+#include <stack>
 
 namespace leetcode {
+
+struct TreeNode
+{
+    int val;
+    TreeNode * left;
+    TreeNode * right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {};
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {};
+    TreeNode(int x, TreeNode * left, TreeNode * right) : val(0), left(left), right(right) {};
+
+};
+
 
 class Solutions
 {
@@ -21,12 +34,18 @@ private:
     bool isValidString(std::string s);
     bool isUniqieString(std::string s);
     void checkLen( std::vector<std::string> & arr, std::string str, int index, int& count);
+    void bfs(int column, int row, std::vector< std::vector<int> > &grid, std::vector< std::vector<int> > &distance, std::vector< std::vector<int> >  &visit);
+    void countGoodNode(TreeNode* node, int value, int& count);
 
-    void bfs(int column, int row, std::vector< std::vector<int>> & grid, std::vector< std::vector<int>>& dist, std::vector< std::vector<int>>& reached);
+    void PrintInorder(TreeNode * node);
+    void PrintBFS(TreeNode* node);
+    TreeNode* getNewNode(int value);
 
 public:
     Solutions(){};
     virtual ~Solutions(){};
+
+    TreeNode* insertBTNode(TreeNode* node, int value, int index);
 
     /* ========== Microsoft OA ============ */
 
@@ -54,10 +73,17 @@ public:
     // 31 Next Permutation
     void nextPermutation( std::vector<int> & nums);
 
+    // 1822. Sign of the Product of an Array
+    int arraySign( std::vector<int> & nums);
+
+    // 1448. Count Good Nodes in Binary Tree
+    int goodNodes(TreeNode* root);
+
+
+
     /* ========== BFS ============ */
     // 317. Shortest Distance from All Buildings
     int shortestDistance( std::vector< std::vector<int> > & grid );
-
 
 };
 

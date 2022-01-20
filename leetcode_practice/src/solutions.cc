@@ -425,5 +425,141 @@ void Solutions::nextPermutation( std::vector<int>& nums)
     std::reverse(nums.begin()+i+1, nums.end());
 }
 
+/*! \brief Sign of the Product of an Array
+ *
+ *  Detailed There is a function signFunc(x) that returns: 
+ *  - 1  of x is positive
+ *  - -1 of x is negative
+ *  - 0  of x is equal to 0
+ *
+ *  You are given an integer array nums. Let products be the product of all values in the array nums
+ *
+ * \return signFunc(product)
+ */
+int Solutions::arraySign( std::vector<int> & nums)
+{
+    int sign = 1;
+
+    for (auto elem : nums) {
+        if (elem < 0) sign = sign*-1;
+        if (elem == 0) {
+            sign = 0;
+            return sign;
+        }
+    }
+
+    return sign;
+}
+
+/*! \brief Count Good Nodes in Binary Tree
+ *
+ *  Given a binary tree root, a node X in the tree is named good if in the path from root to X there are no nodes with a value greater than X.
+ *
+ *
+ * \return the number of good nodes in the binary tree
+ */
+int Solutions::goodNodes(TreeNode * root)
+{
+    int count = 0;
+
+//     PrintBFS(root);
+    countGoodNode(root, 0, count);
+
+    return count;
+}
+
+void Solutions::countGoodNode(TreeNode * node, int value, int & count)
+{
+
+    /* Proposal 1. Partial Pass
+    std::stack< TreeNode *> stack_node; // LIFO
+    stack_node.push(node);
+
+    TreeNode * current = nullptr;
+
+
+    while (!stack_node.empty()) {
+
+        current = stack_node.top();
+        stack_node.pop();
+
+        if (current != nullptr) {
+
+            if ( current->val >= value) {
+                count ++;
+                value = current->val;
+            }
+
+            if (current->left != nullptr) stack_node.push(current->left);
+            if (current->right != nullptr) stack_node.push(current->right);
+        }
+
+    }
+    */
+
+    /* Proposal 2 */ 
+    if (node == nullptr) return;
+
+    if (node->val >= value) {
+        count ++;
+        value = node->val;
+    }
+
+    countGoodNode(node->left, value, count);
+    countGoodNode(node->right, value, count);
+
+}
+
+TreeNode* Solutions::insertBTNode(TreeNode* node, int value, int index)
+{
+    if (node == nullptr) {
+        node = getNewNode(value);
+        return node;
+    }
+
+    if ( index % 2) {
+        node->left = insertBTNode(node->left, value, index);
+    } else {
+        node->right = insertBTNode(node->right, value, index);
+    }
+
+    return node;
+}
+
+TreeNode* Solutions::getNewNode(int value)
+{
+    TreeNode * node = new TreeNode;
+    node->val = value;
+    node->left = nullptr;
+    node->right = nullptr;
+
+    return node;
+}
+
+
+void Solutions::PrintBFS(TreeNode * node)
+{
+    TreeNode* current;
+
+    std::queue<TreeNode*> node_queue;
+    node_queue.push(node);
+
+    while (! node_queue.empty()) {
+        current = node_queue.front();
+        node_queue.pop();
+
+        if ( current != nullptr ) {
+            std::cout << current->val << std::endl;
+            if(current->left != nullptr) node_queue.push(current->left);
+            if(current->right != nullptr) node_queue.push(current->right);
+        }
+    }
+
+}
+
+
+
+
+
 
 } /* namespace leetcode */

@@ -106,5 +106,30 @@ TEST_F(SolutionsTest, nextPermutationTest)
 
 }
 
+TEST_F(SolutionsTest, arraySignTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> nums = {-1,-2,-3,-4,3,2,1};
+    int expected_value = 1;
+
+    EXPECT_EQ(expected_value, solutions.arraySign(nums));
+}
+
+TEST_F(SolutionsTest, goodNodesTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> v = {3,3,-1,4,2};
+    leetcode::TreeNode * root = nullptr;
+
+    int expected_value = 3;
+    for (int i = 0; i < v.size(); ++i) {
+        root = solutions.insertBTNode(root, v[i], i);
+    }
+
+    EXPECT_EQ(expected_value, solutions.goodNodes(root));
+}
+
 
 } /* namespace googletest */
