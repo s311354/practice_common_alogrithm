@@ -79,15 +79,13 @@ public:
     // 1448. Count Good Nodes in Binary Tree
     int goodNodes(TreeNode* root);
 
+    // OA 2019 Min Moves to Make String Without 3 Identical Consecutive Letters
+    std::string filterString(std::string &s);
 
 
     /* ========== BFS ============ */
     // 317. Shortest Distance from All Buildings
     int shortestDistance( std::vector< std::vector<int> > & grid );
-
-
-
-    
 
 
 };

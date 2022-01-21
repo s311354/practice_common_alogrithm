@@ -131,5 +131,17 @@ TEST_F(SolutionsTest, goodNodesTest)
     EXPECT_EQ(expected_value, solutions.goodNodes(root));
 }
 
+TEST_F(SolutionsTest, filterStringTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::string input = "uuuuxaaaaxum";
+    std::string expected_value = "uuxaaxum";
+
+    EXPECT_EQ(expected_value,solutions.filterString(input));
+}
+
+
 
 } /* namespace googletest */

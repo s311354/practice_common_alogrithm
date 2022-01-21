@@ -557,9 +557,60 @@ void Solutions::PrintBFS(TreeNode * node)
 
 }
 
+/*! \brief String Without 3 Identical Consecutive Letters
+ *
+ * Given a string s having lowercase English letters, returns a string with no instances of three identical consecutive letters, obtained from s by deleting the minimum possible number of letters.
+ *
+ * \return a string with no instance of three identical consecutive letters
+ */
+std::string Solutions::filterString(std::string &s)
+{
+    std::string letter(s.begin(), s.begin()+2);
 
+    for (int i = 2; i < s.length(); ++i) {
+        if (s[i] != s[i-1] or s[i] != s[i-2])
+            letter.push_back(s[i]);
+    }
 
+    return letter;
+}
 
+/*! \brief Maximum possible value by inserting '5'
+ *
+ *  
+ *
+ * \return Maximum possible value
+ */
+int Solutions::maxPossible(int num, int digit)
+{
+    std::vector<int> nums;
 
+    bool isPos = num > 0 ? true: false;
+
+    if (num == 0) nums.push_back(0);
+
+    while (num > 0) {
+        nums.push_back(num%10);
+        num = num/10;
+    }
+
+    if (isPos) {
+        for (auto it = nums.begin() ;  it != nums.end() ; it++) {
+            if (*it <= digit) nums.insert(it, digit);
+        }
+
+    } else {
+        for (auto it = nums.begin() ;  it != nums.end() ;) {
+            if (*it > digit) it = nums.insert(it, digit);
+        }
+    }
+
+    int ans = 0;
+    for (auto it = nums.end();  it!=nums.begin() ; it--) {
+        ans = *it + ans*10;
+    }
+
+    return isPos ? ans : -1*ans;
+}
 
 } /* namespace leetcode */
