@@ -6,6 +6,18 @@
 
 namespace common {
 
+
+struct Convert
+{
+    Convert() {};
+    virtual ~Convert() {};
+
+    bool isValidChar(char achar);
+    int str2num(std::string name);
+    std::string num2str(int id);
+
+};
+
 class Graph
 {
 private:
