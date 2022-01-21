@@ -10,15 +10,15 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "lib/googletest/include"
-  "lib/googletest"
+  "bin/gtest-src/include"
+  "bin/gtest-src"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/src/CMakeFiles/solutions_lib.dir/DependInfo.cmake"
-  "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/bin/gtest-src/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/bin/gtest-src/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -22,6 +22,10 @@ The std::vector<T>'s elements are stroed contiguously, which means that elements
 
 #### The concept of Library Containers (STL) ####
 
+A container is a holder object that stores a collectionn of other objects (its elements). They are implemented as class templates, which allows a great flexibility in the types supported as elements.
+
+Many containers have several member functions in common, and shared functionalities. The decision of which type of container to use to use for a specific need does not generally depend only on the functionality offered by the container, but also on the efficiency of some of its members.
+
 Overview of container:
 <table>
  <tr>
@@ -46,7 +50,7 @@ Overview of container:
  </tr>
 </table>
 
-A container is a holder object that stores a collectionn of other objects (its elements). They are implemented as class templates, which allows a great flexibility in the types supported as elements.
+
 
 #### Reference ####
 

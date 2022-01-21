@@ -4,25 +4,22 @@
 CMakeFiles/leetcode_unit_test.dir/leetcode_unit_test.cc.o
  /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/leetcode_unit_test.cc
  /Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/src/solutions.h
- lib/googletest/include/gtest/gtest-death-test.h
- lib/googletest/include/gtest/gtest-message.h
- lib/googletest/include/gtest/gtest-param-test.h
- lib/googletest/include/gtest/gtest-printers.h
- lib/googletest/include/gtest/gtest-test-part.h
- lib/googletest/include/gtest/gtest-typed-test.h
- lib/googletest/include/gtest/gtest.h
- lib/googletest/include/gtest/gtest_pred_impl.h
- lib/googletest/include/gtest/gtest_prod.h
- lib/googletest/include/gtest/internal/custom/gtest-port.h
- lib/googletest/include/gtest/internal/custom/gtest-printers.h
- lib/googletest/include/gtest/internal/gtest-death-test-internal.h
- lib/googletest/include/gtest/internal/gtest-filepath.h
- lib/googletest/include/gtest/internal/gtest-internal.h
- lib/googletest/include/gtest/internal/gtest-linked_ptr.h
- lib/googletest/include/gtest/internal/gtest-param-util-generated.h
- lib/googletest/include/gtest/internal/gtest-param-util.h
- lib/googletest/include/gtest/internal/gtest-port-arch.h
- lib/googletest/include/gtest/internal/gtest-port.h
- lib/googletest/include/gtest/internal/gtest-string.h
- lib/googletest/include/gtest/internal/gtest-tuple.h
- lib/googletest/include/gtest/internal/gtest-type-util.h
+ bin/gtest-src/include/gtest/gtest-death-test.h
+ bin/gtest-src/include/gtest/gtest-message.h
+ bin/gtest-src/include/gtest/gtest-param-test.h
+ bin/gtest-src/include/gtest/gtest-printers.h
+ bin/gtest-src/include/gtest/gtest-test-part.h
+ bin/gtest-src/include/gtest/gtest-typed-test.h
+ bin/gtest-src/include/gtest/gtest.h
+ bin/gtest-src/include/gtest/gtest_pred_impl.h
+ bin/gtest-src/include/gtest/gtest_prod.h
+ bin/gtest-src/include/gtest/internal/gtest-death-test-internal.h
+ bin/gtest-src/include/gtest/internal/gtest-filepath.h
+ bin/gtest-src/include/gtest/internal/gtest-internal.h
+ bin/gtest-src/include/gtest/internal/gtest-linked_ptr.h
+ bin/gtest-src/include/gtest/internal/gtest-param-util-generated.h
+ bin/gtest-src/include/gtest/internal/gtest-param-util.h
+ bin/gtest-src/include/gtest/internal/gtest-port.h
+ bin/gtest-src/include/gtest/internal/gtest-string.h
+ bin/gtest-src/include/gtest/internal/gtest-tuple.h
+ bin/gtest-src/include/gtest/internal/gtest-type-util.h

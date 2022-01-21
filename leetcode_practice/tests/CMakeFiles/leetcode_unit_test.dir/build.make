@@ -99,9 +99,9 @@ leetcode_unit_test_EXTERNAL_OBJECTS =
 leetcode_unit_test: CMakeFiles/leetcode_unit_test.dir/leetcode_unit_test.cc.o
 leetcode_unit_test: CMakeFiles/leetcode_unit_test.dir/build.make
 leetcode_unit_test: src/libsolutions_lib.a
-leetcode_unit_test: lib/googletest/libgtest.a
-leetcode_unit_test: lib/googletest/libgtest_main.a
-leetcode_unit_test: lib/googletest/libgtest.a
+leetcode_unit_test: bin/gtest-src/libgtest.a
+leetcode_unit_test: bin/gtest-src/libgtest_main.a
+leetcode_unit_test: bin/gtest-src/libgtest.a
 leetcode_unit_test: CMakeFiles/leetcode_unit_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/leetcode_practice/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable leetcode_unit_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/leetcode_unit_test.dir/link.txt --verbose=$(VERBOSE)

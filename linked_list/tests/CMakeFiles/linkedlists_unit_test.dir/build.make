@@ -99,9 +99,9 @@ linkedlists_unit_test_EXTERNAL_OBJECTS =
 linkedlists_unit_test: CMakeFiles/linkedlists_unit_test.dir/linkedlists_unit_test.cc.o
 linkedlists_unit_test: CMakeFiles/linkedlists_unit_test.dir/build.make
 linkedlists_unit_test: src/liblinkedlists_lib.a
-linkedlists_unit_test: lib/googletest/libgtest.a
-linkedlists_unit_test: lib/googletest/libgtest_main.a
-linkedlists_unit_test: lib/googletest/libgtest.a
+linkedlists_unit_test: bin/gtest-src/libgtest.a
+linkedlists_unit_test: bin/gtest-src/libgtest_main.a
+linkedlists_unit_test: bin/gtest-src/libgtest.a
 linkedlists_unit_test: CMakeFiles/linkedlists_unit_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/linked_list/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable linkedlists_unit_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/linkedlists_unit_test.dir/link.txt --verbose=$(VERBOSE)

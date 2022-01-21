@@ -99,9 +99,9 @@ queue_linked_list_unit_test_EXTERNAL_OBJECTS =
 queue_linked_list_unit_test: CMakeFiles/queue_linked_list_unit_test.dir/queue_linked_list_unit_test.cc.o
 queue_linked_list_unit_test: CMakeFiles/queue_linked_list_unit_test.dir/build.make
 queue_linked_list_unit_test: src/libqueue_linked_list_lib.a
-queue_linked_list_unit_test: lib/googletest/libgtest.a
-queue_linked_list_unit_test: lib/googletest/libgtest_main.a
-queue_linked_list_unit_test: lib/googletest/libgtest.a
+queue_linked_list_unit_test: bin/gtest-src/libgtest.a
+queue_linked_list_unit_test: bin/gtest-src/libgtest_main.a
+queue_linked_list_unit_test: bin/gtest-src/libgtest.a
 queue_linked_list_unit_test: CMakeFiles/queue_linked_list_unit_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shi-rongliu/Documents/GitHub/cplusplus_practice-/practice_common_alogrithm/queue_linked_list/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable queue_linked_list_unit_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/queue_linked_list_unit_test.dir/link.txt --verbose=$(VERBOSE)
