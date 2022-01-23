@@ -2,11 +2,10 @@ Microsoft_interview
 .vscode
 
 DoxygenWarningLog.txt
-./docs
-./doxygen_config
+docs
+doxygen_config
 
-./CMakeCache.txt
-./cmake_install.cmake
-./Makefile
-./Makefile
-./CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CMakeFiles
