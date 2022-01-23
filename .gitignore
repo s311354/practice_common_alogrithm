@@ -1,2 +1,12 @@
 Microsoft_interview
+.vscode
+
 DoxygenWarningLog.txt
+./docs
+./doxygen_config
+
+./CMakeCache.txt
+./cmake_install.cmake
+./Makefile
+./Makefile
+./CMakeFiles
