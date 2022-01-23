@@ -10,7 +10,15 @@ TEST_F(SolutionsTest, minDeletionsTest)
     /* Declare the Unit Test object */
     leetcode::Solutions solutions;
     std::string input = "aaabbccdddtt";
-    EXPECT_EQ(6, solutions.minDeletions(input));
+    int expected_value = 6;
+    EXPECT_EQ(expected_value, solutions.minDeletions(input));
+
+    input = "ceabaacb";
+    expected_value = 2;
+
+    EXPECT_EQ(expected_value, solutions.minDeletions(input));
+
+
 }
 
 TEST_F(SolutionsTest, MinSwapTest) 
@@ -94,6 +102,7 @@ TEST_F(SolutionsTest, nextPermutationTest)
     /* Declare the Unit Test object */
     leetcode::Solutions solutions;
 
+    
     std::vector<int> v = {1, 3, 5, 4, 2};
     std::vector<int> expected_value = {1, 3, 5, 4, 2};
 
@@ -103,6 +112,8 @@ TEST_F(SolutionsTest, nextPermutationTest)
     for (int i = 0; i < expected_value.size(); ++i) {
         EXPECT_EQ(expected_value[i], v[i]); 
     }
+
+
 
 }
 
@@ -141,6 +152,62 @@ TEST_F(SolutionsTest, filterStringTest)
 
     EXPECT_EQ(expected_value,solutions.filterString(input));
 }
+
+TEST_F(SolutionsTest, maxPossibleTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    int input = 7643;
+    int expected_value = 76543;
+
+    EXPECT_EQ(expected_value,solutions.maxPossible(input, 5));
+
+
+    /* Declare the Unit Test object */
+    input = -661;
+    expected_value =  -5661;
+
+    EXPECT_EQ(expected_value,solutions.maxPossible(input, 5));
+}
+
+
+TEST_F(SolutionsTest, deleteNodeTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> v = {5,3,6,2,4,-1,7};
+    int key = 3;
+    leetcode::TreeNode * root = nullptr;
+
+    for (int i = 0; i < v.size(); ++i) {
+        root = solutions.insertBTNode(root, v[i], i);
+    }
+
+    leetcode::TreeNode * new_node = solutions.deleteNode(root, key);
+
+    std::vector<int> actual_value = solutions.PrintBFS(new_node);
+
+    std::vector<int> expected_value = {5,2,6,4,7}; // {5,2,6,null,4,null,7}
+
+
+    for (int i = 0; i < v.size(); i++) {
+        EXPECT_EQ(expected_value[i], actual_value[i]);
+    }
+}
+
+TEST_F(SolutionsTest, sumFractionTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;;
+    std::vector< std::vector<int> > fractions = {{1,4}, {2,5}, {3,4}, {3,5}, {5, 10}, {1,2}, {1,2}};
+
+    int result_value = solutions.sumFraction(fractions);
+
+    int expected_value = 5;
+
+    EXPECT_EQ(expected_value,result_value);
+}
+
 
 
 

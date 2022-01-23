@@ -1,4 +1,6 @@
 #include "./solutions.h"
+#include <numeric>
+#include <numeric>
 
 namespace leetcode {
 
@@ -88,12 +90,11 @@ int Solutions::minDeletions(std::string s)
 
     int ans = 0;
 
-    // Traverse map from backwards
+    // Traverse map from backwards (find the minimum number of character need to delete)
     for (auto it = mp.rbegin();  it!=mp.rend() ; ++it) {
         int key = it->first;
         int val = it->second;
 
-//         std::cout &lt;&lt; "key: " &lt;&lt; key  &lt;&lt; " value: " &lt;&lt; val &lt;&lt; std::endl;
         // not frequencies of elements
         if (key == 0 || val == 1) {
             continue;
@@ -513,7 +514,7 @@ void Solutions::countGoodNode(TreeNode * node, int value, int & count)
 TreeNode* Solutions::insertBTNode(TreeNode* node, int value, int index)
 {
     if (node == nullptr) {
-        node = getNewNode(value);
+        if (value != -1) node = getNewNode(value);
         return node;
     }
 
@@ -537,9 +538,10 @@ TreeNode* Solutions::getNewNode(int value)
 }
 
 
-void Solutions::PrintBFS(TreeNode * node)
+std::vector<int> Solutions::PrintBFS(TreeNode * node)
 {
     TreeNode* current;
+    std::vector<int> bfsvector;
 
     std::queue<TreeNode*> node_queue;
     node_queue.push(node);
@@ -549,12 +551,14 @@ void Solutions::PrintBFS(TreeNode * node)
         node_queue.pop();
 
         if ( current != nullptr ) {
-            std::cout << current->val << std::endl;
+//             std::cout << current->val << std::endl;
+            bfsvector.push_back(current->val);
             if(current->left != nullptr) node_queue.push(current->left);
             if(current->right != nullptr) node_queue.push(current->right);
         }
     }
 
+    return bfsvector;
 }
 
 /*! \brief String Without 3 Identical Consecutive Letters
@@ -575,17 +579,22 @@ std::string Solutions::filterString(std::string &s)
     return letter;
 }
 
-/*! \brief Maximum possible value by inserting '5'
+/*! \brief Maximum possible value by insert 5 digit
  *
- *  
+ *  Write a function that returns the maximum possible value obtained by inserting 5 digit inside the decimal representation of integer N.
  *
- * \return Maximum possible value
+ * \return Maximim possivle value
  */
 int Solutions::maxPossible(int num, int digit)
 {
     std::vector<int> nums;
 
-    bool isPos = num > 0 ? true: false;
+    bool isPos = true; 
+
+    if (num < 0) {
+        isPos = false;
+        num = num * -1;
+    }
 
     if (num == 0) nums.push_back(0);
 
@@ -595,22 +604,110 @@ int Solutions::maxPossible(int num, int digit)
     }
 
     if (isPos) {
-        for (auto it = nums.begin() ;  it != nums.end() ; it++) {
-            if (*it <= digit) nums.insert(it, digit);
+        for (auto it = nums.rbegin() ;  it != nums.rend(); it++) {
+                if (*it < digit) {
+                    //std::cout << *it << std::endl;
+                    nums.insert(it.base(), digit);
+                    break;
+                }
         }
-
     } else {
-        for (auto it = nums.begin() ;  it != nums.end() ;) {
-            if (*it > digit) it = nums.insert(it, digit);
+        for (auto it = nums.rbegin() ;  it != nums.rend(); it++) {
+            if (*it > digit) {
+               //std::cout << *it << std::endl;
+                nums.insert(it.base(), digit);
+                break;
+            };
         }
     }
 
     int ans = 0;
-    for (auto it = nums.end();  it!=nums.begin() ; it--) {
+    for (auto it = nums.rbegin();  it!=nums.rend() ; it++) {
         ans = *it + ans*10;
     }
 
-    return isPos ? ans : -1*ans;
+    return (isPos ? ans : -1*ans);
 }
+
+/*! \brief Delete Node in a BST
+ *
+ *  Given a root node reference of a BST and a key, delete the node with the given key in the BST.
+ *
+ * \return the root node reference (possibly updated) of the BST
+ */
+TreeNode* Solutions::deleteNode(TreeNode* node, int key)
+{
+
+    if (node == nullptr) return nullptr;
+
+    if (node->val == key) {
+        if(!node->left) return node->right;
+        if(!node->right) return node->left;
+
+        // replace deleted node
+        TreeNode* new_node = node->left;
+        while (new_node->right) {
+            new_node = new_node->right;
+        }
+
+        // skip the replaced node
+        node->val = new_node->val;
+        node->left = deleteNode(node->left, new_node->val);
+    }
+
+
+    if (node->val > key) {
+        node->left = deleteNode(node->left, key);
+    } else {
+        node->right = deleteNode(node->right, key);
+    }
+
+    return node;
+}
+
+
+/*! \brief Number of Fractions that Sum to 1
+ *
+ *  You are given a list of lists fractions where each list contains [numerator, denominator] which represents the number number/denominator
+ *
+ * \return the number of pairs of fractions there are that sums to 1
+ */
+int Solutions::sumFraction( std::vector< std::vector<int> > & fracrion)
+{
+    std::map < std::pair<int, int>, int > dict;
+    int ans = 0;
+
+    for (auto& elem : fracrion) {
+        int g = gcd(elem[0], elem[1]);
+        dict[{elem[0]/g, elem[1]/g}]++;
+    }
+
+    for (auto it = dict.begin(); it != dict.end() ; it++) {
+        std::pair<int, int> key = it->first;
+        int count = it->second;
+
+        if (key.first * 2 > key.second) continue;
+        if (key.first * 2 == key.second) {
+            ans += count * (count - 1) /2;
+        } else {
+            auto it_match = dict.find({key.second - key.first, key.second});
+            if ( it_match!= dict.end()) ans += count * it_match->second;  
+        }
+    }
+    return ans;
+}
+
+int Solutions::gcd(int a, int b) {
+        while (b > 0) {
+        int r = a % b;
+            a = b;
+            b = r;
+        }
+        return a;
+}
+
+
+
+
 
 } /* namespace leetcode */

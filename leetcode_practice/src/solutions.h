@@ -11,6 +11,7 @@
 #include <string>
 #include <queue>
 #include <stack>
+#include <numeric>
 
 namespace leetcode {
 
@@ -38,13 +39,16 @@ private:
     void countGoodNode(TreeNode* node, int value, int& count);
 
     void PrintInorder(TreeNode * node);
-    void PrintBFS(TreeNode* node);
+
+    int gcd (int a, int b);
+
     TreeNode* getNewNode(int value);
 
 public:
     Solutions(){};
     virtual ~Solutions(){};
 
+    std::vector<int> PrintBFS(TreeNode* node);
     TreeNode* insertBTNode(TreeNode* node, int value, int index);
 
     /* ========== Microsoft OA ============ */
@@ -82,11 +86,23 @@ public:
     // OA 2019 Min Moves to Make String Without 3 Identical Consecutive Letters
     std::string filterString(std::string &s);
 
+    // OA 2019 Maximum possible value by inserting '5' digit
+    int maxPossible(int num, int digit);
+
+    // OA 2019 Minimum characters required to be removed to make frequency of each character unique
+    int minCntCharDeletionfrequency(std::string & str, int N);
+
+    // 450 Delete Node in a BST
+    TreeNode * deleteNode(TreeNode* root, int key);
+
+    // OA 2020 Number of Fractions that Sum to 1
+    int sumFraction( std::vector< std::vector<int> > & fracrion);
 
     /* ========== BFS ============ */
     // 317. Shortest Distance from All Buildings
     int shortestDistance( std::vector< std::vector<int> > & grid );
 
+    
 
 };
 
