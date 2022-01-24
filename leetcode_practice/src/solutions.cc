@@ -393,9 +393,6 @@ std::vector<int> Solutions::sumZero(int n)
     return v;
 }
 
-
-
-
 /*! \brief Next Permutation
  *
  *  Implement next permutation, which rearrange numbers into the lexicographically next greater permutation of numbers
@@ -665,7 +662,6 @@ TreeNode* Solutions::deleteNode(TreeNode* node, int key)
     return node;
 }
 
-
 /*! \brief Number of Fractions that Sum to 1
  *
  *  You are given a list of lists fractions where each list contains [numerator, denominator] which represents the number number/denominator
@@ -705,6 +701,87 @@ int Solutions::gcd(int a, int b) {
         }
         return a;
 }
+
+
+ /*! \brief Minimum Time to Make Rope Colorful
+ *
+ * Alice has n balloons arranged on a rope. You are given a 0-indexed string colors where colors[i] is the color of the ith ballon.
+ *
+ * Alice wants the rope to be colorful. She does not want two consecutive balloons to be of the same color, so she asks Bob for help. Bob can remove some balloons from the rope to make it colorful. 
+ * You are given a 0-indexed integer array neededTime where neededTime[i] is the time (in seconds) that Bob nees to remove the ith balloon from the rope.
+ * 
+ * \return Return the minimum time Bob need to make the rope colorful
+ */
+int Solutions::minCost( std::string colors, std::vector<int> & neededTime)
+{
+    int ans = 0;
+    int index = 0;
+
+    for (int i = 1; i < colors.size(); i++)
+    {
+        if (colors[index] == colors[i]) {
+            
+            if (neededTime[index] < neededTime[i]) {
+                ans += neededTime[index];
+                index = i;
+            } else {
+                ans += neededTime[i];
+            }
+        } else {
+            index = i;
+        }
+    }
+    return  ans;
+}
+
+ /*! \brief Longest Common Prefix
+ *
+ * Write a function to find the longest common prefix string amongst an array of strings
+ * 
+ * If there is no common prefix, return an empty string ""
+ * 
+ * \return Longest common prefix
+ */
+std::string Solutions::longestPrefix(std::vector< std::string > & strs)
+{
+    std::string ans = "";
+    sort(begin(strs), end(strs));
+    int last_index = strs.size() - 1;
+    for (int i = 0; i < strs[0].size(); i++)
+    {
+        if( strs.at(0)[i] == strs.at(last_index)[i]) ans += strs.at(0)[i];
+        else break;
+    }
+
+    return ans;
+}
+
+ /*! \brief Lagest K such that both K and -K exist in array
+ *
+ * Write a function that, given an array A of N integers, returns the lagest integer K > 0 such that both values K and -K exist in array A. 
+ * If there is no such integer, the function should return 0
+ *
+ * \return latgest K
+ */
+int Solutions::getLargestK( std::vector<int> & nums){
+    std::unordered_set<int> set;
+    int max = 0;
+
+    for(auto var : nums)
+    {
+        set.insert(var);
+    }
+
+    for(auto var : nums)
+    {
+        if (set.find(-var) != set.end() and var > max)
+        {
+            max = var;
+        }
+    }
+    return max;
+}
+
 
 
 

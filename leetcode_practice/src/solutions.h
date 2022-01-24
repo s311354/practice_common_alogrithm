@@ -98,6 +98,17 @@ public:
     // OA 2020 Number of Fractions that Sum to 1
     int sumFraction( std::vector< std::vector<int> > & fracrion);
 
+    // 1578. Minmum Time to Make Rope Colorful
+    int minCost( std::string colors, std::vector<int> & neededTime );
+    
+    // 14. Longest Common Prefix
+    std::string longestPrefix( std::vector< std::string > & strs);
+
+    // OA Largest K such that both K and -K exist in array
+    int getLargestK( std::vector<int> & nums);
+
+
+
     /* ========== BFS ============ */
     // 317. Shortest Distance from All Buildings
     int shortestDistance( std::vector< std::vector<int> > & grid );

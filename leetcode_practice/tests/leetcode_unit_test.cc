@@ -208,6 +208,36 @@ TEST_F(SolutionsTest, sumFractionTest)
     EXPECT_EQ(expected_value,result_value);
 }
 
+TEST_F(SolutionsTest, minCostTest)
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> neededTime = {3,5,10,7,5,3,5,5,4,8,1};
+    std::string colors = "aaabbbabbbb";
+    int expected_value = 26;
+
+    EXPECT_EQ(expected_value, solutions.minCost(colors, neededTime));
+}
+
+TEST_F(SolutionsTest, longestPrefixTest)
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector< std::string> prefix = {"dog","racecar","car"};
+    std::string expected_value = "";
+
+    EXPECT_EQ(expected_value, solutions.longestPrefix(prefix));
+}
+
+TEST_F(SolutionsTest, getLargestLTest)
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> input {3,2,-2,5,-3};
+    int expected_value = 3;
+
+    EXPECT_EQ(expected_value, solutions.getLargestK(input));
+}
 
 
 
