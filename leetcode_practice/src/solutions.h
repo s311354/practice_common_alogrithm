@@ -44,6 +44,9 @@ private:
 
     TreeNode* getNewNode(int value);
 
+    TreeNode* getMinNode(TreeNode* node);
+
+
 public:
     Solutions(){};
     virtual ~Solutions(){};

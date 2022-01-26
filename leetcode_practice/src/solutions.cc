@@ -8,22 +8,13 @@ bool Solutions::isPalindrome(std::string s)
 {
     int start = 0, end = s.length() - 1;
 
-    while (start < end) {
+    while (start < end / 2) {
         if (isValidChar(s[start]) && isValidChar(s[end])) {
-            if (s[start] == s[end]) {
+            if (s[start] == s[end - start]) {
                 start ++;
-                end --;
             } else {
                 return false;
             }
-        } else if (isValidChar(s[start])) {
-            ++start;
-            continue;
-        } else if (isValidChar(s[end])) {
-            ++end;
-            continue;
-        } else {
-            continue;
         }
     }
 
@@ -131,19 +122,20 @@ int Solutions::minSwaps(std::string s)
             //  Core begins
             //  track of the left and right points and compare
             int left_index, right_index;
-            for (left_index = start + 1; left_index <= end - start && s[left_index] != s[end - start]; ++left_index);
+            for (left_index = start; left_index <= end - start && s[left_index] != s[end - start]; ++left_index);
             for (right_index = end - start - 1; right_index >= start && s[right_index] != s[start]; --right_index);
 
             // choose minimum distance between left side or right side
-            ans += std::min(left_index - start, end - start - right_index);
             if (left_index - start < end - start - right_index) {
                 for (int p = left_index; p > start; --p) {
                     std::swap(s[p], s[p-1]);
                 } 
+                ans += left_index - start;
             } else {
                 for (int p = right_index; p < end - start; ++p) {
                      std::swap(s[p], s[p+1]);
                 }
+                ans += end - start - right_index;
             }
 
             ++start;
@@ -634,32 +626,43 @@ int Solutions::maxPossible(int num, int digit)
  */
 TreeNode* Solutions::deleteNode(TreeNode* node, int key)
 {
+    if (node == nullptr ) return nullptr;
 
-    if (node == nullptr) return nullptr;
+    if ( key == node->val) {
+        if( node->left == nullptr and node->right == nullptr) {
+            delete node;
+        } else if (node->left == nullptr) {
+            TreeNode* tmp = node;
+            node = tmp->right;
+            delete tmp;
+        } else if (node->right == nullptr) {
+            TreeNode* tmp = node;
+            node = tmp->left;
+            delete tmp;
+        } else {
+            // Get Min from right side
+            TreeNode * new_node = getMinNode(node->right);
 
-    if (node->val == key) {
-        if(!node->left) return node->right;
-        if(!node->right) return node->left;
-
-        // replace deleted node
-        TreeNode* new_node = node->left;
-        while (new_node->right) {
-            new_node = new_node->right;
+            node->val = new_node->val;
+            node->right = deleteNode(node->right, node->val); // reconstruct tree
         }
-
-        // skip the replaced node
-        node->val = new_node->val;
-        node->left = deleteNode(node->left, new_node->val);
     }
 
-
-    if (node->val > key) {
+    if ( key < node->val) {
         node->left = deleteNode(node->left, key);
-    } else {
+    } else if (key > node->val) {
         node->right = deleteNode(node->right, key);
     }
 
     return node;
+}
+
+TreeNode* Solutions::getMinNode (TreeNode* node) {
+    if (node == nullptr) return nullptr;
+
+    if (node->left == nullptr) return node;
+
+    return getMinNode(node->left);
 }
 
 /*! \brief Number of Fractions that Sum to 1
@@ -720,7 +723,6 @@ int Solutions::minCost( std::string colors, std::vector<int> & neededTime)
     for (int i = 1; i < colors.size(); i++)
     {
         if (colors[index] == colors[i]) {
-            
             if (neededTime[index] < neededTime[i]) {
                 ans += neededTime[index];
                 index = i;
