@@ -1,6 +1,9 @@
 #include "./solutions.h"
 #include <numeric>
-#include <numeric>
+#include <sstream>
+#include <algorithm>
+#include <iostream>
+#include <queue>
 
 namespace leetcode {
 
@@ -33,8 +36,6 @@ bool Solutions::isValidString(std::string s)
             continue;
         }
         else return false;
-
-        std::cout << "va" << std::endl;
     }
 
     return true;
@@ -784,9 +785,312 @@ int Solutions::getLargestK( std::vector<int> & nums){
     return max;
 }
 
+/*! \brief Smallest Positive Integer
+ *
+ *  Write a function that, given an array A of N integers, returns the smallest positive integer (greater than 0) that does not occur in A.
+ *
+ *  For example, given A = [1, 3, 6, 4, 1, 2], the function should return 5.
+ *  Given A = [1, 2, 3], the function should return 4.
+ *  Given A = [-1, -3], the function should return 1.
+ *
+ *
+ * \return  smallest positive integer
+ */
+int Solutions::smallestInt( std::vector<int> &A )
+{
+    int ans = 0;
+
+    std::vector<int> v(A.size(), 0);
+    for (auto elem : A) {
+        if (elem > 0) v[elem] ++;
+    }
+
+    int i;
+    for (i = 1 ; i < v.size(); i ++) {
+        if (v[i] == 0) return i;
+    }
+
+    return i + 1;
+
+}
 
 
+/*! \brief Maximum sequence of consecutive zeros
+ *
+ *  A binary gap within a positive integer N is any maximum sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N. For example, number 9 has binary representation 1001 and contains a binary gap of length 2
+ *
+ * \return maximum sequence of consecutive zeros
+ */
+int Solutions::lengthBin(int N)
+{
+    std::bitset<16> binary(N) ;
+
+    std::string bit = binary.to_string();
+
+    int ans = INT_MIN, max = 0;
+    for (auto elem : bit) {
+        if( elem == '0') {
+            max ++;
+        } else {
+            if (max > ans and max != 0 and max < 6) ans = max;
+            max  = 0;
+        }
+    }
+
+    return (ans == INT_MIN) ? 0: ans;
+}
+
+/*! \brief The Monty Hall Problem
+ *
+ *  The Monty Hall problem is a famous conundrum in probability which takes the form of a hypothetical game show. The contestant is presented with three doors; behind one is a car and behind each of the other two is a goat. The contestant picks a door and then the gameshow host opens a different door to reveal a goat. The host knows which door conceals the car. The contestant is then invited to switch to the other closed door or stick with their initial choice.
+ *
+ * \return probability
+ */
+float Solutions::montyHall(int guess)
+{
+    int winningNum = 0;
+    int switchedNum = 0;
+    int switchedCount = 0;
+    int elimNum = 0;
+
+    for (int i = 0; i < 1000; ++i) {
+        winningNum = getRandom(1, 3, 0);
+        elimNum = getRandom(1, 3, winningNum);
+        switchedNum = getRandom(1, 3, elimNum);
+
+        while (switchedNum == guess ) {
+            switchedNum = getRandom(1, 3, winningNum);
+        }
+
+        if (switchedNum == winningNum) switchedCount ++;
+
+    }
+
+    return 100 - (switchedCount / 10);
+}
+
+int Solutions::getRandom(int low, int high, int badNum)
+{
+    int random = rand() % high + low;
+
+    while ( random == badNum ) {
+        random = rand() % high + low;
+    }
+
+    return random;
+}
 
 
+/*! \brief Minimum number of letters
+ *
+ *  You are given a string S consisting of N lowercase letters. In one move you can remove any substring from S, which starts and ends with the same letter and is at least two letters long. What is the minimum number of letters that may remain in S after any number of such moves?
+ *
+ * \return minimum number of letters
+ */
+int Solutions::lowercaseLetters( std::string &S)
+{
+    int ans = 0;
+    int startnumber = 0;
+
+    if (S.size() == 0 or S.size() == 1) return S.size();
+
+    for (auto it = S.begin() + 1;  it!=S.end() ; it++) {
+        if (*it == *S.begin()) {
+            startnumber ++;
+            if (*(it++) == *(it)) {
+                startnumber ++;
+            }
+            break;
+        } else {
+            startnumber ++;
+        }
+    }
+
+
+    if (startnumber + 1 == S.size()) S.erase(0, startnumber );
+
+    else S.erase(0, startnumber +1 );
+
+
+    int endnumber = S.size();
+
+    if (S.size() != 1) {
+        for (auto it = S.rbegin() + 1;  it!=S.rend() ; it++) {
+            if (*it == *S.rbegin()) {
+                endnumber --;
+                break;
+            } else {
+                endnumber --;
+            }
+        }
+
+        S.erase(endnumber - 1, S.size());
+    }
+
+    return S.size();
+}
+
+
+/*! \brief Balanced Stone Heaps
+ *
+ *  There are n heaps of stone. The i-th heap has hi stones. You want to change the number of stones in the heap by performing the following process once:
+ *
+ *  - You go through the heaps from the 3-rd heap to the n-th heap, in this order.
+ *  - Let i be the number of the current heap
+ *  - You can choose a number d, move d stones from the i-th heap to the (i-1)th heap, and 2*d stones from the i-th heap to the (i-2)th heap.
+ *  - So after that hi is decreased by 3*d, hi-1 is increased by d, and hi-2 is increased by 2*d.
+ *  - You can choose different or same d for different operations. Some heaps may become empty, but they still count as heaps.
+ *
+ * \return the maximum number of stones in the smallest heap after the process.
+ */
+int Solutions::balancedStone( std::vector<int> &A)
+{
+
+    for (int i = 2, p; i < A.size(); ++i) {
+
+        p = A[i]/3;
+
+        if (p == 0){
+            return 1;
+            break;
+        }
+
+        A[i] -= p *3;
+        A[i - 1] += p;
+        A[i - 2] += p*2;
+    }
+
+    return A[0];
+}
+
+
+/*! \brief Course Schedule III
+ *
+ *  There are n different online courses numbered from 1 to n, You are given an array courses where courses[i] = [duration, lastDayi] indicate that the ith course should be taken continuously for duration days and must be finished before or on lastDayi.
+ *
+ *  You will start on the 1st day and you cannot take two or more courses simultaneously.
+ *
+ * \return the maximum number of courses that you can take
+ */
+int Solutions::scheduleCourse( std::vector< std::vector<int> > & courses)
+{
+    int totalcourse = 0;
+    int time = 0;
+    std::priority_queue<int> duration;
+
+    for (int i = 0; i < courses.size(); ++i) {
+        if (time + courses.at(i)[0] <= courses.at(i)[1]) {
+            time += courses.at(i)[0];
+            duration.push(courses.at(i)[0]);
+        } else if (!duration.empty() && duration.top() > courses.at(i)[0]) {
+            time = (duration.top() - courses.at(i)[0]);
+            duration.pop();
+            duration.push(courses.at(i)[0]);
+        }
+    }
+
+    return duration.size();
+}
+
+/*! \brief Minimum characters required to be removed to make frequency of each character unique
+ *
+ *  Given string str, the task is to find the minimum count of characters that need to be deleted from the string such that the frequency of each character of the string is unique
+ *
+ * \return minimum removals required
+ */
+int Solutions::uniqueString( std::string &S)
+{
+    std::vector<int> asciicode(26);
+
+    for (auto elem : S) {
+        asciicode[elem - 'a'] ++;
+    }
+
+    std::map<int, int> frequencychar;
+    for (int i = 0; i < 26; ++i) {
+        frequencychar[asciicode[i]] ++;
+    }
+
+    int ans = 0;
+
+    for (auto it = frequencychar.rbegin();  it != frequencychar.rend() ; ++it) {
+        int ascii = it->first;
+        int count = it->second;
+
+        if (ascii == 0 or count == 1) continue; // 
+
+        int new_count = count - 1;
+        frequencychar[ascii - 1] = new_count;
+        ans += new_count;
+    }
+
+    return ans;
+}
+
+
+/*! \brief Meeting rooms
+ *
+ *  Given an 2D integer array A of size N x 2 denoting time intervals of different meetings.
+ *  Where:
+ *  A[i][0] = start time of the ith meeting.
+ *  A[i][1] = end time of the ith meeting.
+ *
+ *  Find the minimum number of conference rooms required so that all meetings can be done.
+ *
+ * \return minimum meetings rooms
+ */
+int Solutions::storeMeetingrooms( std::vector< std::vector<int> > & rooms)
+{
+    int room = INT_MIN;
+
+    std::vector< std::pair<int, int> > meeting;
+
+    for (int i = 0; i < rooms.size(); ++i) {
+        int start = rooms.at(i)[0];
+        int end = rooms.at(i)[1];
+
+        meeting.push_back( {start, 0});
+        meeting.push_back( {end, 1});
+    }
+
+    sort(meeting.begin(), meeting.end());
+    int count = 0;
+    for (int i = 0; i < meeting.size() - 1; ++i) {
+
+        if (meeting.at(i).second == 0) {
+            count ++;
+        } else {
+            count --;
+        }
+        if (meeting.at(i).first != meeting.at(i+1).first) room = std::max(room, count);
+    }
+
+    return room;
+}
+
+/*! \brief Minimum Number of Arrows to Burst Balloons
+ *
+ *  There are some spherical balloons taped onto a flat wall that represents the XY-plane. The balloons are represented as a 2D integer array points where points[i] = [xstart, xend] denotes a balloon whose horizontal diameter stretches between xstart and xend. You do not know the exact y-coordinates of the balloons.
+ *
+ *  Arrows can be shot up directly vertically (in the positive y-direction) from different points along the x-axis. A balloon with xstart and xend is burst by an arrow shot at x if xstart <= x <= xend. There is no limit to the number of arrows that can be shot. A shot arrow keeps traveling up infinitely, bursting any balloons in its path.
+ *  Given the array points, return the minimum number of arrows that must be shot to burst all balloons.
+ *
+ * \return minimum number of arrows that must be shot to burst all balloons
+ */
+int Solutions::findMinArrowShots( std::vector< std::vector<int> > & points)
+{
+    sort(points.begin(), points.end());
+    int ans = 0, arrow = 0;
+
+    for (int i = 0; i < points.size(); ++i) {
+
+        if (ans == 0 or points.at(i)[0] > arrow) {
+            ans ++;
+            arrow = points.at(i)[1];
+        }
+    }
+
+    return ans;
+}
 
 } /* namespace leetcode */

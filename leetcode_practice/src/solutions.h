@@ -40,7 +40,10 @@ private:
 
     void PrintInorder(TreeNode * node);
 
+    int getRandom(int low, int high, int badNum);
     int gcd (int a, int b);
+
+    std::vector<int> parseInts(const std::string & str);
 
     TreeNode* getNewNode(int value);
 
@@ -103,20 +106,48 @@ public:
 
     // 1578. Minmum Time to Make Rope Colorful
     int minCost( std::string colors, std::vector<int> & neededTime );
-    
+
     // 14. Longest Common Prefix
     std::string longestPrefix( std::vector< std::string > & strs);
 
     // OA Largest K such that both K and -K exist in array
     int getLargestK( std::vector<int> & nums);
 
+    // Codility Test
+    int smallestInt( std::vector<int> &A);
 
+    // Length of its longest binary gap
+    int lengthBin(int N);
 
     /* ========== BFS ============ */
     // 317. Shortest Distance from All Buildings
     int shortestDistance( std::vector< std::vector<int> > & grid );
 
-    
+    // The Monty Hall Problem
+    float montyHall(int guess);
+
+
+    // Lowercase letters
+    int lowercaseLetters( std::string &S);
+
+
+    // Binary Search
+    // Count The Rectangles
+
+    // Balanced Stone Heaps
+    int balancedStone( std::vector<int> &A);
+
+    // Heap 
+    // Course Schedule III
+    int scheduleCourse( std::vector< std::vector<int> > & courses );
+
+    int uniqueString( std::string &S);
+
+    // 252 Meeting rooms (Greedy Algorithms)
+    int storeMeetingrooms( std::vector< std::vector<int> > & rooms);
+
+    // 452. Minimum Number of Arrows to Brust Balloons
+    int findMinArrowShots( std::vector< std::vector<int> > &points);
 
 };
 

@@ -1,5 +1,8 @@
 #include "gtest/gtest.h"
 #include "src/solutions.h"
+#include <iostream>
+#include <fstream>
+
 
 namespace googletest {
 
@@ -190,7 +193,7 @@ TEST_F(SolutionsTest, deleteNodeTest)
     std::vector<int> expected_value = {5,2,6,4,7}; // {5,2,6,null,4,null,7}
 
 
-    for (int i = 0; i < v.size(); i++) {
+    for (int i = 0; i < expected_value.size(); i++) {
         EXPECT_EQ(expected_value[i], actual_value[i]);
     }
 }
@@ -239,6 +242,182 @@ TEST_F(SolutionsTest, getLargestLTest)
     EXPECT_EQ(expected_value, solutions.getLargestK(input));
 }
 
+std::vector<int> parseInts(const std::string & str)
+{
+    std::vector<int> v;
 
+    std::stringstream ss(str);
+
+    std::string temp;
+
+    while (ss >> temp) {
+        std::stringstream st(temp);
+        while (st) {
+            int i;
+
+            if (st >> i) {
+                v.push_back(i);
+            } else {
+                st.clear();
+                st.get();
+            }
+        }
+    }
+    return  v;
+}
+
+TEST_F(SolutionsTest, balancedStoneTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::ifstream ifs;
+
+    char buffer[256] = {0};
+
+    ifs.open("./balancedstone.txt");
+
+    std::vector<int> expected_value = {7, 1, 1, 3};
+    int index = 0;
+
+    std::string line;
+    while (std::getline(ifs, line)) {
+        std::istringstream iss(line);
+        std::vector<int> v = parseInts(line);
+
+        if (v.size() > 1) {
+            EXPECT_EQ(expected_value.at(index), solutions.balancedStone(v));
+            index ++; 
+        }
+    }
+}
+
+TEST_F(SolutionsTest, smallestIntTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> input = {1, 3, 6, 4, 1, 2};
+    int expected_value = 5;
+    EXPECT_EQ(expected_value, solutions.smallestInt(input));
+
+
+    input = {1, 2, 3};
+    expected_value = 4;
+    EXPECT_EQ(expected_value, solutions.smallestInt(input));
+
+    input = {-1, -1, -2};
+    expected_value = 1;
+    EXPECT_EQ(expected_value, solutions.smallestInt(input));
+}
+
+
+TEST_F(SolutionsTest, lengthBinTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    int input = 9;
+    int expected_value = 2;
+
+    EXPECT_EQ(expected_value, solutions.lengthBin(input));
+
+    input = 15;
+    expected_value = 0;
+    EXPECT_EQ(expected_value, solutions.lengthBin(input));
+
+    input = 1041;
+    expected_value = 5;
+    EXPECT_EQ(expected_value, solutions.lengthBin(input));
+
+}
+
+TEST_F(SolutionsTest, montyHallTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+}
+
+TEST_F(SolutionsTest, lowercaseLettersTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    int expected_value = 1;
+
+    std::string input = "abccac";
+
+    EXPECT_EQ(expected_value,solutions.lowercaseLetters(input));
+
+
+    expected_value = 2;
+
+    input = "abcdabcdabcd";
+
+    EXPECT_EQ(expected_value,solutions.lowercaseLetters(input));
+
+
+    expected_value = 0;
+    input = "axaabyab";
+
+    EXPECT_EQ(expected_value,solutions.lowercaseLetters(input));
+
+
+}
+
+
+
+TEST_F(SolutionsTest, scheduleCourseTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector< std::vector<int> > courses =  {{100,200},{200,1300},{1000,1250},{2000,3200}};
+    \
+
+    int expected_value = 3;
+    EXPECT_EQ(expected_value, solutions.scheduleCourse(courses));
+
+    courses = {{3,2}, {4,3}};
+
+    expected_value = 0;
+}
+
+
+TEST_F(SolutionsTest, uniqueStringTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::string input = "abbbcccd";
+    int expected_value = 2;
+
+    EXPECT_EQ(expected_value, solutions.uniqueString( input));
+}
+
+TEST_F(SolutionsTest, storeMeetingroomsTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector< std::vector< int> > room = { {0, 30}, {5, 10}, {15, 20} };
+    int expected_value = 2;
+
+    EXPECT_EQ(expected_value,solutions.storeMeetingrooms(room));
+
+    room = {{1, 18}, {18, 23}, {15, 29}, {4, 15}, {2, 11}, {5, 13}};
+    expected_value = 4;
+    EXPECT_EQ(expected_value,solutions.storeMeetingrooms(room));
+}
+
+TEST_F(SolutionsTest, findMinArrowShotsTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector< std::vector<int> >  points = {{10, 16}, {2, 8}, {1, 6}, {7, 12}};
+    int expected_value = 2;
+
+    EXPECT_EQ(expected_value, solutions.findMinArrowShots(points));
+
+    points = {{1,2}, {2,3}, {3,4}, {4,5}};
+    expected_value = 2;
+    EXPECT_EQ(expected_value, solutions.findMinArrowShots(points));
+}
 
 } /* namespace googletest */
