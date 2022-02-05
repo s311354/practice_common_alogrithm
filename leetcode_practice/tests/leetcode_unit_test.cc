@@ -420,6 +420,34 @@ TEST_F(SolutionsTest, findMinArrowShotsTest)
     EXPECT_EQ(expected_value, solutions.findMinArrowShots(points));
 }
 
+TEST_F(SolutionsTest, maxFullRoundTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::string A = "12:01";
+    std::string B = "12:44";
+
+    int expected_value = 1;
+    EXPECT_EQ(expected_value, solutions.maxFullRound(A, B));
+
+
+    A = "20:00";
+    B = "06:00";
+    expected_value = 40;
+    EXPECT_EQ(expected_value, solutions.maxFullRound(A, B));
+
+    A = "00:00";
+    B = "23:59";
+    expected_value = 95;
+    EXPECT_EQ(expected_value, solutions.maxFullRound(A, B));
+
+
+    A = "12:03";
+    B = "12:03";
+    expected_value = 0;
+    EXPECT_EQ(expected_value, solutions.maxFullRound(A, B));
+
+}
 
 
 

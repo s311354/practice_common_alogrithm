@@ -145,13 +145,15 @@ public:
     // 452. Minimum Number of Arrows to Brust Balloons
    int findMinArrowShots( std::vector< std::vector<int> > &points);
 
-    int solutions1(std::string &A, std::string &B);
-
+    int maxFullRound( std::string &A, std::string &B);
 
     int solutions2( std::vector<int> &A);
 
 
     int maximumSum( int N, std::vector<int> &A, std::vector<int > &B);
+
+    bool containDup ( std::vector<int> & nums);
+
 
 };
 
