@@ -420,4 +420,58 @@ TEST_F(SolutionsTest, findMinArrowShotsTest)
     EXPECT_EQ(expected_value, solutions.findMinArrowShots(points));
 }
 
+
+
+
+
+TEST_F(SolutionsTest, solutions2Test) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    int expected_value = 1;
+
+    std::vector<int> input = {10, -10, -1, -1, 10} ;
+
+    EXPECT_EQ(expected_value, solutions.solutions2(input));
+
+    input = {-1, -1 , -1, 1, 1, 1, 1};
+
+    expected_value = 3;
+    EXPECT_EQ(expected_value, solutions.solutions2(input));
+}
+
+
+TEST_F(SolutionsTest, maximumSumTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    int N = 5;
+    std::vector<int> A = {2, 2, 1, 2};
+    std::vector<int> B = {1, 3, 4, 4};
+
+    int expected_value = 31;
+    EXPECT_EQ(expected_value, solutions.maximumSum(N, A, B));
+
+    A = {1};
+    B = {3};
+    N = 3;
+    expected_value = 5;
+    EXPECT_EQ(expected_value, solutions.maximumSum(N, A, B));
+
+    A = {1, 3};
+    B = {2, 4};
+    N = 4;
+    expected_value = 10;
+    EXPECT_EQ(expected_value, solutions.maximumSum(N, A, B));
+
+
+
+}
+
+
+
+
+
+
 } /* namespace googletest */

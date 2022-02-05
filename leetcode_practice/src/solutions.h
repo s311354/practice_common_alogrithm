@@ -43,6 +43,7 @@ private:
     int getRandom(int low, int high, int badNum);
     int gcd (int a, int b);
 
+
     std::vector<int> parseInts(const std::string & str);
 
     TreeNode* getNewNode(int value);
@@ -126,13 +127,8 @@ public:
     // The Monty Hall Problem
     float montyHall(int guess);
 
-
     // Lowercase letters
     int lowercaseLetters( std::string &S);
-
-
-    // Binary Search
-    // Count The Rectangles
 
     // Balanced Stone Heaps
     int balancedStone( std::vector<int> &A);
@@ -147,7 +143,15 @@ public:
     int storeMeetingrooms( std::vector< std::vector<int> > & rooms);
 
     // 452. Minimum Number of Arrows to Brust Balloons
-    int findMinArrowShots( std::vector< std::vector<int> > &points);
+   int findMinArrowShots( std::vector< std::vector<int> > &points);
+
+    int solutions1(std::string &A, std::string &B);
+
+
+    int solutions2( std::vector<int> &A);
+
+
+    int maximumSum( int N, std::vector<int> &A, std::vector<int > &B);
 
 };
 

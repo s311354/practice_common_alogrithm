@@ -767,14 +767,18 @@ std::string Solutions::longestPrefix(std::vector< std::string > & strs)
  * \return latgest K
  */
 int Solutions::getLargestK( std::vector<int> & nums){
+
+    // initial a hash set
     std::unordered_set<int> set;
     int max = 0;
 
+    // insert a new key
     for(auto var : nums)
     {
         set.insert(var);
     }
 
+    // check if the key is in the hash set
     for(auto var : nums)
     {
         if (set.find(-var) != set.end() and var > max)
@@ -1077,20 +1081,148 @@ int Solutions::storeMeetingrooms( std::vector< std::vector<int> > & rooms)
  *
  * \return minimum number of arrows that must be shot to burst all balloons
  */
+bool cmp ( std::vector<int> &a, std::vector<int> &b) { return a.at(1) < b.at(1); }
+
 int Solutions::findMinArrowShots( std::vector< std::vector<int> > & points)
 {
-    sort(points.begin(), points.end());
     int ans = 0, arrow = 0;
 
+    std::sort(points.begin(), points.end(), cmp);
     for (int i = 0; i < points.size(); ++i) {
-
-        if (ans == 0 or points.at(i)[0] > arrow) {
+        if( ans == 0 or points.at(i)[0] > arrow) {
             ans ++;
             arrow = points.at(i)[1];
         }
     }
-
     return ans;
+}
+
+/*! \brief The Maximum Number of Full Rounds
+ *
+ * John has recently discovered an online game. In the game, a 15-minute round starts in each quarter-hour period, starting at times notated in the format HH: 00, HH: 15, HH: 30 Or HH: 45, where HH is a number from de to 23. John uses a 24 hour clock, so the earliest time is 00:00 and the latest is 23:59. John starts playing at time A and ends at time B. If B is earlier than A, John has played overnight (from time A to midnight and from midnight to time B). What is the maximum number of full rounds that can be played by John? Write a function: that, given two strings A and B (in HH: MM format), representing the start time and end time, returns an integer denoting the maximum number of full rounds that John can play within the given period of time.
+ *
+ * Examples:
+ * 1. Given A = "12:01" and B = "12:44", the function should return 1. John can play only one round (from 12:15 to 12:30). He starts too late to play the round from 12:00 to 12:15 and he will not be able to finish the 12:30-12:45 round.
+ *
+ * \return Maximum number of Full Rounds
+ */
+int Solutions::solutions1( std::string &A, std::string &B)
+{
+    return 0;
+}
+
+int Solutions::solutions2( std::vector<int>  &A)
+{
+    int ans = 0;
+    int index = 0;
+
+    for (auto it = A.begin();  it!=A.end() ; it++) {
+        ans += *it;
+
+        if (ans < 0) {
+            it = A.erase(it);
+            index ++;
+        }
+    }
+
+    return index;
+}
+
+/*! \brief Maximum Possible Sum of Values of the Edges' Endpoints
+ *
+ *  You are given an undirected graph consisting of N vertices, numbered from 1 to N, and M edges. The graph is described by two arrays, A and B, both of length M. A pair (A[K], B[K]), for K from 0 to M-1, describes an edge between vertex A[K] and vertex B[K].
+ *
+ *  Your task is to assign all values from the range [1..N] to the vertices of the graph, giving one number to each of the vertices. Do it in such a way that the sum over all edges of the values at the edges' endpoints is maximal.
+ *
+ *  For example, given N = 5, A = [2, 2, 1, 2], B = [1, 3, 4, 4], the graph has four edges: (2, 1), (2, 3), (1, 4), (2, 4). In order to obtain the maximum sum of weights, you can assign the following values to the vertices: 3, 5, 2, 4, 1 (to vertices 1, 2, 3, 4, 5 respectively).
+ *
+ *  Picture illustrates the first example test
+ *
+ *  This way we obtain the sum of values at all edges' endpoints equal to 7 + 8 + 7 + 9 = 31:
+ *
+ *  edge (2, 3): 7 = 5 (vertex 2) + 2 (vertex 3)
+ *  edge (2, 1): 8 = 5 (vertex 2) + 3 (vertex 1)
+ *  edge (1, 4): 7 = 3 (vertex 1) + 4 (vertex 4)
+ *  edge (2, 4): 9 = 5 (vertex 2) + 4 (vertex 4)
+ *  Notice that the value assigned to vertex 5 did not have any effect on the final result as it is not an endpoint of any edge.
+
+ * Write a function: function solution($N, $A, $B); that, given a positive integer N and two arrays A, B of M positive integers, returns the maximum possible sum of values of the edges' endpoints.
+ *
+ *
+ * \return maximum possible sum of values of the edges' endpoints
+ */
+bool cmpmap( std::pair<int, int> &a, std::pair<int, int> &b) {
+    return a.second > b.second;
+}
+int Solutions::maximumSum(int N, std::vector<int> &A, std::vector<int> &B)
+{
+    /* Solution 1
+    int sum = 0;
+    std::vector<int> vertexcount (N, 0);
+
+    for (auto elem : A) {
+        vertexcount[elem] ++;
+    }
+
+    for (auto elem : B) {
+        vertexcount[elem] ++;
+    }
+
+    std::vector<int> vertex(N, 0);
+    for (int i = 0; i < vertexcount.size(); ++i) {
+        vertex[i] = vertexcount[i];
+    }
+
+    std::vector<int> wightvertex(N, 0);
+    while (!vertexcount.empty()) {
+        auto maxcount = std::max_element(vertexcount.begin(), vertexcount.end());
+
+        for (int i = 0; i < vertex.size(); ++i) {
+            if (vertex[i] == *maxcount and wightvertex[i] == 0) {
+                wightvertex[i] = N;
+                N--;
+            }
+        }
+        vertexcount.erase(maxcount);
+    }
+
+    for (int i = 0; i < A.size(); ++i) {
+        sum += wightvertex[A[i]] + wightvertex[B[i]];
+    }
+
+    return sum;
+    */
+
+    int sum = 0;
+    std::map<int, int> vertexcount;
+
+    for (auto elem : A) {
+        vertexcount[elem] ++;
+    }
+
+    for (auto elem : B) {
+        vertexcount[elem] ++;
+    }
+
+    std::vector< std::pair<int, int> > vertex;
+
+    for (auto &it : vertexcount) {
+        vertex.push_back(it);
+    }
+
+    std::sort(vertex.begin(), vertex.end(), cmpmap);
+
+    std::vector<int> wightvertex(N+1,0);
+    for (auto it = vertex.begin(); it != vertex.end(); it++) {
+        wightvertex.at(it->first) = N;
+        N --;
+    }
+
+    for (int i = 0; i < A.size(); ++i) {
+        sum += wightvertex[A[i]] + wightvertex[B[i]];
+    }
+
+    return sum;
 }
 
 } /* namespace leetcode */
