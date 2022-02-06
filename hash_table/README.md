@@ -27,6 +27,15 @@ Size of bucket 1: 1
 Size of bucket 2: 1
 Size of bucket 3: 1</span></code></pre></div>
 
+#### std::unordered_set ####
+Unordered set (hash table) is an associative container that contains a set of unique objects of type Key. Search, insertion, and removal have average constant-time complexity.
+
+Note that:
+- unordered_set::insert: Inserts element(s) into the container, if the container doesn't already contain an element with an equivalent key. (Complexity: Average case Ο(1), worst case Ο(size()).)
+
 #### Reference ####
 [1] [Wiki: hash table](https://en.wikipedia.org/wiki/Hash_table)
 
+[2] cppreference: [std::unordered_set](https://en.cppreference.com/w/cpp/container/unordered_set), [unordered_map modifiers](https://timsong-cpp.github.io/cppwp/n3337/unord#map.modifiers)
+
+[3] cppreference: [Useful resources](https://en.cppreference.com/w/cpp/links)
