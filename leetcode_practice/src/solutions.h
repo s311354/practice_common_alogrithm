@@ -152,9 +152,17 @@ public:
 
     int maximumSum( int N, std::vector<int> &A, std::vector<int > &B);
 
+    // 217. Contains Duplicate
     bool containDup ( std::vector<int> & nums);
 
+    // 136. Single Number 
+    int singleNumber( std::vector<int> & nums);
 
+    // 349. Intersection of Two Arrays
+    std::vector<int> intersection( std::vector<int> & nums1, std::vector<int> & nums2);
+
+    // 202. Happy Number
+    bool isHappy(int n);
 };
 
 } /* namespace leetcode */

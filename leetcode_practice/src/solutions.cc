@@ -782,6 +782,7 @@ int Solutions::getLargestK( std::vector<int> & nums){
     // check if the key is in the hash set
     for(auto var : nums)
     {
+        // Iterator to an element with key equivalent to key. If no such element is found, past-the-end (see end()) iterator is returned.
         if (set.find(-var) != set.end() and var > max)
         {
             max = var;
@@ -1315,12 +1316,121 @@ int Solutions::maximumSum(int N, std::vector<int> &A, std::vector<int> &B)
  *
  *  Given an integer array nums, retuen true if any value appears at least twice in the array, and return false if every elements is distinct.
  *
- * \return if every elements is distinct
+ * \return if every elements is distinct return false. Otherwise, return true
  */
 bool Solutions::containDup( std::vector<int> & nums)
 {
-    return true;
+    std::unordered_set<int> set;
+
+    bool isDuplicate = false;
+    // Inserts element(s) into the container, if the container doesn't already contain an element with an equivalent key.
+    for (auto elem : nums) {
+        auto it = set.insert(elem);
+        if (!it.second) isDuplicate = true;
+    }
+
+    return isDuplicate;
 }
+
+
+/*! \brief Single Number
+ *
+ *  Given a non-empty array of integers nums, every element appears twice expect for one. Find that single one. You must implement a solution with a linear runtime complexity and use only constant extra space.
+ *
+ * \return Single Number
+ */
+int Solutions::singleNumber( std::vector<int> & nums)
+{
+    /*
+    std::unordered_set<int> set;
+    int singlenum = -1;
+    for (auto elem : nums) {
+        if(set.count(elem)) set.erase(elem);
+        else set.insert(elem);
+    }
+
+    return *set.begin();
+    */
+
+    int num = 0;
+
+    for (auto elem : nums) {
+        num ^= elem;
+    }
+
+    return num;
+
+}
+
+/*! \brief Intersection of Two Arrays
+ *
+ * Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
+ *
+ * \return intersection array
+ */
+bool binarySearch( std::vector<int> & nums, int target)
+{
+    int left = 0, right = nums.size();
+    while (left < right) {
+        int mid = left + (right - left)/2;
+        if(nums.at(mid) == target) return true;
+        else if (nums.at(mid) < target) left = mid + 1;
+        else right = mid;
+    }
+    return false;
+}
+
+std::vector<int> Solutions::intersection( std::vector<int> & nums1, std::vector<int> & nums2)
+{
+    /*
+    std::unordered_set<int> set(nums1.begin(), nums1.end()), intersection; // Complexity: Constant.
+
+    for (auto elem : nums2) {
+        // Time Complexity: Time Complexity for unordered_set::count() method is O(1) in average cases, but in worst case, time complexity can be O(N) 
+        if (set.count(elem)) intersection.insert(elem);
+    }
+
+    return std::vector<int>(intersection.begin(), intersection.end()); // The complexity is linear in the number of elements inserted plus the distance to the end of the vector.
+    */
+
+    std::unordered_set<int> intersection;
+    std::sort(nums2.begin(), nums2.end());
+
+    for (auto elem : nums1) {
+        if (binarySearch(nums2, elem)) intersection.insert(elem);
+    }
+
+    return std::vector<int>(intersection.begin(), intersection.end()) ;
+}
+
+
+
+/*! \brief Happy Number
+ *
+ *  Write an algorithm to determine if a number n is happy.
+ *
+ *  Starting with any positive integer, replace the number by the sum of the squares of its digits.
+ *  Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
+ *  Those numbers for which this process ends in 1 are happy.
+ *
+ * \return true if n is a happy number, and false if not
+ */
+bool Solutions::isHappy(int n)
+{   
+    
+    while ( n != 1 and n != 4 ) {
+        int sum = 0, digit = 0;
+        while (n > 0) {
+            digit = n%10;
+            sum += digit*digit;
+            n = n/10;
+        }
+        n = sum;
+    }
+
+    return n == 1 ? true: false;
+}
+
 
 
 

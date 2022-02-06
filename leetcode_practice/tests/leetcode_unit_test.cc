@@ -498,7 +498,76 @@ TEST_F(SolutionsTest, maximumSumTest)
 }
 
 
+TEST_F(SolutionsTest, containDupTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> nums = {1, 2, 3, 1};
+    bool expected_value = true;
 
+    EXPECT_EQ(expected_value, solutions.containDup(nums));
+
+
+    nums = {1, 2, 3, 4};
+    expected_value = false;
+    EXPECT_EQ(expected_value, solutions.containDup(nums));
+
+    nums = {1, 1, 1, 3, 3, 4, 3, 2, 4, 2};
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.containDup(nums));
+}
+
+
+TEST_F(SolutionsTest, singleNumberTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> nums = {2, 2, 1};
+    int expected_value = 1;
+    EXPECT_EQ(expected_value, solutions.singleNumber(nums));
+
+
+    nums = {4, 1, 2, 1, 2};
+    expected_value = 4;
+    EXPECT_EQ(expected_value, solutions.singleNumber(nums));
+}
+
+
+TEST_F(SolutionsTest, intersectionTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector<int> nums1 = {4, 9, 5};
+    std::vector<int> nums2 = {9, 4, 9, 8, 4};
+    std::vector<int> expected_value = {9, 4};
+
+    EXPECT_EQ(expected_value,solutions.intersection(nums1, nums2));
+
+    nums1 = {1, 2, 2, 1};
+    nums2 = {2, 2};
+    expected_value = {2};
+    EXPECT_EQ(expected_value,solutions.intersection(nums1, nums2));
+}
+
+
+TEST_F(SolutionsTest, isHappyTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    int n = 2;
+    bool expected_value = false;
+
+    EXPECT_EQ(expected_value, solutions.isHappy(n));
+
+    n = 19;
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.isHappy(n));
+
+    n = 7;
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.isHappy(n));}
 
 
 
