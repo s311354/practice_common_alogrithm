@@ -27,6 +27,13 @@ struct TreeNode
 };
 
 
+struct LinstNode {
+    /* data */
+    int val;
+    LinstNode * next;
+    LinstNode(int x) : val(x), next(NULL) {}
+};
+
 class Solutions
 {
 private:
@@ -163,6 +170,22 @@ public:
 
     // 202. Happy Number
     bool isHappy(int n);
+
+    void dictionaries();
+
+    // 18. 4Sum
+    std::vector< std::vector<int> >  fourSum( std::vector<int> & nums, int target);
+
+    // 100 Same Tree
+    bool isSameTree(TreeNode* p, TreeNode* q);
+
+    // 648. Replace Words
+    std::string replaceWords( std::vector< std::string > & dictionary, std::string  sentence);
+
+
+
+
+
 };
 
 } /* namespace leetcode */

@@ -571,4 +571,82 @@ TEST_F(SolutionsTest, isHappyTest)
 
 
 
+TEST_F(SolutionsTest, fourSumTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector<int> nums = {1, 0, -1, 0, -2, 2};
+
+    std::vector<int> unique_quadruplets = {1, 2, 3, 4};
+
+    int target = 0;
+    std::vector< std::vector<int> > expected_value = {{-2, -1, 1, 2}, {-2, 0, 0, 2}, {-1, 0, 0, 1}};
+    EXPECT_EQ(expected_value, solutions.fourSum(nums, target));
+
+    nums = {2, 2, 2, 2, 2};
+    target = 8;
+    expected_value ={{2, 2, 2, 2}};
+    EXPECT_EQ(expected_value, solutions.fourSum(nums, target));
+}
+
+TEST_F(SolutionsTest, isSameTreeTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector<int> v = {1, 2, 3};
+    leetcode::TreeNode * p = nullptr;
+    for (int i = 0; i < v.size(); ++i) {
+        p = solutions.insertBTNode(p, v[i], i);
+    }
+
+    std::vector<int> y = {1, 2, 3};
+    leetcode::TreeNode * q = nullptr;
+    for (int i = 0; i < y.size(); ++i) {
+        q = solutions.insertBTNode(q, y[i], i);
+    }
+
+    bool expected_value = true;
+
+    EXPECT_EQ(expected_value, solutions.isSameTree(p, q));
+
+    v = {1, 2};
+    p = nullptr;
+    for (int i = 0; i < v.size(); ++i) {
+        p = solutions.insertBTNode(p, v[i], i);
+    }
+
+    y = {1, 0, 2};
+    q = nullptr;
+    for (int i = 0; i < y.size(); ++i) {
+        q = solutions.insertBTNode(q, y[i], i);
+    }
+    expected_value = false;
+    EXPECT_EQ(expected_value, solutions.isSameTree(p, q));
+
+}
+
+
+TEST_F(SolutionsTest, replaceWordsTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector< std::string > dictionary = {"cat", "bat", "rat"};
+
+    std::string sentence = "the cattle was rattled by the battery";
+    std::string expected_value = "the cat was rat by the bat";
+
+    EXPECT_EQ(expected_value, solutions.replaceWords(dictionary, sentence));
+
+    dictionary = {"a", "b", "c"};
+    sentence = "aadsfasf absbs bbsb cadsfafs";
+    expected_value = "a a b c";
+    EXPECT_EQ(expected_value, solutions.replaceWords(dictionary, sentence));
+}
+
+
+
+
 } /* namespace googletest */

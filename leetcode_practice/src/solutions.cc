@@ -1434,5 +1434,120 @@ bool Solutions::isHappy(int n)
 
 
 
+/*! \brief Dictionaries and Maps
+ *
+ *  Given n names and phone numbers, assemble a phone book that maps friends' names to their respective phone numbers. You will then be given an unknown number of names to query your phone book for. For each name queried, print the associated entry from your phone book on a new line in the form name=phoneNumber; if an entry for name is not found, print Not found instead.
+ *
+ *  Input Format
+ *  The first line contains an integer, n, denoting the number of entries in the phone book. 
+ *  Each of the n subsequent lines describes an entry in the form of 2 space-separated values on a single line. The first value is a friend's name, and the second value is an 8-digit phone number.
+ *  After the n lines of phone book entries, there are an unknown number of lines of queries. Each line (query) contains a name to look up, and you must continue reading lines until there is no more input.
+ *  Note: Names consist of lowercase English alphabetic letters and are first names only.
+ *
+ *
+ *  Output Format
+ *  On a new line for each query, print Not found if the name has no corresponding entry in the phone book; otherwise, print the full name and phoneNumber in the format name=phoneNumber.
+ *
+ * \return None
+ */
+void Solutions::dictionaries()
+{
+    
+}
+
+/*! \brief 4Sum
+ *
+ *  Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
+ *
+ *  0 <= a, b, c, d < n
+ *  a, b, c, and d are distinct.
+ *  nums[a] + nums[b] + nums[c] + nums[d] == target
+ *
+ *  // Reference: https://zxi.mytechroad.com/blog/algorithms/binary-search/leetcode-18-4sum/
+ * \return all the unique quadruplets
+ */
+std::vector< std::vector<int> > Solutions::fourSum( std::vector<int>& nums, int target)
+{
+    // Constructs new container from a variety of data sources and optionally using user supplied allocator alloc or comparison function object comp.
+    std::set< std::vector<int> > quadruplets;
+
+    std::sort(nums.begin(), nums.end());
+    int n = nums.size();
+
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; ++j) {
+            for (int k = j + 1; k  < n; ++k ) {
+                int t = target - nums.at(i) - nums.at(j) - nums.at(k);
+                if (t < nums.at(k)) break;
+                if (!std::binary_search( nums.begin() + k + 1, nums.end(), t)) continue;
+                quadruplets.insert({ nums.at(i), nums.at(j), nums.at(k), t});
+            }
+        }
+    }
+
+    return std::vector< std::vector<int> >(begin(quadruplets), end(quadruplets));
+}
+
+
+/*! \brief Same Tree
+ *
+ * Given the roots of two binary trees p and q, write a function to check if they are the same of not.
+ *
+ * Two binary trees are considered the same if they are structurally identical, and the nodes have the same value
+ *
+ * \return if they are structurally identical
+ */
+bool Solutions::isSameTree(TreeNode* p, TreeNode * q)
+{
+    if (!p and !q) return true;
+
+    if (!p or !q) return false;
+
+    if (p->val != q->val) return false;
+
+
+    return isSameTree(p->left, q->left) and isSameTree(p->right, q->right);
+}
+
+
+/*! \brief Replace Words
+ *
+ *  In English, we have a concept called root, which can be followed by some other word to form another longer word - let's call this word successor. For example, when the root "an" is followed by the successor word "other", we can form a new word "another".
+ *
+ *  Given a dictionary consisting of many roots and a sentence consisting of words separated by spaces, replace all the successors in the sentence with the root forming it. If a successor can be replaced by more than one root, replace it with the root that has the shortest length.
+ *
+ *
+ *
+ * \return the sentence after the replacement
+ */
+std::string  Solutions::replaceWords( std::vector< std::string> & dictionary, std::string  sentence)
+{
+    std::unordered_set< std::string > dict;
+    for (auto elem : dictionary) {
+        dict.insert(elem);
+    }
+
+    bool skip = false;
+    std::string result = "", curr = "";
+
+    for (int i = 0; i < sentence.length(); i++) {
+        if( sentence.at(i) == ' ' or i == sentence.length() -1 ) {
+            result += curr;
+
+            curr = "";
+            skip = false;
+            if ( i != sentence.length() - 1) result+= " ";
+        } else if (not skip) {
+            curr += sentence.at(i);
+            if(dict.find(curr) != dict.end()) skip = true;
+        }
+    }
+    return result;
+}
+
+
+
+
+
 
 } /* namespace leetcode */
