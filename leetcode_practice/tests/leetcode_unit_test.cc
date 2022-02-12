@@ -95,9 +95,7 @@ TEST_F(SolutionsTest, sumZero)
     leetcode::Solutions solutions;
     std::vector<int> expected_value = {1,-1,2,-2,0};
 
-    for (int i = 0; i < expected_value.capacity(); ++i) {
-        EXPECT_EQ(expected_value[i], solutions.sumZero(5)[i]);
-    }
+    EXPECT_EQ(expected_value, solutions.sumZero(5));
 }
 
 TEST_F(SolutionsTest, nextPermutationTest) 
@@ -645,6 +643,43 @@ TEST_F(SolutionsTest, replaceWordsTest)
     expected_value = "a a b c";
     EXPECT_EQ(expected_value, solutions.replaceWords(dictionary, sentence));
 }
+
+
+
+TEST_F(SolutionsTest, uncovered_interval) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector< std::pair<int, int> > unservice = {{1, 3}, {5, 6}, {8, 10}, {16, 22}};
+    int thirdservice = 5;
+    int expected_value = 10;
+    EXPECT_EQ(expected_value, solutions.uncovered_interval(unservice, thirdservice));
+
+    unservice = {{1, 2}, {5, 6}, {8, 10}, {16, 22}};
+    thirdservice = 5;
+    expected_value = 9;
+    EXPECT_EQ(expected_value, solutions.uncovered_interval(unservice, thirdservice));
+
+}
+
+TEST_F(SolutionsTest, minSwapsTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> nums = {0, 1, 1, 1, 0, 0, 1, 1, 0};
+
+    int expected_value = 2;
+    EXPECT_EQ(expected_value, solutions.minSwapsnums(nums));
+
+
+    nums = {1, 1, 0, 0, 1};
+    expected_value = 0;
+    EXPECT_EQ(expected_value, solutions.minSwapsnums(nums));
+
+}
+
+
 
 
 

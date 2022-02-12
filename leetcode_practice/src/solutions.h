@@ -182,9 +182,11 @@ public:
     // 648. Replace Words
     std::string replaceWords( std::vector< std::string > & dictionary, std::string  sentence);
 
+    // Google interview
+    int uncovered_interval(std::vector< std::pair<int, int> > unserviceinterval, int thirdservice);
 
-
-
+    // 2134. Minimum Swaps to Group All's Together II
+    int minSwapsnums(std::vector<int> & nums);
 
 };
 

@@ -50,7 +50,7 @@ bool Solutions::isValidString(std::string s)
  */
 bool Solutions::isUniqieString(std::string s)
 {
-    std::set<char> unique;
+    std::unordered_set<char> unique;
 
     for (auto elem : s) {
         if (unique.count(elem)) return false;
@@ -210,8 +210,7 @@ int Solutions::shortestDistance( std::vector< std::vector<int> > & grid )
 {
     int row = grid.size(), column = grid[0].size();
 
-    std::vector< std::vector<int> > distance(row, std::vector<int>(column, 0));
-    std::vector< std::vector<int> > visit(row, std::vector<int>(column, 0));
+    std::vector< std::vector<int> > distance(row, std::vector<int>(column, 0)), visit(row, std::vector<int>(column, 0));
 
     int num_building = 0, ans = INT_MAX;
 
@@ -248,7 +247,7 @@ void Solutions::bfs(int column, int row, std::vector< std::vector<int> > &grid, 
 {
     // assigns starting point into parent node
     std::queue< std::pair<int, int> > to_visit; // BFS
-    to_visit.push( std::pair<int, int>(column, row));
+    to_visit.push({column, row});
 
     int step = 0;
 
@@ -951,7 +950,6 @@ int Solutions::lowercaseLetters( std::string &S)
  */
 int Solutions::balancedStone( std::vector<int> &A)
 {
-
     for (int i = 2, p; i < A.size(); ++i) {
 
         p = A[i]/3;
@@ -1061,14 +1059,14 @@ int Solutions::storeMeetingrooms( std::vector< std::vector<int> > & rooms)
 
     sort(meeting.begin(), meeting.end());
     int count = 0;
-    for (int i = 0; i < meeting.size() - 1; ++i) {
-
+    for (int i = 0; i < meeting.size(); ++i) {
+        // start
         if (meeting.at(i).second == 0) {
             count ++;
         } else {
             count --;
         }
-        if (meeting.at(i).first != meeting.at(i+1).first) room = std::max(room, count);
+        room = std::max(room, count);
     }
 
     return room;
@@ -1545,9 +1543,65 @@ std::string  Solutions::replaceWords( std::vector< std::string> & dictionary, st
     return result;
 }
 
+/*! \brief Uncovered interval
+ *
+ * \return minimum uncovered interval
+ */
+int Solutions::uncovered_interval( std::vector< std::pair<int, int> > unservice, int thirdservice)
+{
+
+    int minuncovertime = INT_MAX;
+    int totalunserviced = 0;
+
+    for (int i = 0; i < unservice.size(); ++i) {
+        totalunserviced += unservice.at(i).second - unservice.at(i).first + 1;
+    }
+
+    int j;
+    for( j  = 0; j < unservice.size() - 1; j++ ) {
+        int uncovertime = totalunserviced;
+        if ( unservice.at(j + 1).first - unservice.at(j).first  > thirdservice ) {
+            uncovertime = totalunserviced - (unservice.at(j).second - unservice.at(j).first) + 1;
+        } else {
+            if ( unservice.at(j + 1).second - unservice.at(j).first > thirdservice) {
+                uncovertime = totalunserviced - (unservice.at(j).second - unservice.at(j).first + 1 + (totalunserviced + unservice.at(j).first - unservice.at(j + 1).first + 1) );
+            } else {
+                uncovertime = totalunserviced - (unservice.at(j).second - unservice.at(j).first + 1) - (unservice.at(j + 1).second - unservice.at(j + 1).first + 1);
+            }
+        }
+
+        minuncovertime = std::min(minuncovertime, uncovertime);
+    }
+
+    minuncovertime = std::min(minuncovertime, totalunserviced - (unservice.at(j).second - unservice.at(j).first) + 1);
+
+    return minuncovertime;
+}
 
 
+/*! \brief Brief function description here
+ *
+ *  Detailed description
+ *
+ * \return Return parameter description
+ */
+int Solutions::minSwapsnums( std::vector<int> & nums)
+{
+    int minswap = INT_MAX, slidingwindow = 0;
+    for (auto& elem : nums) {
+        if (elem == 1) slidingwindow ++;
+    }
 
+    for (int i = 0; i < nums.size(); ++i) {
+        int count = 0;
+        for (int j = i; j < i + slidingwindow; ++j) {
+            if (nums.at(j%nums.size()) == 0) count++ ;
+        }
+        minswap = std::min( minswap, count);
+    }
+
+    return minswap;
+}
 
 
 } /* namespace leetcode */
