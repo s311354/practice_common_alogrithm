@@ -188,6 +188,8 @@ public:
     // 2134. Minimum Swaps to Group All's Together II
     int minSwapsnums(std::vector<int> & nums);
 
+    int minDistance( std::vector< std::vector<int> > & edges, int n, int x);
+
 };
 
 } /* namespace leetcode */

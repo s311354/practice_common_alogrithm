@@ -680,6 +680,23 @@ TEST_F(SolutionsTest, minSwapsTest)
 }
 
 
+TEST_F(SolutionsTest, minDistanceTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector< std::vector<int> > edges = {{2, 1, 1}, {2, 3, 1}, {3, 4, 1}};
+
+    int x = 2;
+    int n = 4;
+    int expected_value = 1;
+    EXPECT_EQ(expected_value, solutions.minDistance(edges, n, x));
+
+    edges = {{2, 3, 1}, {2, 1, 3}, {3, 4, 1}};
+
+    expected_value = 2;
+    EXPECT_EQ(expected_value, solutions.minDistance(edges, n, x));
+
+}
 
 
 

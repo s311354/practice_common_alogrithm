@@ -1579,18 +1579,19 @@ int Solutions::uncovered_interval( std::vector< std::pair<int, int> > unservice,
 }
 
 
-/*! \brief Brief function description here
+/*! \brief Minmum Swaps to Group All 1's Together
  *
- *  Detailed description
+ *  A swap is defined as taking two distinct positions in an array and swapping the values in them.
+ *  A circular array is defined as an array where we consider the first element and the last element to be adjacent.
+ *  Given a binary circular array nums, return the minimum number of swaps required to group all 1's present in the array together at any location.
  *
- * \return Return parameter description
+ * \return minimum swap
  */
 int Solutions::minSwapsnums( std::vector<int> & nums)
 {
-    int minswap = INT_MAX, slidingwindow = 0;
-    for (auto& elem : nums) {
-        if (elem == 1) slidingwindow ++;
-    }
+    int minswap = INT_MAX;
+
+    int slidingwindow = std::count(begin(nums), end(nums), 1);
 
     for (int i = 0; i < nums.size(); ++i) {
         int count = 0;
@@ -1602,6 +1603,39 @@ int Solutions::minSwapsnums( std::vector<int> & nums)
 
     return minswap;
 }
+
+
+/*! \brief Minimum Distance
+ *
+ * \return Return parameter description
+ */
+int Solutions::minDistance( std::vector< std::vector<int> >& edges, int n, int x)
+{
+    int minstep = 0;
+    std::queue<int> parent;
+    parent.push(x);
+
+    while (!parent.empty()) {
+        int vertex = parent.front();
+        parent.pop();
+
+        int step = INT_MAX;
+
+        // exploring minimum distance
+        for(int i = 0; i < edges.size(); i++) {
+            if ( edges[i][0] == vertex && step > edges[i][2]) { // source
+                    parent.push(edges[i][1]); //  dest
+                    step = edges[i][2];
+                    minstep += step;
+            }
+
+        }
+    }
+
+    return minstep;
+}
+
+
 
 
 } /* namespace leetcode */
