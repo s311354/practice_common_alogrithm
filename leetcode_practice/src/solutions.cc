@@ -42,25 +42,6 @@ bool Solutions::isValidString(std::string s)
     return true;
 }
 
-/*! \brief Brief function description here
- *
- *  Detailed description
- *
- * \return Return parameter description
- */
-bool Solutions::isUniqieString(std::string s)
-{
-    std::unordered_set<char> unique;
-
-    for (auto elem : s) {
-        if (unique.count(elem)) return false;
-
-        unique.insert(elem);
-    }
-
-    return true;
-}
-
 /*! \brief Minimum Deletions to Make Character Frequencies Unique
  *
  *  A string s is called good if there are no two different characters in s that have the same frequency.
@@ -310,31 +291,6 @@ int Solutions::minStpes( std::vector<int>& num)
     return steps;
 }
 
-/*! \brief Largest K such that both K and -K exist in array
- *
- *  Detailed Write a function that, given an array A of N integers, returns the lagest integer K > 0 such that values K and -K exist in array A. If there is no such integer, the function should return 0
- *
- * \return lagest integer K
- */
-int Solutions::largestK( std::vector<int> & nums)
-{
-    std::set<int> largestval;
-    int ans = 0, tmp = 0;
-
-    for (int num : nums) {
-        if (largestval.count(-num)) {
-            if (num > tmp) tmp = num;
-            if (num < tmp) tmp = -num;
-
-            ans = std::max(tmp, ans);
-        } else {
-            largestval.insert(num);
-        }
-    }
-
-    return ans;
-}
-
 /*! \brief Maximum Length of a Concatenated String with Unique
  *
  *  You are given an array of strings arr. A string s is formed by the concatenation of a subsequence of arr that has unique characters.
@@ -365,6 +321,26 @@ void Solutions::checkLen( std::vector<std::string> & arr, std::string str, int i
     }
 }
 
+bool Solutions::isUniqieString(std::string s)
+{
+    /*
+    std::unordered_set<char> unique;
+
+    for (auto elem : s) {
+        if (unique.count(elem)) return false;
+
+        unique.insert(elem);
+    }
+
+    return true;
+    */
+
+    for (auto & elem : s) {
+        if (std::count(begin(s), end(s), elem) > 1) return false;
+    }
+
+    return true;
+}
 
 /*! \brief Find N Unique Integers Sum up to Zero
  *
@@ -768,10 +744,26 @@ std::string Solutions::longestPrefix(std::vector< std::string > & strs)
  */
 int Solutions::getLargestK( std::vector<int> & nums){
 
-    // initial a hash set
+/*
+    std::set<int> largestval;
+    int ans = 0, tmp = 0;
+
+    for (int num : nums) {
+        if (largestval.count(-num)) {
+            if (num > tmp) tmp = num;
+            if (num < tmp) tmp = -num;
+
+            ans = std::max(tmp, ans);
+        } else {
+            largestval.insert(num);
+        }
+    }
+
+    return ans;
+*/
+/*
     std::unordered_set<int> set;
     int max = 0;
-
     // insert a new key
     for(auto var : nums)
     {
@@ -788,6 +780,16 @@ int Solutions::getLargestK( std::vector<int> & nums){
         }
     }
     return max;
+*/
+    int ans = 0;
+
+    for (auto & elem : nums) {
+        if (elem > 0) continue;
+        auto it = std::find(begin(nums), end(nums), elem*-1);
+        ans = std::max(ans, *it);
+    }
+
+    return ans;
 }
 
 /*! \brief Smallest Positive Integer
