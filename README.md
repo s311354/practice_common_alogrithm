@@ -6,4 +6,86 @@ Try to:
 - Understand the fundamental alogrithm
 - LeetCode - Algorithms
 
+#### The concept of Pass-by-value, Pass-by-reference and Pass-by-pointer ####
+*Pass-by-value*: An argument passed by value is one where a value is copied into a special location in the computer's memory (called the "stack frame"). This location is special because the function has a name for it, and you can use that name to access the (local copy of the) value. 
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">void by_value(int x)
+{
+    x+= 0; // 8
+}
+
+int main()
+{
+    int z = 6; 
+    by_value(z); // 6
+}</span></code></pre></div>
+
+*Pass-by-pointer*: An argument passed by pointer is where a pointer value is copied into a special location in the computer's memory (called the "stack frame"). This local pointer can be dereferenced to access(and modify) the referent value.
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">void by_pointer(int* x)
+{
+    *x += 0; // 8
+}
+
+int main()
+{
+    int z = 6;
+    by_pointer( &z ); // 7
+}</span></code></pre></div>
+
+*Pass-by-reference*: An argument passed by reference is where the formal argument (the name) is an alias for the actual argument (the value).
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code class="hljs ruby"><span class="nb">void by_reference(int & x)
+{
+    x += 0; // 8
+}
+
+int main()
+{
+    int z = 6;
+    by_reference(z); // 7
+}
+</span></code></pre></div>
+
+Note that some people dislike the term pass-by-pointer. They feel it is misleading and inexact, since the  actual argument to the function is a pointer value (an address) which is passed by value into function. Hence, they say this is really pass-by-value.
+
+#### Storage Class Specifier ####
+
+The storage class specifiers are a part of the decl-specifier-seq of a name's declaration syntax. Together with the scope of the name, they control two independent properties of the name: its storage and its linkage.
+
+- auto: no specifier
+- static: static or thread storage duration and internal linkage. When used in a declaration of a class member, it declares a [static members][staticmember].
+- extern: static of thread storage duration and external linkage.
+
+#### Static Member Functions ####
+
+Static member functions are not associated with any object and cannot be virtual, const, volatile, or ref-qualified. The address of a static member function may be stored in regular pointer to function, but not in a pointer to member function.
+
+#### Static Data Members ####
+
+Static data member are not associated with any object. They exist even if no objects of the class have been defined. There is only one instance of the static data member in the entire program with static duratio, unless the keyword thread_local is used, in which case there is one such object per thread with thread storage duration.
+
+Note: 
+- An inline static data member can be defined in the class defined and may specify an initializer. It does not need an out-of-class definition.
+- A constant static data member can be initialized with an initializer in which every expression is a constant expression, right inside the class definition.
+
+#### Storage Duration ####
+
+All objects in a program have one of the following storage duration:
+- automatic storage duration: The storage for the object is allocated at the beginning of the enclosing code block and deallocated at the end.
+- static storage duration: The storage for the object is allocated when the program begins and deallocated when the program ends. Only one instance of object exists.
+- thread storage duration: The storage for the object is allocated when the thread begins and deallocated when the thread ends. Each thread has its own instance of the object.
+- dynamic storage duration: The storage for the object is allocated and deallocated upon request by using dynamic memory allocation functions.
+
+## Reference ## 
+[1] [__builtin_popcount](https://tmt514.gitbooks.io/the-code-tactics-book/content/2.5/popcount.html)
+
+[2] [bitset File Reference](https://gcc.gnu.org/onlinedocs/gcc-4.6.3/libstdc++/api/a00775.html)
+
+[3] [使用 Git Bisect 快速找到第一個有問題的 Commit](https://www.gss.com.tw/blog/使用-git-bisect-快速找到第一個有問題的-commit)
 Development environment: neovim, doxygen, try to cultivate the "brain debug" ability
+
+[4] cppreference [static members](https://en.cppreference.com/w/cpp/language/static). [Storage class specifiers](https://en.cppreference.com/w/cpp/language/storage_duration)
+
+
+[staticmember]:https://en.cppreference.com/w/cpp/language/static "https://en.cppreference.com/w/cpp/language/static"

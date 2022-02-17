@@ -299,7 +299,7 @@ int Solutions::minStpes( std::vector<int>& num)
  */
 int Solutions::maxLength( std::vector< std::string> & arr)
 {
-    static int len = 0;
+    int len = 0;
 
     if (arr.size() < 0) return 0;
 
@@ -312,8 +312,9 @@ int Solutions::maxLength( std::vector< std::string> & arr)
 
 void Solutions::checkLen( std::vector<std::string> & arr, std::string str, int index, int& count )
 {
-    if (isUniqieString(str))
+    if (isUniqieString(str)) {
         count = str.size() > count ? str.size(): count;
+    }
 
     // recursive
     for (int i = index; i < arr.size(); ++i) {
@@ -334,7 +335,6 @@ bool Solutions::isUniqieString(std::string s)
 
     return true;
     */
-
     for (auto & elem : s) {
         if (std::count(begin(s), end(s), elem) > 1) return false;
     }
@@ -805,8 +805,7 @@ int Solutions::getLargestK( std::vector<int> & nums){
  */
 int Solutions::smallestInt( std::vector<int> &A )
 {
-    int ans = 0;
-
+    /*
     std::vector<int> v(A.size(), 0);
     for (auto elem : A) {
         if (elem > 0) v[elem] ++;
@@ -818,9 +817,42 @@ int Solutions::smallestInt( std::vector<int> &A )
     }
 
     return i + 1;
+    */
 
+    size_t smallest = 0;
+    auto maxit = std::max_element(A.begin(), A.end());
+
+    int i;
+    for (i = 1; i <= *maxit; ++i) {
+        if (std::count(begin(A), end(A), i) == 0){
+            return i;
+        }
+    }
+
+    return i;
 }
 
+/*! \brief  Minimum number of changes
+ *
+ *  Circuit printing, as we call photolithography, is an extremely complex yet rewarding field, and ASML needs the best software engineers in the world to make this magic happen. We work closely with our clients to help them print their circuits in the most effective way. One of our clients requests us to write a method to optimize their circuit efficiency. The circuit is represented as a string consisting of the letters "M" and "L", where M represents Memory units and L represents Logic units. The efficiency of the circuit is measured as the length of the longest interval of letters "M". For example, given input string "LMMMLMMMMLLLM", the longest interval is 4.
+ *
+ * Our customer wants to change the circuit in such a way that the longest M-interval will be equal to K. We can change any unit at any position in the circuit, i.e. either we can change any "M" to "L" or any "L" to "M". The objective of this challenge is to calculate the minimum number of changes we have to make in order to achieve the desired longest M-interval length K.
+ *
+ * \return Minimum number of changes
+ */
+int Solutions::minChange( std::string &S, int k)
+{
+    int mincharge = 0;
+
+    std::vector<int> numbers(S.size(), 0);
+    int slidingwindow = 0;
+    for (auto & elem : S) {
+        numbers.push_back( elem - 'L');
+    }
+
+
+    return mincharge;
+}
 
 /*! \brief Maximum sequence of consecutive zeros
  *
@@ -1282,11 +1314,11 @@ int Solutions::maximumSum(int N, std::vector<int> &A, std::vector<int> &B)
     int sum = 0;
     std::map<int, int> vertexcount;
 
-    for (auto elem : A) {
+    for (auto &elem : A) {
         vertexcount[elem] ++;
     }
 
-    for (auto elem : B) {
+    for (auto &elem : B) {
         vertexcount[elem] ++;
     }
 
@@ -1681,9 +1713,37 @@ int Solutions::countDuplicates( std::vector<int> input)
     return count;
 }
 
+/*! \brief Complete the 'plusMinus' function below.
+ *
+ *  Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each fraction on a new line with  places after the decimal.
+ *  Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answe
+ *  s with absolute error of up to  are acceptable.
+ *
+ * \return Return decimal value of each fraction
+ */
+std::vector<float> Solutions::plusMinus( std::vector<int> arr)
+{
+    std::vector<float> Minu(3, 0);
+    for (auto & elem : arr) {
+        if (elem > 0) Minu[0] ++;
+        else if (elem < 0) Minu[1] ++;
+        else Minu[2] ++;
+    }
 
+    for (int i = 0; i < Minu.size(); ++i) {
+        Minu[i] = Minu[i]/arr.size();
+    }
 
+    return Minu;
+}
 
+int Solutions::minDeleteCost( std::string &S, std::vector<int> &C){
+    int count = 0;
+    for (int i = 1; i < S.size(); ++i) {
+        if (S[i] == S[i - 1]) count += std::min(C[i], C[i -1]);
+    }
 
+    return count;
+}
 
 } /* namespace leetcode */

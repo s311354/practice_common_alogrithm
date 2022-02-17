@@ -74,6 +74,19 @@ TEST_F(SolutionsTest, maxLengthTest)
     int expected_value = 4;
 
     EXPECT_EQ(expected_value, solutions.maxLength(arr));
+
+
+    arr = {"abc", "yyy", "def", "csv"};
+    expected_value = 6;
+    EXPECT_EQ(expected_value,solutions.maxLength(arr));
+
+    arr = {"eva", "jqw", "tyn", "jan"};
+    expected_value = 9;
+    EXPECT_EQ(expected_value,solutions.maxLength(arr));
+
+    arr = {"photato", "kayak", "banana", "racecar"};
+    expected_value = 0;
+    EXPECT_EQ(expected_value,solutions.maxLength(arr));
 }
 
 
@@ -475,9 +488,6 @@ TEST_F(SolutionsTest, maximumSumTest)
     N = 4;
     expected_value = 10;
     EXPECT_EQ(expected_value, solutions.maximumSum(N, A, B));
-
-
-
 }
 
 
@@ -711,11 +721,63 @@ TEST_F(SolutionsTest, countDuplicatesTest)
     EXPECT_EQ(expected_value,solutions.countDuplicates(input));
 }
 
+TEST_F(SolutionsTest, plusMinusTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> arr = {1, 1, 0, -1, -1};
+
+    std::vector<float> expected_value = {0.4, 0.4, 0.2};
+
+    EXPECT_EQ(expected_value, solutions.plusMinus(arr));
+}
+
+TEST_F(SolutionsTest, minChangeTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::string S = "MLMMLLM";
+    int K = 3;
+    int expected_value = 1;
+
+//     EXPECT_EQ(expected_value, solutions.minChange(S, K));
+
+    S = "MLMMMLMMMM";
+    K = 2;
+    expected_value = 2;
+//     EXPECT_EQ(expected_value, solutions.minChange(S, K));
+}
+
+TEST_F(SolutionsTest, minDeleteCostTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::string  S = "abccbd";
+    std::vector<int> C = {0, 1, 2, 3, 4, 5};
+    int expected_value = 2;
+
+    EXPECT_EQ(expected_value,solutions.minDeleteCost(S, C));
 
 
+    S = "aaaa";
+    C = {3, 4, 5, 6};
+    expected_value = 12;
+    EXPECT_EQ(expected_value,solutions.minDeleteCost(S, C));
 
 
+    S = "aabbcc";
+    C = {1, 2, 1, 2, 1, 2};
+    expected_value = 3;
+    EXPECT_EQ(expected_value,solutions.minDeleteCost(S, C));
 
+    S = "ababa";
+    C = {10, 5, 10 ,5, 10};
+    expected_value = 0;
+    EXPECT_EQ(expected_value,solutions.minDeleteCost(S, C));
+
+}
 
 
 } /* namespace googletest */

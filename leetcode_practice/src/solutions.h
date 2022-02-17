@@ -156,7 +156,6 @@ public:
 
     int solutions2( std::vector<int> &A);
 
-
     int maximumSum( int N, std::vector<int> &A, std::vector<int > &B);
 
     // 217. Contains Duplicate
@@ -193,6 +192,15 @@ public:
     std::vector< std::string > commonSubstring( std::vector<std::string> a, std::vector<std::string> b);
 
     int countDuplicates( std::vector<int> number);
+
+    std::vector<float> plusMinus( std::vector<int> arr);
+
+    // Codility Test
+    int minChange(std::string &S, int k);
+
+    // Codility Test
+    int minDeleteCost( std::string &S, std::vector<int> &C);
+
 };
 
 } /* namespace leetcode */
