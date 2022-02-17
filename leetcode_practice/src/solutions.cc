@@ -1637,6 +1637,52 @@ int Solutions::minDistance( std::vector< std::vector<int> >& edges, int n, int x
     return minstep;
 }
 
+std::vector< std::string > Solutions::commonSubstring( std::vector< std::string> a, std::vector<std::string> b )
+{
+    std::vector< std::string > isCommon;
+    for (int i = 0; i < a.size(); ++i) {
+        bool common = false;
+        for (auto &elem : a[i]) {
+            auto it = std::find(b[i].begin(), b[i].end(), elem);
+            if (it != b[i].end()) common = true;
+        }
+        if (common) isCommon.push_back("YES");
+        else isCommon.push_back("NO");
+    }
+
+    return isCommon;
+}
+
+int Solutions::countDuplicates( std::vector<int> input)
+{
+    /*
+    int count = 0;
+    std::unordered_set<int> numberset;
+
+    for (auto it = input.begin() + 1;  it!= input.end(); it++) {
+        auto numberit = numberset.insert(*it);
+        if (!numberit.second) {
+            count ++ ;
+            numberset.erase(*it);
+        }
+    }
+    */
+
+    int count = 0;
+    std::vector<int> numbers(input[0], 0);
+    for (auto & num : input) {
+        numbers[num] ++;
+    }
+
+    for (int i = 0; i < numbers.size(); ++i) {
+        if (numbers[i] > 1) count ++;
+    }
+
+    return count;
+}
+
+
+
 
 
 

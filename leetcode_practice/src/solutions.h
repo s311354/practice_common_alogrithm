@@ -190,6 +190,9 @@ public:
 
     int minDistance( std::vector< std::vector<int> > & edges, int n, int x);
 
+    std::vector< std::string > commonSubstring( std::vector<std::string> a, std::vector<std::string> b);
+
+    int countDuplicates( std::vector<int> number);
 };
 
 } /* namespace leetcode */

@@ -66,18 +66,6 @@ TEST_F(SolutionsTest, minStpesTest)
     EXPECT_EQ(minsteps, solutions.minStpes(piles));
 }
 
-
-TEST_F(SolutionsTest, largestKTest) 
-{
-    /* Declare the Unit Test object */
-    leetcode::Solutions solutions;
-    std::vector<int> array = {-41,3,2,5,41 };
-    int expected_value = 41, result_value = solutions.largestK(array);
-
-    EXPECT_EQ(expected_value,result_value);
-}
-
-
 TEST_F(SolutionsTest, maxLengthTest) 
 {
     /* Declare the Unit Test object */
@@ -190,10 +178,7 @@ TEST_F(SolutionsTest, deleteNodeTest)
 
     std::vector<int> expected_value = {5,2,6,4,7}; // {5,2,6,null,4,null,7}
 
-
-    for (int i = 0; i < expected_value.size(); i++) {
-        EXPECT_EQ(expected_value[i], actual_value[i]);
-    }
+    EXPECT_EQ(expected_value, actual_value);
 }
 
 TEST_F(SolutionsTest, sumFractionTest) 
@@ -697,6 +682,38 @@ TEST_F(SolutionsTest, minDistanceTest)
     EXPECT_EQ(expected_value, solutions.minDistance(edges, n, x));
 
 }
+
+
+TEST_F(SolutionsTest, commonSubstringTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector< std::string > a = {"hello", "hi"};
+    std::vector< std::string > b = {"world", "bye"};
+    std::vector< std::string > expected_value = {"YES", "NO"};
+
+    EXPECT_EQ(expected_value,solutions.commonSubstring(a, b));
+}
+
+TEST_F(SolutionsTest, countDuplicatesTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector<int> input = {6, 1, 1, 2, 2, 2, 3};
+    int expected_value = 2;
+
+    EXPECT_EQ(expected_value,solutions.countDuplicates(input));
+
+    input = {6, 1 , 2, 3, 1, 1, 1};
+    expected_value = 1;
+    EXPECT_EQ(expected_value,solutions.countDuplicates(input));
+}
+
+
+
+
 
 
 
