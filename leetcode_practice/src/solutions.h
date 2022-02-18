@@ -201,7 +201,17 @@ public:
     // Codility Test
     int minDeleteCost( std::string &S, std::vector<int> &C);
 
+    // Get Number of K
+    int getNumberofK( std::vector<int>& data, int K);
+
+    // Find Numbers with Sum
+    std::vector<int> findNumberswithSum( std::vector<int> &nums, int sum);
+
 };
+
+
+
+
 
 } /* namespace leetcode */
 

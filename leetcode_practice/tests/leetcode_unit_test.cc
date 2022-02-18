@@ -779,5 +779,27 @@ TEST_F(SolutionsTest, minDeleteCostTest)
 
 }
 
+TEST_F(SolutionsTest, GetNumberofKTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector<int> nums = {1, 2, 3, 3, 3, 3, 4, 5};
+    int K = 3;
+    int expected_value = 4;
+    EXPECT_EQ(expected_value, solutions.getNumberofK(nums, K));
+}
+
+TEST_F(SolutionsTest, findNumberswithSumTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> nums = {1, 2, 3, 4, 7, 11, 15};
+    int sum = 15;
+
+    std::vector<int> expected_value = {4, 11};
+    EXPECT_EQ(expected_value, solutions.findNumberswithSum(nums, sum));
+}
+
 
 } /* namespace googletest */

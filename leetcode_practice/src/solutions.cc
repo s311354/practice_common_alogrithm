@@ -1746,4 +1746,88 @@ int Solutions::minDeleteCost( std::string &S, std::vector<int> &C){
     return count;
 }
 
+
+
+int GetFirstK( std::vector<int> &nums, int K , int start, int end)
+{
+    if (start > end) return -1;
+
+    // Binary search
+    int middleIndex = (start + end)/2;
+    int middledata = nums[middleIndex];
+
+    if (middledata == K) {
+        if ( (middleIndex > 0 && nums[middleIndex - 1] != K) || middleIndex == 0 )
+            return middleIndex;
+        else 
+            end = middleIndex - 1;
+
+    } else if (middleIndex > K) {
+        end = middleIndex - 1;
+    } else {
+        start = middleIndex + 1;
+    }
+
+    return GetFirstK(nums, K, start, end);
+}
+
+int GetLastK( std::vector<int> &nums, int K, int start, int end)
+{
+    if(start > end) return -1;
+
+    int middleIndex = (start + end)/2;
+    int middledata = nums[middleIndex];
+
+    if(middledata == K) {
+        if ( (middleIndex < nums.size() - 1 && nums[middleIndex + 1] != K) || middleIndex == nums.size() - 1)
+            return middleIndex;
+        else
+            start = middleIndex + 1;
+
+    } else if (middledata < K) {
+        start = middleIndex + 1;
+    } else
+        end = middleIndex - 1;
+
+    return GetLastK(nums, K, start, end);
+}
+
+int Solutions::getNumberofK( std::vector<int>& nums, int K)
+{
+    int count = 0;
+
+    if ( nums.size() > 0) {
+        int first = GetFirstK(nums, K, 0, nums.size() - 1); // O(log(N))
+        int last = GetLastK(nums, K, 0, nums.size() - 1); // O(log(N))
+
+        if (first > -1 && last > -1) count = last - first + 1;
+    }
+
+    return count;
+}
+
+std::vector<int> Solutions::findNumberswithSum(std::vector<int> & nums, int sum)
+{
+    std::vector<int> sumnums;
+    int behind = 0;
+    int ahead = nums.size() - 1;
+
+    while ( ahead > behind ) { // O(N)
+        int curSum = nums[ahead] + nums[behind];
+
+        if (curSum == sum) {
+            sumnums.push_back(nums[behind]);
+            sumnums.push_back(nums[ahead]);
+            break;
+        } else if (curSum > sum) {
+            ahead --;
+        } else 
+            behind ++;
+
+    }
+
+    return sumnums;
+}
+
+
 } /* namespace leetcode */
