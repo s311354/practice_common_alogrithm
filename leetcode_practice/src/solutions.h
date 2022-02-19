@@ -207,6 +207,12 @@ public:
     // Find Numbers with Sum
     std::vector<int> findNumberswithSum( std::vector<int> &nums, int sum);
 
+    // median
+    int getMedian(int x, int y, int z);
+
+    // Almost Sorted
+    bool almostSorted( std::vector<int> & nums);
+
 };
 
 

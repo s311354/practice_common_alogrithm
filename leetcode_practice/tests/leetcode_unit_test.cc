@@ -801,5 +801,42 @@ TEST_F(SolutionsTest, findNumberswithSumTest)
     EXPECT_EQ(expected_value, solutions.findNumberswithSum(nums, sum));
 }
 
+TEST_F(SolutionsTest, getMedianTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    int x = 2, y = 1, z = 3;
+    int expected_value = 2;
+    EXPECT_EQ(expected_value, solutions.getMedian(x, y, z));
+}
+
+TEST_F(SolutionsTest, almostSortedTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+                            //{1, 3, 3, 5, 5, 3, 3}
+                            //{1, 3, 3, 5, 5, 3}
+    std::vector<int> nums = {1, 3, 5, 3, 3};
+    bool expected_value = true;
+    EXPECT_EQ(expected_value, solutions.almostSorted(nums));
+
+    nums = {1, 3, 3, 5, 5, 3, 3};
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.almostSorted(nums));
+
+    nums = {3, 1, 3};
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.almostSorted(nums));
+
+    nums = {3, 1, 2};
+    expected_value = false;
+    EXPECT_EQ(expected_value, solutions.almostSorted(nums));
+
+    nums = {1, 5, 4, 3, 2, 6};
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.almostSorted(nums));
+}
+
 
 } /* namespace googletest */

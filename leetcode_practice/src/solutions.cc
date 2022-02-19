@@ -1641,7 +1641,7 @@ int Solutions::minSwapsnums( std::vector<int> & nums)
 
 /*! \brief Minimum Distance
  *
- * \return Return parameter description
+ * \return minimum step
  */
 int Solutions::minDistance( std::vector< std::vector<int> >& edges, int n, int x)
 {
@@ -1828,6 +1828,103 @@ std::vector<int> Solutions::findNumberswithSum(std::vector<int> & nums, int sum)
 
     return sumnums;
 }
+
+
+/*! \brief Middle of three using minimum comparisons
+ *
+ *  Given three distinct numbers a, b and c find the number with a value in middle.
+ *
+ * \return middle
+ */
+int Solutions::getMedian(int x, int y, int z)
+{
+    /*
+    if (x > y && x <= z) return x;
+    else if (y > x && y <= z) return y;
+    else if (z > x && z <= x) return z;
+    else return x;
+    */
+    
+    /*
+    if (x > y) {
+        if (y > z) return y;
+        else {
+            if (z > x) return x;
+            else return z;
+        }
+    } else {
+        if (y <= z) return y;
+        else {
+            if (z <= x) return x;
+            else return z;
+        }
+    }
+    */
+
+    int a = x - y, b = y - z, c = x - z;
+
+    if ( a*b > 0) return y;
+    else if ( a*c > 0 ) return z;
+    else return x;
+
+}
+
+/*! \brief Almost Sorted
+ *
+ *  Given an array of integers, determine whether the array can be sorted in ascending order using only one of the following operations one time.
+ *
+ *  1. Swap two elements.
+ *  2. Reverse one sub-segment.
+ *
+ *  a. If elements can be swapped,  d[l] and d[r], output swap l r in the second line. l and r are the indices of the elements to be swapped, assuming that the array is indexed from  to .
+ *  b. Otherwise, when reversing the segment d[l ... r], output reverse l r in the second line. l and r are the indices of the first and last elements of the subsequence to be reversed, assuming that the array is indexed from  to .
+ *
+ *  d[l ... r] represents the sub-sequence of the array, beginning at index l and ending at index r, both inclusive.
+
+ *
+ *  Determine whether one, both or neither of the operations will complete the task. Output is as follows.
+ *
+ * \return whether the array is Almost Sorted
+ */
+bool Solutions::almostSorted( std::vector<int> & nums)
+{
+    if ( nums.size() > 0 && nums.size() <= 2 ) return true;
+
+    bool issorted = false;
+    int maxnum = nums[0];
+    for (int i = 2; i < nums.size(); ++i) {
+        if ( nums[i - 2] <= nums[i - 1] && nums[i - 1] <= nums[i]) {
+            maxnum = nums[i];
+            issorted = true;
+        } else {
+            if (nums[i - 2] > nums[i - 1] && nums[i - 1] < nums[i] && maxnum > nums[i])
+                return false;
+            else {
+                    maxnum = std::max(maxnum, nums[i - 2]);
+                    issorted = true;
+                }
+        }
+    }
+
+
+    /* recursive check
+      bool isSorted( std::vector<int> &nums) {
+
+      }
+
+      std::reverse(nums.begin()+i+1, nums.end());
+    */
+
+    return issorted;
+}
+
+
+
+
+
+
+
+
 
 
 } /* namespace leetcode */
