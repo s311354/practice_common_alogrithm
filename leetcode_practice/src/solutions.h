@@ -213,6 +213,13 @@ public:
     // Almost Sorted
     bool almostSorted( std::vector<int> & nums);
 
+    // 657. Robot Return to Origin
+    bool judgeCircle( std::string moves);
+
+    // 1192. Critical Connections in a Network
+    std::vector< std::vector<int> > criticalConnections(int n, std::vector< std::vector<int> > & connections);
+
+
 };
 
 

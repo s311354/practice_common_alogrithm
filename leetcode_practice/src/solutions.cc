@@ -1737,10 +1737,29 @@ std::vector<float> Solutions::plusMinus( std::vector<int> arr)
     return Minu;
 }
 
+/*! \brief Minimum Deletion Cost to Avoid Repeating Letters
+ *
+ *  Given a string s and an array of integers cost where cost[i] is the cost of deleting the ith character in s.
+ *
+ * \return the minimum cost of deletions such that there are no two identical letters next to each other.
+ */
 int Solutions::minDeleteCost( std::string &S, std::vector<int> &C){
     int count = 0;
+    int minidex = 0;
+
     for (int i = 1; i < S.size(); ++i) {
-        if (S[i] == S[i - 1]) count += std::min(C[i], C[i -1]);
+        if (S[minidex] == S[i]) { 
+            if (C[minidex] < C[i]) {
+                count += C[minidex];
+                minidex = i;
+            } else {
+                count += C[i];
+            }
+
+        } else {
+            minidex = i;
+        }
+
     }
 
     return count;
@@ -1902,7 +1921,7 @@ bool Solutions::almostSorted( std::vector<int> & nums)
             else {
                     maxnum = std::max(maxnum, nums[i - 2]);
                     issorted = true;
-                }
+            }
         }
     }
 
@@ -1919,7 +1938,71 @@ bool Solutions::almostSorted( std::vector<int> & nums)
 }
 
 
+/*! \brief Robot Return to Origin
+ *
+ *  There is a robot starting at the position (0, 0), the origin, on a 2D plane. Given a sequence of its moves, judge if this robot ends up at (0, 0) after it completes its moves.
+ *
+ *  You are given a string moves that represents the move sequence of the robot where moves[i] represents its ith move. Valid moves are 'R' (right), 'L' (left), 'U' (up), and 'D' (down).
+ *
+ * \return Return parameter description
+ */
+bool Solutions::judgeCircle( std::string moves)
+{
+    int x = 0, y = 0;
+    for (auto & step : moves) {
+        step == 'R' ? x++ : step == 'U' ? y++ : step == 'L' ? x-- : y--;
+    }
+    return ( x == 0 && y == 0);
+}
 
+/*! \brief Critical Connections in Network
+ *
+ *  There are n servers numbered from 0 to n - 1 connected by undirected server-to-server connections forming a network where connections[i] = [ai, bi] represents a connection between servers ai and bi. Any server can reach other servers directly or indirectly through the network.
+ *
+ *  A critical connection is a connection that, if removed, will make some servers unable to reach some other server.
+ *
+ *  Tarjan's Bridge-Finding Algorithm (TBFA) provides a very effective way to find these bridge and articulation points in linear time. It is a bit like a combination of a depth-first search (DFS) approach with recursion and a union-find. In TBFA, doing recursive DFS on graph and for each node to keep track of the earlier node that can circle back around to reach. And then identify whether a given edge is a bridge.
+ *
+ * Note that: low link value of a node is defined as the smallest visited time from current node when doing a DFS, including itself.
+ *
+ *
+ * \return all critical connections in the network in any order.
+ */
+void undirected_dfs(int curr, int parent, int visited, std::vector< std::vector<int> > & undirectedgraph, std::vector<int>& low, std::vector< std::vector<int> > &bridge){
+    low[curr] = visited ++;
+    
+    // Exploring the neighbor node
+    for (auto & nextnode : undirectedgraph[curr]) {
+
+        if ( nextnode == parent)
+            continue;
+        
+        // unvisited (Depth-first Search)
+        if (low[nextnode] == 0) undirected_dfs(nextnode, curr, visited, undirectedgraph, low, bridge);
+        // Assign low value to current node (circle back around to reach)
+        low[curr] = std::min(low[curr], low[nextnode]);
+
+        // Determine the bridge
+        if (low[nextnode] == visited ) bridge.push_back({curr, nextnode});
+    }
+}
+
+std::vector< std::vector<int> > Solutions::criticalConnections(int n, std::vector< std::vector<int> > & connections)
+{
+    std::vector< std::vector<int> > undirectedgraph (n);
+
+    // constructing undirected graph
+    for (auto & elem : connections) {
+        undirectedgraph[elem[0]].push_back(elem[1]);
+        undirectedgraph[elem[1]].push_back(elem[0]);
+    }
+
+    std::vector< std::vector<int> > bridge;
+    std::vector<int> low(n);
+
+    undirected_dfs(0, -1, 1, undirectedgraph, low, bridge);
+    return bridge;
+}
 
 
 

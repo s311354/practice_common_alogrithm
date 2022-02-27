@@ -687,6 +687,11 @@ TEST_F(SolutionsTest, minDistanceTest)
     EXPECT_EQ(expected_value, solutions.minDistance(edges, n, x));
 
     edges = {{2, 3, 1}, {2, 1, 3}, {3, 4, 1}};
+    expected_value = 2;
+    EXPECT_EQ(expected_value, solutions.minDistance(edges, n, x));
+
+
+    edges = {{2, 3, 1}, {2, 1, 3}, {3, 4, 1}};
 
     expected_value = 2;
     EXPECT_EQ(expected_value, solutions.minDistance(edges, n, x));
@@ -777,6 +782,12 @@ TEST_F(SolutionsTest, minDeleteCostTest)
     expected_value = 0;
     EXPECT_EQ(expected_value,solutions.minDeleteCost(S, C));
 
+    S = "aaabbbabbbb";
+    C = {3,5,10,7,5,3,5,5,4,8,1};
+    expected_value = 26;
+    EXPECT_EQ(expected_value,solutions.minDeleteCost(S, C));
+
+
 }
 
 TEST_F(SolutionsTest, GetNumberofKTest) 
@@ -837,6 +848,48 @@ TEST_F(SolutionsTest, almostSortedTest)
     expected_value = true;
     EXPECT_EQ(expected_value, solutions.almostSorted(nums));
 }
+
+
+TEST_F(SolutionsTest, judgeCircleTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::string moves = "UD";
+    bool expected_value = true;
+    EXPECT_EQ(expected_value, solutions.judgeCircle(moves));
+
+    moves = "LL";
+    expected_value = false;
+    EXPECT_EQ(expected_value, solutions.judgeCircle(moves));
+}
+
+
+TEST_F(SolutionsTest, criticalConnectionsTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector< std::vector<int> > connection = {{0, 1}, {1, 2}, {2, 0}, {1, 3}};
+    int n = 4;
+
+    std::vector< std::vector<int> > expected_value = {{1, 3}};
+    EXPECT_EQ(expected_value, solutions.criticalConnections(n, connection));
+
+    connection = {{0, 1}, {1, 2}, {2, 0}, {1, 3}, {3, 4}};
+    n = 5;
+    expected_value = {{3, 4} , {1, 3}};
+    EXPECT_EQ(expected_value, solutions.criticalConnections(n, connection));
+
+
+    connection = {{0, 1}};
+    n = 2;
+    expected_value = {{0, 1}};
+    EXPECT_EQ(expected_value, solutions.criticalConnections(n, connection));
+
+
+}
+
+
 
 
 } /* namespace googletest */
