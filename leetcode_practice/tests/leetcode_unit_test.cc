@@ -111,9 +111,7 @@ TEST_F(SolutionsTest, nextPermutationTest)
     solutions.nextPermutation(v);
     std::next_permutation(expected_value.begin(), expected_value.end());
 
-    for (int i = 0; i < expected_value.size(); ++i) {
-        EXPECT_EQ(expected_value[i], v[i]); 
-    }
+    EXPECT_EQ(expected_value, v); 
 
 
 
@@ -887,6 +885,34 @@ TEST_F(SolutionsTest, criticalConnectionsTest)
     EXPECT_EQ(expected_value, solutions.criticalConnections(n, connection));
 
 
+}
+
+TEST_F(SolutionsTest, findPeakElementTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector<int> nums = {1, 2, 3, 1};
+    int expected_value = 2;
+    EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
+
+    nums = {1, 2, 1, 3, 5, 6, 4};
+    expected_value = 5;
+    EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
+
+    nums = {1};
+    expected_value = 0;
+    EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
+
+
+    nums = {1, 2};
+    expected_value = 1;
+    EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
+
+
+    nums = {2, 1};
+    expected_value = 0;
+    EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
 }
 
 

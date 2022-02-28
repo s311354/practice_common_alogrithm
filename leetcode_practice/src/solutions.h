@@ -219,6 +219,8 @@ public:
     // 1192. Critical Connections in a Network
     std::vector< std::vector<int> > criticalConnections(int n, std::vector< std::vector<int> > & connections);
 
+    // 162. Find Peak Element
+    int findPeakElement( std::vector<int> & nums);
 
 };
 

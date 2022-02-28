@@ -1765,8 +1765,6 @@ int Solutions::minDeleteCost( std::string &S, std::vector<int> &C){
     return count;
 }
 
-
-
 int GetFirstK( std::vector<int> &nums, int K , int start, int end)
 {
     if (start > end) return -1;
@@ -2004,10 +2002,52 @@ std::vector< std::vector<int> > Solutions::criticalConnections(int n, std::vecto
     return bridge;
 }
 
+/*! \brief Find Peak Element
+ *
+ *  A peak element is an element that is strictly greater than its neighbor.
+ *
+ *  Given an integer array nums, find a peak element, and return its index. If the array contains multiple peaks, return the index to any of the peaks.
+ *
+ *  You may imagine that nums[-1] = nums[n] = -∞.
+ *
+ *  You must write an algorithm that runs in O(log n) time.
+ *
+ * \return the index number of peak element
+ */
+int Solutions::findPeakElement( std::vector<int> & nums)
+{
+    int start = 0, end = nums.size() - 1;
+    if (start > end && end == 0) return -1;
 
+    while (start < end) {
+        // Binary search
+        int middleIndex = (start + end)/2;
 
+        if (nums[middleIndex] > nums[middleIndex + 1]) {
+            end = middleIndex;
+        } else {
+            start = middleIndex + 1;
+        }
+    }
 
+    return start;
 
+    /* implicit runtime error
+    int start = 0, end = nums.size();
 
+    while (start <= end) {
+
+        int middleIndex = (start + end)/2;
+
+        if (middleIndex > 0 && nums[middleIndex - 1] < nums[middleIndex] && nums[middleIndex] > nums[middleIndex + 1] || middleIndex == 0)
+            return middleIndex;
+
+        if (nums[middleIndex -1] > nums[middleIndex]) end = middleIndex - 1;
+        else start = middleIndex + 1;
+    }
+
+    return -1;
+    */
+}
 
 } /* namespace leetcode */
