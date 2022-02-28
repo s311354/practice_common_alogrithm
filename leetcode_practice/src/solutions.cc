@@ -1770,7 +1770,7 @@ int GetFirstK( std::vector<int> &nums, int K , int start, int end)
     if (start > end) return -1;
 
     // Binary search
-    int middleIndex = (start + end)/2;
+    int middleIndex =  start + (end - start)/2;
     int middledata = nums[middleIndex];
 
     if (middledata == K) {
@@ -1792,7 +1792,7 @@ int GetLastK( std::vector<int> &nums, int K, int start, int end)
 {
     if(start > end) return -1;
 
-    int middleIndex = (start + end)/2;
+    int middleIndex = start + (end - start)/2;
     int middledata = nums[middleIndex];
 
     if(middledata == K) {
@@ -2016,6 +2016,7 @@ std::vector< std::vector<int> > Solutions::criticalConnections(int n, std::vecto
  */
 int Solutions::findPeakElement( std::vector<int> & nums)
 {
+    /*
     int start = 0, end = nums.size() - 1;
     if (start > end && end == 0) return -1;
 
@@ -2032,22 +2033,23 @@ int Solutions::findPeakElement( std::vector<int> & nums)
 
     return start;
 
-    /* implicit runtime error
-    int start = 0, end = nums.size();
+    */
 
+    int start = 0, end = nums.size() - 1;
+    if (start > end && end == 0) return -1;
+
+    // Binary Search
     while (start <= end) {
+        int middleIndex = start + (end - start)/2;
 
-        int middleIndex = (start + end)/2;
-
-        if (middleIndex > 0 && nums[middleIndex - 1] < nums[middleIndex] && nums[middleIndex] > nums[middleIndex + 1] || middleIndex == 0)
+        if (nums[middleIndex - 1] < nums[middleIndex] && ( nums[middleIndex] > nums[middleIndex + 1] || middleIndex == nums.size() - 1 ) || middleIndex == 0)
             return middleIndex;
-
-        if (nums[middleIndex -1] > nums[middleIndex]) end = middleIndex - 1;
-        else start = middleIndex + 1;
+        else if ( middleIndex - 1>= 0 && middleIndex + 1 <= nums.size() - 1 && nums[middleIndex -1] > nums[middleIndex] && nums[middleIndex - 1] > nums[middleIndex + 1]) { 
+            end = middleIndex - 1;
+        } else start = middleIndex + 1;
     }
 
     return -1;
-    */
 }
 
 } /* namespace leetcode */

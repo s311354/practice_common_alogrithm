@@ -894,24 +894,33 @@ TEST_F(SolutionsTest, findPeakElementTest)
 
     std::vector<int> nums = {1, 2, 3, 1};
     int expected_value = 2;
-    EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
+//     EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
 
     nums = {1, 2, 1, 3, 5, 6, 4};
     expected_value = 5;
-    EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
+//     EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
 
     nums = {1};
     expected_value = 0;
-    EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
+//     EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
 
 
     nums = {1, 2};
     expected_value = 1;
-    EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
+//     EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
 
 
     nums = {2, 1};
     expected_value = 0;
+//     EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
+
+    nums = {3,3,2,4,1};
+    expected_value = 3;
+    EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
+
+
+    nums = {4,6,5,1,2,3,7,8,9};
+    expected_value = 8;
     EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
 }
 
