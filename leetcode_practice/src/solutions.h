@@ -26,12 +26,13 @@ struct TreeNode
 
 };
 
-
-struct LinstNode {
+struct LinkedListNode {
     /* data */
     int val;
-    LinstNode * next;
-    LinstNode(int x) : val(x), next(NULL) {}
+    LinkedListNode * next;
+    LinkedListNode() : val(0), next(nullptr) {}
+    LinkedListNode(int x) : val(x), next(nullptr) {}
+    LinkedListNode(int x, LinkedListNode *next) : val(x), next(next) {}
 };
 
 class Solutions
@@ -57,6 +58,7 @@ private:
 
     TreeNode* getMinNode(TreeNode* node);
 
+    LinkedListNode* getNewHead(int value);
 
 public:
     Solutions(){};
@@ -64,7 +66,8 @@ public:
 
     std::vector<int> PrintBFS(TreeNode* node);
     TreeNode* insertBTNode(TreeNode* node, int value, int index);
-
+    std::vector<int> PrintLinkedlist(LinkedListNode* node);
+    LinkedListNode* insertLinkedlistNode(LinkedListNode* node, int value);
     /* ========== Microsoft OA ============ */
 
     // 1647. Miniumum Deletions to Make Character Frequencies Unique
@@ -221,6 +224,12 @@ public:
 
     // 162. Find Peak Element
     int findPeakElement( std::vector<int> & nums);
+
+    // 2. Add Two Numbers
+    LinkedListNode* addTwoNumbers(LinkedListNode* l1, LinkedListNode* l2);
+
+    // 83. Remove Duplicate from Sorted List
+    LinkedListNode* deleteDuplicates(LinkedListNode * head);
 
 };
 

@@ -924,6 +924,68 @@ TEST_F(SolutionsTest, findPeakElementTest)
     EXPECT_EQ(expected_value, solutions.findPeakElement(nums));
 }
 
+TEST_F(SolutionsTest, addTwoNumbersTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector<int> l1 = {2, 4, 3}, l2 = {5, 6, 4};
+    std::vector<int> expected_value = {7, 0, 8};
+
+    leetcode::LinkedListNode * l1_node = nullptr, * l2_node = nullptr;
+
+    for (int i = 0; i < l1.size(); ++i) {
+        l1_node = solutions.insertLinkedlistNode(l1_node, l1[i]);
+        l2_node = solutions.insertLinkedlistNode(l2_node, l2[i]);
+    }
+
+
+    leetcode::LinkedListNode * node = nullptr;
+    node = solutions.addTwoNumbers(l1_node, l2_node);
+    std::vector<int> v = solutions.PrintLinkedlist(node);
+
+    EXPECT_EQ(expected_value, v);
+}
+
+TEST_F(SolutionsTest, deleteDuplicatesTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> head = {1, 1, 2, 3, 3};
+
+    leetcode::LinkedListNode* node = nullptr;
+    for (int i = 0; i < head.size(); i++) {
+        node = solutions.insertLinkedlistNode(node, head[i]);
+    }
+
+    node = solutions.deleteDuplicates(node);
+    std::vector<int> v = solutions.PrintLinkedlist(node);
+
+    std::vector<int> expected_value = {1, 2, 3};
+
+    EXPECT_EQ(expected_value, v);
+
+
+    node = nullptr;
+    head = {1, 1, 1};
+    for (int i = 0; i < head.size(); i++) {
+        node = solutions.insertLinkedlistNode(node, head[i]);
+    }
+    node = solutions.deleteDuplicates(node);
+    v = solutions.PrintLinkedlist(node);
+    expected_value = {1};
+    EXPECT_EQ(expected_value, v);
+
+    node = nullptr;
+    head = {1, 1, 2};
+    for (int i = 0; i < head.size(); i++) {
+        node = solutions.insertLinkedlistNode(node, head[i]);
+    }
+    node = solutions.deleteDuplicates(node);
+    v = solutions.PrintLinkedlist(node);
+    expected_value = {1, 2};
+    EXPECT_EQ(expected_value, v);
+}
 
 
 

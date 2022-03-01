@@ -503,6 +503,27 @@ TreeNode* Solutions::getNewNode(int value)
     return node;
 }
 
+LinkedListNode* Solutions::getNewHead(int value)
+{
+    LinkedListNode * node = new LinkedListNode;
+    node->val = value;
+    node->next = nullptr;
+
+    return node;
+}
+
+LinkedListNode* Solutions::insertLinkedlistNode(LinkedListNode* node, int value)
+{
+    if (node == nullptr) {
+
+        if (value != -1) node = getNewHead(value);
+        return node;
+    }
+
+    node->next = insertLinkedlistNode(node->next, value);
+
+    return node;
+}
 
 std::vector<int> Solutions::PrintBFS(TreeNode * node)
 {
@@ -526,6 +547,28 @@ std::vector<int> Solutions::PrintBFS(TreeNode * node)
 
     return bfsvector;
 }
+
+std::vector<int> Solutions::PrintLinkedlist(LinkedListNode* node)
+{
+    LinkedListNode* current_node;
+    std::vector<int> contenter;
+    std::queue<LinkedListNode*> node_queue;
+
+    node_queue.push(node);
+
+    while (! node_queue.empty()) {
+        current_node = node_queue.front();
+        node_queue.pop();
+
+        if ( current_node != nullptr ) {
+            contenter.push_back(current_node->val);
+            if(current_node->next != nullptr) node_queue.push(current_node->next);
+        }
+    }
+
+    return contenter;
+}
+
 
 /*! \brief String Without 3 Identical Consecutive Letters
  *
@@ -2051,5 +2094,88 @@ int Solutions::findPeakElement( std::vector<int> & nums)
 
     return -1;
 }
+
+/*! \brief Add Two Numbers
+ *
+ *  You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+ *
+ *  You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+ *
+ * \return the sum as a linked list.
+ */
+LinkedListNode* Solutions::addTwoNumbers(LinkedListNode* l1, LinkedListNode* l2)
+{
+    /*
+    int c = 0;
+    LinkedListNode* node = nullptr;
+
+    while (c || l1 || l2) {
+        c += (l1 ? l1->val : 0) + (l2? l2->val : 0);
+        node = insertLinkedlistNode(node, c%10);
+        c /= 10;
+        if (l1) l1 = l1->next;
+        if (l2) l2 = l2->next;
+    }
+
+    return node;
+    */
+
+    int c = 0;
+
+    LinkedListNode  node(0);
+    LinkedListNode * temp = &node;
+
+    while (c || l1 || l2 ) {
+        c += (l1 ? l1->val : 0) + (l2 ? l2->val : 0);
+        LinkedListNode * next_node = new LinkedListNode(c%10);
+        temp->next = next_node;
+        temp = temp->next;
+        c /= 10;
+        if (l1) l1 = l1->next;
+        if (l2) l2 = l2->next;
+    }
+
+    return node.next;
+}
+
+
+/*! \brief Remove Duplicates from Sorted List
+ *
+ *  Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
+ *
+ * \return Return parameter description
+ */
+LinkedListNode* Solutions::deleteDuplicates(LinkedListNode * head)
+{
+    if (!head) return head;
+    LinkedListNode * tmp = head;
+
+    while (tmp && tmp->next) {
+        if (tmp->val == tmp->next->val)
+            tmp->next = tmp->next->next;
+        else tmp = tmp->next;
+    }
+
+    return head;
+    /*
+	if(!head) return head;
+	LinkedListNode* tmp = head;
+
+	while(tmp && tmp -> next)
+	{
+		if(tmp -> val == tmp -> next -> val)
+			tmp -> next = tmp -> next -> next;
+		else
+			tmp = tmp -> next; 
+	}
+
+	return head;
+    */
+}
+
+
+
+
+
 
 } /* namespace leetcode */
