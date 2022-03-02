@@ -988,5 +988,103 @@ TEST_F(SolutionsTest, deleteDuplicatesTest)
 }
 
 
+TEST_F(SolutionsTest, function_name1Test) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+//     EXPECT_EQ(expected_value,result_value);
+}
+
+TEST_F(SolutionsTest, addExpressionTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::string S = "()";
+    bool expected_value = true;
+    EXPECT_EQ(expected_value, solutions.addExpression(S));
+
+
+    S = "()()";
+    expected_value = false;
+    EXPECT_EQ(expected_value, solutions.addExpression(S));
+
+
+    S = "()+()";
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.addExpression(S));
+
+}
+
+TEST_F(SolutionsTest, balancedSumTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector<int> arr = {1, 2, 3, 3};
+    int expected_value = 2;
+    EXPECT_EQ(expected_value, solutions.balancedSum(arr));
+
+    arr = {1, 2, 3, 4, 6};
+    expected_value = 3;
+    EXPECT_EQ(expected_value, solutions.balancedSum(arr));
+
+    arr = {1, 2, 1};
+    expected_value = 1;
+    EXPECT_EQ(expected_value, solutions.balancedSum(arr));
+}
+
+
+TEST_F(SolutionsTest, arrayNextingTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> nums = {5, 4, 0, 3, 1, 6, 2};
+
+    int expected_value = 4;
+    EXPECT_EQ(expected_value, solutions.arrayNexting(nums));
+
+
+    nums = {0, 1, 2};
+    expected_value = 1;
+    EXPECT_EQ(expected_value, solutions.arrayNexting(nums));
+
+}
+
+TEST_F(SolutionsTest, addOperatorsTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::string num = "232";
+    int target = 8;
+    std::vector< std::string > expected_value = {"2+3*2", "2*3+2"};
+    EXPECT_EQ(expected_value, solutions.addOperators(num, target));
+
+    num = "123";
+    target = 6;
+    expected_value = {"1+2+3", "1*2*3"};
+    EXPECT_EQ(expected_value, solutions.addOperators(num, target));
+
+    num = "3456237490";
+    target = 9191;
+    expected_value = {};
+    EXPECT_EQ(expected_value, solutions.addOperators(num, target));
+
+    num = "105";
+    target = 5;
+    expected_value = {"1*0+5","10-5"};
+    EXPECT_EQ(expected_value, solutions.addOperators(num, target));
+
+
+    num = "123456789";
+    target = 45;
+//     expected_value = {"1*2*3*4*5-6-78+9","1*2*3*4+5+6-7+8+9","1*2*3+4+5+6+7+8+9","1*2*3+4+5-6*7+8*9","1*2*3+4-5*6+7*8+9","1*2*3+4-5*6-7+8*9","1*2*3-4*5+6*7+8+9","1*2*3-4*5-6+7*8+9","1*2*3-4*5-6-7+8*9","1*2*3-45+67+8+9","1*2*34+56-7-8*9","1*2*34-5+6-7-8-9","1*2+3*4-56+78+9","1*2+3+4+5*6+7+8-9","1*2+3+4-5+6*7+8-9","1*2+3+4-5-6+7*8-9","1*2+3+45+67-8*9","1*2+3-45+6+7+8*9","1*2+34+5-6-7+8+9","1*2+34+56-7*8+9","1*2+34-5+6+7-8+9","1*2+34-56+7*8+9","1*2+34-56-7+8*9","1*2-3*4+5+67-8-9","1*2-3+4-5-6*7+89","1*2-3-4*5+67+8-9","1*2-3-4+56-7-8+9","1*2-34+5*6+7*8-9","1*23+4*5-6+7-8+9","1*23-4-56-7+89","1+2*3*4*5+6+7-89","1+2*3*4+5*6+7-8-9","1+2*3*4-5+6*7-8-9","1+2*3+4*5*6+7-89","1+2*3+4*5-6+7+8+9","1+2*3-4-5-6*7+89","1+2*34-5*6+7+8-9","1+2+3*4*5+6-7-8-9","1+2+3*4+5+6*7-8-9","1+2+3*45-6-78-9","1+2+3+4+5+6+7+8+9","1+2+3+4+5-6*7+8*9","1+2+3+4-5*6+7*8+9","1+2+3+4-5*6-7+8*9","1+2+3-4*5+6*7+8+9","1+2+3-4*5-6+7*8+9","1+2+3-4*5-6-7+8*9","1+2+3-45+67+8+9","1+2-3*4*5+6+7+89","1+2-3*4+5*6+7+8+9","1+2-3*4-5+6*7+8+9","1+2-3*4-5-6+7*8"};
+//     EXPECT_EQ(expected_value, solutions.addOperators(num, target));
+
+}
+
+
 
 } /* namespace googletest */

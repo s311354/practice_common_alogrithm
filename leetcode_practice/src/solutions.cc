@@ -310,15 +310,16 @@ int Solutions::maxLength( std::vector< std::string> & arr)
     return len;
 }
 
-void Solutions::checkLen( std::vector<std::string> & arr, std::string str, int index, int& count )
+// undirected DFS ( graph of string )
+void Solutions::checkLen( std::vector<std::string> & arr, std::string graphstr, int index, int& count )
 {
-    if (isUniqieString(str)) {
-        count = str.size() > count ? str.size(): count;
+    if (isUniqieString(graphstr)) {
+        count = graphstr.size() > count ? graphstr.size(): count;
     }
 
     // recursive
     for (int i = index; i < arr.size(); ++i) {
-        checkLen(arr, str+arr[i], i+1, count);
+        checkLen(arr, graphstr+arr[i], i+1, count);
     }
 }
 
@@ -2172,6 +2173,118 @@ LinkedListNode* Solutions::deleteDuplicates(LinkedListNode * head)
 	return head;
     */
 }
+
+int Solutions::balancedSum( std::vector<int> arr)
+{
+    if (!(arr.size() - 1)) return 0;
+
+    int size = arr.size();
+    int target = 0;
+
+    for (int j = size; j > 0; --j) {
+        int target =+ arr[j - 1];
+
+        for (size_t i = 0; i < size ; i++)
+        {
+            if (target == 0) return i;
+            target -= arr[i];
+        }
+
+    }
+
+    return 0;
+}
+
+// isvaildAddexpression
+bool Solutions::addExpression( std::string& S)
+{
+    bool isVaildAdd = false;
+    std::vector<int> v (4, 0);
+
+    for (auto & elem : S) {
+        v[elem - '('] ++;
+    }
+
+    if (v[0] == 1 && v[1] == 1 || v[0]%2 == 0 && v[1]%2 == 0 && v[3] == v[0]/2) isVaildAdd = true;
+    
+    return isVaildAdd;
+}
+
+/*! \brief Array Nesting
+ *
+ *  You are given an integer array nums of length n where nums is a permutation of the numbers in the range [0, n - 1].
+ *  You should build a set s[k] = {nums[k], nums[nums[k]], nums[nums[nums[k]]], ... } subjected to the following rule:
+ *
+ *  The first element in s[k] starts with the selection of the element nums[k] of index = k.
+ *  The next element in s[k] should be nums[nums[k]], and then nums[nums[nums[k]]], and so on.
+ *  We stop adding right before a duplicate element occurs in s[k].
+ *
+ * \return the longest length of a set s[k].
+ */
+int Solutions::arrayNexting( std::vector<int> & nums)
+{
+    int n = nums.size(), ans = 0;
+    std::vector<bool> visited(n, false);
+
+    for (auto & elem : nums) {
+        int count = 0;
+        while (!visited[elem]) {
+            count += 1;
+            visited[elem] = true;
+            elem = nums[elem];
+        }
+        ans = std::max(ans, count);
+    }
+    return ans;
+}
+
+/*! \brief Expression Add Operators
+ *
+ *  Given a string num that contains only digits and an integer target, return all possibilities to insert the binary operators '+', '-', and/or '*' between the digits of num so that the resultant expression evaluates to the target value.
+ *
+ * Note: similar as Maximum Length of a Concatenated String with Unique
+ *
+ * \return all possibilities to insert the binary operators 
+ */
+void checkOperator(std::string num, int target, std::string str, int index, long sum, long prev, std::vector< std::string >& operation)
+{
+
+    if (num.size() == index && target == sum) {
+        operation.push_back(str);
+        return;
+    }
+
+    std::string curstr = "";
+    long int curnum = 0;
+    for (int i = index; i < num.size(); ++i) {
+        curnum = curnum*10 + (num[i] - '0');
+        curstr.push_back(num[i]);
+
+        if (curstr.size() > 1 && curstr[0] == '0')break;
+
+        if (str[0] == '+') str.erase(0, 1);
+        if (str[0] == '*') break;
+
+        if( i == 0) checkOperator(num, target, curstr, i + 1, curnum, curnum, operation);
+        else {
+
+            checkOperator(num, target, str + "+" + curstr, i + 1, sum + curnum, +curnum, operation);
+            checkOperator(num, target, str + '-' + curstr, i + 1, sum - curnum, -curnum, operation);
+            checkOperator(num, target, str + '*' + curstr, i + 1, (sum - prev) + (prev * curnum), prev * curnum, operation);
+        }
+
+    }
+}
+
+std::vector< std::string> Solutions::addOperators( std::string num, int target)
+{
+    std::vector< std::string > operation;
+
+    checkOperator(num, target, "", 0, 0, 0, operation);
+
+    return operation;
+}
+
 
 
 

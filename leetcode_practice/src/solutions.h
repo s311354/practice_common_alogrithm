@@ -231,6 +231,19 @@ public:
     // 83. Remove Duplicate from Sorted List
     LinkedListNode* deleteDuplicates(LinkedListNode * head);
 
+    // Interview Question
+    int balancedSum( std::vector<int> arr);
+
+    // Interview Question
+    bool addExpression( std::string& S);
+
+    // 565 Array Nesting
+    int arrayNexting( std::vector<int>& nums);
+
+    // 282. Expression Add Operations
+    std::vector< std::string> addOperators( std::string num, int target);
+
+
 };
 
 
