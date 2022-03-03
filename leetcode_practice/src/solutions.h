@@ -12,8 +12,18 @@
 #include <queue>
 #include <stack>
 #include <numeric>
+#include <regex>
 
 namespace leetcode {
+
+static const std::regex INT_TYPE("[+-]?[0-9]+");
+static const std::regex UNSIGNED_INT_TYPE("[+]?[0-9]+");
+static const std::regex DOUBLE_TYPE("[+-]?[0-9]+[.]?[0-9]+");
+static const std::regex UNSIGNED_DOUBLE_TYPE("[+]?[0-9]+[.]?[0-9]+");
+
+
+
+
 
 struct TreeNode
 {
@@ -62,7 +72,14 @@ private:
 
 public:
     Solutions(){};
+    Solutions(std::istream& s){};
     virtual ~Solutions(){};
+
+
+
+
+
+
 
     std::vector<int> PrintBFS(TreeNode* node);
     TreeNode* insertBTNode(TreeNode* node, int value, int index);
@@ -242,8 +259,6 @@ public:
 
     // 282. Expression Add Operations
     std::vector< std::string> addOperators( std::string num, int target);
-
-
 };
 
 

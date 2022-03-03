@@ -2,7 +2,7 @@
 #include "src/solutions.h"
 #include <iostream>
 #include <fstream>
-
+#include <regex>
 
 namespace googletest {
 
@@ -260,6 +260,50 @@ std::vector<int> parseInts(const std::string & str)
     return  v;
 }
 
+bool is_integer(const std::string & s){
+    return std::regex_match(s, std::regex(" *[(-|+)][0-9]+"));
+}
+
+void parseDouble(const std::string & str, std::vector<double> & v)
+{
+    std::stringstream ss(str);
+    std::string temp;
+
+    if (!is_integer(ss.str()))
+        return;
+
+    while (ss >> temp) {
+        std::stringstream st(temp);
+        while (st) {
+            double i;
+            if (st >> i) {
+                if(ceil(i) != floor(i) or i > 1000000000)
+                    break;
+                v.push_back(i);
+            } else {
+                st.clear();
+                st.get();
+            }
+            }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 TEST_F(SolutionsTest, balancedStoneTest) 
 {
     /* Declare the Unit Test object */
@@ -277,11 +321,6 @@ TEST_F(SolutionsTest, balancedStoneTest)
     while (std::getline(ifs, line)) {
         std::istringstream iss(line);
         std::vector<int> v = parseInts(line);
-
-        if (v.size() > 1) {
-            EXPECT_EQ(expected_value.at(index), solutions.balancedStone(v));
-            index ++; 
-        }
     }
 }
 
@@ -987,15 +1026,6 @@ TEST_F(SolutionsTest, deleteDuplicatesTest)
     EXPECT_EQ(expected_value, v);
 }
 
-
-TEST_F(SolutionsTest, function_name1Test) 
-{
-    /* Declare the Unit Test object */
-    leetcode::Solutions solutions;
-
-//     EXPECT_EQ(expected_value,result_value);
-}
-
 TEST_F(SolutionsTest, addExpressionTest) 
 {
     /* Declare the Unit Test object */
@@ -1085,6 +1115,27 @@ TEST_F(SolutionsTest, addOperatorsTest)
 
 }
 
+TEST_F(SolutionsTest, CodilityTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
 
+    std::vector<double> v;
+    std::filebuf fb;
+    if (fb.open ("input.txt",std::ios::in))
+    {
+      std::istream is(&fb);
+      std::string line;
+
+      while (std::getline(is, line)) {
+         parseDouble(line, v);
+      }
+
+      fb.close();
+    }
+
+    std::vector<double> expected_value = {137, -104, 0, 1, 0, -1};
+    EXPECT_EQ(expected_value, v);
+}
 
 } /* namespace googletest */

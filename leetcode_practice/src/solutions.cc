@@ -2285,10 +2285,4 @@ std::vector< std::string> Solutions::addOperators( std::string num, int target)
     return operation;
 }
 
-
-
-
-
-
-
 } /* namespace leetcode */
