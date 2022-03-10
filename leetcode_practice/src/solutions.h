@@ -75,12 +75,6 @@ public:
     Solutions(std::istream& s){};
     virtual ~Solutions(){};
 
-
-
-
-
-
-
     std::vector<int> PrintBFS(TreeNode* node);
     TreeNode* insertBTNode(TreeNode* node, int value, int index);
     std::vector<int> PrintLinkedlist(LinkedListNode* node);
@@ -259,10 +253,13 @@ public:
 
     // 282. Expression Add Operations
     std::vector< std::string> addOperators( std::string num, int target);
+
+    // 110 Balanced Binary Tree
+    bool isBalanced(TreeNode* root);
+
+    // 108 Convert Sorted Array to Binary Search Tree
+    TreeNode* sortedArrayToBST( std::vector<int> &nums);
 };
-
-
-
 
 
 } /* namespace leetcode */

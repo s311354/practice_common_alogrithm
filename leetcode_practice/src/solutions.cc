@@ -2285,4 +2285,57 @@ std::vector< std::string> Solutions::addOperators( std::string num, int target)
     return operation;
 }
 
+/*! \brief Balanced Binary Tree
+ *
+ *  Given a binary tree, determine if it is height-balanced.
+ *
+ *  For this problem, a height-balanced binary tree is defined as:
+ *
+ *      a binary tree in which the left and right substree of every node differ in height by no more than 1.
+ *
+ * \return determin if it is height-balanced.
+ */
+int getHeight(TreeNode * root)
+{
+    if (root == nullptr) return 0;
+
+    int depthleft = getHeight(root->left);
+    int depthright = getHeight(root->right);
+
+    if (depthright == -1 || depthright == -1 || std::abs(depthleft - depthright) > 1 ) return -1;
+
+    return 1 + std::max(depthright, depthleft);
+}
+
+bool Solutions::isBalanced(TreeNode * root)
+{
+    if (root == nullptr) return true;
+
+    return getHeight(root) != -1;
+}
+
+/*! \brief Convert Sorted Array to Binary Search Tree
+ *
+ *  Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree.
+ *
+
+ * \return Return parameter description
+ */
+TreeNode * helper( std::vector<int> & nums, int low, int high)
+{
+    if(low <= high) {
+        int mid = low + (high - low)/2;
+        TreeNode* root = new TreeNode(nums[mid]);
+        root->left = helper(nums, low, mid - 1);
+        root->right = helper(nums, mid + 1, high);
+        return root;
+    }
+    return NULL;
+}
+TreeNode* Solutions::sortedArrayToBST( std::vector<int> & nums)
+{
+    return helper(nums, 0, nums.size() - 1);
+}
+
+
 } /* namespace leetcode */

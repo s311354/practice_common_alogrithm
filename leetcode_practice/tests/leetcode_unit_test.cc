@@ -134,12 +134,16 @@ TEST_F(SolutionsTest, goodNodesTest)
     std::vector<int> v = {3,3,-1,4,2};
     leetcode::TreeNode * root = nullptr;
 
-    int expected_value = 3;
+
     for (int i = 0; i < v.size(); ++i) {
         root = solutions.insertBTNode(root, v[i], i);
     }
 
+    int expected_value = 3;
+
     EXPECT_EQ(expected_value, solutions.goodNodes(root));
+
+    delete root;
 }
 
 TEST_F(SolutionsTest, filterStringTest) 
@@ -190,6 +194,8 @@ TEST_F(SolutionsTest, deleteNodeTest)
     std::vector<int> expected_value = {5,2,6,4,7}; // {5,2,6,null,4,null,7}
 
     EXPECT_EQ(expected_value, actual_value);
+
+    delete root;
 }
 
 TEST_F(SolutionsTest, sumFractionTest) 
@@ -287,22 +293,6 @@ void parseDouble(const std::string & str, std::vector<double> & v)
             }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 TEST_F(SolutionsTest, balancedStoneTest) 
 {
@@ -655,6 +645,8 @@ TEST_F(SolutionsTest, isSameTreeTest)
     expected_value = false;
     EXPECT_EQ(expected_value, solutions.isSameTree(p, q));
 
+    delete p;
+    delete q;
 }
 
 
@@ -1137,5 +1129,70 @@ TEST_F(SolutionsTest, CodilityTest)
     std::vector<double> expected_value = {137, -104, 0, 1, 0, -1};
     EXPECT_EQ(expected_value, v);
 }
+
+TEST_F(SolutionsTest, isBalancedTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector<int> v = {1, 2, 2, 3, 3, -1, -1, 4, 4};
+    leetcode::TreeNode* root = nullptr;
+
+    for (int i = 0; i < v.size(); ++i) {
+        root = solutions.insertBTNode(root, v[i], i);
+    }
+
+    bool expected_value = false;
+
+    EXPECT_EQ(expected_value, solutions.isBalanced(root));
+
+
+    v = {3, 9, 20, -1, -1, 15, 7};
+
+    root = nullptr;
+    for (int i = 0; i < v.size(); ++i) {
+        root = solutions.insertBTNode(root, v[i], i);
+    }
+
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.isBalanced(root));
+
+    v = {};
+
+    root = nullptr;
+    for (int i = 0; i < v.size(); ++i) {
+        root = solutions.insertBTNode(root, v[i], i);
+    }
+
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.isBalanced(root));
+
+    delete root;
+}
+
+
+
+TEST_F(SolutionsTest, sortedArrayToBSTTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector<int> nums = {-10, -3, 0, 5, 9};
+
+    leetcode::TreeNode * node  = solutions.sortedArrayToBST(nums);
+
+    std::vector<int> actual_value = solutions.PrintBFS(node);
+    std::vector<int> expected_value = {0, -10, 5, -3, 9};
+
+    EXPECT_EQ(expected_value, actual_value);
+
+    nums = {1, 3};
+    node = solutions.sortedArrayToBST(nums);
+
+    actual_value = solutions.PrintBFS(node);
+    expected_value = {1, 3};
+    EXPECT_EQ(expected_value, actual_value);
+}
+
+
 
 } /* namespace googletest */
