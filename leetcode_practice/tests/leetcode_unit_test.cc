@@ -1193,6 +1193,55 @@ TEST_F(SolutionsTest, sortedArrayToBSTTest)
     EXPECT_EQ(expected_value, actual_value);
 }
 
+TEST_F(SolutionsTest, surroundedRegionsTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+    std::vector< std::vector<char> > input = {{'X','X','X','X'},{'X','O','O','X'},{'X','X','O','X'},{'X','O','X','X'}};
+
+
+    std::vector< std::vector<char> > expected_value = {{'X','X','X','X'},{'X','X','X','X'},{'X','X','X','X'},{'X','O','X','X'}};
+
+    EXPECT_EQ(expected_value, solutions.surroundedRegions(input));
+
+    input = {{'X'}};
+    expected_value = {{'X'}};
+    EXPECT_EQ(expected_value, solutions.surroundedRegions(input));
+
+    input = {{'O','O'},{'O','O'}};
+    expected_value = {{'O','O'},{'O','O'}};
+
+    EXPECT_EQ(expected_value, solutions.surroundedRegions(input));
+
+    input = {{'O','O','O'},{'O','X','O'},{'O','O','O'}};
+    expected_value = {{'O','O','O'},{'O','X','O'},{'O','O','O'}};
+    EXPECT_EQ(expected_value, solutions.surroundedRegions(input));
+
+
+    input = {{'X','O','X'},{'X','O','X'},{'X','O','X'}};
+    expected_value = {{'X','O','X'},{'X','O','X'},{'X','O','X'}};
+    EXPECT_EQ(expected_value, solutions.surroundedRegions(input));
+
+
+    input = {{'X','X','X'},{'X','O','X'},{'X','X','X'}};
+    expected_value = {{'X','X','X'},{'X','X','X'},{'X','X','X'}};
+    EXPECT_EQ(expected_value, solutions.surroundedRegions(input));
+
+
+    input = {{'O','X','O','O','O','X'},{'O','O','X','X','X','O'},{'X','X','X','X','X','O'},{'O','O','O','O','X','X'},{'X','X','O','O','X','O'},{'O','O','X','X','X','X'}};
+    expected_value = {{'O','X','O','O','O','X'},{'O','O','X','X','X','O'},{'X','X','X','X','X','O'},{'O','O','O','O','X','X'},{'X','X','O','O','X','O'},{'O','O','X','X','X','X'}};
+    EXPECT_EQ(expected_value, solutions.surroundedRegions(input));
+
+
+    // Issue
+    input = {{'X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X'},{'X','X','X','X','X','X','X','X','X','O','O','O','X','X','X','X','X','X','X','X'},{'X','X','X','X','X','O','O','O','X','O','X','O','X','X','X','X','X','X','X','X'},{'X','X','X','X','X','O','X','O','X','O','X','O','O','O','X','X','X','X','X','X'},{'X','X','X','X','X','O','X','O','O','O','X','X','X','X','X','X','X','X','X','X'},{'X','X','X','X','X','O','X','X','X','X','X','X','X','X','X','X','X','X','X','X'}};
+
+    expected_value = {{'X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X'},{'X','X','X','X','X','X','X','X','X','O','O','O','X','X','X','X','X','X','X','X'},{'X','X','X','X','X','O','O','O','X','O','X','O','X','X','X','X','X','X','X','X'},{'X','X','X','X','X','O','X','O','X','O','X','O','O','O','X','X','X','X','X','X'},{'X','X','X','X','X','O','X','O','O','O','X','X','X','X','X','X','X','X','X','X'},{'X','X','X','X','X','O','X','X','X','X','X','X','X','X','X','X','X','X','X','X'}};
+
+//     EXPECT_EQ(expected_value, solutions.surroundedRegions(input));
+
+
+}
 
 
 } /* namespace googletest */

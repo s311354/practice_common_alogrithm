@@ -2338,4 +2338,76 @@ TreeNode* Solutions::sortedArrayToBST( std::vector<int> & nums)
 }
 
 
+/*! \brief Brief function description here
+ *
+ *  Detailed description
+ *
+ * \return Return parameter description
+ */
+void captured_bfs(int row, int column, std::vector< std::vector<char> > &grid, std::vector< std::vector<char> > & output)
+{
+    std::queue< std::pair<int, int> > to_visit ;
+    to_visit.push( {row, column} );
+    int step = 0;
+    int surrounded = 4;
+
+    while(!to_visit.empty()) {
+
+        int curDepth = to_visit.size();
+        for (int i = 0; i < curDepth; ++i) {
+            int xx = to_visit.front().first;
+            int yy = to_visit.front().second;
+
+
+            to_visit.pop();
+
+            //// Boundary
+            if ( xx == grid.size() || xx < 0 || yy == grid[0].size() || yy < 0) {
+                surrounded += 2;
+                continue;
+            }
+
+
+            // Check whether 'O' is surrounded by 'X' (bypass  'X' and visted)
+            if ( step != 0 && grid[xx][yy] != 'O') {
+                if (grid[xx][yy] == 'X') surrounded--;
+                grid[xx][yy] = 'D';
+                continue;
+            }
+
+            if (step != 0) surrounded ++;
+
+            grid[xx][yy] = 'D'; // visited
+
+
+            to_visit.push( std::pair<int, int>(xx + 1, yy));// RIGHT
+            to_visit.push( std::pair<int, int>(xx - 1, yy));// LEFT
+            to_visit.push( std::pair<int, int>(xx, yy + 1));// UP
+            to_visit.push( std::pair<int, int>(xx, yy - 1));// DOWN
+        }
+        step ++;
+    }
+
+    if (surrounded > 0) output[row][column] = 'O';
+}
+
+std::vector< std::vector<char> > Solutions::surroundedRegions( std::vector< std::vector<char> > & board)
+{
+    int row = board.size(), column = board[0].size();
+    std::vector< std::vector<char> > output(row, std::vector<char>(column, 'X'));
+
+    for (int i = 0; i < row; ++i) {
+        for (int j = 0; j < column; ++j) {
+            if (board[i][j] == 'O') {
+                auto grid = board;
+                captured_bfs(i, j, grid, output);
+            }
+        }
+    }
+
+    return output;
+}
+
+
+
 } /* namespace leetcode */

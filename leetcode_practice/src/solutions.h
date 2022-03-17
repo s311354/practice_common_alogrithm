@@ -259,6 +259,9 @@ public:
 
     // 108 Convert Sorted Array to Binary Search Tree
     TreeNode* sortedArrayToBST( std::vector<int> &nums);
+
+    // 130. Surrounded Regions
+    std::vector< std::vector<char> > surroundedRegions( std::vector< std::vector<char> > & board );
 };
 
 
