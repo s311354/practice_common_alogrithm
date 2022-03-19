@@ -262,6 +262,12 @@ public:
 
     // 130. Surrounded Regions
     std::vector< std::vector<char> > surroundedRegions( std::vector< std::vector<char> > & board );
+
+    // 338. Counting Bits
+    std::vector<int> countBits(int n);
+
+    // 191. Number of 1 Bits
+    int hammingWeight(uint32_t n);
 };
 
 

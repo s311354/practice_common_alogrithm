@@ -1238,10 +1238,46 @@ TEST_F(SolutionsTest, surroundedRegionsTest)
 
     expected_value = {{'X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X','X'},{'X','X','X','X','X','X','X','X','X','O','O','O','X','X','X','X','X','X','X','X'},{'X','X','X','X','X','O','O','O','X','O','X','O','X','X','X','X','X','X','X','X'},{'X','X','X','X','X','O','X','O','X','O','X','O','O','O','X','X','X','X','X','X'},{'X','X','X','X','X','O','X','O','O','O','X','X','X','X','X','X','X','X','X','X'},{'X','X','X','X','X','O','X','X','X','X','X','X','X','X','X','X','X','X','X','X'}};
 
-//     EXPECT_EQ(expected_value, solutions.surroundedRegions(input));
+    EXPECT_EQ(expected_value, solutions.surroundedRegions(input));
 
 
 }
+
+
+TEST_F(SolutionsTest, countBitsTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    int input = 2;
+    std::vector<int> expected_value = {0, 1, 1};
+    EXPECT_EQ(expected_value, solutions.countBits(input));
+
+    input = 5;
+    expected_value = {0, 1, 1, 2, 1, 2};
+    EXPECT_EQ(expected_value, solutions.countBits(input));
+
+}
+
+TEST_F(SolutionsTest, hammingWeightTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    uint32_t input  = 00000000000000000000000000001011;
+    int expected_value = 3;
+    EXPECT_EQ(expected_value, solutions.hammingWeight(input));
+
+    input = 00000000000000000000000010000000;
+    expected_value = 1;
+    EXPECT_EQ(expected_value, solutions.hammingWeight(input));
+
+    //input = 11111111111111111111111111111101;
+    //expected_value = 31;
+    //EXPECT_EQ(expected_value, solutions.hammingWeight(input));
+
+}
+
 
 
 } /* namespace googletest */

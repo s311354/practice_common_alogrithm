@@ -2358,7 +2358,6 @@ void captured_bfs(int row, int column, std::vector< std::vector<char> > &grid, s
             int xx = to_visit.front().first;
             int yy = to_visit.front().second;
 
-
             to_visit.pop();
 
             //// Boundary
@@ -2366,7 +2365,6 @@ void captured_bfs(int row, int column, std::vector< std::vector<char> > &grid, s
                 surrounded += 2;
                 continue;
             }
-
 
             // Check whether 'O' is surrounded by 'X' (bypass  'X' and visted)
             if ( step != 0 && grid[xx][yy] != 'O') {
@@ -2388,25 +2386,90 @@ void captured_bfs(int row, int column, std::vector< std::vector<char> > &grid, s
         step ++;
     }
 
+    std::cout  << surrounded  << std::endl;
+
     if (surrounded > 0) output[row][column] = 'O';
 }
 
 std::vector< std::vector<char> > Solutions::surroundedRegions( std::vector< std::vector<char> > & board)
 {
-    int row = board.size(), column = board[0].size();
-    std::vector< std::vector<char> > output(row, std::vector<char>(column, 'X'));
+    std::vector< std::vector<char> > output;
 
-    for (int i = 0; i < row; ++i) {
-        for (int j = 0; j < column; ++j) {
-            if (board[i][j] == 'O') {
-                auto grid = board;
-                captured_bfs(i, j, grid, output);
+        std::queue<std::pair<int,int>> q;
+        int m=board.size(),n=board[0].size();
+		
+		//Getting boundary O's
+        for(int i=0;i<m;i++)
+        {
+            if(board[i][0]=='O') board[i][0]='.',q.push({i,0});
+            if(board[i][n-1]=='O') board[i][n-1]='.',q.push({i,n-1});
+        }
+        for(int i=1;i<n-1;i++)
+        {
+            if(board[0][i]=='O') board[0][i]='.',q.push({0,i});
+            if(board[m-1][i]=='O') board[m-1][i]='.',q.push({m-1,i});
+        }
+		
+		//BFS
+        while(q.size())
+        {
+            int sz=q.size();
+            while(sz--)
+            {
+                auto p=q.front();q.pop();
+                int r=p.first,c=p.second;
+                 if(r+1<m) if(board[r+1][c]=='O') board[r+1][c]='.',q.push({r+1,c});
+                 if(r-1>=0) if(board[r-1][c]=='O') board[r-1][c]='.',q.push({r-1,c});
+                 if(c+1<n) if(board[r][c+1]=='O') board[r][c+1]='.',q.push({r,c+1});
+                 if(c-1>=0) if(board[r][c-1]=='O') board[r][c-1]='.',q.push({r,c-1});    
             }
         }
-    }
-
+		//all the unsorrounded O's are re-entered
+        for(int i=0;i<m;i++)
+            for(int j=0;j<n;j++)
+                board[i][j]=board[i][j]=='.'?'O':'X';
+    output = board;
     return output;
 }
+
+
+
+/*! \brief Counting Bits
+ *
+ *  Given an integer n, return an array ans of length n + 1 such that for each i ( 0 <= i <=n). ans[i] is the number of 1's in the binary representation of i
+ *
+ * \return an array ans of length n + 1 such that for each i ( 0 <= i <=n). ans[i] is the number of 1's in the binary representation of i
+ */
+std::vector<int> Solutions::countBits(int n) {
+    std::vector<int> t(n+1);
+
+    t[0] = 0;
+
+    // compute current set bit count using previous count
+    for (int i = 1; i <= n; ++i) {
+        t[i] = t[i/2] + i%2;
+    }
+
+    return t;
+}
+
+/*! \brief Number of Bits
+ *
+ *  Write a function that takes an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).
+ *
+ * \return the number of '1' bits it has
+ */
+int Solutions::hammingWeight(uint32_t n) {
+    int cnt=0;  // count of set bit
+    while(n>0){  // iterate until all bits are traversed
+        ++cnt;
+        n=n&(n-1); // change the first set bit from right to 0
+    }
+    return cnt;
+}
+
+
+
 
 
 
