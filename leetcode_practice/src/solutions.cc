@@ -2344,6 +2344,7 @@ TreeNode* Solutions::sortedArrayToBST( std::vector<int> & nums)
  *
  * \return Return parameter description
  */
+/*
 void captured_bfs(int row, int column, std::vector< std::vector<char> > &grid, std::vector< std::vector<char> > & output)
 {
     std::queue< std::pair<int, int> > to_visit ;
@@ -2390,48 +2391,53 @@ void captured_bfs(int row, int column, std::vector< std::vector<char> > &grid, s
 
     if (surrounded > 0) output[row][column] = 'O';
 }
+*/
 
 std::vector< std::vector<char> > Solutions::surroundedRegions( std::vector< std::vector<char> > & board)
 {
     std::vector< std::vector<char> > output;
 
-        std::queue<std::pair<int,int>> q;
-        int m=board.size(),n=board[0].size();
-		
-		//Getting boundary O's
-        for(int i=0;i<m;i++)
+    std::queue< std::pair<int,int> > to_visit;
+    int row = board.size(), column = board[0].size();
+
+    //Getting boundary O's
+    for(int i=0; i<row ; i++)
+    {
+        if(board[i][0]=='O') board[i][0]='U', to_visit.push( {i,0} );
+        if(board[i][column-1]=='O') board[i][column-1]='U', to_visit.push( {i,column-1} );
+    }
+
+    for(int i=1; i<column-1; i++)
+    {
+        if(board[0][i]=='O') board[0][i]='U', to_visit.push( {0,i} );
+        if(board[row-1][i]=='O') board[row-1][i]='U', to_visit.push( {row-1, i} );
+    }
+
+
+    // 2-D Grid BFS which's parent node starts from boundary unsorrounded node
+    while(!to_visit.empty())
+    {
+        int curDepth = to_visit.size();
+        while(curDepth--)
         {
-            if(board[i][0]=='O') board[i][0]='.',q.push({i,0});
-            if(board[i][n-1]=='O') board[i][n-1]='.',q.push({i,n-1});
+            int xx=to_visit.front().first, yy=to_visit.front().second;
+            to_visit.pop();
+
+            if(xx+1 < row) if(board[xx+1][yy] == 'O') board[xx+1][yy] = 'U', to_visit.push( {xx+1, yy} );   // RIGHT
+            if(xx-1 >= 0) if(board[xx-1][yy] == 'O') board[xx-1][yy] = 'U', to_visit.push( {xx-1, yy} );    // LEFT
+            if(yy+1 < column) if(board[xx][yy+1] == 'O') board[xx][yy+1] = 'U', to_visit.push( {xx, yy+1}); // UP
+            if(yy-1 >= 0) if(board[xx][yy-1] == 'O') board[xx][yy-1] = 'U', to_visit.push({xx, yy-1});      // DOWN
         }
-        for(int i=1;i<n-1;i++)
-        {
-            if(board[0][i]=='O') board[0][i]='.',q.push({0,i});
-            if(board[m-1][i]=='O') board[m-1][i]='.',q.push({m-1,i});
-        }
-		
-		//BFS
-        while(q.size())
-        {
-            int sz=q.size();
-            while(sz--)
-            {
-                auto p=q.front();q.pop();
-                int r=p.first,c=p.second;
-                 if(r+1<m) if(board[r+1][c]=='O') board[r+1][c]='.',q.push({r+1,c});
-                 if(r-1>=0) if(board[r-1][c]=='O') board[r-1][c]='.',q.push({r-1,c});
-                 if(c+1<n) if(board[r][c+1]=='O') board[r][c+1]='.',q.push({r,c+1});
-                 if(c-1>=0) if(board[r][c-1]=='O') board[r][c-1]='.',q.push({r,c-1});    
-            }
-        }
-		//all the unsorrounded O's are re-entered
-        for(int i=0;i<m;i++)
-            for(int j=0;j<n;j++)
-                board[i][j]=board[i][j]=='.'?'O':'X';
+    }
+
+    //all the unsorrounded O's are re-entered
+    for(int i=0; i < row; i++)
+        for(int j=0; j < column; j++)
+            board[i][j] = board[i][j] == 'U' ? 'O' : 'X';
+
     output = board;
     return output;
 }
-
 
 
 /*! \brief Counting Bits
@@ -2468,9 +2474,88 @@ int Solutions::hammingWeight(uint32_t n) {
     return cnt;
 }
 
+/*! \brief Brief function description here
+ *
+ *  Detailed description
+ *
+ * \return Return parameter description
+ */
+// undirected DFS ( graph of string )
+
+bool isValidChar(char c)
+{
+    return ((c - 'a' >= 0 && c - 'z' <= 0) || (c - 'A' >= 0 && c - 'Z' <= 0) || c - '!' == 0);
+}
 
 
+bool isUniqe(std::string s, std::vector< std::string> & palindrome, std::vector< std::string> & arr)
+{
+    if (std::count(begin(palindrome), end(palindrome), s) > 0) return false;
+
+    if (std::count(begin(arr), end(arr), s) > 0) return false;
 
 
+    return true;
+}
+
+bool isPalindrome(std::string s)
+{
+    int start = 0, end = s.length() - 1;
+
+    while (start < s.length() / 2) {
+            if (s[start] == s[end - start]) {
+                start ++;
+            } else {
+                return false;
+            }
+    }
+
+    return true;
+}
+
+void checkUniqueLen( std::vector<std::string> & arr, std::string graphstr, int curindex, int index, int& count, std::vector< std::string>  & palindrome, int size)
+{
+    if ( graphstr.size() && isPalindrome(graphstr) && isUniqe( graphstr, palindrome, arr)) {
+
+        palindrome.push_back(graphstr);
+        if (size == 0) {
+            std::cout << "Palindrome: " << graphstr.c_str() << " " << curindex  - 1 << " " << index - 1 << std::endl;
+            int pre_index = curindex - 1;
+            int post_index = index - 1;
+            count = count + pre_index + post_index;
+        } else {
+            std::cout << "Reverse Palindrome: " <<  arr[curindex] << " " << arr[index] << " "  << graphstr.c_str() << " " << size - (curindex  - 1) << " " << size - (index - 1) << std::endl;
+            int pre_index = size - (curindex - 1);
+            int post_index = size - (index - 1);
+            count = count + pre_index + post_index;
+        }
+    }
+
+    // recursive
+    for (int i = index; i < arr.size(); ++i) {
+        checkUniqueLen(arr, graphstr+arr[i], i, i+1, count, palindrome, size);
+    }
+
+}
+
+int Solutions::palindromePairsSum( std::vector< std::string> input_array) {
+    int len = 0, size = input_array.size() - 1;
+
+    if (input_array.size() < 0) return 0;
+
+    if (input_array.size() == 1) return input_array[0].size();
+
+    std::vector< std::string > palindrome;
+
+    checkUniqueLen( input_array, "", 0, 0, len, palindrome, 0);
+
+    std::reverse(input_array.begin(), input_array.end());
+
+    checkUniqueLen( input_array, "", 0, 0, len, palindrome, size);
+
+
+    return len;
+
+}
 
 } /* namespace leetcode */

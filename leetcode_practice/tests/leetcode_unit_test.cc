@@ -1279,5 +1279,21 @@ TEST_F(SolutionsTest, hammingWeightTest)
 }
 
 
+TEST_F(SolutionsTest, function_name1TEST) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+
+    std::vector< std::string> input_array = {"adef", "ef", "Lss", "ss", "hJ", "!d!Jh"} ;
+    int expected_value = 14;
+    EXPECT_EQ(expected_value, solutions.palindromePairsSum(input_array));
+
+    // Corner case
+    input_array = {"ef", "e", "eeeddee", "edHd"};
+    expected_value = 8;
+//     EXPECT_EQ(expected_value, solutions.palindromePairsSum(input_array));
+
+}
 
 } /* namespace googletest */

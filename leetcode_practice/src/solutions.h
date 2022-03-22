@@ -268,6 +268,10 @@ public:
 
     // 191. Number of 1 Bits
     int hammingWeight(uint32_t n);
+
+    // 336. Palindrome Pairs
+    int palindromePairsSum( std::vector< std::string> input_array);
+
 };
 
 
