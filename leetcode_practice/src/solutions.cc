@@ -12,15 +12,16 @@ bool Solutions::isPalindrome(std::string s)
 {
     int start = 0, end = s.length() - 1;
 
-    while (start < end / 2) {
-        if (isValidChar(s[start]) && isValidChar(s[end])) {
+    while (start < s.length() / 2) {
+//         if (isValidChar(s[start]) && isValidChar(s[end])) {
             if (s[start] == s[end - start]) {
                 start ++;
             } else {
                 return false;
             }
-        }
+//         }
     }
+
 
     return true;
 }
@@ -2498,7 +2499,7 @@ bool isUniqe(std::string s, std::vector< std::string> & palindrome, std::vector<
     return true;
 }
 
-bool isPalindrome(std::string s)
+bool isPalindrome(std::string &s)
 {
     int start = 0, end = s.length() - 1;
 
@@ -2508,6 +2509,8 @@ bool isPalindrome(std::string s)
             } else {
                 return false;
             }
+
+            std::cout << start << std::endl;
     }
 
     return true;
@@ -2538,7 +2541,22 @@ void checkUniqueLen( std::vector<std::string> & arr, std::string graphstr, int c
 
 }
 
-int Solutions::palindromePairsSum( std::vector< std::string> input_array) {
+
+/*! \brief Palindrome Pairs
+ *
+ *  Given a list of unique words, return all the pairs of the distinct indices (i, j) in the given list, so that the concatenation of the two words words[i] + words[j] is a palindrome.
+ *
+ * \return sum of index for the palindrome pairs
+ *
+ *
+ *  Iterate through words, then, each word will possible match another in one of three ways:
+ *  - a blank string word will match on either side with any palindrome
+ *  - a full word will match on either side with its backwards version
+ *  - a partial word will match its backwards version on the opposite side if the leftover portion of the word is a palindrome
+ *
+ */
+int Solutions::palindromePairsSum( std::vector< std::string > & words) {
+    /* method 1
     int len = 0, size = input_array.size() - 1;
 
     if (input_array.size() < 0) return 0;
@@ -2554,8 +2572,36 @@ int Solutions::palindromePairsSum( std::vector< std::string> input_array) {
     checkUniqueLen( input_array, "", 0, 0, len, palindrome, size);
 
 
-    return len;
+    */
 
+    // method 2
+    std::unordered_map<std::string,int> reverse_mp;
+    int sum = 0;
+
+    for(int i = 0; i < words.size(); i++) {
+        reverse_mp[std::string( words[i].rbegin(), words[i].rend())] = i;
+    }
+
+    // A blank string word will match on either side with any palindrome word.
+    if(reverse_mp.count("")) { 
+        for(int i = 0; i < words.size(); i++) {
+            if(words[i] != "" && isPalindrome(words[i])) sum += i;
+        }
+    }
+
+    for(int i = 0; i < words.size(); i++) {
+        for(int j = 0; j < words[i].size(); j++) {
+            std::string l = words[i].substr(0, j), r = words[i].substr(j);
+
+            // A partial word will match its backwards version on the opposite side if the leftover portion of the word is a palindrome
+            if(reverse_mp.count(l) && isPalindrome(r) && reverse_mp[l] != i) sum += i + reverse_mp[l];
+
+            // A full word will match on either side with its backwards version.
+            if(reverse_mp.count(r) && isPalindrome(l) && reverse_mp[r] != i) sum += reverse_mp[r] + i;
+        }
+    }
+
+    return sum;
 }
 
 } /* namespace leetcode */

@@ -8,6 +8,7 @@
 #include <unordered_set>
 #include <vector>
 #include <map>
+#include <unordered_map>
 #include <string>
 #include <queue>
 #include <stack>
@@ -270,7 +271,7 @@ public:
     int hammingWeight(uint32_t n);
 
     // 336. Palindrome Pairs
-    int palindromePairsSum( std::vector< std::string> input_array);
+    int palindromePairsSum( std::vector< std::string> & input_array);
 
 };
 

@@ -1279,7 +1279,7 @@ TEST_F(SolutionsTest, hammingWeightTest)
 }
 
 
-TEST_F(SolutionsTest, function_name1TEST) 
+TEST_F(SolutionsTest, palindromePairsSumTest) 
 {
     /* Declare the Unit Test object */
     leetcode::Solutions solutions;
@@ -1289,10 +1289,15 @@ TEST_F(SolutionsTest, function_name1TEST)
     int expected_value = 14;
     EXPECT_EQ(expected_value, solutions.palindromePairsSum(input_array));
 
+
+    input_array = {"abcd","dcba","lls","s","sssll"};
+    expected_value = 13;
+    EXPECT_EQ(expected_value, solutions.palindromePairsSum(input_array));
+
     // Corner case
     input_array = {"ef", "e", "eeeddee", "edHd"};
     expected_value = 8;
-//     EXPECT_EQ(expected_value, solutions.palindromePairsSum(input_array));
+    EXPECT_EQ(expected_value, solutions.palindromePairsSum(input_array));
 
 }
 
