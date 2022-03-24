@@ -6,6 +6,20 @@ Try to:
 - Understand the fundamental alogrithm
 - LeetCode - Algorithms
 
+
+#### Variables and types ####
+
+When writing programs that perform useful tasks that really save us work, we need to intorduce the concept of variables. Let's imagine that I ask you to remember the number 5, and then I ask you to also memorize the number 2 at the same time. You have just stored two different values in your memory. 
+
+The whole process described above is a simple of what a computer can do with two variables. The same process can be expressed in C++ or python. We can now define variable as a portine of memory to store a value. Each variable needs a name that identifies it and distingushes it from the others.
+
+
+The values of variables are stored somewhere in an unspecified location in the computer memory as zeros and ones. Fundamental data types are basic types implemented directly by the language that represent the basic storage units supported natively by most systems. They can mainly be classified into:
+- Character types
+- Numerical integer types
+- Floating-point types
+- Boolean type
+
 #### The concept of Pass-by-value, Pass-by-reference and Pass-by-pointer ####
 *Pass-by-value*: An argument passed by value is one where a value is copied into a special location in the computer's memory (called the "stack frame"). This location is special because the function has a name for it, and you can use that name to access the (local copy of the) value. 
 
@@ -77,6 +91,10 @@ All objects in a program have one of the following storage duration:
 - thread storage duration: The storage for the object is allocated when the thread begins and deallocated when the thread ends. Each thread has its own instance of the object.
 - dynamic storage duration: The storage for the object is allocated and deallocated upon request by using dynamic memory allocation functions.
 
+#### What is a helper ####
+
+A Helper class is a lesser known code smell where a coder has identified some miscellaneous, commonly used operations and attempted to make them reusable by lumping them together in an unnatural grouping. Successive developers have then come onto the project and not realised that the helper class exists, and have consequently rewitten the smae common operations, or even created more Helper classes.
+
 ## Reference ## 
 [1] [__builtin_popcount](https://tmt514.gitbooks.io/the-code-tactics-book/content/2.5/popcount.html)
 
@@ -86,6 +104,10 @@ All objects in a program have one of the following storage duration:
 Development environment: neovim, doxygen, try to cultivate the "brain debug" ability
 
 [4] cppreference [static members](https://en.cppreference.com/w/cpp/language/static). [Storage class specifiers](https://en.cppreference.com/w/cpp/language/storage_duration)
+
+[5] [StackExchange: What is a helper? Is it a design pattern? Is it an algorithm?](https://softwareengineering.stackexchange.com/questions/247267/what-is-a-helper-is-it-a-design-pattern-is-it-an-algorithm)
+
+[6] [cplusplus: Variables and types](https://www.cplusplus.com/doc/tutorial/variables/)
 
 
 [staticmember]:https://en.cppreference.com/w/cpp/language/static "https://en.cppreference.com/w/cpp/language/static"
