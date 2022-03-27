@@ -1301,4 +1301,42 @@ TEST_F(SolutionsTest, palindromePairsSumTest)
 
 }
 
+TEST_F(SolutionsTest, sumGameTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::string num = "5023";
+    bool expected_value = false;
+    EXPECT_EQ(expected_value, solutions.sumGame(num));
+
+
+    num = "25??";
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.sumGame(num));
+
+    num = "?3295???";
+    expected_value = false;
+    EXPECT_EQ(expected_value, solutions.sumGame(num));
+}
+
+TEST_F(SolutionsTest, stoneGameTEST) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector<int> piles = {5, 3, 4, 5};
+
+    bool expected_value = true;
+    EXPECT_EQ(expected_value, solutions.stoneGame(piles));
+
+    piles = {3, 7, 2, 3};
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.stoneGame(piles));
+}
+
+
+
+
+
 } /* namespace googletest */

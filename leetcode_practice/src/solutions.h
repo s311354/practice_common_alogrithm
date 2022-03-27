@@ -15,6 +15,8 @@
 #include <numeric>
 #include <regex>
 
+#include <ctype.h>
+
 namespace leetcode {
 
 static const std::regex INT_TYPE("[+-]?[0-9]+");
@@ -272,6 +274,12 @@ public:
 
     // 336. Palindrome Pairs
     int palindromePairsSum( std::vector< std::string> & input_array);
+
+    // 1927. Sum Game
+    bool sumGame( std::string num);
+
+    // 877. Stone Game
+    bool stoneGame( std::vector<int> piles);
 
 };
 

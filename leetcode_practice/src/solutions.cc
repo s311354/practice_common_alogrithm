@@ -312,7 +312,7 @@ int Solutions::maxLength( std::vector< std::string> & arr)
 }
 
 // undirected DFS ( graph of string )
-void Solutions::checkLen( std::vector<std::string> & arr, std::string graphstr, int index, int& count )
+void Solutions::checkLen( std::vector<std::string> & arr, std::string graphstr, int index, int & count )
 {
     if (isUniqieString(graphstr)) {
         count = graphstr.size() > count ? graphstr.size(): count;
@@ -2603,5 +2603,127 @@ int Solutions::palindromePairsSum( std::vector< std::string > & words) {
 
     return sum;
 }
+
+
+/*! \brief Sum Game
+ *
+ *  Alice and Bob turns playing a game, with Alice starting first
+ *
+ *  You are given a string num of even length consisting of digits and '?' characters. On each turn, a player will do the following if there is still at least one '?' in num:
+ *
+ *  1. Choose an index i where num[i] == '?'.
+ *  2. Replace num[i] with any digit between '0' and '9'.
+ *
+ *  The game ends when there are no more '?' characters in num.
+ *
+ *  For Bob to win, the sum of the digits in the first half of num must be equal to the sum of the digits in the second half. For Alice to win, the sums must not be equal.
+ *
+ * \return Assuming Alice and Bob play optimally, return true if Alice will win and false if Bob will win.
+ *
+ *
+ *
+ *  Strategy
+ *  Case 1: only digits
+ *  - if (left sum == right sum ) then Bob wins; Otherwise Alice wins
+ *  
+ *  Case 2: Odd number of '?'
+ *  - (before the last turn) Either (left sum == right sum) or (left sum == right sum), Alice replace the last '?' with any digit greater than '0' or with '0' to maintain both sums, respectively. Alice always wins
+ *
+ *  Case 3: Even number of '?'
+ *  - Imagine that each player copies opponent's turn on the opposite side; in this way, we reduce the problem to a string containing '?' marks only on one side, for example "??1 1??" -> "1 1", "?2?? 4?35" -> "?2? 435"
+ *  - If Alice replace one '?' to digit x, Bob can always replace one to '9 - x', the n each pair of (Alice, Bob) (x, 9 - x) turns will increase the sum of side by 9. In other words, "??" will increase the sum of side S by 9.
+ *  - If the sum od side is equal to the sum of the opposite side, then Bob win. Otherwise, Alice wins.
+ *
+ */
+bool Solutions::sumGame( std::string num) {
+    const int N = num.length();
+
+    int lDigitSum = 0;
+    int lQCount = 0;
+    int rDigitSum = 0;
+    int rQCount = 0;
+
+    for (int i = 0; i < N; ++i) {
+        if (std::isdigit(num[i])) {
+            if( i < N / 2) {
+                lDigitSum += (num[i] - '0');
+            } else {
+                rDigitSum += (num[i] - '0');
+            }
+        } else {
+            if (i < N/2) {
+                ++ lQCount;
+            } else {
+                ++ rQCount;
+            }
+        }
+    }
+
+
+    // Case 0; Only digits (without '?')
+    if ( (lQCount + rQCount) == 0 ) {
+        return (lDigitSum != rDigitSum);
+    }
+
+    // Case 1: Odd number of '?'
+    if ( (lQCount + rQCount) % 2 == 1 ) {
+        return true;
+    }
+
+    // Case 2: Even number of '?'
+    int minQCount = std::min(lQCount, rQCount);
+
+    // Each player copies opponent's turn on the opposite side
+    lQCount -= minQCount;
+    rQCount -= minQCount;
+    return (lDigitSum + 9 * lQCount /2 != rDigitSum + 9 * rQCount / 2);
+}
+
+/*! \brief Stone Game (dynamic programming)
+ *
+ *  Alice and Bob play a game with piles of stones. There are an even number of piles arranged in a row, and each pile has a positive integer number of stones piles[i].
+ *
+ *  The objective of the game is to end with the most stones. The total number of stones across all the piles is odd, so there are no ties.
+ *
+ *  Alice and Bob take turns, with Alice starting first. Each turn, a player takes the entire pile of stones either from the beginning or from the end of the row. This continues until there are no more piles left, at which point the person with the most stones wins.
+ *
+ * \return Assuming Alice and Bob play optimally, return true if Alice wins the game, or false if Bob wins.
+ */
+int maxStone(int i, int j, std::vector<int>& piles, std::vector< std::vector<int> > & dp) {
+    if (dp[i][j] > 0) {
+        return dp[i][j];
+    } else if ( i + 1 == j ) {
+        return std::max(piles[i], piles[j]);
+    } else {
+
+        // Alice takes the entire pile of stones from the beginning of the row
+        int a = piles[i] + std::min(maxStone(i+2, j, piles, dp), maxStone(i+1, j-1, piles, dp));
+
+        // Alice takes the entire pile of stones from the end of the row
+        int b = piles[j] + std::min(maxStone(i+1, j-1, piles, dp), maxStone(i, j-2, piles, dp));
+
+        dp[i][j] = std::max(a, b);
+        return dp[i][j];
+    }
+}
+
+bool Solutions::stoneGame( std::vector<int> piles) {
+    int sum = 0, first = 0, last = piles.size() - 1;
+
+    for (auto & num : piles) {
+        sum += num;
+    }
+
+    std::vector< std::vector<int> > dp( piles.size(), std::vector<int>( piles.size(), 0));
+
+    return maxStone( first, last, piles, dp) > sum/2;
+}
+
+
+
+
+
+
+
 
 } /* namespace leetcode */
