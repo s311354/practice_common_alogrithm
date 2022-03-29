@@ -281,6 +281,12 @@ public:
     // 877. Stone Game
     bool stoneGame( std::vector<int> piles);
 
+    // 51. N-Queens
+    std::vector< std::vector< std::string> > solveNQueens(int n);
+
+    // 1307.Verbal Arithmetic Puzzle
+    bool isSolvable( std::vector< std::string > & words, std::string result);
+
 };
 
 

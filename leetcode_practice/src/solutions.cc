@@ -2719,11 +2719,146 @@ bool Solutions::stoneGame( std::vector<int> piles) {
     return maxStone( first, last, piles, dp) > sum/2;
 }
 
+/*! \brief N-Queens
+ *
+ *  The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
+ *
+ *  Given an integer n, return all distinct solutions to the n-queens puzzle. You may return the answer in any order.
+ *
+ * \return Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space, respectively.
+ */
+bool is_safe( std::vector< std::string> & board, int row, int col)
+{
+    // check column
+    for (int i = row; i >= 0; --i) {
+        if(board[i][col] == 'Q') return false;
+    }
+
+    // check left diagonal
+    for (int i = row, j = col; i >= 0 && j >= 0; --i, --j) {
+        if(board[i][j] == 'Q') return false;
+    }
+
+    // check right diagonal
+    for (int i = row, j = col;  i >= 0 && j < board.size(); --i, ++j) {
+        if(board[i][j] == 'Q') return false;
+    }
+
+    return true;
+}
+
+void backtracking_dfs( std::vector< std::string> & board, int row, std::vector< std::vector< std::string> > & result)
+{
+    if ( row == board.size()) {
+        result.push_back(board);
+        return;
+    }
+
+    for (int i = 0; i < board.size(); ++i) {
+        if(is_safe(board, row, i)) {
+            // make decision
+            board[row][i] = 'Q';
+            backtracking_dfs(board, row + 1, result);
+            // backtrack to move our queen to next col within same row to get other combinations.
+            board[row][i] = '.';
+        }
+
+    } 
+}
+
+std::vector< std::vector< std::string> > Solutions::solveNQueens(int n) {
+
+    if ( n <= 0 ) return {{}};
+
+    std::vector< std::vector< std::string> > result;
+    std::vector< std::string> board(n, std::string(n, '.'));
+
+    backtracking_dfs(board, 0, result);
+
+    return result;
+}
 
 
+/*! \brief Verbal Arithmetic Puzzle
+ *
+ *  Given an equation, represented by words on the left side and the result on the right side.
+ *
+ *  You need to check if the equation is solvable under the following rules:
+ *
+ *  - Each character is decoded as one digit (0 - 9).
+ *  - Every pair of different characters must map to different digits.
+ *  - Each words[i] and result are decoded as one number without leading zeros.
+ *
+ * \return true if the equation is solvable, otherwise return false.
+ */
 
+bool backtracking_verbal( std::vector< std::string> & words, std::string & result, std::vector<int> & chtonum, std::vector<int> & numtoch, std::vector<bool> & nonZeroChars, int index, int pos, int sum)
+{
+    // reach the end of result
+    if (pos == result.size()) return sum == 0;
 
+    // traverse the position and keeping adding words
+    if (index < words.size()) {
+        // there is no applicable positions for words[index], skip and add next word
+        if (pos  >= words[index].size())
+            return backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, index + 1, pos, sum);
 
+        char ch = words[index][pos];
+        int chindex = ch - 'A';
 
+        // Already selected
+        if (chtonum[chindex] != -1) {
+            return backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, index + 1, pos, sum + chtonum[chindex]);
+        }
+
+        // Try to decode each character
+        for (int i = 0; i < numtoch.size(); ++i) {
+            if (numtoch[i] != 0) continue; // number is used
+            if (i == 0 && nonZeroChars[chindex]) continue; // can't use position 0 for non zero chars
+            numtoch[i] = chindex;
+            chtonum[chindex] = i;
+            bool found = backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, index + 1, pos, sum + chtonum[chindex]);
+            // backtrack
+            numtoch[i] = 0;
+            chtonum[chindex] = -1;
+            if (found) return found;
+        }
+        return false;
+    } else { // verify whether or not result[pos] and sum % 10 are mapping each other
+        int reindex = result[pos] - 'A';
+        if (chtonum[reindex] == -1 && numtoch[sum%10] == 0) {
+            if (sum % 10 == 0 && nonZeroChars[reindex]) return false;
+
+            chtonum[reindex] = sum % 10;
+            numtoch[sum%10] = result[pos];
+            bool found = backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, 0, pos + 1, sum / 10);
+            if (found) return found;
+            chtonum[reindex] = -1;
+            numtoch[sum%10] = 0;
+            return false;
+        } else if (chtonum[reindex] == sum % 10) {
+            return backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, 0, pos + 1, sum / 10);
+        } else {
+            return false;
+        }
+    }
+}
+
+bool Solutions::isSolvable( std::vector< std::string> & words, std::string result) {
+    std::vector<bool> nonZeroChars(26, false);
+    std::vector<int> chtonum(26, -1);
+    std::vector<int> numtoch(10);
+
+    for (auto &word : words) {
+        if(word.size() > result.size()) return false;
+        if(word.size() > 1) nonZeroChars[word[0] - 'A'] = true;
+        std::reverse(word.begin(), word.end());
+    }
+
+    if (result.size() > 1) nonZeroChars[result[0] - 'A'] = true;
+
+    std::reverse(result.begin(), result.end());
+    return backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, 0, 0, 0);
+}
 
 } /* namespace leetcode */

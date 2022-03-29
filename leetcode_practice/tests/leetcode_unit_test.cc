@@ -1335,8 +1335,51 @@ TEST_F(SolutionsTest, stoneGameTEST)
     EXPECT_EQ(expected_value, solutions.stoneGame(piles));
 }
 
+TEST_F(SolutionsTest, solveNQueensTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
 
+    int input = 4;
+    std::vector< std::vector< std::string> >  expected_value = {{".Q..","...Q","Q...","..Q."},{"..Q.","Q...","...Q",".Q.."}};
+    EXPECT_EQ(expected_value, solutions.solveNQueens(input));
 
+    input = 1;
+    expected_value = {{"Q"}};
+    EXPECT_EQ(expected_value, solutions.solveNQueens(input));
+}
 
+TEST_F(SolutionsTest, isSolvableTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector< std::string > words = {"SEND","MORE"};
+    std::string result = "MONEY";
+    bool expected_value = true;
+    EXPECT_EQ(expected_value, solutions.isSolvable(words, result));
+
+    words = {"SIX","SEVEN","SEVEN"};
+    result = "TWENTY";
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.isSolvable(words, result));
+
+    words = {"LEET","CODE"};
+    result = "POINT";
+    expected_value = false;
+    EXPECT_EQ(expected_value, solutions.isSolvable(words, result));
+
+    // corner case
+    words = {"A", "A"};
+    result = "AA";
+    expected_value = true;
+//     EXPECT_EQ(expected_value, solutions.isSolvable(words, result));
+
+    words = {"CBA","CBA","CBA","CBA","CBA"};
+    result = "EDD";
+    expected_value = false;
+//     EXPECT_EQ(expected_value, solutions.isSolvable(words, result));
+
+}
 
 } /* namespace googletest */
