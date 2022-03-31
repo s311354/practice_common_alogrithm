@@ -287,6 +287,9 @@ public:
     // 1307.Verbal Arithmetic Puzzle
     bool isSolvable( std::vector< std::string > & words, std::string result);
 
+    // 743. Network Delay Time
+    int networkDelayTime( std::vector< std::vector<int> >  & time, int n, int k);
+
 };
 
 

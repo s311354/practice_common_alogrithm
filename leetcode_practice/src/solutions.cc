@@ -2861,4 +2861,93 @@ bool Solutions::isSolvable( std::vector< std::string> & words, std::string resul
     return backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, 0, 0, 0);
 }
 
+/*! \brief Network Delay Time
+ *
+ *  You are given a network of n nodes, labeled from 1 to n. You are also given times, a list of travel times as directed edges times[i] = (ui, vi, wi), where ui is the source node, vi is the target node, and wi is the time it takes for a signal to travel from source to target.
+ *  
+ *  We will send a signal from a given node k. Return the time it takes for all the n nodes to receive the signal. If it is impossible for all the n nodes to receive the signal.
+ *
+ * \return the time it takes for all the n nodes to receive the signal. If it is impossible for all the n nodes to receive the signal, return -1
+ */
+int Solutions::networkDelayTime( std::vector< std::vector< int > > & times, int n, int k) {
+    // BFS
+    /*
+    std::vector< std::pair<int, int> > adjacent[n + 1];
+
+    for (int i = 0; i < times.size(); ++i) {
+        adjacent[times[i][0]].push_back( {times[i][1], times[i][2]} );
+    }
+
+    std::vector<int> distance(n+1, INT_MAX);
+    std::queue<int> q;
+
+    // starting node
+    q.push(k);
+    distance[k] = 0;
+
+    // traverse all the neighbor node
+    while (!q.empty()) {
+        int node = q.front();
+        q.pop();
+
+        for (auto &item : adjacent[node]) {
+            if (distance[item.first] > distance[node] + item.second) {
+                distance[item.first] = distance[node] + item.second;
+                q.push(item.first); // next node
+            }
+        }
+    }
+
+    int res = 0;
+
+    for (int i = 1; i <= n; ++i) {
+        if (distance[i] == INT_MAX) return -1;
+        res = std::max(res, distance[i]);
+    }
+
+    return res;
+    */
+
+
+    // Dijkstra
+    std::vector< std::pair<int, int> > adjacent[n+1];
+
+    for (int i = 0; i < times.size(); ++i) {
+        adjacent[times[i][0]].push_back( {times[i][1], times[i][2]} );
+    }
+
+    std::vector<int> distance(n+1, INT_MAX);
+
+    std::priority_queue< std::pair<int, int>, std::vector< std::pair<int, int> >, std::greater< std::pair<int, int> > > pq;
+
+    pq.push({0, k});
+    distance[k] = 0;
+
+    while (!pq.empty()) {
+        std::pair<int, int> node = pq.top() ;
+        pq.pop();
+
+        for (auto &next_node : adjacent[node.second]) {
+            if(distance[next_node.first] > node.first + next_node.second) {
+                distance[next_node.first] = node.first + next_node.second;
+                pq.push( {distance[next_node.first], next_node.first} );
+            }
+        }
+    }
+
+    int res = 0;
+    for (int i = 1; i <= n; ++i) {
+        if ( distance[i] == INT_MAX ) return -1;
+//         std::cout << i << " " << distance[i] << std::endl;
+        res = std::max(res, distance[i]);
+    }
+
+    return res;
+}
+
+
+
+
+
+
 } /* namespace leetcode */

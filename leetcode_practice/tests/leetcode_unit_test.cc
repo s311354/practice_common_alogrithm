@@ -1382,4 +1382,28 @@ TEST_F(SolutionsTest, isSolvableTest)
 
 }
 
+TEST_F(SolutionsTest, networkDelayTimeTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector< std::vector<int> > times = {{2,1,1},{2,3,1},{3,4,1}};
+    int n = 4, k = 2;
+    int expected_value = 2;
+    EXPECT_EQ(expected_value, solutions.networkDelayTime(times, n, k));
+
+    times = {{1,2,1}};
+    n = 2, k = 1;
+    expected_value = 1;
+    EXPECT_EQ(expected_value, solutions.networkDelayTime(times, n, k));
+
+    times = {{1,2,1}};
+    n = 2, k = 2;
+    expected_value = -1;
+    EXPECT_EQ(expected_value, solutions.networkDelayTime(times, n, k));
+}
+
+
+
+
 } /* namespace googletest */
