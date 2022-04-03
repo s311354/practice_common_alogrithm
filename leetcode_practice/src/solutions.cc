@@ -2945,9 +2945,97 @@ int Solutions::networkDelayTime( std::vector< std::vector< int > > & times, int 
     return res;
 }
 
+/*! \brief Is Graph Bipartite?
+ *
+ *  There is an undirected graph with n nodes, where each node is numbered between 0 and n - 1. You are given a 2D array graph, where graph[u] is an array of nodes that node u is adjacent to. More formally, for each v in graph[u], there is an undirected edge between node u and node v. The graph has the following properties:
+ *
+ *  There are no self-edges (graph[u] does not contain u).
+ *  There are no parallel edges (graph[u] does not contain duplicate values).
+ *  If v is in graph[u], then u is in graph[v] (the graph is undirected).
+ *  The graph may not be connected, meaning there may be two nodes u and v such that there is no path between them.
+ *
+ *  A graph is bipartite if the nodes can be partitioned into two independent sets A and B such that every edge in the graph connects a node in set A and a node in set B.
+ *
+ * \return Return  true if and only if it is bipartite.
+ */
 
+bool colorable_node(int i, std::vector<int> &color, std::vector< std::vector<int> > & graph)
+{
+    std::queue<int> q;
+    q.push(i);
+    color[i] = 0; // color the first node
+    
+    while (!q.empty()) {
+        int vertex = q.front();
+        q.pop();
 
+        for (auto &node : graph[vertex]) {
+            if (color[node] == -1) {
+                color[node] = 1 - color[vertex];
+                q.push(node);
+            } else if (color[node] == color[vertex]) {
+                return false;
+            }
+        }
+    }
 
+    return true;
+
+}
+
+bool Solutions::isBipartite( std::vector< std::vector<int> > & graph ) {
+    int depth = graph.size();
+    std::vector<int> color(depth, -1); // all the node are uncolored
+
+    for (int i = 0; i < depth; ++i) {
+        if (color[i] == -1) {
+            if (!colorable_node(i, color, graph))
+                return false;
+        }
+    }
+
+    return true;
+}
+
+/*! \brief Brief function description here
+ *
+ *  Detailed description
+ *
+ * \return Return parameter description
+ */
+bool bitpartiteMatch_dfs(const std::vector< std::vector<int>> & grid, int u, std::vector<bool> visted, std::vector<int> & grils) {
+    int n = grid[u].size();
+
+    for (int v = 0; v < n; ++v) {
+        if (grid[u][v] && !visted[v]) {
+            visted[v] = true;
+
+            if (grils[v] < 0 || bitpartiteMatch_dfs(grid, grils[v], visted, grils)) {
+                grils[v] = u; // matching
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+int Solutions::maximumInvitations( std::vector< std::vector<int> > & grid) {
+    int m = grid.size();
+    int n = grid[0].size();
+    std::vector<int> grils(n, -1); // unmatched (uncolored)
+    int matches = 0;
+
+    // matching process
+    for (int i = 0; i < m; ++i) {
+        std::vector<bool> visted(n, false);
+        if( bitpartiteMatch_dfs(grid, i, visted, grils)) {
+            matches ++;
+        }
+    }
+
+    return matches;
+
+}
 
 
 } /* namespace leetcode */

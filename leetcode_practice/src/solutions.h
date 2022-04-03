@@ -290,6 +290,12 @@ public:
     // 743. Network Delay Time
     int networkDelayTime( std::vector< std::vector<int> >  & time, int n, int k);
 
+    // 785. Is Graph Bipartite
+    bool isBipartite( std::vector< std::vector<int> > & graph );
+
+    // 1820. Maximum Number of Accepted Invitations
+    int maximumInvitations( std::vector< std::vector<int> > & grid);
+
 };
 
 

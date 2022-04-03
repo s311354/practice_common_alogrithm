@@ -1403,6 +1403,39 @@ TEST_F(SolutionsTest, networkDelayTimeTest)
     EXPECT_EQ(expected_value, solutions.networkDelayTime(times, n, k));
 }
 
+TEST_F(SolutionsTest, isBipartiteTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+
+    std::vector< std::vector<int> > graph = {{1,2,3},{0,2},{0,1,3},{0,2}};
+    bool expected_value = false;
+    EXPECT_EQ(expected_value, solutions.isBipartite(graph));
+
+    graph = {{1,3},{0,2},{1,3},{0,2}};
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.isBipartite(graph));
+
+
+
+}
+
+
+TEST_F(SolutionsTest, maximumInvitationsTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector< std::vector< int> >  grid = {{1,0,1,0},{1,0,0,0},{0,0,1,0},{1,1,1,0}};
+    int expected_value = 3;
+    EXPECT_EQ(expected_value, solutions.maximumInvitations(grid));
+
+    grid = {{1,1,1}, {1,0,1}, {0, 0, 1}};
+    expected_value = 3;
+    EXPECT_EQ(expected_value, solutions.maximumInvitations(grid));
+
+}
 
 
 
