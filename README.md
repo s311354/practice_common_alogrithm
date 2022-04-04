@@ -1,18 +1,15 @@
-# practice_common_alogrithm
-Recap C++ basic alogrithm
+## Recap C++ basic conception and alogrithm ##
 
 Try to:
 - Keep the C++ style
 - Understand the fundamental alogrithm
 - LeetCode - Algorithms
 
-
 #### Variables and types ####
 
 When writing programs that perform useful tasks that really save us work, we need to intorduce the concept of variables. Let's imagine that I ask you to remember the number 5, and then I ask you to also memorize the number 2 at the same time. You have just stored two different values in your memory. 
 
 The whole process described above is a simple of what a computer can do with two variables. The same process can be expressed in C++ or python. We can now define variable as a portine of memory to store a value. Each variable needs a name that identifies it and distingushes it from the others.
-
 
 The values of variables are stored somewhere in an unspecified location in the computer memory as zeros and ones. Fundamental data types are basic types implemented directly by the language that represent the basic storage units supported natively by most systems. They can mainly be classified into:
 - Character types
@@ -95,6 +92,30 @@ All objects in a program have one of the following storage duration:
 
 A Helper class is a lesser known code smell where a coder has identified some miscellaneous, commonly used operations and attempted to make them reusable by lumping them together in an unnatural grouping. Successive developers have then come onto the project and not realised that the helper class exists, and have consequently rewitten the smae common operations, or even created more Helper classes.
 
+#### Multiprocessing ####
+
+Multiprocessing is the use of two or more central processing units (CPUs) within a single computer system. The term also refers to the ability of a system to support more than one processor or the ability to allocate tasks between them. There are many variations on this basic theme, and the definition of multiprocessing can vary with context, mostlt as a function of how CPUs are definition.
+
+#### Volatile ####
+
+Volatile is used to signify to the compiler not to optimize use of the variable that is declared volatile. Sometimes, it's necessary to guarantee that a variable is up to date. For example, when a different thread requires that it has a certain value.
+
+#### Static Variable and Extern Variable ####
+Static variables have very special properties:
+- In class definitions: static variables have a single value along all the instantiations of the class, and do not require an object of a class to be used, and btw, they are initialised automatically, so you don't have to worry about initialising them.
+
+```
+class MyClass
+{
+    static int x;
+}
+```
+
+- In functions: static variables in functions do not depend on the function scope. This means, if you call a function once, and you call it again, the same value of the static variable will remain unchanged. In general, static means the variable is independent of every scope in the program. This is very useful when you wanna avoid using global variables.
+
+
+Extern variables is simple another name for global variables.
+
 ## Reference ## 
 [1] [__builtin_popcount](https://tmt514.gitbooks.io/the-code-tactics-book/content/2.5/popcount.html)
 
@@ -108,6 +129,10 @@ Development environment: neovim, doxygen, try to cultivate the "brain debug" abi
 [5] [StackExchange: What is a helper? Is it a design pattern? Is it an algorithm?](https://softwareengineering.stackexchange.com/questions/247267/what-is-a-helper-is-it-a-design-pattern-is-it-an-algorithm)
 
 [6] [cplusplus: Variables and types](https://www.cplusplus.com/doc/tutorial/variables/)
+
+[7] [cplusplus: Process v/s Threads](https://www.cplusplus.com/forum/unices/34816/)
+
+[8] [Differences between extern and static variables.](https://www.cplusplus.com/forum/unices/67240/#msg358922)
 
 
 [staticmember]:https://en.cppreference.com/w/cpp/language/static "https://en.cppreference.com/w/cpp/language/static"
