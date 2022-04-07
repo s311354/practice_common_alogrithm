@@ -296,25 +296,32 @@ int Solutions::minStpes( std::vector<int>& num)
  *
  *  You are given an array of strings arr. A string s is formed by the concatenation of a subsequence of arr that has unique characters.
  *
+ *
+ * Runtime: 796 ms, faster than 11.58% of C++ online submissions for Maximum Length of a Concatenated String with Unique Characters.
+ * 
+ *
+ * Memory Usage: 438.7 MB, less than 5.02% of C++ online submissions for Maximum Length of a Concatenated String with Unique Characters.
+ *
  * \return the maximum possible length of s
  */
 int Solutions::maxLength( std::vector< std::string> & arr)
 {
+
     int len = 0;
 
     if (arr.size() < 0) return 0;
 
-    if (arr.size() == 1) return arr[0].size();
+//     if (arr.size() == 1) return arr[0].size();
 
     checkLen( arr, "", 0, len);
-
     return len;
 }
 
 // undirected DFS ( graph of string )
-void Solutions::checkLen( std::vector<std::string> & arr, std::string graphstr, int index, int & count )
+void Solutions::checkLen( const std::vector<std::string> & arr, std::string graphstr, int index, int & count )
 {
     if (isUniqieString(graphstr)) {
+        std::cout << count << " " << graphstr.c_str() << std::endl;
         count = graphstr.size() > count ? graphstr.size(): count;
     }
 
@@ -324,7 +331,7 @@ void Solutions::checkLen( std::vector<std::string> & arr, std::string graphstr, 
     }
 }
 
-bool Solutions::isUniqieString(std::string s)
+bool Solutions::isUniqieString( const std::string s)
 {
     /*
     std::unordered_set<char> unique;
@@ -347,6 +354,10 @@ bool Solutions::isUniqieString(std::string s)
 /*! \brief Find N Unique Integers Sum up to Zero
  *
  *  Given an integer n, return any array containing n unique integers such that they add up to 0
+ *
+ * Runtime: 3 ms, faster than 41.85% of C++ online submissions for Find N Unique Integers Sum up to Zero.
+ *
+ * Memory Usage: 6.6 MB, less than 96.56% of C++ online submissions for Find N Unique Integers Sum up to Zero.
  *
  * \return Array containing n unique integers such that they add up to 0
  */
@@ -372,17 +383,20 @@ std::vector<int> Solutions::sumZero(int n)
  *
  *  The replacement must be in place and use only constant extra memory
  *
- *  - 
+ *  Runtime: 11 ms, faster than 19.49% of C++ online submissions for Next Permutation.
+ *
+ *  Memory Usage: 12.1 MB, less than 75.54% of C++ online submissions for Next Permutation. 
  * \return None
  */
 void Solutions::nextPermutation( std::vector<int>& nums)
 {
     int i = nums.size() - 2;
-
-    while (i >= 0 && nums[i+1] <= nums [i]) {
+    // find the first pair of two successive numbers
+    while (i >= 0 && nums [i] >= nums[i+1]) {
         i--;
     }
 
+    // find the next larger number and swap the numbers a[i-1] and a[j]
     if (i >= 0) {
         int j = nums.size() - 1;
             while (nums[j] <= nums[i]) {
@@ -391,6 +405,7 @@ void Solutions::nextPermutation( std::vector<int>& nums)
             std::swap(nums[i], nums[j]);
     }
 
+    // reverse the numbers following to get the next smallest lexicographic permutation.
     std::reverse(nums.begin()+i+1, nums.end());
 }
 
@@ -402,6 +417,10 @@ void Solutions::nextPermutation( std::vector<int>& nums)
  *  - 0  of x is equal to 0
  *
  *  You are given an integer array nums. Let products be the product of all values in the array nums
+ *
+ *  Runtime: 4 ms, faster than 87.44% of C++ online submissions for Sign of the Product of an Array.
+ *
+ *  Memory Usage: 10.2 MB, less than 44.94% of C++ online submissions for Sign of the Product of an Array.
  *
  * \return signFunc(product)
  */
@@ -423,7 +442,9 @@ int Solutions::arraySign( std::vector<int> & nums)
 /*! \brief Count Good Nodes in Binary Tree
  *
  *  Given a binary tree root, a node X in the tree is named good if in the path from root to X there are no nodes with a value greater than X.
+ * Runtime: 176 ms, faster than 51.57% of C++ online submissions for Count Good Nodes in Binary Tree.
  *
+ * Memory Usage: 86.4 MB, less than 11.71% of C++ online submissions for Count Good Nodes in Binary Tree.
  *
  * \return the number of good nodes in the binary tree
  */
@@ -432,7 +453,7 @@ int Solutions::goodNodes(TreeNode * root)
     int count = 0;
 
 //     PrintBFS(root);
-    countGoodNode(root, 0, count);
+    countGoodNode(root, root->val, count);
 
     return count;
 }
@@ -643,6 +664,11 @@ int Solutions::maxPossible(int num, int digit)
 /*! \brief Delete Node in a BST
  *
  *  Given a root node reference of a BST and a key, delete the node with the given key in the BST.
+ * Runtime: 50 ms, faster than 44.79% of C++ online submissions for Delete Node in a BST.
+ *
+ *
+ * Memory Usage: 32.7 MB, less than 75.94% of C++ online submissions for Delete Node in a BST.
+ *
  *
  * \return the root node reference (possibly updated) of the BST
  */
@@ -652,21 +678,17 @@ TreeNode* Solutions::deleteNode(TreeNode* node, int key)
 
     if ( key == node->val) {
         if( node->left == nullptr and node->right == nullptr) {
-            delete node;
-        } else if (node->left == nullptr) {
-            TreeNode* tmp = node;
-            node = tmp->right;
-            delete tmp;
-        } else if (node->right == nullptr) {
-            TreeNode* tmp = node;
-            node = tmp->left;
-            delete tmp;
+            return nullptr;
+        } else if (node->left == nullptr || node->right == nullptr) {
+            node = node->right ? node->right : node->left;
         } else {
-            // Get Min from right side
-            TreeNode * new_node = getMinNode(node->right);
+            // Get Min from left side
+            //TreeNode * new_node = getMinNode(node->right);
+            TreeNode* new_node = node->left;
+            while(new_node->right != nullptr) new_node = new_node->right;
 
             node->val = new_node->val;
-            node->right = deleteNode(node->right, node->val); // reconstruct tree
+            node->left = deleteNode(node->left, node->val); // reconstruct tree
         }
     }
 
@@ -735,6 +757,12 @@ int Solutions::gcd(int a, int b) {
  * Alice wants the rope to be colorful. She does not want two consecutive balloons to be of the same color, so she asks Bob for help. Bob can remove some balloons from the rope to make it colorful. 
  * You are given a 0-indexed integer array neededTime where neededTime[i] is the time (in seconds) that Bob nees to remove the ith balloon from the rope.
  * 
+ * Runtime: 128 ms, faster than 97.71% of C++ online submissions for Minimum Time to Make Rope Colorful.
+ *
+ *
+ * Memory Usage: 95.4 MB, less than 51.98% of C++ online submissions for Minimum Time to Make Rope Colorful.
+ *
+ *
  * \return Return the minimum time Bob need to make the rope colorful
  */
 int Solutions::minCost( std::string colors, std::vector<int> & neededTime)
@@ -763,11 +791,20 @@ int Solutions::minCost( std::string colors, std::vector<int> & neededTime)
  * Write a function to find the longest common prefix string amongst an array of strings
  * 
  * If there is no common prefix, return an empty string ""
- * 
+ *
+ *  Runtime: 0 ms, faster than 100.00% of C++ online submissions for Longest Common Prefix.
+ *
+ *
+ *  Memory Usage: 9.1 MB, less than 92.73% of C++ online submissions for Longest Common Prefix.
+ *
+ *
+ *
  * \return Longest common prefix
  */
 std::string Solutions::longestPrefix(std::vector< std::string > & strs)
 {
+    // O(n log n)
+    /*
     std::string ans = "";
     sort(begin(strs), end(strs));
     int last_index = strs.size() - 1;
@@ -777,6 +814,23 @@ std::string Solutions::longestPrefix(std::vector< std::string > & strs)
         else break;
     }
 
+    return ans;
+
+    */
+
+    // O(2n)
+    std::string ans = ""; int min = 0;
+    //sort(strs.begin(), strs.end());
+    if (strs.empty()) return "";
+    for (int i = 0; i < strs.size(); i++) {
+        if (strs[i].size() < strs[min].size()) min = i;
+    }
+    for (int i = 0; i < strs[min].size() ; ++i) {
+        for (int k = 0;  k < strs.size(); ++k) {
+            if (strs[k][i] != strs[min][i]) return ans;
+        }
+        ans += strs[0][i];
+    }
     return ans;
 }
 
@@ -831,7 +885,8 @@ int Solutions::getLargestK( std::vector<int> & nums){
     for (auto & elem : nums) {
         if (elem > 0) continue;
         auto it = std::find(begin(nums), end(nums), elem*-1);
-        ans = std::max(ans, *it);
+//         ans = std::max(ans, *it);
+        ans = ans > *it ? ans : *it;
     }
 
     return ans;
@@ -1145,7 +1200,8 @@ int Solutions::storeMeetingrooms( std::vector< std::vector<int> > & rooms)
         } else {
             count --;
         }
-        room = std::max(room, count);
+//         room = std::max(room, count);
+        room = room > count ? room : count;
     }
 
     return room;
@@ -1158,9 +1214,14 @@ int Solutions::storeMeetingrooms( std::vector< std::vector<int> > & rooms)
  *  Arrows can be shot up directly vertically (in the positive y-direction) from different points along the x-axis. A balloon with xstart and xend is burst by an arrow shot at x if xstart <= x <= xend. There is no limit to the number of arrows that can be shot. A shot arrow keeps traveling up infinitely, bursting any balloons in its path.
  *  Given the array points, return the minimum number of arrows that must be shot to burst all balloons.
  *
+ * Runtime: 555 ms, faster than 66.04% of C++ online submissions for Minimum Number of Arrows to Burst Balloons.
+ *
+ * Memory Usage: 89.7 MB, less than 67.65% of C++ online submissions for Minimum Number of Arrows to Burst Balloons.
+ *
+ *
  * \return minimum number of arrows that must be shot to burst all balloons
  */
-bool cmp ( std::vector<int> &a, std::vector<int> &b) { return a.at(1) < b.at(1); }
+static bool cmp ( std::vector<int> &a, std::vector<int> &b) { return a.at(1) < b.at(1); }
 
 int Solutions::findMinArrowShots( std::vector< std::vector<int> > & points)
 {
@@ -1393,6 +1454,11 @@ int Solutions::maximumSum(int N, std::vector<int> &A, std::vector<int> &B)
  *
  *  Given an integer array nums, retuen true if any value appears at least twice in the array, and return false if every elements is distinct.
  *
+ * Runtime: 150 ms, faster than 29.17% of C++ online submissions for Contains Duplicate.
+ *
+ * Memory Usage: 53.5 MB, less than 19.10% of C++ online submissions for Contains Duplicate.
+ *
+ *
  * \return if every elements is distinct return false. Otherwise, return true
  */
 bool Solutions::containDup( std::vector<int> & nums)
@@ -1413,6 +1479,10 @@ bool Solutions::containDup( std::vector<int> & nums)
 /*! \brief Single Number
  *
  *  Given a non-empty array of integers nums, every element appears twice expect for one. Find that single one. You must implement a solution with a linear runtime complexity and use only constant extra space.
+ *
+ *  Runtime: 20 ms, faster than 79.39% of C++ online submissions for Single Number.
+ *
+ *  Memory Usage: 16.9 MB, less than 85.45% of C++ online submissions for Single Number.
  *
  * \return Single Number
  */
@@ -1457,27 +1527,39 @@ bool binarySearch( std::vector<int> & nums, int target)
     return false;
 }
 
+/*! \brief intersection of Two Arrays
+ *
+ *  Given two integer arrays num1 and num2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
+ *
+ *  Runtime: 4 ms, faster than 88.21% of C++ online submissions for Intersection of Two Arrays.
+ *
+ *
+ *  Memory Usage: 10.6 MB, less than 23.23% of C++ online submissions for Intersection of Two Arrays.
+ *
+ *
+ * \return an array if their intersection
+ */
 std::vector<int> Solutions::intersection( std::vector<int> & nums1, std::vector<int> & nums2)
 {
-    /*
-    std::unordered_set<int> set(nums1.begin(), nums1.end()), intersection; // Complexity: Constant.
+    std::unordered_set<int> set(nums1.begin(), nums1.end()), intersectionset; // Complexity: Constant.
 
     for (auto elem : nums2) {
         // Time Complexity: Time Complexity for unordered_set::count() method is O(1) in average cases, but in worst case, time complexity can be O(N) 
-        if (set.count(elem)) intersection.insert(elem);
+        if (set.count(elem)) intersectionset.insert(elem);
     }
 
-    return std::vector<int>(intersection.begin(), intersection.end()); // The complexity is linear in the number of elements inserted plus the distance to the end of the vector.
-    */
+    return std::vector<int>(intersectionset.begin(), intersectionset.end()); // The complexity is linear in the number of elements inserted plus the distance to the end of the vector.
 
+    /*
     std::unordered_set<int> intersection;
-    std::sort(nums2.begin(), nums2.end());
+    std::sort(nums2.begin(), nums2.end());  O(N log N)
 
     for (auto elem : nums1) {
         if (binarySearch(nums2, elem)) intersection.insert(elem);
     }
 
     return std::vector<int>(intersection.begin(), intersection.end()) ;
+    */
 }
 
 
@@ -1489,6 +1571,10 @@ std::vector<int> Solutions::intersection( std::vector<int> & nums1, std::vector<
  *  Starting with any positive integer, replace the number by the sum of the squares of its digits.
  *  Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
  *  Those numbers for which this process ends in 1 are happy.
+ *
+ *  Runtime: 3 ms, faster than 55.97% of C++ online submissions for Happy Number.
+ *
+ *  Memory Usage: 5.9 MB, less than 62.07% of C++ online submissions for Happy Number.
  *
  * \return true if n is a happy number, and false if not
  */
@@ -1571,6 +1657,10 @@ std::vector< std::vector<int> > Solutions::fourSum( std::vector<int>& nums, int 
  * Given the roots of two binary trees p and q, write a function to check if they are the same of not.
  *
  * Two binary trees are considered the same if they are structurally identical, and the nodes have the same value
+ *
+ * Runtime: 8 ms, faster than 10.20% of C++ online submissions for Same Tree.
+ *
+ * Memory Usage: 9.8 MB, less than 94.83% of C++ online submissions for Same Tree.
  *
  * \return if they are structurally identical
  */
@@ -1668,6 +1758,7 @@ int Solutions::uncovered_interval( std::vector< std::pair<int, int> > unservice,
  */
 int Solutions::minSwapsnums( std::vector<int> & nums)
 {
+    /* Time Limit Exceeded
     int minswap = INT_MAX;
 
     int slidingwindow = std::count(begin(nums), end(nums), 1);
@@ -1681,6 +1772,33 @@ int Solutions::minSwapsnums( std::vector<int> & nums)
     }
 
     return minswap;
+    */
+
+    int slidingwindow=0;
+    for(int i=0;i<nums.size();i++)
+        if(nums[i]==1)
+            slidingwindow++;
+    int result=0;
+
+    // Just check the number of zeroes in each window 
+    for(int i=0;i<slidingwindow;i++)
+    {
+         if(nums[i]==0)
+             result++;
+    }
+
+    // circular check
+    int ans=result;
+    for(int i=1;i<nums.size();i++)
+    {
+        int j=(i+slidingwindow-1)%nums.size();
+        if(nums[i-1]==0)
+            result--;
+        if(nums[j]==0)
+            result++;
+        ans=std::min(ans,result);
+    }
+    return ans;
 }
 
 
@@ -1962,7 +2080,8 @@ bool Solutions::almostSorted( std::vector<int> & nums)
             if (nums[i - 2] > nums[i - 1] && nums[i - 1] < nums[i] && maxnum > nums[i])
                 return false;
             else {
-                    maxnum = std::max(maxnum, nums[i - 2]);
+//                     maxnum = std::max(maxnum, nums[i - 2]);
+                    maxnum = maxnum > nums[i - 2] ? maxnum : nums[i - 2];
                     issorted = true;
             }
         }
@@ -1987,6 +2106,13 @@ bool Solutions::almostSorted( std::vector<int> & nums)
  *
  *  You are given a string moves that represents the move sequence of the robot where moves[i] represents its ith move. Valid moves are 'R' (right), 'L' (left), 'U' (up), and 'D' (down).
  *
+ *
+ * Runtime: 23 ms, faster than 7.16% of C++ online submissions for Robot Return to Origin.
+ *
+ *
+ * Memory Usage: 7.9 MB, less than 94.85% of C++ online submissions for Robot Return to Origin.
+ *
+ *
  * \return Return parameter description
  */
 bool Solutions::judgeCircle( std::string moves)
@@ -2006,13 +2132,17 @@ bool Solutions::judgeCircle( std::string moves)
  *
  *  Tarjan's Bridge-Finding Algorithm (TBFA) provides a very effective way to find these bridge and articulation points in linear time. It is a bit like a combination of a depth-first search (DFS) approach with recursion and a union-find. In TBFA, doing recursive DFS on graph and for each node to keep track of the earlier node that can circle back around to reach. And then identify whether a given edge is a bridge.
  *
+ * Runtime: 833 ms, faster than 62.49% of C++ online submissions for Critical Connections in a Network.
+ *
+ * Memory Usage: 164.6 MB, less than 89.27% of C++ online submissions for Critical Connections in a Network.
+ * 
  * Note that: low link value of a node is defined as the smallest visited time from current node when doing a DFS, including itself.
  *
  *
  * \return all critical connections in the network in any order.
  */
-void undirected_dfs(int curr, int parent, int visited, std::vector< std::vector<int> > & undirectedgraph, std::vector<int>& low, std::vector< std::vector<int> > &bridge){
-    low[curr] = visited ++;
+void undirected_dfs(int curr, int parent, int visited, std::vector< std::vector<int> > & undirectedgraph, std::vector<int>& lowlink, std::vector< std::vector<int> > &bridge){
+    lowlink[curr] = visited ++;
     
     // Exploring the neighbor node
     for (auto & nextnode : undirectedgraph[curr]) {
@@ -2021,12 +2151,12 @@ void undirected_dfs(int curr, int parent, int visited, std::vector< std::vector<
             continue;
         
         // unvisited (Depth-first Search)
-        if (low[nextnode] == 0) undirected_dfs(nextnode, curr, visited, undirectedgraph, low, bridge);
+        if (lowlink[nextnode] == 0) undirected_dfs(nextnode, curr, visited, undirectedgraph, lowlink, bridge);
         // Assign low value to current node (circle back around to reach)
-        low[curr] = std::min(low[curr], low[nextnode]);
+        lowlink[curr] = std::min(lowlink[curr], lowlink[nextnode]);
 
         // Determine the bridge
-        if (low[nextnode] == visited ) bridge.push_back({curr, nextnode});
+        if (lowlink[nextnode] == visited ) bridge.push_back({curr, nextnode});
     }
 }
 
@@ -2041,9 +2171,9 @@ std::vector< std::vector<int> > Solutions::criticalConnections(int n, std::vecto
     }
 
     std::vector< std::vector<int> > bridge;
-    std::vector<int> low(n);
+    std::vector<int> lowlink(n);
 
-    undirected_dfs(0, -1, 1, undirectedgraph, low, bridge);
+    undirected_dfs(0, -1, 1, undirectedgraph, lowlink, bridge);
     return bridge;
 }
 
@@ -2234,7 +2364,8 @@ int Solutions::arrayNexting( std::vector<int> & nums)
             visited[elem] = true;
             elem = nums[elem];
         }
-        ans = std::max(ans, count);
+//         ans = std::max(ans, count);
+        ans = ans > count ? ans : count;
     }
     return ans;
 }
@@ -2305,7 +2436,9 @@ int getHeight(TreeNode * root)
 
     if (depthright == -1 || depthright == -1 || std::abs(depthleft - depthright) > 1 ) return -1;
 
-    return 1 + std::max(depthright, depthleft);
+
+//     return 1 + std::max(depthright, depthleft);
+    return 1 + (depthright > depthleft ? depthright : depthleft);
 }
 
 bool Solutions::isBalanced(TreeNode * root)
@@ -2693,7 +2826,8 @@ int maxStone(int i, int j, std::vector<int>& piles, std::vector< std::vector<int
     if (dp[i][j] > 0) {
         return dp[i][j];
     } else if ( i + 1 == j ) {
-        return std::max(piles[i], piles[j]);
+//         return std::max(piles[i], piles[j]);
+        return (piles[i] > piles[j] ? piles[i] : piles[j]);
     } else {
 
         // Alice takes the entire pile of stones from the beginning of the row
@@ -2702,7 +2836,8 @@ int maxStone(int i, int j, std::vector<int>& piles, std::vector< std::vector<int
         // Alice takes the entire pile of stones from the end of the row
         int b = piles[j] + std::min(maxStone(i+1, j-1, piles, dp), maxStone(i, j-2, piles, dp));
 
-        dp[i][j] = std::max(a, b);
+//         dp[i][j] = std::max(a, b);
+        dp[i][j] = a > b ? a : b;
         return dp[i][j];
     }
 }
@@ -2939,7 +3074,8 @@ int Solutions::networkDelayTime( std::vector< std::vector< int > > & times, int 
     for (int i = 1; i <= n; ++i) {
         if ( distance[i] == INT_MAX ) return -1;
 //         std::cout << i << " " << distance[i] << std::endl;
-        res = std::max(res, distance[i]);
+//         res = std::max(res, distance[i]);
+            res = res > distance[i] ? res : distance[i];
     }
 
     return res;
@@ -3019,6 +3155,14 @@ bool bitpartiteMatch_dfs(const std::vector< std::vector<int>> & grid, int u, std
     return false;
 }
 
+/*! \brief Maximum Number of Accepted Invitations
+ *
+ *  There are m boys and n girls in a class attending an upcoming party.
+ *  You are given an m x n integer matrix grid, where grid[i][j] equals 0 or 1. If grid[i][j] == 1, then that means the ith boy can invite the jth girl to the party.
+ *  A boy can invite at most one girl, and a girl can accept at most one invitation from a boy.
+ *
+ * \return Return the maximum possible number of acceptable invitation
+ */
 int Solutions::maximumInvitations( std::vector< std::vector<int> > & grid) {
     int m = grid.size();
     int n = grid[0].size();
@@ -3036,6 +3180,44 @@ int Solutions::maximumInvitations( std::vector< std::vector<int> > & grid) {
     return matches;
 
 }
+
+
+/*! \brief Pair with given sum in matrix
+ *
+ *  Given a NxM matrix and a sum S. The task is to check if a pair with given Sum exists in the matrix or not.
+ *
+ * \return Return whether or not a pair with given Sum exists in the matrix
+ */
+std::vector< std::vector<int> > Solutions::isPairWithSum(int mat[ROW][COLUMN], int sum) {
+    std::set< std::pair<int, int>> pairsum;
+
+    pairsum.clear();
+    for (int row = 0; row< ROW; row ++) {
+        for (int col = 0; col< COLUMN ; col ++) {
+            int diff = sum - mat[row][col];
+            // search
+            bool ismatch = false;
+            for (int i = row + 1 ; i < ROW ; i ++ ) {
+                for (int j = 0 ; j < COLUMN ; j ++) {
+                    if (!(mat[i][j] - diff)) {
+                        ismatch = true;
+                        pairsum.insert({mat[row][col], mat[i][j]});
+                        break;
+                    }
+                }
+                if (ismatch) break;
+            }
+        }
+    }
+
+    std::vector< std::vector<int> > result;
+    for (auto &elem : pairsum) {
+        result.push_back({elem.first, elem.second});
+    }
+    return result;
+}
+
+
 
 
 } /* namespace leetcode */

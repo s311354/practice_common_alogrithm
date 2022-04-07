@@ -72,7 +72,6 @@ TEST_F(SolutionsTest, maxLengthTest)
     leetcode::Solutions solutions;
     std::vector< std::string> arr {"un", "iq", "ue"};
     int expected_value = 4;
-
     EXPECT_EQ(expected_value, solutions.maxLength(arr));
 
 
@@ -85,6 +84,10 @@ TEST_F(SolutionsTest, maxLengthTest)
     EXPECT_EQ(expected_value,solutions.maxLength(arr));
 
     arr = {"photato", "kayak", "banana", "racecar"};
+    expected_value = 0;
+    EXPECT_EQ(expected_value,solutions.maxLength(arr));
+
+    arr = {"uu"};
     expected_value = 0;
     EXPECT_EQ(expected_value,solutions.maxLength(arr));
 }
@@ -133,15 +136,22 @@ TEST_F(SolutionsTest, goodNodesTest)
     leetcode::Solutions solutions;
     std::vector<int> v = {3,3,-1,4,2};
     leetcode::TreeNode * root = nullptr;
-
-
     for (int i = 0; i < v.size(); ++i) {
         root = solutions.insertBTNode(root, v[i], i);
     }
-
     int expected_value = 3;
-
     EXPECT_EQ(expected_value, solutions.goodNodes(root));
+
+
+    v = {-1,5,-2,4,4,2,-2,-1,-1,-4,-1,-2,3,-1,-2,0,-1,-1,-1,-3,-1,-4,-3,3,-1,-1,-1,-1,-1,-1,-1,3,-3};
+
+    root = nullptr;
+    for (int i = 0; i < v.size(); ++i) {
+        root = solutions.insertBTNode(root, v[i], i);
+    }
+    expected_value = 5;
+
+//     EXPECT_EQ(expected_value, solutions.goodNodes(root));
 
     delete root;
 }
@@ -560,7 +570,7 @@ TEST_F(SolutionsTest, intersectionTest)
 
     std::vector<int> nums1 = {4, 9, 5};
     std::vector<int> nums2 = {9, 4, 9, 8, 4};
-    std::vector<int> expected_value = {9, 4};
+    std::vector<int> expected_value = {4, 9};
 
     EXPECT_EQ(expected_value,solutions.intersection(nums1, nums2));
 
@@ -665,6 +675,10 @@ TEST_F(SolutionsTest, replaceWordsTest)
     dictionary = {"a", "b", "c"};
     sentence = "aadsfasf absbs bbsb cadsfafs";
     expected_value = "a a b c";
+    EXPECT_EQ(expected_value, solutions.replaceWords(dictionary, sentence));
+
+//     dictionary = {"e","k","c","harqp","h","gsafc","vn","lqp","soy","mr","x","iitgm","sb","oo","spj","gwmly","iu","z","f","ha","vds","v","vpx","fir","t","xo","apifm","tlznm","kkv","nxyud","j","qp","omn","zoxp","mutu","i","nxth","dwuer","sadl","pv","w","mding","mubem","xsmwc","vl","farov","twfmq","ljhmr","q","bbzs","kd","kwc","a","buq","sm","yi","nypa","xwz","si","amqx","iy","eb","qvgt","twy","rf","dc","utt","mxjfu","hm","trz","lzh","lref","qbx","fmemr","gil","go","qggh","uud","trnhf","gels","dfdq","qzkx","qxw"};
+//      = {"ikkbp miszkays wqjferqoxjwvbieyk gvcfldkiavww vhokchxz dvypwyb bxahfzcfanteibiltins ueebf lqhflvwxksi dco kddxmckhvqifbuzkhstp wc ytzzlm gximjuhzfdjuamhsu gdkbmhpnvy ifvifheoxqlbosfww mengfdydekwttkhbzenk wjhmmyltmeufqvcpcxg hthcuovils ldipovluo aiprogn nusquzpmnogtjkklfhta klxvvlvyh nxzgnrveghc mpppfhzjkbucv cqcft uwmahhqradjtf iaaasabqqzmbcig zcpvpyypsmodtoiif qjuiqtfhzcpnmtk yzfragcextvx ivnvgkaqs iplazv jurtsyh gzixfeugj rnukjgtjpim hscyhgoru aledyrmzwhsz xbahcwfwm hzd ygelddphxnbh rvjxtlqfnlmwdoezh zawfkko iwhkcddxgpqtdrjrcv bbfj mhs nenrqfkbf spfpazr wrkjiwyf cw dtd cqibzmuuhukwylrnld dtaxhddidfwqs bgnnoxgyynol hg dijhrrpnwjlju muzzrrsypzgwvblf zbugltrnyzbg hktdviastoireyiqf qvufxgcixvhrjqtna ipfzhuvgo daee r nlipyfszvxlwqw yoq dewpgtcrzausqwhh qzsaobsghgm ichlpsjlsrwzhbyfhm ksenb bqprarpgnyemzwifqzz oai pnqottd nygesjtlpala qmxixtooxtbrzyorn gyvukjpc s mxhlkdaycskj uvwmerplaibeknltuvd ocnn frotscysdyclrc ckcttaceuuxzcghw pxbd oklwhcppuziixpvihihp"};
     EXPECT_EQ(expected_value, solutions.replaceWords(dictionary, sentence));
 }
 
@@ -1436,6 +1450,24 @@ TEST_F(SolutionsTest, maximumInvitationsTest)
     EXPECT_EQ(expected_value, solutions.maximumInvitations(grid));
 
 }
+
+
+TEST_F(SolutionsTest, isPairWithSumTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    int mat[ROW][COLUMN] = {{1, 1, 2, 4},
+                        {5, 8, 7, 6},
+                        {9, 10, 13, 11},
+                        {12, 0, 14, 15}};
+ 
+    int sum = 11;
+
+    std::vector< std::vector<int> > expected_value = {{1, 10}, {2, 9}, { 4, 7}, {11, 0}};
+    EXPECT_EQ(expected_value, solutions.isPairWithSum(mat, sum));
+}
+
 
 
 

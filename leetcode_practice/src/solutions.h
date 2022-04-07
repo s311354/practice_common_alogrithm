@@ -24,7 +24,8 @@ static const std::regex UNSIGNED_INT_TYPE("[+]?[0-9]+");
 static const std::regex DOUBLE_TYPE("[+-]?[0-9]+[.]?[0-9]+");
 static const std::regex UNSIGNED_DOUBLE_TYPE("[+]?[0-9]+[.]?[0-9]+");
 
-
+#define ROW 4
+#define COLUMN 4
 
 
 
@@ -54,8 +55,8 @@ private:
     bool isPalindrome(std::string s);
     bool isValidChar(char c);
     bool isValidString(std::string s);
-    bool isUniqieString(std::string s);
-    void checkLen( std::vector<std::string> & arr, std::string str, int index, int& count);
+    bool isUniqieString( const std::string s);
+    void checkLen( const std::vector<std::string> & arr, std::string str, int index, int& count);
     void bfs(int column, int row, std::vector< std::vector<int> > &grid, std::vector< std::vector<int> > &distance, std::vector< std::vector<int> >  &visit);
     void countGoodNode(TreeNode* node, int value, int& count);
 
@@ -295,6 +296,8 @@ public:
 
     // 1820. Maximum Number of Accepted Invitations
     int maximumInvitations( std::vector< std::vector<int> > & grid);
+
+    std::vector< std::vector<int> > isPairWithSum(int mat[ROW][COLUMN], int sum);
 
 };
 
