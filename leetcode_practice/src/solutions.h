@@ -297,7 +297,17 @@ public:
     // 1820. Maximum Number of Accepted Invitations
     int maximumInvitations( std::vector< std::vector<int> > & grid);
 
+    // Interview
     std::vector< std::vector<int> > isPairWithSum(int mat[ROW][COLUMN], int sum);
+
+    // 207. Course Schedule
+    bool canFinish(int numCourse, std::vector< std::vector<int> > & prerequisities);
+
+    // 1136. Parallel Courses
+    int minimumSemesters(int courses, std::vector< std::vector<int> > &relations);
+
+    // 1494. Parallel Courses II
+    int minNumberOfSemesters(int n, std::vector< std::vector<int> > & relations, int k);
 
 };
 

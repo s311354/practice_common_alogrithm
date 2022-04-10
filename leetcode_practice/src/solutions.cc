@@ -321,7 +321,6 @@ int Solutions::maxLength( std::vector< std::string> & arr)
 void Solutions::checkLen( const std::vector<std::string> & arr, std::string graphstr, int index, int & count )
 {
     if (isUniqieString(graphstr)) {
-        std::cout << count << " " << graphstr.c_str() << std::endl;
         count = graphstr.size() > count ? graphstr.size(): count;
     }
 
@@ -2163,15 +2162,14 @@ void undirected_dfs(int curr, int parent, int visited, std::vector< std::vector<
 std::vector< std::vector<int> > Solutions::criticalConnections(int n, std::vector< std::vector<int> > & connections)
 {
     std::vector< std::vector<int> > undirectedgraph (n);
+    std::vector< std::vector<int> > bridge;
+    std::vector<int> lowlink(n);
 
     // constructing undirected graph
     for (auto & elem : connections) {
         undirectedgraph[elem[0]].push_back(elem[1]);
         undirectedgraph[elem[1]].push_back(elem[0]);
     }
-
-    std::vector< std::vector<int> > bridge;
-    std::vector<int> lowlink(n);
 
     undirected_dfs(0, -1, 1, undirectedgraph, lowlink, bridge);
     return bridge;
@@ -2186,6 +2184,11 @@ std::vector< std::vector<int> > Solutions::criticalConnections(int n, std::vecto
  *  You may imagine that nums[-1] = nums[n] = -∞.
  *
  *  You must write an algorithm that runs in O(log n) time.
+ *
+ * Runtime: 7 ms, faster than 41.95% of C++ online submissions for Find Peak Element.
+ *
+ * Memory Usage: 8.9 MB, less than 5.24% of C++ online submissions for Find Peak Element.
+ *
  *
  * \return the index number of peak element
  */
@@ -2233,6 +2236,11 @@ int Solutions::findPeakElement( std::vector<int> & nums)
  *
  *  You may assume the two numbers do not contain any leading zero, except the number 0 itself.
  *
+ * Runtime: 33 ms, faster than 81.03% of C++ online submissions for Add Two Numbers.
+ *
+ * Memory Usage: 71.4 MB, less than 81.12% of C++ online submissions for Add Two Numbers.
+ *
+ *
  * \return the sum as a linked list.
  */
 LinkedListNode* Solutions::addTwoNumbers(LinkedListNode* l1, LinkedListNode* l2)
@@ -2274,6 +2282,11 @@ LinkedListNode* Solutions::addTwoNumbers(LinkedListNode* l1, LinkedListNode* l2)
 /*! \brief Remove Duplicates from Sorted List
  *
  *  Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
+ *
+ * Runtime: 15 ms, faster than 48.52% of C++ online submissions for Remove Duplicates from Sorted List.
+ *
+ * Memory Usage: 11.6 MB, less than 79.43% of C++ online submissions for Remove Duplicates from Sorted List.
+ *
  *
  * \return Return parameter description
  */
@@ -2350,6 +2363,12 @@ bool Solutions::addExpression( std::string& S)
  *  The next element in s[k] should be nums[nums[k]], and then nums[nums[nums[k]]], and so on.
  *  We stop adding right before a duplicate element occurs in s[k].
  *
+ *
+ * Runtime: 146 ms, faster than 83.11% of C++ online submissions for Array Nesting.
+ *
+ * Memory Usage: 91.7 MB, less than 61.09% of C++ online submissions for Array Nesting.
+ *
+ *
  * \return the longest length of a set s[k].
  */
 int Solutions::arrayNexting( std::vector<int> & nums)
@@ -2376,8 +2395,14 @@ int Solutions::arrayNexting( std::vector<int> & nums)
  *
  * Note: similar as Maximum Length of a Concatenated String with Unique
  *
+ * Runtime: 720 ms, faster than 30.65% of C++ online submissions for Expression Add Operators.
+ *
+ * Memory Usage: 112.4 MB, less than 75.85% of C++ online submissions for Expression Add Operators.
+ *
+ *
  * \return all possibilities to insert the binary operators 
  */
+/*
 void checkOperator(std::string num, int target, std::string str, int index, long sum, long prev, std::vector< std::string >& operation)
 {
 
@@ -2407,12 +2432,54 @@ void checkOperator(std::string num, int target, std::string str, int index, long
 
     }
 }
+*/
+
+void checkOperator_dfs(std::string num, int target, std::string str, int index, long sum, long prev, 
+                        std::vector< std::string> & operation )
+{
+    if( index == num.size()) {
+        if (sum == target) {
+            operation.push_back(str);
+        }
+    }
+
+    for (int i = index + 1 ; i <= num.size() ; ++i) {
+
+        // Extend numbers
+        std::string curstr = num.substr(index, i - index);
+
+        if (curstr[0] == '0' && curstr.size() > 1) continue;
+
+        long curnum = atoll(curstr.c_str());
+
+
+        if (index == 0) {
+            str = curstr;
+            checkOperator_dfs(num, target, str, i, curnum, curnum, operation);
+            str.clear();
+        } else {
+            str.push_back('+'); // appends a character to the end
+            str.append(curstr); // appends characters to the end
+            checkOperator_dfs(num, target, str, i, sum + curnum, curnum, operation);
+
+            str[str.length() - curstr.length() - 1] = '-';
+            checkOperator_dfs(num, target, str, i, sum - curnum, -curnum, operation);
+
+            str[str.length() - curstr.length() - 1] = '*';
+            checkOperator_dfs(num, target, str, i, (sum - prev) + (prev * curnum), prev * curnum, operation);
+
+            str.erase(str.length() - curstr.length() - 1);
+        }
+    }
+}
 
 std::vector< std::string> Solutions::addOperators( std::string num, int target)
 {
     std::vector< std::string > operation;
 
-    checkOperator(num, target, "", 0, 0, 0, operation);
+//     checkOperator(num, target, "", 0, 0, 0, operation);
+
+    checkOperator_dfs(num, target, "", 0, 0, 0, operation);
 
     return operation;
 }
@@ -2441,6 +2508,21 @@ int getHeight(TreeNode * root)
     return 1 + (depthright > depthleft ? depthright : depthleft);
 }
 
+
+/*! \brief Balanced Binary Tree
+ *
+ *  Given a binary tree, determine if it is height-balanced.
+ *
+ *  For this problem, a height-balanced binary tree is defined as:
+ *
+ *  a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+ *
+ *  Runtime: 19 ms, faster than 49.07% of C++ online submissions for Balanced Binary Tree.
+ *
+ *  Memory Usage: 20.9 MB, less than 54.37% of C++ online submissions for Balanced Binary Tree.
+ *
+ * \return whether or not the tree is Balanced Binary Tree
+ */
 bool Solutions::isBalanced(TreeNode * root)
 {
     if (root == nullptr) return true;
@@ -2452,7 +2534,10 @@ bool Solutions::isBalanced(TreeNode * root)
  *
  *  Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree.
  *
-
+ *  Runtime: 30 ms, faster than 21.49% of C++ online submissions for Convert Sorted Array to Binary Search Tree.
+ *
+ *  Memory Usage: 21.5 MB, less than 21.73% of C++ online submissions for Convert Sorted Array to Binary Search Tree.
+ *
  * \return Return parameter description
  */
 TreeNode * helper( std::vector<int> & nums, int low, int high)
@@ -2527,6 +2612,21 @@ void captured_bfs(int row, int column, std::vector< std::vector<char> > &grid, s
 }
 */
 
+
+
+/*! \brief  Surrounded Regions
+ *
+ * Given an m x n matrix board containing 'X' and 'O', capture all regions that are 4-directionally surrounded by 'X'.
+ *
+ *
+ * A region is captured by flipping all 'O's into 'X's in that surrounded region.
+ *
+ *
+ * Runtime: 14 ms, faster than 71.39% of C++ online submissions for Surrounded Regions.
+ *
+ * Memory Usage: 10.2 MB, less than 40.17% of C++ online submissions for Surrounded Regions.
+ *
+ */
 std::vector< std::vector<char> > Solutions::surroundedRegions( std::vector< std::vector<char> > & board)
 {
     std::vector< std::vector<char> > output;
@@ -2578,6 +2678,10 @@ std::vector< std::vector<char> > Solutions::surroundedRegions( std::vector< std:
  *
  *  Given an integer n, return an array ans of length n + 1 such that for each i ( 0 <= i <=n). ans[i] is the number of 1's in the binary representation of i
  *
+ * Runtime: 4 ms, faster than 86.13% of C++ online submissions for Counting Bits.
+ *
+ * Memory Usage: 7.9 MB, less than 74.29% of C++ online submissions for Counting Bits.
+ *
  * \return an array ans of length n + 1 such that for each i ( 0 <= i <=n). ans[i] is the number of 1's in the binary representation of i
  */
 std::vector<int> Solutions::countBits(int n) {
@@ -2587,7 +2691,7 @@ std::vector<int> Solutions::countBits(int n) {
 
     // compute current set bit count using previous count
     for (int i = 1; i <= n; ++i) {
-        t[i] = t[i/2] + i%2;
+        t[i] = t[i/2] + i%2; // complement + remainder
     }
 
     return t;
@@ -2596,6 +2700,10 @@ std::vector<int> Solutions::countBits(int n) {
 /*! \brief Number of Bits
  *
  *  Write a function that takes an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).
+ *
+ * Runtime: 0 ms, faster than 100.00% of C++ online submissions for Number of 1 Bits.
+ *
+ * Memory Usage: 5.9 MB, less than 48.23% of C++ online submissions for Number of 1 Bits.
  *
  * \return the number of '1' bits it has
  */
@@ -2675,7 +2783,7 @@ void checkUniqueLen( std::vector<std::string> & arr, std::string graphstr, int c
 }
 
 
-/*! \brief Palindrome Pairs
+/*! \brief Palindrome Pairs (TLE ISSUE)
  *
  *  Given a list of unique words, return all the pairs of the distinct indices (i, j) in the given list, so that the concatenation of the two words words[i] + words[j] is a palindrome.
  *
@@ -3217,7 +3325,161 @@ std::vector< std::vector<int> > Solutions::isPairWithSum(int mat[ROW][COLUMN], i
     return result;
 }
 
+/*! \brief Course Schedule
+ *
+ *  There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.
+ *
+ *  For example, the pair [0, 1], indicates that to take course 0 you have to first take course 1.
+ *
+ * \return true if you can finish all courses. Otherwise, return false.
+ */
+bool Solutions::canFinish(int numCourse, std::vector< std::vector< int> > & prerequisities) {
 
 
+    std::vector< std::vector<int> > adjacent(numCourse);
+    // initial all vertices with indegree 0
+    std::vector<int> indegree(numCourse, 0);
+
+    // Creating graph and updates the indegree of the local vertex 
+    for (auto &elem : prerequisities) {
+        adjacent[elem[0]].push_back(elem[1]);
+        indegree[elem[1]]++;
+    }
+
+
+    std::queue<int> q;
+
+    // Parallel topological sorting
+    // iterate through all the courses if indegree is zero then add it to queue
+    for (int i = 0; i < numCourse; ++i) {
+        if(indegree[i] == 0) q.push(i);
+    }
+
+    while (!q.empty()) {
+        int node = q.front();
+        q.pop();
+
+        for (auto &next_node : adjacent[node]) {
+            indegree[next_node] --;
+            if(indegree[next_node] == 0) q.push(next_node);
+        }
+        numCourse --; // finish the course
+    }
+
+    return numCourse == 0;
+}
+
+
+/*! \brief Parallel Courses
+ *
+ * There are N courses, labelled from 1 to N.
+ *
+ *  We are given relations[i] = [X, Y], representing a prerequisite relationship between course X and course Y: course X has to be studied before course Y.
+ *
+ *  In one semester you can study any number of courses as long as you have studied all the prerequisites for the course you are studying.
+ *
+ *
+ *
+ *  The Essence: The dependency relations of the courses can be thought of as a directed graph. First layer of courses to be taken are those without any dependencies. When there is a cycle in the graph, no courses can be taken.
+ *
+ * \return Return the minimum number of semesters needed to study all courses.  If there is no way to study all the courses, return -1.
+ */
+int Solutions::minimumSemesters(int numCourse, std::vector< std::vector<int> > & relations) {
+
+    std::vector< std::vector<int> > adjacent(numCourse);
+    // initial all vertices with indegree 0
+    std::vector<int> indegree(numCourse, 0);
+
+    // Creating graph and updates the indegree of the local vertex 
+    for (auto &course : relations) {
+        adjacent[course[0] - 1].push_back(course[1] - 1);
+        indegree[course[1] - 1]++; // study firstly
+    }
+
+    std::queue<int> q;
+    int semester = 0, count = 0;
+
+    // Parallel topological sorting
+    // iterate through all the courses if indegree is zero then add it to queue
+    for (int i = 0; i < numCourse; ++i) {
+        if(indegree[i] == 0) q.push(i);
+    }
+
+    // BFS
+    while (!q.empty()) {
+
+        int size = q.size();
+
+        for (int i = 0; i < size; ++i) {
+            int node = q.front();
+            q.pop();
+            count ++;
+
+            for (auto &next_node : adjacent[node]) {
+                indegree[next_node] --;
+                if(indegree[next_node] == 0) q.push(next_node);
+            }
+        }
+        semester ++;
+    }
+
+    return count == numCourse ? semester : -1;
+}
+
+/*! \brief Parallel Courses II
+ *
+ *  You are given an integer n, which indicates that there are n courses labeled from 1 to n. You are also given an array relations where relations[i] = [prevCoursei, nextCoursei], representing a prerequisite relationship between course prevCoursei and course nextCoursei: course prevCoursei has to be taken before course nextCoursei. Also, you are given the integer k.
+ *
+ *  In one semester, you can take at most k courses as long as you have taken all the prerequisites in the previous semester for the courses you are taking.
+ *
+ * \return Return the minimum number of semesters needed to take all courses. The testcases will be generated such that it is possible to take every course.
+ */
+int Solutions::minNumberOfSemesters(int n, std::vector< std::vector<int> > & relations, int k) {
+
+    if (relations.size() == 0) return n % k == 0 ? n/ k: n/ k + 1;
+
+    std::vector< std::vector<int> > adjacent(n);
+    // initial all vertices with indegree 0
+    std::vector<int> indegree(n, 0);
+
+    // Creating graph and updates the indegree of the local vertex 
+    for (auto &course : relations) {
+        adjacent[course[0] - 1].push_back(course[1] - 1);
+        indegree[course[1] - 1] ++; // topological sorting
+    }
+
+    std::queue<int> q;
+    int semester = 0, count = 0;
+
+    for (int i = 0; i < n; ++i) {
+        if (indegree[i] == 0) q.push(i);
+    }
+
+    // BFD
+    while (!q.empty()) {
+        std::vector<int> nextcourse;
+
+        while (semester < k && !q.empty()) {
+            int node = q.front();
+            q.pop();
+
+            for (auto &next_node : adjacent[node]) {
+                indegree[next_node] --;
+                if (indegree[next_node] == 0) nextcourse.push_back(next_node);
+            }
+            semester ++;
+
+        }
+        // End taking courses for a semester
+        semester = 0;
+        count ++;
+
+        for (auto &elem : nextcourse) {
+            q.push(elem);
+        }
+    }
+
+    return count;
+}
 
 } /* namespace leetcode */

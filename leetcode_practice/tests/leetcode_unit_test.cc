@@ -1468,6 +1468,80 @@ TEST_F(SolutionsTest, isPairWithSumTest)
     EXPECT_EQ(expected_value, solutions.isPairWithSum(mat, sum));
 }
 
+TEST_F(SolutionsTest, canFinishTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    int numCourse = 2;
+    std::vector< std::vector<int > > prerequisities = {{1,0}};
+    bool expected_value = true;
+    EXPECT_EQ(expected_value, solutions.canFinish(numCourse, prerequisities));
+
+    numCourse = 2;
+    prerequisities = { {1, 0}, {0, 1} };
+    expected_value = false;
+    EXPECT_EQ(expected_value, solutions.canFinish(numCourse, prerequisities));
+
+    numCourse = 8;
+    prerequisities = { {6, 2}, {6, 1}, {6, 5}, {4, 0} };
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.canFinish(numCourse, prerequisities));
+
+}
+
+TEST_F(SolutionsTest, minimumSemestersTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    int courses = 3;
+    std::vector< std::vector<int> > relations = {{1, 3}, {2, 3}};
+    int expected_value = 2;
+    //Explanation: The figure above represents the given graph.
+    //In the first semester, you can take courses 1 and 2.
+    //In the second semester, you can take course 3.
+    EXPECT_EQ(expected_value, solutions.minimumSemesters(courses, relations));
+
+    courses = 3;
+    relations = {{1, 2}, {2, 3}, {3, 1}};
+    expected_value = -1;
+    EXPECT_EQ(expected_value, solutions.minimumSemesters(courses, relations));
+
+    courses = 6;
+    relations = { {6, 2}, {6, 1}, {6, 5}, {4, 1} };
+    expected_value = 2;
+    EXPECT_EQ(expected_value, solutions.minimumSemesters(courses, relations));
+
+}
+
+TEST_F(SolutionsTest, minNumberOfSemestersTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    int n = 4;
+    int k = 2;
+    std::vector< std::vector<int> > dependencies = {{2, 1}, {3, 1}, {1, 4}};
+    int expected_value = 3;
+    EXPECT_EQ(expected_value, solutions.minNumberOfSemesters(n, dependencies, k));
+
+    n = 11;
+    dependencies = {};
+    k = 2;
+    expected_value = 6;
+    EXPECT_EQ(expected_value, solutions.minNumberOfSemesters(n, dependencies, k));
+
+    // Corner case
+    n = 13;
+    dependencies = {{12,8},{2,4},{3,7},{6,8},{11,8},{9,4},{9,7},{12,4},{11,4},{6,4},{1,4},{10,7},{10,4},{1,7},{1,8},{2,7},{8,4},{10,8},{12,7},{5,4},{3,4},{11,7},{7,4},{13,4},{9,8},{13,8}};
+    k = 9;
+    expected_value = 3;
+//     EXPECT_EQ(expected_value, solutions.minNumberOfSemesters(n, dependencies, k));
+}
+
+
+
 
 
 
