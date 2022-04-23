@@ -309,6 +309,13 @@ public:
     // 1494. Parallel Courses II
     int minNumberOfSemesters(int n, std::vector< std::vector<int> > & relations, int k);
 
+    // 547. Number of Provinces
+    int findCircleNum( std::vector< std::vector<int> > & isConnected);
+
+    // 1568 Miniumum Number of Days to Disconnect Island
+    int minDays( std::vector< std::vector<int> > & grid );
+
+
 };
 
 

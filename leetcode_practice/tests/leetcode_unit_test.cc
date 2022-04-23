@@ -669,7 +669,6 @@ TEST_F(SolutionsTest, replaceWordsTest)
 
     std::string sentence = "the cattle was rattled by the battery";
     std::string expected_value = "the cat was rat by the bat";
-
     EXPECT_EQ(expected_value, solutions.replaceWords(dictionary, sentence));
 
     dictionary = {"a", "b", "c"};
@@ -677,8 +676,11 @@ TEST_F(SolutionsTest, replaceWordsTest)
     expected_value = "a a b c";
     EXPECT_EQ(expected_value, solutions.replaceWords(dictionary, sentence));
 
-//     dictionary = {"e","k","c","harqp","h","gsafc","vn","lqp","soy","mr","x","iitgm","sb","oo","spj","gwmly","iu","z","f","ha","vds","v","vpx","fir","t","xo","apifm","tlznm","kkv","nxyud","j","qp","omn","zoxp","mutu","i","nxth","dwuer","sadl","pv","w","mding","mubem","xsmwc","vl","farov","twfmq","ljhmr","q","bbzs","kd","kwc","a","buq","sm","yi","nypa","xwz","si","amqx","iy","eb","qvgt","twy","rf","dc","utt","mxjfu","hm","trz","lzh","lref","qbx","fmemr","gil","go","qggh","uud","trnhf","gels","dfdq","qzkx","qxw"};
-//      = {"ikkbp miszkays wqjferqoxjwvbieyk gvcfldkiavww vhokchxz dvypwyb bxahfzcfanteibiltins ueebf lqhflvwxksi dco kddxmckhvqifbuzkhstp wc ytzzlm gximjuhzfdjuamhsu gdkbmhpnvy ifvifheoxqlbosfww mengfdydekwttkhbzenk wjhmmyltmeufqvcpcxg hthcuovils ldipovluo aiprogn nusquzpmnogtjkklfhta klxvvlvyh nxzgnrveghc mpppfhzjkbucv cqcft uwmahhqradjtf iaaasabqqzmbcig zcpvpyypsmodtoiif qjuiqtfhzcpnmtk yzfragcextvx ivnvgkaqs iplazv jurtsyh gzixfeugj rnukjgtjpim hscyhgoru aledyrmzwhsz xbahcwfwm hzd ygelddphxnbh rvjxtlqfnlmwdoezh zawfkko iwhkcddxgpqtdrjrcv bbfj mhs nenrqfkbf spfpazr wrkjiwyf cw dtd cqibzmuuhukwylrnld dtaxhddidfwqs bgnnoxgyynol hg dijhrrpnwjlju muzzrrsypzgwvblf zbugltrnyzbg hktdviastoireyiqf qvufxgcixvhrjqtna ipfzhuvgo daee r nlipyfszvxlwqw yoq dewpgtcrzausqwhh qzsaobsghgm ichlpsjlsrwzhbyfhm ksenb bqprarpgnyemzwifqzz oai pnqottd nygesjtlpala qmxixtooxtbrzyorn gyvukjpc s mxhlkdaycskj uvwmerplaibeknltuvd ocnn frotscysdyclrc ckcttaceuuxzcghw pxbd oklwhcppuziixpvihihp"};
+    dictionary = {"e","k","c","harqp","h","gsafc","vn","lqp","soy","mr","x","iitgm","sb","oo","spj","gwmly","iu","z","f","ha","vds","v","vpx","fir","t","xo","apifm","tlznm","kkv","nxyud","j","qp","omn","zoxp","mutu","i","nxth","dwuer","sadl","pv","w","mding","mubem","xsmwc","vl","farov","twfmq","ljhmr","q","bbzs","kd","kwc","a","buq","sm","yi","nypa","xwz","si","amqx","iy","eb","qvgt","twy","rf","dc","utt","mxjfu","hm","trz","lzh","lref","qbx","fmemr","gil","go","qggh","uud","trnhf","gels","dfdq","qzkx","qxw"};
+
+    sentence = "ikkbp miszkays wqjferqoxjwvbieyk gvcfldkiavww vhokchxz dvypwyb bxahfzcfanteibiltins ueebf lqhflvwxksi dco kddxmckhvqifbuzkhstp wc ytzzlm gximjuhzfdjuamhsu gdkbmhpnvy ifvifheoxqlbosfww mengfdydekwttkhbzenk wjhmmyltmeufqvcpcxg hthcuovils ldipovluo aiprogn nusquzpmnogtjkklfhta klxvvlvyh nxzgnrveghc mpppfhzjkbucv cqcft uwmahhqradjtf iaaasabqqzmbcig zcpvpyypsmodtoiif qjuiqtfhzcpnmtk yzfragcextvx ivnvgkaqs iplazv jurtsyh gzixfeugj rnukjgtjpim hscyhgoru aledyrmzwhsz xbahcwfwm hzd ygelddphxnbh rvjxtlqfnlmwdoezh zawfkko iwhkcddxgpqtdrjrcv bbfj mhs nenrqfkbf spfpazr wrkjiwyf cw dtd cqibzmuuhukwylrnld dtaxhddidfwqs bgnnoxgyynol hg dijhrrpnwjlju muzzrrsypzgwvblf zbugltrnyzbg hktdviastoireyiqf qvufxgcixvhrjqtna ipfzhuvgo daee r nlipyfszvxlwqw yoq dewpgtcrzausqwhh qzsaobsghgm ichlpsjlsrwzhbyfhm ksenb bqprarpgnyemzwifqzz oai pnqottd nygesjtlpala qmxixtooxtbrzyorn gyvukjpc s mxhlkdaycskj uvwmerplaibeknltuvd ocnn frotscysdyclrc ckcttaceuuxzcghw pxbd oklwhcppuziixpvihihp";
+
+    expected_value = "i miszkays w gvcfldkiavww v dvypwyb bxahfzcfanteibiltins ueebf lqhflvwxksi dc k w ytzzlm gximjuhzfdjuamhsu gdkbmhpnvy i mengfdydekwttkhbzenk w h ldipovluo a nusquzpmnogtjkklfhta k nxzgnrveghc mpppfhzjkbucv c uwmahhqradjtf i z q yzfragcextvx i i j gzixfeugj rnukjgtjpim h a x h ygelddphxnbh rvjxtlqfnlmwdoezh z i bbfj mhs nenrqfkbf spfpazr w c dtd c dtaxhddidfwqs bgnnoxgyynol h dijhrrpnwjlju muzzrrsypzgwvblf z h q i daee r nlipyfszvxlwqw yoq dewpgtcrzausqwhh q i k bqprarpgnyemzwifqzz oai pnqottd nygesjtlpala q gyvukjpc s mxhlkdaycskj uvwmerplaibeknltuvd ocnn f c pxbd oklwhcppuziixpvihihp";
     EXPECT_EQ(expected_value, solutions.replaceWords(dictionary, sentence));
 }
 
@@ -1389,6 +1391,7 @@ TEST_F(SolutionsTest, isSolvableTest)
     expected_value = true;
 //     EXPECT_EQ(expected_value, solutions.isSolvable(words, result));
 
+    // Corner case
     words = {"CBA","CBA","CBA","CBA","CBA"};
     result = "EDD";
     expected_value = false;
@@ -1534,15 +1537,52 @@ TEST_F(SolutionsTest, minNumberOfSemestersTest)
 
     // Corner case
     n = 13;
+    // course prevCoursei has to be taken before course nextCoursei.
     dependencies = {{12,8},{2,4},{3,7},{6,8},{11,8},{9,4},{9,7},{12,4},{11,4},{6,4},{1,4},{10,7},{10,4},{1,7},{1,8},{2,7},{8,4},{10,8},{12,7},{5,4},{3,4},{11,7},{7,4},{13,4},{9,8},{13,8}};
     k = 9;
     expected_value = 3;
-//     EXPECT_EQ(expected_value, solutions.minNumberOfSemesters(n, dependencies, k));
+    EXPECT_EQ(expected_value, solutions.minNumberOfSemesters(n, dependencies, k));
+
+    n = 5;
+    dependencies = {{2,1},{3,1},{4,1},{1,5}};
+    k = 2;
+    expected_value = 4;
+    EXPECT_EQ(expected_value, solutions.minNumberOfSemesters(n, dependencies, k));
+
+    n = 14;
+    dependencies = {{11, 7}};
+    k = 2;
+    expected_value = 7;
+    EXPECT_EQ(expected_value, solutions.minNumberOfSemesters(n, dependencies, k));
 }
 
+TEST_F(SolutionsTest, findCircleNumTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
 
+    std::vector< std::vector<int> > isConnected = {{1,1,0}, {1, 1, 0}, {0, 0, 1}};
+    int expected_value = 2;
+    EXPECT_EQ(expected_value, solutions.findCircleNum(isConnected));
 
+    isConnected =  {{1,0,0},{0,1,0},{0,0,1}};
+    expected_value = 3;
+    EXPECT_EQ(expected_value, solutions.findCircleNum(isConnected));
+}
 
+TEST_F(SolutionsTest, minDaysTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector< std::vector<int> > grid = {{0,1,1,0},{0,1,1,0},{0,0,0,0}};
+    int expected_value = 2;
+//     EXPECT_EQ(expected_value, solutions.minDays(grid));
+
+    grid = {{1, 1}};
+    expected_value = 2;
+//     EXPECT_EQ(expected_value, solutions.minDays(grid));
+}
 
 
 } /* namespace googletest */

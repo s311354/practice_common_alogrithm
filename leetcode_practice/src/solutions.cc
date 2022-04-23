@@ -88,6 +88,10 @@ int Solutions::minDeletions(std::string s)
  *
  *  Given a string, what is the minimum number of adjacent swaps required to convert a string into a palindrome. If not possibl, return -1.
  *
+ * Runtime: 200 ms, faster than 10.57% of C++ online submissions for Minimum Swaps to Group All 1's Together II.
+ *
+ * Memory Usage: 80.3 MB, less than 92.20% of C++ online submissions for Minimum Swaps to Group All 1's Together II.
+ *
  * \return the minimum number of adjust required
  */
 int Solutions::minSwaps(std::string s)
@@ -1657,9 +1661,10 @@ std::vector< std::vector<int> > Solutions::fourSum( std::vector<int>& nums, int 
  *
  * Two binary trees are considered the same if they are structurally identical, and the nodes have the same value
  *
- * Runtime: 8 ms, faster than 10.20% of C++ online submissions for Same Tree.
  *
- * Memory Usage: 9.8 MB, less than 94.83% of C++ online submissions for Same Tree.
+ * Runtime: 0 ms, faster than 100.00% of Java online submissions for Same Tree.
+ *
+ * Memory Usage: 39.5 MB, less than 93.45% of Java online submissions for Same Tree.
  *
  * \return if they are structurally identical
  */
@@ -1682,7 +1687,10 @@ bool Solutions::isSameTree(TreeNode* p, TreeNode * q)
  *
  *  Given a dictionary consisting of many roots and a sentence consisting of words separated by spaces, replace all the successors in the sentence with the root forming it. If a successor can be replaced by more than one root, replace it with the root that has the shortest length.
  *
+ * Runtime: 106 ms, faster than 45.33% of C++ online submissions for Replace Words.
  *
+ *
+ * Memory Usage: 20.4 MB, less than 99.19% of C++ online submissions for Replace Words.
  *
  * \return the sentence after the replacement
  */
@@ -1696,18 +1704,27 @@ std::string  Solutions::replaceWords( std::vector< std::string> & dictionary, st
     bool skip = false;
     std::string result = "", curr = "";
 
+    // iterate to read each of characters 
     for (int i = 0; i < sentence.length(); i++) {
-        if( sentence.at(i) == ' ' or i == sentence.length() -1 ) {
+        if( sentence[i] == ' ' || i == sentence.length() - 1 ) {
+            // replace Words
             result += curr;
-
             curr = "";
-            skip = false;
+
             if ( i != sentence.length() - 1) result+= " ";
+            else {
+                if (not skip) {
+                    result += sentence.back();
+                }
+            }
+
+            skip = false;
         } else if (not skip) {
-            curr += sentence.at(i);
+            curr += sentence[i];
             if(dict.find(curr) != dict.end()) skip = true;
         }
     }
+
     return result;
 }
 
@@ -2105,11 +2122,9 @@ bool Solutions::almostSorted( std::vector<int> & nums)
  *
  *  You are given a string moves that represents the move sequence of the robot where moves[i] represents its ith move. Valid moves are 'R' (right), 'L' (left), 'U' (up), and 'D' (down).
  *
+ * Runtime: 10 ms, faster than 79.99% of C++ online submissions for Robot Return to Origin.
  *
- * Runtime: 23 ms, faster than 7.16% of C++ online submissions for Robot Return to Origin.
- *
- *
- * Memory Usage: 7.9 MB, less than 94.85% of C++ online submissions for Robot Return to Origin.
+ * Memory Usage: 8 MB, less than 76.02% of C++ online submissions for Robot Return to Origin.
  *
  *
  * \return Return parameter description
@@ -2875,6 +2890,12 @@ int Solutions::palindromePairsSum( std::vector< std::string > & words) {
  *  - If Alice replace one '?' to digit x, Bob can always replace one to '9 - x', the n each pair of (Alice, Bob) (x, 9 - x) turns will increase the sum of side by 9. In other words, "??" will increase the sum of side S by 9.
  *  - If the sum od side is equal to the sum of the opposite side, then Bob win. Otherwise, Alice wins.
  *
+ *
+ * Runtime: 38 ms, faster than 17.01% of C++ online submissions for Sum Game.
+ *
+ *
+ * Memory Usage: 11.2 MB, less than 84.35% of C++ online submissions for Sum Game.
+ *
  */
 bool Solutions::sumGame( std::string num) {
     const int N = num.length();
@@ -2928,6 +2949,10 @@ bool Solutions::sumGame( std::string num) {
  *
  *  Alice and Bob take turns, with Alice starting first. Each turn, a player takes the entire pile of stones either from the beginning or from the end of the row. This continues until there are no more piles left, at which point the person with the most stones wins.
  *
+ * Runtime: 37 ms, faster than 20.57% of C++ online submissions for Stone Game.
+ *
+ * Memory Usage: 16.5 MB, less than 23.80% of C++ online submissions for Stone Game.
+ *
  * \return Assuming Alice and Bob play optimally, return true if Alice wins the game, or false if Bob wins.
  */
 int maxStone(int i, int j, std::vector<int>& piles, std::vector< std::vector<int> > & dp) {
@@ -2968,12 +2993,17 @@ bool Solutions::stoneGame( std::vector<int> piles) {
  *
  *  Given an integer n, return all distinct solutions to the n-queens puzzle. You may return the answer in any order.
  *
+ * Runtime: 9 ms, faster than 58.05% of C++ online submissions for N-Queens.
+ *
+ *
+ * Memory Usage: 7 MB, less than 95.04% of C++ online submissions for N-Queens.
+ *
  * \return Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space, respectively.
  */
 bool is_safe( std::vector< std::string> & board, int row, int col)
 {
     // check column
-    for (int i = row; i >= 0; --i) {
+    for (int i = 0; i < row; ++i) {
         if(board[i][col] == 'Q') return false;
     }
 
@@ -3035,32 +3065,34 @@ std::vector< std::vector< std::string> > Solutions::solveNQueens(int n) {
  * \return true if the equation is solvable, otherwise return false.
  */
 
-bool backtracking_verbal( std::vector< std::string> & words, std::string & result, std::vector<int> & chtonum, std::vector<int> & numtoch, std::vector<bool> & nonZeroChars, int index, int pos, int sum)
+bool backtracking_verbal( std::vector< std::string> & words, std::string & result, std::vector<int> & chtonum, std::vector<int> & numtoch, std::vector<bool> & nonZeroChars, int wordindex, int pos, int sum)
 {
     // reach the end of result
     if (pos == result.size()) return sum == 0;
 
-    // traverse the position and keeping adding words
-    if (index < words.size()) {
+    // traverse the position and keep adding words
+    if (wordindex < words.size()) {
         // there is no applicable positions for words[index], skip and add next word
-        if (pos  >= words[index].size())
-            return backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, index + 1, pos, sum);
+        if (pos  >= words[wordindex].size())
+            return backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, wordindex + 1, pos, sum);
 
-        char ch = words[index][pos];
+        char ch = words[wordindex][pos];
         int chindex = ch - 'A';
 
         // Already selected
         if (chtonum[chindex] != -1) {
-            return backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, index + 1, pos, sum + chtonum[chindex]);
+            return backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, wordindex + 1, pos, sum + chtonum[chindex]);
         }
 
         // Try to decode each character
         for (int i = 0; i < numtoch.size(); ++i) {
+
             if (numtoch[i] != 0) continue; // number is used
             if (i == 0 && nonZeroChars[chindex]) continue; // can't use position 0 for non zero chars
+
             numtoch[i] = chindex;
             chtonum[chindex] = i;
-            bool found = backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, index + 1, pos, sum + chtonum[chindex]);
+            bool found = backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, wordindex + 1, pos, sum + chtonum[chindex]);
             // backtrack
             numtoch[i] = 0;
             chtonum[chindex] = -1;
@@ -3069,15 +3101,21 @@ bool backtracking_verbal( std::vector< std::string> & words, std::string & resul
         return false;
     } else { // verify whether or not result[pos] and sum % 10 are mapping each other
         int reindex = result[pos] - 'A';
+
+
         if (chtonum[reindex] == -1 && numtoch[sum%10] == 0) {
             if (sum % 10 == 0 && nonZeroChars[reindex]) return false;
 
             chtonum[reindex] = sum % 10;
             numtoch[sum%10] = result[pos];
+
             bool found = backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, 0, pos + 1, sum / 10);
+
             if (found) return found;
+
             chtonum[reindex] = -1;
             numtoch[sum%10] = 0;
+
             return false;
         } else if (chtonum[reindex] == sum % 10) {
             return backtracking_verbal(words, result, chtonum, numtoch, nonZeroChars, 0, pos + 1, sum / 10);
@@ -3109,6 +3147,11 @@ bool Solutions::isSolvable( std::vector< std::string> & words, std::string resul
  *  You are given a network of n nodes, labeled from 1 to n. You are also given times, a list of travel times as directed edges times[i] = (ui, vi, wi), where ui is the source node, vi is the target node, and wi is the time it takes for a signal to travel from source to target.
  *  
  *  We will send a signal from a given node k. Return the time it takes for all the n nodes to receive the signal. If it is impossible for all the n nodes to receive the signal.
+ *
+ *  Runtime: 174 ms, faster than 47.30% of C++ online submissions for Network Delay Time.
+ *
+ *
+ *  Memory Usage: 39.8 MB, less than 81.48% of C++ online submissions for Network Delay Time.
  *
  * \return the time it takes for all the n nodes to receive the signal. If it is impossible for all the n nodes to receive the signal, return -1
  */
@@ -3155,14 +3198,18 @@ int Solutions::networkDelayTime( std::vector< std::vector< int > > & times, int 
     // Dijkstra
     std::vector< std::pair<int, int> > adjacent[n+1];
 
+    // create weight graph
     for (int i = 0; i < times.size(); ++i) {
         adjacent[times[i][0]].push_back( {times[i][1], times[i][2]} );
     }
 
+    // initially start with infinite distances
     std::vector<int> distance(n+1, INT_MAX);
 
+    // Sorting
     std::priority_queue< std::pair<int, int>, std::vector< std::pair<int, int> >, std::greater< std::pair<int, int> > > pq;
 
+    // Parent node and set it to zero for our initial node and to infinitely for all other nodes
     pq.push({0, k});
     distance[k] = 0;
 
@@ -3181,8 +3228,6 @@ int Solutions::networkDelayTime( std::vector< std::vector< int > > & times, int 
     int res = 0;
     for (int i = 1; i <= n; ++i) {
         if ( distance[i] == INT_MAX ) return -1;
-//         std::cout << i << " " << distance[i] << std::endl;
-//         res = std::max(res, distance[i]);
             res = res > distance[i] ? res : distance[i];
     }
 
@@ -3384,6 +3429,8 @@ bool Solutions::canFinish(int numCourse, std::vector< std::vector< int> > & prer
  *
  * \return Return the minimum number of semesters needed to study all courses.  If there is no way to study all the courses, return -1.
  */
+
+
 int Solutions::minimumSemesters(int numCourse, std::vector< std::vector<int> > & relations) {
 
     std::vector< std::vector<int> > adjacent(numCourse);
@@ -3432,54 +3479,233 @@ int Solutions::minimumSemesters(int numCourse, std::vector< std::vector<int> > &
  *
  *  In one semester, you can take at most k courses as long as you have taken all the prerequisites in the previous semester for the courses you are taking.
  *
+ *
+ *  Since we cannot decide which courses to schedule based solely on course property we need to try all combinations. It suggests the use of backtracking. We are going to try all of k-length combinations of the available courses.
+ * We can also apply an optimization to avoid unnesessary backtracking cycles in some cases. Consider the first semester of the following example (k=2):
+ * backtracking tree.
+ *
  * \return Return the minimum number of semesters needed to take all courses. The testcases will be generated such that it is possible to take every course.
  */
-int Solutions::minNumberOfSemesters(int n, std::vector< std::vector<int> > & relations, int k) {
 
-    if (relations.size() == 0) return n % k == 0 ? n/ k: n/ k + 1;
-
-    std::vector< std::vector<int> > adjacent(n);
-    // initial all vertices with indegree 0
-    std::vector<int> indegree(n, 0);
-
-    // Creating graph and updates the indegree of the local vertex 
-    for (auto &course : relations) {
-        adjacent[course[0] - 1].push_back(course[1] - 1);
-        indegree[course[1] - 1] ++; // topological sorting
-    }
-
+/*
+void numSemester_bfs( std::vector< std::vector<int> > adjacent, std::vector<int> indegree, int n, int k, int & semester) {
     std::queue<int> q;
-    int semester = 0, count = 0;
-
+    int course = 0;
+    // parent node initial pool
     for (int i = 0; i < n; ++i) {
         if (indegree[i] == 0) q.push(i);
     }
-
     // BFD
     while (!q.empty()) {
-        std::vector<int> nextcourse;
-
-        while (semester < k && !q.empty()) {
+        std::unordered_set<int> nextcourse;
+        // only take at most k courses (not parallel)
+        while (course < k && !q.empty()) {
             int node = q.front();
             q.pop();
-
-            for (auto &next_node : adjacent[node]) {
+            int mindegree = INT_MAX;
+            int minnode = 0;
+            for (int i = 0; i < adjacent[node].size(); ++ i) {
+                int next_node = adjacent[node][i];
                 indegree[next_node] --;
-                if (indegree[next_node] == 0) nextcourse.push_back(next_node);
+                if (indegree[next_node] == 0) nextcourse.insert(next_node);
             }
-            semester ++;
-
+            course ++;
         }
-        // End taking courses for a semester
-        semester = 0;
-        count ++;
-
+        course = 0;
+        semester ++;
         for (auto &elem : nextcourse) {
             q.push(elem);
+        }
+    }
+}
+*/
+
+int find_min_semester( std::vector< std::vector<int> > relations, std::vector<int> & bitmask, int mask, int k, int n) {
+
+    // finish when all courses are taken
+    if (mask == ((1 << n) - 1)) return 0;
+
+    // Memorization of taken courses
+    if (bitmask[mask] != -1) return  bitmask[mask];
+
+    // Initialize all vertices with indegree 0
+    std::vector<int> indegree(n, 0);
+
+    // Update the indegree
+    for (int i = 0; i < n; ++i) {
+        // skip the courses have been taken
+        if (mask & (1 << i)) continue;
+        for (auto &elem : relations[i]) {
+            indegree[elem] ++;
+        }
+    }
+
+    // For a mask of all courses with 0-indegree
+    int temp = 0;
+    for (int i = 0; i < n; ++i) {
+        // iterate through all the courses with zero indegree and have't been taken
+        if (indegree[i] == 0 && !(mask & (1<<i))) temp = temp | (1<<i);
+    }
+
+    int courses = temp;
+    // count of courses with 0-indegree
+//     std::cout << mask << " " << courses << std::endl;
+    int count = __builtin_popcount(courses);
+    int semester = INT_MAX;
+
+    if (count > k) {
+        // (Overlapping sub-problem) iterate through all submasks (sub-problem) of temp
+        while (courses) {
+            courses = (courses - 1) & temp;
+            count = __builtin_popcount(courses);
+
+            if (count != k) continue;
+
+            semester = std::min(semester, 1 + find_min_semester(relations, bitmask, mask|courses, k, n));
+        }
+    } else {
+        semester = std::min(semester, 1 + find_min_semester(relations, bitmask, mask|courses, k, n));
+    }
+
+    return bitmask[mask] = semester;
+}
+
+int Solutions::minNumberOfSemesters(int n, std::vector< std::vector<int> > & relations, int k) {
+    // No dependencies
+    if (relations.size() == 0) return n % k == 0 ? n / k: n/ k + 1;
+
+    std::vector< std::vector<int> > adjacent(n);
+    std::vector<int> bitmask;
+
+    // initial bitmask that all of courses haven't been taken
+    bitmask.assign(1<<n, -1);
+
+    // Creating graph and updates the indegree of the local vertex 
+    for (auto &course : relations) {
+        adjacent[course[0] - 1].push_back(course[1] - 1); // graph
+    }
+
+    return find_min_semester(adjacent, bitmask, 0, k, n);
+}
+
+
+/*! \brief Number of Provinces
+ *
+ *  There are n cities. Some of them are connected, while some are not. If city a is connected directly with city b, and city b is connected directly with city c, then city a is connected indirectly with city c.
+ *
+ *  A province is a group of directly or indirectly connected cities and no other cities outside of the group.
+ *
+ *  You are given an n x n matrix isConnected where isConnected[i][j] = 1 if the ith city and the jth city are directly connected, and isConnected[i][j] = 0 otherwise.
+ *
+ * \return the total number of provinces
+ */
+void lineartime_dfs(std::vector< std::vector<int> > & isConnected, int index, std::vector<bool> & visted) {
+
+    visted[index] = true;
+
+    // traverse neighbor city
+    for (int vertex = 0; vertex < isConnected[index].size(); ++vertex) {
+        if (!visted[vertex] && isConnected[index][vertex] == 1) {
+            lineartime_dfs(isConnected, vertex, visted);
+        }
+    }
+}
+
+int Solutions::findCircleNum(std::vector< std::vector<int> > & isConnected ){
+    int citys = isConnected.size();
+    std::vector<bool> visted(citys, false);
+    int count = 0;
+
+    for (int i = 0; i < citys; ++i) {
+        if (visted[i] == false) {
+            count += 1;
+            lineartime_dfs(isConnected, i, visted);
         }
     }
 
     return count;
 }
+
+/*! \brief Brief function description here
+ *
+ *  Detailed description
+ *
+ * \return Return parameter description
+ */
+void connected_bfs(std::vector< std::vector<int> > & grid, std::vector< std::vector<bool> > & visited, int row, int col) {
+
+    visited[row][col] = true;
+
+    // 2-D BFS
+    std::queue< std::pair<int, int> > q;
+
+    // parent node
+    q.push( std::make_pair(row, col));
+    int dir[] = {0, 1, 0, -1, 0}; // UP/DOWN/LEFT/RIGHT
+
+    // BFS traverse
+    while (!q.empty()) {
+        auto p = q.front();
+        q.pop();
+        int x = p.first, y = p.second;
+
+        for (int k = 0; k < 4; ++k) {
+
+            int nx = x + dir[k];
+            int ny = y + dir[k + 1];
+
+            // only traverse on the land
+            if (nx >= 0 && nx < row && ny >= 0 && ny < col && grid[nx][ny] && !visited[nx][ny]) {
+                visited[nx][ny] = true;
+                q.push(std::make_pair(nx, ny));
+            }
+        }
+    }
+}
+
+int connected_components( std::vector< std::vector<int> > & grid) {
+    int row = grid.size();
+    int col = grid[0].size();
+    if (row == 0 || col == 0) return 0;
+
+    std::vector< std::vector<bool> > visited(row, std::vector<bool>(col, false));
+
+    int count = 0;
+    for (int x = 0; x < row; ++x) {
+        for (int y = 0; y < col; ++y) {
+            if (grid[x][y] == 1 && visited[x][y] == false) {
+                count ++;
+                connected_bfs(grid, visited, x, y);
+            }
+        }
+    }
+    return count;
+}
+
+int Solutions::minDays( std::vector< std::vector<int> > & grid) {
+    int connect = connected_components(grid);
+
+    if (connect > 1) return 0;
+
+    int row = grid.size();
+    int col = grid[0].size();
+
+    if (row == 0 && col == 0) return 0;
+
+    for (int x = 0; x < row; ++x) {
+        for (int y = 0; y < col; ++y) {
+            if (grid[x][y] == 1) {
+                grid[x][y] = 0;
+                connect = connected_components(grid);
+                if (connect > 1) return 1;
+                grid[x][y] = 1;
+            }
+        }
+    }
+
+    return 2;
+}
+
+
 
 } /* namespace leetcode */
