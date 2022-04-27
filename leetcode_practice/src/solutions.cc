@@ -3626,85 +3626,138 @@ int Solutions::findCircleNum(std::vector< std::vector<int> > & isConnected ){
     return count;
 }
 
-/*! \brief Brief function description here
+/*! \brief Minimum Number of Days to Disconnect Island
  *
- *  Detailed description
+ *  You are given an m x n binary grid grid where 1 represents land and 0 represents water. An island is a maximal 4-directionally (horizontal or vertical) connected group of 1's.
  *
- * \return Return parameter description
+ *  The grid is said to be connected if we have exactly one island, otherwise is said disconnected.
+ * In one day, we are allowed to change any single land cell (1) into a water cell (0).
+ *
+ * \return  the minimum number of days to disconnect the grid.
  */
-void connected_bfs(std::vector< std::vector<int> > & grid, std::vector< std::vector<bool> > & visited, int row, int col) {
+// 2-D BFS traversal
+void connected_bfs(std::vector< std::vector<int> > & grid, std::vector< std::vector<int> > & visited, int i, int j) {
+    int dx[4] = {-1, 0, 1, 0};
+    int dy[4] = {0, 1, 0, -1};
 
-    visited[row][col] = true;
-
-    // 2-D BFS
     std::queue< std::pair<int, int> > q;
+    q.push({i, j});
 
-    // parent node
-    q.push( std::make_pair(row, col));
-    int dir[] = {0, 1, 0, -1, 0}; // UP/DOWN/LEFT/RIGHT
+    visited[i][j] = 1;
 
-    // BFS traverse
     while (!q.empty()) {
         auto p = q.front();
         q.pop();
         int x = p.first, y = p.second;
 
-        for (int k = 0; k < 4; ++k) {
+        for (int k = 0; k < 4; k++) {
+            int xx = x + dx[k], yy = y + dy[k];
 
-            int nx = x + dir[k];
-            int ny = y + dir[k + 1];
-
-            // only traverse on the land
-            if (nx >= 0 && nx < row && ny >= 0 && ny < col && grid[nx][ny] && !visited[nx][ny]) {
-                visited[nx][ny] = true;
-                q.push(std::make_pair(nx, ny));
+            // only go through land cell (1)
+            if ( xx >=0 && xx < grid.size() && yy >= 0 && yy < grid[0].size() && !visited[xx][yy] && grid[xx][yy] == 1) {
+                visited[xx][yy] = 1;
+                q.push({xx, yy});
             }
         }
     }
+    return;
 }
 
-int connected_components( std::vector< std::vector<int> > & grid) {
-    int row = grid.size();
-    int col = grid[0].size();
-    if (row == 0 || col == 0) return 0;
-
-    std::vector< std::vector<bool> > visited(row, std::vector<bool>(col, false));
-
+int connectedComponents_helper( std::vector< std::vector<int> > & grid) {
     int count = 0;
-    for (int x = 0; x < row; ++x) {
-        for (int y = 0; y < col; ++y) {
-            if (grid[x][y] == 1 && visited[x][y] == false) {
+    int row = grid.size(), col = grid[0].size();
+
+    std::vector< std::vector<int> > visited(row, std::vector<int> (col, 0));
+
+    if (row == 0) return 0;
+
+    // count connected land
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            if (grid[i][j] == 1 && !visited[i][j]) {
                 count ++;
-                connected_bfs(grid, visited, x, y);
+                connected_bfs(grid, visited, i, j);
             }
         }
     }
+
     return count;
 }
 
 int Solutions::minDays( std::vector< std::vector<int> > & grid) {
-    int connect = connected_components(grid);
 
-    if (connect > 1) return 0;
+    int connectLand = connectedComponents_helper(grid);
+
+    std::cout << connectLand << std::endl;
+    if (connectLand != 1) return 0;
 
     int row = grid.size();
     int col = grid[0].size();
 
-    if (row == 0 && col == 0) return 0;
-
-    for (int x = 0; x < row; ++x) {
-        for (int y = 0; y < col; ++y) {
+    // number of days to disconnect the grid
+    for (int x = 0; x < row; x++) {
+        for (int y = 0; y < col; y++) {
             if (grid[x][y] == 1) {
                 grid[x][y] = 0;
-                connect = connected_components(grid);
-                if (connect > 1) return 1;
-                grid[x][y] = 1;
+                connectLand = connectedComponents_helper(grid);
+                if (connectLand != 1) return 1;
+                grid[x][y] = 1; // backtracking
             }
         }
     }
 
-    return 2;
+    return 2; // An island is a maximal 4-directionally (horizontal or vertical) connected group of 1's.
 }
+
+
+/*! \brief Best Time to Buy and Sell Stock II
+ *
+ *  You are given an integer array prices where prices[i] is the price of a given stock on the ith day.
+ *
+ *  On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time. However, you can buy it then immediately sell it on the same day.
+ *
+ * \return the maximum profit you can achieve.
+ */
+int Solutions::maxProfit( std::vector<int> & prices) {
+    int curHold = INT_MIN, curProfit = 0;
+
+    for (const int stockprice: prices) {
+        int prevHold = curHold, preProfit = curProfit;
+
+        // either keep holding stock in hand, or buy in new stock today at stock price
+        curHold = std::max(prevHold, preProfit - stockprice);
+
+        // either keep having no stock in hand, or sell out the stock today at stock price
+//         std::cout << preProfit << " " << prevHold  << std::endl;
+        curProfit = std::max(preProfit, prevHold + stockprice);
+    }
+
+    // Max profit must come from notHold
+    return curProfit;
+}
+
+
+/*! \brief Min Cost Climbing Stairs
+ *
+ *  You are given an integer array cost where cost[i] is the cost of ith step on a staircase. Once you pay the cost, you can either climb one or two steps.
+ *
+ *  You can either start from the step with index 0, or the step with index 1.
+ *
+ * \return the minimum cost to reach the top of the floor.
+ */
+int Solutions::minCostClimbingStairs( std::vector<int> & cost) {
+    int n = cost.size();
+    std::vector<int> dp = cost;
+    for (int i = 2; i < n; i++) {
+        dp[i] += std::min(dp[i-2], dp[i-1]);
+    }
+
+    return std::min(dp[n-2], dp[n-1]);
+}
+
+
+
+
 
 
 

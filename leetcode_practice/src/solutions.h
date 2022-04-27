@@ -315,6 +315,11 @@ public:
     // 1568 Miniumum Number of Days to Disconnect Island
     int minDays( std::vector< std::vector<int> > & grid );
 
+    // 122 Best Time to Buy and Sell Stock II
+    int maxProfit( std::vector<int> & prices);
+
+    // 746 Min Cost Climbing Stairs
+    int minCostClimbingStairs( std::vector<int> & cost);
 
 };
 

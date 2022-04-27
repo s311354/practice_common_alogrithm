@@ -1577,12 +1577,54 @@ TEST_F(SolutionsTest, minDaysTest)
 
     std::vector< std::vector<int> > grid = {{0,1,1,0},{0,1,1,0},{0,0,0,0}};
     int expected_value = 2;
-//     EXPECT_EQ(expected_value, solutions.minDays(grid));
+    EXPECT_EQ(expected_value, solutions.minDays(grid));
 
     grid = {{1, 1}};
     expected_value = 2;
-//     EXPECT_EQ(expected_value, solutions.minDays(grid));
+    EXPECT_EQ(expected_value, solutions.minDays(grid));
+
+
+    grid = {{1,1,0,0}, {0,0,0,0}, {0,0,1,1}};
+    expected_value = 0;
+    EXPECT_EQ(expected_value, solutions.minDays(grid));
+
+
 }
+
+TEST_F(SolutionsTest, maxProfitTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector<int> prices = {1, 2, 3, 4, 5};
+    int expected_value = 4;
+    EXPECT_EQ(expected_value, solutions.maxProfit(prices));
+
+    prices = {7, 1, 5, 3, 6, 4};
+    expected_value = 7;
+    EXPECT_EQ(expected_value, solutions.maxProfit(prices));
+
+    prices = {7, 6, 4, 3, 1};
+    expected_value = 0;
+    EXPECT_EQ(expected_value, solutions.maxProfit(prices));
+}
+
+
+TEST_F(SolutionsTest, minCostClimbingStairsTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::vector<int> cost = {10, 15, 20};
+    int expected_value = 15;
+    EXPECT_EQ(expected_value, solutions.minCostClimbingStairs(cost));
+
+    cost = {1,100,1,1,1,100,1,1,100,1};
+    expected_value = 6;
+    EXPECT_EQ(expected_value, solutions.minCostClimbingStairs(cost));
+
+}
+
 
 
 } /* namespace googletest */
