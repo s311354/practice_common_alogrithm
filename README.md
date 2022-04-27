@@ -60,6 +60,21 @@ int main()
 
 Note that some people dislike the term pass-by-pointer. They feel it is misleading and inexact, since the  actual argument to the function is a pointer value (an address) which is passed by value into function. Hence, they say this is really pass-by-value.
 
+
+#### The Differences between Prefix and Postfix Operators ####
+
+Prefix:
+```
+int a = 0;
+int b = ++a; // a = 1, b = 1
+```
+
+Postfix:
+```
+int a = 0;
+int b = a++; // a = 1, b = 0
+```
+
 #### Storage Class Specifier ####
 
 The storage class specifiers are a part of the decl-specifier-seq of a name's declaration syntax. Together with the scope of the name, they control two independent properties of the name: its storage and its linkage.
@@ -116,6 +131,10 @@ class MyClass
 
 Extern variables is simple another name for global variables.
 
+#### Pure Virtual Functions ####
+
+A pure virtual in C++ is a virtual function for which we can have implementation, But we must override that function in the derived class, otherwise the derived class will also become abstract class.
+
 ## Reference ## 
 [1] [__builtin_popcount](https://tmt514.gitbooks.io/the-code-tactics-book/content/2.5/popcount.html)
 
@@ -134,5 +153,8 @@ Development environment: neovim, doxygen, try to cultivate the "brain debug" abi
 
 [8] [Differences between extern and static variables.](https://www.cplusplus.com/forum/unices/67240/#msg358922)
 
+[9] [Pure Virtual Functions](https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/)
+
+[10] [stackoverflow: What is the difference between prefix and postfix operators?](https://stackoverflow.com/questions/7031326/what-is-the-difference-between-prefix-and-postfix-operators)
 
 [staticmember]:https://en.cppreference.com/w/cpp/language/static "https://en.cppreference.com/w/cpp/language/static"
