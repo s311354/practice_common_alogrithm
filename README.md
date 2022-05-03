@@ -61,6 +61,69 @@ int main()
 Note that some people dislike the term pass-by-pointer. They feel it is misleading and inexact, since the  actual argument to the function is a pointer value (an address) which is passed by value into function. Hence, they say this is really pass-by-value.
 
 
+#### Logical Operators ####
+
+Builtin operators && and || perform short-circut evalution (do not evaluate the second operand if the result is known after evaluating the first), but overloaded operators behave like regular function calls and always evalute both operands.
+
+Example:
+```
+#include <iostream>
+#include <string>
+int main()
+{
+    int n = 2;
+    int* p = &n;
+    // pointers are convertible to bool
+    if(    p && *p == 2   // "*p" is safe to use after "p &&"
+       || !p &&  n != 2 ) // || has lower precedence than &&
+        std::cout << "true\n";
+}
+```
+
+
+#### Override Specifier ####
+
+In a member function declaration of definition, override specifier ensures that the function is virtual and is overriding a virtual function from a base class.
+
++ Specifier that a virtual function overrides another virtual function. 
++ The identifier override, if used, appears immediatedly after the declarator in the syntax of a member function declaration or a member function definition inside a class definition.
+
+#### Operator Overloading ####
+
+Overloaded operators are functions with special function names:
+
+|  Special function name      |           |
+| ------------- |-------------  |
+|    Overloaded operator    |  operator op  |
+|    User-defined conversion function    |  operator type  |
+|    Allocation function    |  operator new / operator new []  |
+|    Deallocation function    |  operator delete / operator delete []  |
+...
+
+###### Function call operator ######
+
+When a user-defined class overloaded the function call operator, operator(), it becomes a FunctionObject type. An object of such a type can be used in a function call expression:
+```
+// An object of this type represents a linear function of one variable a*x + b.
+struct Linear {
+    double a, b;
+ 
+    double operator()(double x) const {
+        return a*x + b;
+    }
+};
+int main() {
+    Linear f{2, 1}; // Represents function 2x + 1.
+    Linear g{-1, 0}; // Represents function -x.
+    // f and g are objects that can be used like a function.
+ 
+    double f_0 = f(0);
+    double f_1 = f(1);
+ 
+    double g_0 = g(0);
+}
+```
+
 #### The Differences between Prefix and Postfix Operators ####
 
 Prefix:
@@ -143,7 +206,7 @@ A pure virtual in C++ is a virtual function for which we can have implementation
 [3] [使用 Git Bisect 快速找到第一個有問題的 Commit](https://www.gss.com.tw/blog/使用-git-bisect-快速找到第一個有問題的-commit)
 Development environment: neovim, doxygen, try to cultivate the "brain debug" ability
 
-[4] cppreference [static members](https://en.cppreference.com/w/cpp/language/static). [Storage class specifiers](https://en.cppreference.com/w/cpp/language/storage_duration)
+[4] cppreference [static members](https://en.cppreference.com/w/cpp/language/static). [Storage class specifiers](https://en.cppreference.com/w/cpp/language/storage_duration), [Logical operators](https://en.cppreference.com/w/cpp/language/operator_logical), [Operator Overloading](https://en.cppreference.com/w/cpp/language/operators), [Override Specifier](https://en.cppreference.com/w/cpp/language/override)
 
 [5] [StackExchange: What is a helper? Is it a design pattern? Is it an algorithm?](https://softwareengineering.stackexchange.com/questions/247267/what-is-a-helper-is-it-a-design-pattern-is-it-an-algorithm)
 

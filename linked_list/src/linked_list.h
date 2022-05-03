@@ -17,6 +17,8 @@ public:
     explicit LinkedList(): head(nullptr) {};
 
     LinkedList(const LinkedList &) {};
+    // user-defined conversion function: conversion function is declared like a non-static member function or member function template with no parameters,
+    // no explicit return type
     LinkedList &operator=(const LinkedList&);
 
     ~LinkedList() {
