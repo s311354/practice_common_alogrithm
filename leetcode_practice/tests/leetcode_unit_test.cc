@@ -1622,8 +1622,28 @@ TEST_F(SolutionsTest, minCostClimbingStairsTest)
     cost = {1,100,1,1,1,100,1,1,100,1};
     expected_value = 6;
     EXPECT_EQ(expected_value, solutions.minCostClimbingStairs(cost));
+}
+
+TEST_F(SolutionsTest, lengthOfLongestSubstringTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::string s = "abcabcbb";
+    int expected_value = 3;
+//     EXPECT_EQ(expected_value, solutions.lengthOfLongestSubstring(s));
+
+    s = "bbbbb";
+    expected_value = 1;
+//     EXPECT_EQ(expected_value, solutions.lengthOfLongestSubstring(s));
+
+    s = "pwwkew";
+    expected_value = 3;
+    EXPECT_EQ(expected_value, solutions.lengthOfLongestSubstring(s));
 
 }
+
+
 
 
 

@@ -3688,7 +3688,6 @@ int Solutions::minDays( std::vector< std::vector<int> > & grid) {
 
     int connectLand = connectedComponents_helper(grid);
 
-    std::cout << connectLand << std::endl;
     if (connectLand != 1) return 0;
 
     int row = grid.size();
@@ -3755,6 +3754,26 @@ int Solutions::minCostClimbingStairs( std::vector<int> & cost) {
     return std::min(dp[n-2], dp[n-1]);
 }
 
+/*! \brief Longest Substring Without Repeating Character
+ *
+ *  Given a string s, find the length of the longest substring without repeating characters.
+ *
+ * \param  std::vector<int> v; string
+ * \return Return parameter description
+ */
+int Solutions::lengthOfLongestSubstring(std::string s) {
+    std::unordered_set<char> substring;
+    int len = 0, start = 0;
+
+    for (int i = 0; i < s.size(); ++i) {
+        while (!substring.insert(s[i]).second) {
+            substring.erase(s[start]);
+            start ++;
+        }
+        len = len > substring.size() ? len : substring.size();
+    }
+    return len;
+}
 
 
 
