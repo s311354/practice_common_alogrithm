@@ -321,7 +321,7 @@ public:
     // 746 Min Cost Climbing Stairs
     int minCostClimbingStairs( std::vector<int> & cost);
 
-    // 300. Longest Increasing Subsequence
+    // 3. Longest Substring Without Repeating Character
     int lengthOfLongestSubstring(std::string s);
 
 };
