@@ -324,6 +324,14 @@ public:
     // 3. Longest Substring Without Repeating Character
     int lengthOfLongestSubstring(std::string s);
 
+    // 168. Excel Sheet Column Title
+    std::string converToTitle(int columnNumber);
+
+    // 10. Regular Expression Matching
+    bool isMatch( std::string s, std::string p);
+
+
+
 };
 
 

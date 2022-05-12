@@ -3775,8 +3775,59 @@ int Solutions::lengthOfLongestSubstring(std::string s) {
     return len;
 }
 
+/*! \brief Excel Sheet Column Title
+ *
+ *  Given an integer columnNumber, return its corresponding column title as it appears in an Excel sheet.
+ *
+ * \return its corresponding column
+ */
+std::string Solutions::converToTitle(int columnNumber) {
+    std::string ans = "";
+
+    while (columnNumber) {
+        columnNumber --;
+        int k = columnNumber%26;
+        ans += 'A' + k;
+        columnNumber /= 26;
+    }
+
+    std::reverse(ans.begin(), ans.end());
+    return ans;
+}
 
 
+/*! \brief Regular Expression Matching
+ *
+ *  Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where,
+ *
+ *  - '.' Matches any single character.
+ *  - '*' Matches zero or more of the preceding element.
+ *
+ *  The matching should cover the entire input string (not partial)
+ *
+ * \return Whether or not the matching should cover the entire input string (not partial)
+ */
+bool Solutions::isMatch( std::string s, std::string p) {
+    int m = s.length();
+    int n = p.length();
+
+    std::vector< std::vector<bool> > dp (m + 1, std::vector<bool>(n + 1, false));
+
+    dp[0][0] = true;
+
+    for(int i=0; i<=m; i++) {
+        for(int j=1 ;j<=n; j++) {
+            if(p[j-1] == '*') {
+                dp[i][j] = (dp[i][j-2])||
+                        (i-1 >= 0 && dp[i-1][j] && (s[i-1] == p[j-2] || p[j-2] == '.') ); 
+            } else {
+                dp[i][j] = i-1>=0 && dp[i-1][j-1] && (s[i-1] == p[j-1] || p[j-1] == '.');
+            }
+        }
+    }
+
+    return dp[m][n];
+}
 
 
 

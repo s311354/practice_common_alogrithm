@@ -1643,7 +1643,44 @@ TEST_F(SolutionsTest, lengthOfLongestSubstringTest)
 
 }
 
+TEST_F(SolutionsTest, converToTitleTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
 
+    int columnNumber = 1;
+    std::string expected_value = "A";
+    EXPECT_EQ(expected_value, solutions.converToTitle(columnNumber));
+
+    columnNumber = 28;
+    expected_value = "AB";
+    EXPECT_EQ(expected_value, solutions.converToTitle(columnNumber));
+
+    columnNumber = 701;
+    expected_value = "ZY";
+    EXPECT_EQ(expected_value, solutions.converToTitle(columnNumber));
+
+}
+
+TEST_F(SolutionsTest, isMatchTest) 
+{
+    /* Declare the Unit Test object */
+    leetcode::Solutions solutions;
+
+    std::string s = "aa";
+    std::string p = "a*";
+
+    bool expected_value = true;
+    EXPECT_EQ(expected_value, solutions.isMatch(s, p));
+
+
+    s = "ab";
+    p = ".*";
+
+    expected_value = true;
+    EXPECT_EQ(expected_value, solutions.isMatch(s, p));
+
+}
 
 
 
